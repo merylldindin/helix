@@ -1,4 +1,9 @@
+import { defineNuxtConfig } from "nuxt/config";
+
 export default defineNuxtConfig({
+  build: {
+    transpile: ["vuetify"],
+  },
   experimental: {
     payloadExtraction: false,
   },
@@ -8,6 +13,6 @@ export default defineNuxtConfig({
   telemetry: false,
   typescript: {
     typeCheck: true,
-    shim: false,
+    shim: true,
   },
 });

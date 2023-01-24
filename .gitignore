@@ -4,11 +4,11 @@
 !.yarn/releases
 
 # development
+dist
 node_modules
-*.log*
 .nuxt
 .nitro
 .cache
 .output
 .env
-dist
+*.log*
