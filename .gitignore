@@ -1,0 +1,14 @@
+# yarn
+.yarn/*
+!.yarn/plugins
+!.yarn/releases
+
+# development
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist

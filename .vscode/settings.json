@@ -1,0 +1,36 @@
+{
+  "git.autofetch": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "workbench.startupEditor": "none",
+  "npm.packageManager": "yarn",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "stylelint.validate": ["vue"],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": null
+  }
+}
