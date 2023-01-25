@@ -2,7 +2,9 @@ import { defineNuxtPlugin } from "#app";
 import { ThemeDefinition, createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
-import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
+import { aliases } from "vuetify/iconsets/mdi-svg";
+import { mdi } from "vuetify/lib/iconsets/mdi";
+import "@mdi/font/css/materialdesignicons.css";
 
 enum CustomColor {
   FOAM = "foam",
