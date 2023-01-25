@@ -1,11 +1,11 @@
 <template>
-  <div class="public-layout">
+  <div class="default-layout">
     <slot />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.public-layout {
+.default-layout {
   align-items: center;
   display: flex;
   flex-direction: column;

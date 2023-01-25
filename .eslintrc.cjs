@@ -5,7 +5,11 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ["@nuxtjs/eslint-config-typescript", "airbnb-base", "prettier"],
+  extends: [
+    "@nuxtjs/eslint-config-typescript",
+    "airbnb-base",
+    "plugin:prettier/recommended",
+  ],
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: "module",
@@ -24,7 +28,6 @@ module.exports = {
     "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-unused-vars": ["error", { varsIgnorePattern: "^_" }],
     "class-methods-use-this": "off",
-    "comma-dangle": ["error", "always-multiline"],
     "import/extensions": "off",
     "import/order": [
       "error",
@@ -61,7 +64,6 @@ module.exports = {
     "no-unused-vars": "off",
     "no-useless-concat": "error",
     "prefer-template": "error",
-    "prettier/prettier": "error",
     quotes: ["error", "double"],
     radix: "off",
     semi: ["error", "always"],
