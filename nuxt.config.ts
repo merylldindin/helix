@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+  components: [
+    {
+      path: "~/components",
+      extensions: [".vue"],
+    },
+  ],
   css: ["vuetify/lib/styles/main.sass", "vuetify/styles"],
   experimental: {
     payloadExtraction: false,
@@ -22,10 +28,17 @@ export default defineNuxtConfig({
   ssr: false,
   telemetry: false,
   typescript: {
-    typeCheck: true,
+    typeCheck: "build",
     shim: true,
   },
   vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: "@use '@/assets/styles/index.scss' as *;",
+        },
+      },
+    },
     define: {
       "process.env.DEBUG": false,
     },

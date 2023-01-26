@@ -1,13 +1,19 @@
 <template>
   <NuxtLayout name="default">
-    <v-card class="pa-8">
-      <v-card-title>
-        <v-icon icon="mdi-pencil"></v-icon>
-        <h1 class="text-lemon"> Test </h1>
-      </v-card-title>
-      <v-card-text>
-        <p class="text-mine-shaft"> Test </p>
-      </v-card-text>
-    </v-card>
+    <v-avatar class="avatar">
+      <CustomImage :image="CONTENT.root.avatar" />
+    </v-avatar>
   </NuxtLayout>
 </template>
+
+<script setup lang="ts">
+import { CustomImage } from "~/components";
+import { CONTENT } from "~/content";
+</script>
+
+<style lang="scss" scoped>
+.avatar {
+  width: min(18rem, 60%);
+  height: auto;
+}
+</style>
