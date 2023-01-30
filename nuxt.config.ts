@@ -32,6 +32,9 @@ export default defineNuxtConfig({
     shim: true,
   },
   vite: {
+    build: {
+      cssCodeSplit: true,
+    },
     css: {
       preprocessorOptions: {
         scss: {
