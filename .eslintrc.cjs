@@ -6,7 +6,7 @@ module.exports = {
     node: true,
   },
   extends: [
-    "@nuxtjs/eslint-config-typescript",
+    "@nuxt/eslint-config",
     "airbnb-base",
     "plugin:prettier/recommended",
   ],
