@@ -6107,6 +6107,7 @@ __metadata:
     stylelint-config-standard-scss: 6.1.0
     typescript: 4.9.5
     vite-plugin-vuetify: 1.0.2
+    vue-gtag-next: 1.14.0
     vue-tsc: 1.0.24
     vuetify: 3.1.2
   languageName: unknown
@@ -11120,6 +11121,15 @@ __metadata:
   peerDependencies:
     eslint: ">=6.0.0"
   checksum: e2e6b05989294c4439d91283a78a0cb444cfba30f2715a5be1950d7815cadb5c8f449d9362a92bdd163cb8944abaac73bb076ce3c27b27586eaa4560002e6dfd
+  languageName: node
+  linkType: hard
+
+"vue-gtag-next@npm:1.14.0":
+  version: 1.14.0
+  resolution: "vue-gtag-next@npm:1.14.0"
+  peerDependencies:
+    vue: ^3.0.0-rc.11
+  checksum: ddf7db65c9942c528f1ab2351f0b54e442250bb75b4878ca37285bda89331992a9312ee2681c444cb30057216eb06bc57611ca990b3b43e8205f301f17dc500e
   languageName: node
   linkType: hard
 

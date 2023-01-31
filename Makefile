@@ -19,9 +19,11 @@ build: ## Build the project
 	yarn build
 
 serve: ## Serve the project
+	make build
 	yarn serve
 
 deploy: ## Deploy the project
+	make build
 	poetry run sirtuin cloudfront-deploy .cloudfront -p personal
 
 help: ## Description of the Makefile commands
