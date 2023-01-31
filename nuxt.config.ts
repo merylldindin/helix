@@ -1,7 +1,12 @@
 import { defineNuxtConfig } from "nuxt/config";
 import vuetify from "vite-plugin-vuetify";
 
+import { CUSTOM_HEAD } from "./src/content";
+
 export default defineNuxtConfig({
+  app: {
+    head: CUSTOM_HEAD,
+  },
   build: {
     transpile: ["vuetify"],
   },

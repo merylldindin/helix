@@ -9,7 +9,6 @@ enum CustomColor {
   FOAM = "foam",
   LEMON = "lemon",
   MINE_SHAFT = "mine-shaft",
-  PRIMARY = "primary",
 }
 
 const CustomTheme: ThemeDefinition = {
@@ -18,7 +17,6 @@ const CustomTheme: ThemeDefinition = {
     [CustomColor.FOAM]: "#f5fefd",
     [CustomColor.LEMON]: "#f6f609",
     [CustomColor.MINE_SHAFT]: "#242424",
-    [CustomColor.PRIMARY]: "#242424",
   },
 };
 
