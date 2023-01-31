@@ -1,0 +1,11 @@
+Profile = "personal"
+
+[application]
+Bundle = "dist"
+
+[bucket]
+Name = "meryll-us-east-1"
+Region = "us-east-1"
+
+[cloudfront]
+Distribution = "E10FEAOVNJY666"

@@ -1,0 +1,17 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.poetry]
+authors = ["Meryll Dindin <merylldin@gmail.com>"]
+description = "Nuxt 3 Template for Static Website"
+name = "helix"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+
+[tool.poetry.group.devops.dependencies]
+sirtuin = {git = "https://github.com/merylldindin/sirtuin.git"}
+

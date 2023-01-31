@@ -21,5 +21,8 @@ build: ## Build the project
 serve: ## Serve the project
 	yarn serve
 
+deploy: ## Deploy the project
+	poetry run sirtuin cloudfront-deploy .cloudfront -p personal
+
 help: ## Description of the Makefile commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-25s\033[0m %s\n", $$1, $$2}'
