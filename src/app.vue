@@ -8,20 +8,15 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
+import { provide } from "vue";
+
 import { CookieBanner } from "@/components";
 import { ColorName } from "@/plugins/vuetify.client/colors";
 import { CustomIcons } from "@/plugins/vuetify.client/icons";
 
-export default {
-  components: {
-    CookieBanner,
-  },
-  provide: {
-    COLOR: ColorName,
-    ICON: CustomIcons,
-  },
-};
+provide("COLOR", ColorName);
+provide("ICON", CustomIcons);
 </script>
 
 <style lang="scss" scoped>

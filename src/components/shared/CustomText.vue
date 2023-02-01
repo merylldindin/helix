@@ -26,20 +26,13 @@
   </p>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { TextChunkType } from "@/types";
 
-export default {
-  props: {
-    text: {
-      required: true,
-      type: Object,
-    },
+defineProps({
+  text: {
+    required: true,
+    type: Object,
   },
-  setup() {
-    return {
-      TextChunkType,
-    };
-  },
-};
+});
 </script>
