@@ -1,24 +1,45 @@
 {
   "cookieBanner": {
     "action": "OK",
-    "text": [
-      {
-        "type": "p",
-        "content": "This website uses cookies to improve user experience and to analyze website traffic. By continuing to use this site, you agree to the use of cookies. Learn more "
-      },
-      {
-        "type": "a",
-        "content": "here",
-        "props": {
-          "href": "https://cookiesandyou.com",
-          "target": "_blank",
-          "rel": "external nofollower noopener noreferrer"
+    "disclaimer": {
+      "mobile": [
+        {
+          "type": "p",
+          "content": "By continuing to use this site, you agree to the use of cookies. Learn more "
+        },
+        {
+          "type": "a",
+          "content": "here",
+          "props": {
+            "href": "https://cookiesandyou.com",
+            "target": "_blank",
+            "rel": "external nofollower noopener noreferrer"
+          }
+        },
+        {
+          "type": "b",
+          "content": "."
         }
-      },
-      {
-        "type": "b",
-        "content": "."
-      }
-    ]
+      ],
+      "desktop": [
+        {
+          "type": "p",
+          "content": "This website uses cookies to improve user experience and to analyze website traffic. By continuing to use this site, you agree to the use of cookies. Learn more "
+        },
+        {
+          "type": "a",
+          "content": "here",
+          "props": {
+            "href": "https://cookiesandyou.com",
+            "target": "_blank",
+            "rel": "external nofollower noopener noreferrer"
+          }
+        },
+        {
+          "type": "b",
+          "content": "."
+        }
+      ]
+    }
   }
 }

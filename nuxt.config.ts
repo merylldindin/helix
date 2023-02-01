@@ -1,5 +1,4 @@
 import { defineNuxtConfig } from "nuxt/config";
-import vuetify from "vite-plugin-vuetify";
 
 import { CUSTOM_HEAD } from "./src/content";
 
@@ -20,15 +19,7 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false,
   },
-  modules: [
-    "@nuxt/ui",
-    async (_, nuxt) => {
-      nuxt.hooks.hook("vite:extendConfig", (config) =>
-        // @ts-ignore
-        config.plugins.push(vuetify())
-      );
-    },
-  ],
+  modules: ["@nuxt/ui"],
   srcDir: "src/",
   ssr: false,
   telemetry: false,

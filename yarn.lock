@@ -1103,10 +1103,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdi/font@npm:7.1.96":
+"@mdi/js@npm:7.1.96":
   version: 7.1.96
-  resolution: "@mdi/font@npm:7.1.96"
-  checksum: db6dce72f553e844d049cc563cf89ae58dfd0f55f99f743ccbf1ca6ab644c940f50fbd78ecd91290a67ebb58fa5bae4983bbab782a6611456bd87566825c1ca4
+  resolution: "@mdi/js@npm:7.1.96"
+  checksum: cd3102a0120c06b4af7a153e30ee964807746ce55f84a35479d382841d0ab1a10f986059e0c6af0c240444393679b7330d306d0688e1193a23fc03bb8cee0b82
   languageName: node
   linkType: hard
 
@@ -2772,19 +2772,6 @@ __metadata:
   version: 3.2.45
   resolution: "@vue/shared@npm:3.2.45"
   checksum: ff3205056caed2a965aa0980e21319515ce13c859a9b269fdab0ee8b3c9f3d8eec7eefdb7fd6c6b47c12acdc7bf23c6c187b6191054221b4a29108139b20c221
-  languageName: node
-  linkType: hard
-
-"@vuetify/loader-shared@npm:^1.7.1":
-  version: 1.7.1
-  resolution: "@vuetify/loader-shared@npm:1.7.1"
-  dependencies:
-    find-cache-dir: ^3.3.2
-    upath: ^2.0.1
-  peerDependencies:
-    vue: ^3.0.0
-    vuetify: ^3.0.0-beta.4
-  checksum: 5777955e593afbb947c8be28a8625021846901e16ab982edfbbb74d9beb15f95490390ab1b0c6ec47e8b05389547eb69c79173cca04389f0203795071bb04994
   languageName: node
   linkType: hard
 
@@ -5408,18 +5395,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-cache-dir@npm:^3.3.2":
-  version: 3.3.2
-  resolution: "find-cache-dir@npm:3.3.2"
-  dependencies:
-    commondir: ^1.0.1
-    make-dir: ^3.0.2
-    pkg-dir: ^4.1.0
-  checksum: 1e61c2e64f5c0b1c535bd85939ae73b0e5773142713273818cc0b393ee3555fb0fd44e1a5b161b8b6c3e03e98c2fcc9c227d784850a13a90a8ab576869576817
-  languageName: node
-  linkType: hard
-
-"find-up@npm:^4.0.0, find-up@npm:^4.1.0":
+"find-up@npm:^4.1.0":
   version: 4.1.0
   resolution: "find-up@npm:4.1.0"
   dependencies:
@@ -6079,7 +6055,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": 17.4.2
     "@commitlint/config-conventional": 17.4.2
-    "@mdi/font": 7.1.96
+    "@mdi/js": 7.1.96
     "@nuxt/eslint-config": 0.1.1
     "@nuxt/types": 2.15.8
     "@nuxt/ui": 0.4.0
@@ -6108,7 +6084,6 @@ __metadata:
     stylelint-config-standard-scss: 6.1.0
     stylelint-prettier: 2.0.0
     typescript: 4.9.5
-    vite-plugin-vuetify: 1.0.2
     vue-gtag-next: 1.14.0
     vue-tsc: 1.0.24
     vuetify: 3.1.2
@@ -7258,7 +7233,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"make-dir@npm:^3.0.2, make-dir@npm:^3.1.0, make-dir@npm:~3.1.0":
+"make-dir@npm:^3.1.0, make-dir@npm:~3.1.0":
   version: 3.1.0
   resolution: "make-dir@npm:3.1.0"
   dependencies:
@@ -8429,15 +8404,6 @@ __metadata:
   version: 2.3.0
   resolution: "pify@npm:2.3.0"
   checksum: 9503aaeaf4577acc58642ad1d25c45c6d90288596238fb68f82811c08104c800e5a7870398e9f015d82b44ecbcbef3dc3d4251a1cbb582f6e5959fe09884b2ba
-  languageName: node
-  linkType: hard
-
-"pkg-dir@npm:^4.1.0":
-  version: 4.2.0
-  resolution: "pkg-dir@npm:4.2.0"
-  dependencies:
-    find-up: ^4.0.0
-  checksum: 9863e3f35132bf99ae1636d31ff1e1e3501251d480336edb1c211133c8d58906bed80f154a1d723652df1fda91e01c7442c2eeaf9dc83157c7ae89087e43c8d6
   languageName: node
   linkType: hard
 
@@ -10836,13 +10802,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"upath@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "upath@npm:2.0.1"
-  checksum: 2db04f24a03ef72204c7b969d6991abec9e2cb06fb4c13a1fd1c59bc33b46526b16c3325e55930a11ff86a77a8cbbcda8f6399bf914087028c5beae21ecdb33c
-  languageName: node
-  linkType: hard
-
 "update-browserslist-db@npm:^1.0.9":
   version: 1.0.10
   resolution: "update-browserslist-db@npm:1.0.10"
@@ -10979,20 +10938,6 @@ __metadata:
     vue-tsc:
       optional: true
   checksum: 5a047ab37dca8bff0cc3d96a6fbdd0d6480f546aa4b9d0a815dc01acbb64427e0a543dec3e0a76b052494d4a45cd7a616d967e290e27cf254114d0cc4f5e1a64
-  languageName: node
-  linkType: hard
-
-"vite-plugin-vuetify@npm:1.0.2":
-  version: 1.0.2
-  resolution: "vite-plugin-vuetify@npm:1.0.2"
-  dependencies:
-    "@vuetify/loader-shared": ^1.7.1
-    debug: ^4.3.3
-    upath: ^2.0.1
-  peerDependencies:
-    vite: ^2.7.0 || ^3.0.0 || ^4.0.0
-    vuetify: ^3.0.0-beta.4
-  checksum: 262759ee5bb364fac453c71a2523bf4476421d50c4c80e0a54569e7a7c0dc12fe70ccd890ebfed19adb3d37e9f2b82b7691e99bfea0e01b32f1493a9d76d942f
   languageName: node
   linkType: hard
 
