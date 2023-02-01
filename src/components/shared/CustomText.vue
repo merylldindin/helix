@@ -27,14 +27,12 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-
-import { RichText, TextChunkType } from "@/types";
+import { TextChunkType } from "@/types";
 
 defineProps({
   text: {
     required: true,
-    type: Object as PropType<RichText>,
+    type: Object,
   },
 });
 </script>
