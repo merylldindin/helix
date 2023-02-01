@@ -9,7 +9,7 @@
 <script setup lang="ts">
 import { PropType } from "vue";
 
-import { DeliveredImage } from "~/types";
+import { DeliveredImage } from "@/types";
 
 defineProps({
   image: {
