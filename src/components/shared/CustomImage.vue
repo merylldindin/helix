@@ -1,9 +1,5 @@
 <template>
-  <v-img
-    :src="image.source"
-    :lazy-src="image.lazySource"
-    :alt="image.altText"
-  />
+  <v-img :src="image.source" :lazy-src="image.lazySource" :alt="image.altText" />
 </template>
 
 <script setup lang="ts">

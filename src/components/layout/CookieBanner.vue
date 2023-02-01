@@ -1,12 +1,14 @@
 <template>
-  <v-container class="cookie-banner custom-shadow">
+  <v-container v-if="!isTracking" class="cookie-banner custom-shadow">
     <v-row>
       <v-col cols="10">
         <CustomText :text="APP_CONTENT.cookieBanner.text" />
       </v-col>
 
       <v-col cols="2" class="button-wrapper">
-        <v-btn variant="tonal"> {{ APP_CONTENT.cookieBanner.action }} </v-btn>
+        <v-btn variant="tonal" @click="dismissBanner">
+          {{ APP_CONTENT.cookieBanner.action }}
+        </v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -15,6 +17,16 @@
 <script setup lang="ts">
 import { CustomText } from "@/components";
 import { APP_CONTENT } from "@/content";
+
+import { useCookie } from "#app";
+
+const isTracking = useCookie<boolean>("_ga_tracking");
+
+isTracking.value = isTracking.value || false;
+
+const dismissBanner = () => {
+  isTracking.value = true;
+};
 </script>
 
 <style lang="scss" scoped>

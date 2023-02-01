@@ -5,8 +5,7 @@ const DEFAULT_COLOR = "#242424";
 const DEFAULT_DESCRIPTION =
   "Serial entrepreneur. Shaping the future of healthcare and artificial intelligence. Having a passion for crazy projects. Shaping the future globally.";
 
-const DEFAULT_THUMBNAIL =
-  "https://cdn.merylldindin.com/thumbnails/general.webp";
+const DEFAULT_THUMBNAIL = "https://cdn.merylldindin.com/thumbnails/general.webp";
 
 const DEFAULT_THUMBNAIL_ALT = "Meryll Dindin's personal website";
 
