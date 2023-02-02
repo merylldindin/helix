@@ -47,7 +47,4 @@ export default defineNuxtConfig({
       noExternal: ["vuetify"],
     },
   },
-  vueuse: {
-    ssrHandlers: false,
-  },
 });

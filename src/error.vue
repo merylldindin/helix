@@ -21,7 +21,7 @@ const props = defineProps({
     <v-app class="error-wrapper">
       <NuxtLayout name="error">
         <div class="error-container">
-          <p class="text-center headline--1 mb-8">
+          <p class="text-center headline-1 mb-8">
             {{ props.error.statusCode }}
           </p>
 
@@ -30,7 +30,7 @@ const props = defineProps({
               <Vue3Lottie :width="'200px'" :animation-data="ButtonAnimation" />
             </client-only>
 
-            <CustomLink class="error-actions headline--6" prompt="HOME" to="/" />
+            <CustomLink class="error-actions headline-6" prompt="HOME" to="/" />
           </div>
         </div>
       </NuxtLayout>
