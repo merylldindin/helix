@@ -8,7 +8,7 @@ import { CONTENT } from "@/content";
   <NuxtLayout name="default">
     <section class="section-wrapper">
       <div class="animation-wrapper">
-        <client-only class="lottie-animation">
+        <client-only class="animation">
           <Vue3Lottie :width="'min(420px, 100%)'" :animation-data="BubblesAnimation" />
         </client-only>
 
@@ -36,6 +36,7 @@ import { CONTENT } from "@/content";
   margin: auto;
   height: fit-content;
   width: min(25rem, calc(100% - 32px));
+  z-index: 1;
 }
 
 .animation-wrapper {
@@ -46,12 +47,13 @@ import { CONTENT } from "@/content";
   align-items: center;
 }
 
-.lottie-animation {
+.animation {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
+  z-index: 0;
 }
 </style>
