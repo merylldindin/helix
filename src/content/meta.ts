@@ -52,6 +52,11 @@ export const CUSTOM_HEAD = {
       name: "viewport",
     },
     {
+      content: DEFAULT_TITLE,
+      hid: "title",
+      name: "title",
+    },
+    {
       content: DEFAULT_DESCRIPTION,
       hid: "description",
       name: "description",
@@ -63,26 +68,26 @@ export const CUSTOM_HEAD = {
     },
     {
       content: DEFAULT_DESCRIPTION,
-      name: "og:description",
-      vmid: "og:description",
+      hid: "og:description",
+      property: "og:description",
     },
     {
       content: DEFAULT_THUMBNAIL,
-      name: "og:image",
-      vmid: "og:image",
+      hid: "og:image",
+      property: "og:image",
     },
     {
       content: DEFAULT_THUMBNAIL_ALT,
       name: "og:image:alt",
-      vmid: "og:image:alt",
+      property: "og:image:alt",
     },
     {
       content: "website",
       name: "og:type",
-      vmid: "og:type",
+      property: "og:type",
     },
     {
-      content: "summary",
+      content: "summary_large_image",
       name: "twitter:card",
       vmid: "twitter:card",
     },
