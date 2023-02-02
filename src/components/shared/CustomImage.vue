@@ -8,9 +8,19 @@ defineProps({
     required: true,
     type: Object as PropType<DeliveredImage>,
   },
+  width: {
+    type: String,
+    default: "100%",
+  },
 });
 </script>
 
 <template>
-  <v-img :src="image.source" :lazy-src="image.lazySource" :alt="image.altText" />
+  <v-img
+    :eager="image.eager"
+    :src="image.source"
+    :lazy-src="image.lazySource"
+    :alt="image.altText"
+    :width="width"
+  />
 </template>

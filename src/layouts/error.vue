@@ -6,12 +6,11 @@
 
 <style lang="scss" scoped>
 .error-layout {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
   position: fixed;
   width: 100%;
+  height: calc(100vh - env(safe-area-inset-bottom));
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
 }
 </style>

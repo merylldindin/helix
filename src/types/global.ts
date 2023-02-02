@@ -1,6 +1,7 @@
 export interface DeliveredImage {
   altText: string;
   source: string;
+  eager?: boolean;
   lazySource?: string;
 }
 

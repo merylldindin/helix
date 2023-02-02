@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { PropType } from "vue";
 
-const props = defineProps({
+defineProps({
   prompt: {
     type: String,
     default: undefined,
@@ -39,14 +39,14 @@ const props = defineProps({
 
 <template>
   <v-btn
-    :icon="props.icon"
-    :block="props.block"
-    :loading="props.loading"
-    :variant="props.variant"
-    @click="props.onClick"
+    :icon="icon"
+    :block="block"
+    :loading="loading"
+    :variant="variant"
+    @click="onClick"
   >
-    <span v-if="props.prompt" class="text-mine-shaft">
-      {{ props.prompt }}
+    <span v-if="prompt" class="text-mine-shaft">
+      {{ prompt }}
     </span>
     <slot />
   </v-btn>

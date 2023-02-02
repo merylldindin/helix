@@ -23,6 +23,10 @@ provide("ICON", CustomIcons);
 
 <style lang="scss" scoped>
 .application-wrapper {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - env(safe-area-inset-bottom));
+  overflow-y: hidden;
   background-color: rgb(var(--v-theme-mine-shaft));
 }
 </style>

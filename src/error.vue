@@ -8,7 +8,7 @@ import { extractHead } from "@/utils/meta";
 
 useHead(extractHead(CONTENT.error.head), { mode: "client" });
 
-const props = defineProps({
+defineProps({
   error: {
     required: true,
     type: Object,
@@ -22,7 +22,7 @@ const props = defineProps({
       <NuxtLayout name="error">
         <div class="error-container">
           <p class="text-center headline-1 mb-8">
-            {{ props.error.statusCode }}
+            {{ error.statusCode }}
           </p>
 
           <div class="animation-wrapper">
@@ -44,7 +44,12 @@ const props = defineProps({
 }
 
 .error-container {
-  width: min(50rem, calc(100% - 32px));
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .error-actions {

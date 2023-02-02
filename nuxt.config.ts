@@ -47,4 +47,24 @@ export default defineNuxtConfig({
       noExternal: ["vuetify"],
     },
   },
+  webpack: {
+    extractCSS: true,
+    filenames: {
+      // @ts-ignore
+      chunk: ({ isDev }) => (isDev ? "[name].js" : "[id].[contenthash].js"),
+    },
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: "styles",
+            test: /\.(css|vue)$/,
+            chunks: "all",
+            enforce: true,
+          },
+        },
+      },
+    },
+    terser: true,
+  },
 });

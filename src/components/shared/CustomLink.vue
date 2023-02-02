@@ -37,16 +37,12 @@ const isExternal = computed(() => {
   <a
     v-if="isExternal"
     v-bind="props"
-    :class="{ 'text-decoration-underline': props.underlined }"
+    :class="{ 'text-decoration-underline': underlined }"
   >
-    {{ props.prompt }}
+    {{ prompt }}
   </a>
 
-  <nuxt-link
-    v-else
-    v-bind="props"
-    :class="{ 'text-decoration-underline': props.underlined }"
-  >
-    {{ props.prompt }}
+  <nuxt-link v-else v-bind="props" :class="{ 'text-decoration-underline': underlined }">
+    {{ prompt }}
   </nuxt-link>
 </template>
