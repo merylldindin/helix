@@ -39,7 +39,7 @@ const dismissBanner = () => {
 
 <style lang="scss" scoped>
 .cookie-banner {
-  bottom: 1rem;
+  top: 1.5rem;
   left: 0;
   right: 0;
   position: absolute;

@@ -70,7 +70,7 @@ export const CUSTOM_HEAD = {
       name: "apple-mobile-web-app-status-bar-style",
     },
     {
-      content: "width=device-width, initial-scale=1.0",
+      content: "width=device-width, initial-scale=1, maximum-scale=1",
       hid: "viewport",
       name: "viewport",
     },

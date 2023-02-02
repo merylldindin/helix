@@ -30,7 +30,9 @@
           "type": "a",
           "content": "use of cookies",
           "props": {
-            "to": "/test",
+            "href": "https://cookiesandyou.com",
+            "target": "_blank",
+            "rel": "external nofollower noopener noreferrer",
             "underlined": true
           }
         },

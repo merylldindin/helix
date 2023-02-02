@@ -24,6 +24,5 @@ provide("ICON", CustomIcons);
 <style lang="scss" scoped>
 .application-wrapper {
   background-color: rgb(var(--v-theme-mine-shaft));
-  color: rgb(var(--v-theme-foam));
 }
 </style>
