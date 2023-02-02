@@ -3,6 +3,7 @@ import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 
 import { CustomTheme } from "./colors";
 import { VuetifyComponents } from "./components";
+import { VuetifyDefaults } from "./defaults";
 import { VuetifyDirectives } from "./directives";
 
 import { defineNuxtPlugin } from "#app";
@@ -10,6 +11,7 @@ import { defineNuxtPlugin } from "#app";
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     components: VuetifyComponents,
+    defaults: VuetifyDefaults,
     directives: VuetifyDirectives,
     display: {
       mobileBreakpoint: "sm",

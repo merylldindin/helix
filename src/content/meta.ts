@@ -5,7 +5,9 @@ const DEFAULT_COLOR = "#242424";
 const DEFAULT_DESCRIPTION =
   "Serial entrepreneur. Shaping the future of healthcare and artificial intelligence. Having a passion for crazy projects. Shaping the future globally.";
 
-const DEFAULT_THUMBNAIL = "https://cdn.merylldindin.com/thumbnails/general.webp";
+const DEFAULT_CDN_HOST = "https://cdn.merylldindin.com";
+
+const DEFAULT_THUMBNAIL = `${DEFAULT_CDN_HOST}/thumbnails/general.webp`;
 
 const DEFAULT_THUMBNAIL_ALT = "Meryll Dindin's personal website";
 
@@ -17,7 +19,28 @@ export const CUSTOM_HEAD = {
   },
   link: [
     { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-    { rel: "preconnect", href: "cdn.merylldindin.com" },
+    { rel: "preconnect", href: DEFAULT_CDN_HOST },
+    {
+      rel: "preload",
+      href: `${DEFAULT_CDN_HOST}/fonts/lexend-deca-regular.ttf`,
+      crossorigin: true,
+      as: "font",
+      type: "font/ttf",
+    },
+    // {
+    //   as: "font",
+    //   crossorigin: true,
+    //   href: `${DEFAULT_CDN_HOST}/fonts/lexend-deca-medium.ttf`,
+    //   rel: "preload",
+    //   type: "font/ttf",
+    // },
+    // {
+    //   as: "font",
+    //   crossorigin: true,
+    //   href: `${DEFAULT_CDN_HOST}/fonts/lexend-deca-bold.ttf`,
+    //   rel: "preload",
+    //   type: "font/ttf",
+    // },
   ],
   meta: [
     { charset: "utf-8" },

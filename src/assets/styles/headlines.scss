@@ -1,0 +1,107 @@
+%headline {
+  text-align: left !important;
+  font-weight: 700 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  word-break: break-word !important;
+}
+
+.headline--1 {
+  @extend %headline;
+
+  font-size: 7rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: -1.05px !important;
+
+  @include md-down {
+    font-size: 5rem !important;
+    letter-spacing: -0.48px !important;
+  }
+
+  @include sm-down {
+    font-size: 4rem !important;
+    line-height: 1.17 !important;
+    letter-spacing: normal !important;
+  }
+}
+
+.headline--2 {
+  @extend %headline;
+
+  font-size: 5rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.48px !important;
+
+  @include md-down {
+    font-size: 4rem !important;
+    line-height: 1.17 !important;
+    letter-spacing: normal !important;
+  }
+
+  @include sm-down {
+    font-size: 3rem !important;
+    line-height: 1.29 !important;
+    letter-spacing: normal !important;
+  }
+}
+
+.headline--3 {
+  @extend %headline;
+
+  font-size: 4rem !important;
+  line-height: 1.17 !important;
+  letter-spacing: norma !important;
+
+  @include md-down {
+    font-size: 3rem !important;
+    line-height: 1.29 !important;
+  }
+
+  @include sm-down {
+    font-size: 2rem !important;
+    line-height: 1.42 !important;
+    letter-spacing: 0.18px !important;
+  }
+}
+
+.headline--4 {
+  @extend %headline;
+
+  font-size: 3rem !important;
+  line-height: 1.29 !important;
+  letter-spacing: normal !important;
+
+  @include md-down {
+    font-size: 2rem !important;
+    line-height: 1.42 !important;
+    letter-spacing: 0.18px !important;
+  }
+
+  @include sm-down {
+    font-size: 1.5rem !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0.15px !important;
+  }
+}
+
+.headline--5 {
+  @extend %headline;
+
+  font-size: 2rem !important;
+  line-height: 1.42 !important;
+  letter-spacing: 0.18px !important;
+
+  @include md-down {
+    font-size: 1.5rem !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0.15px !important;
+  }
+}
+
+.headline--6 {
+  @extend %headline;
+
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: 0.15px;
+}

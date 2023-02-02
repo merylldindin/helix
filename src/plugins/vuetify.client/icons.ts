@@ -1,9 +1,9 @@
-import { mdiPencil } from "@mdi/js";
+import { mdiCookieCheck } from "@mdi/js";
 
 enum IconName {
-  PENCIL = "PENCIL",
+  COOKIE_CHECK = "COOKIE_CHECK",
 }
 
 export const CustomIcons: Record<IconName, string> = {
-  [IconName.PENCIL]: mdiPencil,
+  [IconName.COOKIE_CHECK]: mdiCookieCheck,
 };

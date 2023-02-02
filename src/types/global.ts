@@ -5,23 +5,29 @@ export interface DeliveredImage {
 }
 
 export enum TextChunkType {
-  PARAGRAPH = "p",
   BOLD = "b",
   ITALIC = "i",
-  UNDERLINE = "u",
   LINK = "a",
+  PARAGRAPH = "p",
+  UNDERLINE = "u",
 }
 
-interface LinkProps {
+interface InternalLinkProps {
+  to: string;
+  underline?: boolean;
+}
+
+interface ExternalLinkProps {
   href: string;
   target: string;
   rel: string;
+  underline?: boolean;
 }
 
 interface TextChunk {
   type: TextChunkType;
   content: string;
-  props?: LinkProps;
+  props?: InternalLinkProps | ExternalLinkProps;
 }
 
 export type RichText = TextChunk[];

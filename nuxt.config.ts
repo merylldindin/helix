@@ -5,6 +5,8 @@ import { CUSTOM_HEAD } from "./src/content";
 export default defineNuxtConfig({
   app: {
     head: CUSTOM_HEAD,
+    pageTransition: { name: "page", mode: "out-in" },
+    layoutTransition: { name: "layout", mode: "out-in" },
   },
   build: {
     transpile: ["vuetify"],
@@ -15,7 +17,7 @@ export default defineNuxtConfig({
       extensions: [".vue"],
     },
   ],
-  css: ["vuetify/lib/styles/main.sass", "vuetify/styles"],
+  css: ["@/assets/styles/index.scss", "vuetify/lib/styles/main.sass", "vuetify/styles"],
   experimental: {
     payloadExtraction: false,
   },
@@ -34,7 +36,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: "@use '@/assets/styles/index.scss' as *;",
+          additionalData: "@use '@/assets/styles/mixins.scss' as *;",
         },
       },
     },
@@ -44,5 +46,8 @@ export default defineNuxtConfig({
     ssr: {
       noExternal: ["vuetify"],
     },
+  },
+  vueuse: {
+    ssrHandlers: false,
   },
 });

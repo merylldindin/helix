@@ -1,13 +1,11 @@
-import { MetaInfo } from "vue-meta";
+import { UseHeadInput } from "@vueuse/head";
 
 export type HeadContent = {
-  title: string;
-  meta?: {
-    description?: string;
-    thumbnail?: string;
-    thumbnailAlt?: string;
-    noindex?: boolean;
-  };
+  title?: string;
+  description?: string;
+  thumbnail?: string;
+  thumbnailAlt?: string;
+  noindex?: boolean;
 };
 
 const setMetaTitle = (title: string) => [
@@ -77,13 +75,19 @@ const setMetaThumbnailAlt = (thumbnailAlt: string) => [
   },
 ];
 
-export const extractHead = ({ title, meta = {} }: HeadContent): MetaInfo => ({
+export const extractHead = ({
+  title,
+  description,
+  thumbnail,
+  thumbnailAlt,
+  noindex,
+}: HeadContent): UseHeadInput => ({
   title,
   meta: [
     ...(title ? setMetaTitle(title) : []),
-    ...(meta.description ? setMetaDescription(meta.description) : []),
-    ...(meta.thumbnail ? setMetaThumbnail(meta.thumbnail) : []),
-    ...(meta.thumbnailAlt ? setMetaThumbnailAlt(meta.thumbnailAlt) : []),
-    ...(meta.noindex ? [{ content: "noindex", hid: "robots", name: "robots" }] : []),
+    ...(description ? setMetaDescription(description) : []),
+    ...(thumbnail ? setMetaThumbnail(thumbnail) : []),
+    ...(thumbnailAlt ? setMetaThumbnailAlt(thumbnailAlt) : []),
+    ...(noindex ? [{ content: "noindex", hid: "robots", name: "robots" }] : []),
   ],
 });

@@ -1,3 +1,15 @@
+<script lang="ts" setup>
+import { CustomLink } from "@/components";
+import { TextChunkType } from "@/types";
+
+defineProps({
+  text: {
+    required: true,
+    type: Object,
+  },
+});
+</script>
+
 <template>
   <p>
     <span v-for="(item, index) in text" :key="index">
@@ -17,22 +29,11 @@
         {{ item.content }}
       </u>
 
-      <a v-else-if="item.type === TextChunkType.LINK" v-bind="item.props">
-        <u>
-          {{ item.content }}
-        </u>
-      </a>
+      <CustomLink
+        v-else-if="item.type === TextChunkType.LINK"
+        :prompt="item.content"
+        v-bind="item.props"
+      />
     </span>
   </p>
 </template>
-
-<script lang="ts" setup>
-import { TextChunkType } from "@/types";
-
-defineProps({
-  text: {
-    required: true,
-    type: Object,
-  },
-});
-</script>
