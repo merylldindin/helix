@@ -1,9 +1,12 @@
 <script lang="ts" setup>
 import { useHead } from "@unhead/vue";
 
+import ButtonAnimation from "@/assets/animations/wave-button.json";
 import { CustomLink } from "@/components";
 import { CONTENT } from "@/content";
 import { extractHead } from "@/utils/meta";
+
+useHead(extractHead(CONTENT.error.head), { mode: "client" });
 
 const props = defineProps({
   error: {
@@ -11,8 +14,6 @@ const props = defineProps({
     type: Object,
   },
 });
-
-useHead(extractHead(CONTENT.error.head), { mode: "client" });
 </script>
 
 <template>
@@ -24,7 +25,13 @@ useHead(extractHead(CONTENT.error.head), { mode: "client" });
             {{ props.error.statusCode }}
           </p>
 
-          <CustomLink class="error-actions headline--5" prompt="HOME" to="/" />
+          <div class="animation-wrapper">
+            <client-only class="lottie-animation">
+              <Vue3Lottie :width="'200px'" :animation-data="ButtonAnimation" />
+            </client-only>
+
+            <CustomLink class="error-actions headline--6" prompt="HOME" to="/" />
+          </div>
         </div>
       </NuxtLayout>
     </v-app>
@@ -41,7 +48,27 @@ useHead(extractHead(CONTENT.error.head), { mode: "client" });
 }
 
 .error-actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.animation-wrapper {
+  position: relative;
+}
+
+.lottie-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 </style>

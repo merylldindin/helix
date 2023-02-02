@@ -6086,6 +6086,7 @@ __metadata:
     typescript: 4.9.5
     vue-gtag-next: 1.14.0
     vue-tsc: 1.0.24
+    vue3-lottie: 2.4.0
     vuetify: 3.1.2
   languageName: unknown
   linkType: soft
@@ -7178,6 +7179,13 @@ __metadata:
     chalk: ^5.0.0
     is-unicode-supported: ^1.1.0
   checksum: 7291b6e7f1b3df6865bdaeb9b59605c832668ac2fa0965c63b1e7dd3700349aec09c1d7d40c368d5041ff58b7f89461a56e4009471921301af7b3609cbff9a29
+  languageName: node
+  linkType: hard
+
+"lottie-web@npm:^5.8.1":
+  version: 5.10.2
+  resolution: "lottie-web@npm:5.10.2"
+  checksum: 9ec80b479d8d03c079bd4f246d301f0c4aac2c4d6f8daaa79f6f3fc285aaba377c64879f6748d49c1db52b9854aea81c3203d858e9c686f7a47cd8b771d112d0
   languageName: node
   linkType: hard
 
@@ -11159,6 +11167,18 @@ __metadata:
   bin:
     vue-tsc: bin/vue-tsc.js
   checksum: 788535bd38383b94600a25c98a18b510c562fa06755549e1ce8ab733dca17e6891bb17e398943b5ae36bd5865918488bb84e6102a0240fa786b4ec6ba05f319b
+  languageName: node
+  linkType: hard
+
+"vue3-lottie@npm:2.4.0":
+  version: 2.4.0
+  resolution: "vue3-lottie@npm:2.4.0"
+  dependencies:
+    lodash: ^4.17.21
+    lottie-web: ^5.8.1
+  peerDependencies:
+    vue: ^3.2
+  checksum: 442b8160ed939b543bd6c5b4b673eb253c8d6873ec21eda29e8cbaae24156a1d84bec428cda09f082170cb40c6e03c6b783721f88392b7dc27fce187c8263ad0
   languageName: node
   linkType: hard
 
