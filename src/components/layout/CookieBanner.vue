@@ -19,25 +19,21 @@ const dismissBanner = () => {
 
 <template>
   <v-slide-y-transition>
-    <v-container v-if="!isTracking" class="cookie-banner custom-shadow">
-      <v-row>
-        <v-col cols="12" md="10">
-          <CustomText
-            :text="
-              smAndDown
-                ? CONTENT.app.cookieBanner.disclaimer.mobile
-                : CONTENT.app.cookieBanner.disclaimer.desktop
-            "
-          />
-        </v-col>
+    <v-card v-if="!isTracking" class="cookie-banner custom-shadow">
+      <CustomText
+        :text="
+          smAndDown
+            ? CONTENT.app.cookieBanner.disclaimer.mobile
+            : CONTENT.app.cookieBanner.disclaimer.desktop
+        "
+      />
 
-        <v-col cols="12" md="2" class="button-wrapper">
-          <CustomButton icon :block="smAndDown" @click="dismissBanner">
-            <v-icon size="x-large" :icon="CustomIcons.COOKIE_CHECK" />
-          </CustomButton>
-        </v-col>
-      </v-row>
-    </v-container>
+      <v-spacer />
+
+      <CustomButton class="ml-6" icon @click="dismissBanner">
+        <v-icon size="x-large" :icon="CustomIcons.COOKIE_CHECK" />
+      </CustomButton>
+    </v-card>
   </v-slide-y-transition>
 </template>
 
@@ -48,15 +44,15 @@ const dismissBanner = () => {
   right: 0;
   position: absolute;
   background-color: rgb(var(--v-theme-lemon));
-  color: rgb(var(--v-theme-mine-shaft));
-  margin: 0 auto 0.5rem;
-  padding: 2rem;
-  max-width: min(70rem, 90%);
+  margin: 0 auto 16px;
+  padding: 1.5rem 2rem;
+  max-width: min(70rem, calc(100% - 32px));
   transition: all 0.2s ease;
-  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
 
   @include md-down {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -64,9 +60,5 @@ const dismissBanner = () => {
   display: flex;
   align-self: center;
   justify-content: flex-end;
-
-  @include sm-down {
-    justify-content: center;
-  }
 }
 </style>

@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { useHead } from "@unhead/vue";
 
+import { CustomLink } from "@/components";
 import { CONTENT } from "@/content";
 import { extractHead } from "@/utils/meta";
 
@@ -18,19 +19,13 @@ useHead(extractHead(CONTENT.error.head), { mode: "client" });
   <div id="error">
     <v-app class="error-wrapper">
       <NuxtLayout name="error">
-        <v-card class="custom-shadow" color="lemon">
-          <v-card-title class="headline--1">
-            {{ props.error.message }}
-          </v-card-title>
-
-          <v-card-text>
+        <div class="error-container">
+          <p class="text-center headline--1 mb-8">
             {{ props.error.statusCode }}
-          </v-card-text>
+          </p>
 
-          <v-card-actions>
-            <CustomButton block prompt="Home" />
-          </v-card-actions>
-        </v-card>
+          <CustomLink class="error-actions headline--5" prompt="HOME" to="/" />
+        </div>
       </NuxtLayout>
     </v-app>
   </div>
@@ -38,6 +33,15 @@ useHead(extractHead(CONTENT.error.head), { mode: "client" });
 
 <style lang="scss" scoped>
 .error-wrapper {
-  background-color: rgb(var(--v-theme-mine-shaft));
+  background-color: rgb(var(--v-theme-lemon));
+}
+
+.error-container {
+  width: min(50rem, calc(100% - 32px));
+}
+
+.error-actions {
+  display: flex;
+  justify-content: center;
 }
 </style>

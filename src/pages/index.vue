@@ -14,6 +14,6 @@ import { CONTENT } from "@/content";
 <style lang="scss" scoped>
 .avatar {
   height: auto;
-  width: min(25rem, 60%);
+  width: min(25rem, calc(100% - 32px));
 }
 </style>
