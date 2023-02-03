@@ -2,13 +2,13 @@
 import { computed } from "vue";
 
 const props = defineProps({
-  prompt: {
-    type: String,
-    required: true,
-  },
   underlined: {
     type: Boolean,
     default: false,
+  },
+  prompt: {
+    type: String,
+    default: undefined,
   },
   to: {
     type: String,
@@ -39,10 +39,18 @@ const isExternal = computed(() => {
     v-bind="props"
     :class="{ 'text-decoration-underline': underlined }"
   >
-    {{ prompt }}
+    <template v-if="prompt">
+      {{ prompt }}
+    </template>
+
+    <slot />
   </a>
 
   <nuxt-link v-else v-bind="props" :class="{ 'text-decoration-underline': underlined }">
-    {{ prompt }}
+    <template v-if="prompt">
+      {{ prompt }}
+    </template>
+
+    <slot />
   </nuxt-link>
 </template>

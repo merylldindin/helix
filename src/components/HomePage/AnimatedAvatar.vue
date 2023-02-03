@@ -8,7 +8,7 @@ import { CONTENT } from "@/content";
 const transitionUp = ref<boolean>(false);
 setTimeout(() => {
   transitionUp.value = true;
-}, 1000);
+}, 500);
 </script>
 
 <template>
@@ -17,7 +17,7 @@ setTimeout(() => {
       <Vue3Lottie :width="'min(42rem, 100%)'" :animation-data="BubblesAnimation" />
     </client-only>
 
-    <v-avatar class="avatar custom-shadow" :size="'min(25rem, calc(100% - 32px))'">
+    <v-avatar class="avatar custom-shadow" :size="'min(25rem, 100%)'">
       <CustomImage :image="CONTENT.root.avatar" />
     </v-avatar>
   </div>
@@ -26,15 +26,19 @@ setTimeout(() => {
 <style lang="scss" scoped>
 .animation-wrapper {
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .animation-transition {
-  margin-top: -35vh;
+  margin-top: -20vh;
 
   @include sm-down {
     margin-top: -50vh;

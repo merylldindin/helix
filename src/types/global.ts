@@ -13,12 +13,12 @@ export enum TextChunkType {
   UNDERLINE = "u",
 }
 
-interface InternalLinkProps {
+interface InternalLink {
   to: string;
   underline?: boolean;
 }
 
-interface ExternalLinkProps {
+export interface ExternalLink {
   href: string;
   target: string;
   rel: string;
@@ -28,7 +28,7 @@ interface ExternalLinkProps {
 interface TextChunk {
   type: TextChunkType;
   content: string;
-  props?: InternalLinkProps | ExternalLinkProps;
+  props?: InternalLink | ExternalLink;
 }
 
 export type RichText = TextChunk[];
