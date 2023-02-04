@@ -1,11 +1,10 @@
 <script lang="ts" setup>
-import { computed, inject } from "vue";
+import { computed } from "vue";
 import { useRoute } from "vue-router";
 import { useDisplay } from "vuetify";
 
 import ButtonClick from "@/assets/animations/button-click.json";
 import { CustomLink } from "@/components";
-import { IconName } from "@/types";
 
 const route = useRoute();
 
@@ -14,9 +13,6 @@ const isHomePage = computed(() => {
 });
 
 const { smAndDown } = useDisplay();
-
-const ColorName = inject("ColorName") as Record<string, string>;
-const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
 </script>
 
 <template>
@@ -33,8 +29,8 @@ const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
       <v-icon
         :size="smAndDown ? '3rem' : '4rem'"
         class="button-icon"
-        :icon="CustomIcons.HOME_CIRCLE_OUTLINE"
-        :color="ColorName.FOAM"
+        :icon="$ICON.HOME_CIRCLE_OUTLINE"
+        :color="$COLOR.FOAM"
       />
     </CustomLink>
   </div>

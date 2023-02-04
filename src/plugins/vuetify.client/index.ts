@@ -1,10 +1,11 @@
 import { createVuetify } from "vuetify";
 import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 
-import { CustomTheme } from "./colors";
+import { COLOR, CustomTheme } from "./colors";
 import { VuetifyComponents } from "./components";
 import { VuetifyDefaults } from "./defaults";
 import { VuetifyDirectives } from "./directives";
+import { ICON } from "./icons";
 
 import { defineNuxtPlugin } from "#app";
 
@@ -37,6 +38,9 @@ export default defineNuxtPlugin((nuxtApp) => {
       },
     },
   });
+
+  nuxtApp.provide("ICON", ICON);
+  nuxtApp.provide("COLOR", COLOR);
 
   nuxtApp.vueApp.use(vuetify);
 });

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PropType } from "vue";
+import { PropType, onMounted, ref } from "vue";
 
 import { DeliveredImage } from "~/types";
 
@@ -13,12 +13,16 @@ defineProps({
     default: "100%",
   },
 });
+
+const isShown = ref<boolean>(false);
+onMounted(() => {
+  isShown.value = true;
+});
 </script>
 
 <template>
-  <template v-if="image.source">
+  <template v-if="isShown">
     <v-img
-      v-if="image"
       :eager="image.eager"
       :src="image.source"
       :lazy-src="image.lazySource"

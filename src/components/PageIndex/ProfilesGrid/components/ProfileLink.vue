@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { PropType, inject } from "vue";
+import { PropType } from "vue";
 
 import { CustomLink } from "@/components";
-import { ExternalLink, IconName } from "@/types";
+import { ExternalLink } from "@/types";
 
 defineProps({
   description: {
@@ -18,8 +18,6 @@ defineProps({
     type: Object as PropType<ExternalLink>,
   },
 });
-
-const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
 </script>
 
 <template>
@@ -27,7 +25,7 @@ const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
     <template #activator="{ props }">
       <CustomLink v-bind="link">
         <div class="custom-shadow link-support">
-          <v-icon v-bind="props" size="large" :icon="CustomIcons[icon as IconName]" />
+          <v-icon v-bind="props" size="large" :icon="$ICON[icon]" />
         </div>
       </CustomLink>
     </template>

@@ -1,9 +1,10 @@
 import { defineNuxtConfig } from "nuxt/config";
 
-import { CUSTOM_HEAD } from "./src/content";
+// import { CUSTOM_HEAD } from "./src/content";
 
 export default defineNuxtConfig({
   app: {
+    // head: CUSTOM_HEAD,
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" },
   },
@@ -44,25 +45,6 @@ export default defineNuxtConfig({
     },
     ssr: {
       noExternal: ["vuetify"],
-    },
-  },
-  webpack: {
-    extractCSS: true,
-    filenames: {
-      // @ts-ignore
-      chunk: ({ isDev }) => (isDev ? "[name].js" : "[id].[contenthash].js"),
-    },
-    optimization: {
-      splitChunks: {
-        cacheGroups: {
-          styles: {
-            name: "styles",
-            test: /\.(css|vue)$/,
-            chunks: "all",
-            enforce: true,
-          },
-        },
-      },
     },
   },
 });

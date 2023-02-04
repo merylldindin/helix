@@ -28,7 +28,7 @@ export enum IconName {
   TWITTER = "TWITTER",
 }
 
-export const CustomIcons: Record<IconName, string> = {
+export const ICON: Record<IconName, string> = {
   [IconName.BRAIN]: mdiBrain,
   [IconName.CAMERA]: mdiCamera,
   [IconName.COOKIE_CHECK]: mdiCookieCheck,

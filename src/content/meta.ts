@@ -27,20 +27,6 @@ export const CUSTOM_HEAD = {
       rel: "preload",
       type: "font/ttf",
     },
-    {
-      as: "font" as "font",
-      crossorigin: "anonymous" as "anonymous",
-      href: `${DEFAULT_CDN_HOST}/fonts/lexend-deca-medium.ttf`,
-      rel: "preload",
-      type: "font/ttf",
-    },
-    {
-      as: "font" as "font",
-      crossorigin: "anonymous" as "anonymous",
-      href: `${DEFAULT_CDN_HOST}/fonts/lexend-deca-bold.ttf`,
-      rel: "preload",
-      type: "font/ttf",
-    },
   ],
   meta: [
     { charset: "utf-8" },

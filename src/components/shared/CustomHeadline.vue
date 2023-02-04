@@ -62,7 +62,7 @@ defineProps({
   bottom: -1rem;
   left: 2rem;
   width: calc(100% - 2rem);
-  height: 1rem;
+  height: 0.5rem;
   background-color: rgb(var(--v-theme-lemon));
   z-index: 0;
 
@@ -70,7 +70,7 @@ defineProps({
     left: 1rem;
     bottom: -0.5rem;
     width: calc(100% - 1rem);
-    height: 0.5rem;
+    height: 0.33rem;
   }
 }
 </style>

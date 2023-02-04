@@ -1,10 +1,8 @@
 <script lang="ts" setup>
-import { inject } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomButton, CustomText } from "@/components";
 import { LAYOUT_CONTENT } from "@/content";
-import { IconName } from "@/types";
 
 import { useCookie } from "#app";
 
@@ -16,8 +14,6 @@ isTracking.value = isTracking.value || false;
 const dismissBanner = () => {
   isTracking.value = true;
 };
-
-const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
 </script>
 
 <template>
@@ -35,7 +31,7 @@ const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
       <v-spacer />
 
       <CustomButton class="ml-6" icon @click="dismissBanner">
-        <v-icon size="x-large" :icon="CustomIcons.COOKIE_CHECK" />
+        <v-icon size="x-large" :icon="$ICON.COOKIE_CHECK" />
       </CustomButton>
     </v-card>
   </v-slide-y-transition>
