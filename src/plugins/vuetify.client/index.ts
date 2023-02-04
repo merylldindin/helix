@@ -30,7 +30,6 @@ export default defineNuxtPlugin((nuxtApp) => {
         mdi,
       },
     },
-    styles: { configFile: "src/plugins/vuetify.client/styles.scss" },
     theme: {
       defaultTheme: "CustomTheme",
       themes: {
