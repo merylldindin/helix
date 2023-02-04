@@ -16,12 +16,14 @@ defineProps({
 </script>
 
 <template>
-  <v-img
-    v-if="image.source"
-    :eager="image.eager"
-    :src="image.source"
-    :lazy-src="image.lazySource"
-    :alt="image.altText"
-    :width="width"
-  />
+  <template v-if="image.source">
+    <v-img
+      v-if="image"
+      :eager="image.eager"
+      :src="image.source"
+      :lazy-src="image.lazySource"
+      :alt="image.altText"
+      :width="width"
+    />
+  </template>
 </template>

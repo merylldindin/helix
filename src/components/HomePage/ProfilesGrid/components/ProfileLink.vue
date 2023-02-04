@@ -5,6 +5,10 @@ import { CustomLink } from "@/components";
 import { ExternalLink, IconName } from "@/types";
 
 defineProps({
+  description: {
+    required: true,
+    type: String,
+  },
   icon: {
     required: true,
     type: String,
@@ -19,11 +23,15 @@ const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
 </script>
 
 <template>
-  <CustomLink v-bind="link">
-    <div class="custom-shadow link-support">
-      <v-icon size="large" :icon="CustomIcons[icon as IconName]" />
-    </div>
-  </CustomLink>
+  <v-tooltip :text="description" location="top">
+    <template #activator="{ props }">
+      <CustomLink v-bind="link">
+        <div class="custom-shadow link-support">
+          <v-icon v-bind="props" size="large" :icon="CustomIcons[icon as IconName]" />
+        </div>
+      </CustomLink>
+    </template>
+  </v-tooltip>
 </template>
 
 <style lang="scss" scoped>

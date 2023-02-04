@@ -13,7 +13,11 @@ import { ProfileLink } from "./components";
         cols="4"
         class="d-flex justify-center"
       >
-        <ProfileLink :icon="profile.icon" :link="profile.link" />
+        <ProfileLink
+          :description="profile.description"
+          :icon="profile.icon"
+          :link="profile.link"
+        />
       </v-col>
     </v-row>
   </v-container>
