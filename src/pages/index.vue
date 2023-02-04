@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 import { AnimatedAvatar, ProfilesGrid } from "@/components";
-import { CONTENT } from "@/content";
+import { PAGE_CONTENT } from "@/content";
 
 const showProfiles = ref<boolean>(false);
 setTimeout(() => {
@@ -18,7 +18,7 @@ setTimeout(() => {
       <v-slide-y-transition>
         <div v-show="showProfiles" class="profile-title">
           <h1 class="headline-2">
-            {{ CONTENT.index.headline }}
+            {{ PAGE_CONTENT.index.headline }}
           </h1>
 
           <ProfilesGrid />

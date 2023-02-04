@@ -50,11 +50,13 @@ const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
 .button-animation {
   position: absolute;
   height: fit-content;
-  top: 2rem;
-  right: 0;
+  top: 1.9rem;
+  left: 0;
 
   @include sm-down {
     top: 1.5rem;
+    left: auto;
+    right: 0;
     width: 80px;
     height: 80px;
   }
@@ -62,8 +64,8 @@ const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
 
 .button-action {
   position: absolute;
-  top: 2rem;
-  right: 0;
+  top: 1.9rem;
+  left: 0;
   width: 100px;
   height: 100px;
   display: flex;
@@ -72,6 +74,8 @@ const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
 
   @include sm-down {
     top: 1.5rem;
+    left: auto;
+    right: 0;
     width: 80px;
     height: 80px;
   }

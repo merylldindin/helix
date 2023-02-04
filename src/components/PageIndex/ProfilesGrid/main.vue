@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CONTENT } from "@/content";
+import { PAGE_CONTENT } from "@/content";
 
 import { ProfileLink } from "./components";
 </script>
@@ -8,7 +8,7 @@ import { ProfileLink } from "./components";
   <v-container class="profile-wrapper">
     <v-row class="justify-center">
       <v-col
-        v-for="(profile, index) in CONTENT.index.profiles"
+        v-for="(profile, index) in PAGE_CONTENT.index.profiles"
         :key="index"
         cols="4"
         class="d-flex justify-center"

@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 import HotBubbles from "@/assets/animations/hot-bubbles.json";
 import { CustomImage } from "@/components";
-import { CONTENT } from "@/content";
+import { PAGE_CONTENT } from "@/content";
 
 const transitionUp = ref<boolean>(false);
 setTimeout(() => {
@@ -18,7 +18,7 @@ setTimeout(() => {
     </client-only>
 
     <v-avatar class="avatar custom-shadow" :size="'min(25rem, 28vh, 100%)'">
-      <CustomImage :image="CONTENT.index.avatar" />
+      <CustomImage :image="PAGE_CONTENT.index.avatar" />
     </v-avatar>
   </div>
 </template>

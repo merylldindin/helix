@@ -5,6 +5,7 @@ import { VCard, VCardActions, VCardText, VCardTitle } from "vuetify/components/V
 import { VCol, VContainer, VRow, VSpacer } from "vuetify/components/VGrid";
 import { VIcon } from "vuetify/components/VIcon";
 import { VImg } from "vuetify/components/VImg";
+import { VMain } from "vuetify/components/VMain";
 import { VTooltip } from "vuetify/components/VTooltip";
 import { VSlideYTransition } from "vuetify/components/transitions";
 
@@ -24,4 +25,5 @@ export const VuetifyComponents = {
   VCardTitle,
   VSpacer,
   VTooltip,
+  VMain,
 };

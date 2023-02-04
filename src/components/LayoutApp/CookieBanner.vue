@@ -3,7 +3,7 @@ import { inject } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomButton, CustomText } from "@/components";
-import { CONTENT } from "@/content";
+import { LAYOUT_CONTENT } from "@/content";
 import { IconName } from "@/types";
 
 import { useCookie } from "#app";
@@ -26,8 +26,8 @@ const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
       <CustomText
         :text="
           xs
-            ? CONTENT.app.cookieBanner.disclaimer.mobile
-            : CONTENT.app.cookieBanner.disclaimer.desktop
+            ? LAYOUT_CONTENT.cookieBanner.disclaimer.mobile
+            : LAYOUT_CONTENT.cookieBanner.disclaimer.desktop
         "
         typography="text-1 text-mine-shaft"
       />

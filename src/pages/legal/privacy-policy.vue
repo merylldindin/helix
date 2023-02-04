@@ -3,10 +3,8 @@ import { useHead } from "@unhead/vue";
 import { useDisplay } from "vuetify";
 
 import { CustomHeadline, CustomText } from "@/components";
-import { CONTENT } from "@/content";
+import { PAGE_CONTENT } from "@/content";
 import { extractHead } from "@/utils/meta";
-
-useHead(extractHead(CONTENT.legal.privacyPolicy.head), { mode: "client" });
 
 enum LegalTextType {
   SUBTITLE = "subtitle",
@@ -14,6 +12,8 @@ enum LegalTextType {
 }
 
 const { smAndDown } = useDisplay();
+
+useHead(extractHead(PAGE_CONTENT.legal.privacyPolicy.head), { mode: "client" });
 </script>
 
 <template>
@@ -23,17 +23,20 @@ const { smAndDown } = useDisplay();
         :level="1"
         :class="smAndDown ? 'my-6' : 'my-8'"
         typography="headline-3"
-        :text="CONTENT.legal.privacyPolicy.title"
+        :text="PAGE_CONTENT.legal.privacyPolicy.title"
       />
 
       <CustomHeadline
         :level="2"
         :class="smAndDown ? 'mb-6' : 'mb-8'"
         typography="headline-6"
-        :text="CONTENT.legal.privacyPolicy.date"
+        :text="PAGE_CONTENT.legal.privacyPolicy.date"
       />
 
-      <div v-for="(chunk, index) in CONTENT.legal.privacyPolicy.content" :key="index">
+      <div
+        v-for="(chunk, index) in PAGE_CONTENT.legal.privacyPolicy.content"
+        :key="index"
+      >
         <CustomHeadline
           v-if="chunk.type === LegalTextType.SUBTITLE"
           :class="smAndDown ? 'mb-6' : 'mb-8'"

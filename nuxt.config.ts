@@ -4,7 +4,6 @@ import { CUSTOM_HEAD } from "./src/content";
 
 export default defineNuxtConfig({
   app: {
-    head: CUSTOM_HEAD,
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" },
   },

@@ -1,18 +1,20 @@
 <script lang="ts" setup>
 import { useHead } from "@unhead/vue";
+import { computed } from "vue";
 
 import { CustomHeadline, ErrorButton } from "@/components";
-import { CONTENT } from "@/content";
-import { extractHead } from "@/utils/meta";
+import { CUSTOM_ERROR_HEAD } from "@/content";
 
-useHead(extractHead(CONTENT.error.head), { mode: "client" });
-
-defineProps({
+const props = defineProps({
   error: {
     required: true,
     type: Object,
   },
 });
+
+const statusCode = computed(() => JSON.stringify(props.error.statusCode));
+
+useHead(CUSTOM_ERROR_HEAD, { mode: "client" });
 </script>
 
 <template>
@@ -24,7 +26,7 @@ defineProps({
             <CustomHeadline
               :level="1"
               typography="headline-1 text-mine-shaft"
-              :text="error.statusCode"
+              :text="statusCode"
               class="text-center mb-8"
             />
 

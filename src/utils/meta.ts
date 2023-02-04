@@ -1,4 +1,4 @@
-import { UseHeadInput } from "@vueuse/head";
+import { HeadObject } from "@vueuse/head";
 
 export type HeadContent = {
   title?: string;
@@ -11,17 +11,14 @@ export type HeadContent = {
 const setMetaTitle = (title: string) => [
   {
     content: title,
-    hid: "title",
     name: "title",
   },
   {
     content: title,
-    hid: "og:title",
     property: "og:title",
   },
   {
     content: title,
-    hid: "twitter:title",
     name: "twitter:title",
   },
 ];
@@ -29,17 +26,14 @@ const setMetaTitle = (title: string) => [
 const setMetaDescription = (description: string) => [
   {
     content: description,
-    hid: "description",
     name: "description",
   },
   {
     content: description,
-    hid: "og:description",
     property: "og:description",
   },
   {
     content: description,
-    hid: "twitter:description",
     name: "twitter:description",
   },
 ];
@@ -47,17 +41,14 @@ const setMetaDescription = (description: string) => [
 const setMetaThumbnail = (thumbnail: string) => [
   {
     content: thumbnail,
-    hid: "thumbnail",
     name: "thumbnail",
   },
   {
     content: thumbnail,
-    hid: "og:image",
     property: "og:image",
   },
   {
     content: thumbnail,
-    hid: "twitter:image",
     name: "twitter:image",
   },
 ];
@@ -65,12 +56,10 @@ const setMetaThumbnail = (thumbnail: string) => [
 const setMetaThumbnailAlt = (thumbnailAlt: string) => [
   {
     content: thumbnailAlt,
-    hid: "og:image:alt",
     property: "og:image:alt",
   },
   {
     content: thumbnailAlt,
-    hid: "twitter:image:alt",
     property: "twitter:image:alt",
   },
 ];
@@ -81,7 +70,7 @@ export const extractHead = ({
   thumbnail,
   thumbnailAlt,
   noindex,
-}: HeadContent): UseHeadInput => ({
+}: HeadContent): HeadObject => ({
   title,
   meta: [
     ...(title ? setMetaTitle(title) : []),
