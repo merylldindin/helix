@@ -1,7 +1,14 @@
+$xs-breakpoint: 0;
 $sm-breakpoint: 600px;
 $md-breakpoint: 960px;
 $lg-breakpoint: 1264px;
 $xl-breakpoint: 1904px;
+
+@mixin xs-only {
+  @media (max-width: ($sm-breakpoint - 0.1)) {
+    @content;
+  }
+}
 
 @mixin sm-down {
   @media (max-width: ($md-breakpoint - 0.1)) {

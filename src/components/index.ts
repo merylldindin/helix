@@ -1,4 +1,10 @@
-export * from "./DefaultLayout";
+// layouts
+export * from "./LayoutApp";
+export * from "./LayoutError";
+export * from "./LayoutLegal";
 
-export * from "./HomePage";
+// pages
+export * from "./PageIndex";
+
+// shared
 export * from "./shared";

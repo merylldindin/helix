@@ -7,15 +7,19 @@ defineProps({
     required: true,
     type: Object,
   },
+  typography: {
+    type: String,
+    default: "text-1",
+  },
 });
 </script>
 
 <template>
   <p>
-    <span v-for="(item, index) in text" :key="index">
-      <span v-if="item.type === TextChunkType.PARAGRAPH">
+    <span v-for="(item, index) in text" :key="index" :class="typography">
+      <template v-if="item.type === TextChunkType.PARAGRAPH">
         {{ item.content }}
-      </span>
+      </template>
 
       <b v-else-if="item.type === TextChunkType.BOLD">
         {{ item.content }}

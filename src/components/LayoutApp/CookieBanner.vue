@@ -8,7 +8,7 @@ import { IconName } from "@/types";
 
 import { useCookie } from "#app";
 
-const { smAndDown } = useDisplay();
+const { xs } = useDisplay();
 
 const isTracking = useCookie<boolean>("_ga_tracking");
 isTracking.value = isTracking.value || false;
@@ -25,10 +25,11 @@ const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
     <v-card v-if="!isTracking" class="cookie-banner custom-shadow">
       <CustomText
         :text="
-          smAndDown
+          xs
             ? CONTENT.app.cookieBanner.disclaimer.mobile
             : CONTENT.app.cookieBanner.disclaimer.desktop
         "
+        typography="text-1 text-mine-shaft"
       />
 
       <v-spacer />

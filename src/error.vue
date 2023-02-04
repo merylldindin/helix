@@ -1,8 +1,7 @@
 <script lang="ts" setup>
 import { useHead } from "@unhead/vue";
 
-import ButtonAnimation from "@/assets/animations/wave-button.json";
-import { CustomLink } from "@/components";
+import { CustomHeadline, ErrorButton } from "@/components";
 import { CONTENT } from "@/content";
 import { extractHead } from "@/utils/meta";
 
@@ -17,63 +16,54 @@ defineProps({
 </script>
 
 <template>
-  <div id="error">
-    <v-app class="error-wrapper">
-      <NuxtLayout name="error">
-        <div class="error-container">
-          <p class="text-center headline-1 mb-8">
-            {{ error.statusCode }}
-          </p>
+  <v-app class="error-background">
+    <v-main class="error-wrapper">
+      <v-container class="error-container">
+        <v-row>
+          <v-col cols="12" class="error-content">
+            <CustomHeadline
+              :level="1"
+              typography="headline-1 text-mine-shaft"
+              :text="error.statusCode"
+              class="text-center mb-8"
+            />
 
-          <div class="animation-wrapper">
-            <client-only class="lottie-animation">
-              <Vue3Lottie :width="'200px'" :animation-data="ButtonAnimation" />
-            </client-only>
-
-            <CustomLink class="error-actions headline-6" prompt="HOME" to="/" />
-          </div>
-        </div>
-      </NuxtLayout>
-    </v-app>
-  </div>
+            <ErrorButton />
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <style lang="scss" scoped>
-.error-wrapper {
+.error-background {
   background-color: rgb(var(--v-theme-lemon));
+}
+
+.error-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+
+  @include xs-only {
+    max-height: calc(100vh - $browser-navbar-offset);
+  }
 }
 
 .error-container {
   height: 100%;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.error-actions {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.animation-wrapper {
-  position: relative;
-}
-
-.lottie-animation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
 }
 </style>

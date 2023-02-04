@@ -38,6 +38,6 @@ p,
 a,
 span,
 .v-application {
-  color: var(--v-theme-foam);
+  color: var(--v-theme-foam) !important;
   font-family: "Lexend Deca", Arial, sans-serif !important;
 }

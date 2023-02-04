@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { provide } from "vue";
 
-import { CookieBanner } from "@/components";
+import { CookieBanner, HomeButton } from "@/components";
 import { ColorName } from "@/plugins/vuetify.client/colors";
 import { CustomIcons } from "@/plugins/vuetify.client/icons";
 
@@ -12,21 +12,17 @@ provide("CustomIcons", CustomIcons);
 </script>
 
 <template>
-  <div id="app">
-    <v-app class="application-wrapper">
-      <NuxtPage />
+  <v-app class="application-background">
+    <HomeButton />
 
-      <CookieBanner />
-    </v-app>
-  </div>
+    <NuxtPage />
+
+    <CookieBanner />
+  </v-app>
 </template>
 
 <style lang="scss" scoped>
-.application-wrapper {
-  position: fixed;
-  width: 100%;
-  height: calc(100vh - env(safe-area-inset-bottom));
-  overflow-y: hidden;
+.application-background {
   background-color: rgb(var(--v-theme-mine-shaft));
 }
 </style>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import BubblesAnimation from "@/assets/animations/hot-bubbles.json";
+import HotBubbles from "@/assets/animations/hot-bubbles.json";
 import { CustomImage } from "@/components";
 import { CONTENT } from "@/content";
 
@@ -14,14 +14,11 @@ setTimeout(() => {
 <template>
   <div class="animation-wrapper" :class="{ 'animation-transition': transitionUp }">
     <client-only class="animation">
-      <Vue3Lottie
-        :width="'min(42rem, 52vh, 100%)'"
-        :animation-data="BubblesAnimation"
-      />
+      <Vue3Lottie :width="'min(42rem, 52vh, 100%)'" :animation-data="HotBubbles" />
     </client-only>
 
     <v-avatar class="avatar custom-shadow" :size="'min(25rem, 28vh, 100%)'">
-      <CustomImage :image="CONTENT.root.avatar" />
+      <CustomImage :image="CONTENT.index.avatar" />
     </v-avatar>
   </div>
 </template>
