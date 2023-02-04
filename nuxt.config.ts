@@ -65,6 +65,5 @@ export default defineNuxtConfig({
         },
       },
     },
-    terser: true,
   },
 });
