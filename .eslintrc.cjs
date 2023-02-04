@@ -5,24 +5,13 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: [
-    "@nuxt/eslint-config",
-    "airbnb-base",
-    "plugin:prettier/recommended",
-  ],
+  extends: ["@nuxt/eslint-config", "airbnb-base", "plugin:prettier/recommended"],
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: "module",
     parser: "@typescript-eslint/parser",
   },
-  plugins: [
-    "@typescript-eslint",
-    "import",
-    "prettier",
-    "sonarjs",
-    "unicorn",
-    "vue",
-  ],
+  plugins: ["@typescript-eslint", "import", "prettier", "sonarjs", "unicorn", "vue"],
   rules: {
     "@typescript-eslint/explicit-member-accessibility": "error",
     "@typescript-eslint/no-shadow": "error",
@@ -34,14 +23,7 @@ module.exports = {
       {
         alphabetize: { order: "asc", caseInsensitive: false },
         "newlines-between": "always",
-        groups: [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-        ],
+        groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
         pathGroups: [{ pattern: "@/**", group: "internal" }],
       },
     ],
@@ -49,11 +31,7 @@ module.exports = {
     "import/no-extraneous-dependencies": "off",
     "import/no-relative-packages": "off",
     "import/prefer-default-export": "off",
-    "lines-between-class-members": [
-      "error",
-      "always",
-      { exceptAfterSingleLine: true },
-    ],
+    "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
     "no-console": "off",
     "no-unneeded-ternary": "error",
     "no-param-reassign": ["error", { props: false }],
@@ -82,6 +60,12 @@ module.exports = {
           props: false,
           params: false,
         },
+      },
+    ],
+    "vue/multi-word-component-names": [
+      "error",
+      {
+        ignores: ["index", "main", "default", "error"],
       },
     ],
   },
