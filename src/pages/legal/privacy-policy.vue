@@ -17,7 +17,7 @@ const { smAndDown } = useDisplay();
 </script>
 
 <template>
-  <NuxtLayout name="legal">
+  <NuxtLayout name="legal-layout">
     <section>
       <CustomHeadline
         :level="1"

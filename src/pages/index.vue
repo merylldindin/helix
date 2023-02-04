@@ -11,7 +11,7 @@ setTimeout(() => {
 </script>
 
 <template>
-  <NuxtLayout name="default">
+  <NuxtLayout name="default-layout">
     <section class="section-wrapper">
       <AnimatedAvatar />
 
