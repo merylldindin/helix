@@ -14,10 +14,13 @@ setTimeout(() => {
 <template>
   <div class="animation-wrapper" :class="{ 'animation-transition': transitionUp }">
     <client-only class="animation">
-      <Vue3Lottie :width="'min(42rem, 100%)'" :animation-data="BubblesAnimation" />
+      <Vue3Lottie
+        :width="'min(42rem, 52vh, 100%)'"
+        :animation-data="BubblesAnimation"
+      />
     </client-only>
 
-    <v-avatar class="avatar custom-shadow" :size="'min(25rem, 100%)'">
+    <v-avatar class="avatar custom-shadow" :size="'min(25rem, 28vh, 100%)'">
       <CustomImage :image="CONTENT.root.avatar" />
     </v-avatar>
   </div>
@@ -38,7 +41,7 @@ setTimeout(() => {
 }
 
 .animation-transition {
-  margin-top: -20vh;
+  margin-top: -45vh;
 
   @include sm-down {
     margin-top: -50vh;

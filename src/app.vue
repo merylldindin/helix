@@ -7,8 +7,8 @@ import { CustomIcons } from "@/plugins/vuetify.client/icons";
 
 import "vue3-lottie/dist/style.css";
 
-provide("COLOR", ColorName);
-provide("ICON", CustomIcons);
+provide("ColorName", ColorName);
+provide("CustomIcons", CustomIcons);
 </script>
 
 <template>

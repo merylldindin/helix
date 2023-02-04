@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import { inject } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomButton, CustomText } from "@/components";
 import { CONTENT } from "@/content";
-import { CustomIcons } from "@/plugins/vuetify.client/icons";
+import { IconName } from "@/types";
 
 import { useCookie } from "#app";
 
@@ -15,6 +16,8 @@ isTracking.value = isTracking.value || false;
 const dismissBanner = () => {
   isTracking.value = true;
 };
+
+const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
 </script>
 
 <template>
@@ -50,6 +53,7 @@ const dismissBanner = () => {
   transition: all 0.2s ease;
   display: flex;
   flex-direction: row;
+  z-index: 999;
 
   @include md-down {
     padding: 1rem 1.5rem;

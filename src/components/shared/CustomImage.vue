@@ -17,6 +17,7 @@ defineProps({
 
 <template>
   <v-img
+    v-if="image.source"
     :eager="image.eager"
     :src="image.source"
     :lazy-src="image.lazySource"

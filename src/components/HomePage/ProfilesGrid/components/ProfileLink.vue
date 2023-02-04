@@ -1,25 +1,27 @@
 <script setup lang="ts">
-import { PropType } from "vue";
+import { PropType, inject } from "vue";
 
-import { CustomImage, CustomLink } from "@/components";
-import { DeliveredImage, ExternalLink } from "@/types";
+import { CustomLink } from "@/components";
+import { ExternalLink, IconName } from "@/types";
 
 defineProps({
+  icon: {
+    required: true,
+    type: String,
+  },
   link: {
     required: true,
     type: Object as PropType<ExternalLink>,
   },
-  logo: {
-    required: true,
-    type: Object as PropType<DeliveredImage>,
-  },
 });
+
+const CustomIcons = inject("CustomIcons") as Record<IconName, string>;
 </script>
 
 <template>
   <CustomLink v-bind="link">
     <div class="custom-shadow link-support">
-      <CustomImage :image="logo" class="link-logo" />
+      <v-icon size="large" :icon="CustomIcons[icon as IconName]" />
     </div>
   </CustomLink>
 </template>
@@ -33,10 +35,5 @@ defineProps({
   border: 1px solid rgb(var(--v-theme-mine-shaft));
   align-items: center;
   justify-content: center;
-}
-
-.link-logo {
-  max-width: 36px;
-  max-height: 36px;
 }
 </style>

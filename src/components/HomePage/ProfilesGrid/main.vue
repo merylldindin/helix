@@ -13,7 +13,7 @@ import { ProfileLink } from "./components";
         cols="4"
         class="d-flex"
       >
-        <ProfileLink v-bind="profile" />
+        <ProfileLink :icon="profile.icon" :link="profile.link" />
       </v-col>
     </v-row>
   </v-container>
