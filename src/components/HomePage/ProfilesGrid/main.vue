@@ -11,7 +11,7 @@ import { ProfileLink } from "./components";
         v-for="(profile, index) in CONTENT.root.profiles"
         :key="index"
         cols="4"
-        class="d-flex"
+        class="d-flex justify-center"
       >
         <ProfileLink :icon="profile.icon" :link="profile.link" />
       </v-col>
@@ -21,7 +21,16 @@ import { ProfileLink } from "./components";
 
 <style lang="scss" scoped>
 .profile-wrapper {
+  margin-top: 3rem;
+  max-width: 44rem;
+
+  @include md-down {
+    margin-top: 2rem;
+    max-width: 36rem;
+  }
+
   @include sm-down {
+    margin-top: 1rem;
     max-width: 24rem;
   }
 }

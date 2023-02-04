@@ -21,7 +21,7 @@ setTimeout(() => {
             {{ CONTENT.root.headline }}
           </h1>
 
-          <ProfilesGrid class="mt-4" />
+          <ProfilesGrid />
         </div>
       </v-slide-y-transition>
     </section>
@@ -37,7 +37,7 @@ setTimeout(() => {
 
 .profile-title {
   position: absolute;
-  top: 28rem;
+  top: 34rem;
   bottom: 0;
   left: 0;
   right: 0;
@@ -47,5 +47,13 @@ setTimeout(() => {
   justify-content: center;
   color: rgb(var(--v-theme-foam));
   transition: all 1.5s ease-in-out;
+
+  @include md-down {
+    top: 32rem;
+  }
+
+  @include sm-down {
+    top: 30rem;
+  }
 }
 </style>
