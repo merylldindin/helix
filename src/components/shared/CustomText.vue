@@ -36,6 +36,7 @@ defineProps({
       <CustomLink
         v-else-if="item.type === TextChunkType.LINK"
         :prompt="item.content"
+        :typography="typography"
         v-bind="item.props"
       />
     </span>

@@ -31,7 +31,7 @@ const dismissBanner = () => {
       <v-spacer />
 
       <CustomButton class="ml-6" icon @click="dismissBanner">
-        <v-icon size="x-large" :icon="$ICON.COOKIE_CHECK" />
+        <v-icon size="x-large" :color="$COLOR.MINE_SHAFT" :icon="$ICON.COOKIE_CHECK" />
       </CustomButton>
     </v-card>
   </v-slide-y-transition>

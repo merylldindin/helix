@@ -36,8 +36,7 @@ h5,
 h6,
 p,
 a,
-span,
-.v-application {
-  color: var(--v-theme-foam) !important;
+span {
+  color: rgb(var(--v-theme-foam)) !important;
   font-family: "Lexend Deca", Arial, sans-serif !important;
 }

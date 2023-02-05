@@ -26,6 +26,10 @@ const props = defineProps({
     type: String,
     default: undefined,
   },
+  typography: {
+    type: String,
+    default: "text-1",
+  },
 });
 
 const isExternal = computed(() => {
@@ -37,7 +41,7 @@ const isExternal = computed(() => {
   <a
     v-if="isExternal"
     v-bind="props"
-    :class="{ 'text-decoration-underline': underlined }"
+    :class="[typography, underlined ? 'text-decoration-underline' : '']"
   >
     <template v-if="prompt">
       {{ prompt }}
@@ -46,7 +50,11 @@ const isExternal = computed(() => {
     <slot />
   </a>
 
-  <nuxt-link v-else v-bind="props" :class="{ 'text-decoration-underline': underlined }">
+  <nuxt-link
+    v-else
+    v-bind="props"
+    :class="[typography, underlined ? 'text-decoration-underline' : '']"
+  >
     <template v-if="prompt">
       {{ prompt }}
     </template>
