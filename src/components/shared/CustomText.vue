@@ -8,8 +8,8 @@ defineProps({
     type: Object,
   },
   typography: {
-    type: String,
     default: "text-1",
+    type: String,
   },
 });
 </script>

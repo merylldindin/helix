@@ -13,6 +13,11 @@
     ]
   },
   "cookieBanner": {
+    "button": {
+      "ariaLabel": "Accept our privacy policy",
+      "color": "mine-shaft",
+      "icon": "COOKIE_CHECK"
+    },
     "disclaimer": {
       "mobile": [
         {
@@ -23,6 +28,7 @@
           "type": "a",
           "content": "use of cookies",
           "props": {
+            "ariaLabel": "Learn more about cookies",
             "to": "/legal/privacy-policy",
             "underlined": true
           }

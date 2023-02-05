@@ -1,11 +1,13 @@
 import { createVuetify } from "vuetify";
 import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 
-import { COLOR, CustomTheme } from "./colors";
+import { ColorName } from "@/types";
+
+import { CustomTheme } from "./colors";
 import { VuetifyComponents } from "./components";
 import { VuetifyDefaults } from "./defaults";
 import { VuetifyDirectives } from "./directives";
-import { ICON } from "./icons";
+import { ICONS } from "./icons";
 
 import { defineNuxtPlugin } from "#app";
 
@@ -17,16 +19,16 @@ export default defineNuxtPlugin((nuxtApp) => {
     display: {
       mobileBreakpoint: "sm",
       thresholds: {
-        xs: 0,
-        sm: 600,
-        md: 960,
         lg: 1264,
+        md: 960,
+        sm: 600,
         xl: 1904,
+        xs: 0,
       },
     },
     icons: {
-      defaultSet: "mdi",
       aliases,
+      defaultSet: "mdi",
       sets: {
         mdi,
       },
@@ -39,8 +41,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     },
   });
 
-  nuxtApp.provide("ICON", ICON);
-  nuxtApp.provide("COLOR", COLOR);
+  nuxtApp.provide("ICON", ICONS);
+  nuxtApp.provide("COLOR", ColorName);
 
   nuxtApp.vueApp.use(vuetify);
 });

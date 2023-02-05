@@ -30,9 +30,11 @@ const dismissBanner = () => {
 
       <v-spacer />
 
-      <CustomButton class="ml-6" icon @click="dismissBanner">
-        <v-icon size="x-large" :color="$COLOR.MINE_SHAFT" :icon="$ICON.COOKIE_CHECK" />
-      </CustomButton>
+      <CustomButton
+        class="ml-6"
+        v-bind="LAYOUT_CONTENT.cookieBanner.button"
+        @click="dismissBanner"
+      />
     </v-card>
   </v-slide-y-transition>
 </template>

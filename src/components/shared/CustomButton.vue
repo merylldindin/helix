@@ -1,38 +1,48 @@
 <script lang="ts" setup>
 import { PropType } from "vue";
 
+import { ColorName, IconName } from "@/types";
+
 defineProps({
-  prompt: {
-    type: String,
+  ariaLabel: {
     default: undefined,
-  },
-  icon: {
-    type: Boolean,
-    default: false,
+    type: String,
   },
   block: {
-    type: Boolean,
     default: false,
+    type: Boolean,
   },
   color: {
-    type: String,
     default: "mine-shaft",
-  },
-  variant: {
-    type: String as PropType<"flat" | "tonal">,
-    default: "tonal",
+    type: String as PropType<ColorName>,
   },
   disabled: {
-    type: Boolean,
     default: false,
+    type: Boolean,
+  },
+  icon: {
+    default: undefined,
+    type: String as PropType<IconName>,
   },
   loading: {
-    type: Boolean,
     default: false,
+    type: Boolean,
   },
   onClick: {
-    type: Function,
     default: undefined,
+    type: Function,
+  },
+  prompt: {
+    default: undefined,
+    type: String,
+  },
+  size: {
+    default: "x-large",
+    type: String,
+  },
+  variant: {
+    default: "tonal",
+    type: String as PropType<"flat" | "tonal">,
   },
 });
 </script>
@@ -43,11 +53,15 @@ defineProps({
     :block="block"
     :loading="loading"
     :variant="variant"
+    :aria-label="ariaLabel"
     @click="onClick"
   >
     <span v-if="prompt" class="text-mine-shaft">
       {{ prompt }}
     </span>
+
+    <v-icon v-else-if="icon" :size="size" :color="color" :icon="$ICON[icon]" />
+
     <slot />
   </v-btn>
 </template>

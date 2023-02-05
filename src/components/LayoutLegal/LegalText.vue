@@ -7,8 +7,8 @@ import { extractHead } from "@/utils/meta";
 
 const props = defineProps({
   text: {
-    type: Object,
     required: true,
+    type: Object,
   },
 });
 

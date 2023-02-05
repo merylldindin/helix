@@ -13,22 +13,9 @@ import {
   mdiTwitter,
 } from "@mdi/js";
 
-export enum IconName {
-  BRAIN = "BRAIN",
-  CAMERA = "CAMERA",
-  COOKIE_CHECK = "COOKIE_CHECK",
-  FACEBOOK = "FACEBOOK",
-  FACTORY = "FACTORY",
-  GITHUB = "GITHUB",
-  GOOGLE_MY_BUSINESS = "GOOGLE_MY_BUSINESS",
-  HOME_CIRCLE_OUTLINE = "HOME_CIRCLE_OUTLINE",
-  INSTAGRAM = "INSTAGRAM",
-  LINKEDIN = "LINKEDIN",
-  NOTEBOOK = "NOTEBOOK",
-  TWITTER = "TWITTER",
-}
+import { IconName } from "@/types";
 
-export const ICON: Record<IconName, string> = {
+export const ICONS: Record<IconName, string> = {
   [IconName.BRAIN]: mdiBrain,
   [IconName.CAMERA]: mdiCamera,
   [IconName.COOKIE_CHECK]: mdiCookieCheck,

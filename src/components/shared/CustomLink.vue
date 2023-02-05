@@ -2,33 +2,37 @@
 import { computed } from "vue";
 
 const props = defineProps({
-  underlined: {
-    type: Boolean,
-    default: false,
-  },
-  prompt: {
-    type: String,
+  ariaLabel: {
     default: undefined,
-  },
-  to: {
     type: String,
-    default: undefined,
   },
   href: {
-    type: String,
     default: undefined,
+    type: String,
+  },
+  prompt: {
+    default: undefined,
+    type: String,
   },
   rel: {
-    type: String,
     default: undefined,
+    type: String,
   },
   target: {
-    type: String,
     default: undefined,
+    type: String,
+  },
+  to: {
+    default: undefined,
+    type: String,
   },
   typography: {
-    type: String,
     default: "text-1",
+    type: String,
+  },
+  underlined: {
+    default: false,
+    type: Boolean,
   },
 });
 

@@ -9,8 +9,8 @@ defineProps({
     type: Object as PropType<DeliveredImage>,
   },
   width: {
-    type: String,
     default: "100%",
+    type: String,
   },
 });
 

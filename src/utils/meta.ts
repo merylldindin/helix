@@ -71,7 +71,6 @@ export const extractHead = ({
   thumbnailAlt,
   noindex,
 }: HeadContent): HeadObject => ({
-  title,
   meta: [
     ...(title ? setMetaTitle(title) : []),
     ...(description ? setMetaDescription(description) : []),
@@ -79,4 +78,5 @@ export const extractHead = ({
     ...(thumbnailAlt ? setMetaThumbnailAlt(thumbnailAlt) : []),
     ...(noindex ? [{ content: "noindex", hid: "robots", name: "robots" }] : []),
   ],
+  title,
 });

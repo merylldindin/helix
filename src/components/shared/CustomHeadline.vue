@@ -2,21 +2,21 @@
 import { PropType } from "vue";
 
 defineProps({
-  text: {
-    type: String,
-    required: true,
-  },
   level: {
-    type: Number as PropType<1 | 2 | 3 | 4 | 5 | 6>,
     default: 1,
+    type: Number as PropType<1 | 2 | 3 | 4 | 5 | 6>,
+  },
+  text: {
+    required: true,
+    type: String,
   },
   typography: {
-    type: String,
     default: undefined,
+    type: String,
   },
   underlined: {
-    type: Boolean,
     default: false,
+    type: Boolean,
   },
 });
 </script>

@@ -18,8 +18,15 @@ export const CUSTOM_HEAD = {
     lang: "en",
   },
   link: [
-    { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-    { rel: "preconnect", href: DEFAULT_CDN_HOST },
+    {
+      href: "/favicon.ico",
+      rel: "icon",
+      type: "image/x-icon",
+    },
+    {
+      href: DEFAULT_CDN_HOST,
+      rel: "preconnect",
+    },
     {
       as: "font" as "font",
       crossorigin: "anonymous" as "anonymous",
@@ -29,7 +36,9 @@ export const CUSTOM_HEAD = {
     },
   ],
   meta: [
-    { charset: "utf-8" },
+    {
+      charset: "utf-8",
+    },
     {
       content: "Meryll Dindin - &copy; 2023 - All Rights Reserved",
       name: "copyright",
@@ -129,8 +138,15 @@ export const CUSTOM_ERROR_HEAD = {
     lang: "en",
   },
   link: [
-    { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-    { rel: "preconnect", href: DEFAULT_CDN_HOST },
+    {
+      href: "/favicon.ico",
+      rel: "icon",
+      type: "image/x-icon",
+    },
+    {
+      href: DEFAULT_CDN_HOST,
+      rel: "preconnect",
+    },
     {
       as: "font" as "font",
       crossorigin: "anonymous" as "anonymous",
