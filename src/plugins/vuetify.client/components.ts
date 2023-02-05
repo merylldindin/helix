@@ -2,6 +2,7 @@ import { VApp } from "vuetify/components/VApp";
 import { VAvatar } from "vuetify/components/VAvatar";
 import { VBtn } from "vuetify/components/VBtn";
 import { VCard, VCardActions, VCardText, VCardTitle } from "vuetify/components/VCard";
+import { VFooter } from "vuetify/components/VFooter";
 import { VCol, VContainer, VRow, VSpacer } from "vuetify/components/VGrid";
 import { VIcon } from "vuetify/components/VIcon";
 import { VImg } from "vuetify/components/VImg";
@@ -25,5 +26,6 @@ export const VuetifyComponents = {
   VCardTitle,
   VSpacer,
   VTooltip,
+  VFooter,
   VMain,
 };
