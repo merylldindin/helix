@@ -25,14 +25,14 @@ useHead(extractHead(props.text.head), { mode: "client" });
 <template>
   <CustomHeadline
     :level="1"
-    :class="smAndDown ? 'my-6' : 'my-8'"
+    class="legal-title"
     typography="headline-3"
     :text="text.title"
   />
 
   <CustomHeadline
     :level="2"
-    :class="smAndDown ? 'mb-6' : 'mb-8'"
+    class="legal-date"
     typography="headline-6"
     :text="text.date"
   />
@@ -55,3 +55,17 @@ useHead(extractHead(props.text.head), { mode: "client" });
     />
   </div>
 </template>
+
+<style lang="scss" scoped>
+.legal-title {
+  margin-bottom: 2rem;
+}
+
+.legal-date {
+  margin-bottom: 8rem;
+
+  @include sm-down {
+    margin-bottom: 4rem;
+  }
+}
+</style>

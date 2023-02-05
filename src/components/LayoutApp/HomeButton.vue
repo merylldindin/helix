@@ -49,7 +49,7 @@ const { smAndDown } = useDisplay();
   left: 0;
 
   @include sm-down {
-    top: 1.5rem;
+    top: 3.2rem;
     left: auto;
     right: 0;
     width: 80px;
@@ -68,7 +68,7 @@ const { smAndDown } = useDisplay();
   align-items: center;
 
   @include sm-down {
-    top: 1.5rem;
+    top: 3.2rem;
     left: auto;
     right: 0;
     width: 80px;

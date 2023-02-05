@@ -5,8 +5,6 @@ import { PAGE_CONTENT } from "@/content";
 
 <template>
   <NuxtLayout name="legal-layout">
-    <section>
-      <LegalText :text="PAGE_CONTENT.legal.termsOfUse" />
-    </section>
+    <LegalText :text="PAGE_CONTENT.legal.termsOfUse" />
   </NuxtLayout>
 </template>
