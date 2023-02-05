@@ -40,7 +40,6 @@ const { smAndDown } = useDisplay();
 .button-wrapper {
   position: fixed;
   width: 100%;
-  height: 100%;
 }
 
 .button-animation {
