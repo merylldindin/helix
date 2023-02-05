@@ -2,7 +2,7 @@
 import { PropType } from "vue";
 
 import { CustomLink } from "@/components";
-import { ExternalLink } from "@/types";
+import { ExternalLink, IconName } from "@/types";
 
 defineProps({
   description: {
@@ -25,7 +25,7 @@ defineProps({
     <template #activator="{ props }">
       <CustomLink v-bind="link">
         <div class="custom-shadow link-support">
-          <v-icon v-bind="props" size="large" :icon="$ICON[icon]" />
+          <v-icon v-bind="props" size="large" :icon="$ICON[icon as IconName]" />
         </div>
       </CustomLink>
     </template>

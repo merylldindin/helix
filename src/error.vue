@@ -12,9 +12,9 @@ const props = defineProps({
   },
 });
 
-const statusCode = computed(() => JSON.stringify(props.error.statusCode));
+const statusCode = computed(() => props.error.statusCode.toString());
 
-useHead(CUSTOM_ERROR_HEAD, { mode: "client" });
+useHead(CUSTOM_ERROR_HEAD);
 </script>
 
 <template>

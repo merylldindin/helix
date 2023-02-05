@@ -1,12 +1,7 @@
 <script lang="ts" setup>
-import { useHead } from "@unhead/vue";
-
 import { CookieBanner, HomeButton } from "@/components";
-import { CUSTOM_HEAD } from "@/content";
 
 import "vue3-lottie/dist/style.css";
-
-useHead(CUSTOM_HEAD, { mode: "client" });
 </script>
 
 <template>

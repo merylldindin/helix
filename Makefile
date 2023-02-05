@@ -19,7 +19,6 @@ build: ## Build the project
 	yarn build
 
 serve: ## Serve the project
-	make build
 	yarn serve
 
 deploy: ## Deploy the project
