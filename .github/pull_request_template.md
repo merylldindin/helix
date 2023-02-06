@@ -1,5 +1,3 @@
-## Ticket
-
 ## Description
 
 ## Guidelines
