@@ -22,7 +22,6 @@ serve: ## Serve the project
 	yarn serve
 
 deploy: ## Deploy the project
-	make build
 	poetry run sirtuin cloudfront-deploy .cloudfront -p personal
 
 help: ## Description of the Makefile commands

@@ -14,7 +14,7 @@ defineProps({
   },
   color: {
     default: "mine-shaft",
-    type: String as PropType<ColorName>,
+    type: String,
   },
   disabled: {
     default: false,
@@ -22,7 +22,7 @@ defineProps({
   },
   icon: {
     default: undefined,
-    type: String as PropType<IconName>,
+    type: String,
   },
   loading: {
     default: false,
@@ -60,7 +60,12 @@ defineProps({
       {{ prompt }}
     </span>
 
-    <v-icon v-else-if="icon" :size="size" :color="color" :icon="$ICON[icon]" />
+    <v-icon
+      v-else-if="icon"
+      :size="size"
+      :color="(color as ColorName)"
+      :icon="$ICON[icon as IconName]"
+    />
 
     <slot />
   </v-btn>

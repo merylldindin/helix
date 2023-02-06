@@ -19,6 +19,7 @@ interface InternalLink {
 }
 
 export interface ExternalLink {
+  ariaLabel: string;
   href: string;
   target: string;
   rel: string;

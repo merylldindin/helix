@@ -5,16 +5,22 @@ import { CUSTOM_HEAD } from "./src/content";
 export default defineNuxtConfig({
   app: {
     head: CUSTOM_HEAD,
-    pageTransition: { name: "page", mode: "out-in" },
-    layoutTransition: { name: "layout", mode: "out-in" },
+    layoutTransition: {
+      mode: "out-in",
+      name: "layout",
+    },
+    pageTransition: {
+      mode: "out-in",
+      name: "page",
+    },
   },
   build: {
     transpile: ["vuetify"],
   },
   components: [
     {
-      path: "~/components",
       extensions: [".vue"],
+      path: "~/components",
     },
   ],
   css: ["@/assets/styles/index.scss", "vuetify/lib/styles/main.sass", "vuetify/styles"],
@@ -33,17 +39,29 @@ export default defineNuxtConfig({
       siteUrl: process.env.NUXT_WEBSITE_URL,
     },
   },
+  sourcemap: {
+    client: true,
+    server: true,
+  },
   srcDir: "src/",
   ssr: false,
   telemetry: false,
   typescript: {
-    typeCheck: "build",
     shim: true,
+    typeCheck: "build",
   },
   vite: {
     build: {
       cssCodeSplit: true,
       manifest: true,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            lottie: ["vue3-lottie"],
+            vuetify: ["vuetify"],
+          },
+        },
+      },
     },
     css: {
       preprocessorOptions: {
@@ -60,10 +78,11 @@ export default defineNuxtConfig({
     },
   },
   webpack: {
+    cssSourceMap: true,
     filenames: {
       // @ts-ignore
       chunk: ({ isDev }: { isDev: boolean }) =>
-        isDev ? "[name].js" : "[contenthash].js",
+        isDev ? "[name].js" : "[id].[contenthash].js",
     },
     optimization: {
       splitChunks: {
