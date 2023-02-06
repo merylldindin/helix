@@ -1,0 +1,50 @@
+name: octagon
+
+on: [pull_request]
+
+jobs:
+  workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v3
+
+      - name: Cache Dependencies
+        uses: actions/cache@v3
+        with:
+          path: "./node_modules"
+          key: ${{ runner.OS }}-helix-${{ hashFiles('yarn.lock') }}
+
+      - name: Cache Cypress binary
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/Cypress
+          key: ${{ runner.OS }}-cypress-${{ hashFiles('yarn.lock') }}
+
+      - name: Install Dependencies
+        run: make install
+
+      - name: Run Prettier
+        run: yarn prettier
+
+      - name: Run ESLint
+        run: yarn eslint
+
+      - name: Run Stylelint
+        run: yarn stylelint
+
+      - name: Run Types
+        run: yarn types
+
+      - name: Bundle Application
+        run: make build
+
+      - name: Run Cypress
+        uses: cypress-io/github-action@v4
+        with:
+          browser: chrome
+          start: make start
+          wait-on: "http://localhost:3000/"
+          wait-on-timeout: 60
+          command: yarn cypress
