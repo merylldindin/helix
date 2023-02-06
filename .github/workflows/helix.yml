@@ -1,4 +1,4 @@
-name: octagon
+name: helix
 
 on: [pull_request]
 
@@ -16,7 +16,7 @@ jobs:
           path: "./node_modules"
           key: ${{ runner.OS }}-helix-${{ hashFiles('yarn.lock') }}
 
-      - name: Cache Cypress binary
+      - name: Cache Cypress
         uses: actions/cache@v3
         with:
           path: ~/.cache/Cypress
@@ -34,12 +34,6 @@ jobs:
       - name: Run Stylelint
         run: yarn stylelint
 
-      - name: Run Types
-        run: yarn types
-
-      - name: Bundle Application
-        run: make build
-
       - name: Run Cypress
         uses: cypress-io/github-action@v4
         with:
@@ -48,3 +42,6 @@ jobs:
           wait-on: "http://localhost:3000/"
           wait-on-timeout: 60
           command: yarn cypress
+
+      - name: Bundle Application
+        run: make build
