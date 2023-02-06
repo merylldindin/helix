@@ -12,3 +12,7 @@ node_modules
 .output
 .env
 *.log*
+
+# cypress
+cypress/screenshots
+cypress/videos

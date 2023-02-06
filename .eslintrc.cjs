@@ -15,7 +15,12 @@ module.exports = {
   rules: {
     "@typescript-eslint/explicit-member-accessibility": "error",
     "@typescript-eslint/no-shadow": "error",
-    "@typescript-eslint/no-unused-vars": ["error", { varsIgnorePattern: "^_" }],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        varsIgnorePattern: "^_",
+      },
+    ],
     "class-methods-use-this": "off",
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
@@ -24,16 +29,35 @@ module.exports = {
     "import/order": [
       "error",
       {
-        alphabetize: { caseInsensitive: false, order: "asc" },
+        alphabetize: {
+          caseInsensitive: false,
+          order: "asc",
+        },
         groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
         "newlines-between": "always",
-        pathGroups: [{ group: "internal", pattern: "@/**" }],
+        pathGroups: [
+          {
+            group: "internal",
+            pattern: "@/**",
+          },
+        ],
       },
     ],
     "import/prefer-default-export": "off",
-    "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        exceptAfterSingleLine: true,
+      },
+    ],
     "no-console": "off",
-    "no-param-reassign": ["error", { props: false }],
+    "no-param-reassign": [
+      "error",
+      {
+        props: false,
+      },
+    ],
     "no-restricted-exports": "off",
     "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
     "no-shadow": "off",
@@ -51,15 +75,23 @@ module.exports = {
         ignoreDeclarationSort: true,
       },
     ],
-    "sort-keys": ["error", "asc", { caseSensitive: true, minKeys: 2, natural: false }],
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        caseSensitive: true,
+        minKeys: 2,
+        natural: false,
+      },
+    ],
     "unicorn/prevent-abbreviations": [
       "error",
       {
-        ignore: ["i18n"],
+        ignore: ["i18n", "e2e"],
         replacements: {
-          ref: false,
-          props: false,
           params: false,
+          props: false,
+          ref: false,
         },
       },
     ],
