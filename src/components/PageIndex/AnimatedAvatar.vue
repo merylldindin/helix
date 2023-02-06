@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 import HotBubbles from "@/assets/animations/hot-bubbles.json";
-import { CustomImage } from "@/components";
+import { CustomImage } from "@/components/shared";
 import { PAGE_CONTENT } from "@/content";
 
 const transitionUp = ref<boolean>(false);

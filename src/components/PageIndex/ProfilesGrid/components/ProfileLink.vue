@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { PropType } from "vue";
 
-import { CustomLink } from "@/components";
+import { CustomLink } from "@/components/shared";
 import { ExternalLink, IconName } from "@/types";
 
 defineProps({

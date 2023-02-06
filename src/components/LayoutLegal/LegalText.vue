@@ -2,7 +2,7 @@
 import { useHead } from "@unhead/vue";
 import { useDisplay } from "vuetify";
 
-import { CustomHeadline, CustomText } from "@/components";
+import { CustomHeadline, CustomText } from "@/components/shared";
 import { extractHead } from "@/utils/meta";
 
 const props = defineProps({

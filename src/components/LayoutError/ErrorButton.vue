@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import ButtonWave from "@/assets/animations/button-wave.json";
-import { CustomLink } from "@/components";
+import { CustomLink } from "@/components/shared";
 </script>
 
 <template>

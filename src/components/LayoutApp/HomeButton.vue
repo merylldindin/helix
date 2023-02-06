@@ -4,7 +4,7 @@ import { useRoute } from "vue-router";
 import { useDisplay } from "vuetify";
 
 import ButtonClick from "@/assets/animations/button-click.json";
-import { CustomLink } from "@/components";
+import { CustomLink } from "@/components/shared";
 
 const route = useRoute();
 

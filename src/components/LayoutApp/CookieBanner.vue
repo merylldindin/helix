@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useDisplay } from "vuetify";
 
-import { CustomButton, CustomText } from "@/components";
+import { CustomButton, CustomText } from "@/components/shared";
 import { LAYOUT_CONTENT } from "@/content";
 
 import { useCookie } from "#app";

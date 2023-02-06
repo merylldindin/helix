@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { CustomLink } from "@/components";
+import { CustomLink } from "@/components/shared";
 import { LAYOUT_CONTENT } from "@/content";
 </script>
 
