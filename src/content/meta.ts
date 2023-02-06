@@ -1,4 +1,4 @@
-const DEFAULT_TITLE = "Helix";
+const DEFAULT_TITLE = "Meryll Dindin - Serial Entrepreneur, Convinced Transhumanist";
 
 const DEFAULT_COLOR = "#242424";
 
@@ -40,7 +40,7 @@ export const CUSTOM_HEAD = {
       charset: "utf-8",
     },
     {
-      content: "Meryll Dindin - &copy; 2023 - All Rights Reserved",
+      content: "&copy; 2023 - Meryll Dindin - All Rights Reserved",
       name: "copyright",
     },
     {
@@ -121,10 +121,9 @@ export const CUSTOM_HEAD = {
     },
   ],
   title: DEFAULT_TITLE,
-  titleTemplate: "%s - Meryll Dindin",
 };
 
-const DEFAULT_ERROR_TITLE = "Something Went Wrong";
+const DEFAULT_ERROR_TITLE = "Something Went Wrong - Meryll Dindin";
 
 const DEFAULT_ERROR_DESCRIPTION =
   "Oops! Something went wrong. We're working to fix it. Try again later.";
@@ -158,7 +157,7 @@ export const CUSTOM_ERROR_HEAD = {
   meta: [
     { charset: "utf-8" },
     {
-      content: "Meryll Dindin - &copy; 2023 - All Rights Reserved",
+      content: "&copy; 2023 - Meryll Dindin - All Rights Reserved",
       name: "copyright",
     },
     {
@@ -239,5 +238,4 @@ export const CUSTOM_ERROR_HEAD = {
     },
   ],
   title: DEFAULT_ERROR_TITLE,
-  titleTemplate: "%s - Meryll Dindin",
 };
