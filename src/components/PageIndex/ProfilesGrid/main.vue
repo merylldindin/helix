@@ -10,8 +10,8 @@ import { ProfileLink } from "./components";
       <v-col
         v-for="(profile, index) in PAGE_CONTENT.index.profiles"
         :key="index"
-        cols="4"
         class="d-flex justify-center"
+        cols="4"
       >
         <ProfileLink
           :description="profile.description"

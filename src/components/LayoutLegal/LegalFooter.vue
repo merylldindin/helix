@@ -6,7 +6,7 @@ import { LAYOUT_CONTENT } from "@/content";
 <template>
   <v-footer class="pa-0">
     <v-container>
-      <v-row justify="center" class="text-center legal-footer">
+      <v-row class="text-center legal-footer" justify="center">
         <v-col
           v-for="(link, index) in LAYOUT_CONTENT.legalFooter.links"
           :key="index"
@@ -18,7 +18,7 @@ import { LAYOUT_CONTENT } from "@/content";
 
         <v-spacer />
 
-        <v-col cols="12" sm="auto" class="text-center legal-copyright">
+        <v-col class="text-center legal-copyright" cols="12" sm="auto">
           <span class="text-1 text-mine-shaft">
             {{ LAYOUT_CONTENT.legalFooter.copyright }}
           </span>

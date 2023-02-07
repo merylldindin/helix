@@ -49,11 +49,11 @@ defineProps({
 
 <template>
   <v-btn
-    :icon="icon"
+    :aria-label="ariaLabel"
     :block="block"
+    :icon="icon"
     :loading="loading"
     :variant="variant"
-    :aria-label="ariaLabel"
     @click="onClick"
   >
     <span v-if="prompt" class="text-mine-shaft">
@@ -62,9 +62,9 @@ defineProps({
 
     <v-icon
       v-else-if="icon"
-      :size="size"
       :color="(color as ColorName)"
       :icon="$ICON[icon as IconName]"
+      :size="size"
     />
 
     <slot />

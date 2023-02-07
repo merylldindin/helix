@@ -24,17 +24,17 @@ useHead(extractHead(props.text.head), { mode: "client" });
 
 <template>
   <CustomHeadline
-    :level="1"
     class="legal-title"
-    typography="headline-3"
+    :level="1"
     :text="text.title"
+    typography="headline-3"
   />
 
   <CustomHeadline
-    :level="2"
     class="legal-date"
-    typography="headline-6"
+    :level="2"
     :text="text.date"
+    typography="headline-6"
   />
 
   <div v-for="(chunk, index) in text.content" :key="index">
@@ -42,16 +42,16 @@ useHead(extractHead(props.text.head), { mode: "client" });
       v-if="chunk.type === LegalTextType.SUBTITLE"
       :class="smAndDown ? 'mb-6' : 'mb-8'"
       :level="3"
-      underlined
-      typography="headline-5"
       :text="(chunk.content as string)"
+      typography="headline-5"
+      underlined
     />
 
     <CustomText
       v-else
-      typography="text-1"
-      :text="(chunk.content as object)"
       :class="smAndDown ? 'mb-4' : 'mb-6'"
+      :text="(chunk.content as object)"
+      typography="text-1"
     />
   </div>
 </template>

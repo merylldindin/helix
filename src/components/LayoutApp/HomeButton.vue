@@ -19,18 +19,18 @@ const { smAndDown } = useDisplay();
   <div v-show="!isHomePage" class="button-wrapper">
     <client-only>
       <Vue3Lottie
+        :animation-data="ButtonClick"
         class="button-animation"
         :width="smAndDown ? '80px' : '100px'"
-        :animation-data="ButtonClick"
       />
     </client-only>
 
-    <CustomLink to="/" class="button-action">
+    <CustomLink class="button-action" to="/">
       <v-icon
-        :size="smAndDown ? '3rem' : '4rem'"
         class="button-icon"
-        :icon="$ICON.HOME_CIRCLE_OUTLINE"
         :color="$COLOR.FOAM"
+        :icon="$ICON.HOME_CIRCLE_OUTLINE"
+        :size="smAndDown ? '3rem' : '4rem'"
       />
     </CustomLink>
   </div>

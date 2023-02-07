@@ -21,11 +21,11 @@ defineProps({
 </script>
 
 <template>
-  <v-tooltip :text="description" location="top" :aria-label="link.ariaLabel">
+  <v-tooltip :aria-label="link.ariaLabel" location="top" :text="description">
     <template #activator="{ props }">
       <CustomLink v-bind="link">
         <div class="custom-shadow link-support">
-          <v-icon v-bind="props" size="large" :icon="$ICON[icon as IconName]" />
+          <v-icon v-bind="props" :icon="$ICON[icon as IconName]" size="large" />
         </div>
       </CustomLink>
     </template>

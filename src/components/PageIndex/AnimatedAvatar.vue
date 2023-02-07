@@ -14,7 +14,7 @@ setTimeout(() => {
 <template>
   <div class="animation-wrapper" :class="{ 'animation-transition': transitionUp }">
     <client-only class="animation">
-      <Vue3Lottie :width="'min(42rem, 52vh, 100%)'" :animation-data="HotBubbles" />
+      <Vue3Lottie :animation-data="HotBubbles" :width="'min(42rem, 52vh, 100%)'" />
     </client-only>
 
     <v-avatar class="avatar custom-shadow" :size="'min(25rem, 28vh, 100%)'">

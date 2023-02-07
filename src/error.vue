@@ -22,12 +22,12 @@ useHead(CUSTOM_ERROR_HEAD);
     <v-main class="error-wrapper">
       <v-container class="error-container">
         <v-row>
-          <v-col cols="12" class="error-content">
+          <v-col class="error-content" cols="12">
             <CustomHeadline
-              :level="1"
-              typography="headline-1 text-mine-shaft"
-              :text="statusCode"
               class="text-center mb-8"
+              :level="1"
+              :text="statusCode"
+              typography="headline-1 text-mine-shaft"
             />
 
             <ErrorButton />

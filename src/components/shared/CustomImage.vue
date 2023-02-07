@@ -23,10 +23,10 @@ onMounted(() => {
 <template>
   <template v-if="isShown">
     <v-img
-      :eager="image.eager"
-      :src="image.source"
-      :lazy-src="image.lazySource"
       :alt="image.altText"
+      :eager="image.eager"
+      :lazy-src="image.lazySource"
+      :src="image.source"
       :width="width"
     />
   </template>
