@@ -6256,7 +6256,7 @@ __metadata:
     serve: 14.2.0
     stylelint: 15.0.0
     stylelint-config-prettier: 9.0.4
-    stylelint-config-recommended-scss: 8.0.0
+    stylelint-config-recommended-scss: 9.0.0
     stylelint-config-recommended-vue: 1.4.0
     stylelint-config-standard-scss: 6.1.0
     stylelint-prettier: 2.0.0
@@ -10447,7 +10447,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-config-recommended-scss@npm:8.0.0, stylelint-config-recommended-scss@npm:^8.0.0":
+"stylelint-config-recommended-scss@npm:9.0.0":
+  version: 9.0.0
+  resolution: "stylelint-config-recommended-scss@npm:9.0.0"
+  dependencies:
+    postcss-scss: ^4.0.2
+    stylelint-config-recommended: ^10.0.1
+    stylelint-scss: ^4.4.0
+  peerDependencies:
+    postcss: ^8.3.3
+    stylelint: ^15.0.0
+  peerDependenciesMeta:
+    postcss:
+      optional: true
+  checksum: 19310800e96d7e4807f0211f6f11067cde67dcf08463268309858b925f4958e7bc2241108b282b9b24e1b4ac71ca2a31a51d3416c2db03ddec7a98adb9336b0a
+  languageName: node
+  linkType: hard
+
+"stylelint-config-recommended-scss@npm:^8.0.0":
   version: 8.0.0
   resolution: "stylelint-config-recommended-scss@npm:8.0.0"
   dependencies:
@@ -10484,6 +10501,15 @@ __metadata:
   peerDependencies:
     stylelint: ^14.10.0
   checksum: 6d94582cb6ef0ba7d0181f0ff500fb12092e465915730d0a7f6b6e8d16e8c920658f18bb2c670115cd177f5d3b481609ff3a91bcee083d546ae31d94fdc03261
+  languageName: node
+  linkType: hard
+
+"stylelint-config-recommended@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "stylelint-config-recommended@npm:10.0.1"
+  peerDependencies:
+    stylelint: ^15.0.0
+  checksum: 585766be57c2f22d49f76f27b9198a0e1ec812ea56263f082cfa0aea05c50ede68250da5a50ae4d2eb19129c973ca033a6cad9a7535d2f81c78b4caf1e2eea0f
   languageName: node
   linkType: hard
 
@@ -10538,6 +10564,21 @@ __metadata:
   peerDependencies:
     stylelint: ^14.5.1
   checksum: fdf6119add2a3ccbf79f3a928acd7f90fc0f77fc45e5cf6f67d97419fe1a39dc6feec56307e1c45e0ec5ae677b0f18f83ce70e644df52aa6600706cf3551d0db
+  languageName: node
+  linkType: hard
+
+"stylelint-scss@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "stylelint-scss@npm:4.4.0"
+  dependencies:
+    lodash: ^4.17.21
+    postcss-media-query-parser: ^0.2.3
+    postcss-resolve-nested-selector: ^0.1.1
+    postcss-selector-parser: ^6.0.6
+    postcss-value-parser: ^4.1.0
+  peerDependencies:
+    stylelint: ^14.5.1 || ^15.0.0
+  checksum: f206bb9014d59af5ccc16f7c0d81bc9126c908f09f3aba296695a200f31c354386d6e2d6177821af761bcfc10fe4be41f3d00d6b2057561710b06d0c30407cc0
   languageName: node
   linkType: hard
 
