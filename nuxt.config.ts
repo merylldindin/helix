@@ -1,10 +1,7 @@
 import { defineNuxtConfig } from "nuxt/config";
 
-import { CUSTOM_HEAD } from "./src/content";
-
 export default defineNuxtConfig({
   app: {
-    head: CUSTOM_HEAD,
     layoutTransition: {
       mode: "out-in",
       name: "layout",
@@ -44,7 +41,7 @@ export default defineNuxtConfig({
     server: true,
   },
   srcDir: "src/",
-  ssr: false,
+  ssr: true,
   telemetry: false,
   typescript: {
     shim: true,
@@ -57,8 +54,8 @@ export default defineNuxtConfig({
       rollupOptions: {
         output: {
           manualChunks: {
-            lottie: ["vue3-lottie"],
-            vuetify: ["vuetify"],
+            // TODO Rollup monitor
+            // lottie: ["vue3-lottie"],
           },
         },
       },
