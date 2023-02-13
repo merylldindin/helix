@@ -5,13 +5,14 @@ import { AnimatedAvatar, ProfilesGrid } from "@/components";
 import { PAGE_CONTENT } from "@/content";
 
 const showProfiles = ref<boolean>(false);
+
 setTimeout(() => {
   showProfiles.value = true;
 }, 1250);
 </script>
 
 <template>
-  <NuxtLayout name="default-layout">
+  <NuxtLayout name="global">
     <section class="section-wrapper">
       <AnimatedAvatar />
 
@@ -49,11 +50,11 @@ setTimeout(() => {
   transition: all 1.5s ease-in-out;
 
   @include md-down {
-    top: 32rem;
+    top: 35rem;
   }
 
   @include sm-down {
-    top: 30rem;
+    top: 36rem;
   }
 }
 </style>

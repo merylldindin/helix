@@ -3,7 +3,7 @@ const DEFAULT_TITLE = "Meryll Dindin - Serial Entrepreneur, Convinced Transhuman
 const DEFAULT_COLOR = "#242424";
 
 const DEFAULT_DESCRIPTION =
-  "Serial entrepreneur. Shaping the future of healthcare and artificial intelligence. Having a passion for crazy projects. Shaping the future globally.";
+  "Serial entrepreneur. Shaping the future of healthcare and artificial intelligence. Having a passion for crazy projects.";
 
 const DEFAULT_CDN_HOST = "https://cdn.merylldindin.com";
 

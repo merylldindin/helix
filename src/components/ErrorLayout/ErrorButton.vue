@@ -5,9 +5,9 @@ import { CustomLink } from "@/components/shared";
 
 <template>
   <div class="button-wrapper">
-    <client-only class="button-animation">
+    <div class="button-animation">
       <Vue3Lottie :animation-data="ButtonWave" :width="'200px'" />
-    </client-only>
+    </div>
 
     <CustomLink class="button-action headline-6 text-mine-shaft" prompt="HOME" to="/" />
   </div>
@@ -16,14 +16,17 @@ import { CustomLink } from "@/components/shared";
 <style lang="scss" scoped>
 .button-wrapper {
   position: relative;
+  width: 200px;
 }
 
 .button-animation {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
+  height: fit-content;
   margin: auto;
 }
 

@@ -1,10 +1,10 @@
 // layouts
-export * from "./LayoutApp";
-export * from "./LayoutError";
-export * from "./LayoutLegal";
+export * from "./GlobalLayout";
+export * from "./ErrorLayout";
+export * from "./LegalLayout";
 
 // pages
-export * from "./PageIndex";
+export * from "./IndexPage";
 
 // shared
 export * from "./shared";

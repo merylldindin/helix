@@ -4,7 +4,7 @@ import { PAGE_CONTENT } from "@/content";
 </script>
 
 <template>
-  <NuxtLayout name="legal-layout">
+  <NuxtLayout name="legal">
     <LegalText :text="PAGE_CONTENT.legal.termsOfUse" />
   </NuxtLayout>
 </template>

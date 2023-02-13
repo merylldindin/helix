@@ -114,11 +114,6 @@ module.exports = {
         ],
       },
     ],
-    "vue/multi-word-component-names": [
-      "error",
-      {
-        ignores: ["index", "main", "default", "error"],
-      },
-    ],
+    "vue/multi-word-component-names": "off",
   },
 };

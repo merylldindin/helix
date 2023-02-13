@@ -21,6 +21,9 @@ build: ## Build the project
 serve: ## Serve the project
 	yarn serve
 
+unlighthouse: ## Run unlighthouse
+	npx unlighthouse --site http://localhost:3000
+
 deploy: ## Deploy the project
 	poetry run sirtuin cloudfront-deploy .cloudfront -p personal
 

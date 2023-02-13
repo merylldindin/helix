@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomButton, CustomText } from "@/components/shared";
@@ -14,19 +15,18 @@ isTracking.value = isTracking.value || false;
 const dismissBanner = () => {
   isTracking.value = true;
 };
+
+const cookieBannerText = computed(() => {
+  return xs.value
+    ? LAYOUT_CONTENT.cookieBanner.disclaimer.mobile
+    : LAYOUT_CONTENT.cookieBanner.disclaimer.desktop;
+});
 </script>
 
 <template>
   <v-slide-y-transition>
     <v-card v-if="!isTracking" class="cookie-banner custom-shadow">
-      <CustomText
-        :text="
-          xs
-            ? LAYOUT_CONTENT.cookieBanner.disclaimer.mobile
-            : LAYOUT_CONTENT.cookieBanner.disclaimer.desktop
-        "
-        typography="text-1 text-mine-shaft"
-      />
+      <CustomText :text="cookieBannerText" typography="text-1 text-mine-shaft" />
 
       <v-spacer />
 
