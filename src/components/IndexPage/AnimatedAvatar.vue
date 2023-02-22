@@ -14,11 +14,13 @@ setTimeout(() => {
 <template>
   <div class="animation-wrapper" :class="{ 'animation-transition': transitionUp }">
     <div class="animation">
-      <Vue3Lottie :animation-data="HotBubbles" :width="'min(42rem, 52vh, 100%)'" />
+      <client-only>
+        <Vue3Lottie :animation-data="HotBubbles" :width="'min(42rem, 52vh, 100%)'" />
+      </client-only>
     </div>
 
     <v-avatar class="avatar custom-shadow" :size="'min(25rem, 28vh, 100%)'">
-      <CustomImage :image="PAGE_CONTENT.index.avatar" />
+      <CustomImage :image="PAGE_CONTENT.landingPage.avatar" />
     </v-avatar>
   </div>
 </template>

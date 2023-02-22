@@ -33,6 +33,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         mdi,
       },
     },
+    ssr: true,
     theme: {
       defaultTheme: "CustomTheme",
       themes: {

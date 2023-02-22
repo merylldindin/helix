@@ -6,7 +6,9 @@ import { CustomLink } from "@/components/shared";
 <template>
   <div class="button-wrapper">
     <div class="button-animation">
-      <Vue3Lottie :animation-data="ButtonWave" :width="'200px'" />
+      <client-only>
+        <Vue3Lottie :animation-data="ButtonWave" :width="'200px'" />
+      </client-only>
     </div>
 
     <CustomLink class="button-action headline-6 text-mine-shaft" prompt="HOME" to="/" />

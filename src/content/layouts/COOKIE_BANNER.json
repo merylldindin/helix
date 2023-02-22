@@ -1,0 +1,46 @@
+{
+  "button": {
+    "ariaLabel": "Accept our privacy policy",
+    "color": "mine-shaft",
+    "icon": "COOKIE_CHECK"
+  },
+  "disclaimer": {
+    "mobile": [
+      {
+        "type": "p",
+        "content": "By using this site, you agree to the "
+      },
+      {
+        "type": "a",
+        "content": "use of cookies",
+        "props": {
+          "ariaLabel": "Learn more about cookies",
+          "to": "/legal/privacy-policy",
+          "underlined": true
+        }
+      },
+      {
+        "type": "p",
+        "content": "."
+      }
+    ],
+    "desktop": [
+      {
+        "type": "p",
+        "content": "This website uses cookies to improve user experience and to analyze traffic. By continuing to use this site, you agree to the "
+      },
+      {
+        "type": "a",
+        "content": "use of cookies",
+        "props": {
+          "to": "/legal/privacy-policy",
+          "underlined": true
+        }
+      },
+      {
+        "type": "p",
+        "content": "."
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed } from "vue";
 
-const props = defineProps({
+const cProps = defineProps({
   ariaLabel: {
     default: undefined,
     type: String,
@@ -37,14 +37,14 @@ const props = defineProps({
 });
 
 const isExternal = computed(() => {
-  return props.href !== undefined;
+  return cProps.href !== undefined;
 });
 </script>
 
 <template>
   <a
     v-if="isExternal"
-    v-bind="props"
+    v-bind="cProps"
     :class="[
       typography,
       underlined ? 'text-decoration-underline' : 'text-decoration-none',
@@ -59,7 +59,7 @@ const isExternal = computed(() => {
 
   <nuxt-link
     v-else
-    v-bind="props"
+    v-bind="cProps"
     :class="[
       typography,
       underlined ? 'text-decoration-underline' : 'text-decoration-none',

@@ -19,7 +19,7 @@ setTimeout(() => {
       <v-slide-y-transition>
         <div v-show="showProfiles" class="profile-title">
           <h1 class="headline-2">
-            {{ PAGE_CONTENT.index.headline }}
+            {{ PAGE_CONTENT.landingPage.headline }}
           </h1>
 
           <ProfilesGrid />

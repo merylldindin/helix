@@ -3,40 +3,39 @@ import { useHead } from "@unhead/vue";
 import { computed } from "vue";
 
 import { CustomHeadline, ErrorButton } from "@/components";
-import { CUSTOM_ERROR_HEAD } from "@/content";
+import { LAYOUT_CONTENT } from "@/content";
+import { extractHead } from "@/utils/meta";
 
-const props = defineProps({
+useHead(extractHead(LAYOUT_CONTENT.errorPage.head), { mode: "client" });
+
+const cProps = defineProps({
   error: {
     required: true,
     type: Object,
   },
 });
 
-const statusCode = computed(() => props.error.statusCode.toString());
-
-useHead(CUSTOM_ERROR_HEAD);
+const statusCode = computed(() => cProps.error.statusCode.toString());
 </script>
 
 <template>
   <v-app class="error-background">
-    <client-only>
-      <v-main class="error-wrapper">
-        <v-container class="error-container">
-          <v-row>
-            <v-col class="error-content" cols="12">
-              <CustomHeadline
-                class="text-center mb-8"
-                :level="1"
-                :text="statusCode"
-                typography="headline-1 text-mine-shaft"
-              />
+    <v-main class="error-wrapper">
+      <v-container class="error-container">
+        <v-row>
+          <v-col class="error-content" cols="12">
+            <CustomHeadline
+              class="text-center mb-8"
+              :level="1"
+              :text="statusCode"
+              typography="headline-1 text-mine-shaft"
+            />
 
-              <ErrorButton />
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-main>
-    </client-only>
+            <ErrorButton />
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
   </v-app>
 </template>
 

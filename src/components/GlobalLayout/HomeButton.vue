@@ -17,11 +17,13 @@ const { smAndDown } = useDisplay();
 
 <template>
   <div v-show="!isHomePage" class="button-wrapper">
-    <Vue3Lottie
-      :animation-data="ButtonClick"
-      class="button-animation"
-      :width="smAndDown ? '80px' : '100px'"
-    />
+    <client-only>
+      <Vue3Lottie
+        :animation-data="ButtonClick"
+        class="button-animation"
+        :width="smAndDown ? '80px' : '100px'"
+      />
+    </client-only>
 
     <CustomLink class="button-action" to="/">
       <v-icon

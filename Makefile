@@ -1,5 +1,6 @@
 clean: ## Clean the project
-	rm -rf .nuxt/ .output/ dist dist/ node_modules/
+	yarn clean
+	yarn prepare
 
 setup: ## Install developper experience
 	yarn setup

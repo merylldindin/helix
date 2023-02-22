@@ -1,11 +1,9 @@
 <script lang="ts" setup>
-import { useHead } from "@unhead/vue";
 import { useDisplay } from "vuetify";
 
 import { CustomHeadline, CustomText } from "@/components/shared";
-import { extractHead } from "@/utils/meta";
 
-const props = defineProps({
+defineProps({
   text: {
     required: true,
     type: Object,
@@ -18,8 +16,6 @@ enum LegalTextType {
 }
 
 const { smAndDown } = useDisplay();
-
-useHead(extractHead(props.text.head), { mode: "client" });
 </script>
 
 <template>

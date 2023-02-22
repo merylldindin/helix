@@ -1,7 +1,10 @@
 import { defineNuxtConfig } from "nuxt/config";
 
+import { CUSTOM_HEAD, DEFAULT_DESCRIPTION, DEFAULT_SITE_NAME } from "./src/content";
+
 export default defineNuxtConfig({
   app: {
+    head: CUSTOM_HEAD,
     layoutTransition: {
       mode: "out-in",
       name: "layout",
@@ -22,9 +25,10 @@ export default defineNuxtConfig({
   ],
   css: ["@/assets/styles/index.scss", "vuetify/lib/styles/main.sass", "vuetify/styles"],
   experimental: {
+    externalVue: true,
     payloadExtraction: false,
   },
-  modules: ["nuxt-simple-sitemap"],
+  extends: ["nuxt-seo-kit"],
   nitro: {
     minify: true,
     prerender: {
@@ -33,19 +37,23 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
+      siteDescription: DEFAULT_DESCRIPTION,
+      siteName: DEFAULT_SITE_NAME,
       siteUrl: process.env.NUXT_WEBSITE_URL,
+      titleSeparator: "|",
+      trailingSlash: false,
     },
   },
   sourcemap: {
     client: true,
-    server: true,
+    server: false,
   },
   srcDir: "src/",
   ssr: true,
   telemetry: false,
   typescript: {
     shim: true,
-    typeCheck: "build",
+    typeCheck: false,
   },
   vite: {
     build: {
@@ -54,11 +62,12 @@ export default defineNuxtConfig({
       rollupOptions: {
         output: {
           manualChunks: {
-            // TODO Rollup monitor
-            // lottie: ["vue3-lottie"],
+            lottie: ["vue3-lottie"],
+            vuetify: ["vuetify"],
           },
         },
       },
+      sourcemap: "hidden",
     },
     css: {
       preprocessorOptions: {
@@ -71,20 +80,7 @@ export default defineNuxtConfig({
       "process.env.DEBUG": false,
     },
     ssr: {
-      noExternal: ["vuetify"],
-    },
-  },
-  webpack: {
-    cssSourceMap: true,
-    filenames: {
-      // @ts-ignore
-      chunk: ({ isDev }: { isDev: boolean }) =>
-        isDev ? "[name].js" : "[id].[contenthash].js",
-    },
-    optimization: {
-      splitChunks: {
-        chunks: "all",
-      },
+      noExternal: ["vue3-lottie"],
     },
   },
 });

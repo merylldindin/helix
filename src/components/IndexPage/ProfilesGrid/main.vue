@@ -8,7 +8,7 @@ import { ProfileLink } from "./components";
   <v-container class="profile-wrapper">
     <v-row class="justify-center">
       <v-col
-        v-for="(profile, index) in PAGE_CONTENT.index.profiles"
+        v-for="(profile, index) in PAGE_CONTENT.landingPage.profiles"
         :key="index"
         class="d-flex justify-center"
         cols="4"
