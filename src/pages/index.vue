@@ -2,20 +2,14 @@
 import { ref } from "vue";
 
 import { AnimatedAvatar, ProfilesGrid } from "@/components";
-import { DEFAULT_IDENTITY, PAGE_CONTENT } from "@/content";
+import { PAGE_CONTENT } from "@/content";
 import { extractHead } from "@/utils/meta";
 
-import {
-  definePerson,
-  defineWebPage,
-  defineWebSite,
-  useSchemaOrg,
-  useSeoMeta,
-} from "#imports";
+import { defineWebPage, useSchemaOrg, useSeoMeta } from "#imports";
 
 useSeoMeta(extractHead(PAGE_CONTENT.landingPage.head));
 
-useSchemaOrg([definePerson(DEFAULT_IDENTITY), defineWebSite(), defineWebPage()]);
+useSchemaOrg(defineWebPage());
 
 const showProfiles = ref<boolean>(false);
 
