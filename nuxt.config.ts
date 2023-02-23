@@ -40,6 +40,7 @@ export default defineNuxtConfig({
     "nuxt-unhead",
   ],
   nitro: {
+    minify: true,
     prerender: {
       crawlLinks: true,
     },
