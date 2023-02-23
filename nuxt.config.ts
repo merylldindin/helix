@@ -67,7 +67,7 @@ export default defineNuxtConfig({
   telemetry: false,
   typescript: {
     shim: true,
-    typeCheck: false,
+    typeCheck: "build",
   },
   vite: {
     build: {
