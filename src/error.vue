@@ -1,12 +1,13 @@
 <script lang="ts" setup>
-import { useHead } from "@unhead/vue";
 import { computed } from "vue";
 
 import { CustomHeadline, ErrorButton } from "@/components";
 import { LAYOUT_CONTENT } from "@/content";
 import { extractHead } from "@/utils/meta";
 
-useHead(extractHead(LAYOUT_CONTENT.errorPage.head), { mode: "client" });
+import { useSeoMeta } from "#imports";
+
+useSeoMeta(extractHead(LAYOUT_CONTENT.errorPage.head));
 
 const cProps = defineProps({
   error: {

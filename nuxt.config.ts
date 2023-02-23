@@ -1,6 +1,7 @@
+import UnheadVite from "@unhead/addons/vite";
 import { defineNuxtConfig } from "nuxt/config";
 
-import { CUSTOM_HEAD, DEFAULT_DESCRIPTION, DEFAULT_SITE_NAME } from "./src/content";
+import { CUSTOM_HEAD, DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "./src/content";
 
 export default defineNuxtConfig({
   app: {
@@ -23,29 +24,42 @@ export default defineNuxtConfig({
       path: "~/components",
     },
   ],
-  css: ["@/assets/styles/index.scss", "vuetify/lib/styles/main.sass", "vuetify/styles"],
+  css: [
+    "@/assets/styles/index.scss",
+    "vue3-lottie/dist/style.css",
+    "vuetify/lib/styles/main.sass",
+  ],
   experimental: {
     externalVue: true,
     payloadExtraction: false,
   },
-  extends: ["nuxt-seo-kit"],
+  modules: [
+    "nuxt-link-checker",
+    "nuxt-schema-org",
+    "nuxt-simple-sitemap",
+    "nuxt-unhead",
+  ],
   nitro: {
-    minify: true,
     prerender: {
       crawlLinks: true,
+    },
+  },
+  postcss: {
+    plugins: {
+      cssnano: true,
     },
   },
   runtimeConfig: {
     public: {
       siteDescription: DEFAULT_DESCRIPTION,
-      siteName: DEFAULT_SITE_NAME,
+      siteName: DEFAULT_TITLE,
       siteUrl: process.env.NUXT_WEBSITE_URL,
       titleSeparator: "|",
       trailingSlash: false,
     },
   },
   sourcemap: {
-    client: true,
+    client: false,
     server: false,
   },
   srcDir: "src/",
@@ -59,8 +73,10 @@ export default defineNuxtConfig({
     build: {
       cssCodeSplit: true,
       manifest: true,
+      minify: true,
       rollupOptions: {
         output: {
+          compact: true,
           manualChunks: {
             lottie: ["vue3-lottie"],
             vuetify: ["vuetify"],
@@ -79,6 +95,7 @@ export default defineNuxtConfig({
     define: {
       "process.env.DEBUG": false,
     },
+    plugins: [UnheadVite()],
     ssr: {
       noExternal: ["vue3-lottie"],
     },

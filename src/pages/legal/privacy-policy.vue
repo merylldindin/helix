@@ -1,16 +1,11 @@
 <script lang="ts" setup>
 import { LegalText } from "@/components";
 import { PAGE_CONTENT } from "@/content";
+import { extractHead } from "@/utils/meta";
 
-import { definePageMeta } from "#imports";
-// import { extractHead } from "@/utils/meta";
+import { useSeoMeta } from "#imports";
 
-// useHead(extractHead(PAGE_CONTENT.legal.privacyPolicy.head), { mode: "client" });
-
-definePageMeta({
-  description: "Welcome to my website",
-  title: "Privacy Policy",
-});
+useSeoMeta(extractHead(PAGE_CONTENT.legal.privacyPolicy.head));
 </script>
 
 <template>

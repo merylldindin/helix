@@ -1,4 +1,4 @@
-import { HeadObject } from "@vueuse/head";
+import { MetaFlatInput } from "zhead";
 
 export type HeadContent = {
   title?: string;
@@ -8,61 +8,28 @@ export type HeadContent = {
   noindex?: boolean;
 };
 
-const setMetaTitle = (title: string) => [
-  {
-    content: title,
-    name: "title",
-  },
-  {
-    content: title,
-    property: "og:title",
-  },
-  {
-    content: title,
-    name: "twitter:title",
-  },
-];
+const setMetaTitle = (title: string) => ({
+  ogTitle: title,
+  title,
+  twitterTitle: title,
+});
 
-const setMetaDescription = (description: string) => [
-  {
-    content: description,
-    name: "description",
-  },
-  {
-    content: description,
-    property: "og:description",
-  },
-  {
-    content: description,
-    name: "twitter:description",
-  },
-];
+const setMetaDescription = (description: string) => ({
+  description,
+  ogDescription: description,
+  twitterDescription: description,
+});
 
-const setMetaThumbnail = (thumbnail: string) => [
-  {
-    content: thumbnail,
-    name: "thumbnail",
-  },
-  {
-    content: thumbnail,
-    property: "og:image",
-  },
-  {
-    content: thumbnail,
-    name: "twitter:image",
-  },
-];
+const setMetaThumbnail = (thumbnail: string) => ({
+  ogImage: thumbnail,
+  thumbnail,
+  twitterImage: thumbnail,
+});
 
-const setMetaThumbnailAlt = (thumbnailAlt: string) => [
-  {
-    content: thumbnailAlt,
-    property: "og:image:alt",
-  },
-  {
-    content: thumbnailAlt,
-    property: "twitter:image:alt",
-  },
-];
+const setMetaThumbnailAlt = (thumbnailAlt: string) => ({
+  ogImageAlt: thumbnailAlt,
+  twitterImageAlt: thumbnailAlt,
+});
 
 export const extractHead = ({
   title,
@@ -70,13 +37,18 @@ export const extractHead = ({
   thumbnail,
   thumbnailAlt,
   noindex,
-}: HeadContent): HeadObject => ({
-  meta: [
-    ...(title ? setMetaTitle(title) : []),
-    ...(description ? setMetaDescription(description) : []),
-    ...(thumbnail ? setMetaThumbnail(thumbnail) : []),
-    ...(thumbnailAlt ? setMetaThumbnailAlt(thumbnailAlt) : []),
-    ...(noindex ? [{ content: "noindex", hid: "robots", name: "robots" }] : []),
-  ],
-  title,
-});
+}: HeadContent): MetaFlatInput => {
+  const metaTitle = title ? setMetaTitle(title) : {};
+  const metaDescription = description ? setMetaDescription(description) : {};
+  const metaThumbnail = thumbnail ? setMetaThumbnail(thumbnail) : {};
+  const metaThumbnailAlt = thumbnailAlt ? setMetaThumbnailAlt(thumbnailAlt) : {};
+  const metaRobots = noindex ? { robots: { all: false } } : {};
+
+  return {
+    ...metaTitle,
+    ...metaDescription,
+    ...metaThumbnail,
+    ...metaThumbnailAlt,
+    ...metaRobots,
+  };
+};

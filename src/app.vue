@@ -1,19 +1,19 @@
 <script lang="ts" setup>
 import { CookieBanner, HomeButton } from "@/components";
 
-import "vue3-lottie/dist/style.css";
+import { clearError } from "#app";
 </script>
 
 <template>
-  <v-app class="application-background">
-    <SeoKit />
+  <NuxtErrorBoundary @error="clearError">
+    <v-app class="application-background">
+      <HomeButton />
 
-    <HomeButton />
+      <NuxtPage />
 
-    <NuxtPage />
-
-    <CookieBanner />
-  </v-app>
+      <CookieBanner />
+    </v-app>
+  </NuxtErrorBoundary>
 </template>
 
 <style lang="scss" scoped>

@@ -3,6 +3,11 @@ import { ref } from "vue";
 
 import { AnimatedAvatar, ProfilesGrid } from "@/components";
 import { PAGE_CONTENT } from "@/content";
+import { extractHead } from "@/utils/meta";
+
+import { useSeoMeta } from "#imports";
+
+useSeoMeta(extractHead(PAGE_CONTENT.landingPage.head));
 
 const showProfiles = ref<boolean>(false);
 

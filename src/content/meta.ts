@@ -1,6 +1,5 @@
-export const DEFAULT_SITE_NAME = "Meryll Dindin";
-
-const DEFAULT_TITLE = "Meryll Dindin - Serial Entrepreneur, Convinced Transhumanist";
+export const DEFAULT_TITLE =
+  "Serial Entrepreneur, Convinced Transhumanist | Meryll Dindin";
 
 const DEFAULT_COLOR = "#242424";
 
@@ -66,10 +65,6 @@ export const CUSTOM_HEAD = {
       name: "viewport",
     },
     {
-      content: DEFAULT_TITLE,
-      name: "title",
-    },
-    {
       content: DEFAULT_DESCRIPTION,
       name: "description",
     },
@@ -123,5 +118,5 @@ export const CUSTOM_HEAD = {
     },
   ],
   title: DEFAULT_TITLE,
-  titleTemplate: "%pageTitle %titleSeparator %siteName",
+  titleTemplate: "%s",
 };
