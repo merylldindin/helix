@@ -34,7 +34,6 @@ export default defineNuxtConfig({
     payloadExtraction: false,
   },
   modules: [
-    "@nuxtjs/fontaine",
     "nuxt-link-checker",
     "nuxt-schema-org",
     "nuxt-simple-sitemap",
