@@ -1,5 +1,5 @@
 import { createVuetify } from "vuetify";
-import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
+import { mdi } from "vuetify/iconsets/mdi-svg";
 
 import { ColorName } from "@/types";
 
@@ -27,7 +27,6 @@ export default defineNuxtPlugin((nuxtApp) => {
       },
     },
     icons: {
-      aliases,
       defaultSet: "mdi",
       sets: {
         mdi,

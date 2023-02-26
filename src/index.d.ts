@@ -14,4 +14,5 @@ declare module "vue" {
     $ICON: Record<IconName, string>;
   }
 }
+
 export {};
