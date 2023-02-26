@@ -4,7 +4,7 @@ export * from "./ErrorLayout";
 export * from "./LegalLayout";
 
 // pages
-export * from "./IndexPage";
+export * from "./LandingPage";
 
 // shared
 export * from "./shared";
