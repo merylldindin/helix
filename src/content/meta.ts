@@ -41,7 +41,7 @@ export const CUSTOM_HEAD = {
       charset: "utf-8",
     },
     {
-      content: "&copy; 2023 - Meryll Dindin - All Rights Reserved",
+      content: "© 2023 Meryll Dindin",
       name: "copyright",
     },
     {

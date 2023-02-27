@@ -9,17 +9,15 @@ useSchemaOrg([definePerson(DEFAULT_IDENTITY), defineWebSite()]);
 </script>
 
 <template>
-  <client-only>
-    <NuxtErrorBoundary @error="clearError">
-      <v-app class="application-background">
-        <HomeButton />
+  <NuxtErrorBoundary @error="clearError">
+    <v-app class="application-background">
+      <HomeButton />
 
-        <NuxtPage />
+      <NuxtPage />
 
-        <CookieBanner />
-      </v-app>
-    </NuxtErrorBoundary>
-  </client-only>
+      <CookieBanner />
+    </v-app>
+  </NuxtErrorBoundary>
 </template>
 
 <style lang="scss" scoped>

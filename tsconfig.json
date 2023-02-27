@@ -1,12 +1,7 @@
 {
-  "exclude": [".nuxt", ".output", "node_modules", "dist"],
-  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "types": [
-      "@nuxt/types",
-      "@nuxt/vue-app",
-      "@types/node",
-      "vuetify"
-    ]
+    "types": ["@nuxt/types", "@nuxt/vue-app", "@types/node", "vuetify"]
   },
+  "exclude": [".nuxt", ".output", "node_modules", "dist"],
+  "extends": "./.nuxt/tsconfig.json"
 }
