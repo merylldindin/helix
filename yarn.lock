@@ -2266,7 +2266,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/addons@npm:1.1.15, @unhead/addons@npm:^1.1.14":
+"@unhead/addons@npm:1.1.16":
+  version: 1.1.16
+  resolution: "@unhead/addons@npm:1.1.16"
+  dependencies:
+    "@rollup/pluginutils": ^5.0.2
+    "@unhead/schema": 1.1.16
+    "@unhead/shared": 1.1.16
+    magic-string: ^0.30.0
+    mlly: ^1.1.1
+    ufo: ^1.1.1
+    unhead: 1.1.16
+    unplugin: ^1.1.0
+    unplugin-ast: ^0.7.0
+  checksum: 8617ce2b955c76073bc99e0d7dea6276600140479260fa2b921371568a9e8f78e7df86afe29a810e2155fdb339f6b7900b8b7703b2483e4892370dade626d515
+  languageName: node
+  linkType: hard
+
+"@unhead/addons@npm:^1.1.14":
   version: 1.1.15
   resolution: "@unhead/addons@npm:1.1.15"
   dependencies:
@@ -2303,6 +2320,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@unhead/dom@npm:1.1.16":
+  version: 1.1.16
+  resolution: "@unhead/dom@npm:1.1.16"
+  dependencies:
+    "@unhead/schema": 1.1.16
+    "@unhead/shared": 1.1.16
+  checksum: 15c6564d01878a140c8360410db704f782391883c3a1ec84f6799a99de92a1e8f7438d80d7bb147c5196da7383dac06c938129f91ddc588c8f614cf330979173
+  languageName: node
+  linkType: hard
+
 "@unhead/schema-org-vue@npm:^0.5.0":
   version: 0.5.0
   resolution: "@unhead/schema-org-vue@npm:0.5.0"
@@ -2332,6 +2359,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@unhead/schema@npm:1.1.16":
+  version: 1.1.16
+  resolution: "@unhead/schema@npm:1.1.16"
+  dependencies:
+    hookable: ^5.4.2
+    zhead: ^2.0.4
+  checksum: 59823eb5acf2072dbb776fa395822c48c0a966f5a14aadde7fe765726a3d9ddecc91a9f8f26f731c7a78677f55f20740f8f3c8f96c66e68f1eca8fca250b31f1
+  languageName: node
+  linkType: hard
+
 "@unhead/shared@npm:1.1.11":
   version: 1.1.11
   resolution: "@unhead/shared@npm:1.1.11"
@@ -2347,6 +2384,15 @@ __metadata:
   dependencies:
     "@unhead/schema": 1.1.15
   checksum: 63d3083d2648272a5d6554b6e1c889519d81416dde5b5bf7ddd5dee35cec5d8522e79783505dfa365e1f6827aced78d57c256938ae97176b33b739bf5921fca1
+  languageName: node
+  linkType: hard
+
+"@unhead/shared@npm:1.1.16":
+  version: 1.1.16
+  resolution: "@unhead/shared@npm:1.1.16"
+  dependencies:
+    "@unhead/schema": 1.1.16
+  checksum: 116dc39e6bbd4f4dc081d4ce936208307c061a6bef381be5302b7e65d551d2aabb0a3599f1ee71359327f764f5dc8595786e5516b735d34b8d4ac96b8eb8bfdf
   languageName: node
   linkType: hard
 
@@ -6430,7 +6476,7 @@ __metadata:
     "@nuxt/types": 2.16.0
     "@nuxt/vue-app": 2.16.0
     "@types/node": 18.14.6
-    "@unhead/addons": 1.1.15
+    "@unhead/addons": 1.1.16
     cypress: 12.7.0
     eslint: 8.35.0
     eslint-config-airbnb-base: 15.0.0
@@ -11428,6 +11474,18 @@ __metadata:
     "@unhead/shared": 1.1.15
     hookable: ^5.4.2
   checksum: ae963f554fda70856c97050323b7180ca69dfc6ad0b50e83b0165a56ea499b9a26ec4cef075e0967919a70fbbb18bc3ccdf44dc168004fbf4926b22cb606a5e8
+  languageName: node
+  linkType: hard
+
+"unhead@npm:1.1.16":
+  version: 1.1.16
+  resolution: "unhead@npm:1.1.16"
+  dependencies:
+    "@unhead/dom": 1.1.16
+    "@unhead/schema": 1.1.16
+    "@unhead/shared": 1.1.16
+    hookable: ^5.4.2
+  checksum: cf9eb228dbdda748e7060805d43459f53830680e84ebaafa2251daf1e664648aa86ddd96f21ba6f1571ee235400de9fbf5a95ffbd15625f7d51c73f8dce00030
   languageName: node
   linkType: hard
 
