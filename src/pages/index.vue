@@ -31,6 +31,10 @@ useSchemaOrg(defineWebPage());
 .full-screen {
   width: 100vw;
   height: 100vh;
+
+  @include sm-down {
+    height: calc(100vh - $browser-navbar-offset);
+  }
 }
 
 .hero-section {

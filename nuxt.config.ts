@@ -96,7 +96,7 @@ export default defineNuxtConfig({
     define: {
       "process.env.DEBUG": false,
     },
-    // plugins: [UnheadVite()],
+    plugins: [UnheadVite()],
     ssr: {
       noExternal: ["vue3-lottie"],
     },

@@ -9,9 +9,11 @@ useSchemaOrg([definePerson(DEFAULT_IDENTITY), defineWebSite()]);
 
 <template>
   <NuxtErrorBoundary @error="clearError">
-    <v-app class="application-background">
-      <NuxtPage />
-    </v-app>
+    <client-only>
+      <v-app class="application-background">
+        <NuxtPage />
+      </v-app>
+    </client-only>
   </NuxtErrorBoundary>
 </template>
 
