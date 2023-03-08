@@ -18,6 +18,7 @@ export const DEFAULT_IDENTITY = {
     "https://www.instagram.com/merylldindin/",
     "https://www.facebook.com/merylldindin",
     "https://dindinmeryll.portfoliobox.net",
+    "https://scholar.google.com/citations?user=rIh0-NMAAAAJ",
   ],
   url: "https://merylldindin.com",
   worksFor: [
@@ -35,6 +36,11 @@ export const DEFAULT_IDENTITY = {
       "@type": "Organization",
       name: "Auberge de Cercoux SAS",
       url: "https://auberge.decercoux.com",
+    },
+    {
+      "@type": "Organization",
+      name: "Odelys de Bédenac",
+      url: "https://odelys.debedenac.com",
     },
   ],
 };
