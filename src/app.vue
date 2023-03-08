@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { CookieBanner, HomeButton } from "@/components";
 import { DEFAULT_IDENTITY } from "@/content";
 
 import { clearError } from "#app";
@@ -11,11 +10,7 @@ useSchemaOrg([definePerson(DEFAULT_IDENTITY), defineWebSite()]);
 <template>
   <NuxtErrorBoundary @error="clearError">
     <v-app class="application-background">
-      <HomeButton />
-
       <NuxtPage />
-
-      <CookieBanner />
     </v-app>
   </NuxtErrorBoundary>
 </template>

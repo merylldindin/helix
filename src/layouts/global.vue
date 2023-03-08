@@ -1,20 +1,17 @@
+<script setup lang="ts">
+import { AnimatedAvatar, CookieBanner, GlobalFooter } from "@/components";
+</script>
+
 <template>
-  <div class="default-layout">
-    <slot />
+  <div class="h-100 w-100 d-flex flex-column">
+    <CookieBanner />
+
+    <AnimatedAvatar />
+
+    <v-main>
+      <slot />
+    </v-main>
+
+    <GlobalFooter />
   </div>
 </template>
-
-<style lang="scss" scoped>
-.default-layout {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  overflow-y: hidden;
-
-  @include xs-only {
-    max-height: calc(100vh - $browser-navbar-offset);
-  }
-}
-</style>

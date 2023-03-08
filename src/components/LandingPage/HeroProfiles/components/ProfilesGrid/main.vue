@@ -25,16 +25,13 @@ import { ProfileLink } from "./components";
 
 <style lang="scss" scoped>
 .profile-wrapper {
-  margin-top: 3rem;
   max-width: 44rem;
 
   @include md-down {
-    margin-top: 2rem;
     max-width: 36rem;
   }
 
   @include sm-down {
-    margin-top: 1rem;
     max-width: 24rem;
   }
 }

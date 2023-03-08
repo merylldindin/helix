@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import { PropType, onMounted, ref } from "vue";
+import { useDisplay } from "vuetify";
 
-import { DeliveredImage } from "~/types";
+import { DeliveredImage } from "@/types";
 
 defineProps({
+  cover: {
+    default: false,
+    type: Boolean,
+  },
   image: {
     required: true,
     type: Object as PropType<DeliveredImage>,
@@ -14,20 +19,33 @@ defineProps({
   },
 });
 
-const isShown = ref<boolean>(false);
+const { smAndDown } = useDisplay();
+
+const isImageRendered = ref<boolean>(false);
+
 onMounted(() => {
-  isShown.value = true;
+  isImageRendered.value = true;
 });
 </script>
 
 <template>
-  <template v-if="isShown">
-    <v-img
-      :alt="image.altText"
-      :eager="image.eager"
-      :lazy-src="image.lazySource"
-      :src="image.source"
-      :width="width"
-    />
-  </template>
+  <v-img
+    v-if="isImageRendered && (!smAndDown || !image.mobileSource)"
+    :alt="image.altText"
+    :cover="cover"
+    :eager="image.eager"
+    :lazy-src="image.lazySource"
+    :src="image.source"
+    :width="width"
+  />
+
+  <v-img
+    v-else-if="isImageRendered && image.mobileSource && smAndDown"
+    :alt="image.altText"
+    :cover="cover"
+    :eager="image.eager"
+    :lazy-src="image.lazyMobileSource"
+    :src="image.mobileSource"
+    :width="width"
+  />
 </template>

@@ -39,6 +39,7 @@ defineProps({
   display: flex;
   border-radius: 100%;
   border: 1px solid rgb(var(--v-theme-mine-shaft));
+  background-color: rgb(var(--v-theme-mine-shaft));
   align-items: center;
   justify-content: center;
 }

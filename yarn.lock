@@ -2249,12 +2249,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/schema-org-vue@npm:^0.4.1":
-  version: 0.4.1
-  resolution: "@unhead/schema-org-vue@npm:0.4.1"
+"@unhead/schema-org-vue@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@unhead/schema-org-vue@npm:0.5.0"
   peerDependencies:
-    "@unhead/vue": ">=1.0.10"
-  checksum: 16ea364190bba74fb593fcb889af183ecfd0e8e84abb52f80352f481b113be3d6dff670988182f3e44b6ced1268665b0405dee67cf143602e063787304d81759
+    "@unhead/vue": ">=1.1.9"
+  checksum: ee3a725ffcae97e1f25eafac17f312ac8cfbe12c6b3e17cb95a83e972dc1ade3704eaec33943e908fdfa6f9bc462fb9ae4e916c4aaab56fd1c71873a7359436a
   languageName: node
   linkType: hard
 
@@ -6359,7 +6359,7 @@ __metadata:
     husky: 8.0.3
     nuxt: 3.2.2
     nuxt-link-checker: 1.0.3
-    nuxt-schema-org: 2.1.1
+    nuxt-schema-org: 2.1.2
     nuxt-simple-sitemap: 1.0.7
     nuxt-unhead: 1.4.6
     postcss-html: 1.5.0
@@ -8455,14 +8455,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-schema-org@npm:2.1.1":
-  version: 2.1.1
-  resolution: "nuxt-schema-org@npm:2.1.1"
+"nuxt-schema-org@npm:2.1.2":
+  version: 2.1.2
+  resolution: "nuxt-schema-org@npm:2.1.2"
   dependencies:
-    "@nuxt/kit": 3.1.1
-    "@unhead/schema-org-vue": ^0.4.1
+    "@nuxt/kit": 3.2.2
+    "@unhead/schema-org-vue": ^0.5.0
     pathe: ^1.1.0
-  checksum: 16128e8dd053d7d447d565a9dfe8a5280cb8c6ab374668b42c8f13d9286f60e579f4e88ea55a551b1c07a9b17d4ca4578b3a5c8d9852343226eea4989c61ba17
+  checksum: a55a6664059d950d68d3819b6eed83af0d2192e5c7f26132ad2ad10d6c3dd26ebb37e3e6b2702fcf81fa95c4b16b9d116fbc988bde70002990de6cc314f7ce8a
   languageName: node
   linkType: hard
 

@@ -8,7 +8,7 @@ import { VIcon } from "vuetify/components/VIcon";
 import { VImg } from "vuetify/components/VImg";
 import { VMain } from "vuetify/components/VMain";
 import { VTooltip } from "vuetify/components/VTooltip";
-import { VSlideYTransition } from "vuetify/components/transitions";
+import { VScaleTransition, VSlideYTransition } from "vuetify/components/transitions";
 
 export const VuetifyComponents = {
   VApp,
@@ -25,6 +25,7 @@ export const VuetifyComponents = {
   VImg,
   VMain,
   VRow,
+  VScaleTransition,
   VSlideYTransition,
   VSpacer,
   VTooltip,

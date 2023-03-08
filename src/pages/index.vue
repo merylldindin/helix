@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
-import { AnimatedAvatar, ProfilesGrid } from "@/components";
+import { HeroProfiles } from "@/components";
+import { CustomImage, CustomSection } from "@/components/shared";
 import { PAGE_CONTENT } from "@/content";
 import { extractHead } from "@/utils/meta";
 
@@ -10,58 +9,52 @@ import { defineWebPage, useSchemaOrg, useSeoMeta } from "#imports";
 useSeoMeta(extractHead(PAGE_CONTENT.landingPage.head));
 
 useSchemaOrg(defineWebPage());
-
-const showProfiles = ref<boolean>(false);
-
-setTimeout(() => {
-  showProfiles.value = true;
-}, 1250);
 </script>
 
 <template>
   <NuxtLayout name="global">
-    <section class="section-wrapper">
-      <AnimatedAvatar />
+    <CustomImage
+      class="hero-background full-screen"
+      cover
+      :image="PAGE_CONTENT.landingPage.background"
+    />
 
-      <v-slide-y-transition>
-        <div v-show="showProfiles" class="profile-title">
-          <h1 class="headline-2">
-            {{ PAGE_CONTENT.landingPage.headline }}
-          </h1>
+    <div class="hero-overlay full-screen" />
 
-          <ProfilesGrid />
-        </div>
-      </v-slide-y-transition>
-    </section>
+    <CustomSection class="hero-section full-screen">
+      <v-scale-transition> <HeroProfiles /> </v-scale-transition>
+    </CustomSection>
   </NuxtLayout>
 </template>
 
 <style lang="scss" scoped>
-.section-wrapper {
-  width: 100%;
-  height: 100%;
-  position: relative;
+.full-screen {
+  width: 100vw;
+  height: 100vh;
 }
 
-.profile-title {
+.hero-section {
+  display: flex;
+  align-items: center;
+}
+
+.hero-background {
   position: absolute;
-  top: 34rem;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
-  text-align-last: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: rgb(var(--v-theme-foam));
-  transition: all 1.5s ease-in-out;
+  bottom: 0;
+  z-index: 0;
+}
 
-  @include md-down {
-    top: 35rem;
-  }
-
-  @include sm-down {
-    top: 36rem;
-  }
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(1px);
+  background-color: rgb(0 0 0 / 15%);
+  z-index: 1;
 }
 </style>

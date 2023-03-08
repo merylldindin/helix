@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { computed } from "vue";
 
-import { CustomHeadline, ErrorButton } from "@/components";
+import { ErrorButton } from "@/components";
+import { CustomHeadline } from "@/components/shared";
 import { LAYOUT_CONTENT } from "@/content";
 import { extractHead } from "@/utils/meta";
 

@@ -2,11 +2,13 @@
   "head": {
     "title": "Serial Entrepreneur, Convinced Transhumanist | Meryll Dindin"
   },
-  "avatar": {
-    "altText": "Meryll Dindin's avatar",
+  "background": {
+    "altText": "Meryll Dindin's back tattoo",
     "eager": true,
-    "lazySource": "https://cdn.merylldindin.com/assets/avatar-lazy.webp",
-    "source": "https://cdn.merylldindin.com/assets/avatar.webp"
+    "lazySource": "https://cdn.merylldindin.com/assets/back-tattoo-lazy.webp",
+    "source": "https://cdn.merylldindin.com/assets/back-tattoo.webp",
+    "mobileSource": "https://cdn.merylldindin.com/assets/back-tattoo-mobile.webp",
+    "mobileSourceLazy": "https://cdn.merylldindin.com/assets/back-tattoo-mobile-lazy.webp"
   },
   "headline": "Meryll Dindin",
   "profiles": [
@@ -17,7 +19,7 @@
         "ariaLabel": "Follow Meryll Dindin on Github",
         "href": "https://github.com/merylldindin",
         "target": "_blank",
-        "rel": "external nofollower noopener noreferrer"
+        "rel": "external"
       }
     },
     {
@@ -27,7 +29,7 @@
         "ariaLabel": "Follow Meryll Dindin on Twitter",
         "href": "https://twitter.com/MeryllDindin",
         "target": "_blank",
-        "rel": "external nofollower noopener noreferrer"
+        "rel": "external"
       }
     },
     {
@@ -37,7 +39,7 @@
         "ariaLabel": "Follow Meryll Dindin on Medium",
         "href": "https://blog.merylldindin.com",
         "target": "_blank",
-        "rel": "external nofollower noopener noreferrer"
+        "rel": "external"
       }
     },
     {
@@ -47,7 +49,7 @@
         "ariaLabel": "Follow Meryll Dindin on LinkedIn",
         "href": "https://www.linkedin.com/in/merylldindin/",
         "target": "_blank",
-        "rel": "external nofollower noopener noreferrer"
+        "rel": "external"
       }
     },
     {
@@ -57,7 +59,7 @@
         "ariaLabel": "Follow Meryll Dindin on Instagram",
         "href": "https://www.instagram.com/merylldindin/",
         "target": "_blank",
-        "rel": "external nofollower noopener noreferrer"
+        "rel": "external"
       }
     },
     {
@@ -67,7 +69,7 @@
         "ariaLabel": "Follow Meryll Dindin on Facebook",
         "href": "https://www.facebook.com/merylldindin",
         "target": "_blank",
-        "rel": "external nofollower noopener noreferrer"
+        "rel": "external"
       }
     },
     {
@@ -77,17 +79,17 @@
         "ariaLabel": "Learn more about Meryll Dindin's work at Polygon",
         "href": "https://hellopolygon.com",
         "target": "_blank",
-        "rel": "external nofollower noopener noreferrer"
+        "rel": "external"
       }
     },
     {
       "description": "Auberge de Cercoux",
-      "icon": "GOOGLE_MY_BUSINESS",
+      "icon": "SILVERWARE_FORK_KNIFE",
       "link": {
         "ariaLabel": "Learn more about Meryll Dindin's work at Auberge de Cercoux",
         "href": "https://auberge.decercoux.com",
         "target": "_blank",
-        "rel": "external nofollower noopener noreferrer"
+        "rel": "external"
       }
     },
     {
@@ -97,7 +99,17 @@
         "ariaLabel": "Learn more about Meryll Dindin's work at Dillygence",
         "href": "https://dillygence.com",
         "target": "_blank",
-        "rel": "external nofollower noopener noreferrer"
+        "rel": "external"
+      }
+    },
+    {
+      "description": "Odelys de Bédenac",
+      "icon": "FOOD_CROISSANT",
+      "link": {
+        "ariaLabel": "Learn more about Meryll Dindin's work at Odelys de Bédenac",
+        "href": "https://odelys.debedenac.com",
+        "target": "_blank",
+        "rel": "external"
       }
     },
     {
@@ -107,7 +119,17 @@
         "ariaLabel": "Have a look at Meryll Dindin's modeling project",
         "href": "https://dindinmeryll.portfoliobox.net",
         "target": "_blank",
-        "rel": "external nofollower noopener noreferrer"
+        "rel": "external"
+      }
+    },
+    {
+      "description": "Google Scholar",
+      "icon": "SCHOOL",
+      "link": {
+        "ariaLabel": "Have a look at Meryll Dindin on Google Scholar",
+        "href": "https://scholar.google.com/citations?user=rIh0-NMAAAAJ",
+        "target": "_blank",
+        "rel": "external"
       }
     }
   ]

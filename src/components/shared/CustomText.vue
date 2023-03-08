@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-import { CustomLink } from "@/components";
 import { TextChunkType } from "@/types";
+
+import CustomLink from "./CustomLink.vue";
 
 defineProps({
   text: {
