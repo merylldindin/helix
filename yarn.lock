@@ -1303,7 +1303,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:^3.2.0":
+"@nuxt/kit@npm:^3.2.0, @nuxt/kit@npm:^3.2.3":
   version: 3.3.1
   resolution: "@nuxt/kit@npm:3.3.1"
   dependencies:
@@ -6513,6 +6513,7 @@ __metadata:
     nuxt-link-checker: 1.0.3
     nuxt-schema-org: 2.1.2
     nuxt-simple-sitemap: 1.0.9
+    nuxt-swiper: 1.0.1
     nuxt-unhead: 1.4.14
     postcss-html: 1.5.0
     postcss-scss: 4.0.6
@@ -8626,6 +8627,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nuxt-swiper@npm:1.0.1":
+  version: 1.0.1
+  resolution: "nuxt-swiper@npm:1.0.1"
+  dependencies:
+    "@nuxt/kit": ^3.2.3
+    swiper: ^9.1.0
+  checksum: fd2e844dd54018fb861b9a209164249bcbccb91a3795472f45878ee44cf5c80cf6bf32db28f6ec732d5821f6b0ebaee227988a2154fe1adfadb61bee4e16a1b0
+  languageName: node
+  linkType: hard
+
 "nuxt-unhead@npm:1.4.14":
   version: 1.4.14
   resolution: "nuxt-unhead@npm:1.4.14"
@@ -10553,6 +10564,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ssr-window@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "ssr-window@npm:4.0.2"
+  checksum: df182600927f4f3225224cf8c02338ea637c9750519505bbfb9a9236741a2a7ec088386fb948bca7b447b8303d9109e7dc7672e3de041c79ac2a0e03665af7d2
+  languageName: node
+  linkType: hard
+
 "ssri@npm:^9.0.0":
   version: 9.0.1
   resolution: "ssri@npm:9.0.1"
@@ -10997,6 +11015,15 @@ __metadata:
   bin:
     svgo: bin/svgo
   checksum: b92f71a8541468ffd0b81b8cdb36b1e242eea320bf3c1a9b2c8809945853e9d8c80c19744267eb91cabf06ae9d5fff3592d677df85a31be4ed59ff78534fa420
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^9.1.0":
+  version: 9.1.1
+  resolution: "swiper@npm:9.1.1"
+  dependencies:
+    ssr-window: ^4.0.2
+  checksum: 053d606f03eb4f59be95dd3a6129b6fde559b5c1f042ab0c1240df12e0cbac32e2ab81a7334ca9781309bf34edd18ebe308d31b1064fdfba98120f0b20e48b93
   languageName: node
   linkType: hard
 

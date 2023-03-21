@@ -37,6 +37,7 @@ export default defineNuxtConfig({
     "nuxt-link-checker",
     "nuxt-schema-org",
     "nuxt-simple-sitemap",
+    "nuxt-swiper",
     "nuxt-unhead",
   ],
   nitro: {
@@ -80,6 +81,7 @@ export default defineNuxtConfig({
           compact: true,
           manualChunks: {
             lottie: ["vue3-lottie"],
+            swiper: ["nuxt-swiper"],
             vuetify: ["vuetify"],
           },
         },

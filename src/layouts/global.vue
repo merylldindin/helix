@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
 
-import { AnimatedAvatar, GlobalFooter } from "@/components";
+import { AnimatedAvatar, GlobalFooter, WebsiteTitle } from "@/components";
 
 const setSectionHeight = () => {
   const windowHeight = window.innerHeight;
@@ -26,6 +26,8 @@ onUnmounted(() => {
 
 <template>
   <div class="default-layout">
+    <WebsiteTitle />
+
     <AnimatedAvatar />
 
     <div class="default-page">
