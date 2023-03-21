@@ -27,3 +27,9 @@
   line-height: 1.5 !important;
   letter-spacing: 0.16px !important;
 }
+
+.text-cartesian {
+  @extend %text;
+
+  font-family: Cartesian, serif !important;
+}

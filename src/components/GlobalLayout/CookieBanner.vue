@@ -41,7 +41,7 @@ const cookieBannerText = computed(() => {
 
 <style lang="scss" scoped>
 .cookie-banner {
-  top: 1.5rem;
+  bottom: 0;
   left: 0;
   right: 0;
   position: absolute;

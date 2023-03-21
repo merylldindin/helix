@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Lexend Deca";
-  src: url("https://cdn.merylldindin.com/fonts/lexend-deca-regular.ttf")
-    format("truetype");
+  src: url("https://cdn.merylldindin.com/fonts/lexend-deca-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
   font-family: "Lexend Deca";
-  src: url("https://cdn.merylldindin.com/fonts/lexend-deca-medium.ttf")
-    format("truetype");
+  src: url("https://cdn.merylldindin.com/fonts/lexend-deca-medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -18,8 +16,16 @@
 
 @font-face {
   font-family: "Lexend Deca";
-  src: url("https://cdn.merylldindin.com/fonts/lexend-deca-bold.ttf") format("truetype");
+  src: url("https://cdn.merylldindin.com/fonts/lexend-deca-bold.woff") format("woff");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cartesian";
+  src: url("https://cdn.merylldindin.com/fonts/cartesian.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }

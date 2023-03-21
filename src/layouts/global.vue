@@ -1,17 +1,54 @@
 <script setup lang="ts">
-import { AnimatedAvatar, CookieBanner, GlobalFooter } from "@/components";
+import { onMounted, onUnmounted } from "vue";
+
+import { AnimatedAvatar, GlobalFooter } from "@/components";
+
+const setSectionHeight = () => {
+  const windowHeight = window.innerHeight;
+
+  const sections = document.querySelectorAll("section");
+
+  sections.forEach((section) => {
+    section.style.height = `${windowHeight}px`;
+  });
+};
+
+onMounted(() => {
+  window.addEventListener("resize", setSectionHeight);
+
+  setSectionHeight();
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", setSectionHeight);
+});
 </script>
 
 <template>
-  <div class="h-100 w-100 d-flex flex-column">
-    <CookieBanner />
-
+  <div class="default-layout">
     <AnimatedAvatar />
 
-    <v-main>
-      <slot />
-    </v-main>
+    <div class="default-page">
+      <v-main>
+        <slot />
+      </v-main>
 
-    <GlobalFooter />
+      <GlobalFooter />
+    </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.default-layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.default-page {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+</style>

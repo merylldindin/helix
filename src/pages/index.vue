@@ -13,52 +13,34 @@ useSchemaOrg(defineWebPage());
 
 <template>
   <NuxtLayout name="global">
-    <CustomImage
-      class="hero-background full-screen"
-      cover
-      :image="PAGE_CONTENT.landingPage.background"
-    />
+    <CustomSection class="hero-section" fullscreen snap>
+      <template #background>
+        <CustomImage
+          class="hero-background"
+          cover
+          :image="PAGE_CONTENT.landingPage.background"
+        />
 
-    <div class="hero-overlay full-screen" />
+        <div class="hero-overlay" />
+      </template>
 
-    <CustomSection class="hero-section full-screen">
-      <v-scale-transition> <HeroProfiles /> </v-scale-transition>
+      <template #default>
+        <HeroProfiles />
+      </template>
     </CustomSection>
   </NuxtLayout>
 </template>
 
 <style lang="scss" scoped>
-.full-screen {
-  width: 100vw;
-  height: 100vh;
-
-  @include sm-down {
-    height: calc(100vh - $browser-navbar-offset);
-  }
-}
-
-.hero-section {
-  display: flex;
-  align-items: center;
-}
-
 .hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 0;
 }
 
 .hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backdrop-filter: blur(1px);
-  background-color: rgb(0 0 0 / 15%);
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 33%);
   z-index: 1;
 }
 </style>

@@ -31,9 +31,9 @@ export const CUSTOM_HEAD = {
     {
       as: "font" as "font",
       crossorigin: "anonymous" as "anonymous",
-      href: `${DEFAULT_CDN_HOST}/fonts/lexend-deca-regular.ttf`,
+      href: `${DEFAULT_CDN_HOST}/fonts/lexend-deca-regular.woff`,
       rel: "preload",
-      type: "font/ttf",
+      type: "font/woff",
     },
   ],
   meta: [
