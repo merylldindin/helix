@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
 
-import { AnimatedAvatar, GlobalFooter, WebsiteTitle } from "@/components";
+import { GlobalFooter, GlobalNavbar } from "@/components";
 
 const setSectionHeight = () => {
   const windowHeight = window.innerHeight;
@@ -9,7 +9,7 @@ const setSectionHeight = () => {
   const sections = document.querySelectorAll("section");
 
   sections.forEach((section) => {
-    section.style.height = `${windowHeight}px`;
+    section.style.minHeight = `${windowHeight}px`;
   });
 };
 
@@ -26,17 +26,13 @@ onUnmounted(() => {
 
 <template>
   <div class="default-layout">
-    <WebsiteTitle />
+    <GlobalNavbar />
 
-    <AnimatedAvatar />
+    <v-main>
+      <slot />
+    </v-main>
 
-    <div class="default-page">
-      <v-main>
-        <slot />
-      </v-main>
-
-      <GlobalFooter />
-    </div>
+    <GlobalFooter />
   </div>
 </template>
 
@@ -45,12 +41,5 @@ onUnmounted(() => {
   width: 100%;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-}
-
-.default-page {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
 }
 </style>

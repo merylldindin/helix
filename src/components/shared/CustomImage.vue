@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import { PropType, onMounted, ref } from "vue";
+import { ComputedRef, PropType, computed, onMounted, ref, watch } from "vue";
 import { useDisplay } from "vuetify";
 
 import { DeliveredImage } from "@/types";
 
-defineProps({
+const cProps = defineProps({
+  aspectRatio: {
+    default: undefined,
+    type: Number,
+  },
   cover: {
     default: false,
     type: Boolean,
@@ -21,31 +25,50 @@ defineProps({
 
 const { smAndDown } = useDisplay();
 
-const isImageRendered = ref<boolean>(false);
+const isShown = ref<boolean>(false);
 
 onMounted(() => {
-  isImageRendered.value = true;
+  isShown.value = true;
+});
+
+watch(
+  () => smAndDown.value,
+  () => {
+    isShown.value = false;
+
+    setTimeout(() => {
+      isShown.value = true;
+    }, 100);
+  }
+);
+
+const imageSource: ComputedRef<string> = computed(() => {
+  if (smAndDown.value && cProps.image.mobile) {
+    return cProps.image.mobile;
+  }
+
+  return cProps.image.source;
+});
+
+const imageLazySource: ComputedRef<string | undefined> = computed(() => {
+  if (smAndDown.value && cProps.image.lazySource) {
+    return cProps.image.lazyMobile;
+  }
+
+  return cProps.image.lazySource;
 });
 </script>
 
 <template>
-  <v-img
-    v-if="isImageRendered && (!smAndDown || !image.mobileSource)"
-    :alt="image.altText"
-    :cover="cover"
-    :eager="image.eager"
-    :lazy-src="image.lazySource"
-    :src="image.source"
-    :width="width"
-  />
-
-  <v-img
-    v-else-if="isImageRendered && image.mobileSource && smAndDown"
-    :alt="image.altText"
-    :cover="cover"
-    :eager="image.eager"
-    :lazy-src="image.lazyMobileSource"
-    :src="image.mobileSource"
-    :width="width"
-  />
+  <template v-if="isShown">
+    <v-img
+      :alt="image.altText"
+      :aspect-ratio="aspectRatio"
+      :cover="cover"
+      :eager="image.eager"
+      :lazy-src="imageLazySource"
+      :src="imageSource"
+      :width="width"
+    />
+  </template>
 </template>

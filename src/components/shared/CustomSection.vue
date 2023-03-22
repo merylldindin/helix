@@ -64,14 +64,13 @@ defineProps({
 }
 
 .section-wrapper {
-  padding-top: 66px;
   z-index: 2;
 
   &--offset-y {
     padding-top: 12rem;
 
     @include sm-down {
-      padding-top: 8rem;
+      padding-top: 10rem;
     }
   }
 }

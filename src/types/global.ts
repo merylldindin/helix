@@ -2,9 +2,9 @@ export interface DeliveredImage {
   altText: string;
   source: string;
   eager?: boolean;
-  lazyMobileSource?: string;
   lazySource?: string;
-  mobileSource?: string;
+  mobile?: string;
+  lazyMobile?: string;
 }
 
 export enum TextChunkType {

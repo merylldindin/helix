@@ -12,8 +12,8 @@ useSchemaOrg(defineWebPage());
 </script>
 
 <template>
-  <NuxtLayout name="global">
-    <CustomSection>
+  <NuxtLayout name="default">
+    <CustomSection offset-y>
       <LegalText :text="PAGE_CONTENT.legal.termsOfUse" />
     </CustomSection>
   </NuxtLayout>

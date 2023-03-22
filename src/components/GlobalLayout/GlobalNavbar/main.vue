@@ -1,0 +1,30 @@
+<script lang="ts" setup>
+import { AnimatedAvatar, WebsiteTitle } from "./components";
+</script>
+
+<template>
+  <div class="global-navbar">
+    <AnimatedAvatar />
+
+    <WebsiteTitle />
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.global-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1.5s ease-in-out;
+  background-color: black;
+
+  @include sm-down {
+    height: 6rem;
+  }
+}
+</style>

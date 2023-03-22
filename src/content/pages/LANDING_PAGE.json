@@ -3,14 +3,24 @@
     "title": "Serial Entrepreneur, Convinced Transhumanist | Meryll Dindin"
   },
   "background": {
-    "altText": "Meryll Dindin's back tattoo",
+    "altText": "Highlighted futuristic road",
     "eager": true,
     "lazySource": "https://cdn.merylldindin.com/assets/road-background-lazy.webp",
     "source": "https://cdn.merylldindin.com/assets/road-background.webp",
     "mobileSource": "https://cdn.merylldindin.com/assets/road-background-mobile.webp",
     "mobileSourceLazy": "https://cdn.merylldindin.com/assets/road-background-mobile-lazy.webp"
   },
-  "headline": "Meryll Dindin",
+  "tesseract": [
+    {
+      "background": {
+        "altText": "AI generated art of transhumanist geometric future",
+        "eager": true,
+        "lazySource": "https://cdn.merylldindin.com/assets/futuristic-world-lazy.webp",
+        "source": "https://cdn.merylldindin.com/assets/futuristic-world.webp",
+        "mobileSource": "https://cdn.merylldindin.com/assets/futuristic-world-mobile.webp"
+      }
+    }
+  ],
   "profiles": [
     {
       "description": "Github",

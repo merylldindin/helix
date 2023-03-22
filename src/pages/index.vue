@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { HeroProfiles } from "@/components";
+import { RotatingCube } from "@/components";
 import { CustomImage, CustomSection } from "@/components/shared";
 import { PAGE_CONTENT } from "@/content";
 import { extractHead } from "@/utils/meta";
@@ -12,7 +12,7 @@ useSchemaOrg(defineWebPage());
 </script>
 
 <template>
-  <NuxtLayout name="global">
+  <NuxtLayout name="snaped">
     <CustomSection class="hero-section" fullscreen snap>
       <template #background>
         <CustomImage
@@ -25,7 +25,9 @@ useSchemaOrg(defineWebPage());
       </template>
 
       <template #default>
-        <HeroProfiles />
+        <div class="hero-cube">
+          <RotatingCube />
+        </div>
       </template>
     </CustomSection>
   </NuxtLayout>
@@ -34,6 +36,11 @@ useSchemaOrg(defineWebPage());
 <style lang="scss" scoped>
 .hero-background {
   z-index: 0;
+  position: absolute;
+
+  @include sm-down {
+    height: 100vh;
+  }
 }
 
 .hero-overlay {
@@ -42,5 +49,15 @@ useSchemaOrg(defineWebPage());
   width: 100%;
   background-color: rgb(0 0 0 / 33%);
   z-index: 1;
+}
+
+.hero-cube {
+  display: flex;
+  height: 100%;
+  padding: 8rem 4rem;
+
+  @include sm-down {
+    padding: 2rem 0 0;
+  }
 }
 </style>
