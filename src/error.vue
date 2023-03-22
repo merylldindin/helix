@@ -30,7 +30,7 @@ const statusCode = computed(() => cProps.error.statusCode.toString());
               class="text-center mb-8"
               :level="1"
               :text="statusCode"
-              typography="headline-1 text-mine-shaft"
+              typography="headline-1 text-slate-gray"
             />
 
             <ErrorButton />

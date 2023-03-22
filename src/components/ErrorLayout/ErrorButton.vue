@@ -11,7 +11,7 @@ import { CustomLink } from "@/components/shared";
       </client-only>
     </div>
 
-    <CustomLink class="button-action headline-6 text-mine-shaft" prompt="HOME" to="/" />
+    <CustomLink class="button-action headline-6 text-slate-gray" prompt="HOME" to="/" />
   </div>
 </template>
 

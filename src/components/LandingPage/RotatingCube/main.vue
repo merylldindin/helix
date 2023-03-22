@@ -1,12 +1,9 @@
 <script lang="ts" setup>
-import { useDisplay } from "vuetify";
-
-import { CustomImage } from "@/components/shared";
 import { PAGE_CONTENT } from "@/content";
 
-import { SwiperEffectCube } from "#imports";
+import { LinksGrid } from "./components";
 
-const { smAndDown } = useDisplay();
+import { SwiperEffectCube, SwiperMousewheel } from "#imports";
 </script>
 
 <template>
@@ -18,23 +15,26 @@ const { smAndDown } = useDisplay();
     }"
     :effect="'cube'"
     :loop="true"
-    :modules="[SwiperEffectCube]"
+    :modules="[SwiperEffectCube, SwiperMousewheel]"
+    :mousewheel="true"
     :slides-per-view="1"
   >
     <SwiperSlide
-      v-for="(image, index) in PAGE_CONTENT.landingPage.tesseract"
+      v-for="(page, index) in PAGE_CONTENT.landingPage.tesseract"
       :key="index"
       class="swiper-slide"
+      :lazy="index !== 0"
     >
-      <CustomImage class="swiper-image" :cover="smAndDown" :image="image.background" />
+      <LinksGrid :grid="page" />
     </SwiperSlide>
   </Swiper>
 </template>
 
 <style lang="scss" scoped>
 .swiper-wrapper {
-  width: 100%;
-  height: 100%;
+  width: 85vh;
+  height: 85vh;
+  padding: 0 2.5vh 2.5vh;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -43,14 +43,15 @@ const { smAndDown } = useDisplay();
 
   @include sm-down {
     transform: scale(1.11);
+    width: 100vw;
+    height: 90%;
+    padding: 0;
   }
 }
 
-.swiper-image {
-  transition: all 0.3s ease-in-out;
-
-  @include sm-down {
-    min-height: 100%;
-  }
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

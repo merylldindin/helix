@@ -13,7 +13,7 @@ defineProps({
     type: Boolean,
   },
   color: {
-    default: "mine-shaft",
+    default: "slate-gray",
     type: String,
   },
   disabled: {
@@ -56,7 +56,7 @@ defineProps({
     :variant="variant"
     @click="onClick"
   >
-    <span v-if="prompt" class="text-mine-shaft">
+    <span v-if="prompt" class="text-slate-gray">
       {{ prompt }}
     </span>
 

@@ -26,7 +26,7 @@ const cookieBannerText = computed(() => {
 <template>
   <v-slide-y-transition>
     <v-card v-if="!isTracking" class="cookie-banner custom-shadow">
-      <CustomText :text="cookieBannerText" typography="text-1 text-mine-shaft" />
+      <CustomText :text="cookieBannerText" typography="text-1 text-slate-gray" />
 
       <v-spacer />
 

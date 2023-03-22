@@ -9,7 +9,7 @@ export enum ColorName {
   WARNING = "warning",
   FOAM = "foam",
   LEMON = "lemon",
-  MINE_SHAFT = "mine-shaft",
+  SLATE_GRAY = "slate-gray",
 }
 
 export enum IconName {

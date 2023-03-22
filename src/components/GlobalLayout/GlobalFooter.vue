@@ -30,7 +30,7 @@ import { LAYOUT_CONTENT } from "@/content";
 
 <style lang="scss" scoped>
 .global-footer {
-  background-color: rgb(var(--v-theme-mine-shaft)) !important;
+  background-color: rgb(var(--v-theme-slate-gray)) !important;
   scroll-snap-align: start;
 }
 

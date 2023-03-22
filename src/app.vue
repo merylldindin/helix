@@ -20,6 +20,6 @@ useSchemaOrg([definePerson(DEFAULT_IDENTITY), defineWebSite()]);
 
 <style lang="scss" scoped>
 .application-background {
-  background-color: rgb(var(--v-theme-mine-shaft));
+  background-color: rgb(var(--v-theme-slate-gray));
 }
 </style>
