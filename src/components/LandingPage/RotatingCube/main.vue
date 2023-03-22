@@ -39,6 +39,10 @@ import { SwiperEffectCube, SwiperMousewheel } from "#imports";
   display: flex;
   flex-direction: row;
   margin: auto;
+
+  @include xs-only {
+    width: calc(100vw - 32px);
+  }
 }
 
 .swiper-wrapper {
@@ -47,10 +51,8 @@ import { SwiperEffectCube, SwiperMousewheel } from "#imports";
   width: 100%;
   transition: all 0.3s ease-in-out;
 
-  @include sm-down {
-    transform: scale(1.25) translateX(-16.5%);
-    width: 100vw;
-    padding: 0;
+  @include xs-only {
+    transform: scale(1.1);
   }
 }
 

@@ -36,7 +36,7 @@ useSchemaOrg(defineWebPage());
   z-index: 0;
   position: absolute;
 
-  @include sm-down {
+  @include xs-only {
     height: 100vh;
   }
 }

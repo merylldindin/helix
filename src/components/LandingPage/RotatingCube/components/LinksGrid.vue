@@ -6,7 +6,7 @@ import { CustomHeadline, CustomImage, CustomLink } from "@/components/shared";
 import { ICONS } from "@/plugins/vuetify.client/icons";
 import { IconName } from "@/types";
 
-const { smAndDown } = useDisplay();
+const { xs } = useDisplay();
 
 defineProps({
   grid: {
@@ -24,7 +24,7 @@ defineProps({
   <CustomImage
     :aspect-ratio="1"
     class="grid-image"
-    :cover="smAndDown"
+    :cover="xs"
     :image="grid.background"
   />
 
@@ -74,11 +74,10 @@ defineProps({
 <style lang="scss" scoped>
 .grid-image {
   height: 100%;
-  width: 50px;
   position: absolute;
   z-index: 0;
 
-  @include sm-down {
+  @include xs-only {
     min-height: 100%;
   }
 }
@@ -91,7 +90,7 @@ defineProps({
   overflow: hidden;
   z-index: 1;
 
-  @include sm-down {
+  @include xs-only {
     height: 100%;
   }
 }
@@ -112,7 +111,7 @@ defineProps({
   left: 0;
   transform: rotate(90deg) translateX(calc(33vh - 2.5vh));
 
-  @include sm-down {
+  @include xs-only {
     transform: rotate(90deg) translateX(36vh);
   }
 }
@@ -136,7 +135,7 @@ defineProps({
     }
   }
 
-  @include sm-down {
+  @include xs-only {
     width: 100%;
   }
 }

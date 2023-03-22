@@ -60,7 +60,7 @@ const { smAndDown } = useDisplay();
 .legal-date {
   margin-bottom: 8rem;
 
-  @include sm-down {
+  @include xs-only {
     margin-bottom: 4rem;
   }
 }

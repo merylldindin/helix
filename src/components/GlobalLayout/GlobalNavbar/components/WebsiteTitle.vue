@@ -24,7 +24,7 @@ import { LAYOUT_CONTENT } from "@/content";
 
   @include sm-down {
     top: 1.6rem;
-    left: 2rem;
+    left: 1.6rem;
   }
 }
 </style>

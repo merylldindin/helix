@@ -35,7 +35,7 @@ import { LAYOUT_CONTENT } from "@/content";
 }
 
 .global-copyright {
-  @include sm-down {
+  @include xs-only {
     text-align: end;
   }
 }
