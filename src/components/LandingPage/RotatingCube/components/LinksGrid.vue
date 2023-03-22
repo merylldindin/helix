@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { useDisplay } from "vuetify";
 
+import SwipeHint from "@/assets/animations/swipe-hint.json";
 import { CustomHeadline, CustomImage, CustomLink } from "@/components/shared";
 import { ICONS } from "@/plugins/vuetify.client/icons";
 import { IconName } from "@/types";
@@ -12,13 +13,31 @@ defineProps({
     required: true,
     type: Object,
   },
+  showHint: {
+    required: false,
+    type: Boolean,
+  },
 });
 </script>
 
 <template>
-  <CustomImage class="grid-image" :cover="smAndDown" :image="grid.background" />
+  <CustomImage
+    :aspect-ratio="1"
+    class="grid-image"
+    :cover="smAndDown"
+    :image="grid.background"
+  />
 
-  <div class="grid-image grid-overlay" />
+  <div class="grid-overlay">
+    <client-only>
+      <Vue3Lottie
+        v-if="showHint"
+        :animation-data="SwipeHint"
+        class="swipe-hint"
+        :width="'5rem'"
+      />
+    </client-only>
+  </div>
 
   <div class="grid-links">
     <CustomHeadline
@@ -46,10 +65,9 @@ defineProps({
 
 <style lang="scss" scoped>
 .grid-image {
+  height: 100%;
+  width: 50px;
   position: absolute;
-  max-width: 80vh;
-  max-height: 80vh;
-  transition: all 0.3s ease-in-out;
 
   @include sm-down {
     min-height: 100%;
@@ -58,10 +76,20 @@ defineProps({
 
 .grid-overlay {
   position: absolute;
-  width: 80vh;
-  height: 80vh;
+  width: 100%;
+  height: 100%;
   background-color: rgb(0 0 0 / 25%);
   z-index: 1;
+}
+
+.swipe-hint {
+  bottom: 0;
+  right: 0;
+  transform: rotate(90deg) translateX(33vh);
+
+  @include sm-down {
+    transform: rotate(90deg) translateX(36vh);
+  }
 }
 
 .grid-links {

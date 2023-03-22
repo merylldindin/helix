@@ -25,9 +25,7 @@ useSchemaOrg(defineWebPage());
       </template>
 
       <template #default>
-        <div class="hero-cube">
-          <RotatingCube />
-        </div>
+        <RotatingCube />
       </template>
     </CustomSection>
   </NuxtLayout>
@@ -49,15 +47,5 @@ useSchemaOrg(defineWebPage());
   width: 100%;
   background-color: rgb(0 0 0 / 33%);
   z-index: 1;
-}
-
-.hero-cube {
-  display: flex;
-  height: 100%;
-  padding: 8rem 4rem;
-
-  @include sm-down {
-    padding: 2rem 0 0;
-  }
 }
 </style>
