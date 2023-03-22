@@ -30,7 +30,7 @@ const { smAndDown } = useDisplay();
 <style lang="scss" scoped>
 .animation-wrapper {
   position: fixed;
-  top: 2.5rem;
+  top: 1.8rem;
   right: 4rem;
   width: 4.5rem;
   height: 4.5rem;

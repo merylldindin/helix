@@ -39,6 +39,11 @@ const { smAndDown } = useDisplay();
   position: relative;
   overflow: hidden;
   z-index: 1;
+  transition: all 0.3s ease-in-out;
+
+  @include sm-down {
+    transform: scale(1.11);
+  }
 }
 
 .swiper-image {

@@ -4,12 +4,14 @@ import { LAYOUT_CONTENT } from "@/content";
 </script>
 
 <template>
-  <CustomHeadline
-    class="website-title"
-    :level="1"
-    :text="LAYOUT_CONTENT.websiteTitle.headline"
-    typography="text-foam headline-3 text-cartesian"
-  />
+  <nuxt-link to="/">
+    <CustomHeadline
+      class="website-title"
+      :level="1"
+      :text="LAYOUT_CONTENT.websiteTitle.headline"
+      typography="text-foam headline-3 text-cartesian"
+    />
+  </nuxt-link>
 </template>
 
 <style lang="scss" scoped>

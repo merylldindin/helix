@@ -15,7 +15,7 @@ import { AnimatedAvatar, WebsiteTitle } from "./components";
   position: fixed;
   top: 0;
   width: 100%;
-  height: 6rem;
+  height: 8rem;
   z-index: 10;
   display: flex;
   justify-content: center;
