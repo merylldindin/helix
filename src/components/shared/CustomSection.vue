@@ -65,6 +65,8 @@ defineProps({
 
 .section-wrapper {
   z-index: 2;
+  display: flex;
+  flex-direction: column;
 
   &--offset-y {
     padding-top: 12rem;

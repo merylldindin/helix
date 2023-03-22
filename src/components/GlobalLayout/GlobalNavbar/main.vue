@@ -21,7 +21,7 @@ import { AnimatedAvatar, WebsiteTitle } from "./components";
   justify-content: center;
   align-items: center;
   transition: all 1.5s ease-in-out;
-  background-color: black;
+  backdrop-filter: blur(2px);
 
   @include sm-down {
     height: 6rem;

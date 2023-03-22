@@ -38,7 +38,7 @@ import { SwiperEffectCube, SwiperMousewheel } from "#imports";
   width: 66vh;
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .swiper-wrapper {

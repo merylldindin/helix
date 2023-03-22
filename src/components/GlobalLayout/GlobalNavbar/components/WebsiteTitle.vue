@@ -19,6 +19,7 @@ import { LAYOUT_CONTENT } from "@/content";
   position: absolute;
   top: 1.6rem;
   left: 4rem;
+  transition: all 0.3s ease-in-out;
   z-index: 2;
 
   @include sm-down {

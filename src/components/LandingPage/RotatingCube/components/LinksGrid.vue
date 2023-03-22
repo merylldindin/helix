@@ -29,21 +29,24 @@ defineProps({
   />
 
   <div class="grid-overlay">
-    <client-only>
-      <Vue3Lottie
-        v-if="showHint"
-        :animation-data="SwipeHint"
-        class="swipe-hint"
-        :width="'5rem'"
-      />
-    </client-only>
+    <div class="h-100 w-100 d-flex flex-column">
+      <client-only>
+        <Vue3Lottie
+          v-if="showHint"
+          :animation-data="SwipeHint"
+          class="swipe-hint"
+          :width="'5vh'"
+        />
+      </client-only>
+    </div>
   </div>
 
   <div class="grid-links">
     <CustomHeadline
+      class="title-typography"
       :level="2"
       :text="grid.headline"
-      typography="text-cartesian text-foam headline-3 text-uppercase"
+      typography="text-cartesian text-foam text-uppercase"
     />
 
     <CustomLink
@@ -53,12 +56,17 @@ defineProps({
       class="grid-link"
     >
       <CustomHeadline
+        class="link-typography"
         :level="3"
         :text="profile.slug"
-        typography="text-foam headline-5"
+        typography="text-foam"
       />
 
-      <v-icon :color="$COLOR.FOAM" :icon="ICONS[profile.icon as IconName]" />
+      <v-icon
+        :color="$COLOR.FOAM"
+        :icon="ICONS[profile.icon as IconName]"
+        :size="'3vh'"
+      />
     </CustomLink>
   </div>
 </template>
@@ -68,6 +76,7 @@ defineProps({
   height: 100%;
   width: 50px;
   position: absolute;
+  z-index: 0;
 
   @include sm-down {
     min-height: 100%;
@@ -77,40 +86,47 @@ defineProps({
 .grid-overlay {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 66vh;
   background-color: rgb(0 0 0 / 25%);
+  overflow: hidden;
   z-index: 1;
+
+  @include sm-down {
+    height: 100%;
+  }
+}
+
+.grid-links {
+  height: calc(66vh - 6vh);
+  padding-top: 6vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  z-index: 2;
 }
 
 .swipe-hint {
-  bottom: 0;
+  position: absolute;
   right: 0;
-  transform: rotate(90deg) translateX(33vh);
+  left: 0;
+  transform: rotate(90deg) translateX(calc(33vh - 2.5vh));
 
   @include sm-down {
     transform: rotate(90deg) translateX(36vh);
   }
 }
 
-.grid-links {
-  max-height: 60vh;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  z-index: 2;
-}
-
 .grid-link {
   width: 50vh;
-  border-radius: 20px;
-  padding: 1rem 4rem;
+  border-radius: 3vh;
+  padding: 1vh 4vh;
+  align-items: center;
   background-color: rgba(0 0 0 / 25%);
-  z-index: 3;
   display: flex;
   justify-content: space-between;
   transition: all 0.3s ease-in-out;
+  z-index: 3;
 
   &:hover {
     transform: scale(1.05);
@@ -123,5 +139,13 @@ defineProps({
   @include sm-down {
     width: 100%;
   }
+}
+
+.title-typography {
+  font-size: 4vh !important;
+}
+
+.link-typography {
+  font-size: 2vh !important;
 }
 </style>
