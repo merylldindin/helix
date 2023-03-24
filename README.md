@@ -1,12 +1,27 @@
-<div align="center">
-  <a href="https://merylldindin.com">
-    <img src="https://network-eu-west-3.s3.eu-west-3.amazonaws.com/github/helix-thumbnail.png" alt="Helix Logo" width="100%">
-  </a>
+[contributors-shield]: https://img.shields.io/github/contributors/merylldindin/helix.svg?style=for-the-badge
+[contributors-url]: https://github.com/merylldindin/helix/graphs/contributors
+[stars-shield]: https://img.shields.io/github/stars/merylldindin/helix.svg?style=for-the-badge
+[stars-url]: https://github.com/merylldindin/helix/stargazers
+[issues-shield]: https://img.shields.io/github/issues/merylldindin/helix.svg?style=for-the-badge
+[issues-url]: https://github.com/merylldindin/helix/issues
+[license-shield]: https://img.shields.io/github/license/merylldindin/helix.svg?style=for-the-badge
+[license-url]: https://github.com/merylldindin/helix/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/merylldindin
 
-  <br />
+<a href="https://merylldindin.com">
+    <img src="https://network-eu-west-3.s3.eu-west-3.amazonaws.com/github/helix-thumbnail.png" alt="Helix Logo" width="100%">
+</a>
+
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Apache License][license-shield]][license-url]
+
+<div align="center">
   <p align="center">
     <h2> Showcase Yourself </h2>
-    <br />
     <a href="https://merylldindin.com">
         View Demo
     </a>
