@@ -14,7 +14,7 @@ defineProps({
     type: Object,
   },
   showHint: {
-    required: false,
+    default: true,
     type: Boolean,
   },
 });

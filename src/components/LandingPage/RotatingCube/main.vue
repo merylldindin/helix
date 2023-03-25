@@ -3,20 +3,25 @@ import { PAGE_CONTENT } from "@/content";
 
 import { LinksGrid } from "./components";
 
-import { SwiperEffectCube, SwiperMousewheel } from "#imports";
+import { SwiperAutoplay, SwiperEffectCube, SwiperMousewheel } from "#imports";
 </script>
 
 <template>
   <div class="cube-wrapper">
     <Swiper
+      :autoplay="{
+        delay: 1500,
+        disableOnInteraction: true,
+      }"
       :centered-slides="true"
       class="swiper-wrapper"
       :cube-effect="{
         shadowScale: 1.0,
       }"
       :effect="'cube'"
+      :grab-cursor="true"
       :loop="true"
-      :modules="[SwiperEffectCube, SwiperMousewheel]"
+      :modules="[SwiperAutoplay, SwiperEffectCube, SwiperMousewheel]"
       :mousewheel="true"
       :slides-per-view="1"
     >
@@ -26,7 +31,7 @@ import { SwiperEffectCube, SwiperMousewheel } from "#imports";
         class="swiper-slide"
         :lazy="index !== 0"
       >
-        <LinksGrid :grid="page" :show-hint="index === 0" />
+        <LinksGrid :grid="page" />
       </SwiperSlide>
     </Swiper>
   </div>
