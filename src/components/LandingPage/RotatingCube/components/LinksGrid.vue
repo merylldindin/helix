@@ -21,54 +21,54 @@ defineProps({
 </script>
 
 <template>
-  <CustomImage
-    :aspect-ratio="1"
-    class="grid-image"
-    :cover="xs"
-    :image="grid.background"
-  />
+  <client-only>
+    <CustomImage
+      :aspect-ratio="1"
+      class="grid-image"
+      :cover="xs"
+      :image="grid.background"
+    />
 
-  <div class="grid-overlay">
-    <div class="h-100 w-100 d-flex flex-column">
-      <client-only>
+    <div class="grid-overlay">
+      <div class="h-100 w-100 d-flex flex-column">
         <Vue3Lottie
           v-if="showHint"
           :animation-data="SwipeHint"
           class="swipe-hint"
           :width="'5vh'"
         />
-      </client-only>
+      </div>
     </div>
-  </div>
 
-  <div class="grid-links">
-    <CustomHeadline
-      class="title-typography"
-      :level="2"
-      :text="grid.headline"
-      typography="text-cartesian text-foam text-uppercase"
-    />
-
-    <CustomLink
-      v-for="(profile, index) in grid.profiles"
-      v-bind="profile.link"
-      :key="index"
-      class="grid-link"
-    >
+    <div class="grid-links">
       <CustomHeadline
-        class="link-typography"
-        :level="3"
-        :text="profile.slug"
-        typography="text-foam"
+        class="title-typography"
+        :level="2"
+        :text="grid.headline"
+        typography="text-cartesian text-foam text-uppercase"
       />
 
-      <v-icon
-        :color="$COLOR.FOAM"
-        :icon="ICONS[profile.icon as IconName]"
-        :size="'3vh'"
-      />
-    </CustomLink>
-  </div>
+      <CustomLink
+        v-for="(profile, index) in grid.profiles"
+        v-bind="profile.link"
+        :key="index"
+        class="grid-link"
+      >
+        <CustomHeadline
+          class="link-typography"
+          :level="3"
+          :text="profile.slug"
+          typography="text-foam"
+        />
+
+        <v-icon
+          :color="$COLOR.FOAM"
+          :icon="ICONS[profile.icon as IconName]"
+          :size="'3vh'"
+        />
+      </CustomLink>
+    </div>
+  </client-only>
 </template>
 
 <style lang="scss" scoped>

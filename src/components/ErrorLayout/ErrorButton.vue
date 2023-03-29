@@ -4,15 +4,19 @@ import { CustomLink } from "@/components/shared";
 </script>
 
 <template>
-  <div class="button-wrapper">
-    <div class="button-animation">
-      <client-only>
+  <client-only>
+    <div class="button-wrapper">
+      <div class="button-animation">
         <Vue3Lottie :animation-data="ButtonWave" :width="'200px'" />
-      </client-only>
-    </div>
+      </div>
 
-    <CustomLink class="button-action headline-6 text-slate-gray" prompt="HOME" to="/" />
-  </div>
+      <CustomLink
+        class="button-action headline-6 text-slate-gray"
+        prompt="HOME"
+        to="/"
+      />
+    </div>
+  </client-only>
 </template>
 
 <style lang="scss" scoped>

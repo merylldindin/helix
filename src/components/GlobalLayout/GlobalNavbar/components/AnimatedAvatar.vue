@@ -9,22 +9,22 @@ const { smAndDown } = useDisplay();
 </script>
 
 <template>
-  <NuxtLink to="/">
-    <div class="animation-wrapper">
-      <div class="animation">
-        <client-only>
+  <client-only>
+    <NuxtLink to="/">
+      <div class="animation-wrapper">
+        <div class="animation">
           <Vue3Lottie
             :animation-data="HotBubbles"
             :width="smAndDown ? '5.5rem' : '8rem'"
           />
-        </client-only>
-      </div>
+        </div>
 
-      <v-avatar class="avatar custom-shadow" :size="smAndDown ? '3rem' : '4.5rem'">
-        <CustomImage :image="LAYOUT_CONTENT.animatedAvatar" />
-      </v-avatar>
-    </div>
-  </NuxtLink>
+        <v-avatar class="avatar custom-shadow" :size="smAndDown ? '3rem' : '4.5rem'">
+          <CustomImage :image="LAYOUT_CONTENT.animatedAvatar" />
+        </v-avatar>
+      </div>
+    </NuxtLink>
+  </client-only>
 </template>
 
 <style lang="scss" scoped>
