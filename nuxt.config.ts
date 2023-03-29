@@ -46,6 +46,7 @@ export default defineNuxtConfig({
       crawlLinks: true,
     },
   },
+  plugins: ["@/plugins/vuetify.client/index.ts"],
   postcss: {
     plugins: {
       cssnano: true,
