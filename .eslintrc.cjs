@@ -10,7 +10,7 @@ module.exports = {
     parser: "@typescript-eslint/parser",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "import", "prettier", "sonarjs", "unicorn", "vue"],
+  plugins: ["import", "prettier", "sonarjs", "unicorn"],
   root: true,
   rules: {
     "@typescript-eslint/explicit-member-accessibility": "error",
