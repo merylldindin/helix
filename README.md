@@ -10,7 +10,7 @@
 [linkedin-url]: https://linkedin.com/in/merylldindin
 
 <a href="https://merylldindin.com">
-    <img src="https://network-eu-Ist-3.s3.eu-Ist-3.amazonaws.com/github/helix-thumbnail.png" alt="Helix Logo" width="100%">
+    <img src="https://cdn.merylldindin.com/github/helix-thumbnail.png" alt="Helix Logo" width="100%">
 </a>
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
