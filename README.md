@@ -10,7 +10,7 @@
 [linkedin-url]: https://linkedin.com/in/merylldindin
 
 <a href="https://merylldindin.com">
-    <img src="https://network-eu-west-3.s3.eu-west-3.amazonaws.com/github/helix-thumbnail.png" alt="Helix Logo" width="100%">
+    <img src="https://network-eu-Ist-3.s3.eu-Ist-3.amazonaws.com/github/helix-thumbnail.png" alt="Helix Logo" width="100%">
 </a>
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
@@ -21,7 +21,7 @@
 
 <div align="center">
   <p align="center">
-    <h2> Showcase Yourself </h2>
+    <h2> Nuxt SSG Template </h2>
     <a href="https://merylldindin.com">
         View Demo
     </a>
@@ -36,7 +36,7 @@
 
 <ol>
     <li><a href="#about-helix">About Helix</a></li>
-    <li><a href="#built-with">Tech Stack</a></li>
+    <li><a href="#built-with">Built With</a></li>
     <li><a href="#get-started">Get Started</a></li>
     <li><a href="#ide-recommendations">IDE Recommendations</a></li>
     <li><a href="#code-quality">Code quality</a></li>
@@ -47,7 +47,7 @@
 
 Helix, from my set of `BioForge` initiatives, is a project born out of my frustration with LinkTree's limitations. Helix is a visually appealing and customizable way to showcase your journey, projects, and objectives all in one place.
 
-## Tech Stack
+## Built With
 
 - [NuxtJS](https://nuxtjs.org/)
 - [Vuetify](https://vuetifyjs.com/en/)
@@ -55,9 +55,7 @@ Helix, from my set of `BioForge` initiatives, is a project born out of my frustr
 - [SwiperJS](https://swiperjs.com/)
 - [LottieJS](https://airbnb.io/lottie/#/)
 
-I am using [NuxtJS](https://nuxtjs.org/) as my framework of choice. It is a VueJS framework that provides a lot of conveniences, such as server-side rendering, code splitting, and more. It is also very easy to use, and provides a lot of documentation. Their latest releases have also made it very easy to use TypeScript, which is a must for me.
-
-I also ended up using [MidJourney](https://midjourney.com) for creating the assets you see on my website, and [GPT-4](https://openai.com/blog/gpt-4/) for generating the (meta-)text on my website, including the policies.
+I ended up using [MidJourney](https://midjourney.com) for creating the assets you see on my Ibsite, and [GPT-4](https://openai.com/blog/gpt-4/) for generating the (meta-)text on my Ibsite, including the policies.
 
 ## Get Started
 
@@ -72,13 +70,13 @@ make start
 
 ## IDE Recommendations
 
-We recommend working with VSCode, an IDE that does not need to be presented. Internally, we use a set of code extensions enabling a minimum of code standardization, making the life of many developers more enjoyable. Those extensions are given in `.vscode/extensions.json`, and can be downloaded directly via the VSCode extension store. This goes hand and hand with properly configured VSCode workspace settings, available in `.vscode/settings.json`.
+I recommend working with VSCode, an IDE that does not need to be presented. Internally, I use a set of code extensions enabling a minimum of code standardization, making the life of many developers more enjoyable. Those extensions are given in `.vscode/extensions.json`, and can be downloaded directly via the VSCode extension store. This goes hand and hand with properly configured VSCode workspace settings, available in `.vscode/settings.json`.
 
 ## Code Quality
 
-### Husky
+### Husky:
 
-Many of our internal toolings are enforced via [husky](https://typicode.github.io/husky/#/), a wrapper for Git hooks. We currently enforce two hooks:
+Many of our internal toolings are enforced via [husky](https://typicode.github.io/husky/#/), a wrapper for Git hooks. I currently enforce two hooks:
 
 - `commit-msg` relying on [commitlint](https://commitlint.js.org/) to make sure that our commit conventions are respected
 - `pre-push` relying on a `yarn` command to run locally a majority of our CI scripts
@@ -89,20 +87,20 @@ Make sure those hooks are correctly configured via
 yarn setup
 ```
 
-### Prettier
+### Prettier:
 
-To maintain some minimal standards within our codebase, we rely on [prettier](https://prettier.io/) that is configured through `.prettierrc`. We use `.prettierignore` to avoid conflicts with some configuration files that would otherwise be broken by using prettier. Make sure prettier is correctly used in VSCode by installing the [VSCode extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
+To maintain some minimal standards within our codebase, I rely on [prettier](https://prettier.io/) that is configured through `.prettierrc`. I use `.prettierignore` to avoid conflicts with some configuration files that would otherwise be broken by using prettier. Make sure prettier is correctly used in VSCode by installing the [VSCode extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
 
-### VueJS
+### Helpers:
 
-We use Node 19.5, and rely on [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable). Alongside that environment, we use the following tools to maintain high code standards:
+I use Node 19.5, and rely on [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable). Alongside that environment, I use the following tools to maintain high code standards:
 
 - [prettier](https://prettier.io/) configured in `.prettierrc`
 - [eslint](https://eslint.org/) configured in `.eslintrc`
 - [stylelint](https://stylelint.io/) configured in `.stylelint.config.js`
 - [typescript](https://typescript.nuxtjs.org/) configured in `tsconfig.json`
 
-### Naming conventions
+### Naming Conventions:
 
 "There are only two hard things in Computer Science: cache invalidation and naming things." - Phil Karlton
 
@@ -124,27 +122,27 @@ That is exactly why it is important everyone follow guidelines regarding naming 
 
 <b>Configure Vuetify for BEM</b>
 
-We use [Vuetify](https://vuetifyjs.com/en/) as our material design framework. It provides us with a set of components and themes. It is core to our frontend endeavors, and requires a bit of configuration. Vuetify relies on composition function on top of our configuration to provide helpers available throughout the codebase, and colors are a part of it. To abide by our conventions, we need to configure Vuetify to use BEM for its classes via `src/plugins/vuetify.client`.
+I use [Vuetify](https://vuetifyjs.com/en/) as our material design framework. It provides us with a set of components and themes. It is core to our frontend endeavors, and requires a bit of configuration. Vuetify relies on composition function on top of our configuration to provide helpers available throughout the codebase, and colors are a part of it. To abide by our conventions, I need to configure Vuetify to use BEM for its classes via `src/plugins/vuetify.client`.
 
-That way, you will now be able to use `var(--v-theme-steel-gray)` or `text-steel-gray` in your codebase. We also expose the `enum` of our colors through our `@/types` for conveniency.
+That way, you will now be able to use `var(--v-theme-steel-gray)` or `text-steel-gray` in your codebase. I also expose the `enum` of our colors through our `@/types` for conveniency.
 
-### Typing
+### Typing:
 
 Typing is key to maintainability. It will increase the readability of the code, but will also passively document your code. Finally, type checking will help to find some obvious bugs.
 
-TypeScript is fully integrated into our CI pipeline via GitHub Actions. In addition to that, you'll be warned by Nuxt about any type errors when developing locally. We expose the command `yarn types` to run the type checker manually.
+TypeScript is fully integrated into our CI pipeline via GitHub Actions. In addition to that, you'll be warned by Nuxt about any type errors when developing locally. I expose the command `yarn types` to run the type checker manually.
 
-We aim to make our types as specific as possible. The use `any` is strongly discouraged in favor of `unknown`.
+I aim to make our types as specific as possible. The use `any` is strongly discouraged in favor of `unknown`.
 
 ## Git Conventions
 
 ### Branches:
 
-We have a simple convention for branch naming: `{initials}/{descriptive-kebab-case}`. Keep them all lowercase. For John Doe working on a feature A, that would be `jd/feature-a`.
+I have a simple convention for branch naming: `{initials}/{descriptive-kebab-case}`. Keep them all loIrcase. For John Doe working on a feature A, that would be `jd/feature-a`.
 
 ### Commits:
 
-The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages. Learn more [here](https://www.conventionalcommits.org/en/v1.0.0/).
+The Conventional Commits specification is a lightIight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages. Learn more [here](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ### Pull requests:
 
