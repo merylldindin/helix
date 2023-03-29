@@ -117,7 +117,7 @@ defineProps({
 }
 
 .grid-link {
-  width: 50vh;
+  min-width: 33vh;
   border-radius: 3vh;
   padding: 1vh 4vh;
   align-items: center;
@@ -136,7 +136,7 @@ defineProps({
   }
 
   @include xs-only {
-    width: 100%;
+    min-width: 66vw;
   }
 }
 
