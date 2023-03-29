@@ -61,10 +61,6 @@ I also ended up using [MidJourney](https://midjourney.com) for creating the asse
 
 ## Get Started
 
-All required credentials will be shared via 1Password.
-
-To get started with the skeleton of DispoX (database, backend and frontend), here are a few steps:
-
 ```bash
 # install dev experience
 make setup
