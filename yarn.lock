@@ -6170,7 +6170,7 @@ __metadata:
     nuxt: 3.3.2
     nuxt-link-checker: 1.0.3
     nuxt-schema-org: 2.1.2
-    nuxt-simple-sitemap: 2.2.0
+    nuxt-simple-sitemap: 2.3.0
     nuxt-swiper: 1.0.1
     nuxt-unhead: 1.4.15
     postcss-html: 1.5.0
@@ -8462,9 +8462,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-simple-sitemap@npm:2.2.0":
-  version: 2.2.0
-  resolution: "nuxt-simple-sitemap@npm:2.2.0"
+"nuxt-simple-sitemap@npm:2.3.0":
+  version: 2.3.0
+  resolution: "nuxt-simple-sitemap@npm:2.3.0"
   dependencies:
     "@nuxt/kit": 3.3.2
     chalk: ^5.2.0
@@ -8472,9 +8472,9 @@ __metadata:
     escape-string-regexp: ^5.0.0
     knitwork: ^1.0.0
     pathe: ^1.1.0
-    radix3: ^1.0.0
+    radix3: ^1.0.1
     ufo: ^1.1.1
-  checksum: 06e027261c043b26adc9f15abab4e1e92552472a08c8c6f57d5762ec576772e80af5da2290e54d7ad6da2f82508269041bc460d99d33f5854aca3a358029bcc7
+  checksum: bbf63e8325d48cbfb135e3a9a13f9c7302fb63d69e6dbffc7bc3026e7ece3fe8ca5d3cb15c6dc044cd26471f302f422cce7bbfe758f6d334fe26349b14bdd3b0
   languageName: node
   linkType: hard
 
