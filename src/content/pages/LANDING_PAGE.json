@@ -13,6 +13,57 @@
   "tesseract": [
     {
       "background": {
+        "altText": "AI generated art of human biology and technology",
+        "lazySource": "https://cdn.merylldindin.com/assets/android-biology-lazy.webp",
+        "source": "https://cdn.merylldindin.com/assets/android-biology.webp",
+        "mobileSource": "https://cdn.merylldindin.com/assets/android-biology-mobile.webp"
+      },
+      "headline": "Hustles",
+      "profiles": [
+        {
+          "slug": "Polygon Psychology",
+          "icon": "BRAIN",
+          "link": {
+            "ariaLabel": "Learn more about Meryll Dindin's work at Polygon",
+            "href": "https://hellopolygon.com",
+            "target": "_blank",
+            "rel": "noopener external"
+          }
+        },
+        {
+          "slug": "Dillygence",
+          "icon": "FACTORY",
+          "link": {
+            "ariaLabel": "Learn more about Meryll Dindin's work at Dillygence",
+            "href": "https://dillygence.com",
+            "target": "_blank",
+            "rel": "noopener external"
+          }
+        },
+        {
+          "slug": "Auberge de Cercoux",
+          "icon": "SILVERWARE_FORK_KNIFE",
+          "link": {
+            "ariaLabel": "Learn more about Meryll Dindin's work at Auberge de Cercoux",
+            "href": "https://auberge.decercoux.com",
+            "target": "_blank",
+            "rel": "noopener external"
+          }
+        },
+        {
+          "slug": "Odelys de Bédenac",
+          "icon": "FOOD_CROISSANT",
+          "link": {
+            "ariaLabel": "Learn more about Meryll Dindin's work at Odelys de Bédenac",
+            "href": "https://odelys.debedenac.com",
+            "target": "_blank",
+            "rel": "noopener external"
+          }
+        }
+      ]
+    },
+    {
+      "background": {
         "altText": "AI generated art of transhumanist geometric future",
         "eager": true,
         "lazySource": "https://cdn.merylldindin.com/assets/futuristic-world-lazy.webp",
@@ -151,57 +202,6 @@
             "href": "https://github.com/merylldindin/helix",
             "target": "_blank",
             "rel": "nofollow noreferrer noopener external"
-          }
-        }
-      ]
-    },
-    {
-      "background": {
-        "altText": "AI generated art of human biology and technology",
-        "lazySource": "https://cdn.merylldindin.com/assets/android-biology-lazy.webp",
-        "source": "https://cdn.merylldindin.com/assets/android-biology.webp",
-        "mobileSource": "https://cdn.merylldindin.com/assets/android-biology-mobile.webp"
-      },
-      "headline": "Hustles",
-      "profiles": [
-        {
-          "slug": "Polygon Psychology",
-          "icon": "BRAIN",
-          "link": {
-            "ariaLabel": "Learn more about Meryll Dindin's work at Polygon",
-            "href": "https://hellopolygon.com",
-            "target": "_blank",
-            "rel": "noopener external"
-          }
-        },
-        {
-          "slug": "Dillygence",
-          "icon": "FACTORY",
-          "link": {
-            "ariaLabel": "Learn more about Meryll Dindin's work at Dillygence",
-            "href": "https://dillygence.com",
-            "target": "_blank",
-            "rel": "noopener external"
-          }
-        },
-        {
-          "slug": "Auberge de Cercoux",
-          "icon": "SILVERWARE_FORK_KNIFE",
-          "link": {
-            "ariaLabel": "Learn more about Meryll Dindin's work at Auberge de Cercoux",
-            "href": "https://auberge.decercoux.com",
-            "target": "_blank",
-            "rel": "noopener external"
-          }
-        },
-        {
-          "slug": "Odelys de Bédenac",
-          "icon": "FOOD_CROISSANT",
-          "link": {
-            "ariaLabel": "Learn more about Meryll Dindin's work at Odelys de Bédenac",
-            "href": "https://odelys.debedenac.com",
-            "target": "_blank",
-            "rel": "noopener external"
           }
         }
       ]
