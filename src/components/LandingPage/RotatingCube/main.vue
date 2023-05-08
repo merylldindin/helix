@@ -51,7 +51,6 @@ import { SwiperAutoplay, SwiperEffectCube, SwiperMousewheel } from "#imports";
 }
 
 .swiper-wrapper {
-  overflow: hidden;
   height: 100%;
   width: 100%;
   transition: all 0.3s ease-in-out;
