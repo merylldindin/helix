@@ -25,5 +25,8 @@ serve: ## Serve the project
 deploy: ## Deploy the project
 	poetry run sirtuin cloudfront-deploy .cloudfront -p personal
 
+invalidate-fonts: ## Invalidate fonts
+	aws cloudfront create-invalidation --distribution-id E3SZTVEZV1G0WQ --paths '/fonts/*' --region eu-west-3 --profile personal
+
 help: ## Description of the Makefile commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-25s\033[0m %s\n", $$1, $$2}'
