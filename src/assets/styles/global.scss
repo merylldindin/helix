@@ -6,26 +6,34 @@
   box-sizing: border-box;
 }
 
-:root,
-html {
+:root {
   font-size: 62.5%;
   display: block;
 }
 
-html,
-body {
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-family: "Lexend Deca", Arial, sans-serif !important;
+  font-size: 62.5%;
+  display: block;
   min-height: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: hidden;
 }
 
 body {
   font-size: 1.6rem;
+  min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
   -ms-scroll-behavior: smooth;
-  scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 h1,
@@ -38,5 +46,4 @@ p,
 a,
 span {
   color: rgb(var(--v-theme-foam)) !important;
-  font-family: "Lexend Deca", Arial, sans-serif !important;
 }
