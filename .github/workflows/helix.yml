@@ -3,7 +3,7 @@ name: helix
 on: [pull_request, merge_group]
 
 env:
-  NODE_VERSION: '18.16.0'
+  NODE_VERSION: "18.16"
 
 jobs:
   workflow:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Codebase
         uses: actions/checkout@v3
 
-    - name: Setup Node
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
@@ -52,5 +52,5 @@ jobs:
           command: yarn cypress
           install: false
           start: make serve
-          wait-on: 'http://localhost:3000/'
+          wait-on: "http://localhost:3000/"
           wait-on-timeout: 60
