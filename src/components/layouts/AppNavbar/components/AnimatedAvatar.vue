@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useDisplay } from "vuetify";
 
-import HotBubbles from "@/assets/animations/hot-bubbles.json";
 import { CustomImage } from "@/components/shared";
 import { ANIMATED_AVATAR_CONTENT } from "@/content";
 
@@ -12,14 +11,7 @@ const { smAndDown } = useDisplay();
   <client-only>
     <NuxtLink to="/">
       <div class="animation-wrapper">
-        <div class="animation">
-          <Vue3Lottie
-            :animation-data="HotBubbles"
-            :width="smAndDown ? '5.5rem' : '8rem'"
-          />
-        </div>
-
-        <v-avatar class="avatar custom-shadow" :size="smAndDown ? '3rem' : '4.5rem'">
+        <v-avatar class="custom-shadow" :size="smAndDown ? '3rem' : '4rem'">
           <CustomImage :image="ANIMATED_AVATAR_CONTENT" />
         </v-avatar>
       </div>
@@ -32,8 +24,6 @@ const { smAndDown } = useDisplay();
   position: fixed;
   top: 1.8rem;
   right: 4rem;
-  width: 4.5rem;
-  height: 4.5rem;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -43,28 +33,6 @@ const { smAndDown } = useDisplay();
   @include sm-down {
     top: 2rem;
     right: 2.5rem;
-    width: 2rem;
-    height: 2rem;
-  }
-}
-
-.avatar {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  height: fit-content;
-  z-index: 1;
-}
-
-.animation {
-  position: absolute;
-  top: -0.5rem;
-  right: -1.8rem;
-  z-index: 1;
-
-  @include sm-down {
-    top: -1rem;
-    right: -2.3rem;
   }
 }
 </style>

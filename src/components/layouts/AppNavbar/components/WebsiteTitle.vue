@@ -9,7 +9,7 @@ import { WEBSITE_TITLE_CONTENT } from "@/content";
       class="website-title"
       :level="1"
       :text="WEBSITE_TITLE_CONTENT.headline"
-      typography="text-foam headline-3 text-cartesian"
+      typography="headline-4 text-slate-gray"
     />
   </nuxt-link>
 </template>
@@ -17,7 +17,7 @@ import { WEBSITE_TITLE_CONTENT } from "@/content";
 <style lang="scss" scoped>
 .website-title {
   position: absolute;
-  top: 1.6rem;
+  top: 1.8rem;
   left: 4rem;
   transition: all 0.3s ease-in-out;
   z-index: 2;
