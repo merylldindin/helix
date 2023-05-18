@@ -1,12 +1,19 @@
 import { MetaFlatInput } from "zhead";
 
+import { DEFAULT_URL } from "@/content";
+
 export type HeadContent = {
+  canonical?: string;
   title?: string;
   description?: string;
   thumbnail?: string;
   thumbnailAlt?: string;
   noindex?: boolean;
 };
+
+const setMetaCanonical = (canonical: string) => ({
+  ogUrl: `${DEFAULT_URL}${canonical}`,
+});
 
 const setMetaTitle = (title: string) => ({
   ogTitle: title,
@@ -32,12 +39,14 @@ const setMetaThumbnailAlt = (thumbnailAlt: string) => ({
 });
 
 export const extractHead = ({
+  canonical,
   title,
   description,
   thumbnail,
   thumbnailAlt,
   noindex,
 }: HeadContent): MetaFlatInput => {
+  const metaCanonical = canonical ? setMetaCanonical(canonical) : {};
   const metaTitle = title ? setMetaTitle(title) : {};
   const metaDescription = description ? setMetaDescription(description) : {};
   const metaThumbnail = thumbnail ? setMetaThumbnail(thumbnail) : {};
@@ -45,6 +54,7 @@ export const extractHead = ({
   const metaRobots = noindex ? { robots: { all: false } } : {};
 
   return {
+    ...metaCanonical,
     ...metaTitle,
     ...metaDescription,
     ...metaThumbnail,

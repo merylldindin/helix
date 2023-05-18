@@ -3,7 +3,7 @@ import { computed } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomButton, CustomText } from "@/components/shared";
-import { LAYOUT_CONTENT } from "@/content";
+import { COOKIE_BANNER_CONTENT } from "@/content";
 
 import { useCookie } from "#app";
 
@@ -18,8 +18,8 @@ const dismissBanner = () => {
 
 const cookieBannerText = computed(() => {
   return xs.value
-    ? LAYOUT_CONTENT.cookieBanner.disclaimer.mobile
-    : LAYOUT_CONTENT.cookieBanner.disclaimer.desktop;
+    ? COOKIE_BANNER_CONTENT.disclaimer.mobile
+    : COOKIE_BANNER_CONTENT.disclaimer.desktop;
 });
 </script>
 
@@ -32,7 +32,7 @@ const cookieBannerText = computed(() => {
 
       <CustomButton
         class="ml-6"
-        v-bind="LAYOUT_CONTENT.cookieBanner.button"
+        v-bind="COOKIE_BANNER_CONTENT.button"
         @click="dismissBanner"
       />
     </v-card>

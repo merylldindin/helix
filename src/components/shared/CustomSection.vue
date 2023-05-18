@@ -1,9 +1,5 @@
 <script lang="ts" setup>
 defineProps({
-  dark: {
-    default: false,
-    type: Boolean,
-  },
   fullscreen: {
     default: false,
     type: Boolean,
@@ -32,7 +28,9 @@ defineProps({
       'custom-section--snap': snap,
     }"
   >
-    <slot name="background" />
+    <div class="custom-section__background">
+      <slot name="background" />
+    </div>
 
     <v-container
       v-if="$slots.default && !hideContainer"
@@ -50,8 +48,13 @@ defineProps({
 .custom-section {
   height: 100%;
   position: relative;
-  overflow: hidden;
   display: flex;
+
+  &__background {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
 
   &--snap {
     scroll-snap-align: start;
@@ -60,6 +63,7 @@ defineProps({
   &--fullscreen {
     width: 100%;
     height: 100vh;
+    overflow: hidden;
   }
 }
 

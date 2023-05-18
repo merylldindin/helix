@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 import { computed } from "vue";
 
-import { ErrorButton } from "@/components";
+import { ErrorButton } from "@/components/layouts";
 import { CustomHeadline } from "@/components/shared";
-import { LAYOUT_CONTENT } from "@/content";
+import { ERROR_PAGE_CONTENT } from "@/content";
 import { extractHead } from "@/utils/meta";
 
 import { useSeoMeta } from "#imports";
 
-useSeoMeta(extractHead(LAYOUT_CONTENT.errorPage.head));
+useSeoMeta(extractHead(ERROR_PAGE_CONTENT.head));
 
 const cProps = defineProps({
   error: {

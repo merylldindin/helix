@@ -17,7 +17,7 @@ start: ## Start the project
 	yarn start
 
 build: ## Build the project
-	yarn build
+	NUXT_ENVIRONMENT=production yarn build
 
 serve: ## Serve the project
 	yarn serve

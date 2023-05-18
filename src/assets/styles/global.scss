@@ -16,13 +16,13 @@
 }
 
 html {
-  font-family: "Lexend Deca", Arial, sans-serif !important;
   font-size: 62.5%;
   display: block;
   min-height: 100%;
   scrollbar-width: none;
   -ms-overflow-style: none;
   overflow: hidden;
+  font-family: "Lexend Deca", Arial, sans-serif !important;
 }
 
 body {
@@ -41,7 +41,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  color: rgb(var(--v-theme-foam)) !important;
+  font-family: "Major Mono Display", serif !important;
+}
+
 p,
 a,
 span {

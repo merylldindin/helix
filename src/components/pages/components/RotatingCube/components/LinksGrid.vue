@@ -1,12 +1,8 @@
 <script lang="ts" setup>
-import { useDisplay } from "vuetify";
-
 import SwipeHint from "@/assets/animations/swipe-hint.json";
-import { CustomHeadline, CustomImage, CustomLink } from "@/components/shared";
+import { CustomHeadline, CustomLink } from "@/components/shared";
 import { ICONS } from "@/plugins/vuetify.client/icons";
 import { IconName } from "@/types";
-
-const { xs } = useDisplay();
 
 defineProps({
   grid: {
@@ -22,30 +18,12 @@ defineProps({
 
 <template>
   <client-only>
-    <CustomImage
-      :aspect-ratio="1"
-      class="grid-image"
-      :cover="xs"
-      :image="grid.background"
-    />
-
-    <div class="grid-overlay">
-      <div class="h-100 w-100 d-flex flex-column">
-        <Vue3Lottie
-          v-if="showHint"
-          :animation-data="SwipeHint"
-          class="swipe-hint"
-          :width="'5vh'"
-        />
-      </div>
-    </div>
-
     <div class="grid-links">
       <CustomHeadline
         class="title-typography"
         :level="2"
         :text="grid.headline"
-        typography="text-cartesian text-foam text-uppercase"
+        typography="text-foam"
       />
 
       <CustomLink
@@ -67,36 +45,20 @@ defineProps({
           :size="'3vh'"
         />
       </CustomLink>
+
+      <Vue3Lottie
+        v-if="showHint"
+        :animation-data="SwipeHint"
+        class="swipe-hint"
+        :width="'5vh'"
+      />
     </div>
   </client-only>
 </template>
 
 <style lang="scss" scoped>
-.grid-image {
-  height: 100%;
-  position: absolute;
-  z-index: 0;
-
-  @include xs-only {
-    min-height: 100%;
-  }
-}
-
-.grid-overlay {
-  position: absolute;
-  width: 100%;
-  height: 66vh;
-  background-color: rgb(0 0 0 / 25%);
-  overflow: hidden;
-  z-index: 1;
-
-  @include xs-only {
-    height: 100%;
-  }
-}
-
 .grid-links {
-  height: calc(66vh - 6vh);
+  height: 100%;
   padding-top: 6vh;
   align-items: center;
   display: flex;
@@ -141,7 +103,7 @@ defineProps({
 }
 
 .title-typography {
-  font-size: 4vh !important;
+  font-size: 3.5vh !important;
 }
 
 .link-typography {

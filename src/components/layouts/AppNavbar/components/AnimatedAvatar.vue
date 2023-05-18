@@ -3,7 +3,7 @@ import { useDisplay } from "vuetify";
 
 import HotBubbles from "@/assets/animations/hot-bubbles.json";
 import { CustomImage } from "@/components/shared";
-import { LAYOUT_CONTENT } from "@/content";
+import { ANIMATED_AVATAR_CONTENT } from "@/content";
 
 const { smAndDown } = useDisplay();
 </script>
@@ -20,7 +20,7 @@ const { smAndDown } = useDisplay();
         </div>
 
         <v-avatar class="avatar custom-shadow" :size="smAndDown ? '3rem' : '4.5rem'">
-          <CustomImage :image="LAYOUT_CONTENT.animatedAvatar" />
+          <CustomImage :image="ANIMATED_AVATAR_CONTENT" />
         </v-avatar>
       </div>
     </NuxtLink>

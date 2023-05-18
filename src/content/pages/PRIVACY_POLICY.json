@@ -1,0 +1,154 @@
+{
+  "layout": "scrolled",
+  "head": {
+    "canonical": "/legal/privacy-policy/",
+    "title": "Privacy Policy: Your Privacy is Our Priority | Meryll Dindin",
+    "description": "Protecting your privacy is our top priority. Read our concise privacy policy to understand how we collect and use your information."
+  },
+  "components": [
+    {
+      "name": "LEGAL_TEXT",
+      "id": "privacy-policy",
+      "props": {
+        "title": "Privacy Policy",
+        "date": "Last updated on February 3, 2023",
+        "content": [
+          {
+            "type": "subtitle",
+            "content": "Introduction"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "The website "
+              },
+              {
+                "type": "a",
+                "content": "merylldindin.com",
+                "props": {
+                  "to": "/"
+                }
+              },
+              {
+                "type": "p",
+                "content": " (“we”, “us”, or “our”) is committed to protecting the privacy of its users. This Privacy Policy applies to information collected through our website located at "
+              },
+              {
+                "type": "a",
+                "content": "https://merylldindin.com",
+                "props": {
+                  "to": "/",
+                  "underlined": true
+                }
+              },
+              {
+                "type": "p",
+                "content": " (the “Site”). This Privacy Policy describes the types of information we may collect from you or that you may provide when you visit the Site and our practices for collecting, using, maintaining, protecting, and disclosing that information."
+              }
+            ]
+          },
+          {
+            "type": "subtitle",
+            "content": "Information Collection, Use, and Sharing"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We use Google Analytics to collect information about use of the Site, such as the number of visitors and the pages visited. Google Analytics collects only the IP address assigned to the user on the date of visit, not the user's name or other personally identifiable information. The information collected by Google Analytics is used to improve the Site and enhance the user experience."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We will not sell or rent this information to anyone. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, e.g. to ship an order."
+              }
+            ]
+          },
+          {
+            "type": "subtitle",
+            "content": "Your Access and Control Over Information"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "You may opt out of data collection by Google Analytics by installing the Google Analytics opt-out browser add-on."
+              }
+            ]
+          },
+          {
+            "type": "subtitle",
+            "content": "Security"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We take precautions to protect your information. When you submit sensitive information via the website, your information is protected both online and offline."
+              }
+            ]
+          },
+          {
+            "type": "subtitle",
+            "content": "Changes to this Privacy Policy"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. Your continued use of the Site after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy."
+              }
+            ]
+          },
+          {
+            "type": "subtitle",
+            "content": "Contact Information"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "If you have any questions or concerns about this Privacy Policy, please contact us via "
+              },
+              {
+                "type": "a",
+                "content": "email",
+                "props": {
+                  "external": true,
+                  "to": "mailto:merylldin@gmail.com",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                  "underlined": true
+                }
+              },
+              {
+                "type": "p",
+                "content": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "This Privacy Policy is effective as of February 3, 2023, and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

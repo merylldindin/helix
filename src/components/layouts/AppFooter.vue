@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { CustomLink } from "@/components/shared";
-import { LAYOUT_CONTENT } from "@/content";
+import { APP_FOOTER_CONTENT } from "@/content";
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import { LAYOUT_CONTENT } from "@/content";
     <v-container>
       <v-row class="text-center" justify="center">
         <v-col
-          v-for="(link, index) in LAYOUT_CONTENT.globalFooter.links"
+          v-for="(link, index) in APP_FOOTER_CONTENT.links"
           :key="index"
           cols="12"
           sm="auto"
@@ -20,7 +20,7 @@ import { LAYOUT_CONTENT } from "@/content";
 
         <v-col class="text-center global-copyright" cols="12" sm="auto">
           <span class="text-1 text-foam">
-            {{ LAYOUT_CONTENT.globalFooter.copyright }}
+            {{ APP_FOOTER_CONTENT.copyright }}
           </span>
         </v-col>
       </v-row>

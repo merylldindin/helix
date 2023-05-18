@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { CustomHeadline } from "@/components/shared";
-import { LAYOUT_CONTENT } from "@/content";
+import { WEBSITE_TITLE_CONTENT } from "@/content";
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import { LAYOUT_CONTENT } from "@/content";
     <CustomHeadline
       class="website-title"
       :level="1"
-      :text="LAYOUT_CONTENT.websiteTitle.headline"
+      :text="WEBSITE_TITLE_CONTENT.headline"
       typography="text-foam headline-3 text-cartesian"
     />
   </nuxt-link>

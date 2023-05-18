@@ -1,23 +1,36 @@
-<script setup lang="ts">
-import { onMounted, onUnmounted } from "vue";
+<script lang="ts" setup>
+import { nextTick, onMounted, onUnmounted, watch } from "vue";
+import { useRoute } from "vue-router";
 
-import { GlobalFooter, GlobalNavbar } from "@/components";
+import { AppNavbar } from "@/components/layouts";
 
-const setSectionHeight = () => {
+const route = useRoute();
+
+const setSectionHeight = async () => {
+  await nextTick();
+
   const windowHeight = window.innerHeight;
 
   const sections = document.querySelectorAll("section");
 
   sections.forEach((section) => {
-    section.style.minHeight = `${windowHeight}px`;
+    section.style.height = `${windowHeight}px`;
   });
 };
 
-onMounted(() => {
+onMounted(async () => {
   window.addEventListener("resize", setSectionHeight);
 
-  setSectionHeight();
+  await setSectionHeight();
 });
+
+watch(
+  route,
+  async () => {
+    await setSectionHeight();
+  },
+  { deep: true }
+);
 
 onUnmounted(() => {
   window.removeEventListener("resize", setSectionHeight);
@@ -26,13 +39,13 @@ onUnmounted(() => {
 
 <template>
   <div class="default-layout">
-    <GlobalNavbar />
+    <AppNavbar />
 
-    <v-main>
-      <slot />
-    </v-main>
-
-    <GlobalFooter />
+    <div class="default-page">
+      <v-main>
+        <slot />
+      </v-main>
+    </div>
   </div>
 </template>
 
@@ -41,5 +54,11 @@ onUnmounted(() => {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+}
+
+.default-page {
+  height: 100vh;
+  overflow-y: scroll;
 }
 </style>

@@ -10,13 +10,9 @@ node_modules
 .nitro
 .cache
 .output
-.env
 *.log*
 
 # cypress
 cypress/downloads
 cypress/screenshots
 cypress/videos
-
-# unlighthouse
-.unlighthouse

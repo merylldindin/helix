@@ -1,12 +1,23 @@
 <script lang="ts" setup>
-import { computed } from "vue";
+import { ComputedRef, computed } from "vue";
+import { useRoute } from "vue-router";
+
+import { DEFAULT_URL } from "@/content";
 
 const cProps = defineProps({
   ariaLabel: {
     default: undefined,
     type: String,
   },
-  href: {
+  color: {
+    default: "mine-shaft",
+    type: String,
+  },
+  external: {
+    default: false,
+    type: Boolean,
+  },
+  icon: {
     default: undefined,
     type: String,
   },
@@ -18,12 +29,16 @@ const cProps = defineProps({
     default: undefined,
     type: String,
   },
+  size: {
+    default: "x-large",
+    type: String,
+  },
   target: {
     default: undefined,
     type: String,
   },
   to: {
-    default: undefined,
+    required: true,
     type: String,
   },
   typography: {
@@ -36,30 +51,29 @@ const cProps = defineProps({
   },
 });
 
-const isExternal = computed(() => {
-  return cProps.href !== undefined;
+const parsedLink: ComputedRef<Object> = computed(() => {
+  const parsedUrl = new URL(cProps.to, DEFAULT_URL);
+  const isSamePage = useRoute().path === parsedUrl.pathname;
+
+  if (!cProps.to.startsWith("http") && cProps.to.includes("#")) {
+    return {
+      external: isSamePage,
+      to: isSamePage
+        ? parsedUrl.hash
+        : {
+            hash: parsedUrl.hash,
+            path: parsedUrl.pathname,
+          },
+    };
+  }
+
+  return { to: cProps.to };
 });
 </script>
 
 <template>
-  <a
-    v-if="isExternal"
-    v-bind="cProps"
-    :class="[
-      typography,
-      underlined ? 'text-decoration-underline' : 'text-decoration-none',
-    ]"
-  >
-    <template v-if="prompt">
-      {{ prompt }}
-    </template>
-
-    <slot />
-  </a>
-
   <nuxt-link
-    v-else
-    v-bind="cProps"
+    v-bind="{ ...cProps, ...parsedLink }"
     :class="[
       typography,
       underlined ? 'text-decoration-underline' : 'text-decoration-none',

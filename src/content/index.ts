@@ -1,7 +1,3 @@
-export { PAGE_CONTENT } from "./pages";
-
-export { LAYOUT_CONTENT } from "./layouts";
-
-export { DEFAULT_IDENTITY } from "./schema";
-
-export { DEFAULT_TITLE, DEFAULT_DESCRIPTION, CUSTOM_HEAD } from "./meta";
+export * from "./layouts";
+export * from "./pages";
+export * from "./shared";

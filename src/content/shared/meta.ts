@@ -6,6 +6,8 @@ const DEFAULT_COLOR = "#242424";
 export const DEFAULT_DESCRIPTION =
   "Serial entrepreneur. Shaping the future of healthcare, mental health, manufacturing, artificial intelligence. Having a passion for crazy projects, especially the ones involving complex systems.";
 
+export const DEFAULT_URL = "https://merylldindin.com";
+
 const DEFAULT_CDN_HOST = "https://cdn.merylldindin.com";
 
 const DEFAULT_THUMBNAIL = `${DEFAULT_CDN_HOST}/thumbnails/general.webp`;
@@ -61,7 +63,7 @@ export const CUSTOM_HEAD = {
       name: "apple-mobile-web-app-status-bar-style",
     },
     {
-      content: "width=device-width, initial-scale=1, maximum-scale=5",
+      content: "initial-scale=1.0, maximum-scale=5.0, width=device-width",
       name: "viewport",
     },
     {

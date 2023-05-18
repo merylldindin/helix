@@ -2,18 +2,11 @@ import UnheadVite from "@unhead/addons/vite";
 import { defineNuxtConfig } from "nuxt/config";
 
 import { CUSTOM_HEAD, DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "./src/content";
+import { RoutePath } from "./src/types/routes";
 
 export default defineNuxtConfig({
   app: {
     head: CUSTOM_HEAD,
-    layoutTransition: {
-      mode: "out-in",
-      name: "layout",
-    },
-    pageTransition: {
-      mode: "out-in",
-      name: "page",
-    },
   },
   build: {
     transpile: ["vuetify"],
@@ -45,6 +38,7 @@ export default defineNuxtConfig({
     minify: true,
     prerender: {
       crawlLinks: true,
+      routes: Object.values(RoutePath),
     },
   },
   plugins: ["@/plugins/vuetify.client/index.ts"],
@@ -55,11 +49,13 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
+      environment: process.env.NUXT_ENVIRONMENT,
+      language: "en",
       siteDescription: DEFAULT_DESCRIPTION,
       siteName: DEFAULT_TITLE,
       siteUrl: process.env.NUXT_WEBSITE_URL,
       titleSeparator: "|",
-      trailingSlash: false,
+      trailingSlash: true,
     },
   },
   sourcemap: {

@@ -1,210 +1,235 @@
 {
+  "layout": "default",
   "head": {
+    "canonical": "/",
     "title": "Serial Entrepreneur, Convinced Transhumanist | Meryll Dindin"
   },
-  "background": {
-    "altText": "Highlighted futuristic road",
-    "eager": true,
-    "lazySource": "https://cdn.merylldindin.com/assets/road-background-lazy.webp",
-    "source": "https://cdn.merylldindin.com/assets/road-background.webp",
-    "mobileSource": "https://cdn.merylldindin.com/assets/road-background-mobile.webp",
-    "mobileSourceLazy": "https://cdn.merylldindin.com/assets/road-background-mobile-lazy.webp"
-  },
-  "tesseract": [
+  "components": [
     {
-      "background": {
-        "altText": "AI generated art of human biology and technology",
-        "lazySource": "https://cdn.merylldindin.com/assets/android-biology-lazy.webp",
-        "source": "https://cdn.merylldindin.com/assets/android-biology.webp",
-        "mobileSource": "https://cdn.merylldindin.com/assets/android-biology-mobile.webp"
-      },
-      "headline": "Hustles",
-      "profiles": [
-        {
-          "slug": "Polygon Psychology",
-          "icon": "BRAIN",
-          "link": {
-            "ariaLabel": "Learn more about Meryll Dindin's work at Polygon",
-            "href": "https://hellopolygon.com",
-            "target": "_blank",
-            "rel": "noopener external"
-          }
+      "name": "ROTATING_CUBE",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Highlighted futuristic road",
+          "eager": true,
+          "lazySource": "https://cdn.merylldindin.com/assets/road-background-lazy.webp",
+          "source": "https://cdn.merylldindin.com/assets/road-background.webp",
+          "mobileSource": "https://cdn.merylldindin.com/assets/road-background-mobile.webp",
+          "mobileSourceLazy": "https://cdn.merylldindin.com/assets/road-background-mobile-lazy.webp"
         },
-        {
-          "slug": "Dillygence",
-          "icon": "FACTORY",
-          "link": {
-            "ariaLabel": "Learn more about Meryll Dindin's work at Dillygence",
-            "href": "https://dillygence.com",
-            "target": "_blank",
-            "rel": "noopener external"
+        "pages": [
+          {
+            "background": {
+              "altText": "AI generated art of human biology and technology",
+              "lazySource": "https://cdn.merylldindin.com/assets/android-biology-lazy.webp",
+              "source": "https://cdn.merylldindin.com/assets/android-biology.webp",
+              "mobileSource": "https://cdn.merylldindin.com/assets/android-biology-mobile.webp"
+            },
+            "headline": "Hustles",
+            "profiles": [
+              {
+                "slug": "Polygon Psychology",
+                "icon": "BRAIN",
+                "link": {
+                  "ariaLabel": "Learn more about Meryll Dindin's work at Polygon",
+                  "external": true,
+                  "to": "https://hellopolygon.com",
+                  "target": "_blank",
+                  "rel": "noopener external"
+                }
+              },
+              {
+                "slug": "Dillygence",
+                "icon": "FACTORY",
+                "link": {
+                  "ariaLabel": "Learn more about Meryll Dindin's work at Dillygence",
+                  "external": true,
+                  "to": "https://dillygence.com",
+                  "target": "_blank",
+                  "rel": "noopener external"
+                }
+              },
+              {
+                "slug": "Auberge de Cercoux",
+                "icon": "SILVERWARE_FORK_KNIFE",
+                "link": {
+                  "ariaLabel": "Learn more about Meryll Dindin's work at Auberge de Cercoux",
+                  "external": true,
+                  "to": "https://auberge.decercoux.com",
+                  "target": "_blank",
+                  "rel": "noopener external"
+                }
+              },
+              {
+                "slug": "Odelys de Bédenac",
+                "icon": "FOOD_CROISSANT",
+                "link": {
+                  "ariaLabel": "Learn more about Meryll Dindin's work at Odelys de Bédenac",
+                  "external": true,
+                  "to": "https://odelys.debedenac.com",
+                  "target": "_blank",
+                  "rel": "noopener external"
+                }
+              }
+            ]
+          },
+          {
+            "background": {
+              "altText": "AI generated art of transhumanist geometric future",
+              "eager": true,
+              "lazySource": "https://cdn.merylldindin.com/assets/futuristic-world-lazy.webp",
+              "source": "https://cdn.merylldindin.com/assets/futuristic-world.webp",
+              "mobileSource": "https://cdn.merylldindin.com/assets/futuristic-world-mobile.webp"
+            },
+            "headline": "Profiles",
+            "profiles": [
+              {
+                "slug": "Twitter",
+                "icon": "TWITTER",
+                "link": {
+                  "ariaLabel": "Follow Meryll Dindin on Twitter",
+                  "external": true,
+                  "to": "https://twitter.com/MeryllDindin",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
+                "slug": "LinkedIn",
+                "icon": "LINKEDIN",
+                "link": {
+                  "ariaLabel": "Follow Meryll Dindin on LinkedIn",
+                  "external": true,
+                  "to": "https://www.linkedin.com/in/merylldindin/",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
+                "slug": "Instagram",
+                "icon": "INSTAGRAM",
+                "link": {
+                  "ariaLabel": "Follow Meryll Dindin on Instagram",
+                  "external": true,
+                  "to": "https://www.instagram.com/merylldindin/",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
+                "slug": "Facebook",
+                "icon": "FACEBOOK",
+                "link": {
+                  "ariaLabel": "Follow Meryll Dindin on Facebook",
+                  "external": true,
+                  "to": "https://www.facebook.com/merylldindin",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
+                "slug": "Modeling",
+                "icon": "CAMERA",
+                "link": {
+                  "ariaLabel": "Have a look at Meryll Dindin's modeling project",
+                  "external": true,
+                  "to": "https://dindinmeryll.portfoliobox.net",
+                  "target": "_blank",
+                  "rel": "noopener external"
+                }
+              }
+            ]
+          },
+          {
+            "background": {
+              "altText": "AI generated art of a futuristic city",
+              "lazySource": "https://cdn.merylldindin.com/assets/future-city-lazy.webp",
+              "source": "https://cdn.merylldindin.com/assets/future-city.webp",
+              "mobileSource": "https://cdn.merylldindin.com/assets/future-city-mobile.webp"
+            },
+            "headline": "Publications",
+            "profiles": [
+              {
+                "slug": "Medium",
+                "icon": "NOTEBOOK",
+                "link": {
+                  "ariaLabel": "Follow Meryll Dindin on Medium",
+                  "external": true,
+                  "to": "https://blog.merylldindin.com",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
+                "slug": "Google Scholar",
+                "icon": "SCHOOL",
+                "link": {
+                  "ariaLabel": "Have a look at Meryll Dindin on Google Scholar",
+                  "external": true,
+                  "to": "https://scholar.google.com/citations?user=rIh0-NMAAAAJ",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              }
+            ]
+          },
+          {
+            "background": {
+              "altText": "AI generated art of a red planet",
+              "lazySource": "https://cdn.merylldindin.com/assets/red-planet-lazy.webp",
+              "source": "https://cdn.merylldindin.com/assets/red-planet.webp",
+              "mobileSource": "https://cdn.merylldindin.com/assets/red-planet-mobile.webp"
+            },
+            "headline": "Open Source",
+            "profiles": [
+              {
+                "slug": "Github",
+                "icon": "GITHUB",
+                "link": {
+                  "ariaLabel": "Follow Meryll Dindin on Github",
+                  "external": true,
+                  "to": "https://github.com/merylldindin",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
+                "slug": "tda-toolbox",
+                "icon": "GITHUB",
+                "link": {
+                  "ariaLabel": "Check my Github repository for Topological Data Analysis",
+                  "external": true,
+                  "to": "https://github.com/merylldindin/TdaToolbox",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
+                "slug": "sirtuin",
+                "icon": "GITHUB",
+                "link": {
+                  "ariaLabel": "Check my Github repository for AWS cloud deployment",
+                  "external": true,
+                  "to": "https://github.com/merylldindin/sirtuin",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
+                "slug": "helix",
+                "icon": "GITHUB",
+                "link": {
+                  "ariaLabel": "Check my Github repository for website creation",
+                  "external": true,
+                  "to": "https://github.com/merylldindin/helix",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              }
+            ]
           }
-        },
-        {
-          "slug": "Auberge de Cercoux",
-          "icon": "SILVERWARE_FORK_KNIFE",
-          "link": {
-            "ariaLabel": "Learn more about Meryll Dindin's work at Auberge de Cercoux",
-            "href": "https://auberge.decercoux.com",
-            "target": "_blank",
-            "rel": "noopener external"
-          }
-        },
-        {
-          "slug": "Odelys de Bédenac",
-          "icon": "FOOD_CROISSANT",
-          "link": {
-            "ariaLabel": "Learn more about Meryll Dindin's work at Odelys de Bédenac",
-            "href": "https://odelys.debedenac.com",
-            "target": "_blank",
-            "rel": "noopener external"
-          }
-        }
-      ]
-    },
-    {
-      "background": {
-        "altText": "AI generated art of transhumanist geometric future",
-        "eager": true,
-        "lazySource": "https://cdn.merylldindin.com/assets/futuristic-world-lazy.webp",
-        "source": "https://cdn.merylldindin.com/assets/futuristic-world.webp",
-        "mobileSource": "https://cdn.merylldindin.com/assets/futuristic-world-mobile.webp"
-      },
-      "headline": "Profiles",
-      "profiles": [
-        {
-          "slug": "Twitter",
-          "icon": "TWITTER",
-          "link": {
-            "ariaLabel": "Follow Meryll Dindin on Twitter",
-            "href": "https://twitter.com/MeryllDindin",
-            "target": "_blank",
-            "rel": "nofollow noreferrer noopener external"
-          }
-        },
-        {
-          "slug": "LinkedIn",
-          "icon": "LINKEDIN",
-          "link": {
-            "ariaLabel": "Follow Meryll Dindin on LinkedIn",
-            "href": "https://www.linkedin.com/in/merylldindin/",
-            "target": "_blank",
-            "rel": "nofollow noreferrer noopener external"
-          }
-        },
-        {
-          "slug": "Instagram",
-          "icon": "INSTAGRAM",
-          "link": {
-            "ariaLabel": "Follow Meryll Dindin on Instagram",
-            "href": "https://www.instagram.com/merylldindin/",
-            "target": "_blank",
-            "rel": "nofollow noreferrer noopener external"
-          }
-        },
-        {
-          "slug": "Facebook",
-          "icon": "FACEBOOK",
-          "link": {
-            "ariaLabel": "Follow Meryll Dindin on Facebook",
-            "href": "https://www.facebook.com/merylldindin",
-            "target": "_blank",
-            "rel": "nofollow noreferrer noopener external"
-          }
-        },
-        {
-          "slug": "Modeling",
-          "icon": "CAMERA",
-          "link": {
-            "ariaLabel": "Have a look at Meryll Dindin's modeling project",
-            "href": "https://dindinmeryll.portfoliobox.net",
-            "target": "_blank",
-            "rel": "noopener external"
-          }
-        }
-      ]
-    },
-    {
-      "background": {
-        "altText": "AI generated art of a futuristic city",
-        "lazySource": "https://cdn.merylldindin.com/assets/future-city-lazy.webp",
-        "source": "https://cdn.merylldindin.com/assets/future-city.webp",
-        "mobileSource": "https://cdn.merylldindin.com/assets/future-city-mobile.webp"
-      },
-      "headline": "Publications",
-      "profiles": [
-        {
-          "slug": "Medium",
-          "icon": "NOTEBOOK",
-          "link": {
-            "ariaLabel": "Follow Meryll Dindin on Medium",
-            "href": "https://blog.merylldindin.com",
-            "target": "_blank",
-            "rel": "nofollow noreferrer noopener external"
-          }
-        },
-        {
-          "slug": "Google Scholar",
-          "icon": "SCHOOL",
-          "link": {
-            "ariaLabel": "Have a look at Meryll Dindin on Google Scholar",
-            "href": "https://scholar.google.com/citations?user=rIh0-NMAAAAJ",
-            "target": "_blank",
-            "rel": "nofollow noreferrer noopener external"
-          }
-        }
-      ]
-    },
-    {
-      "background": {
-        "altText": "AI generated art of a red planet",
-        "lazySource": "https://cdn.merylldindin.com/assets/red-planet-lazy.webp",
-        "source": "https://cdn.merylldindin.com/assets/red-planet.webp",
-        "mobileSource": "https://cdn.merylldindin.com/assets/red-planet-mobile.webp"
-      },
-      "headline": "Open Source",
-      "profiles": [
-        {
-          "slug": "Github",
-          "icon": "GITHUB",
-          "link": {
-            "ariaLabel": "Follow Meryll Dindin on Github",
-            "href": "https://github.com/merylldindin",
-            "target": "_blank",
-            "rel": "nofollow noreferrer noopener external"
-          }
-        },
-        {
-          "slug": "tda-toolbox",
-          "icon": "GITHUB",
-          "link": {
-            "ariaLabel": "Check my Github repository for Topological Data Analysis",
-            "href": "https://github.com/merylldindin/TdaToolbox",
-            "target": "_blank",
-            "rel": "nofollow noreferrer noopener external"
-          }
-        },
-        {
-          "slug": "sirtuin",
-          "icon": "GITHUB",
-          "link": {
-            "ariaLabel": "Check my Github repository for AWS cloud deployment",
-            "href": "https://github.com/merylldindin/sirtuin",
-            "target": "_blank",
-            "rel": "nofollow noreferrer noopener external"
-          }
-        },
-        {
-          "slug": "helix",
-          "icon": "GITHUB",
-          "link": {
-            "ariaLabel": "Check my Github repository for website creation",
-            "href": "https://github.com/merylldindin/helix",
-            "target": "_blank",
-            "rel": "nofollow noreferrer noopener external"
-          }
-        }
-      ]
+        ]
+      }
     }
   ]
 }
