@@ -2,6 +2,9 @@ name: helix
 
 on: [pull_request, merge_group]
 
+env:
+  NODE_VERSION: "18.16"
+
 jobs:
   workflow:
     runs-on: ubuntu-latest
@@ -9,6 +12,11 @@ jobs:
     steps:
       - name: Checkout Codebase
         uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Cache Dependencies
         uses: actions/cache@v3
@@ -34,14 +42,15 @@ jobs:
       - name: Run Stylelint
         run: yarn stylelint
 
+      - name: Bundle Application
+        run: make build
+
       - name: Run Cypress
         uses: cypress-io/github-action@v4
         with:
           browser: chrome
-          start: make start
+          command: yarn cypress
+          install: false
+          start: make serve
           wait-on: "http://localhost:3000/"
           wait-on-timeout: 60
-          command: yarn cypress
-
-      - name: Bundle Application
-        run: make build
