@@ -56,8 +56,6 @@ Helix, from my set of `BioForge` initiatives, is a project born out of my frustr
 - [SwiperJS](https://swiperjs.com/)
 - [LottieJS](https://airbnb.io/lottie/#/)
 
-I ended up using [MidJourney](https://midjourney.com) for creating the assets you see on my Ibsite, and [GPT-4](https://openai.com/blog/gpt-4/) for generating the (meta-)text on my Ibsite, including the policies.
-
 ## Get Started
 
 ```bash
