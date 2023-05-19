@@ -26,7 +26,7 @@ const cookieBannerText = computed(() => {
 <template>
   <v-slide-y-transition>
     <v-card v-if="!isTracking" class="cookie-banner custom-shadow">
-      <CustomText :text="cookieBannerText" typography="text-1 text-slate-gray" />
+      <CustomText :text="cookieBannerText" typography="text-1" />
 
       <v-spacer />
 
@@ -41,14 +41,15 @@ const cookieBannerText = computed(() => {
 
 <style lang="scss" scoped>
 .cookie-banner {
-  bottom: 0;
+  top: 8px;
   left: 0;
   right: 0;
   position: absolute;
-  background-color: rgb(var(--v-theme-lemon));
+  border-radius: 0;
+  background-color: rgb(var(--v-theme-slate-gray));
   margin: 0 auto 16px;
   padding: 1.5rem 2rem;
-  max-width: min(70rem, calc(100% - 32px));
+  max-width: min(70rem, calc(100% - 28px));
   transition: all 0.2s ease;
   display: flex;
   flex-direction: row;

@@ -1,18 +1,18 @@
 {
   "button": {
     "ariaLabel": "Accept our privacy policy",
-    "color": "slate-gray",
+    "color": "foam",
     "icon": "COOKIE_CHECK"
   },
   "disclaimer": {
     "mobile": [
       {
         "type": "p",
-        "content": "By using this site, you agree to the "
+        "content": "By browsing through my website, you agree for me "
       },
       {
         "type": "a",
-        "content": "use of cookies",
+        "content": "to know about it",
         "props": {
           "ariaLabel": "Learn more about cookies",
           "to": "/legal/privacy-policy/",
@@ -27,11 +27,11 @@
     "desktop": [
       {
         "type": "p",
-        "content": "This website uses cookies to improve user experience and to analyze traffic. By continuing to use this site, you agree to the "
+        "content": "This website uses cookies to improve user experience and to analyze traffic. By browsing through my website, you agree for me "
       },
       {
         "type": "a",
-        "content": "use of cookies",
+        "content": "to know about it",
         "props": {
           "to": "/legal/privacy-policy/",
           "underlined": true

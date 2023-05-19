@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useDisplay } from "vuetify";
+
 import SwipeHint from "@/assets/animations/swipe-hint.json";
 import { CustomHeadline, CustomLink } from "@/components/shared";
 import { ICONS } from "@/plugins/vuetify.client/icons";
@@ -14,6 +16,8 @@ defineProps({
     type: Boolean,
   },
 });
+
+const { mobile } = useDisplay();
 </script>
 
 <template>
@@ -50,7 +54,7 @@ defineProps({
         v-if="showHint"
         :animation-data="SwipeHint"
         class="swipe-hint"
-        :width="'5vh'"
+        :width="mobile ? '12vw' : '5vh'"
       />
     </div>
   </client-only>
@@ -58,55 +62,56 @@ defineProps({
 
 <style lang="scss" scoped>
 .grid-links {
-  height: 100%;
-  padding-top: 6vh;
+  height: calc(66vh - 12vh);
+  width: calc(100% - 12vw);
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
-  z-index: 2;
-}
-
-.swipe-hint {
-  position: absolute;
-  right: 0;
-  left: 0;
-  transform: rotate(90deg) translateX(calc(33vh - 2.5vh));
+  padding: 6vh 6vw;
 
   @include xs-only {
-    transform: rotate(90deg) translateX(36vh);
-  }
-}
-
-.grid-link {
-  min-width: 33vh;
-  border-radius: 3vh;
-  padding: 1vh 4vh;
-  align-items: center;
-  background-color: rgba(0 0 0 / 25%);
-  display: flex;
-  justify-content: space-between;
-  transition: all 0.3s ease-in-out;
-  z-index: 3;
-
-  &:hover {
-    transform: scale(1.05);
-
-    > .v-icon {
-      color: rgb(var(--v-theme-lemon)) !important;
-    }
-  }
-
-  @include xs-only {
-    min-width: 66vw;
+    height: 66vh;
+    width: calc(100% - 24vw);
+    padding: 0;
   }
 }
 
 .title-typography {
   font-size: 3.5vh !important;
+  margin-bottom: 3vh;
+}
+
+.grid-link {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 3vh;
+  padding: 1vh 4vh;
+  margin-bottom: 2.5vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(255 255 255 / 10%);
+
+  &:hover {
+    background-color: rgba(255 255 255 / 25%);
+  }
 }
 
 .link-typography {
+  font-family: "Lexend Deca", Arial, sans-serif !important;
   font-size: 2vh !important;
+}
+
+.swipe-hint {
+  left: 0;
+  right: 0;
+  bottom: 3vh;
+  position: absolute;
+  transform: rotate(90deg) translateX(calc(33vh - 2.5vh));
+
+  @include xs-only {
+    transform: rotate(90deg) translateX(36vh);
+  }
 }
 </style>

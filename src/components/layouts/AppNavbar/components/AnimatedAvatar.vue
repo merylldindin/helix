@@ -30,9 +30,9 @@ const { smAndDown } = useDisplay();
   align-items: center;
   transition: all 1.5s ease-in-out;
 
-  @include sm-down {
-    top: 2rem;
-    right: 2.5rem;
+  @include xs-only {
+    top: 1.2rem;
+    right: 1.2rem;
   }
 }
 </style>

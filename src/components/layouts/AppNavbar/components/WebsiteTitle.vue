@@ -22,7 +22,7 @@ import { WEBSITE_TITLE_CONTENT } from "@/content";
   transition: all 0.3s ease-in-out;
   z-index: 2;
 
-  @include sm-down {
+  @include xs-only {
     top: 1.6rem;
     left: 1.6rem;
   }

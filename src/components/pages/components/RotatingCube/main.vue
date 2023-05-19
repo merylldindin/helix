@@ -20,7 +20,7 @@ defineProps({
     <div class="cube-wrapper">
       <Swiper
         :autoplay="{
-          delay: 1500,
+          delay: 3000,
           disableOnInteraction: true,
         }"
         :centered-slides="true"
@@ -50,9 +50,12 @@ defineProps({
   display: flex;
   flex-direction: row;
   margin: auto;
+  padding-bottom: 4rem;
 
   @include xs-only {
-    width: calc(100vw - 32px);
+    width: 108vw;
+    margin-left: -8vw;
+    padding-bottom: 0;
   }
 }
 
@@ -60,10 +63,6 @@ defineProps({
   height: 100%;
   width: 100%;
   transition: all 0.3s ease-in-out;
-
-  @include xs-only {
-    transform: scale(1.1);
-  }
 }
 
 .swiper-slide {
@@ -73,5 +72,9 @@ defineProps({
   background-color: rgb(var(--v-theme-slate-gray));
   height: 66vh;
   margin: auto;
+
+  @include xs-only {
+    height: 80vh;
+  }
 }
 </style>
