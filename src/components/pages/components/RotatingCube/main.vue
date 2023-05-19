@@ -53,8 +53,9 @@ defineProps({
   padding-bottom: 4rem;
 
   @include xs-only {
-    width: 100%;
+    width: calc(100% - 32px);
     padding-bottom: 0;
+    padding-top: 32px;
   }
 }
 
@@ -73,8 +74,7 @@ defineProps({
   margin: auto;
 
   @include xs-only {
-    height: 80vh;
-    width: 100%;
+    height: calc(100% - 64px);
   }
 }
 </style>

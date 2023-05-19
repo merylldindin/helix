@@ -37,11 +37,14 @@ const { mobile } = useDisplay();
         class="grid-link"
       >
         <CustomHeadline
+          v-if="!mobile"
           class="link-typography"
           :level="3"
           :text="profile.slug"
           typography="text-foam"
         />
+
+        <span v-else class="text-1 text-foam"> {{ profile.slug }} </span>
 
         <v-icon
           :color="$COLOR.FOAM"
@@ -70,9 +73,9 @@ const { mobile } = useDisplay();
   padding: 6vh 6vw;
 
   @include xs-only {
-    height: 66vh;
-    width: calc(100% - 24vw);
-    padding: 0;
+    height: calc(100% - 64px);
+    width: calc(100% - 32px);
+    padding: 16px;
   }
 }
 
@@ -82,8 +85,7 @@ const { mobile } = useDisplay();
 }
 
 .grid-link {
-  max-width: 100%;
-  min-width: 100%;
+  width: 100%;
   border-radius: 3vh;
   padding: 1vh 4vh;
   margin-bottom: 2.5vh;
@@ -95,6 +97,10 @@ const { mobile } = useDisplay();
 
   &:hover {
     background-color: rgba(255 255 255 / 25%);
+  }
+
+  @include xs-only {
+    width: calc(100% - 96px);
   }
 }
 
