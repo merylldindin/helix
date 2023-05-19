@@ -14,10 +14,6 @@ defineProps({
     default: undefined,
     type: String,
   },
-  underlined: {
-    default: false,
-    type: Boolean,
-  },
 });
 </script>
 
@@ -46,8 +42,6 @@ defineProps({
     <h6 v-else-if="level === 6" :class="typography ? typography : 'headline-6'">
       {{ text }}
     </h6>
-
-    <div v-if="underlined" class="headline-underline" />
   </div>
 </template>
 
@@ -55,22 +49,5 @@ defineProps({
 .headline-wrapper {
   position: relative;
   width: fit-content;
-}
-
-.headline-underline {
-  position: absolute;
-  bottom: -1rem;
-  left: 2rem;
-  width: calc(100% - 2rem);
-  height: 0.5rem;
-  background-color: rgb(var(--v-theme-lemon));
-  z-index: 0;
-
-  @include sm-down {
-    left: 1rem;
-    bottom: -0.5rem;
-    width: calc(100% - 1rem);
-    height: 0.33rem;
-  }
 }
 </style>

@@ -73,7 +73,7 @@ defineProps({
   flex-direction: column;
 
   &--offset-y {
-    padding-top: 12rem;
+    padding-top: 16rem;
 
     @include sm-down {
       padding-top: 10rem;

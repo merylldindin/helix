@@ -28,36 +28,36 @@ const { smAndDown } = useDisplay();
 </script>
 
 <template>
-  <CustomSection offset-y>
+  <CustomSection class="pb-12" offset-y>
     <CustomHeadline
       class="legal-title"
       :level="1"
       :text="title"
-      typography="headline-3"
+      typography="headline-3 text-slate-gray"
     />
 
     <CustomHeadline
       class="legal-date"
       :level="2"
       :text="date"
-      typography="headline-6"
+      typography="headline-6 text-slate-gray"
     />
 
     <div v-for="(chunk, index) in content" :key="index">
       <CustomHeadline
         v-if="chunk.type === LegalTextType.SUBTITLE"
-        :class="smAndDown ? 'mb-6' : 'mb-8'"
+        :class="smAndDown ? 'mt-6' : 'mt-8'"
         :level="3"
         :text="(chunk.content as string)"
-        typography="headline-5"
+        typography="headline-5  text-slate-gray"
         underlined
       />
 
       <CustomText
         v-else
-        :class="smAndDown ? 'mb-4' : 'mb-6'"
+        :class="smAndDown ? 'mt-4' : 'mt-6'"
         :text="(chunk.content as object)"
-        typography="text-1"
+        typography="text-1 text-slate-gray"
       />
     </div>
   </CustomSection>
