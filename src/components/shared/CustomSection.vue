@@ -28,7 +28,7 @@ defineProps({
       'custom-section--snap': snap,
     }"
   >
-    <div class="custom-section__background">
+    <div v-if="$slots.background" class="custom-section__background">
       <slot name="background" />
     </div>
 
@@ -36,6 +36,7 @@ defineProps({
       v-if="$slots.default && !hideContainer"
       class="section-wrapper"
       :class="{
+        'pa-0': fullscreen,
         'section-wrapper--offset-y': offsetY,
       }"
     >
@@ -62,7 +63,7 @@ defineProps({
 
   &--fullscreen {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
   }
 }

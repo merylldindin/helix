@@ -41,11 +41,9 @@ onUnmounted(() => {
   <div class="default-layout">
     <AppNavbar />
 
-    <div class="default-page">
-      <v-main>
-        <slot />
-      </v-main>
-    </div>
+    <v-main>
+      <slot />
+    </v-main>
   </div>
 </template>
 
@@ -54,11 +52,6 @@ onUnmounted(() => {
   width: 100%;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-}
-
-.default-page {
-  height: 100vh;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 </style>
