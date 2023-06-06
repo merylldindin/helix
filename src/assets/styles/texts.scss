@@ -4,19 +4,27 @@
   font-stretch: normal !important;
   font-style: normal !important;
   word-break: break-word !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.16px !important;
+}
+
+.text-0 {
+  @extend %text;
+
+  font-size: 1.8rem !important;
+
+  @include md-down {
+    font-size: 1.4 !important;
+  }
 }
 
 .text-1 {
   @extend %text;
 
   font-size: 1.4rem !important;
-  line-height: 1.5 !important;
-  letter-spacing: 0.16px !important;
 
   @include md-down {
     font-size: 1.2 !important;
-    line-height: 1.5 !important;
-    letter-spacing: 0.16px !important;
   }
 }
 
@@ -24,12 +32,16 @@
   @extend %text;
 
   font-size: 1.2 !important;
-  line-height: 1.5 !important;
-  letter-spacing: 0.16px !important;
 }
 
 .text-cartesian {
   @extend %text;
 
   font-family: Cartesian, serif !important;
+}
+
+.text-mono {
+  @extend %text;
+
+  font-family: "Major Mono Display", serif !important;
 }

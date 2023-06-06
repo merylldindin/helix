@@ -1,0 +1,142 @@
+{
+  "layout": "default",
+  "head": {
+    "canonical": "/hustle/",
+    "title": "Serial Entrepreneur, Convinced Transhumanist | Meryll Dindin",
+    "description": "Protecting your privacy is our top priority. Read our concise privacy policy to understand how we collect and use your information."
+  },
+  "components": [
+    {
+      "name": "THUMBS_GALLERY",
+      "id": "home-section",
+      "props": {
+        "images": [
+          {
+            "altText": "Magret en sauce avec champignon découpé",
+            "eager": true,
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon-lazy.webp"
+          },
+          {
+            "altText": "Dessert au citron avec deux éléments en forme de larmes",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron-lazy.webp"
+          },
+          {
+            "altText": "Dessert à la figue, en glace et en confit",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue-lazy.webp"
+          },
+          {
+            "altText": "Dessert au chocolat avec copeau de cacao sur calisson en chocolat",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat-lazy.webp"
+          },
+          {
+            "altText": "Poisson feuilleté avec décoration en sauce",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette-lazy.webp"
+          },
+          {
+            "altText": "Macarons à la framboise",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise-lazy.webp"
+          },
+          {
+            "altText": "Feuilleté dans son bouillon",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon-lazy.webp"
+          },
+          {
+            "altText": "Saumon fumé en assiette gastronomique avec caviar",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar-lazy.webp"
+          },
+          {
+            "altText": "Filet de poisson avec sauce et légumes",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar-lazy.webp"
+          },
+          {
+            "altText": "Magret découpé recouvert de truffe",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe-lazy.webp"
+          }
+        ],
+        "thumbnails": [
+          {
+            "altText": "Magret en sauce avec champignon découpé",
+            "eager": true,
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon-lazy.webp"
+          },
+          {
+            "altText": "Dessert au citron avec deux éléments en forme de larmes",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron-lazy.webp"
+          },
+          {
+            "altText": "Dessert à la figue, en glace et en confit",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue-lazy.webp"
+          },
+          {
+            "altText": "Dessert au chocolat avec copeau de cacao sur calisson en chocolat",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat-lazy.webp"
+          },
+          {
+            "altText": "Poisson feuilleté avec décoration en sauce",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette-lazy.webp"
+          },
+          {
+            "altText": "Macarons à la framboise",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise-lazy.webp"
+          },
+          {
+            "altText": "Feuilleté dans son bouillon",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon-lazy.webp"
+          },
+          {
+            "altText": "Saumon fumé en assiette gastronomique avec caviar",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar-lazy.webp"
+          },
+          {
+            "altText": "Filet de poisson avec sauce et légumes",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar-lazy.webp"
+          },
+          {
+            "altText": "Magret découpé recouvert de truffe",
+            "source": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe.webp",
+            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe-mobile.webp",
+            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe-lazy.webp"
+          }
+        ]
+      }
+    }
+  ]
+}

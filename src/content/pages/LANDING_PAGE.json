@@ -19,13 +19,11 @@
         },
         "pages": [
           {
-            "background": {
-              "altText": "AI generated art of human biology and technology",
-              "lazySource": "https://cdn.merylldindin.com/assets/android-biology-lazy.webp",
-              "source": "https://cdn.merylldindin.com/assets/android-biology.webp",
-              "mobileSource": "https://cdn.merylldindin.com/assets/android-biology-mobile.webp"
+            "headline": {
+              "prompt": "Hustle",
+              "ariaLabel": "Learn more about Meryll Dindin's work",
+              "to": "/hustle/"
             },
-            "headline": "Hustle",
             "profiles": [
               {
                 "slug": "Polygon Psychology",
@@ -74,7 +72,11 @@
             ]
           },
           {
-            "headline": "Share",
+            "headline": {
+              "prompt": "Share",
+              "ariaLabel": "Follow Meryll Dindin's adventures on social media",
+              "to": "/social/"
+            },
             "profiles": [
               {
                 "slug": "Twitter",
@@ -134,7 +136,11 @@
             ]
           },
           {
-            "headline": "Think",
+            "headline": {
+              "prompt": "Think",
+              "ariaLabel": "Read more about Meryll's thougths",
+              "to": "/think/"
+            },
             "profiles": [
               {
                 "slug": "Medium",
@@ -161,7 +167,11 @@
             ]
           },
           {
-            "headline": "Code",
+            "headline": {
+              "prompt": "Code",
+              "ariaLabel": "Discover Meryll's open source projects",
+              "to": "/code/"
+            },
             "profiles": [
               {
                 "slug": "Github",
