@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { AnimatedAvatar, WebsiteTitle } from "./components";
+import { AnimatedAvatar, PageBreadcrumb, WebsiteTitle } from "./components";
 </script>
 
 <template>
@@ -7,6 +7,8 @@ import { AnimatedAvatar, WebsiteTitle } from "./components";
     <AnimatedAvatar />
 
     <WebsiteTitle />
+
+    <PageBreadcrumb />
   </div>
 </template>
 
