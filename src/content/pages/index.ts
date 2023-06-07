@@ -1,3 +1,4 @@
+export { default as DILLYGENCE_PAGE_CONTENT } from "./DILLYGENCE_PAGE.json";
 export { default as HUSTLE_PAGE_CONTENT } from "./HUSTLE_PAGE.json";
 export { default as LANDING_PAGE_CONTENT } from "./LANDING_PAGE.json";
 export { default as POLYGON_PAGE_CONTENT } from "./POLYGON_PAGE.json";

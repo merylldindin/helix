@@ -8,6 +8,7 @@ export enum ContentType {
   MORE = "more",
   SOCIALS = "socials",
   TEXT = "text",
+  YOUTUBE = "youtube",
 }
 
 interface ArticleItem {
@@ -75,6 +76,11 @@ export interface TextContent {
   prop: string;
 }
 
+export interface YoutubeContent {
+  type: ContentType.YOUTUBE;
+  prop: string;
+}
+
 export type GenericContent =
   | ArticleContent
   | ButtonContent
@@ -82,7 +88,8 @@ export type GenericContent =
   | ImageContent
   | MoreContent
   | SocialsContent
-  | TextContent;
+  | TextContent
+  | YoutubeContent;
 
 export interface PageHead {
   canonical: string;

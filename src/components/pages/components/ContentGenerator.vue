@@ -76,6 +76,22 @@ defineProps({
       >
         {{ item.prop }}
       </p>
+
+      <div
+        v-else-if="item.type === ContentType.YOUTUBE"
+        class="youtube-player mb-5"
+        :class="{ 'mt-5': index > 0 }"
+      >
+        <iframe
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          :frameborder="0"
+          height="315"
+          :src="item.prop"
+          title="YouTube video player"
+          width="560"
+        />
+      </div>
     </template>
   </div>
 </template>
@@ -84,5 +100,20 @@ defineProps({
 .more-link {
   display: flex;
   justify-content: flex-end;
+}
+
+.youtube-player {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
