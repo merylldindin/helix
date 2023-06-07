@@ -25,16 +25,18 @@ const cookieBannerText = computed(() => {
 
 <template>
   <v-slide-y-transition>
-    <v-card v-if="!isTracking" class="cookie-banner custom-shadow">
-      <CustomText :text="cookieBannerText" typography="text-1" />
+    <v-card v-if="!isTracking" class="cookie-banner">
+      <div class="custom-shadow cookie-wrapper d-flex flex-row">
+        <CustomText :text="cookieBannerText" typography="text-1" />
 
-      <v-spacer />
+        <v-spacer />
 
-      <CustomButton
-        class="ml-6"
-        v-bind="COOKIE_BANNER_CONTENT.button"
-        @click="dismissBanner"
-      />
+        <CustomButton
+          class="ml-6"
+          v-bind="COOKIE_BANNER_CONTENT.button"
+          @click="dismissBanner"
+        />
+      </div>
     </v-card>
   </v-slide-y-transition>
 </template>
@@ -46,14 +48,18 @@ const cookieBannerText = computed(() => {
   right: 0;
   position: absolute;
   border-radius: 0;
-  background-color: rgb(var(--v-theme-slate-gray));
+  background-color: rgb(var(--v-theme-foam));
   margin: 0 auto 16px;
-  padding: 1.5rem 2rem;
   max-width: min(70rem, calc(100% - 28px));
   transition: all 0.2s ease;
   display: flex;
   flex-direction: row;
   z-index: 999;
+  overflow: initial;
+}
+
+.cookie-wrapper {
+  padding: 1.5rem 2rem;
 
   @include md-down {
     padding: 1rem 1.5rem;

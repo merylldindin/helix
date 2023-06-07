@@ -36,8 +36,8 @@ defineProps({
       v-if="$slots.default && !hideContainer"
       class="section-wrapper"
       :class="{
-        'pa-0': fullscreen,
         'section-wrapper--offset-y': offsetY,
+        'section-wrapper--fullscreen': fullscreen,
       }"
     >
       <slot />
@@ -49,6 +49,7 @@ defineProps({
 .custom-section {
   height: 100%;
   position: relative;
+  overflow: hidden;
   display: flex;
 
   &__background {
@@ -63,21 +64,26 @@ defineProps({
 
   &--fullscreen {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
   }
 }
 
 .section-wrapper {
+  position: relative;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
+
+  &--fullscreen {
+    padding-top: 66px;
+  }
 
   &--offset-y {
-    padding-top: 16rem;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
 
     @include sm-down {
-      padding-top: 10rem;
+      padding-top: 8rem;
+      padding-bottom: 4rem;
     }
   }
 }

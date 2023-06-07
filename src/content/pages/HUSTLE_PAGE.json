@@ -1,5 +1,5 @@
 {
-  "layout": "default",
+  "layout": "snaped",
   "head": {
     "canonical": "/hustle/",
     "title": "Serial Entrepreneur, Convinced Transhumanist | Meryll Dindin",
@@ -7,135 +7,261 @@
   },
   "components": [
     {
-      "name": "THUMBS_GALLERY",
-      "id": "home-section",
+      "name": "SECTION_IMAGE",
+      "id": "polygon-section",
       "props": {
-        "images": [
+        "content": [
           {
-            "altText": "Magret en sauce avec champignon découpé",
-            "eager": true,
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon-lazy.webp"
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Polygon",
+              "typography": "text-cartesian headline-2"
+            }
           },
           {
-            "altText": "Dessert au citron avec deux éléments en forme de larmes",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron-lazy.webp"
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Co-Founder, CTO",
+              "typography": "text-lexend-deca headline-7"
+            }
           },
           {
-            "altText": "Dessert à la figue, en glace et en confit",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue-lazy.webp"
+            "type": "text",
+            "prop": "Polygon is a digital psychology practice specializing in remote evaluations for ADHD, dyslexia, and other learning differences, providing timely, affordable services with the convenience of technology and experienced clinicians. They partner broadly for comprehensive support."
           },
           {
-            "altText": "Dessert au chocolat avec copeau de cacao sur calisson en chocolat",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat-lazy.webp"
-          },
-          {
-            "altText": "Poisson feuilleté avec décoration en sauce",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette-lazy.webp"
-          },
-          {
-            "altText": "Macarons à la framboise",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise-lazy.webp"
-          },
-          {
-            "altText": "Feuilleté dans son bouillon",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon-lazy.webp"
-          },
-          {
-            "altText": "Saumon fumé en assiette gastronomique avec caviar",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar-lazy.webp"
-          },
-          {
-            "altText": "Filet de poisson avec sauce et légumes",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar-lazy.webp"
-          },
-          {
-            "altText": "Magret découpé recouvert de truffe",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe-lazy.webp"
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Learn more about Polygon",
+              "prompt": "Read More →",
+              "to": "/hustle/polygon/"
+            }
           }
         ],
-        "thumbnails": [
+        "image": {
+          "altText": "Logo de Polygon Technologies Inc.",
+          "source": "https://cdn.merylldindin.com/assets/logo-polygon.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-polygon-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-polygon-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-polygon-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
+      "id": "dillygence-section",
+      "props": {
+        "content": [
           {
-            "altText": "Magret en sauce avec champignon découpé",
-            "eager": true,
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/magret-champignon-lazy.webp"
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Dillygence",
+              "typography": "text-cartesian headline-2"
+            }
           },
           {
-            "altText": "Dessert au citron avec deux éléments en forme de larmes",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/larmes-citron-lazy.webp"
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Fractional CTO, Board Member",
+              "typography": "text-lexend-deca headline-7"
+            }
           },
           {
-            "altText": "Dessert à la figue, en glace et en confit",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/dessert-mangue-lazy.webp"
+            "type": "text",
+            "prop": "Dillygence specializes in Industry 4.0 solutions, leveraging AI to optimize plant performance. Their DispoX platform offers digital twin technology for effective decision-making and profitability across all stages of factory evolution."
           },
           {
-            "altText": "Dessert au chocolat avec copeau de cacao sur calisson en chocolat",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/calisson-chocolat-lazy.webp"
-          },
-          {
-            "altText": "Poisson feuilleté avec décoration en sauce",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/poisson-assiette-lazy.webp"
-          },
-          {
-            "altText": "Macarons à la framboise",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/macarons-framboise-lazy.webp"
-          },
-          {
-            "altText": "Feuilleté dans son bouillon",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/feuillete-bouillon-lazy.webp"
-          },
-          {
-            "altText": "Saumon fumé en assiette gastronomique avec caviar",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/saumon-caviar-lazy.webp"
-          },
-          {
-            "altText": "Filet de poisson avec sauce et légumes",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/poisson-caviar-lazy.webp"
-          },
-          {
-            "altText": "Magret découpé recouvert de truffe",
-            "source": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe.webp",
-            "mobile": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe-mobile.webp",
-            "lazySource": "https://cdn.aubergedecercoux.com/auberge/images/magret-truffe-lazy.webp"
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Learn more about Dillygence",
+              "prompt": "Read More →",
+              "to": "/hustle/dillygence/"
+            }
           }
-        ]
+        ],
+        "image": {
+          "altText": "Logo de Dillygence SAS",
+          "source": "https://cdn.merylldindin.com/assets/logo-dillygence.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-dillygence-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-dillygence-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-dillygence-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
+      "id": "auberge-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Auberge de Cercoux",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Digital Marketing and Business Strategy",
+              "typography": "text-lexend-deca headline-7"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "L'Auberge de Cercoux offers varied culinary experiences in a welcoming environment, featuring their gourmet restaurant Le Silène, a traditional Bistro, personalized catering, and a unique, locally-sourced butcher's shop."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Learn more about Auberge de Cercoux",
+              "prompt": "Read More →",
+              "to": "/hustle/aubergedecercoux/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Logo de Auberge de Cercoux SAS",
+          "source": "https://cdn.merylldindin.com/assets/logo-auberge.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-auberge-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-auberge-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-auberge-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
+      "id": "odelys-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Odelys de Bedenac",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Digital Marketing and Business Strategy",
+              "typography": "text-lexend-deca headline-7"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Odelys de Bédenac is a French patisserie offering artisanal sweet creations. They collaborate with l'Auberge de Cercoux to provide an authentic gourmet snacking experience, emphasizing local products in their offering."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Learn more about Odelys de Bedenac",
+              "prompt": "Read More →",
+              "to": "/hustle/odelysdebedenac/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Logo de Odelys de Bedenac SAS",
+          "source": "https://cdn.merylldindin.com/assets/logo-odelys.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-odelys-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-odelys-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-odelys-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
+      "id": "fujitsu-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Fujitsu Laboratories",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Deep Learning Researcher",
+              "typography": "text-lexend-deca headline-7"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Fujitsu Laboratories is a renowned research division of the Fujitsu Group, globally collaborating to innovate technology solutions. It focuses on ICT systems, services, and actively participates in global research partnerships."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Learn more about Fujitsu Laboratories",
+              "prompt": "Read More →",
+              "to": "/hustle/fujitsu/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Logo de Fujitsu",
+          "source": "https://cdn.merylldindin.com/assets/logo-fujitsu.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-fujitsu-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-fujitsu-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-fujitsu-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
+      "id": "sysnav-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Sysnav",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Data Scientist",
+              "typography": "text-lexend-deca headline-7"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Sysnav provides precise geolocation and navigation solutions utilizing its patented Magneto-Inertial Technology. This innovation enables accurate 3D positioning across complex environments, compensating for GPS limitations. It has wide applications, including medical, industrial sectors, aeronautics, and autonomous vehicles."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Learn more about Sysnav",
+              "prompt": "Read More →",
+              "to": "/hustle/sysnav/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Logo de Sysnav",
+          "source": "https://cdn.merylldindin.com/assets/logo-sysnav.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-sysnav-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-sysnav-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-sysnav-mobile-lazy.webp"
+        }
       }
     }
   ]

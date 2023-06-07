@@ -14,34 +14,38 @@
   font-size: 1.8rem !important;
 
   @include md-down {
-    font-size: 1.4 !important;
+    font-size: 1.6rem !important;
   }
 }
 
 .text-1 {
   @extend %text;
 
-  font-size: 1.4rem !important;
+  font-size: 1.6rem !important;
 
   @include md-down {
-    font-size: 1.2 !important;
+    font-size: 1.4 !important;
   }
 }
 
 .text-2 {
   @extend %text;
 
-  font-size: 1.2 !important;
+  font-size: 1.4 !important;
+
+  @include md-down {
+    font-size: 1.2 !important;
+  }
 }
 
 .text-cartesian {
-  @extend %text;
-
   font-family: Cartesian, serif !important;
 }
 
-.text-mono {
-  @extend %text;
+.text-lexend-deca {
+  font-family: "Lexend Deca", Arial, sans-serif !important;
+}
 
+.text-major-mono-display {
   font-family: "Major Mono Display", serif !important;
 }

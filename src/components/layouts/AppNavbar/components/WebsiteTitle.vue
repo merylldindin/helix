@@ -9,7 +9,7 @@ import { WEBSITE_TITLE_CONTENT } from "@/content";
       class="website-title"
       :level="1"
       :text="WEBSITE_TITLE_CONTENT.headline"
-      typography="headline-4 text-slate-gray"
+      typography="headline-4 text-slate-gray text-major-mono-display"
     />
   </nuxt-link>
 </template>
