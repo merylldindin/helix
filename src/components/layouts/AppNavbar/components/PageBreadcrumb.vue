@@ -3,6 +3,8 @@ import { ComputedRef, computed } from "vue";
 import { useRoute } from "vue-router";
 import { useDisplay } from "vuetify";
 
+import { defineBreadcrumb, useSchemaOrg } from "#imports";
+
 const route = useRoute();
 
 interface BreadcrumbSchema {
@@ -10,8 +12,10 @@ interface BreadcrumbSchema {
   item?: string;
 }
 
+const CANONICAL_ITEM = "Home";
+
 const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
-  const result = [{ item: "/", name: "Home" }];
+  const result = [{ item: "/", name: CANONICAL_ITEM }];
   const routePath = route.path.split("/").filter(Boolean);
 
   let path = "";
@@ -30,17 +34,20 @@ const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
 const { smAndDown, mdAndDown } = useDisplay();
 
 const displayedBreadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
-  console.log("breadcrumbs", breadcrumbs.value);
   if (smAndDown.value) {
-    return breadcrumbs.value.slice(-2, -1).filter((item) => item.name !== "Home");
+    return breadcrumbs.value
+      .slice(-2, -1)
+      .filter((item) => item.name !== CANONICAL_ITEM);
   }
 
   if (mdAndDown.value) {
-    return breadcrumbs.value.slice(-3).filter((item) => item.name !== "Home");
+    return breadcrumbs.value.slice(-3).filter((item) => item.name !== CANONICAL_ITEM);
   }
 
-  return breadcrumbs.value.filter((item) => item.name !== "Home");
+  return breadcrumbs.value.filter((item) => item.name !== CANONICAL_ITEM);
 });
+
+useSchemaOrg([defineBreadcrumb({ itemListElement: breadcrumbs.value })]);
 </script>
 
 <template>
@@ -60,7 +67,7 @@ const displayedBreadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
         {{ item.name }}
       </span>
 
-      <span v-if="index < displayedBreadcrumbs.length - 1"> / </span>
+      <span v-if="index < displayedBreadcrumbs.length - 1" class="ml-2 mr-4"> / </span>
     </li>
   </ul>
 </template>
