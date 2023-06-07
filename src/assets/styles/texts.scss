@@ -31,10 +31,10 @@
 .text-2 {
   @extend %text;
 
-  font-size: 1.4 !important;
+  font-size: 1.4rem !important;
 
   @include md-down {
-    font-size: 1.2 !important;
+    font-size: 1.2rem !important;
   }
 }
 

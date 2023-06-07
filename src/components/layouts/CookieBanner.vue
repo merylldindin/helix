@@ -27,7 +27,11 @@ const cookieBannerText = computed(() => {
   <v-slide-y-transition>
     <v-card v-if="!isTracking" class="cookie-banner">
       <div class="custom-shadow cookie-wrapper d-flex flex-row">
-        <CustomText :text="cookieBannerText" typography="text-1" />
+        <CustomText
+          class="align-self-center"
+          :text="cookieBannerText"
+          typography="text-2"
+        />
 
         <v-spacer />
 

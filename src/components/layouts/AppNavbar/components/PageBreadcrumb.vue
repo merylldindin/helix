@@ -20,10 +20,10 @@ const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
 
   let path = "";
 
-  for (let index = 0; index < routePath.length; index += 1) {
-    const name = routePath[index].charAt(0).toUpperCase() + routePath[index].slice(1);
+  for (const element of routePath) {
+    const name = element.charAt(0).toUpperCase() + element.slice(1);
 
-    path += `/${routePath[index]}`;
+    path += `/${element}`;
 
     result.push({ item: `${path}/`, name });
   }
@@ -52,11 +52,15 @@ useSchemaOrg([defineBreadcrumb({ itemListElement: breadcrumbs.value })]);
 
 <template>
   <ul v-if="displayedBreadcrumbs.length > 0" class="page-breadcrumbs">
-    <span class="mr-4"> / </span>
+    <span class="mr-4 text-1"> / </span>
 
-    <li v-for="(item, index) in displayedBreadcrumbs" :key="index">
+    <li
+      v-for="(item, index) in displayedBreadcrumbs"
+      :key="index"
+      class="align-self-center"
+    >
       <nuxt-link
-        v-if="index < displayedBreadcrumbs.length - 1"
+        v-if="index < displayedBreadcrumbs.length - 1 || smAndDown"
         class="text-decoration-none text-1 text-cartesian text-uppercase"
         :to="item.item"
       >
@@ -67,7 +71,9 @@ useSchemaOrg([defineBreadcrumb({ itemListElement: breadcrumbs.value })]);
         {{ item.name }}
       </span>
 
-      <span v-if="index < displayedBreadcrumbs.length - 1" class="ml-2 mr-4"> / </span>
+      <span v-if="index < displayedBreadcrumbs.length - 1" class="text-1 ml-2 mr-4">
+        /
+      </span>
     </li>
   </ul>
 </template>
@@ -86,9 +92,19 @@ li {
   display: flex;
   flex-direction: row;
 
-  @include xs-only {
+  @include md-down {
+    top: 2.1rem;
+    left: 25.5rem;
+  }
+
+  @include sm-down {
     top: 1.6rem;
-    left: 1.6rem;
+    left: 20rem;
+  }
+
+  @include xs-only {
+    top: 1.4rem;
+    left: 18rem;
   }
 }
 </style>

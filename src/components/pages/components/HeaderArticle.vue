@@ -39,13 +39,12 @@ onUnmounted(() => {
         class="image-wrapper custom-shadow"
         cover
         :image="background"
-        :ratio="1.77"
         :style="{ opacity: headerOpacity }"
       />
     </template>
 
     <v-row class="column-wrapper">
-      <v-col class="text-wrapper" cols="8">
+      <v-col class="text-wrapper" cols="12" md="8">
         <ContentGenerator
           v-if="content.length > 0"
           :content="(content as GenericContent[])"
@@ -60,14 +59,19 @@ onUnmounted(() => {
 <style lang="scss" scoped>
 .image-wrapper {
   position: fixed;
-  max-height: calc(100vh - 112px);
+  height: calc(100vh - 112px);
   max-width: calc(100vw - 64px);
   margin: 80px 32px 32px;
   opacity: 1;
+
+  @include sm-down {
+    height: calc(100vh - 80px);
+    max-width: calc(100vw - 32px);
+    margin: 64px 16px 16px;
+  }
 }
 
 .column-wrapper {
-  min-height: 1000px;
   background-color: rgb(var(--v-theme-foam));
   height: fit-content;
   margin: 90vh auto 6rem;
@@ -84,10 +88,22 @@ onUnmounted(() => {
     height: 10vh;
     box-shadow: rgb(0 0 0 / 10%) 0 -4px 6px -1px;
     z-index: -1;
+
+    @include sm-down {
+      height: 5vh;
+    }
+  }
+
+  @include sm-down {
+    margin: 90vh -16px 3rem;
   }
 }
 
 .text-wrapper {
   margin: 52px auto;
+
+  @include sm-down {
+    margin: 5vh auto 0;
+  }
 }
 </style>
