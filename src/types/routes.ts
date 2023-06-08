@@ -1,5 +1,6 @@
 export enum RoutePath {
   AUBERGE_DE_CERCOUX = "/hustle/auberge-de-cercoux/",
+  CALASTER = "/hustle/calaster/",
   DILLYGENCE = "/hustle/dillygence/",
   HUSTLE = "/hustle/",
   LANDING_PAGE = "/",

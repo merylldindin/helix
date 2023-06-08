@@ -3,6 +3,8 @@ import { ComputedRef, computed } from "vue";
 import { useRoute } from "vue-router";
 import { useDisplay } from "vuetify";
 
+import { RoutePath } from "@/types";
+
 import { defineBreadcrumb, useSchemaOrg } from "#imports";
 
 const route = useRoute();
@@ -15,7 +17,7 @@ interface BreadcrumbSchema {
 const CANONICAL_ITEM = "Home";
 
 const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
-  const result = [{ item: "/", name: CANONICAL_ITEM }];
+  const result: BreadcrumbSchema[] = [{ item: "/", name: CANONICAL_ITEM }];
   const routePath = route.path.split("/").filter(Boolean);
 
   let path = "";
@@ -29,7 +31,11 @@ const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
 
     path += `/${element}`;
 
-    result.push({ item: `${path}/`, name });
+    if (Object.values(RoutePath).includes(`${path}/` as RoutePath)) {
+      result.push({ item: `${path}/`, name });
+    } else {
+      result.push({ name });
+    }
   }
 
   return result;

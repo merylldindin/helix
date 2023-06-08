@@ -1,4 +1,5 @@
 export { default as AUBERGE_PAGE_CONTENT } from "./AUBERGE_PAGE.json";
+export { default as CALASTER_PAGE_CONTENT } from "./CALASTER_PAGE.json";
 export { default as DILLYGENCE_PAGE_CONTENT } from "./DILLYGENCE_PAGE.json";
 export { default as HUSTLE_PAGE_CONTENT } from "./HUSTLE_PAGE.json";
 export { default as LANDING_PAGE_CONTENT } from "./LANDING_PAGE.json";
