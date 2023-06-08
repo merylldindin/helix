@@ -21,7 +21,11 @@ const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
   let path = "";
 
   for (const element of routePath) {
-    const name = element.charAt(0).toUpperCase() + element.slice(1);
+    const words = element.split("-");
+
+    const name = words
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
 
     path += `/${element}`;
 

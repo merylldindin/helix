@@ -38,8 +38,7 @@ defineProps({
 
       <CustomImage
         v-else-if="item.type === ContentType.IMAGE"
-        class="mb-5"
-        :class="{ 'mt-5': index > 0 }"
+        :class="{ 'mt-12': index > 0, 'mb-12': index < content.length - 1 }"
         :image="item.prop"
       />
 
@@ -79,8 +78,8 @@ defineProps({
 
       <div
         v-else-if="item.type === ContentType.YOUTUBE"
-        class="youtube-player mb-5"
-        :class="{ 'mt-5': index > 0 }"
+        class="youtube-player"
+        :class="{ 'mt-12': index > 0, 'mb-12': index < content.length - 1 }"
       >
         <iframe
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

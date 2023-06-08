@@ -1,0 +1,206 @@
+{
+  "layout": "scrolled",
+  "head": {
+    "canonical": "/hustle/auberge-de-cercoux/",
+    "title": "The Dindin Family's Culinary Journey | Meryll Dindin",
+    "description": "Join the Dindin family on their journey creating unique culinary experiences in the heart of France, mastering the art of local, quality cuisine."
+  },
+  "components": [
+    {
+      "name": "HEADER_ARTICLE",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Auberge de Cercoux website screenshot",
+          "source": "https://cdn.merylldindin.com/assets/website-aubergedecercoux.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/website-aubergedecercoux-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/website-aubergedecercoux-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/website-aubergedecercoux-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Serving Up Success: The Fantastic Foodie Journey of the Dindin Family",
+              "typography": "text-cartesian headline-2 mb-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Last Edited on June 07, 2023",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "It is in a beautiful corner of France, Cercoux, that my family decided to stir up the local food scene with their incredible flavors. Over the past four years, I've had the chance to be right by their side, helping them turn their passion for food into a successful business."
+          },
+          {
+            "type": "text",
+            "prop": "My mom, Christine, is the brain behind our venture. With her keen business sense, she turned our kitchen's divine creations into a profitable enterprise. Meanwhile, my dad, Hervé, has a magic touch when it comes to food. He's a wizard with a spatula, bringing his enchanting recipes to life. Then there's my sister, Maïlys, who could put any dessert lover under her spell with her exceptional baking skills. Together, they make an unbeatable team!"
+          },
+          {
+            "type": "text",
+            "prop": "Our food journey started with my parents' shared love and experience for cooking. Initially working for well recognized establishments in France and Belgium, my parents understood their potential and decided to turn their passion into a business. My mom took over running the business while my dad focused on creating culinary masterpieces in the kitchen."
+          },
+          {
+            "type": "text",
+            "prop": "Maïlys, who has been studying baking in depth, had a knack for all things digital. She used her tech-savvy skills to give our family business a powerful presence online. Meanwhile, I focused on creating our websites and put some structure on our social media accounts, helping to spread the word about our mouth-watering offerings. The combination of my family's old-school cooking and some modern techniques soon had people flocking to our door."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Hervé and Maïlys Dindin, cooking together",
+              "source": "https://cdn.merylldindin.com/assets/auberge-chefs.webp",
+              "lazySource": "https://cdn.merylldindin.com/assets/auberge-chefs-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Then, the COVID-19 pandemic struck, and like a storm, it changed everything. Businesses everywhere were struggling, but my family didn't let this slow them down. They saw this as a challenge and decided to meet it head-on."
+          },
+          {
+            "type": "text",
+            "prop": "Since people couldn't come to us, we decided to take our food to them. We started offering takeaway and delivery options. Alongside our efforts, we started diversifying our offering, and built a pipeline of boutiques and markets where we would sell packaged meals for the ones looking to spice up their meals. These ideas not only kept our business going but also brought us closer to our customers."
+          },
+          {
+            "type": "text",
+            "prop": "Throughout this journey, my role has been to support my family's dreams. From late-night strategy sessions to the thrill of a new dish becoming a hit, I've been there. The journey wasn't easy, but watching my family's hard work pay off has been incredibly rewarding."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Entire Dindin family, in front of Auberge de Cercoux",
+              "source": "https://cdn.merylldindin.com/assets/auberge-family.webp",
+              "lazySource": "https://cdn.merylldindin.com/assets/auberge-family-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Today, our little family business isn't so little anymore. We've grown in so many ways, and not just in terms of profit. We recently opened a boutique, and have a potential new restaurant in mind. We've built strong relationships with our customers and earned their trust. We've shown everyone that a small family with a big passion for food can do wonders."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Hervé, Christine, and Maïlys Dindin, at our boutique Odelys",
+              "source": "https://cdn.merylldindin.com/assets/auberge-odelys.webp",
+              "lazySource": "https://cdn.merylldindin.com/assets/auberge-odelys-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The past four years have been quite a ride, but this is just the beginning. With a dash of determination, a sprinkle of hard work, and a whole lot of love, Christine, Hervé, and Maïlys are ready to take our culinary journey to the next level. I can't wait to see what exciting new adventures await us in the future!"
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "More About Auberge de Cercoux",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Social Networks",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "socials",
+            "prop": [
+              {
+                "ariaLabel": "Website of Auberge de Cercoux",
+                "icon": "WEB",
+                "rel": "nofollow noopener external",
+                "target": "_blank",
+                "to": "https://auberge.decercoux.com/"
+              },
+              {
+                "ariaLabel": "Facebook page of Auberge de Cercoux",
+                "icon": "FACEBOOK",
+                "rel": "nofollow noopener noreferrer external",
+                "target": "_blank",
+                "to": "https://www.facebook.com/aubergedecercoux/"
+              },
+              {
+                "ariaLabel": "Instagram page of Auberge de Cercoux",
+                "icon": "INSTAGRAM",
+                "rel": "nofollow noopener noreferrer external",
+                "target": "_blank",
+                "to": "https://www.instagram.com/aubergedecercoux/"
+              },
+              {
+                "ariaLabel": "LinkedIn page of Auberge de Cercoux",
+                "icon": "LINKEDIN",
+                "rel": "nofollow noopener noreferrer external",
+                "target": "_blank",
+                "to": "https://www.linkedin.com/company/aubergedecercoux/"
+              }
+            ]
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Press Releases",
+              "typography": "text-lexend-deca headline-6 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.leresistant.fr/actualite-4479-cercoux-a-l-auberge-c-est-une-affaire-de-famille",
+              "title": "Cercoux: the Auberge is a family affair",
+              "description": "Savour the unforgettable culinary delights of Auberge de Cercoux, a family-run gem in Charente-Maritime. Experience their passionate dedication to quality and tradition."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.sudouest.fr/culture/programmes-tv/television-des-palaces-a-l-auberge-de-cercoux-17-le-parcours-de-maylis-dindin-candidate-au-meilleur-patissier-11604799.php",
+              "title": "Television: from palaces to the Auberge de Cercoux (17), the journey of Maïlys Dindin, 'Meilleur pâtissier' contestant",
+              "description": "Teaming up on the M6 show with a colleague from a palace in Antibes, Maylis Dindin joined the family restaurant in the south of Charente-Maritime. She launched a range of pastries"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.sudouest.fr/culture/programmes-tv/television-la-charentaise-maritime-mailys-dindin-s-arrete-aux-portes-de-la-finale-du-meilleur-patissier-11670912.php",
+              "title": "Television: Charente-Maritime's Maïlys Dindin crashes out of the 'Meilleur Pâtissier' final",
+              "description": "Maïlys Dindin and her colleague from a palace in Antibes were eliminated at the end of the fourth week of the M6 show. No dessert, but the bill: the young woman succeeded in her publicity stunt."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.20minutes.fr/arts-stars/television/3313651-20220622-meilleur-patissier-professionnels-duo-exception-100-feminin-representera-cote-azur",
+              "title": "'Le Meilleur Pâtissier - Les Professionnels': An exceptional 100% female duo to represent the Côte d'Azur",
+              "description": "Maïlys and Monika, aged 25 and 23, worked together at the Cap-Eden-Roc hotel in Antibes, and will be among the seven pairs competing in the new season of the show, broadcast on M6 from Thursday evening."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nicematin.com/television/elles-ont-23-et-25-ans-et-ont-travaille-dans-ce-palace-dantibes-qui-sont-les-candidates-de-lemission-le-meilleur-patissier-pro-775916",
+              "title": "They are 23 and 25 years old and have worked in this Antibes palace: who are the 'pro' candidates on Le Meilleur Patissier? - Nice-Matin",
+              "description": "She already believed in herself, they just had to do the same. When Monika Veleva announced to her parents that she intended to get her hands dirty, they weren't overjoyed. 'They didn't see me going into medicine anymore...' she says. Except that she didn't see herself in a lab coat, but in a jacket. "
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.hautesaintonge.fr/canton-des-trois-monts/aux-delices-de-bedenac/",
+              "title": "Canton des Trois Monts - Aux délices de Bédenac - Haute Saintonge",
+              "description": "Article Aux délices de Bédenac - The Odelys boutique is also a family affair with Maïlys, Christine and Hervé Dindin."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -12,6 +12,7 @@ import {
   mdiSchool,
   mdiSilverwareForkKnife,
   mdiTwitter,
+  mdiWeb,
 } from "@mdi/js";
 
 import { IconName } from "@/types";
@@ -30,4 +31,5 @@ export const ICONS: Record<IconName, string> = {
   [IconName.SCHOOL]: mdiSchool,
   [IconName.SILVERWARE_FORK_KNIFE]: mdiSilverwareForkKnife,
   [IconName.TWITTER]: mdiTwitter,
+  [IconName.WEB]: mdiWeb,
 };

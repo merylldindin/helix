@@ -122,7 +122,7 @@
             "prop": {
               "ariaLabel": "Learn more about Auberge de Cercoux",
               "prompt": "Read More →",
-              "to": "/hustle/aubergedecercoux/"
+              "to": "/hustle/auberge-de-cercoux/"
             }
           }
         ],
@@ -137,14 +137,14 @@
     },
     {
       "name": "SECTION_IMAGE",
-      "id": "odelys-section",
+      "id": "calaster-section",
       "props": {
         "content": [
           {
             "type": "headline",
             "prop": {
               "level": 2,
-              "text": "Odelys de Bedenac",
+              "text": "CalAster",
               "typography": "text-cartesian headline-2"
             }
           },
@@ -152,7 +152,7 @@
             "type": "headline",
             "prop": {
               "level": 3,
-              "text": "Digital and Business Strategy",
+              "text": "Co-Founder, CEO",
               "typography": "text-lexend-deca headline-7"
             }
           },
@@ -163,18 +163,18 @@
           {
             "type": "more",
             "prop": {
-              "ariaLabel": "Learn more about Odelys de Bedenac",
+              "ariaLabel": "Learn more about CalAster",
               "prompt": "Read More →",
-              "to": "/hustle/odelysdebedenac/"
+              "to": "/hustle/calaster/"
             }
           }
         ],
         "image": {
-          "altText": "Logo de Odelys de Bedenac SAS",
-          "source": "https://cdn.merylldindin.com/assets/logo-odelys.webp",
-          "lazySource": "https://cdn.merylldindin.com/assets/logo-odelys-lazy.webp",
-          "mobile": "https://cdn.merylldindin.com/assets/logo-odelys-mobile.webp",
-          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-odelys-mobile-lazy.webp"
+          "altText": "Logo de CalAster, Inc.",
+          "source": "https://cdn.merylldindin.com/assets/logo-calaster.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-calaster-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-calaster-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-calaster-mobile-lazy.webp"
         }
       }
     },

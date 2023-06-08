@@ -26,4 +26,5 @@ export enum IconName {
   SCHOOL = "SCHOOL",
   SILVERWARE_FORK_KNIFE = "SILVERWARE_FORK_KNIFE",
   TWITTER = "TWITTER",
+  WEB = "WEB",
 }
