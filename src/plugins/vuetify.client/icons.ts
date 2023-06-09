@@ -4,6 +4,7 @@ import {
   mdiCookieCheck,
   mdiFacebook,
   mdiFactory,
+  mdiFire,
   mdiFoodCroissant,
   mdiGithub,
   mdiInstagram,
@@ -13,6 +14,7 @@ import {
   mdiSilverwareForkKnife,
   mdiTwitter,
   mdiWeb,
+  mdiYoutube,
 } from "@mdi/js";
 
 import { IconName } from "@/types";
@@ -23,6 +25,7 @@ export const ICONS: Record<IconName, string> = {
   [IconName.COOKIE_CHECK]: mdiCookieCheck,
   [IconName.FACEBOOK]: mdiFacebook,
   [IconName.FACTORY]: mdiFactory,
+  [IconName.FIRE]: mdiFire,
   [IconName.FOOD_CROISSANT]: mdiFoodCroissant,
   [IconName.GITHUB]: mdiGithub,
   [IconName.INSTAGRAM]: mdiInstagram,
@@ -32,4 +35,5 @@ export const ICONS: Record<IconName, string> = {
   [IconName.SILVERWARE_FORK_KNIFE]: mdiSilverwareForkKnife,
   [IconName.TWITTER]: mdiTwitter,
   [IconName.WEB]: mdiWeb,
+  [IconName.YOUTUBE]: mdiYoutube,
 };

@@ -50,14 +50,11 @@
                 }
               },
               {
-                "slug": "Odelys de Bédenac",
-                "icon": "FOOD_CROISSANT",
+                "slug": "CalAster",
+                "icon": "FIRE",
                 "link": {
-                  "ariaLabel": "Learn more about Meryll Dindin's work at Odelys de Bédenac",
-                  "external": true,
-                  "to": "https://odelys.debedenac.com",
-                  "target": "_blank",
-                  "rel": "noopener external"
+                  "ariaLabel": "Learn more about Meryll Dindin's work at CalAster",
+                  "to": "/hustle/calaster/"
                 }
               }
             ]
@@ -111,6 +108,26 @@
                   "to": "https://www.facebook.com/merylldindin",
                   "target": "_blank",
                   "rel": "nofollow noreferrer noopener external"
+                }
+              }
+            ]
+          },
+          {
+            "headline": {
+              "prompt": "Create",
+              "ariaLabel": "Follow Meryll Dindin's creative projects",
+              "to": "/"
+            },
+            "profiles": [
+              {
+                "slug": "YouTube",
+                "icon": "YOUTUBE",
+                "link": {
+                  "ariaLabel": "Have a look at Meryll Dindin's video projects",
+                  "external": true,
+                  "to": "https://youtube.com/@merylldindin",
+                  "target": "_blank",
+                  "rel": "noopener external"
                 }
               },
               {

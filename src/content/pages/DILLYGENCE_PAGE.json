@@ -155,6 +155,30 @@
             "type": "headline",
             "prop": {
               "level": 3,
+              "text": "Science Contributions",
+              "typography": "text-lexend-deca headline-6 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://patents.google.com/patent/LU102785B1/",
+              "title": "Simulation process of a manufacturing system",
+              "description": "An AI-based method for simulating manufacturing systems, utilizing machine learning to compute station data and test configurations for optimized production."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://patents.google.com/patent/EP4075330A1/",
+              "title": "Monitoring process of a manufacturing system",
+              "description": "An AI-driven monitoring process for manufacturing systems, using video data and convolutional neural networks to model arm movements, optimize operations and alert when predefined conditions are met."
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
               "text": "Press Releases",
               "typography": "text-lexend-deca headline-6 my-6"
             }
