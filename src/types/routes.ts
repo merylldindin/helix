@@ -7,5 +7,6 @@ export enum RoutePath {
   LANDING_PAGE = "/",
   POLYGON = "/hustle/polygon/",
   PRIVACY_POLICY = "/legal/privacy-policy/",
+  SYSNAV = "/hustle/sysnav/",
   TERMS_OF_USE = "/legal/terms-of-use/",
 }
