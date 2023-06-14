@@ -106,8 +106,24 @@
             "type": "headline",
             "prop": {
               "level": 2,
-              "text": "More About CalAster",
+              "text": "References",
               "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Science Contributions",
+              "typography": "text-lexend-deca headline-6 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://cdn.merylldindin.com/documents/nist-pscr-challenge.pdf",
+              "title": "Motion and out-of-focus blurriness: Identification and quantification | NIST PSCR Challenge 2020",
+              "description": "Explore our comprehensive study on the urgent need for technological advancements in 911 call centers. Understand the role of Telecommunicators, the challenges they face, and the potential of the Next Generation 911 initiative. Discover the application of Computer Vision in first responder scenarios, with a focus on addressing image blurriness in object detection. Dive into our innovative methodology developed to measure different types of blur, and learn how this can improve object detection performance and impact NG911 implementations. Our assessment includes real-life datasets created using mobile cameras under various conditions, promising a realistic approach to modern-day emergency situations."
             }
           },
           {

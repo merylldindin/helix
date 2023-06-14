@@ -21,7 +21,7 @@
           {
             "headline": {
               "prompt": "Hustle",
-              "ariaLabel": "Learn more about Meryll Dindin's work",
+              "ariaLabel": "Learn more about Meryll Dindin's current work",
               "to": "/hustle/"
             },
             "profiles": [
@@ -48,13 +48,30 @@
                   "ariaLabel": "Learn more about Meryll Dindin's work at Auberge de Cercoux",
                   "to": "/hustle/auberge-de-cercoux/"
                 }
-              },
+              }
+            ]
+          },
+          {
+            "headline": {
+              "prompt": "Narrate",
+              "ariaLabel": "Learn more about Meryll Dindin's previous work",
+              "to": "/hustle/"
+            },
+            "profiles": [
               {
                 "slug": "CalAster",
                 "icon": "FIRE",
                 "link": {
                   "ariaLabel": "Learn more about Meryll Dindin's work at CalAster",
                   "to": "/hustle/calaster/"
+                }
+              },
+              {
+                "slug": "Fujitsu Laboratories",
+                "icon": "HEART_PULSE",
+                "link": {
+                  "ariaLabel": "Learn more about Meryll Dindin's work at Fujitsu Laboratories in Japan",
+                  "to": "/hustle/fujitsu/"
                 }
               }
             ]
