@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import { PropType, onMounted, onUnmounted, ref } from "vue";
+import { useDisplay } from "vuetify";
 
+import ScrollDown from "@/assets/animations/scroll-down.json";
 import { CustomImage, CustomSection } from "@/components/shared";
 import { DeliveredImage, GenericContent } from "@/types";
 
@@ -16,6 +18,8 @@ defineProps({
     type: Array,
   },
 });
+
+const { mobile } = useDisplay();
 
 const headerOpacity = ref<number>(1.0);
 
@@ -43,16 +47,25 @@ onUnmounted(() => {
       />
     </template>
 
-    <v-row class="column-wrapper">
-      <v-col class="text-wrapper" cols="12" md="8">
-        <ContentGenerator
-          v-if="content.length > 0"
-          :content="(content as GenericContent[])"
+    <client-only>
+      <v-row class="column-wrapper">
+        <Vue3Lottie
+          :animation-data="ScrollDown"
+          class="scroll-hint"
+          :height="mobile ? '12vw' : '5vh'"
+          :style="{ opacity: headerOpacity / 2 }"
         />
 
-        <slot />
-      </v-col>
-    </v-row>
+        <v-col class="text-wrapper" cols="12" md="8">
+          <ContentGenerator
+            v-if="content.length > 0"
+            :content="(content as GenericContent[])"
+          />
+
+          <slot />
+        </v-col>
+      </v-row>
+    </client-only>
   </CustomSection>
 </template>
 
@@ -71,10 +84,10 @@ onUnmounted(() => {
 }
 
 .column-wrapper {
-  background-color: rgb(var(--v-theme-foam));
   height: fit-content;
   margin: 90vh auto 6rem;
   position: relative;
+  background-color: rgb(var(--v-theme-foam));
   border-radius: 4px 4px 0 0;
   z-index: 1;
 
@@ -95,6 +108,17 @@ onUnmounted(() => {
 
   @include sm-down {
     margin: 90vh -16px 3rem;
+  }
+}
+
+.scroll-hint {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+
+  @include sm-down {
+    top: 0;
   }
 }
 

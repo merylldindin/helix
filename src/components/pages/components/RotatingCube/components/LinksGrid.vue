@@ -11,10 +11,6 @@ defineProps({
     required: true,
     type: Object,
   },
-  showHint: {
-    default: true,
-    type: Boolean,
-  },
 });
 
 const { mobile } = useDisplay();
@@ -44,7 +40,6 @@ const { mobile } = useDisplay();
       </CustomLink>
 
       <Vue3Lottie
-        v-if="showHint"
         :animation-data="SwipeHint"
         class="swipe-hint"
         :width="mobile ? '12vw' : '5vh'"
