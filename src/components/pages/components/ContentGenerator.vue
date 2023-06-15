@@ -59,8 +59,9 @@ const { smAndDown } = useDisplay();
       <div v-else-if="item.type === ContentType.MORE" class="more-link">
         <CustomLink
           v-bind="item.prop"
-          class="text-2 font-italic d-flex"
+          class="d-flex"
           :class="{ 'mt-3': index > 0 }"
+          typography="text-lexend-deca headline-6"
         />
       </div>
 
