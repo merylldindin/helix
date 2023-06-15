@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ComputedRef, PropType, computed, onMounted, onUnmounted, ref } from "vue";
+import { PropType, onMounted, onUnmounted, ref } from "vue";
 import { useDisplay } from "vuetify";
 
 import ScrollDown from "@/assets/animations/scroll-down.json";
