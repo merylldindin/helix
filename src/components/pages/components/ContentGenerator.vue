@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { PropType } from "vue";
+import { useDisplay } from "vuetify";
 
 import { CustomHeadline, CustomImage, CustomLink } from "@/components/shared";
 import { ContentType, GenericContent } from "@/types";
@@ -10,6 +11,8 @@ defineProps({
     type: Array as PropType<GenericContent[]>,
   },
 });
+
+const { smAndDown } = useDisplay();
 </script>
 
 <template>
@@ -38,7 +41,12 @@ defineProps({
 
       <CustomImage
         v-else-if="item.type === ContentType.IMAGE"
-        :class="{ 'mt-12': index > 0, 'mb-12': index < content.length - 1 }"
+        :class="{
+          'mt-6': smAndDown && index > 0,
+          'mb-6': smAndDown && index < content.length - 1,
+          'mt-12': !smAndDown && index > 0,
+          'mb-12': !smAndDown && index < content.length - 1,
+        }"
         :image="item.prop"
       />
 
@@ -79,7 +87,12 @@ defineProps({
       <div
         v-else-if="item.type === ContentType.YOUTUBE"
         class="youtube-player"
-        :class="{ 'mt-12': index > 0, 'mb-12': index < content.length - 1 }"
+        :class="{
+          'mt-6': smAndDown && index > 0,
+          'mb-6': smAndDown && index < content.length - 1,
+          'mt-12': !smAndDown && index > 0,
+          'mb-12': !smAndDown && index < content.length - 1,
+        }"
       >
         <iframe
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

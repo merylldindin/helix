@@ -65,7 +65,6 @@ onUnmounted(() => {
   opacity: 1;
 
   @include sm-down {
-    height: calc(100vh - 80px);
     max-width: calc(100vw - 32px);
     margin: 64px 16px 16px;
   }
