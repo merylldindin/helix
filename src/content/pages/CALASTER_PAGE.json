@@ -1,0 +1,191 @@
+{
+  "layout": "scrolled",
+  "head": {
+    "canonical": "/hustle/calaster/",
+    "title": "CalAster: Crisis Management Tech Reinvented | Meryll Dindin",
+    "description": "Uncover an unexpected journey from Berkeley classrooms to the cutting-edge of crisis management technology, spotlighting AI, mental health, and the importance of human-centric missions.",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/calaster.webp",
+    "thumbnailAlt": "CalAster website screenshot"
+  },
+  "components": [
+    {
+      "name": "HEADER_ARTICLE",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "CalAster website screenshot",
+          "source": "https://cdn.merylldindin.com/assets/calaster-header.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/calaster-header-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/calaster-header-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/calaster-header-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "An Unexpected Entrepreneurial Odyssey in Crisis Management",
+              "typography": "text-cartesian headline-2 mb-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Last Edited on June 08, 2023",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "It's often assumed that the most fascinating entrepreneurial journeys stem from Silicon Valley prodigies, coding prodigiously since childhood. However, sometimes, the most captivating narratives arise from unsuspected corners, often without the typical fanfare. Allow me to recount one such journey, an unexpected venture that took my team and me from the classrooms of the University of California, Berkeley, to the leading edge of crisis management technology—CalAster."
+          },
+          {
+            "type": "text",
+            "prop": "Our path was carved unexpectedly when we stumbled upon the opportunity to participate in the IBM-hosted Call for Code hackathon, held in conjunction with the Clinton Global Initiative University. The competition was a challenge to create a technology tool that could aid natural disaster preparedness, response, and recovery. Our response? AsTeR—a trailblazing AI tool designed to help emergency call centers manage the wave of calls that follow a disaster."
+          },
+          {
+            "type": "text",
+            "prop": "Our AsTeR presentation at the Call for Code not only marked our debut as global finalists but also led to our invitation to a gala at the United Nations hosted by the Clinton Global Initiative. As the world watched, our humble team of Berkeley students was awarded $10,000 and secured fourth place out of 5000 submissions — an entrepreneurial success that was our first taste of the sweet fruit of our labors."
+          },
+          {
+            "type": "youtube",
+            "prop": "https://www.youtube.com/embed/7Rx9G3UYSqE"
+          },
+          {
+            "type": "text",
+            "prop": "The reception of AsTeR and our success at the Call for Code competition were the catalysts that spurred us towards our next initiative—Data911. Conceived and developed by us, Data911 was our endeavor to integrate AsTeR technology into existing emergency response systems, with the goal of developing a tool that could analyze, classify, and prioritize emergency calls, enabling faster, more efficient responses."
+          },
+          {
+            "type": "text",
+            "prop": "Our journey with Data911 had us engage in discussions with various universities working on government policies concerning emergency management and urban planning. This enabled us to gain a deeper understanding of the pressures faced by first responders, the landscape of the emergency response system, and how AI could act as a bridge in this realm."
+          },
+          {
+            "type": "text",
+            "prop": "Around the same time, we also participated in the National Institute of Standards and Technology (NIST) competition. Here, we shifted our focus to computer vision for first responders, specifically exploring the limitations of computer vision in motion and how a potential system could be robust enough to account for AI's constraints when dealing with images sent to first responders via 911."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "CalAster Data911 Initiative",
+              "source": "https://cdn.merylldindin.com/assets/calaster-data911.webp",
+              "lazySource": "https://cdn.merylldindin.com/assets/calaster-data911-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Our journey with AsTeR and Data911 led to a critical realization: the existing emergency response system was plagued by chronic understaffing, intense stress levels, and a concerning rate of PTSD among operators. This epiphany made us reconsider our mission and pivot from AsTeR to CalAster."
+          },
+          {
+            "type": "text",
+            "prop": "CalAster, our reimagined endeavor, was designed to address the mental health crisis in emergency response, in addition to improving response efficiency. This was a complex and challenging task, fraught with societal taboos and legal implications, but we were determined to break new ground and bring change."
+          },
+          {
+            "type": "text",
+            "prop": "In 2019, CalAster was incubated at UC Berkeley's Citris Foundry, a platform that propelled us further towards our goals. However, our journey was anything but straightforward. The landscape of mental health in emergency response was more challenging than we anticipated, and changing ingrained attitudes was an uphill task."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "CalAster team early on",
+              "source": "https://cdn.merylldindin.com/assets/calaster-team.webp",
+              "lazySource": "https://cdn.merylldindin.com/assets/calaster-team-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Despite the difficulties, we pressed on, developing new tools and seeking to shatter the silence around PTSD and burnout among first responders. But reality proved intractable, and despite our best efforts, we had to make the tough decision to dissolve CalAster."
+          },
+          {
+            "type": "text",
+            "prop": "To many, the dissolution of CalAster may signal a failure. Yet, for us, it was a journey of profound learning—a testament to our resilience and adaptability. While CalAster has been dissolved, the lessons we learned, the obstacles we faced, and the impact we sought to make will forever remain indelible parts of our entrepreneurial adventure."
+          },
+          {
+            "type": "text",
+            "prop": "Every step on this journey, every stumble, and every triumph has endowed us with invaluable insights, shaping not only our entrepreneurial endeavors but our individual perspectives on crisis management, technology, and societal issues. Our journey may have been unexpected and unconventional, but it is a testament to our belief in the power of technology to bring about positive change, and the courage to venture into uncharted territories. CalAster may be gone, but its spirit—its lessons, its goals, and its mission—will forever remain."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Science Contributions",
+              "typography": "text-lexend-deca headline-6 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://cdn.merylldindin.com/documents/nist-pscr-challenge.pdf",
+              "title": "Motion and out-of-focus blurriness: Identification and quantification | NIST PSCR Challenge 2020",
+              "description": "Explore our comprehensive study on the urgent need for technological advancements in 911 call centers. Understand the role of Telecommunicators, the challenges they face, and the potential of the Next Generation 911 initiative. Discover the application of Computer Vision in first responder scenarios, with a focus on addressing image blurriness in object detection. Dive into our innovative methodology developed to measure different types of blur, and learn how this can improve object detection performance and impact NG911 implementations. Our assessment includes real-life datasets created using mobile cameras under various conditions, promising a realistic approach to modern-day emergency situations."
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Press Releases",
+              "typography": "text-lexend-deca headline-6 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://towardsdatascience.com/project-aster-ibm-call-for-code-30d959614be7",
+              "title": "IBM Call for Code: The exciting design of Project AsTeR | by Meryll Dindin | Towards Data Science",
+              "description": "It all began with a pun. At the time, Thomas, Pierre-Louis and I decided to participate in UC Berkeley’s edition of the IBM Call for Code."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://developer.ibm.com/callforcode/blogs/call-for-code-2019-finalist-aster/",
+              "title": "Call for Code 2019 Finalist: AsTeR helps prioritize emergency calls",
+              "description": "AsTeR aims to address overwhelmed call centers with a prioritization system versus the first-call first-served situation. When call centers become saturated, lives are put at risk."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://funginstitute.berkeley.edu/news/meng-alumni-address-disaster-response-through-project-aster/",
+              "title": "MEng alumni address disaster response through Project AsTeR - Fung Institute for Engineering Leadership",
+              "description": "A group of five University of California, Berkeley Master of Engineering (MEng) alumni are finalists in the IBM Call for Code 2019 Global Prize."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://thenextweb.com/news/ibm-announces-2019-call-for-code-grand-prize-winner",
+              "title": "IBM announces 2019 Call For Code grand prize winner",
+              "description": "IBM today announced the 2019 Call for Code grand prize was awarded to Prometeo for developing a health monitoring platform for firefighters."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://towardsdatascience.com/project-aster-ibm-call-for-code-30d959614be7",
+              "title": "How IoT, AI, and cloud help us during natural disasters | TechCrunch",
+              "description": "Natural disasters are one of the greatest threats to humanity. While they may be inevitable, their impact can be reduced through technology."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nist.gov/ctl/pscr/open-innovation-prize-challenges/past-prize-challenges/2020-enhancing-computer-vision",
+              "title": "2020 Enhancing Computer Vision for Public Safety Challenge | NIST",
+              "description": "The Enhancing Computer Vision for Public Safety Challenge is an open innovation competition from NIST PSCR focused on advancing the capacity of no-reference (NR) metrics and computer vision algorithms to support public safety missions."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

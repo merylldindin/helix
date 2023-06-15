@@ -1,0 +1,91 @@
+{
+  "layout": "scrolled",
+  "head": {
+    "canonical": "/hustle/sysnav/",
+    "title": "At the Intersection of Deep Learning & Topological Data: Sysnav Journey | Meryll Dindin",
+    "description": "Discover my impactful journey at Sysnav, where deep learning meets topological data analysis, shaping the future of healthcare and AI.",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/sysnav.webp",
+    "thumbnailAlt": "Sysnav website screenshot"
+  },
+  "components": [
+    {
+      "name": "HEADER_ARTICLE",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Sysnav website screenshot",
+          "source": "https://cdn.merylldindin.com/assets/sysnav-header.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/sysnav-header-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/sysnav-header-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/sysnav-header-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "A Journey into Deep Learning and Healthcare: My Time at Sysnav",
+              "typography": "text-cartesian headline-2 mb-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Last Edited on June 14, 2023",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "When I first crossed the threshold of Sysnav's office, located in the picturesque Vernon, Normandy, I embarked on a journey both thrilling and enlightening. Fresh-faced and eager, I entered the world of healthcare and artificial intelligence as a novice Data Scientist. Little did I know, this expedition would lead me to an intersection between deep learning, topological data analysis, and applied mathematics, and immerse me in a transformative journey."
+          },
+          {
+            "type": "text",
+            "prop": "Sysnav was not a typical tech company. Instead, it was an innovative hub nestled amidst the tranquillity of pastoral Normandy, a serene backdrop that fostered creativity and camaraderie. The blend of a stimulating professional life with a balanced personal one was unique to Sysnav. The high-adrenaline team activities, from kayaking on the river to friendly paintball competitions, added an extra layer of fulfillment to my life."
+          },
+          {
+            "type": "text",
+            "prop": "My role at Sysnav was intriguing and challenging. I was part of the team working on ActiMyo, an innovative device that catered to patients suffering from Parkinson's and Duchenne muscular dystrophy (DMD). My tasks were clear: refine the step detection algorithm, discern when the device was worn on the ankle, detect small Parkinsonian steps, and identify dyskinesia crises. The responsibility was considerable, but the excitement of contributing to something meaningful made it worthwhile."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "ActiMyo device",
+              "source": "https://cdn.merylldindin.com/assets/sysnav-actimyo.webp",
+              "lazySource": "https://cdn.merylldindin.com/assets/sysnav-actimyo-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Working directly with neurosurgeons, my understanding of the intricate workings of Parkinson's deepened. It was here that I found myself standing at the junction of applied mathematics, deep learning, and healthcare. The work was challenging and pushed me to my limits, but every breakthrough, however small, brought us closer to making a difference in the patients' lives."
+          },
+          {
+            "type": "text",
+            "prop": "A crucial part of my journey at Sysnav was working on an academic paper that dived into the detection of Parkinson's symptoms using ActiMyo's inertial data streams. Our approach integrated deep learning and a rapidly evolving geometric theory called Topological Data Analysis. It was a cross-disciplinary effort, bringing together a unique blend of mathematical principles and artificial intelligence. This amalgamation was aimed at overcoming the limitations of existing research, such as patient-dependency and the lack of ground truth."
+          },
+          {
+            "type": "text",
+            "prop": "The journey of the academic paper was far from smooth. Despite our consistent efforts, the paper remained unpublished due to a variety of reasons. But every cloud has a silver lining. While this was a disappointing outcome, it was also a valuable lesson that bolstered my scientific method and resilience. I had learned, through experience, the true nature of academic literature and research."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "ActiMyo device",
+              "source": "https://cdn.merylldindin.com/assets/sysnav-model.webp",
+              "lazySource": "https://cdn.merylldindin.com/assets/sysnav-model-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "One of the highlights of my tenure at Sysnav was the chance encounter with Frederic Chazal, a luminary in the field of Topological Data Analysis. His mentorship propelled me into newer realms of applied mathematics and deep learning. Under his guidance, I navigated the complex world of this advanced mathematical theory, uncovering layers of knowledge and wisdom that continue to guide me in my professional endeavors."
+          },
+          {
+            "type": "text",
+            "prop": "Reflecting on my time at Sysnav, I am filled with a deep sense of gratitude and humility. I had the chance to explore the uncharted terrains of healthcare and artificial intelligence, and stand at the crossroads of deep learning and advanced mathematical theories. This experience was more than a stepping stone in my career; it was a rich tapestry of knowledge, friendships, and invaluable life lessons. As I tread further into the realm of data science, the memories of my journey at Sysnav remain a beacon of inspiration."
+          }
+        ]
+      }
+    }
+  ]
+}

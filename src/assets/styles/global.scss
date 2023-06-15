@@ -26,7 +26,6 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,12 +41,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgb(var(--v-theme-foam)) !important;
-  font-family: "Major Mono Display", serif !important;
+  color: rgb(var(--v-theme-primary)) !important;
+  font-family: Cartesian, serif !important;
 }
 
 p,
 a,
 span {
-  color: rgb(var(--v-theme-foam)) !important;
+  color: rgb(var(--v-theme-primary)) !important;
 }

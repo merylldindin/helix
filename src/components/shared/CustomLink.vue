@@ -4,6 +4,8 @@ import { useRoute } from "vue-router";
 
 import { DEFAULT_URL } from "@/content";
 
+import CustomIcon from "./CustomIcon.vue";
+
 const cProps = defineProps({
   ariaLabel: {
     default: undefined,
@@ -82,6 +84,8 @@ const parsedLink: ComputedRef<Object> = computed(() => {
     <template v-if="prompt">
       {{ prompt }}
     </template>
+
+    <CustomIcon v-else-if="icon" :color="color" :icon="icon" :size="size" />
 
     <slot />
   </nuxt-link>

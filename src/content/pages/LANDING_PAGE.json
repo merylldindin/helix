@@ -2,7 +2,7 @@
   "layout": "default",
   "head": {
     "canonical": "/",
-    "title": "Serial Entrepreneur, Convinced Transhumanist | Meryll Dindin"
+    "title": "Meryll Dindin: Transhumanist & Entrepreneur Driving Future Innovation | Meryll Dindin"
   },
   "components": [
     {
@@ -19,62 +19,77 @@
         },
         "pages": [
           {
-            "background": {
-              "altText": "AI generated art of human biology and technology",
-              "lazySource": "https://cdn.merylldindin.com/assets/android-biology-lazy.webp",
-              "source": "https://cdn.merylldindin.com/assets/android-biology.webp",
-              "mobileSource": "https://cdn.merylldindin.com/assets/android-biology-mobile.webp"
+            "headline": {
+              "prompt": "Hustle",
+              "ariaLabel": "Learn more about Meryll Dindin current work",
+              "to": "/hustle/"
             },
-            "headline": "Hustle",
             "profiles": [
               {
                 "slug": "Polygon Psychology",
                 "icon": "BRAIN",
                 "link": {
-                  "ariaLabel": "Learn more about Meryll Dindin's work at Polygon",
-                  "external": true,
-                  "to": "https://hellopolygon.com",
-                  "target": "_blank",
-                  "rel": "noopener external"
+                  "ariaLabel": "Learn more about Meryll Dindin work at Polygon",
+                  "to": "/hustle/polygon/"
                 }
               },
               {
                 "slug": "Dillygence",
                 "icon": "FACTORY",
                 "link": {
-                  "ariaLabel": "Learn more about Meryll Dindin's work at Dillygence",
-                  "external": true,
-                  "to": "https://dillygence.com",
-                  "target": "_blank",
-                  "rel": "noopener external"
+                  "ariaLabel": "Learn more about Meryll Dindin work at Dillygence",
+                  "to": "/hustle/dillygence/"
                 }
               },
               {
                 "slug": "Auberge de Cercoux",
                 "icon": "SILVERWARE_FORK_KNIFE",
                 "link": {
-                  "ariaLabel": "Learn more about Meryll Dindin's work at Auberge de Cercoux",
-                  "external": true,
-                  "to": "https://auberge.decercoux.com",
-                  "target": "_blank",
-                  "rel": "noopener external"
-                }
-              },
-              {
-                "slug": "Odelys de Bédenac",
-                "icon": "FOOD_CROISSANT",
-                "link": {
-                  "ariaLabel": "Learn more about Meryll Dindin's work at Odelys de Bédenac",
-                  "external": true,
-                  "to": "https://odelys.debedenac.com",
-                  "target": "_blank",
-                  "rel": "noopener external"
+                  "ariaLabel": "Learn more about Meryll Dindin work at Auberge de Cercoux",
+                  "to": "/hustle/auberge-de-cercoux/"
                 }
               }
             ]
           },
           {
-            "headline": "Share",
+            "headline": {
+              "prompt": "Narrate",
+              "ariaLabel": "Learn more about Meryll Dindin previous work",
+              "to": "/hustle/"
+            },
+            "profiles": [
+              {
+                "slug": "CalAster",
+                "icon": "FIRE",
+                "link": {
+                  "ariaLabel": "Learn more about Meryll Dindin work at CalAster",
+                  "to": "/hustle/calaster/"
+                }
+              },
+              {
+                "slug": "Fujitsu Laboratories",
+                "icon": "HEART_PULSE",
+                "link": {
+                  "ariaLabel": "Learn more about Meryll Dindin work at Fujitsu Laboratories in Japan",
+                  "to": "/hustle/fujitsu/"
+                }
+              },
+              {
+                "slug": "Sysnav",
+                "icon": "BRAIN",
+                "link": {
+                  "ariaLabel": "Learn more about Meryll Dindin work at Sysnav",
+                  "to": "/hustle/sysnav/"
+                }
+              }
+            ]
+          },
+          {
+            "headline": {
+              "prompt": "Share",
+              "ariaLabel": "Follow Meryll Dindin adventures on social media",
+              "to": "/"
+            },
             "profiles": [
               {
                 "slug": "Twitter",
@@ -119,12 +134,32 @@
                   "target": "_blank",
                   "rel": "nofollow noreferrer noopener external"
                 }
+              }
+            ]
+          },
+          {
+            "headline": {
+              "prompt": "Create",
+              "ariaLabel": "Follow Meryll Dindin creative projects",
+              "to": "/"
+            },
+            "profiles": [
+              {
+                "slug": "YouTube",
+                "icon": "YOUTUBE",
+                "link": {
+                  "ariaLabel": "Have a look at Meryll Dindin video projects",
+                  "external": true,
+                  "to": "https://youtube.com/@merylldindin",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
               },
               {
                 "slug": "Modeling",
                 "icon": "CAMERA",
                 "link": {
-                  "ariaLabel": "Have a look at Meryll Dindin's modeling project",
+                  "ariaLabel": "Have a look at Meryll Dindin modeling project",
                   "external": true,
                   "to": "https://dindinmeryll.portfoliobox.net",
                   "target": "_blank",
@@ -134,7 +169,11 @@
             ]
           },
           {
-            "headline": "Think",
+            "headline": {
+              "prompt": "Think",
+              "ariaLabel": "Read more about Meryll's thougths",
+              "to": "/"
+            },
             "profiles": [
               {
                 "slug": "Medium",
@@ -157,11 +196,26 @@
                   "target": "_blank",
                   "rel": "nofollow noreferrer noopener external"
                 }
+              },
+              {
+                "slug": "Google Patents",
+                "icon": "SCHOOL",
+                "link": {
+                  "ariaLabel": "Have a look at Meryll Dindin on Google Patents",
+                  "external": true,
+                  "to": "https://patents.google.com/?inventor=Meryll+Dindin",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
               }
             ]
           },
           {
-            "headline": "Code",
+            "headline": {
+              "prompt": "Code",
+              "ariaLabel": "Discover Meryll's open source projects",
+              "to": "/"
+            },
             "profiles": [
               {
                 "slug": "Github",

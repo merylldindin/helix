@@ -2,18 +2,13 @@
 import { useDisplay } from "vuetify";
 
 import SwipeHint from "@/assets/animations/swipe-hint.json";
-import { CustomHeadline, CustomLink } from "@/components/shared";
-import { ICONS } from "@/plugins/vuetify.client/icons";
+import { CustomLink } from "@/components/shared";
 import { IconName } from "@/types";
 
 defineProps({
   grid: {
     required: true,
     type: Object,
-  },
-  showHint: {
-    default: true,
-    type: Boolean,
   },
 });
 
@@ -23,11 +18,9 @@ const { mobile } = useDisplay();
 <template>
   <client-only>
     <div class="grid-links">
-      <CustomHeadline
-        class="title-typography"
-        :level="2"
-        :text="grid.headline"
-        typography="text-foam"
+      <CustomLink
+        typography="text-foam text-cartesian title-typography"
+        v-bind="grid.headline"
       />
 
       <CustomLink
@@ -36,25 +29,16 @@ const { mobile } = useDisplay();
         :key="index"
         class="grid-link"
       >
-        <CustomHeadline
-          v-if="!mobile"
-          class="link-typography"
-          :level="3"
-          :text="profile.slug"
-          typography="text-foam"
-        />
-
-        <span v-else class="text-1 text-foam"> {{ profile.slug }} </span>
+        <span class="text-0 font-weight-bold text-foam"> {{ profile.slug }} </span>
 
         <v-icon
           :color="$COLOR.FOAM"
-          :icon="ICONS[profile.icon as IconName]"
+          :icon="$ICON[profile.icon as IconName]"
           :size="'3vh'"
         />
       </CustomLink>
 
       <Vue3Lottie
-        v-if="showHint"
         :animation-data="SwipeHint"
         class="swipe-hint"
         :width="mobile ? '12vw' : '5vh'"
@@ -80,7 +64,7 @@ const { mobile } = useDisplay();
 }
 
 .title-typography {
-  font-size: 3.5vh !important;
+  font-size: 6vh !important;
   margin-bottom: 3vh;
 }
 

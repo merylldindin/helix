@@ -4,32 +4,48 @@
   font-stretch: normal !important;
   font-style: normal !important;
   word-break: break-word !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.16px !important;
+}
+
+.text-0 {
+  @extend %text;
+
+  font-size: 1.8rem !important;
+
+  @include md-down {
+    font-size: 1.6rem !important;
+  }
 }
 
 .text-1 {
   @extend %text;
 
-  font-size: 1.4rem !important;
-  line-height: 1.5 !important;
-  letter-spacing: 0.16px !important;
+  font-size: 1.6rem !important;
 
   @include md-down {
-    font-size: 1.2 !important;
-    line-height: 1.5 !important;
-    letter-spacing: 0.16px !important;
+    font-size: 1.4 !important;
   }
 }
 
 .text-2 {
   @extend %text;
 
-  font-size: 1.2 !important;
-  line-height: 1.5 !important;
-  letter-spacing: 0.16px !important;
+  font-size: 1.4rem !important;
+
+  @include md-down {
+    font-size: 1.2rem !important;
+  }
 }
 
 .text-cartesian {
-  @extend %text;
-
   font-family: Cartesian, serif !important;
+}
+
+.text-lexend-deca {
+  font-family: "Lexend Deca", Arial, sans-serif !important;
+}
+
+.text-major-mono-display {
+  font-family: "Major Mono Display", serif !important;
 }

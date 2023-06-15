@@ -1,0 +1,215 @@
+{
+  "layout": "scrolled",
+  "head": {
+    "canonical": "/hustle/fujitsu/",
+    "title": "AI for Heart Health: A Pioneering Voyage at Fujitsu | Meryll Dindin",
+    "description": "Unearth Meryll Dindin's trailblazing journey at Fujitsu AI Laboratories, Japan, highlighting groundbreaking work in AI-based arrhythmia detection and its life-changing potential.",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/fujitsu.webp",
+    "thumbnailAlt": "Fujitsu website screenshot"
+  },
+  "components": [
+    {
+      "name": "HEADER_ARTICLE",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Fujitsu website screenshot",
+          "source": "https://cdn.merylldindin.com/assets/fujitsu-header.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/fujitsu-header-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/fujitsu-header-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/fujitsu-header-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Cracking the Code: My Uncharted Venture into AI and Heart Health",
+              "typography": "text-cartesian headline-2 mb-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Last Edited on June 13, 2023",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A heart, they say, beats to its own rhythm. It's an individual's lifeline, a ticking timepiece choreographed by nature. In 2018, my life took an unexpected turn, and my own rhythm led me to Japan, a captivating place known for its intricate blend of tradition and technology. Armed with my previous experience of working on a project for Parkinson's disease management, I was ready to dive deeper into the pulsating world of AI and healthcare."
+          },
+          {
+            "type": "text",
+            "prop": "I was about to tackle the silent and often undetected malady - arrhythmia. This condition, which brings an irregular heartbeat, often foreshadows severe heart disease. Tasked with finding a way to detect such irregularities, I was introduced to a challenge that piqued my intellectual curiosity. I knew I had my work cut out for me, but a part of me was excited to navigate these uncharted waters."
+          },
+          {
+            "type": "text",
+            "prop": "Japan was different, an experience that I can only liken to the feeling you get when you open a book you’ve never read before. It's the first line that hooks you, and before you know it, you're engrossed, living the characters' lives. And just like that, I found myself living my new life, absorbed in a culture rich in tradition, and working at the cutting-edge of AI at Fujitsu AI Laboratories."
+          },
+          {
+            "type": "text",
+            "prop": "The project felt a bit like a solitary journey, and in this isolation, I found a certain kind of quiet determination. I was working on the deep end of deep learning, navigating through an intricate web of algorithms, pushing the boundaries of what was possible. The task was clear: develop a technology capable of not only identifying arrhythmia but doing so in a way that was beyond the capabilities of Electrocardiography (ECG)."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Slide from CAIAC conference picturing topology importance",
+              "source": "https://cdn.merylldindin.com/assets/fujitsu-topology.webp",
+              "lazySource": "https://cdn.merylldindin.com/assets/fujitsu-topology-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Our not-so-secret weapon was Topological Data Analysis (TDA), a robust waveform analysis technology. TDA had the unique capability to create AI models that could detect anomalies in time-series data. Its resilience to data deformations was exactly what we needed for our ambitious endeavor. With TDA, we were able to fine-tune our technology to detect arrhythmia with a high level of accuracy, even in patients previously unseen by the system."
+          },
+          {
+            "type": "text",
+            "prop": "In due course, the results of our labor began to bear fruit. We were granted a patent for our technology, a validation that served as a testament to our innovative approach. Moreover, our scholarly paper detailing our work was selected for presentation at the Canadian Conference on Artificial Intelligence in 2020, an honor that I cherish. Later, the paper found a place in the prestigious 'Springer Nature'."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Top of our submitted paper",
+              "source": "https://cdn.merylldindin.com/assets/fujitsu-paper.webp",
+              "lazySource": "https://cdn.merylldindin.com/assets/fujitsu-paper-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "By October 2021, the technology that was born out of a solitary journey and persistent exploration was being put to the test in a clinical trial with The University of Tokyo Hospital. It was no longer just lines of code and algorithms; it was being used to possibly save lives, to make a tangible difference. This was not just a breakthrough for us, but it also brought new hope for the early detection of heart diseases."
+          },
+          {
+            "type": "text",
+            "prop": "The technology continues to be used in Tokyo clinics, contributing to the fight against the global issue of heart disease. From the heart of Tokyo to the very core of AI in healthcare, my journey has been nothing short of extraordinary. Through it all, I've learned that when you're at the intersection of healthcare and AI, the potential for impact is not just huge, it's heartwarming."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "List of places Meryll has been travelling to in Japan",
+              "source": "https://cdn.merylldindin.com/assets/fujitsu-travel.webp",
+              "lazySource": "https://cdn.merylldindin.com/assets/fujitsu-travel-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Life in Japan, my time at Fujitsu, the work we did - it all syncs together like a harmonious symphony, much like a healthy heartbeat. Reflecting on it, I can confidently say that while this journey came with its own unique challenges, it also came with an equal, if not greater, amount of satisfaction. As the story continues to unfold, I look forward to sharing more chapters with you. The heart of this tale beats on, rhythm by rhythm, line by line, one innovation at a time."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Science Contributions",
+              "typography": "text-lexend-deca headline-6 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://link.springer.com/chapter/10.1007/978-3-030-47358-7_17",
+              "title": "Topological Data Analysis for Arrhythmia Detection Through Modular Neural Networks | SpringerLink",
+              "description": "This paper presents an innovative and generic deep learning approach to monitor heart conditions from ECG signals. We focus our attention on both the detection and classification of abnormal heartbeats, known as arrhythmia. We strongly insist on generalization..."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://patents.google.com/patent/US20200074281A1/",
+              "title": "Computer-readable recording medium, abnormality determination method, and abnormality determination device - Google Patents",
+              "description": "A learning device performs learning by an autoencoder, using waveform data with changes over time that is obtained from an intrinsic movement of an object. The learning device performs persistent homology conversion to calculate a change in the number of connected component according to a threshold change in a value direction for the waveform data. The learning device determines abnormality based on a determination result of a learner to which output data of the autoencoder obtained from the waveform data and output data obtained from the persistent homology conversion are input, and in which machine learning about abnormality of the waveform data has been performed."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://cdn.merylldindin.com/documents/conference-caiac-2020.pdf",
+              "title": "Topological Data Analysis for Arrhythmia Detection Through Modular Neural Networks | CAIAC Slides",
+              "description": "Delve into the compelling presentation slides from the CAIAC 2020 conference, where Meryll Dindin showcased his groundbreaking work in AI and heart health, specifically focusing on arrhythmia detection using topological data analysis."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://towardsdatascience.com/from-tda-to-dl-d06f234f51d?gi=4373717bb08e",
+              "title": "From Topological Data Analysis to Deep Learning: No Pain No Gain | Towards Data Science",
+              "description": "Today, I’ll try to give some insights about TDA (for Topological Data Analysis), a mathematical field quickly evolving, that will certainly soon be completely integrated into machine-/deep- learning…"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "Press Releases",
+              "typography": "text-lexend-deca headline-6 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.mobihealthnews.com/news/asia/over-630000-ecg-data-used-develop-ai-tool-early-diagnosis-heart-disease-japan#:~:text=waveform%20analysis%20technology%20called%20topological%20data%20analysis",
+              "title": "Over 630,000 ECG data used to develop AI tool for early diagnosis of heart disease in Japan | MobiHealthNews",
+              "description": "Clinical research is set to verify the technology's effectiveness in estimating abnormal heart movements."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://japan.zdnet.com/article/35174199/",
+              "title": "Fujitsu Develops Time-Series AI Technology to Identify Abnormal Factors - ZDNET Japan",
+              "description": "Fujitsu and Inria, a French national research institute, have developed the world's first AI technology to identify factors that determine abnormal conditions in time series data."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://syncedreview.com/2020/03/31/new-fujitsu-inria-tech-automatically-builds-anomaly-detecting-ai-models/",
+              "title": "New Fujitsu & Inria Tech Automatically Builds Anomaly-Detecting AI Models | Synced",
+              "description": "Japanese multinational IT equipment and services company Fujitsu has collaborated with Inria, the French national research institute for digital science and technology, to develop a new technology that can automatically create AI models that detect anomalies by extracting the necessary information from time-series data. The new technology has been incorporated into GUDHI — an open"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://japantoday.com/category/features/health/fujitsu-university-of-tokyo-hospital-to-research-ai-in-fight-against-heart-disease",
+              "title": "Fujitsu, University of Tokyo Hospital to research AI in fight against heart disease - Japan Today",
+              "description": "Fujitsu Ltd has started joint clinical research with the University of Tokyo Hospital to verify the effectiveness of artificial intelligence technology to estimate abnormal heart movements based on electrocardiogram data. The research commenced at the University of Tokyo Hospital on Oct 25. Since December 2019, Fujitsu has been making progress with…"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.fujitsu.com/global/about/research/business/artificial-intelligence/",
+              "title": "Trusted AI – Working With People to Create New Value : Fujitsu Global",
+              "description": "Trusted AI – Working With People to Create New Value"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.inria.fr/en/fujitsu-and-inria-jointly-develop-technology-automatically-create-anomaly-detecting-ai-models",
+              "title": "Fujitsu and Inria jointly develop technology to automatically create anomaly-detecting AI models | Inria",
+              "description": "New Technology reduces the number of man hours required for creating AI models leveraging Topological Data Analysis (TDA) by a factor of 100, accelerating field deployment"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.inria.fr/en/joint-research-fujitsu-and-inria-advances-early-detection-heart-disease",
+              "title": "Joint research by Fujitsu and Inria advances early detection of heart disease | Inria",
+              "description": "Four years into their collaboration, artificial intelligence technology developed by Japan’s Fujitsu and Inria’s DataShape project-team is being tested in a major clinical trial. The technology leverages Topological Data Analysis (TDA) to automatically create AI models that can detect anomalies in time-series data in fields such as health or engineering. In October, the Fujitsu AI team and the cardiology team at the University of Tokyo Hospital began evaluating its potential for early detection of heart disease."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

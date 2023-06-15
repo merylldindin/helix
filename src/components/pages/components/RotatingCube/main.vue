@@ -17,29 +17,31 @@ defineProps({
 
 <template>
   <CustomSection fullscreen>
-    <div class="cube-wrapper">
-      <Swiper
-        :autoplay="{
-          delay: 3000,
-          disableOnInteraction: true,
-        }"
-        :centered-slides="true"
-        class="swiper-wrapper"
-        :cube-effect="{
-          shadowScale: 1.0,
-        }"
-        :effect="'cube'"
-        :grab-cursor="true"
-        :loop="true"
-        :modules="[SwiperAutoplay, SwiperEffectCube, SwiperMousewheel]"
-        :mousewheel="true"
-        :slides-per-view="1"
-      >
-        <SwiperSlide v-for="(page, index) in pages" :key="index" class="swiper-slide">
-          <LinksGrid :grid="page" />
-        </SwiperSlide>
-      </Swiper>
-    </div>
+    <template #background>
+      <div class="cube-wrapper">
+        <Swiper
+          :autoplay="{
+            delay: 3000,
+            disableOnInteraction: true,
+          }"
+          :centered-slides="true"
+          class="swiper-wrapper"
+          :cube-effect="{
+            shadowScale: 1.0,
+          }"
+          :effect="'cube'"
+          :grab-cursor="true"
+          :loop="true"
+          :modules="[SwiperAutoplay, SwiperEffectCube, SwiperMousewheel]"
+          :mousewheel="true"
+          :slides-per-view="1"
+        >
+          <SwiperSlide v-for="(page, index) in pages" :key="index" class="swiper-slide">
+            <LinksGrid :grid="page" />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </template>
   </CustomSection>
 </template>
 

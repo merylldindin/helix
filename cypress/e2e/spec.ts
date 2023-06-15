@@ -15,12 +15,8 @@ describe("Home page", () => {
     HomePageSelectors.CookieBannerDisclaimer.should("not.exist");
   });
 
-  it("Github profile", () => {
-    HomePageSelectors.GithubProfile.should("be.visible");
-    HomePageSelectors.GithubProfile.should(
-      "have.attr",
-      "href",
-      "https://github.com/merylldindin"
-    );
+  it("Hustle navigation", () => {
+    HomePageSelectors.HustleNavigation.should("be.visible");
+    HomePageSelectors.HustleNavigation.should("have.attr", "href", "/hustle/");
   });
 });
