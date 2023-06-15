@@ -62,7 +62,7 @@ useSchemaOrg([defineBreadcrumb({ itemListElement: breadcrumbs.value })]);
 
 <template>
   <ul v-if="displayedBreadcrumbs.length > 0" class="page-breadcrumbs">
-    <span class="mr-4 text-1"> / </span>
+    <span class="mr-4 text-1 separator-offset"> / </span>
 
     <li
       v-for="(item, index) in displayedBreadcrumbs"
@@ -113,8 +113,14 @@ li {
   }
 
   @include xs-only {
-    top: 1.4rem;
+    top: 1.55rem;
     left: 18rem;
+  }
+}
+
+.separator-offset {
+  @include sm-down {
+    margin-top: -1px;
   }
 }
 </style>

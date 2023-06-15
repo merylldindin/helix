@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { PropType, onMounted, onUnmounted, ref } from "vue";
+import { ComputedRef, PropType, computed, onMounted, onUnmounted, ref } from "vue";
 import { useDisplay } from "vuetify";
 
 import ScrollDown from "@/assets/animations/scroll-down.json";
@@ -21,17 +21,28 @@ defineProps({
 
 const { mobile } = useDisplay();
 
+const pageMargin = ref<string>("80vh");
 const headerOpacity = ref<number>(1.0);
 
 const opacityScrollHandler = () => {
   headerOpacity.value = 1.0 - window.scrollY / window.innerHeight;
 };
 
+const marginResizeHandler = () => {
+  pageMargin.value = `${Math.floor(0.9 * window.innerHeight)}px`;
+};
+
 onMounted(() => {
+  marginResizeHandler();
+
+  window.addEventListener("resize", marginResizeHandler);
+
   window.addEventListener("scroll", opacityScrollHandler);
 });
 
 onUnmounted(() => {
+  window.removeEventListener("resize", marginResizeHandler);
+
   window.removeEventListener("scroll", opacityScrollHandler);
 });
 </script>
@@ -48,7 +59,7 @@ onUnmounted(() => {
     </template>
 
     <client-only>
-      <v-row class="column-wrapper">
+      <v-row class="column-wrapper" :style="{ marginTop: pageMargin }">
         <Vue3Lottie
           :animation-data="ScrollDown"
           class="scroll-hint"
@@ -85,7 +96,9 @@ onUnmounted(() => {
 
 .column-wrapper {
   height: fit-content;
-  margin: 90vh auto 6rem;
+  margin-bottom: 6rem;
+  margin-right: auto;
+  margin-left: auto;
   position: relative;
   background-color: rgb(var(--v-theme-foam));
   border-radius: 4px 4px 0 0;
@@ -107,7 +120,9 @@ onUnmounted(() => {
   }
 
   @include sm-down {
-    margin: 90vh -16px 3rem;
+    margin-bottom: 3rem;
+    margin-right: -16px;
+    margin-left: -16px;
   }
 }
 
