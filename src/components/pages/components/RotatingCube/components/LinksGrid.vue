@@ -3,7 +3,6 @@ import { useDisplay } from "vuetify";
 
 import SwipeHint from "@/assets/animations/swipe-hint.json";
 import { CustomLink } from "@/components/shared";
-import { ICONS } from "@/plugins/vuetify.client/icons";
 import { IconName } from "@/types";
 
 defineProps({
@@ -34,7 +33,7 @@ const { mobile } = useDisplay();
 
         <v-icon
           :color="$COLOR.FOAM"
-          :icon="ICONS[profile.icon as IconName]"
+          :icon="$ICON[profile.icon as IconName]"
           :size="'3vh'"
         />
       </CustomLink>

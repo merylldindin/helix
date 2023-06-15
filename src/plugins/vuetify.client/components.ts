@@ -2,6 +2,7 @@ import { VApp } from "vuetify/components/VApp";
 import { VAvatar } from "vuetify/components/VAvatar";
 import { VBtn } from "vuetify/components/VBtn";
 import { VCard, VCardActions, VCardText, VCardTitle } from "vuetify/components/VCard";
+import { VDivider } from "vuetify/components/VDivider";
 import { VFooter } from "vuetify/components/VFooter";
 import { VCol, VContainer, VRow, VSpacer } from "vuetify/components/VGrid";
 import { VIcon } from "vuetify/components/VIcon";
@@ -20,6 +21,7 @@ export const VuetifyComponents = {
   VCardTitle,
   VCol,
   VContainer,
+  VDivider,
   VFooter,
   VIcon,
   VImg,

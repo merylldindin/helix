@@ -1,28 +1,45 @@
 <script lang="ts" setup>
 import { CustomLink } from "@/components/shared";
 import { APP_FOOTER_CONTENT } from "@/content";
+import { IconName } from "@/types";
 </script>
 
 <template>
-  <v-footer class="pa-0 global-footer">
+  <v-footer class="py-4 global-footer">
     <v-container>
-      <v-row class="text-center" justify="center">
-        <v-col
-          v-for="(link, index) in APP_FOOTER_CONTENT.links"
+      <v-row class="ma-0" justify="space-between">
+        <div
+          v-for="(link, index) in [
+            ...APP_FOOTER_CONTENT.sitemapLinks,
+            ...APP_FOOTER_CONTENT.legalLinks,
+          ]"
           :key="index"
-          cols="12"
-          sm="auto"
         >
-          <CustomLink v-bind="link" typography="text-1 text-foam" />
-        </v-col>
+          <CustomLink v-bind="link" typography="text-cartesian text-2 text-foam" />
+        </div>
 
-        <v-spacer />
-
-        <v-col class="text-center global-copyright" cols="12" sm="auto">
-          <span class="text-1 text-foam">
+        <div class="global-copyright">
+          <span class="text-cartesian text-2 text-foam">
             {{ APP_FOOTER_CONTENT.copyright }}
           </span>
-        </v-col>
+        </div>
+      </v-row>
+
+      <v-divider class="my-4" :color="$COLOR.FOAM" />
+
+      <v-row class="ma-0" justify="space-between">
+        <CustomLink
+          v-for="(profile, index) in APP_FOOTER_CONTENT.socialsLinks"
+          v-bind="profile.link"
+          :key="index"
+          class="grid-link"
+        >
+          <v-icon
+            :color="$COLOR.FOAM"
+            :icon="$ICON[profile.icon as IconName]"
+            size="small"
+          />
+        </CustomLink>
       </v-row>
     </v-container>
   </v-footer>
@@ -32,6 +49,7 @@ import { APP_FOOTER_CONTENT } from "@/content";
 .global-footer {
   background-color: rgb(var(--v-theme-slate-gray)) !important;
   scroll-snap-align: start;
+  z-index: 1000;
 }
 
 .global-copyright {
