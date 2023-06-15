@@ -9,7 +9,7 @@ export class HomePageSelectors {
     );
   }
 
-  public static get GithubProfile() {
-    return cy.get("[aria-label='Follow Meryll Dindin on Github']");
+  public static get HustleNavigation() {
+    return cy.get("[aria-label='Learn more about Meryll Dindin current work']");
   }
 }
