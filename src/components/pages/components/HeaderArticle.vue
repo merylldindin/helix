@@ -48,7 +48,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <CustomSection snap>
+  <CustomSection>
     <template #background>
       <CustomImage
         class="image-wrapper custom-shadow"

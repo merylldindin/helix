@@ -47,9 +47,9 @@ import { IconName } from "@/types";
 
 <style lang="scss" scoped>
 .global-footer {
+  z-index: 1000;
   background-color: rgb(var(--v-theme-slate-gray)) !important;
   scroll-snap-align: start;
-  z-index: 1000;
 }
 
 .global-copyright {
