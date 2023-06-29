@@ -54,27 +54,26 @@ const displayedBreadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
 
 <template>
   <ul v-if="displayedBreadcrumbs.length > 0" class="page-breadcrumbs">
-    <span class="mr-4 text-1 separator-offset"> / </span>
-
     <li
       v-for="(item, index) in displayedBreadcrumbs"
       :key="index"
-      class="align-self-center"
+      class="align-self-center d-flex"
     >
+      <span v-if="index < displayedBreadcrumbs.length" class="text-1 mx-4"> / </span>
+
       <nuxt-link
         v-if="index < displayedBreadcrumbs.length - 1 || smAndDown"
-        class="text-decoration-none text-1 text-cartesian text-uppercase"
+        class="breadcrumb-text text-decoration-none text-1 text-cartesian text-uppercase"
         :to="item.item"
       >
         {{ item.name }}
       </nuxt-link>
 
-      <span v-else class="text-decoration-none text-1 text-cartesian text-uppercase">
+      <span
+        v-else
+        class="breadcrumb-text text-decoration-none text-1 text-cartesian text-uppercase"
+      >
         {{ item.name }}
-      </span>
-
-      <span v-if="index < displayedBreadcrumbs.length - 1" class="text-1 ml-2 mr-4">
-        /
       </span>
     </li>
   </ul>
@@ -87,27 +86,31 @@ li {
 
 .page-breadcrumbs {
   position: absolute;
-  top: 2.7rem;
-  left: 35rem;
+  top: 2.5rem;
+  left: 34rem;
   transition: all 0.3s ease-in-out;
   z-index: 2;
   display: flex;
   flex-direction: row;
 
   @include md-down {
-    top: 2.1rem;
-    left: 25.5rem;
+    top: 2rem;
+    left: 24rem;
   }
 
   @include sm-down {
     top: 1.6rem;
-    left: 20rem;
+    left: 19rem;
   }
 
   @include xs-only {
-    top: 1.55rem;
-    left: 18rem;
+    top: 1.4rem;
+    left: 16.5rem;
   }
+}
+
+.breadcrumb-text {
+  margin-top: 1.5px;
 }
 
 .separator-offset {
