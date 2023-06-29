@@ -30,7 +30,7 @@ const { smAndDown } = useDisplay();
       >
         <p class="text-1 mb-2 text-ellipsis"> {{ item.prop.title }} </p>
 
-        <p class="text-2 text-grey"> {{ item.prop.description }} </p>
+        <p class="text-2 text-blue-grey-darken-2"> {{ item.prop.description }} </p>
       </CustomLink>
 
       <CustomLink
