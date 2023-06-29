@@ -11,7 +11,7 @@ export const getWebPageSchema = (route: string): Object => {
     .join(" ");
 
   return {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@id": pageUrl,
     "@type": "WebPage",
     name: pageName.length > 0 ? pageName : DEFAULT_NAME,

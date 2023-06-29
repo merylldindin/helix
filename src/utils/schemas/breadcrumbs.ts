@@ -25,7 +25,7 @@ export const getBreadcrumbsSchema = (route: string) => {
   const breadcrumbs = getBreadcrumbsItems(route);
 
   return {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: breadcrumbs.map((item, index) => ({
       "@type": "ListItem",
