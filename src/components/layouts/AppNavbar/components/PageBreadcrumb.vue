@@ -5,8 +5,6 @@ import { useDisplay } from "vuetify";
 
 import { RoutePath } from "@/types";
 
-import { defineBreadcrumb, useSchemaOrg } from "#imports";
-
 const route = useRoute();
 
 interface BreadcrumbSchema {
@@ -14,10 +12,10 @@ interface BreadcrumbSchema {
   item?: string;
 }
 
-const CANONICAL_ITEM = "Home";
+const { smAndDown, mdAndDown } = useDisplay();
 
 const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
-  const result: BreadcrumbSchema[] = [{ item: "/", name: CANONICAL_ITEM }];
+  const result: BreadcrumbSchema[] = [];
   const routePath = route.path.split("/").filter(Boolean);
 
   let path = "";
@@ -41,23 +39,17 @@ const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
   return result;
 });
 
-const { smAndDown, mdAndDown } = useDisplay();
-
 const displayedBreadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
   if (smAndDown.value) {
-    return breadcrumbs.value
-      .slice(-2, -1)
-      .filter((item) => item.name !== CANONICAL_ITEM);
+    return breadcrumbs.value.slice(-2, -1);
   }
 
   if (mdAndDown.value) {
-    return breadcrumbs.value.slice(-3).filter((item) => item.name !== CANONICAL_ITEM);
+    return breadcrumbs.value.slice(-3);
   }
 
-  return breadcrumbs.value.filter((item) => item.name !== CANONICAL_ITEM);
+  return breadcrumbs.value;
 });
-
-useSchemaOrg([defineBreadcrumb({ itemListElement: breadcrumbs.value })]);
 </script>
 
 <template>

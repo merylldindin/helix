@@ -4,8 +4,10 @@ import { useRoute } from "vue-router";
 
 import { DynamicPage } from "@/components/pages";
 import { ROUTES_CONTENT } from "@/utils/routes";
+import { getBreadcrumbsSchema, getWebPageSchema } from "@/utils/schemas";
 
 import { definePageMeta, setPageLayout } from "#imports";
+import { useJsonld } from "#jsonld";
 
 definePageMeta({
   layout: false,
@@ -17,6 +19,12 @@ const pageContent = computed(() => {
 
 onMounted(() => {
   setPageLayout(pageContent.value.layout);
+
+  // @ts-ignore
+  useJsonld(getBreadcrumbsSchema(useRoute().path));
+
+  // @ts-ignore
+  useJsonld(getWebPageSchema(useRoute().path));
 });
 </script>
 
