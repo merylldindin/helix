@@ -1,7 +1,7 @@
-import { DEFAULT_TITLE, DEFAULT_URL } from "@/content";
+import { DEFAULT_NAME, DEFAULT_URL } from "@/content";
 
 const getBreadcrumbsItems = (route: string): { name: string; url: string }[] => {
-  const breadcrumbs = [{ name: DEFAULT_TITLE, url: DEFAULT_URL }];
+  const breadcrumbs = [{ name: DEFAULT_NAME, url: DEFAULT_URL }];
   const subpaths = route.split("/").filter(Boolean);
 
   let path = "";

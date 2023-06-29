@@ -1,4 +1,4 @@
-import { DEFAULT_TITLE, DEFAULT_URL } from "@/content";
+import { DEFAULT_NAME, DEFAULT_URL } from "@/content";
 
 export const getWebPageSchema = (route: string): Object => {
   const pageUrl = `${DEFAULT_URL}${route}`;
@@ -14,7 +14,7 @@ export const getWebPageSchema = (route: string): Object => {
     "@context": "http://schema.org",
     "@id": pageUrl,
     "@type": "WebPage",
-    name: pageName.length > 0 ? pageName : DEFAULT_TITLE,
+    name: pageName.length > 0 ? pageName : DEFAULT_NAME,
     url: pageUrl,
   };
 };
