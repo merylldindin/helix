@@ -19,7 +19,10 @@ const cProps = defineProps({
   },
 });
 
-useSeoMeta(extractHead(cProps.head));
+useSeoMeta(
+  // @ts-ignore
+  extractHead(cProps.head)
+);
 </script>
 
 <template>
