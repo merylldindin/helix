@@ -28,8 +28,8 @@ export default defineNuxtConfig({
   },
   modules: [
     "@nuxt/devtools",
+    "nuxt-jsonld",
     "nuxt-link-checker",
-    "nuxt-schema-org",
     "nuxt-simple-sitemap",
     "nuxt-swiper",
     "nuxt-unhead",

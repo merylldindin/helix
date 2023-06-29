@@ -1,11 +1,19 @@
 <script lang="ts" setup>
 import { CookieBanner } from "@/components/layouts";
-import { DEFAULT_IDENTITY } from "@/content";
+import { DEFAULT_SCHEMA, WEBSITE_SCHEMA } from "@/content";
 
 import { clearError } from "#app";
-import { definePerson, defineWebPage, defineWebSite, useSchemaOrg } from "#imports";
+import { useJsonld } from "#jsonld";
 
-useSchemaOrg([definePerson(DEFAULT_IDENTITY), defineWebSite(), defineWebPage()]);
+useJsonld(
+  // @ts-ignore
+  DEFAULT_SCHEMA
+);
+
+useJsonld(
+  // @ts-ignore
+  WEBSITE_SCHEMA
+);
 </script>
 
 <template>

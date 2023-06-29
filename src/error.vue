@@ -8,7 +8,10 @@ import { extractHead } from "@/utils/meta";
 
 import { useSeoMeta } from "#imports";
 
-useSeoMeta(extractHead(ERROR_PAGE_CONTENT.head));
+useSeoMeta(
+  // @ts-ignore
+  extractHead(ERROR_PAGE_CONTENT.head)
+);
 
 const cProps = defineProps({
   error: {

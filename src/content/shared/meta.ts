@@ -1,3 +1,5 @@
+export const DEFAULT_NAME = "Meryll Dindin";
+
 export const DEFAULT_TITLE =
   "Meryll Dindin: Transhumanist & Entrepreneur Driving Future Innovation | Meryll Dindin";
 

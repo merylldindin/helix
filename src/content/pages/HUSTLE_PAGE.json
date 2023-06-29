@@ -1,5 +1,11 @@
 {
   "layout": "snaped",
+  "schema": {
+    "type": "itemList",
+    "prop": {
+      "source": "SECTION_IMAGE"
+    }
+  },
   "head": {
     "canonical": "/hustle/",
     "title": "Strategic Innovations & Transformative Projects | Meryll Dindin",
@@ -35,7 +41,6 @@
             "type": "more",
             "prop": {
               "ariaLabel": "Learn more about Polygon",
-              "prompt": "Read More →",
               "to": "/hustle/polygon/"
             }
           }
@@ -78,7 +83,6 @@
             "type": "more",
             "prop": {
               "ariaLabel": "Learn more about Dillygence",
-              "prompt": "Read More →",
               "to": "/hustle/dillygence/"
             }
           }
@@ -121,7 +125,7 @@
             "type": "more",
             "prop": {
               "ariaLabel": "Learn more about Auberge de Cercoux",
-              "prompt": "Read More →",
+
               "to": "/hustle/auberge-de-cercoux/"
             }
           }
@@ -164,7 +168,6 @@
             "type": "more",
             "prop": {
               "ariaLabel": "Learn more about CalAster",
-              "prompt": "Read More →",
               "to": "/hustle/calaster/"
             }
           }
@@ -207,7 +210,6 @@
             "type": "more",
             "prop": {
               "ariaLabel": "Learn more about Fujitsu Laboratories",
-              "prompt": "Read More →",
               "to": "/hustle/fujitsu/"
             }
           }
@@ -250,7 +252,6 @@
             "type": "more",
             "prop": {
               "ariaLabel": "Learn more about Sysnav",
-              "prompt": "Read More →",
               "to": "/hustle/sysnav/"
             }
           }

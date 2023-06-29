@@ -8,3 +8,4 @@ export { default as POLYGON_PAGE_CONTENT } from "./POLYGON_PAGE.json";
 export { default as PRIVACY_POLICY_CONTENT } from "./PRIVACY_POLICY.json";
 export { default as SYSNAV_PAGE_CONTENT } from "./SYSNAV_PAGE.json";
 export { default as TERMS_OF_USE_CONTENT } from "./TERMS_OF_USE.json";
+export { default as THINK_PAGE_CONTENT } from "./THINK_PAGE.json";

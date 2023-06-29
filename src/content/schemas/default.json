@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@id": "https://merylldindin.com/#identity",
+  "@type": "Person",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "United States",
+    "addressLocality": "Henderson",
+    "addressRegion": "Nevada",
+    "postalCode": "89074"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of California, Berkeley"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Ecole Centrale Paris"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Institut Paris-Sud"
+    }
+  ],
+  "birthDate": "1994-09-19",
+  "birthPlace": "Fourmies, France",
+  "description": "Meryll Dindin is a serial entrepreneur shaping the future of industries like healthcare, mental health, manufacturing, and artificial intelligence.",
+  "email": "merylldindin@icloud.com",
+  "gender": "Male",
+  "image": "https://cdn.merylldindin.com/assets/avatar.webp",
+  "jobTitle": "Chief Technology Officer",
+  "name": "Meryll Dindin",
+  "sameAs": [
+    "https://github.com/merylldindin",
+    "https://www.linkedin.com/in/merylldindin/",
+    "https://twitter.com/merylldindin",
+    "https://blog.merylldindin.com",
+    "https://www.youtube.com/@merylldindin",
+    "https://www.instagram.com/merylldindin/",
+    "https://www.facebook.com/merylldindin",
+    "https://dindinmeryll.portfoliobox.net",
+    "https://scholar.google.com/citations?user=rIh0-NMAAAAJ",
+    "https://patents.google.com/?inventor=Meryll+Dindin"
+  ],
+  "url": "https://merylldindin.com",
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "Polygon Technologies, Inc.",
+      "url": "https://hellopolygon.com"
+    },
+    {
+      "@type": "Organization",
+      "name": "Dillygence SAS",
+      "url": "https://dillygence.com"
+    },
+    {
+      "@type": "Organization",
+      "name": "Auberge de Cercoux SAS",
+      "url": "https://auberge.decercoux.com"
+    }
+  ]
+}

@@ -9,4 +9,5 @@ export enum RoutePath {
   PRIVACY_POLICY = "/legal/privacy-policy/",
   SYSNAV = "/hustle/sysnav/",
   TERMS_OF_USE = "/legal/terms-of-use/",
+  THINK = "/think/",
 }

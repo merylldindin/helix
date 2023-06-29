@@ -19,9 +19,14 @@ const { mobile } = useDisplay();
   <client-only>
     <div class="grid-links">
       <CustomLink
+        v-if="grid.headline.to"
         typography="text-foam text-cartesian title-typography"
         v-bind="grid.headline"
       />
+
+      <span v-else class="text-foam text-cartesian title-typography">
+        {{ grid.headline.prompt }}
+      </span>
 
       <CustomLink
         v-for="(profile, index) in grid.profiles"
@@ -71,7 +76,7 @@ const { mobile } = useDisplay();
 .grid-link {
   width: 100%;
   border-radius: 3vh;
-  padding: 1vh 4vh;
+  padding: 1vh 2.5vh;
   margin-bottom: 2.5vh;
   align-items: center;
   display: flex;

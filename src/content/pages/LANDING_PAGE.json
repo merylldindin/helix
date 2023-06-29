@@ -1,5 +1,11 @@
 {
   "layout": "default",
+  "schema": {
+    "type": "itemList",
+    "prop": {
+      "source": "ROTATING_CUBE"
+    }
+  },
   "head": {
     "canonical": "/",
     "title": "Meryll Dindin: Transhumanist & Entrepreneur Driving Future Innovation | Meryll Dindin"
@@ -53,9 +59,7 @@
           },
           {
             "headline": {
-              "prompt": "Narrate",
-              "ariaLabel": "Learn more about Meryll Dindin previous work",
-              "to": "/hustle/"
+              "prompt": "Narrate"
             },
             "profiles": [
               {
@@ -86,9 +90,7 @@
           },
           {
             "headline": {
-              "prompt": "Share",
-              "ariaLabel": "Follow Meryll Dindin adventures on social media",
-              "to": "/"
+              "prompt": "Share"
             },
             "profiles": [
               {
@@ -139,9 +141,7 @@
           },
           {
             "headline": {
-              "prompt": "Create",
-              "ariaLabel": "Follow Meryll Dindin creative projects",
-              "to": "/"
+              "prompt": "Create"
             },
             "profiles": [
               {
@@ -171,8 +171,8 @@
           {
             "headline": {
               "prompt": "Think",
-              "ariaLabel": "Read more about Meryll's thougths",
-              "to": "/"
+              "ariaLabel": "Learn more about Meryll Dindin thought experiments and interventions",
+              "to": "/think/"
             },
             "profiles": [
               {
@@ -212,9 +212,7 @@
           },
           {
             "headline": {
-              "prompt": "Code",
-              "ariaLabel": "Discover Meryll's open source projects",
-              "to": "/"
+              "prompt": "Code"
             },
             "profiles": [
               {

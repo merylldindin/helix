@@ -1,14 +1,12 @@
 <script lang="ts" setup>
-import { AnimatedAvatar, PageBreadcrumb, WebsiteTitle } from "./components";
+import { AnimatedAvatar, BreadCrumbs } from "./components";
 </script>
 
 <template>
   <div class="global-navbar">
     <AnimatedAvatar />
 
-    <WebsiteTitle />
-
-    <PageBreadcrumb />
+    <BreadCrumbs />
   </div>
 </template>
 
