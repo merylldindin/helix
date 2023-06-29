@@ -50,11 +50,15 @@ const getSectionImageItemList = (content: any): unknown => {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    itemListElement: sections.map((section, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      url: `${DEFAULT_URL}${section.props.content.slice(-1)[0].prop.to}`,
-    })),
+    itemListElement: sections.map((section, index) => {
+      const url = section.props.content.slice(-1)[0].prop.to;
+
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        url: url.startsWith("http") ? url : `${DEFAULT_URL}${url}`,
+      };
+    }),
     numberOfItems: sections.length,
     url: pageUrl,
   };
