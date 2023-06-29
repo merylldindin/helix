@@ -10,6 +10,7 @@ import {
   SYSNAV_PAGE_CONTENT,
   TERMS_OF_USE_CONTENT,
   THINK_PAGE_CONTENT,
+  TOMATO_CLUSTERING_BLOG,
 } from "@/content";
 import { RoutePath } from "@/types";
 
@@ -25,4 +26,5 @@ export const ROUTES_CONTENT = {
   [RoutePath.SYSNAV]: SYSNAV_PAGE_CONTENT,
   [RoutePath.TERMS_OF_USE]: TERMS_OF_USE_CONTENT,
   [RoutePath.THINK]: THINK_PAGE_CONTENT,
+  [RoutePath.TOMATO_CLUSTERING]: TOMATO_CLUSTERING_BLOG,
 };
