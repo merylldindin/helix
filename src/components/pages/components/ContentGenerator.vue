@@ -2,6 +2,7 @@
 import { PropType } from "vue";
 import { useDisplay } from "vuetify";
 
+import LearnMore from "@/assets/animations/learn-more.json";
 import { CustomHeadline, CustomImage, CustomLink } from "@/components/shared";
 import { ContentType, GenericContent } from "@/types";
 
@@ -57,12 +58,11 @@ const { smAndDown } = useDisplay();
       />
 
       <div v-else-if="item.type === ContentType.MORE" class="more-link">
-        <CustomLink
-          v-bind="item.prop"
-          class="d-flex"
-          :class="{ 'mt-3': index > 0 }"
-          typography="text-lexend-deca headline-6"
-        />
+        <CustomLink v-bind="item.prop">
+          <client-only>
+            <Vue3Lottie :animation-data="LearnMore" pause-on-hover :width="'120px'" />
+          </client-only>
+        </CustomLink>
       </div>
 
       <div v-else-if="item.type === ContentType.SOCIALS" :class="{ 'mt-3': index > 0 }">
@@ -112,7 +112,9 @@ const { smAndDown } = useDisplay();
 <style lang="scss" scoped>
 .more-link {
   display: flex;
-  justify-content: flex-end;
+  margin-top: -30px;
+  margin-left: -20px;
+  justify-content: flex-start;
 }
 
 .youtube-player {
