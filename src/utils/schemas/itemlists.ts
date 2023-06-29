@@ -2,10 +2,45 @@ import { DEFAULT_URL } from "@/content";
 import { ComponentName } from "@/types";
 
 enum ItemListConfig {
-  SECTIONS = "sections",
+  ROTATING_CUBE = "ROTATING_CUBE",
+  SECTION_IMAGE = "SECTION_IMAGE",
 }
 
-const getSectionItemList = (content: any): unknown => {
+const getRotatingCubeItemList = (content: any): unknown => {
+  const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
+
+  const links: string[] = [];
+
+  content.components
+    .filter((item: any) => item.name === ComponentName.ROTATING_CUBE)
+    .forEach((component: any) =>
+      component.props.pages.forEach((page: any) => {
+        if (page.headline.to) {
+          links.push(`${DEFAULT_URL}${page.headline.to}`);
+        }
+
+        page.profiles.forEach((profile: any) => {
+          links.push(
+            profile.link.external ? profile.link.to : `${DEFAULT_URL}${profile.link.to}`
+          );
+        });
+      })
+    );
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: links.map((link, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: link,
+    })),
+    numberOfItems: links.length,
+    url: pageUrl,
+  };
+};
+
+const getSectionImageItemList = (content: any): unknown => {
   const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
 
   const sections = content.components.filter(
@@ -26,8 +61,11 @@ const getSectionItemList = (content: any): unknown => {
 };
 
 export const getItemListSchema = (content: any): unknown => {
-  if (content.schema.prop.source === ItemListConfig.SECTIONS) {
-    return getSectionItemList(content);
+  if (content.schema.prop.source === ItemListConfig.ROTATING_CUBE) {
+    return getRotatingCubeItemList(content);
+  }
+  if (content.schema.prop.source === ItemListConfig.SECTION_IMAGE) {
+    return getSectionImageItemList(content);
   }
 
   const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
