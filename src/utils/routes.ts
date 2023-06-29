@@ -9,6 +9,7 @@ import {
   PRIVACY_POLICY_CONTENT,
   SYSNAV_PAGE_CONTENT,
   TERMS_OF_USE_CONTENT,
+  THINK_PAGE_CONTENT,
 } from "@/content";
 import { RoutePath } from "@/types";
 
@@ -23,4 +24,5 @@ export const ROUTES_CONTENT = {
   [RoutePath.PRIVACY_POLICY]: PRIVACY_POLICY_CONTENT,
   [RoutePath.SYSNAV]: SYSNAV_PAGE_CONTENT,
   [RoutePath.TERMS_OF_USE]: TERMS_OF_USE_CONTENT,
+  [RoutePath.THINK]: THINK_PAGE_CONTENT,
 };

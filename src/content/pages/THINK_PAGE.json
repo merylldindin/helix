@@ -1,0 +1,252 @@
+{
+  "layout": "snaped",
+  "schema": {
+    "type": "itemList",
+    "prop": {
+      "source": "SECTION_IMAGE"
+    }
+  },
+  "head": {
+    "canonical": "/think/",
+    "title": "Strategic Innovations & Transformative Projects | Meryll Dindin",
+    "description": "Navigate through a diverse range of projects and strategies that have left a lasting impact on various businesses. Experience the power of transformative design systems."
+  },
+  "components": [
+    {
+      "name": "SECTION_IMAGE",
+      "id": "drata-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Drata's Podcast",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "June 15, 2023",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "In the 9th episode of Compliance Uncomplicated, Meryll Dindin, CTO of Polygon, discussed the importance of compliance and security in handling sensitive data, the transformative role of AI in cybersecurity, and the significance of open-source communities in AI's future​."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article Empowering Learning Differences and a Security-First Culture With Polygon",
+              "external": true,
+              "to": "https://drata.com/blog/uncomplicated-podcast-episode-9",
+              "target": "_blank",
+              "rel": "nofollow noreferrer noopener external"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Drata logo, is built by compliance and security experts so you don't have to be one",
+          "source": "https://cdn.merylldindin.com/assets/logo-drata.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-drata-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-drata-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-drata-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
+      "id": "mindbowser-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Zero Hiccups Talks",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "December 19, 2022",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "In this podcast episode, Meryll Dindin, founder of Hello Polygon, discusses his unique psychology practice that provides online support for individuals with dyslexia, ADHD, and other learning differences. Meryll shares his personal journey, business scale-up plans, importance of data security, and the promising role of AI in healthcare."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "What is Hello Polygon? | Support for dyslexia, ADHD & Dyslexia | Meryll DinDin on Zero Hiccup Talks",
+              "external": true,
+              "to": "https://www.youtube.com/watch?v=Kh5ez7GJP3M",
+              "target": "_blank",
+              "rel": "nofollow noreferrer noopener external"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Mindbowser provided team augmentation services that greatly assisted in this endeavor.",
+          "source": "https://cdn.merylldindin.com/assets/logo-mindbowser.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-mindbowser-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-mindbowser-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-mindbowser-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
+      "id": "ibm-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Founders Grit",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "February 22, 2022",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Meryll Dindin of Thrive Education joins Mark on an episode of Founders Grit. Meryll shares about his journey to founder and CTO and how deals with people from different parts of the globe. Moreover, he shares about the difficulties and struggles he faced while hiring remote."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "How to Hire remotely | Gaper Podcast | Work From Home | Challenges",
+              "external": true,
+              "to": "https://gaper.io/user/meryll-dindin/",
+              "target": "_blank",
+              "rel": "nofollow noreferrer noopener external"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Gaper,Leading Marketplace for Software Engineers",
+          "source": "https://cdn.merylldindin.com/assets/logo-gaper.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-gaper-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-gaper-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-gaper-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
+      "id": "ibm-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Code In Cloud",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "November 22, 2020",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "At IBM's Code in Cloud conference, Meryll highlighted the crucial role of developers in shaping digital transformation. The discussion emphasized their influence on open-source technologies, cloud computing, and their ability to discern trends amidst overwhelming information."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read ZDNet article about Code In Cloud replayed conversation",
+              "external": true,
+              "to": "https://www.zdnet.fr/actualites-partenaires/replay-code-in-cloud-les-developpeurs-et-leurs-super-pouvoirs-39912815.htm",
+              "target": "_blank",
+              "rel": "nofollow noreferrer noopener external"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Code In Cloud : les Développeurs et leurs super-pouvoirs",
+          "source": "https://cdn.merylldindin.com/assets/logo-ibm.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-ibm-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-ibm-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-ibm-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
+      "id": "politecnico-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Leadership Story",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "April 10, 2020",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "During a project at Politecnico, Quentin Biabaud recounted the inspiring leadership journey of Meryll, a French engineer."
+          },
+          {
+            "type": "button",
+            "prop": {
+              "ariaLabel": "The innovative leadership story of Meryll Dindin",
+              "external": true,
+              "prompt": "📑 Innovative Leadership Story",
+              "to": "https://cdn.merylldindin.com/documents/leadership-story.pdf",
+              "target": "_blank",
+              "rel": "nofollow noreferrer noopener external"
+            }
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "YouTube video of my Konbini sttyle interview with Quentin Biabaud",
+              "external": true,
+              "to": "https://youtu.be/y1Vxj7yHs7M",
+              "target": "_blank",
+              "rel": "nofollow noreferrer noopener external"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Politecnico di Milano",
+          "source": "https://cdn.merylldindin.com/assets/logo-politecnico.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-politecnico-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-politecnico-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-politecnico-mobile-lazy.webp"
+        }
+      }
+    }
+  ]
+}

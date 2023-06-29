@@ -36,7 +36,7 @@ const { smAndDown } = useDisplay();
       <CustomLink
         v-else-if="item.type === ContentType.BUTTON"
         v-bind="item.prop"
-        class="font-weight-bold text-0 text-uppercase d-flex"
+        class="font-weight-bold text-0 text-uppercase d-flex button-action"
         :class="{ 'mt-5': index > 0 }"
       />
 
@@ -112,7 +112,8 @@ const { smAndDown } = useDisplay();
 <style lang="scss" scoped>
 .more-link {
   display: flex;
-  margin-top: -40px;
+  margin-top: -20px;
+  margin-bottom: -40px;
   margin-left: -20px;
   justify-content: flex-start;
 }
