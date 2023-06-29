@@ -50,7 +50,7 @@ const cookieBannerText = computed(() => {
   top: 8px;
   left: 0;
   right: 0;
-  position: absolute;
+  position: fixed;
   border-radius: 0;
   background-color: rgb(var(--v-theme-foam));
   margin: 0 auto 16px;
