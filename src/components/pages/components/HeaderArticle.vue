@@ -32,6 +32,13 @@ const marginResizeHandler = () => {
   pageMargin.value = `${Math.floor(0.9 * window.innerHeight)}px`;
 };
 
+const scrollDown = () => {
+  window.scrollTo({
+    behavior: "smooth",
+    top: Math.floor(0.9 * window.innerHeight),
+  });
+};
+
 onMounted(() => {
   marginResizeHandler();
 
@@ -65,6 +72,7 @@ onUnmounted(() => {
           class="scroll-hint"
           :height="mobile ? '12vw' : '5vh'"
           :style="{ opacity: headerOpacity / 2 }"
+          @click="scrollDown"
         />
 
         <v-col class="text-wrapper" cols="12" md="8">
@@ -131,6 +139,7 @@ onUnmounted(() => {
   top: 16px;
   left: 0;
   right: 0;
+  cursor: pointer;
 
   @include sm-down {
     top: 0;
