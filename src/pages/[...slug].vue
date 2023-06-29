@@ -7,6 +7,7 @@ import { ROUTES_CONTENT } from "@/utils/routes";
 import {
   getBlogPostSchema,
   getBreadcrumbsSchema,
+  getItemListSchema,
   getWebPageSchema,
 } from "@/utils/schemas";
 
@@ -34,6 +35,11 @@ onMounted(() => {
 
   // @ts-ignore
   useJsonld(getWebPageSchema(useRoute().path));
+
+  if (pageSchema.value === "itemList") {
+    // @ts-ignore
+    useJsonld(getItemListSchema(pageContent.value));
+  }
 
   if (pageSchema.value === "blogPosting") {
     getBlogPostSchema(pageContent.value).forEach((schema) => {

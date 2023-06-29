@@ -112,7 +112,7 @@ const { smAndDown } = useDisplay();
 <style lang="scss" scoped>
 .more-link {
   display: flex;
-  margin-top: -30px;
+  margin-top: -40px;
   margin-left: -20px;
   justify-content: flex-start;
 }

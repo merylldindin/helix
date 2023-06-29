@@ -1,3 +1,4 @@
+export * from "./components";
 export * from "./contents";
 export * from "./global";
 export * from "./routes";

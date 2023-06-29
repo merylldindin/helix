@@ -13,7 +13,7 @@ interface BlogPostConfig {
   keywords: string[];
 }
 
-const getBlogPostReferences = (content: any): unknown => {
+const getBlogPostReferences = (content: any): unknown | null => {
   const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
 
   const articles = content.components[0].props.content.filter(
@@ -34,19 +34,21 @@ const getBlogPostReferences = (content: any): unknown => {
 
   const references = [...socialLinks, ...articleLinks];
 
-  return {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    itemListElement: [
-      ...references.map((reference, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        url: reference,
-      })),
-    ],
-    numberOfItems: references.length,
-    url: pageUrl,
-  };
+  return references.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        itemListElement: [
+          ...references.map((reference, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            url: reference,
+          })),
+        ],
+        numberOfItems: references.length,
+        url: pageUrl,
+      }
+    : null;
 };
 
 const getBlogHeadline = (content: any): string => {
@@ -108,5 +110,7 @@ const getBlogSchema = (content: any): unknown => {
 };
 
 export const getBlogPostSchema = (content: any): unknown[] => {
-  return [getBlogSchema(content), getBlogPostReferences(content)];
+  return [getBlogSchema(content), getBlogPostReferences(content)].filter(
+    (item) => item !== null
+  );
 };
