@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   ],
   experimental: {
     externalVue: true,
-    payloadExtraction: false,
+    payloadExtraction: true,
   },
   modules: [
     "@nuxt/devtools",
