@@ -127,6 +127,17 @@
                 }
               },
               {
+                "slug": "Threads",
+                "icon": "AT",
+                "link": {
+                  "ariaLabel": "Follow Meryll Dindin on Threads",
+                  "external": true,
+                  "to": "https://www.threads.net/@merylldindin",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
                 "slug": "Facebook",
                 "icon": "FACEBOOK",
                 "link": {
@@ -227,34 +238,45 @@
                 }
               },
               {
-                "slug": "TdaToolbox",
-                "icon": "GITHUB",
-                "link": {
-                  "ariaLabel": "Check my Github repository for Topological Data Analysis",
-                  "external": true,
-                  "to": "https://github.com/merylldindin/TdaToolbox",
-                  "target": "_blank",
-                  "rel": "nofollow noreferrer noopener external"
-                }
-              },
-              {
-                "slug": "Sirtuin",
-                "icon": "GITHUB",
-                "link": {
-                  "ariaLabel": "Check my Github repository for AWS cloud deployment",
-                  "external": true,
-                  "to": "https://github.com/merylldindin/sirtuin",
-                  "target": "_blank",
-                  "rel": "nofollow noreferrer noopener external"
-                }
-              },
-              {
-                "slug": "Helix",
+                "slug": "helix",
                 "icon": "GITHUB",
                 "link": {
                   "ariaLabel": "Check my Github repository for website creation",
                   "external": true,
                   "to": "https://github.com/merylldindin/helix",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
+                "slug": "challenger",
+                "icon": "GITHUB",
+                "link": {
+                  "ariaLabel": "Check my Github repository for ML hyperparameter optimization",
+                  "external": true,
+                  "to": "https://github.com/merylldindin/challenger",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
+                "slug": "tdatoolbox",
+                "icon": "GITHUB",
+                "link": {
+                  "ariaLabel": "Check my Github repository for Topological Data Analysis",
+                  "external": true,
+                  "to": "https://github.com/merylldindin/tdatoolbox",
+                  "target": "_blank",
+                  "rel": "nofollow noreferrer noopener external"
+                }
+              },
+              {
+                "slug": "sirtuin",
+                "icon": "GITHUB",
+                "link": {
+                  "ariaLabel": "Check my Github repository for AWS cloud deployment",
+                  "external": true,
+                  "to": "https://github.com/merylldindin/sirtuin",
                   "target": "_blank",
                   "rel": "nofollow noreferrer noopener external"
                 }

@@ -1,0 +1,235 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2023-06-29",
+      "datePublished": "2018-07-12",
+      "keywords": "topological data analysis, tomato algorithm, data clustering, density estimate, unionfind structure"
+    }
+  },
+  "head": {
+    "canonical": "/think/tomato-clustering/",
+    "title": "Harnessing Topological Data Analysis for Enhanced Data Clustering | Meryll Dindin",
+    "description": "Dive into the revolutionary world of Topological Data Analysis with the innovative ToMATo algorithm. Discover how it optimizes data clustering, making it simpler to estimate density and create distinct data sets. Explore the nexus of TDA with deep learning, and how it shapes the future of data analysis."
+  },
+  "components": [
+    {
+      "name": "HEADER_ARTICLE",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Tomato clustering at play on a two modes density scatterplot",
+          "source": "https://cdn.merylldindin.com/articles/tomato-clustering.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/tomato-clustering-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/tomato-clustering-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/tomato-clustering-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "The Intricacies of the ToMATo Clustering Algorithm",
+              "typography": "text-cartesian headline-2 mb-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published on July 12, 2018",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Delving into the complex yet fascinating realm of applied mathematics, we encounter the multidimensional domain of Topological Data Analysis (TDA). This article seeks to expand the scope of discussion on TDA, moving beyond its applications in machine learning and deep learning, to explore its notable contributions to the field of data clustering. The focal point of this discourse is the innovative ToMATo (Topological Mode Analysis Tool) algorithm, with emphasis on its unique strengths and applications."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Approach taken by the ToMATo algorithm to estimate density and cluster data points",
+              "source": "https://cdn.merylldindin.com/articles/tomato-clustering-approach.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/tomato-clustering-approach-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Introduced in an academic paper, the ToMATo algorithm carves a distinctive niche for itself among traditional clustering algorithms, such as those encountered in the scikit-learn library. Its exceptional capabilities include offering an estimation of the number of clusters inherent in a given dataset, and facilitating the compartmentalization of this data into distinct clusters for a more focused analysis."
+          },
+          {
+            "type": "button",
+            "prop": {
+              "ariaLabel": "Find the academic paper here",
+              "external": true,
+              "prompt": "📄 Original paper",
+              "to": "https://geometrica.saclay.inria.fr/team/Steve.Oudot/papers/cgos-pbc-09/cgos-pbcrm-11.pdf",
+              "target": "_blank",
+              "rel": "nofollow noreferrer noopener external"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "In relation to this article, I have developed a proof-of-concept code, though it remains a fertile ground for further enhancements and refinement. I strongly encourage interested readers to examine the code, and any constructive feedback for its improvement is most welcome."
+          },
+          {
+            "type": "button",
+            "prop": {
+              "ariaLabel": "Find the codebase on Github",
+              "external": true,
+              "prompt": "🐙 Github Project",
+              "to": "https://github.com/merylldindin/tdatoolbox/",
+              "target": "_blank",
+              "rel": "nofollow noreferrer noopener external"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Exploring the Core of the ToMATo Algorithm",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Our explanation will primarily be centered on two-dimensional data for the sake of simplicity. The fundamental premise of the ToMATo algorithm is the practical application of TDA to the density estimate of data points. This allows us to isolate the maxima and thereby discern the apparent centroids. But how does one go about achieving this?"
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Natural language representation of the ToMATo clustering algorithm",
+              "source": "https://cdn.merylldindin.com/articles/tomato-clustering-algorithm.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/tomato-clustering-algorithm-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "To practically apply TDA, a simplex tree is constructed. This is a nested arrangement of simplicial complexes that eventually form a graph corresponding to the density function of the data. The construction process commences with the computation of the density estimate and the initialization of the simplex tree structure. Following this, every data point in the set is allocated an index. Each data point is then inserted into the simplex tree according to their respective index, with their corresponding density value assigned as a filtration value. Subsequently, connections are established between each data point and its neighbors in the graph, facilitated by their average filtration values."
+          },
+          {
+            "type": "text",
+            "prop": "With the completion of these steps, we are left with a fully instantiated graph. The corresponding persistence can be computed through upper-levels filtering of this graph, allowing for the determination of the nested structure of the simplicial complex via a descending order of the filtration values obtained."
+          },
+          {
+            "type": "text",
+            "prop": "The computation of the persistence diagram and persistence barcode provides a pictorial representation of the data, revealing significant insights into its characteristics. Two elements are conspicuously positioned off the diagonal, representing objects with the greatest persistence. In this context, persistence signifies the resilience of the created structure against overlap within your graph, akin to global maxima (for upper-levels filtering) or global minima (for sub-levels filtering). This observation implies that our data possesses two centroids, corresponding to two density peaks."
+          },
+          {
+            "type": "text",
+            "prop": "To create distinct clusters within your data, each data point is linked to the two centroids using an UnionFind structure, a type of disjoint-set data structure. This procedure aligns with the principles outlined in the algorithm detailed below."
+          },
+          {
+            "type": "text",
+            "prop": "The algorithm operates on the principle of sequentially decreasing filtration values. An appealing aspect of this approach is the requirement of just a single pass over all data points. For each data point sorted in this order, two possible outcomes exist: If the data point doesn't have neighbors with higher filtration values, it's deemed a local density maximum. If it does have neighbors with higher values, these neighbors need to be examined and the roots merged, allowing the edge to be associated with its root possessing the highest weight (with weight increasing with proximity to a given centroid)."
+          },
+          {
+            "type": "text",
+            "prop": "To prevent the creation of excessive clusters, a filtration value threshold, represented by tau, is implemented. This ensures that smaller clusters are integrated into larger ones, providing a more streamlined and cohesive analysis."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Concepts and Definitions",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Definition of a simplicial complex",
+              "source": "https://cdn.merylldindin.com/articles/simplicial-complex.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/simplicial-complex-lazy.webp"
+            }
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Definition of a filtration",
+              "source": "https://cdn.merylldindin.com/articles/definition-filtration.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/definition-filtration-lazy.webp"
+            }
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Example of a simplex tree and its vertices",
+              "source": "https://cdn.merylldindin.com/articles/simplex-tree.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/simplex-tree-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Future Applications and Possibilities",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The intersection of TDA with other fields such as deep learning is an area of burgeoning research and exploration, making it an exciting and evolving frontier. The extensive possibilities and innovative ideas that emerge from this domain are numerous, thereby fueling the interest and potential impact of this subject. For further exploration, additional case studies are available in my Github repository, including an example dealing with anisotropic data that challenges the efficacy of the commonly used k-means clustering algorithm."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Original Publication",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://towardsdatascience.com/tda-to-rule-them-all-tomato-clustering-878e03394a1",
+              "title": "TDA To Rule Them All: ToMATo Clustering",
+              "description": "Do you miss applied mathematics ? Once again, my goal is to promote Topological Data Analysis and the multiple possibilities it offers."
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://github.com/merylldindin/tdatoolbox",
+              "title": "TdaToolbox Project on GitHub",
+              "description": "TdaToolbox explores Topological Data Analysis, providing mathematical, statistical, and algorithmic methods for data."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://project.inria.fr/gudhi/",
+              "title": "Understanding Geometry with GUDHI",
+              "description": "GUDHI facilitates understanding geometric structures essential in scientific computing and data analysis."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://geometrica.saclay.inria.fr/team/Steve.Oudot/papers/cgos-pbc-09/cgos-pbcrm-11.pdf",
+              "title": "Clustering in Riemannian Manifolds",
+              "description": "This paper presents a novel clustering scheme combining mode-seeking and cluster merging phases."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://inria.hal.science/hal-00707901v1/document",
+              "title": "Efficient Data Structure: The Simplex Tree",
+              "description": "The simplex tree represents simplicial complexes, storing all faces in a tree in a bijection."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
