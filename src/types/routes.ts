@@ -10,5 +10,5 @@ export enum RoutePath {
   SYSNAV = "/hustle/sysnav/",
   TERMS_OF_USE = "/legal/terms-of-use/",
   THINK = "/think/",
-  TOMATO_CLUSTERING = "/think/tda-tomato-clustering/",
+  TOMATO_CLUSTERING = "/think/tomato-clustering/",
 }
