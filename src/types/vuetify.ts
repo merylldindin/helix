@@ -13,6 +13,7 @@ export enum ColorName {
 }
 
 export enum IconName {
+  AT = "AT",
   BRAIN = "BRAIN",
   CAMERA = "CAMERA",
   COOKIE_CHECK = "COOKIE_CHECK",

@@ -11,4 +11,5 @@ export enum RoutePath {
   TERMS_OF_USE = "/legal/terms-of-use/",
   THINK = "/think/",
   TOMATO_CLUSTERING = "/think/tomato-clustering/",
+  TOPOLOGICAL_DATA_ANALYSIS = "/think/topological-data-analysis/",
 }

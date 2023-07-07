@@ -1,0 +1,177 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2023-07-07",
+      "datePublished": "2018-07-08",
+      "keywords": "topological data analysis, deep learning, persistence homology, betti curves, persistence landscapes"
+    }
+  },
+  "head": {
+    "canonical": "/think/topological-data-analysis/",
+    "title": "Exploring Deep Learning with Topological Data Analysis | Meryll Dindin",
+    "description": "Dive into the revolutionary field of Topological Data Analysis (TDA) and its role in shaping the future of machine learning and deep learning. Understand core concepts like persistence homology, Betti curves, persistence landscapes, and more, along with their practical applications and significance in data analysis."
+  },
+  "components": [
+    {
+      "name": "HEADER_ARTICLE",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "3D spheric data visualization",
+          "source": "https://cdn.merylldindin.com/articles/topological-data-analysis.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/topological-data-analysis-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/topological-data-analysis-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/topological-data-analysis-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Redefining Data Analysis with Topological Techniques",
+              "typography": "text-cartesian headline-2 mb-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published on July 08, 2018",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Today, we will be exploring Topological Data Analysis (TDA), a rapidly evolving mathematical field with significant implications for the future of machine learning and deep learning. We'll uncover how this cutting-edge approach is transforming the way we view and interpret complex data. Also, we will highlight some practical applications of TDA to underscore its transformative potential."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Emergence of Topological Data Analysis",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Topological Data Analysis, or TDA, is a relatively young discipline that sprouted from the fertile grounds of applied topology and computational geometry. Its goal is to devise robust mathematical, statistical, and algorithmic techniques to leverage the topological and geometric structures buried within data. While TDA is primarily adept at handling three-dimensional data, it has demonstrated its versatility in other areas too, such as time-series data."
+          },
+          {
+            "type": "text",
+            "prop": "As with any scientific field, topology comprises a multitude of theories. Its influence on machine learning and deep learning is expanding at an impressive rate, intriguing anyone interested in avant-garde theories that can yield unexpected insights into data. In this article, however, we will concentrate on illustrative examples, confining our discussion to one- and two-dimensional spaces for clarity."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Persistence Homology: The Heart of TDA",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "One of the most prevalent theories in TDA is persistence homology. This concept allows us to compute topological characteristics of a space at various spatial resolutions. The features derived via this method are likely to reflect the true nature of the underlying space. This is because they are fundamentally connected to the spatial relationships between data points, rendering them resilient to distortions caused by sampling, noise, or arbitrary parameter choices."
+          },
+          {
+            "type": "text",
+            "prop": "Computing the persistence homology of a space first requires us to model the space as a nested family of simplicial complexes—a graph comprised of a set of points and their relationships. This family is known as a filtration, the construction of which hinges on defining a distance function. The values derived from this function are then used to index the complexes in the family, making the choice of distance a critical factor."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Persistence Homology and Visual Representation",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Persistence homology is often visually represented by persistence barcodes or persistence diagrams. These graphical tools help us understand the birth and death times of features in a topological space, which are crucial aspects of persistence homology. Visualizing these elements in two dimensions involves drawing expanding circles around points until intersections are found (birth times), and continuing until some points are covered and some previously created structures are destroyed (death times). The resulting components, with their birth and death times, are represented in persistence diagrams and barcodes."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Turning Raw Data into Usable Information",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Now, having created these persistence diagrams or barcodes, the next question is - what next? While these representations are insightful, they can pose challenges for machine learning applications due to their non-uniform nature. This calls for transformations that allow us to capture the same information in a more usable format. Techniques such as Betti curves, persistence landscapes, and persistence images have been devised to address this issue."
+          },
+          {
+            "type": "text",
+            "prop": "Betti Curve: In this method, each component of a barcode diagram is represented as a function that takes the value 1 on the radius defining it and 0 everywhere else. The sum of these functions forms the Betti Curve."
+          },
+          {
+            "type": "text",
+            "prop": "Persistence Landscapes: Here, each component of the persistence diagram is represented by a triangular function. The overlay of these functions creates a mountainous structure, from which we can extract the upper landscapes."
+          },
+          {
+            "type": "text",
+            "prop": "Persistence Images: In this case, each component of the persistence diagram becomes the center of a two-dimensional Gaussian distribution. A superimposed matrix of these distributions forms the image."
+          },
+          {
+            "type": "text",
+            "prop": "Topological noise, a type of background noise, is an important aspect to consider when using these methods. Persistence landscapes tend to be more resilient to topological noise, making them more useful in many scenarios. However, topological noise can sometimes carry valuable information, especially in time-series analysis."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Implementing TDA in Deep Learning",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "With these TDA representations at our disposal, the next step is to use them effectively. Betti curves can be easily input into a 1D Convolutional network, while persistence images are ideal for a 2D Convolutional network."
+          },
+          {
+            "type": "text",
+            "prop": "Persistence landscapes, however, pose more of a challenge. To fully exploit these landscapes, a technique known as the persistence silhouette, a weighted sum of triangular functions from the persistence diagram, can be helpful. The output is a 1D signal that can be easily fed into a 1D Convolutional network."
+          },
+          {
+            "type": "text",
+            "prop": "The intersection of TDA and deep learning is a burgeoning field, with new ideas continually emerging. As we continue to explore this fascinating intersection, stay tuned for future articles delving deeper into this exciting area. If you find this article valuable, don't forget to show your appreciation and stay connected for more insights!"
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Approach taken by the ToMATo algorithm to estimate density and cluster data points",
+              "source": "https://cdn.merylldindin.com/articles/tomato-clustering-approach.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/tomato-clustering-approach-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://github.com/merylldindin/tdatoolbox",
+              "title": "TdaToolbox Project on GitHub",
+              "description": "TdaToolbox explores Topological Data Analysis, providing mathematical, statistical, and algorithmic methods for data."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://project.inria.fr/gudhi/",
+              "title": "Understanding Geometry with GUDHI",
+              "description": "GUDHI facilitates understanding geometric structures essential in scientific computing and data analysis."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

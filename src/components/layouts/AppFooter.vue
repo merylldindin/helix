@@ -1,20 +1,35 @@
 <script lang="ts" setup>
+import { useDisplay } from "vuetify";
+
 import { CustomLink } from "@/components/shared";
 import { APP_FOOTER_CONTENT } from "@/content";
 import { IconName } from "@/types";
+
+const { smAndDown } = useDisplay();
 </script>
 
 <template>
   <v-footer class="py-4 global-footer">
     <v-container>
-      <v-row class="ma-0" justify="space-between">
+      <v-row class="ma-0" :justify="smAndDown ? 'space-around' : 'space-between'">
         <div
-          v-for="(link, index) in [
-            ...APP_FOOTER_CONTENT.sitemapLinks,
-            ...APP_FOOTER_CONTENT.legalLinks,
-          ]"
+          v-for="(link, index) in smAndDown
+            ? APP_FOOTER_CONTENT.sitemapLinks
+            : [...APP_FOOTER_CONTENT.sitemapLinks, ...APP_FOOTER_CONTENT.legalLinks]"
           :key="index"
         >
+          <CustomLink v-bind="link" typography="text-cartesian text-2 text-foam" />
+        </div>
+
+        <div v-if="!smAndDown" class="global-copyright">
+          <span class="text-cartesian text-2 text-foam">
+            {{ APP_FOOTER_CONTENT.copyright }}
+          </span>
+        </div>
+      </v-row>
+
+      <v-row v-if="smAndDown" class="mx-0 my-6" justify="space-around">
+        <div v-for="(link, index) in APP_FOOTER_CONTENT.legalLinks" :key="index">
           <CustomLink v-bind="link" typography="text-cartesian text-2 text-foam" />
         </div>
 
@@ -27,19 +42,22 @@ import { IconName } from "@/types";
 
       <v-divider class="my-4" :color="$COLOR.FOAM" />
 
-      <v-row class="ma-0" justify="space-between">
-        <CustomLink
+      <v-row justify="space-between">
+        <v-col
           v-for="(profile, index) in APP_FOOTER_CONTENT.socialsLinks"
-          v-bind="profile.link"
           :key="index"
-          class="grid-link"
+          class="text-center"
+          cols="3"
+          sm="auto"
         >
-          <v-icon
-            :color="$COLOR.FOAM"
-            :icon="$ICON[profile.icon as IconName]"
-            size="small"
-          />
-        </CustomLink>
+          <CustomLink v-bind="profile.link" class="grid-link">
+            <v-icon
+              :color="$COLOR.FOAM"
+              :icon="$ICON[profile.icon as IconName]"
+              size="small"
+            />
+          </CustomLink>
+        </v-col>
       </v-row>
     </v-container>
   </v-footer>
