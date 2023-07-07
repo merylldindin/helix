@@ -176,6 +176,22 @@
             "type": "headline",
             "prop": {
               "level": 2,
+              "text": "Original Publication",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://towardsdatascience.com/tda-to-rule-them-all-tomato-clustering-878e03394a1",
+              "title": "TDA To Rule Them All: ToMATo Clustering",
+              "description": "Do you miss applied mathematics ? Once again, my goal is to promote Topological Data Analysis and the multiple possibilities it offers."
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
               "text": "References",
               "typography": "headline-3 my-6"
             }

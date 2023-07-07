@@ -59,6 +59,14 @@
             "prop": "Topological Data Analysis, or TDA, is a relatively young discipline that sprouted from the fertile grounds of applied topology and computational geometry. Its goal is to devise robust mathematical, statistical, and algorithmic techniques to leverage the topological and geometric structures buried within data. While TDA is primarily adept at handling three-dimensional data, it has demonstrated its versatility in other areas too, such as time-series data."
           },
           {
+            "type": "image",
+            "prop": {
+              "altText": "Use Mapper to construct a simplicial complex",
+              "source": "https://cdn.merylldindin.com/articles/mapper-construction.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/mapper-construction-lazy.webp"
+            }
+          },
+          {
             "type": "text",
             "prop": "As with any scientific field, topology comprises a multitude of theories. Its influence on machine learning and deep learning is expanding at an impressive rate, intriguing anyone interested in avant-garde theories that can yield unexpected insights into data. In this article, however, we will concentrate on illustrative examples, confining our discussion to one- and two-dimensional spaces for clarity."
           },
@@ -75,6 +83,14 @@
             "prop": "One of the most prevalent theories in TDA is persistence homology. This concept allows us to compute topological characteristics of a space at various spatial resolutions. The features derived via this method are likely to reflect the true nature of the underlying space. This is because they are fundamentally connected to the spatial relationships between data points, rendering them resilient to distortions caused by sampling, noise, or arbitrary parameter choices."
           },
           {
+            "type": "image",
+            "prop": {
+              "altText": "Construction of a simplicial complex",
+              "source": "https://cdn.merylldindin.com/articles/signal-persistence.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/signal-persistence-lazy.webp"
+            }
+          },
+          {
             "type": "text",
             "prop": "Computing the persistence homology of a space first requires us to model the space as a nested family of simplicial complexes—a graph comprised of a set of points and their relationships. This family is known as a filtration, the construction of which hinges on defining a distance function. The values derived from this function are then used to index the complexes in the family, making the choice of distance a critical factor."
           },
@@ -89,6 +105,14 @@
           {
             "type": "text",
             "prop": "Persistence homology is often visually represented by persistence barcodes or persistence diagrams. These graphical tools help us understand the birth and death times of features in a topological space, which are crucial aspects of persistence homology. Visualizing these elements in two dimensions involves drawing expanding circles around points until intersections are found (birth times), and continuing until some points are covered and some previously created structures are destroyed (death times). The resulting components, with their birth and death times, are represented in persistence diagrams and barcodes."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Construction of a simplicial complex",
+              "source": "https://cdn.merylldindin.com/articles/simplicial-complex-construction.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/simplicial-complex-construction-lazy.webp"
+            }
           },
           {
             "type": "headline",
@@ -115,6 +139,14 @@
             "prop": "Persistence Images: In this case, each component of the persistence diagram becomes the center of a two-dimensional Gaussian distribution. A superimposed matrix of these distributions forms the image."
           },
           {
+            "type": "image",
+            "prop": {
+              "altText": "3D hand topology and betti curves, persistence landscapes",
+              "source": "https://cdn.merylldindin.com/articles/hand-topology.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/hand-topology-lazy.webp"
+            }
+          },
+          {
             "type": "text",
             "prop": "Topological noise, a type of background noise, is an important aspect to consider when using these methods. Persistence landscapes tend to be more resilient to topological noise, making them more useful in many scenarios. However, topological noise can sometimes carry valuable information, especially in time-series analysis."
           },
@@ -139,11 +171,19 @@
             "prop": "The intersection of TDA and deep learning is a burgeoning field, with new ideas continually emerging. As we continue to explore this fascinating intersection, stay tuned for future articles delving deeper into this exciting area. If you find this article valuable, don't forget to show your appreciation and stay connected for more insights!"
           },
           {
-            "type": "image",
+            "type": "headline",
             "prop": {
-              "altText": "Approach taken by the ToMATo algorithm to estimate density and cluster data points",
-              "source": "https://cdn.merylldindin.com/articles/tomato-clustering-approach.webp",
-              "lazySource": "https://cdn.merylldindin.com/articles/tomato-clustering-approach-lazy.webp"
+              "level": 2,
+              "text": "Original Publication",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://towardsdatascience.com/from-tda-to-dl-d06f234f51d",
+              "title": "From Topological Data Analysis to Deep Learning: No Pain No Gain",
+              "description": "Today, I’ll try to give some insights about TDA (for Topological Data Analysis), a mathematical field quickly evolving, that will certainly soon be completely integrated into machine-/deep- learning."
             }
           },
           {
@@ -168,6 +208,30 @@
               "href": "https://project.inria.fr/gudhi/",
               "title": "Understanding Geometry with GUDHI",
               "description": "GUDHI facilitates understanding geometric structures essential in scientific computing and data analysis."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://geometrica.saclay.inria.fr/team/Steve.Oudot/books/o-pt-fqrtda-15/surv-209.pdf",
+              "title": "Persistence Theory: From Quiver Representations to Data Analysis",
+              "description": "This book provides a broad and modern view of persistence theory, including its algebraic, topological, and algorithmic aspects."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://geometrica.saclay.inria.fr/team/Fred.Chazal/Teaching/persistence.pdf",
+              "title": "Homology and Topological Persistence",
+              "description": "Slides from a class in 2014. Persistence diagrams are defined and stable for a large class of continuous functions defined over (pre-)compact metric spaces."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://geometrica.saclay.inria.fr/team/Fred.Chazal/papers/CGLcourseNotes/main.pdf",
+              "title": "Geometric and Topological Inference",
+              "description": "This book intends to cover various aspects of geometric and topological inference, from data representation and combinatorial questions to persistent homology, an adaptation of homology to point cloud data."
             }
           }
         ]
