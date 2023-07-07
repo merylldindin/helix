@@ -11,7 +11,7 @@ import { CustomLink } from "@/components/shared";
       </div>
 
       <CustomLink
-        class="button-action headline-6 text-slate-gray"
+        class="button-error headline-6 text-slate-gray"
         prompt="HOME"
         to="/"
       />
@@ -33,7 +33,7 @@ import { CustomLink } from "@/components/shared";
   margin: auto;
 }
 
-.button-action {
+.button-error {
   position: absolute;
   inset: 0;
   margin: auto;
