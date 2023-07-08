@@ -7161,7 +7161,7 @@ __metadata:
     stylelint-config-recommended-scss: 12.0.0
     stylelint-config-recommended-vue: 1.4.0
     stylelint-config-standard-scss: 10.0.0
-    stylelint-prettier: 3.0.0
+    stylelint-prettier: 4.0.0
     typescript: 5.1.6
     vue-gtag-next: 1.14.0
     vue-tsc: 1.8.4
@@ -12109,15 +12109,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-prettier@npm:3.0.0":
-  version: 3.0.0
-  resolution: "stylelint-prettier@npm:3.0.0"
+"stylelint-prettier@npm:4.0.0":
+  version: 4.0.0
+  resolution: "stylelint-prettier@npm:4.0.0"
   dependencies:
     prettier-linter-helpers: ^1.0.0
   peerDependencies:
-    prettier: ">=2.0.0"
-    stylelint: ">=14.0.0"
-  checksum: 094f53ef5dbe3806524db7f580b9312ceca444651803fc08c8baa48cd9a270985c709fa4f083681a685310dc347b8e55aa93d462554ba7d4ae6258a3bdf6a278
+    prettier: ">=3.0.0"
+    stylelint: ">=15.8.0"
+  checksum: 3e7cff833e30b1eab9ae6e82f1b0a3596fd3dd214489d71d37b0899e677ae9d50cc74c4c1bbb3b1275903f03c1401b2ca6f8c1cf2631108363d3e7845d7b6300
   languageName: node
   linkType: hard
 
