@@ -48,7 +48,7 @@ const { smAndDown } = useDisplay();
         v-if="chunk.type === LegalTextType.SUBTITLE"
         :class="smAndDown ? 'mt-6' : 'mt-8'"
         :level="3"
-        :text="(chunk.content as string)"
+        :text="chunk.content as string"
         typography="headline-5  text-slate-gray"
         underlined
       />
@@ -56,7 +56,7 @@ const { smAndDown } = useDisplay();
       <CustomText
         v-else
         :class="smAndDown ? 'mt-4' : 'mt-6'"
-        :text="(chunk.content as object)"
+        :text="chunk.content as object"
         typography="text-1 text-slate-gray"
       />
     </div>

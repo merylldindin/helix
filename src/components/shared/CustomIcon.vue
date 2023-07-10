@@ -49,7 +49,7 @@ const matchSizeToPixel = (size: string): string => {
 
   <v-icon
     v-else
-    :color="(color as ColorName)"
+    :color="color as ColorName"
     :icon="$ICON[icon as IconName]"
     :size="size"
   />

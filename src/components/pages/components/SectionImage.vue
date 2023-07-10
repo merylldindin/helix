@@ -37,7 +37,7 @@ const { smAndDown } = useDisplay();
       >
         <ContentGenerator
           v-if="content.length > 0"
-          :content="(content as GenericContent[])"
+          :content="content as GenericContent[]"
         />
 
         <slot />

@@ -78,7 +78,7 @@ onUnmounted(() => {
         <v-col class="text-wrapper" cols="12" md="8">
           <ContentGenerator
             v-if="content.length > 0"
-            :content="(content as GenericContent[])"
+            :content="content as GenericContent[]"
           />
 
           <slot />
