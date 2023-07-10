@@ -3,11 +3,12 @@ name: helix
 on: [pull_request, merge_group]
 
 env:
-  NODE_VERSION: "18.16"
+  NODE_VERSION: "18.16.1"
 
 jobs:
   workflow:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout Codebase
@@ -19,18 +20,21 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: Cache Dependencies
+        id: cache-dependencies
         uses: actions/cache@v3
         with:
           path: node_modules
           key: ${{ runner.OS }}-helix-${{ hashFiles('yarn.lock') }}
 
       - name: Cache Cypress
+        id: cache-cypress
         uses: actions/cache@v3
         with:
           path: ~/.cache/Cypress
           key: ${{ runner.OS }}-cypress-${{ hashFiles('yarn.lock') }}
 
       - name: Install Dependencies
+        if: steps.cache-dependencies.outputs.cache-hit != 'true' || steps.cache-cypress.outputs.cache-hit != 'true'
         run: make install
 
       - name: Run Prettier
@@ -46,7 +50,7 @@ jobs:
         run: make build
 
       - name: Run Cypress
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v5
         with:
           browser: chrome
           command: yarn cypress
