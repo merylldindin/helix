@@ -62,7 +62,7 @@ defineProps({
 
     <v-icon
       v-else-if="icon"
-      :color="(color as ColorName)"
+      :color="color as ColorName"
       :icon="$ICON[icon as IconName]"
       :size="size"
     />

@@ -7152,7 +7152,7 @@ __metadata:
     nuxt-unhead: 1.4.17
     postcss-html: 1.5.0
     postcss-scss: 4.0.6
-    prettier: 3.0.0
+    prettier: 2.8.8
     prettier-plugin-packagejson: 2.4.4
     sass: 1.63.6
     serve: 14.2.0
@@ -7161,7 +7161,7 @@ __metadata:
     stylelint-config-recommended-scss: 12.0.0
     stylelint-config-recommended-vue: 1.4.0
     stylelint-config-standard-scss: 10.0.0
-    stylelint-prettier: 4.0.0
+    stylelint-prettier: 3.0.0
     typescript: 5.1.6
     vue-gtag-next: 1.14.0
     vue-tsc: 1.8.4
@@ -10677,12 +10677,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.0.0":
-  version: 3.0.0
-  resolution: "prettier@npm:3.0.0"
+"prettier@npm:2.8.8":
+  version: 2.8.8
+  resolution: "prettier@npm:2.8.8"
   bin:
-    prettier: bin/prettier.cjs
-  checksum: 6a832876a1552dc58330d2467874e5a0b46b9ccbfc5d3531eb69d15684743e7f83dc9fbd202db6270446deba9c82b79d24383d09924c462b457136a759425e33
+    prettier: bin-prettier.js
+  checksum: b49e409431bf129dd89238d64299ba80717b57ff5a6d1c1a8b1a28b590d998a34e083fa13573bc732bb8d2305becb4c9a4407f8486c81fa7d55100eb08263cf8
   languageName: node
   linkType: hard
 
@@ -12110,15 +12110,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-prettier@npm:4.0.0":
-  version: 4.0.0
-  resolution: "stylelint-prettier@npm:4.0.0"
+"stylelint-prettier@npm:3.0.0":
+  version: 3.0.0
+  resolution: "stylelint-prettier@npm:3.0.0"
   dependencies:
     prettier-linter-helpers: ^1.0.0
   peerDependencies:
-    prettier: ">=3.0.0"
-    stylelint: ">=15.8.0"
-  checksum: 3e7cff833e30b1eab9ae6e82f1b0a3596fd3dd214489d71d37b0899e677ae9d50cc74c4c1bbb3b1275903f03c1401b2ca6f8c1cf2631108363d3e7845d7b6300
+    prettier: ">=2.0.0"
+    stylelint: ">=14.0.0"
+  checksum: 094f53ef5dbe3806524db7f580b9312ceca444651803fc08c8baa48cd9a270985c709fa4f083681a685310dc347b8e55aa93d462554ba7d4ae6258a3bdf6a278
   languageName: node
   linkType: hard
 
