@@ -3,15 +3,15 @@
   "schema": {
     "type": "blogPosting",
     "prop": {
-      "dateModified": "2023-07-07",
-      "datePublished": "2018-07-08",
-      "keywords": "topological data analysis, deep learning, persistence homology, betti curves, persistence landscapes"
+      "dateModified": "2023-07-10",
+      "datePublished": "2019-11-25",
+      "keywords": "TODO topological data analysis, deep learning, persistence homology, betti curves, persistence landscapes"
     }
   },
   "head": {
-    "canonical": "/think/topological-data-analysis/",
-    "title": "Exploring Deep Learning with Topological Data Analysis | Meryll Dindin",
-    "description": "Dive into the revolutionary field of Topological Data Analysis (TDA) and its role in shaping the future of machine learning and deep learning. Understand core concepts like persistence homology, Betti curves, persistence landscapes, and more, along with their practical applications and significance in data analysis."
+    "canonical": "/think/arrhythmia-classification/",
+    "title": "TODO Exploring Deep Learning with Topological Data Analysis | Meryll Dindin",
+    "description": "TODO Dive into the revolutionary field of Topological Data Analysis (TDA) and its role in shaping the future of machine learning and deep learning. Understand core concepts like persistence homology, Betti curves, persistence landscapes, and more, along with their practical applications and significance in data analysis."
   },
   "components": [
     {
@@ -19,11 +19,11 @@
       "id": "home-section",
       "props": {
         "background": {
-          "altText": "3D spheric data visualization",
-          "source": "https://cdn.merylldindin.com/articles/topological-data-analysis.webp",
-          "lazySource": "https://cdn.merylldindin.com/articles/topological-data-analysis-lazy.webp",
-          "mobile": "https://cdn.merylldindin.com/articles/topological-data-analysis-mobile.webp",
-          "lazyMobile": "https://cdn.merylldindin.com/articles/topological-data-analysis-mobile-lazy.webp"
+          "altText": "Heartbeat ECG with heart illustration",
+          "source": "https://cdn.merylldindin.com/articles/arrhythmia-detection.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/arrhythmia-detection-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/arrhythmia-detection-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/arrhythmia-detection-mobile-lazy.webp"
         },
         "content": [
           {
@@ -38,7 +38,7 @@
             "type": "headline",
             "prop": {
               "level": 2,
-              "text": "Initially published July 08, 2018",
+              "text": "Initially published November 25, 2019",
               "typography": "text-lexend-deca headline-6 mb-6"
             }
           },

@@ -250,6 +250,48 @@
     },
     {
       "name": "SECTION_IMAGE",
+      "id": "arrhythmia-classification-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Arrhythmia Classification",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "November 25, 2019",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "TODO Dive into the revolutionary field of Topological Data Analysis (TDA) and its role in shaping the future of machine learning and deep learning. Understand core concepts like persistence homology, Betti curves, persistence landscapes, and more, along with their practical applications and significance in data analysis."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Blog article on Arrhythmia Classification with Topological Data Analysis",
+              "to": "/think/arrhythmia-classification/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Illustrated heart and heartbeat",
+          "source": "https://cdn.merylldindin.com/articles/arrhythmia-detection-poster.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/arrhythmia-detection-poster-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/arrhythmia-detection-poster-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/arrhythmia-detection-poster-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
       "id": "tomato-clustering-section",
       "props": {
         "content": [
