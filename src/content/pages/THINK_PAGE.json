@@ -250,6 +250,48 @@
     },
     {
       "name": "SECTION_IMAGE",
+      "id": "arrhythmia-classification-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "TDA for Arrhythmia",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "November 25, 2019",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "In my latest article, I delve into applying Topological Data Analysis (TDA) in deep learning models for arrhythmia classification, outlining its use, integration, and effect on predictive precision."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Blog article on Arrhythmia Classification with Topological Data Analysis",
+              "to": "/think/arrhythmia-classification/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Illustrated heart and heartbeat",
+          "source": "https://cdn.merylldindin.com/articles/arrhythmia-detection-poster.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/arrhythmia-detection-poster-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/arrhythmia-detection-poster-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/arrhythmia-detection-poster-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
       "id": "tomato-clustering-section",
       "props": {
         "content": [
