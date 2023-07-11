@@ -5,13 +5,13 @@
     "prop": {
       "dateModified": "2023-07-10",
       "datePublished": "2019-11-25",
-      "keywords": "TODO topological data analysis, deep learning, persistence homology, betti curves, persistence landscapes"
+      "keywords": "topological data analysis, arrhythmia detection, deep learning, betti curves, machine learning in healthcare"
     }
   },
   "head": {
     "canonical": "/think/arrhythmia-classification/",
-    "title": "TODO Exploring Deep Learning with Topological Data Analysis | Meryll Dindin",
-    "description": "TODO Dive into the revolutionary field of Topological Data Analysis (TDA) and its role in shaping the future of machine learning and deep learning. Understand core concepts like persistence homology, Betti curves, persistence landscapes, and more, along with their practical applications and significance in data analysis."
+    "title": "Harnessing the Power of Topological Data Analysis in AI for Arrhythmia Detection | Meryll Dindin",
+    "description": "Explore the advanced integration of Topological Data Analysis (TDA) with deep learning for superior arrhythmia detection. Understand the methods, assess performance, and contemplate future implications."
   },
   "components": [
     {
@@ -30,7 +30,7 @@
             "type": "headline",
             "prop": {
               "level": 1,
-              "text": "Redefining Data Analysis with Topological Techniques",
+              "text": "TDA and Deep Learning: A Practical Study on Arrhythmia Detection",
               "typography": "text-cartesian headline-2 mb-6"
             }
           },
@@ -44,13 +44,13 @@
           },
           {
             "type": "text",
-            "prop": "Today, we will be exploring Topological Data Analysis (TDA), a rapidly evolving mathematical field with significant implications for the future of machine learning and deep learning. We'll uncover how this cutting-edge approach is transforming the way we view and interpret complex data. Also, we will highlight some practical applications of TDA to underscore its transformative potential."
+            "prop": "Healthcare, as a field, offers an exciting spectrum of possibilities. Every incremental improvement in performance could translate into saved lives or enhanced quality of life. Therefore, achieving satisfactory generalization is a non-negotiable goal."
           },
           {
             "type": "headline",
             "prop": {
               "level": 2,
-              "text": "The Emergence of Topological Data Analysis",
+              "text": "Choosing the Right Path",
               "typography": "text-lexend-deca headline-4 my-6"
             }
           },
@@ -59,116 +59,163 @@
             "prop": "Topological Data Analysis, or TDA, is a relatively young discipline that sprouted from the fertile grounds of applied topology and computational geometry. Its goal is to devise robust mathematical, statistical, and algorithmic techniques to leverage the topological and geometric structures buried within data. While TDA is primarily adept at handling three-dimensional data, it has demonstrated its versatility in other areas too, such as time-series data."
           },
           {
-            "type": "image",
+            "type": "text",
+            "prop": "There are many ways to improve generalization; some augment the size of their dataset, others the quality. Then there are those who explore new models and a few pioneers who create their own unique techniques. The advent of deep learning is perhaps the best testament to this innovation. Today, I invite you to walk a different path—innovate by modifying the description of your data. Our guide on this journey will be Topological Data Analysis (TDA). A recently developed field, TDA merges applied topology and computational geometry to exploit the topological and geometric structures in data."
+          },
+          {
+            "type": "text",
+            "prop": "A deeper dive into TDA and its integration with deep learning can be found in an article I previously penned here."
+          },
+          {
+            "type": "button",
             "prop": {
-              "altText": "Use Mapper to construct a simplicial complex",
-              "source": "https://cdn.merylldindin.com/articles/mapper-construction.webp",
-              "lazySource": "https://cdn.merylldindin.com/articles/mapper-construction-lazy.webp"
+              "ariaLabel": "Topolological Data Analysis and Deep Learning",
+              "prompt": "✍️ Topological Data Analysis and Deep Learning",
+              "to": "https://merylldindin.com/think/topological-data-analysis/"
             }
           },
           {
             "type": "text",
-            "prop": "As with any scientific field, topology comprises a multitude of theories. Its influence on machine learning and deep learning is expanding at an impressive rate, intriguing anyone interested in avant-garde theories that can yield unexpected insights into data. In this article, however, we will concentrate on illustrative examples, confining our discussion to one- and two-dimensional spaces for clarity."
+            "prop": "This article is a fragment of the work I accomplished at Fujitsu’s AI laboratories in Tokyo, in collaboration with the Datashape team from INRIA (French Research Institute). Although I cannot disclose the entirety of our work, I assure you, there's ample information available via the referenced Github and paper to help you comprehend and apply TDA."
           },
           {
-            "type": "headline",
+            "type": "button",
             "prop": {
-              "level": 2,
-              "text": "Persistence Homology: The Heart of TDA",
-              "typography": "text-lexend-deca headline-4 my-6"
-            }
-          },
-          {
-            "type": "text",
-            "prop": "One of the most prevalent theories in TDA is persistence homology. This concept allows us to compute topological characteristics of a space at various spatial resolutions. The features derived via this method are likely to reflect the true nature of the underlying space. This is because they are fundamentally connected to the spatial relationships between data points, rendering them resilient to distortions caused by sampling, noise, or arbitrary parameter choices."
-          },
-          {
-            "type": "image",
-            "prop": {
-              "altText": "Construction of a simplicial complex",
-              "source": "https://cdn.merylldindin.com/articles/signal-persistence.webp",
-              "lazySource": "https://cdn.merylldindin.com/articles/signal-persistence-lazy.webp"
-            }
-          },
-          {
-            "type": "text",
-            "prop": "Computing the persistence homology of a space first requires us to model the space as a nested family of simplicial complexes—a graph comprised of a set of points and their relationships. This family is known as a filtration, the construction of which hinges on defining a distance function. The values derived from this function are then used to index the complexes in the family, making the choice of distance a critical factor."
-          },
-          {
-            "type": "headline",
-            "prop": {
-              "level": 2,
-              "text": "Persistence Homology and Visual Representation",
-              "typography": "text-lexend-deca headline-4 my-6"
-            }
-          },
-          {
-            "type": "text",
-            "prop": "Persistence homology is often visually represented by persistence barcodes or persistence diagrams. These graphical tools help us understand the birth and death times of features in a topological space, which are crucial aspects of persistence homology. Visualizing these elements in two dimensions involves drawing expanding circles around points until intersections are found (birth times), and continuing until some points are covered and some previously created structures are destroyed (death times). The resulting components, with their birth and death times, are represented in persistence diagrams and barcodes."
-          },
-          {
-            "type": "image",
-            "prop": {
-              "altText": "Construction of a simplicial complex",
-              "source": "https://cdn.merylldindin.com/articles/simplicial-complex-construction.webp",
-              "lazySource": "https://cdn.merylldindin.com/articles/simplicial-complex-construction-lazy.webp"
+              "ariaLabel": "Find the academic paper here",
+              "external": true,
+              "prompt": "📄 Topological Data Analysis for Arrhythmia Detection",
+              "to": "https://link.springer.com/chapter/10.1007/978-3-030-47358-7_17",
+              "target": "_blank",
+              "rel": "nofollow noreferrer noopener external"
             }
           },
           {
             "type": "headline",
             "prop": {
               "level": 2,
-              "text": "Turning Raw Data into Usable Information",
+              "text": "Understanding Arrhythmias",
               "typography": "text-lexend-deca headline-4 my-6"
             }
           },
           {
             "type": "text",
-            "prop": "Now, having created these persistence diagrams or barcodes, the next question is - what next? While these representations are insightful, they can pose challenges for machine learning applications due to their non-uniform nature. This calls for transformations that allow us to capture the same information in a more usable format. Techniques such as Betti curves, persistence landscapes, and persistence images have been devised to address this issue."
-          },
-          {
-            "type": "text",
-            "prop": "Betti Curve: In this method, each component of a barcode diagram is represented as a function that takes the value 1 on the radius defining it and 0 everywhere else. The sum of these functions forms the Betti Curve."
-          },
-          {
-            "type": "text",
-            "prop": "Persistence Landscapes: Here, each component of the persistence diagram is represented by a triangular function. The overlay of these functions creates a mountainous structure, from which we can extract the upper landscapes."
-          },
-          {
-            "type": "text",
-            "prop": "Persistence Images: In this case, each component of the persistence diagram becomes the center of a two-dimensional Gaussian distribution. A superimposed matrix of these distributions forms the image."
-          },
-          {
-            "type": "image",
-            "prop": {
-              "altText": "3D hand topology and betti curves, persistence landscapes",
-              "source": "https://cdn.merylldindin.com/articles/hand-topology.webp",
-              "lazySource": "https://cdn.merylldindin.com/articles/hand-topology-lazy.webp"
-            }
-          },
-          {
-            "type": "text",
-            "prop": "Topological noise, a type of background noise, is an important aspect to consider when using these methods. Persistence landscapes tend to be more resilient to topological noise, making them more useful in many scenarios. However, topological noise can sometimes carry valuable information, especially in time-series analysis."
+            "prop": "Did you know heart attacks and strokes are among the top five causes of death in the US? It is little wonder, then, that tech giants like Apple are developing smart heart monitors. Your heart, that indefatigable muscle, is truly miraculous but even it falters occasionally, be it due to alcohol, stress, intense exercise, or just a scary movie. Such failures can sometimes prove lethal. Arrhythmias, conditions that disrupt your heartbeat's rhythm or frequency, fall into this category. Detecting these events and tracking their frequency can pave the way to timely health interventions. But how do we achieve smart monitoring?"
           },
           {
             "type": "headline",
             "prop": {
               "level": 2,
-              "text": "Implementing TDA in Deep Learning",
+              "text": "Machine Learning to the Rescue",
               "typography": "text-lexend-deca headline-4 my-6"
             }
           },
           {
             "type": "text",
-            "prop": "With these TDA representations at our disposal, the next step is to use them effectively. Betti curves can be easily input into a 1D Convolutional network, while persistence images are ideal for a 2D Convolutional network."
+            "prop": "Welcome to the realm of machine learning—our tool for smart monitoring. However, possessing an impressive model isn’t enough. Thankfully, researchers have compiled a series of open-source datasets, available on the Physionet platform, to facilitate further work. The annotation of these datasets alleviates the issue of heartbeat detection, which, though not a major hurdle, still requires an efficient solution such as wavelet transform or 1D-CNN."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Defining Heartbeats",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
           },
           {
             "type": "text",
-            "prop": "Persistence landscapes, however, pose more of a challenge. To fully exploit these landscapes, a technique known as the persistence silhouette, a weighted sum of triangular functions from the persistence diagram, can be helpful. The output is a 1D signal that can be easily fed into a 1D Convolutional network."
+            "prop": "Given that ECGs are one-dimensional time series, how do we describe their shape and time relationships? This challenge isn’t exclusive to ECGs and finds relevance in numerous domains. And this is where topology lends a helping hand."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "General decomposition of a heartbeat",
+              "source": "https://cdn.merylldindin.com/articles/heartbeat-structure.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/heartbeat-structure-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Utilizing Topological Data Analysis",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
           },
           {
             "type": "text",
-            "prop": "The intersection of TDA and deep learning is a burgeoning field, with new ideas continually emerging. As we continue to explore this fascinating intersection, stay tuned for future articles delving deeper into this exciting area. If you find this article valuable, don't forget to show your appreciation and stay connected for more insights!"
+            "prop": "By analyzing a single heartbeat, we can gather data regarding PQRST events, while the examination of an ECG can yield the RR-intervals—the delay between consecutive R peaks. These measurements are useful, but not quite enough."
+          },
+          {
+            "type": "text",
+            "prop": "The main challenges for arrhythmia classification include individual differences, bradycardia, and tachycardia. TDA, specifically persistent homology theory, addresses these challenges by uniquely characterizing the shape of ECG signals, while being robust against the deformations of the patterns."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "From ECG to Barcode Diagram to Betti Curve",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The theory of persistent homology allows us to represent a filtered simplicial complex (in our case, the ECG signal) with a persistence barcode. A barcode diagram is not directly exploitable by machine learning due to its non-uniform dimensions. Hence, we convert these diagrams into Betti Curves."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Betti curve generated from a barcode diagram generated from an ECG signal",
+              "source": "https://cdn.merylldindin.com/articles/heartbeat-betti-curve.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/heartbeat-betti-curve-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Marrying Deep Learning with Topology",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "With two uniformly-sized Betti Curves for each heartbeat, we can now apply previously trained models to similar problems that take similarly distributed curves as input."
+          },
+          {
+            "type": "text",
+            "prop": "Given the rich shape information contained in the Betti Curves, our next task is to find the best model to leverage this information. Options include kNN with Euclidean or Dynamic Time Warping metrics, Boosted Trees, or CNN networks."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Deep learning multi modal model for arrhythmia classification",
+              "source": "https://cdn.merylldindin.com/articles/arrhythmia-classification-model.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/arrhythmia-classification-model-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Measuring the Impact of TDA",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "So, does TDA really improve performance? After running numerous experiments, we found that TDA not only aids generalization but also has a more significant impact on classification. TDA, being a specialized measure of topology and shape, offers differentiation between abnormal heartbeats—vital for proper classification."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Benchmarking scores for arrhythmia classification from different models",
+              "source": "https://cdn.merylldindin.com/articles/arrhythmia-classification-benchmark.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/arrhythmia-classification-benchmark-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Finally, while this introduction to applied Topological Data Analysis hopefully piqued your interest, it's crucial to remember that no matter your level of innovation, the quality and availability of data remain the biggest limiting factors. As we dream of a future with centralized high-quality data sources, we might just change the game!"
           },
           {
             "type": "headline",
@@ -182,8 +229,8 @@
             "type": "article",
             "prop": {
               "href": "https://towardsdatascience.com/from-tda-to-dl-d06f234f51d",
-              "title": "From Topological Data Analysis to Deep Learning: No Pain No Gain",
-              "description": "Today, I’ll try to give some insights about TDA (for Topological Data Analysis), a mathematical field quickly evolving, that will certainly soon be completely integrated into machine-/deep- learning."
+              "title": "Applied Topological Data Analysis to Deep Learning? Hands-on Arrhythmia Classification!",
+              "description": "Explore the integration of Topological Data Analysis (TDA) with deep learning for arrhythmia detection, showcasing practical applications and performance improvements."
             }
           },
           {
@@ -205,9 +252,33 @@
           {
             "type": "article",
             "prop": {
+              "href": "https://link.springer.com/chapter/10.1007/978-3-030-47358-7_17",
+              "title": "Topological Data Analysis for Arrhythmia Detection Through Modular Neural Networks",
+              "description": "Innovative deep learning approach for monitoring heart conditions and detecting arrhythmia from ECG signals."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://patents.google.com/patent/US20200074281A1/",
+              "title": "Computer-readable recording medium, abnormality determination method, and abnormality determination device",
+              "description": "A unique device that uses an autoencoder and machine learning to determine abnormal waveform data from an object's movement."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
               "href": "https://project.inria.fr/gudhi/",
               "title": "Understanding Geometry with GUDHI",
               "description": "GUDHI facilitates understanding geometric structures essential in scientific computing and data analysis."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pypi.org/project/scikit-tda",
+              "title": "Scikit-TDA",
+              "description": "Scikit-TDA is a home for Topological Data Analysis Python libraries intended for non-topologists. This project aims to provide a curated library of TDA Python tools that are widely usable and easily approachable."
             }
           },
           {

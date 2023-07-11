@@ -37,7 +37,7 @@ const { smAndDown } = useDisplay();
         v-else-if="item.type === ContentType.BUTTON"
         v-bind="item.prop"
         class="font-weight-bold text-0 text-uppercase d-flex button-action"
-        :class="{ 'mt-5': index > 0 }"
+        :class="{ 'mt-4 mb-6': index > 0 }"
       />
 
       <CustomImage
