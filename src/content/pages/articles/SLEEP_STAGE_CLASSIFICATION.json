@@ -5,7 +5,7 @@
     "prop": {
       "dateModified": "2023-07-11",
       "datePublished": "2019-01-13",
-      "keywords": "TODO"
+      "keywords": "machine learning, sleep stage classification, chaos theory, feature engineering, eeg signal analysis"
     }
   },
   "head": {
@@ -30,7 +30,7 @@
             "type": "headline",
             "prop": {
               "level": 1,
-              "text": "TDA and Deep Learning: A Practical Study on Arrhythmia Detection",
+              "text": "The Science of Dreams: Automatic Sleep-Stage Classification",
               "typography": "text-cartesian headline-2 mb-6"
             }
           },
@@ -43,11 +43,163 @@
             }
           },
           {
+            "type": "text",
+            "prop": "Sleep isn't merely a downtime for our bodies, it's a critical function for our overall health and well-being, resetting and refreshing our brain's functioning each day. Renowned sleep researcher Matthew Walker likened it to being Mother Nature’s most potent countermeasure against death."
+          },
+          {
+            "type": "text",
+            "prop": "Over the past five months, I've been sharpening my Machine Learning (ML) expertise through a challenge set forth by Dreem, a French company on a mission to enhance the quality of everyone's nocturnal hours. Sleep often doesn't receive the attention it deserves from us, despite the fact that poor sleep quality can have tangible and quantifiable repercussions on our health, leading to dwindling performance, attention deficits, memory disorders, and more."
+          },
+          {
+            "type": "text",
+            "prop": "Dreem’s solution is a novel one – a headband that actively stimulates your brain while you sleep, monitors your sleep, and offers a variety of programs to aid in falling asleep. If you're interested in the crucial role of sleep in our everyday lives, I'd recommend Matthew Walker's book, ''Why We Sleep''. As an educator at UC Berkeley, Walker's book was an eye-opening read for me that overflows with advice and insight about how we can understand and improve our sleep and, in turn, our daily life."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Understanding the Sleep Context",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Before we plunge into the machine learning problem, it's important to first comprehend our context and the multiple data sources we're dealing with. As per Dreem’s website, their headband measures your brain activity, head movements, and heart rate."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Excerpt from Dreem's website",
+              "source": "https://cdn.merylldindin.com/articles/dreem-headband.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/dreem-headband-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "During sleep, your brain cycles through different states, also known as sleep stages. Each stage aligns with specific electrical patterns and distinct brain waves. In recent years, there's been a growing interest in automating the annotation of these stages. And that's exactly where machine learning comes into play!"
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Illustration of different sleep stages",
+              "source": "https://cdn.merylldindin.com/articles/sleep-stages.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sleep-stages-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Importance of Exploratory Data Analysis",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Dreem equips us with time-series data captured from the multiple sensors embedded in the headband. We quickly realize that this is an imbalanced multi-classification problem based on the label ratios. Diving deeper into the data, I discovered something unexpected: the labels are ordered! This paves the way for building models using temporal information. Nevertheless, I decided to take the classic and reliable approach of feature engineering due to computational limitations and a desire for interpretability."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Example of a hypnogram",
+              "source": "https://cdn.merylldindin.com/articles/hypnogram-example.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/hypnogram-example-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Harnessing Chaos Theory in Feature Engineering",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The most fun and lengthy part of this challenge was figuring out the best way to describe EEG signals for sleep-stage classification. Through reviewing the existing literature, I assembled numerous descriptive insights into my pipeline. As a result, each 30-second epoch transformed into a 1200 features vector."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Benchmarking of feature importances from different models",
+              "source": "https://cdn.merylldindin.com/articles/feature-importances.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/feature-importances-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Chaos theory features provide a valuable means of interpreting the complex, non-linear phenomena seen in EEG signals. A couple of key chaos theory metrics that can be used to describe sleep-stage EEGs are Lyapunov Exponents and the Hurst Exponent. Lyapunov Exponents measure the rate of separation of infinitesimally close trajectories, indicating the predictability of a dynamic system. The Hurst Exponent acts as an index of long-range dependence, quantifying the autocorrelation within a time-series and indicating the 'memory' of a series. Additionally, Fractal Dimensions provide a statistical index of complexity, indicating how a pattern's detail changes with the scale of measurement. These chaos theory features help classify sleep stages by capturing the distinct chaos levels associated with different events and wave patterns characteristic of specific sleep stages."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Theory behind some of the features used in chaos theory",
+              "source": "https://cdn.merylldindin.com/articles/chaos-features.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/chaos-features-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Process of Level Construction and Stacking",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "After the feature engineering and preprocessing phases, I discerned some subsets of individuals to construct both my training and validation sets. To create each model, I employed 5-folds cross-validation."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "General illustration of the stacking process",
+              "source": "https://cdn.merylldindin.com/articles/stacking-schema.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/stacking-schema-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "When obtaining the final predictions, I considered two factors: noise differentiation and stacking aggregation. I built five levels of noise, represented as coverage levels in the figure above. A signal not appearing at multiple levels is highly likely to contain an artifact."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Output Smoothing Phase",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Despite the strength of my approach, two key weaknesses persisted: my model didn't account for the temporal relationship between samples, and it had trouble predicting sleep-stage 1. To counter these weaknesses, I built a filter on top of the existing model. I initially considered traditional output smoothing, then transitioned towards Hidden Markov Models, but finally landed on using an overfitting LSTM based on 20 timesteps."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Effect of smoothing with an LSTM",
+              "source": "https://cdn.merylldindin.com/articles/sleep-stages-smoothing.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sleep-stages-smoothing-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Final Thoughts and Future Considerations",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "This project marked an exciting part of my journey during this competition. Although there's a vast scope for improvement, I'm pleased to have attained the second position with a final kappa score of 70.7 on the private test set. My strategy didn't fully prevent overfitting, which led to a noticeable discrepancy between my internal score and the leaderboard score. This competition reaffirmed the challenge of covariate shift in healthcare contexts that involve individuals. Despite this, my results demonstrate promising potential for generalization."
+          },
+          {
             "type": "headline",
             "prop": {
               "level": 2,
               "text": "Original Publication",
-              "typography": "headline-3 my-6"
+              "typography": "headline-4 my-6"
             }
           },
           {
