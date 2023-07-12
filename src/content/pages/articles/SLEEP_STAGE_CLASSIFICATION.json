@@ -1,0 +1,81 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2023-07-11",
+      "datePublished": "2019-01-13",
+      "keywords": "TODO"
+    }
+  },
+  "head": {
+    "canonical": "/think/sleep-stage-classification/",
+    "title": "A Deep Dive into Machine Learning and EEG | Meryll Dindin",
+    "description": "Explore a novel approach to sleep stage classification using machine learning techniques. This article offers a deep understanding of EEG data manipulation and model construction, ultimately leading to improved sleep health."
+  },
+  "components": [
+    {
+      "name": "HEADER_ARTICLE",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Head on pillow with EEG electrodes",
+          "source": "https://cdn.merylldindin.com/articles/sleep-stage-classification.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/sleep-stage-classification-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/sleep-stage-classification-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/sleep-stage-classification-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "TDA and Deep Learning: A Practical Study on Arrhythmia Detection",
+              "typography": "text-cartesian headline-2 mb-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published January 13, 2019",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Original Publication",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://towardsdatascience.com/my-sweet-dreams-about-automatic-sleep-stage-classification-414128441728",
+              "title": "My Sweet Dreams about Automatic Sleep-Stage Classification",
+              "description": "Sleep is the single most effective thing we can do to reset our brain and body health each day — Mother Nature’s best effort yet at contra-death. (Matthew Walker)"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://dreem.com/",
+              "title": "Dreem Labs for Clinicial Trials",
+              "description": "Dreem Labs is a clinically validated, scalable sleep monitoring for clinical trials"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
