@@ -11,7 +11,9 @@
   "head": {
     "canonical": "/think/sleep-stage-classification/",
     "title": "A Deep Dive into Machine Learning and EEG | Meryll Dindin",
-    "description": "Explore a novel approach to sleep stage classification using machine learning techniques. This article offers a deep understanding of EEG data manipulation and model construction, ultimately leading to improved sleep health."
+    "description": "Explore a novel approach to sleep stage classification using machine learning techniques. This article offers a deep understanding of EEG data manipulation and model construction, ultimately leading to improved sleep health.",
+    "thumnail": "https://cdn.merylldindin.com/articles/poster-sleep-stages-classification.webp",
+    "thumbnailAlt": "AI-generated brain and electrodes"
   },
   "components": [
     {
@@ -20,10 +22,10 @@
       "props": {
         "background": {
           "altText": "Head on pillow with EEG electrodes",
-          "source": "https://cdn.merylldindin.com/articles/sleep-stage-classification.webp",
-          "lazySource": "https://cdn.merylldindin.com/articles/sleep-stage-classification-lazy.webp",
-          "mobile": "https://cdn.merylldindin.com/articles/sleep-stage-classification-mobile.webp",
-          "lazyMobile": "https://cdn.merylldindin.com/articles/sleep-stage-classification-mobile-lazy.webp"
+          "source": "https://cdn.merylldindin.com/articles/brain-sleep-waves.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/brain-sleep-waves-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/brain-sleep-waves-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/brain-sleep-waves-mobile-lazy.webp"
         },
         "content": [
           {
