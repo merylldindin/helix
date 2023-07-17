@@ -285,10 +285,52 @@
         ],
         "image": {
           "altText": "Illustrated heart and heartbeat",
-          "source": "https://cdn.merylldindin.com/articles/poster-arrhythmia-classification.webp",
-          "lazySource": "https://cdn.merylldindin.com/articles/poster-arrhythmia-classification-lazy.webp",
-          "mobile": "https://cdn.merylldindin.com/articles/poster-arrhythmia-classification-mobile.webp",
-          "lazyMobile": "https://cdn.merylldindin.com/articles/poster-arrhythmia-classification-mobile-lazy.webp"
+          "source": "https://cdn.merylldindin.com/articles/posters/arrhythmia-classification.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/arrhythmia-classification-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/arrhythmia-classification-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/arrhythmia-classification-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
+      "id": "human-cognition-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Human Cognition",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "October 21, 2019",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Unravel complex concepts like fluid and crystallized intelligence, the Cattell-Horn-Carroll theory, and the working memory theory. I delve into the criticisms of traditional models, the Flynn effect, and the potential of new research for a clearer understanding of intelligence and its impact on education."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Blog article on the latest models of human cognition",
+              "to": "/think/models-human-cognition/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "AI-generated anatomical brain",
+          "source": "https://cdn.merylldindin.com/articles/posters/models-human-cognition.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/models-human-cognition-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/models-human-cognition-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/models-human-cognition-mobile-lazy.webp"
         }
       }
     },
@@ -326,11 +368,11 @@
           }
         ],
         "image": {
-          "altText": "Head on pillow with EEG electrodes",
-          "source": "https://cdn.merylldindin.com/articles/poster-sleep-stages-classification.webp",
-          "lazySource": "https://cdn.merylldindin.com/articles/poster-sleep-stages-classification-lazy.webp",
-          "mobile": "https://cdn.merylldindin.com/articles/poster-sleep-stages-classification-mobile.webp",
-          "lazyMobile": "https://cdn.merylldindin.com/articles/poster-sleep-stages-classification-mobile-lazy.webp"
+          "altText": "AI-generated brain and electrodes",
+          "source": "https://cdn.merylldindin.com/articles/posters/sleep-stage-classification.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/sleep-stage-classification-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/sleep-stage-classification-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/sleep-stage-classification-mobile-lazy.webp"
         }
       }
     },
@@ -368,11 +410,11 @@
           }
         ],
         "image": {
-          "altText": "Result of clustering via ToMATo algorithm",
-          "source": "https://cdn.merylldindin.com/articles/poster-tomato-clustering.webp",
-          "lazySource": "https://cdn.merylldindin.com/articles/poster-tomato-clustering-lazy.webp",
-          "mobile": "https://cdn.merylldindin.com/articles/poster-tomato-clustering-mobile.webp",
-          "lazyMobile": "https://cdn.merylldindin.com/articles/poster-tomato-clustering-mobile-lazy.webp"
+          "altText": "AI-generated clustered cloud points",
+          "source": "https://cdn.merylldindin.com/articles/posters/tomato-clustering.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/tomato-clustering-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/tomato-clustering-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/tomato-clustering-mobile-lazy.webp"
         }
       }
     },
@@ -410,11 +452,11 @@
           }
         ],
         "image": {
-          "altText": "3D Mesh net of a sphere",
-          "source": "https://cdn.merylldindin.com/articles/poster-topological-data-analysis.webp",
-          "lazySource": "https://cdn.merylldindin.com/articles/poster-topological-data-analysis-lazy.webp",
-          "mobile": "https://cdn.merylldindin.com/articles/poster-topological-data-analysis-mobile.webp",
-          "lazyMobile": "https://cdn.merylldindin.com/articles/poster-topological-data-analysis-mobile-lazy.webp"
+          "altText": "AI-generated net and topological shapes",
+          "source": "https://cdn.merylldindin.com/articles/posters/topological-data-analysis.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/topological-data-analysis-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/topological-data-analysis-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/topological-data-analysis-mobile-lazy.webp"
         }
       }
     }

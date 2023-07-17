@@ -51,8 +51,8 @@ const { smAndDown } = useDisplay();
       >
         <CustomImage
           :aspect-ratio="smAndDown ? 1.77 : 1"
-          class="image-wrapper"
-          :class="{ 'image-wrapper--reverse': reverse, 'custom-shadow': !smAndDown }"
+          class="image-wrapper custom-shadow"
+          :class="{ 'image-wrapper--reverse': reverse }"
           cover
           :image="image"
         />
