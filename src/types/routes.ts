@@ -6,6 +6,7 @@ export enum RoutePath {
   FUJITSU = "/hustle/fujitsu/",
   HUSTLE = "/hustle/",
   LANDING_PAGE = "/",
+  MODELS_HUMAN_COGNITION = "/think/models-human-cognition/",
   POLYGON = "/hustle/polygon/",
   PRIVACY_POLICY = "/legal/privacy-policy/",
   SLEEP_STAGE_CLASSIFICATION = "/think/sleep-stage-classification/",

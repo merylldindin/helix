@@ -1,0 +1,187 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2023-07-17",
+      "datePublished": "2019-10-19",
+      "keywords": "human cognition, fluid intelligence, crystallized intelligence, cattell-horn-carroll theory, working memory theory"
+    }
+  },
+  "head": {
+    "canonical": "/think/models-human-cognition/",
+    "title": "Human Cognition Theories: Unraveling Fluid and Crystallized Intelligence | Meryll Dindin",
+    "description": "Dive into an in-depth exploration of contemporary human cognition theories, including the well-known CHC theory. Understand the evolving perspectives on intelligence and their influence on our educational system. Stay updated on the latest research and its implications for the future.",
+    "thumbnail": "https://cdn.merylldindin.com/articles/headers/models-human-cognition.webp",
+    "thumbnailAlt": "AI-generated anatomical brain"
+  },
+  "components": [
+    {
+      "name": "HEADER_ARTICLE",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Head on pillow with EEG electrodes",
+          "source": "https://cdn.merylldindin.com/articles/headers/models-human-cognition.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/models-human-cognition-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/models-human-cognition-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/models-human-cognition-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Exploring Human Cognition: Contemporary Intelligence Theories",
+              "typography": "text-cartesian headline-2 mb-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published October 21, 2019",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The exponential rise in EdTech investments over recent years, coupled with its surprisingly low integration in classrooms, is a curiosity to many. The rationale behind this paradox largely rests within our education system's frameworks, which are still clinging to antiquated methods. As someone who has found an intense interest in the subject of education, I aim to unravel the concept of human cognition—the key to unlocking this mystery."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Excerpt from Dreem's website",
+              "source": "https://cdn.merylldindin.com/articles/dreem-headband.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/dreem-headband-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Defining the Framework: Human Intelligence",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The core intent of this article lies in the exploration of human intelligence, viewed as the capacity to execute tasks. While integral aspects of the broader spectrum of intelligence, emotional and social intelligence are beyond the scope of this discussion. Our primary focus is to dissect the notion of intelligence into relatable, comprehensible elements."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "A Look at the Accepted Intelligence Models",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The most widely recognized model of intelligence in use today is the Cattell-Horn-Carroll (CHC) theory. This theory marries two influential models—Cattell-Horn's concept of fluid and crystallized intelligence with Carroll's model of broad and narrow cognitive abilities."
+          },
+          {
+            "type": "text",
+            "prop": "Fluid Intelligence: This form of intelligence is the most commonly understood. It encapsulates quantitative reasoning, adaptability, and the ability to process and analyze new information, thereby measuring our core cognitive capacities, unfettered by personal experiences or acquired knowledge."
+          },
+          {
+            "type": "text",
+            "prop": "Crystallized Intelligence: This branch of intelligence signifies the aggregation of knowledge acquired over time. It is essentially a function that projects your innate cognitive abilities, taking into account your experience and education."
+          },
+          {
+            "type": "text",
+            "prop": "The CHC model, while instrumental, offers a broad understanding of human intelligence. For a more detailed and individual-centric analysis, Carroll's three-stratum theory provides a layered perspective. The 'g' factor, also known as general intelligence, constitutes the root. The first stratum is made up of broad cognitive abilities, and the third stratum comprises narrow abilities that further break down each broad category."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Working Memory Theory: An Innovative Angle",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Recent research indicates a high correlation between the 'g' factor and working memory capacity. This capacity is critical for reasoning, guiding decision-making processes, and shaping our behavior. Unlike short-term memory, working memory encapsulates the ability to store and manipulate information in the short term."
+          },
+          {
+            "type": "text",
+            "prop": "The fluctuation of working memory mimics that of fluid intelligence—it reaches its zenith during our youth and diminishes over time. This parallel evolution makes working memory a robust predictor of the progression of cognitive abilities."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Accounting for the Ecosystem",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Critics of 'g' factor-centric measurements argue that these oversimplify human intelligence. They emphasize the significant impact of our environment, background, and personality on cognitive performance and decision-making processes. While cognitive abilities and personality traits have historically been considered independent—demonstrating correlation coefficients less than 0.1—some researchers argue for a causal relationship between the two."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Flynn Effect: The Relativity of Intelligence Measurement",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "An intriguing phenomenon known as the Flynn Effect posits that IQ scores have consistently increased over the last century. However, it's essential to remember that cognitive tests are calibrated to societal needs and intelligence theories of the time. This context-specific design infers that they reflect relative intelligence—hence the need for continuous recalibration of these tests."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Redefining Intelligence",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Given the societal relativity of intelligence, traditional models seem outdated. New research endeavors to quantify the 'g' factor biologically through tools like brain MRIs or genetic analysis. However, these biological measures of intelligence have not yet inspired widespread confidence."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Shifting the Paradigm of Intelligence",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "To truly comprehend human cognition, we need to veer away from traditional, statistical measures and lean towards more objective, standardized evaluations. A new definition of intelligence that includes the subtleties of our evolving society is essential to accurately reflect human capabilities. The shift will not only revolutionize our understanding of human cognition but also create an educational framework that is more aligned with our times."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Original Publication",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://blog.merylldindin.com/latest-models-of-human-cognition-eccbc662bd32",
+              "title": "Latest Models of Human Cognition",
+              "description": "Have you been wondering why EdTech has been a growing field in the past years, accumulating dozens of billions of investment, with few (to none) products used in classroooms?"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
