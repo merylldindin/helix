@@ -5,7 +5,7 @@ import { useDisplay } from "vuetify";
 import { CustomImage, CustomSection } from "@/components/shared";
 import { DeliveredImage, GenericContent } from "@/types";
 
-import ContentGenerator from "./ContentGenerator.vue";
+import ContentGenerator from "./ContentGenerator/main.vue";
 
 defineProps({
   content: {

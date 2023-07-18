@@ -6,7 +6,7 @@ import ScrollDown from "@/assets/animations/scroll-down.json";
 import { CustomImage, CustomSection } from "@/components/shared";
 import { DeliveredImage, GenericContent } from "@/types";
 
-import ContentGenerator from "./ContentGenerator.vue";
+import ContentGenerator from "./ContentGenerator/main.vue";
 
 defineProps({
   background: {

@@ -11,7 +11,7 @@ export enum ContentType {
   YOUTUBE = "youtube",
 }
 
-interface ArticleItem {
+export interface ArticleItem {
   href: string;
   title: string;
   description: string;
@@ -22,7 +22,7 @@ export interface ArticleContent {
   prop: ArticleItem;
 }
 
-interface ButtonItem {
+export interface ButtonItem {
   ariaLabel: string;
   external?: boolean;
   prompt: string;
