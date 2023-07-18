@@ -21,7 +21,7 @@
       "id": "home-section",
       "props": {
         "background": {
-          "altText": "Head on pillow with EEG electrodes",
+          "altText": "AI-generated anatomical brain",
           "source": "https://cdn.merylldindin.com/articles/headers/models-human-cognition.webp",
           "lazySource": "https://cdn.merylldindin.com/articles/headers/models-human-cognition-lazy.webp",
           "mobile": "https://cdn.merylldindin.com/articles/headers/models-human-cognition-mobile.webp",
@@ -49,14 +49,6 @@
             "prop": "The exponential rise in EdTech investments over recent years, coupled with its surprisingly low integration in classrooms, is a curiosity to many. The rationale behind this paradox largely rests within our education system's frameworks, which are still clinging to antiquated methods. As someone who has found an intense interest in the subject of education, I aim to unravel the concept of human cognition—the key to unlocking this mystery."
           },
           {
-            "type": "image",
-            "prop": {
-              "altText": "Excerpt from Dreem's website",
-              "source": "https://cdn.merylldindin.com/articles/dreem-headband.webp",
-              "lazySource": "https://cdn.merylldindin.com/articles/dreem-headband-lazy.webp"
-            }
-          },
-          {
             "type": "headline",
             "prop": {
               "level": 2,
@@ -79,6 +71,14 @@
           {
             "type": "text",
             "prop": "The most widely recognized model of intelligence in use today is the Cattell-Horn-Carroll (CHC) theory. This theory marries two influential models—Cattell-Horn's concept of fluid and crystallized intelligence with Carroll's model of broad and narrow cognitive abilities."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Excerpt from Dreem's website",
+              "source": "https://cdn.merylldindin.com/articles/cattel-horn-model.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/cattel-horn-model-lazy.webp"
+            }
           },
           {
             "type": "text",
@@ -105,6 +105,14 @@
             "prop": "Recent research indicates a high correlation between the 'g' factor and working memory capacity. This capacity is critical for reasoning, guiding decision-making processes, and shaping our behavior. Unlike short-term memory, working memory encapsulates the ability to store and manipulate information in the short term."
           },
           {
+            "type": "image",
+            "prop": {
+              "altText": "Excerpt from Dreem's website",
+              "source": "https://cdn.merylldindin.com/articles/working-memory.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/working-memory-lazy.webp"
+            }
+          },
+          {
             "type": "text",
             "prop": "The fluctuation of working memory mimics that of fluid intelligence—it reaches its zenith during our youth and diminishes over time. This parallel evolution makes working memory a robust predictor of the progression of cognitive abilities."
           },
@@ -124,13 +132,21 @@
             "type": "headline",
             "prop": {
               "level": 2,
-              "text": "The Flynn Effect: The Relativity of Intelligence Measurement",
+              "text": "The Flynn Effect: Relativity of Intelligence",
               "typography": "text-lexend-deca headline-4 my-6"
             }
           },
           {
             "type": "text",
             "prop": "An intriguing phenomenon known as the Flynn Effect posits that IQ scores have consistently increased over the last century. However, it's essential to remember that cognitive tests are calibrated to societal needs and intelligence theories of the time. This context-specific design infers that they reflect relative intelligence—hence the need for continuous recalibration of these tests."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Excerpt from Dreem's website",
+              "source": "https://cdn.merylldindin.com/articles/flynn-effect.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/flynn-effect-lazy.webp"
+            }
           },
           {
             "type": "headline",
@@ -143,6 +159,14 @@
           {
             "type": "text",
             "prop": "Given the societal relativity of intelligence, traditional models seem outdated. New research endeavors to quantify the 'g' factor biologically through tools like brain MRIs or genetic analysis. However, these biological measures of intelligence have not yet inspired widespread confidence."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Excerpt from Dreem's website",
+              "source": "https://cdn.merylldindin.com/articles/intelligence-context.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/intelligence-context-lazy.webp"
+            }
           },
           {
             "type": "headline",
@@ -178,6 +202,70 @@
               "level": 2,
               "text": "References",
               "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://en.wikipedia.org/wiki/Cattell%E2%80%93Horn%E2%80%93Carroll_theory",
+              "title": "Cattell–Horn–Carroll Theory — Wikipedia",
+              "description": "The Cattell–Horn–Carroll theory (commonly abbreviated to CHC), is a psychological theory on the structure of human cognitive abilities. Based on the work of three psychologists, Raymond B. Cattell, John L. Horn and John B. Carroll, the Cattell–Horn–Carroll theory is regarded as an important theory in the study of human intelligence."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://en.wikipedia.org/wiki/Fluid_and_crystallized_intelligence",
+              "title": "Fluid and Crystallized Intelligence — Wikipedia",
+              "description": "The concepts of fluid intelligence (gf) and crystallized intelligence (gc) were introduced in 1963 by the psychologist Raymond Cattell. According to Cattell's psychometrically-based theory, general intelligence (g) is subdivided into gf and gc."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://en.wikipedia.org/wiki/Three-stratum_theory",
+              "title": "Three-Stratum Theory — Wikipedia",
+              "description": "The three-stratum theory is a theory of cognitive ability proposed by the American psychologist John Carroll in 1993. It is based on a factor-analytic study of the correlation of individual-difference variables from data such as psychological tests, school marks and competence ratings from more than 460 datasets."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://en.wikipedia.org/wiki/G_factor_(psychometrics)",
+              "title": "g Factor (Psychometrics) — Wikipedia",
+              "description": "The g factor (also known as general intelligence, general mental ability or general intelligence factor) is a construct developed in psychometric investigations of cognitive abilities and human intelligence. It is a variable that summarizes positive correlations among different cognitive tasks, reflecting the fact that an individual's performance on one type of cognitive task tends to be comparable to that person's performance on other kinds of cognitive tasks."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://en.wikipedia.org/wiki/Factor_analysis",
+              "title": "Factor Analysis — Wikipedia",
+              "description": "Factor analysis is a statistical method used to describe variability among observed, correlated variables in terms of a potentially lower number of unobserved variables called factors."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://en.wikipedia.org/wiki/Working_memory",
+              "title": "Working Memory — Wikipedia",
+              "description": "Working memory is a cognitive system with a limited capacity that can hold information temporarily. It is important for reasoning and the guidance of decision-making and behavior."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://en.wikipedia.org/wiki/Big_Five_personality_traits",
+              "title": "Big Five Personality Traits — Wikipedia",
+              "description": "The Big Five personality traits is a suggested taxonomy, or grouping, for personality traits, developed from the 1980s onward in psychological trait theory."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/nrn3475",
+              "title": "Power Failure: Why Small Sample Size Undermines The Reliability of Neuroscience",
+              "description": "A study with low statistical power has a reduced chance of detecting a true effect, but it is less well appreciated that low power also reduces the likelihood that a statistically significant result reflects a true effect. Here, we show that the average statistical power of studies in the neurosciences is very low."
             }
           }
         ]
