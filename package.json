@@ -11,7 +11,7 @@
     "eslint": "eslint \"src/**/*.{ts,js,vue}\" --no-fix",
     "eslint:fix": "eslint \"src/**/*.{ts,js,vue}\" --fix",
     "prepare": "nuxi prepare",
-    "prettier": "prettier --check --loglevel error \"src/**/*.{ts,js,scss,css,vue,json}\"",
+    "prettier": "prettier --check --log-level error \"src/**/*.{ts,js,scss,css,vue,json}\"",
     "prettier:fix": "prettier --write \"src/**/*.{ts,js,scss,css,vue,json}\"",
     "serve": "serve dist/",
     "setup": "husky install && chmod ug+x .husky/*",
