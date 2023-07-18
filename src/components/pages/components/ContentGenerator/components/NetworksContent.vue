@@ -101,7 +101,6 @@ const optionUrls: ComputedRef<
       <client-only>
         <Vue3Lottie
           :animation-data="option.animation"
-          pause-on-hover
           :width="`${smAndDown ? 0.75 * option.width : option.width}px`"
         />
       </client-only>

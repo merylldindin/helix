@@ -51,6 +51,7 @@ const { smAndDown } = useDisplay();
       <ArticleContent
         v-else-if="item.type === ContentType.ARTICLE"
         :article="item.prop"
+        class="mb-3"
       />
 
       <NetworksContent

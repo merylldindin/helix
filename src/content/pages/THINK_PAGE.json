@@ -32,7 +32,7 @@
             "prop": {
               "level": 3,
               "text": "June 15, 2023",
-              "typography": "text-lexend-deca headline-6"
+              "typography": "text-lexend-deca headline-6 mb-3"
             }
           },
           {
@@ -61,6 +61,51 @@
     },
     {
       "name": "SECTION_IMAGE",
+      "id": "drata-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Gen AI for Children",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "April 4, 2023",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Generative AI has the potential to revolutionize the way children engage with storytelling, offering a range of benefits such as enhanced creativity, improved writing skills, and inclusive education. However, there are also risks and ethical concerns that need to be addressed to ensure the safe and responsible use of AI in children's education."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article The Future of Storytelling: Generative AI and Children's Creativity",
+              "external": true,
+              "to": "https://hellopolygon.com/blog/the-future-of-storytelling/",
+              "target": "_blank",
+              "rel": "nofollow noreferrer noopener external"
+            }
+          }
+        ],
+        "image": {
+          "altText": "AI-generated fusion of book and human organs",
+          "source": "https://cdn.merylldindin.com/articles/posters/future-of-storytelling.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/future-of-storytelling-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/future-of-storytelling-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/future-of-storytelling-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "SECTION_IMAGE",
       "id": "mindbowser-section",
       "props": {
         "content": [
@@ -77,7 +122,7 @@
             "prop": {
               "level": 3,
               "text": "December 19, 2022",
-              "typography": "text-lexend-deca headline-6"
+              "typography": "text-lexend-deca headline-6 mb-3"
             }
           },
           {
@@ -122,7 +167,7 @@
             "prop": {
               "level": 3,
               "text": "February 22, 2022",
-              "typography": "text-lexend-deca headline-6"
+              "typography": "text-lexend-deca headline-6 mb-3"
             }
           },
           {
@@ -167,7 +212,7 @@
             "prop": {
               "level": 3,
               "text": "November 22, 2020",
-              "typography": "text-lexend-deca headline-6"
+              "typography": "text-lexend-deca headline-6 mb-3"
             }
           },
           {
@@ -212,7 +257,7 @@
             "prop": {
               "level": 3,
               "text": "April 10, 2020",
-              "typography": "text-lexend-deca headline-6"
+              "typography": "text-lexend-deca headline-6 mb-3"
             }
           },
           {
@@ -268,7 +313,7 @@
             "prop": {
               "level": 3,
               "text": "November 25, 2019",
-              "typography": "text-lexend-deca headline-6"
+              "typography": "text-lexend-deca headline-6 mb-3"
             }
           },
           {
@@ -310,7 +355,7 @@
             "prop": {
               "level": 3,
               "text": "October 21, 2019",
-              "typography": "text-lexend-deca headline-6"
+              "typography": "text-lexend-deca headline-6 mb-3"
             }
           },
           {
@@ -352,7 +397,7 @@
             "prop": {
               "level": 3,
               "text": "January 13, 2019",
-              "typography": "text-lexend-deca headline-6"
+              "typography": "text-lexend-deca headline-6 mb-3"
             }
           },
           {
@@ -394,7 +439,7 @@
             "prop": {
               "level": 3,
               "text": "July 12, 2018",
-              "typography": "text-lexend-deca headline-6"
+              "typography": "text-lexend-deca headline-6 mb-3"
             }
           },
           {
@@ -436,7 +481,7 @@
             "prop": {
               "level": 3,
               "text": "July 08, 2018",
-              "typography": "text-lexend-deca headline-6"
+              "typography": "text-lexend-deca headline-6 mb-3"
             }
           },
           {
