@@ -1,12 +1,13 @@
 <script lang="ts" setup>
 import { PropType } from "vue";
 
-import { GenericContent } from "@/types";
+import { CustomLink } from "@/components/shared";
+import { SocialsItem } from "@/types";
 
 defineProps({
   platforms: {
     default: () => [],
-    type: Array as PropType<GenericContent[]>,
+    type: Array as PropType<SocialsItem[]>,
   },
 });
 </script>

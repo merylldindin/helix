@@ -5,7 +5,13 @@ import { useDisplay } from "vuetify";
 import { CustomHeadline, CustomImage, CustomLink } from "@/components/shared";
 import { ContentType, GenericContent } from "@/types";
 
-import { ArticleContent, RedirectContent, YoutubeContent } from "./components";
+import {
+  ArticleContent,
+  NetworksContent,
+  RedirectContent,
+  SocialsContent,
+  YoutubeContent,
+} from "./components";
 
 defineProps({
   content: {
@@ -45,6 +51,11 @@ const { smAndDown } = useDisplay();
       <ArticleContent
         v-else-if="item.type === ContentType.ARTICLE"
         :article="item.prop"
+      />
+
+      <NetworksContent
+        v-else-if="item.type === ContentType.NETWORKS"
+        v-bind="item.prop"
       />
 
       <RedirectContent v-else-if="item.type === ContentType.MORE" :link="item.prop" />

@@ -1,5 +1,7 @@
 .custom-shadow {
-  box-shadow: rgb(0 0 0 / 10%) 0 4px 6px -1px, rgb(0 0 0 / 6%) 0 2px 4px -1px !important;
+  box-shadow:
+    rgb(0 0 0 / 10%) 0 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0 2px 4px -1px !important;
 }
 
 .button-action {
@@ -8,7 +10,9 @@
   padding: 1rem 2rem;
   background-color: rgb(0 0 0 / 2%);
   border-radius: 4px;
-  box-shadow: rgb(0 0 0 / 10%) 0 2px 3px -1px, rgb(0 0 0 / 6%) 0 2px 4px -1px !important;
+  box-shadow:
+    rgb(0 0 0 / 10%) 0 2px 3px -1px,
+    rgb(0 0 0 / 6%) 0 2px 4px -1px !important;
 
   &:is(a) {
     font-size: 1.6rem !important;

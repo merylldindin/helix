@@ -2,6 +2,7 @@
 import { PropType } from "vue";
 
 import LearnMore from "@/assets/animations/learn-more.json";
+import { CustomLink } from "@/components/shared";
 import { ButtonItem } from "@/types";
 
 defineProps({
