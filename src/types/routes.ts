@@ -4,6 +4,7 @@ export enum RoutePath {
   CALASTER = "/hustle/calaster/",
   DILLYGENCE = "/hustle/dillygence/",
   FUJITSU = "/hustle/fujitsu/",
+  FUTURE_OF_STORYTELLING = "/think/future-of-storytelling/",
   HUSTLE = "/hustle/",
   LANDING_PAGE = "/",
   MODELS_HUMAN_COGNITION = "/think/models-human-cognition/",

@@ -32,7 +32,11 @@ const { smAndDown } = useDisplay();
         :class="{ 'mt-3': index > 0 }"
       />
 
-      <p v-else-if="item.type === ContentType.TEXT" class="text-0">
+      <p
+        v-else-if="item.type === ContentType.TEXT"
+        class="text-0"
+        :class="{ 'mt-3': index > 0 }"
+      >
         {{ item.prop }}
       </p>
 
