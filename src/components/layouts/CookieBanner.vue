@@ -1,20 +1,25 @@
 <script lang="ts" setup>
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomButton, CustomText } from "@/components/shared";
 import { COOKIE_BANNER_CONTENT } from "@/content";
 
-import { useCookie } from "#app";
+const DEFAULT_GA_TRACKING_KEY = "_hx_tracking";
 
-const { xs } = useDisplay();
-
-const isTracking = useCookie<boolean>("_ga_tracking");
-isTracking.value = isTracking.value || false;
+const isTracking = ref<boolean>(
+  process.client ? localStorage.getItem(DEFAULT_GA_TRACKING_KEY) === "true" : false
+);
 
 const dismissBanner = () => {
+  if (process.client) {
+    localStorage.setItem(DEFAULT_GA_TRACKING_KEY, "true");
+  }
+
   isTracking.value = true;
 };
+
+const { xs } = useDisplay();
 
 const cookieBannerText = computed(() => {
   return xs.value
