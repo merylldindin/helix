@@ -12,7 +12,7 @@ export const DEFAULT_URL = "https://merylldindin.com";
 
 const DEFAULT_CDN_HOST = "https://cdn.merylldindin.com";
 
-const DEFAULT_THUMBNAIL = `${DEFAULT_CDN_HOST}/thumbnails/general.webp`;
+const DEFAULT_THUMBNAIL = `${DEFAULT_CDN_HOST}/thumbnails/central-avatar.webp`;
 
 const DEFAULT_THUMBNAIL_ALT = "Meryll Dindin's personal website";
 
