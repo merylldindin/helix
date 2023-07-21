@@ -7,6 +7,7 @@ export enum RoutePath {
   FUTURE_OF_STORYTELLING = "/think/future-of-storytelling/",
   HUSTLE = "/hustle/",
   LANDING_PAGE = "/",
+  LEARNING_DIFFERENCES = "/think/learning-differences/",
   MODELS_HUMAN_COGNITION = "/think/models-human-cognition/",
   POLYGON = "/hustle/polygon/",
   PRIVACY_POLICY = "/legal/privacy-policy/",

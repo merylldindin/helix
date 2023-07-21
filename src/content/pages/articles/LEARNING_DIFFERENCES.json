@@ -1,0 +1,146 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2023-07-21",
+      "datePublished": "2023-07-21",
+      "keywords": "learning disability, learning difference, dyslexia, adhd, assessment, accommodation, intervention"
+    }
+  },
+  "head": {
+    "canonical": "/think/learning-differences/",
+    "title": "Demystifying Learning Differences | Meryll Dindin",
+    "description": "Learning differences like dyslexia and ADHD are common neurological variations requiring tailored interventions and supports. This article explains how learning disabilities are identified and treated.",
+    "thumbnail": "https://cdn.merylldindin.com/articles/headers/learning-differences.webp",
+    "thumbnailAlt": "AI-generated anatomical brains"
+  },
+  "components": [
+    {
+      "name": "HEADER_ARTICLE",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "AI-generated anatomical brains",
+          "source": "https://cdn.merylldindin.com/articles/headers/learning-differences.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/learning-differences-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/learning-differences-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/learning-differences-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Demystifying Learning Differences",
+              "typography": "text-cartesian headline-2 mb-6"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published July 21, 2023",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Learning differences, also commonly referred to as learning disabilities, are neurologically-based conditions that affect how individuals acquire, process, and demonstrate academic skills. While often stigmatized as laziness or lack of intelligence, learning differences are not the result of poor effort or low IQ. In fact, many exceptionally intelligent and hard-working students struggle with unidentified learning disabilities. Learning differences are real neurological variations that require tailored interventions, accommodations, and supports to allow students to reach their potential. This article will explain what learning differences are, profile two common types - dyslexia and ADHD - and discuss key aspects of assessment and treatment."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Defining Learning Differences",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Learning disabilities are specific impairments in cognitive abilities necessary for academic success. They are not indicative of overall intellect, as students with learning disabilities have a discrepancy between their general cognitive ability and their achievement in specific skill areas. For example, a student with dyslexia may have strong verbal reasoning abilities yet struggle greatly with reading."
+          },
+          {
+            "type": "text",
+            "prop": "Learning differences are also distinct from global developmental delays that affect all areas of functioning. Around 5-10% of the population has some form of learning disability, making them more common than many realize."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Dyslexia",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Dyslexia is arguably the most well-known learning disability, affecting reading in approximately 5-20% of people. Individuals with dyslexia have difficulties matching letters to their corresponding sounds, reading fluently, and spelling accurately. This stems primarily from deficits in phonological processing, which is the ability to recognize and manipulate the sounds of language."
+          },
+          {
+            "type": "text",
+            "prop": "Dyslexia manifests in trouble decoding new words, over-reliance on memorizing word shapes, and confusion of visually similar words. It is not the result of vision problems or lack of intelligence. Early diagnosis and intervention are key to prevent dyslexia from impeding development of vocabulary, reading comprehension, and content knowledge."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "ADHD",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Attention-deficit/hyperactivity disorder (ADHD) is another prevalent learning difference, affecting around 5-10% of children globally. The core symptoms are difficulty sustaining attention, hyperactivity beyond what is typical, and impulsivity. ADHD is a spectrum disorder ranging from mild to severe. Some students with ADHD are predominantly inattentive, while others display more hyperactive and disruptive behaviors."
+          },
+          {
+            "type": "text",
+            "prop": "ADHD can make it extremely challenging for students to stay focused during class, complete homework, and study effectively. Students with ADHD are at higher risk for poor academic outcomes, substance abuse disorders, and mood disorders if not properly identified and supported."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Assessing for Learning Differences",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Best practice involves a comprehensive psychological assessment to determine if a student's struggles are better explained by a learning disability than by external factors. Testing examines the discrepancy between IQ and academic achievement to identify particular areas of weakness. Formal IQ testing via the Wechsler batteries paired with academic achievement tests can confirm if a learning difference is present."
+          },
+          {
+            "type": "text",
+            "prop": "For ADHD, rating scales from parents and teachers provide critical observational data on attention difficulties. While there are no definitive neuropsychological tests for ADHD, they can provide supporting information on neurocognitive functioning. Ultimately, a skilled clinician integrates data from various sources to determine if criteria are met."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Effective Interventions",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Once identified, learning differences require individualized accommodations and evidence-based interventions. For dyslexia, structured literacy programs that intensely target phonics skills produce significant reading gains. Classroom accommodations like audiobooks, extended time on tests, and text-to-speech technology also facilitate success."
+          },
+          {
+            "type": "text",
+            "prop": "For ADHD, stimulant medications are effective in the short-term when paired with behavior therapy. Other strategies include frequent movement breaks, minimized distractions, organizational coaching, and parent education. With the right supports, students with all types of learning differences can thrive academically and socially."
+          },
+          {
+            "type": "text",
+            "prop": "In summary, learning differences are common neurological conditions that require identification and individualized treatment. By understanding them as authentic neurological variations rather than deficits, we can destigmatize learning disabilities and help students achieve their potential."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Demystifying Learning Differences'' by Meryll Dindin 👀",
+              "url": "/think/learning-differences/"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
