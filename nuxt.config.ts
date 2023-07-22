@@ -17,11 +17,7 @@ export default defineNuxtConfig({
       path: "~/components",
     },
   ],
-  css: [
-    "@/assets/styles/index.scss",
-    "vue3-lottie/dist/style.css",
-    "vuetify/lib/styles/main.sass",
-  ],
+  css: ["@/assets/styles/index.scss", "vuetify/lib/styles/main.sass"],
   experimental: {
     externalVue: true,
     payloadExtraction: true,

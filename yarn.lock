@@ -7287,7 +7287,7 @@ __metadata:
     typescript: 5.1.6
     vue-gtag-next: 1.14.0
     vue-tsc: 1.8.6
-    vue3-lottie: 2.7.4
+    vue3-lottie: latest
     vuetify: 3.3.9
   languageName: unknown
   linkType: soft
@@ -13730,15 +13730,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue3-lottie@npm:2.7.4":
-  version: 2.7.4
-  resolution: "vue3-lottie@npm:2.7.4"
+"vue3-lottie@npm:latest":
+  version: 3.0.0
+  resolution: "vue3-lottie@npm:3.0.0"
   dependencies:
     lodash-es: ^4.17.21
     lottie-web: 5.12.2
   peerDependencies:
     vue: ^3.2
-  checksum: db74118b5c7f49a12b3c35d31c10b54ca8977e56b8f96a88323f451fb78619fbfcbb2fe8cb1e0f51c6919f1839f906597fae287f6d15a2518b89a2c42f286330
+  checksum: b40a61aec7e503d4b14c63b19ba4fbcbb58e9fa5ec9cfb8d9be4c0abc79845fd88a35fabc630f394e2deb25661dc3945c94c3009d593a1e26aa0b9cb0630956e
   languageName: node
   linkType: hard
 
