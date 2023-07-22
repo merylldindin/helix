@@ -2,11 +2,12 @@
 import { PropType } from "vue";
 
 import { CustomLink, CustomSection } from "@/components/shared";
+import { TimelineContent } from "@/types";
 
 defineProps({
   timeline: {
     required: true,
-    type: Array as PropType<{ href: string; name: string; year: number }[]>,
+    type: Array as PropType<TimelineContent[]>,
   },
 });
 </script>

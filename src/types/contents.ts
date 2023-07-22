@@ -100,6 +100,12 @@ export type GenericContent =
   | TextContent
   | YoutubeContent;
 
+export interface TimelineContent {
+  href: string;
+  name: string;
+  year: number;
+}
+
 export interface PageHead {
   canonical: string;
   title: string;

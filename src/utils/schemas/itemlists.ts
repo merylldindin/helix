@@ -1,9 +1,10 @@
 import { DEFAULT_URL } from "@/content";
-import { ComponentName } from "@/types";
+import { ComponentName, TimelineContent } from "@/types";
 
 enum ItemListConfig {
   ROTATING_CUBE = "ROTATING_CUBE",
   SECTION_IMAGE = "SECTION_IMAGE",
+  SECTION_TIMELINE = "SECTION_TIMELINE",
 }
 
 const getRotatingCubeItemList = (content: any): unknown => {
@@ -64,12 +65,41 @@ const getSectionImageItemList = (content: any): unknown => {
   };
 };
 
+const getSectionTimelineItemList = (content: any): unknown => {
+  const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
+
+  const section = content.components.find(
+    (item: any) => item.name === ComponentName.SECTION_TIMELINE
+  );
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: (section.props.timeline as TimelineContent[]).map(
+      (link, index) => {
+        return {
+          "@type": "ListItem",
+          position: index + 1,
+          url: link.href,
+        };
+      }
+    ),
+    numberOfItems: section.props.timeline.length,
+    url: pageUrl,
+  };
+};
+
 export const getItemListSchema = (content: any): unknown => {
   if (content.schema.prop.source === ItemListConfig.ROTATING_CUBE) {
     return getRotatingCubeItemList(content);
   }
+
   if (content.schema.prop.source === ItemListConfig.SECTION_IMAGE) {
     return getSectionImageItemList(content);
+  }
+
+  if (content.schema.prop.source === ItemListConfig.SECTION_TIMELINE) {
+    return getSectionTimelineItemList(content);
   }
 
   const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
