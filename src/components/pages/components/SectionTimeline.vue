@@ -54,7 +54,7 @@ defineProps({
 }
 
 .mention-year {
-  min-width: 28px;
+  min-width: 32px;
   order: 3;
 
   @include sm-down {

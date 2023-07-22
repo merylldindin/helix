@@ -1,5 +1,6 @@
 import {
   mdiAt,
+  mdiBookshelf,
   mdiBrain,
   mdiCamera,
   mdiCookieCheck,
@@ -23,6 +24,7 @@ import { IconName } from "@/types";
 
 export const ICONS: Record<IconName, string> = {
   [IconName.AT]: mdiAt,
+  [IconName.BOOKSHELF]: mdiBookshelf,
   [IconName.BRAIN]: mdiBrain,
   [IconName.CAMERA]: mdiCamera,
   [IconName.COOKIE_CHECK]: mdiCookieCheck,
