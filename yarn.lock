@@ -22,7 +22,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@antfu/utils@npm:^0.7.2, @antfu/utils@npm:^0.7.4":
+"@antfu/utils@npm:^0.7.2":
   version: 0.7.4
   resolution: "@antfu/utils@npm:0.7.4"
   checksum: f5c1107c9aec0bda43a7021f3a9adb4bed113467a40590a9cecd3998408a5c04b0fb68be53438f56487153eaf6278fa128dbe4e0be88b7af65212fe0497e4fdd
@@ -1421,7 +1421,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:0.7.0, @nuxt/devtools-kit@npm:^0.7.0":
+"@nuxt/devtools-kit@npm:0.7.1":
+  version: 0.7.1
+  resolution: "@nuxt/devtools-kit@npm:0.7.1"
+  dependencies:
+    "@nuxt/kit": ^3.6.5
+    "@nuxt/schema": ^3.6.5
+    execa: ^7.1.1
+  peerDependencies:
+    nuxt: ^3.6.1
+    vite: "*"
+  checksum: 59ca2f592aef84dc5c5f2e60206bb6da2a10774302ec8d77396da5efb8645c4b20106580f82d098ddf78653d807167192c10265dd0a14f2e8ef2260b47ac086b
+  languageName: node
+  linkType: hard
+
+"@nuxt/devtools-kit@npm:^0.7.0":
   version: 0.7.0
   resolution: "@nuxt/devtools-kit@npm:0.7.0"
   dependencies:
@@ -1435,9 +1449,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-wizard@npm:0.7.0":
-  version: 0.7.0
-  resolution: "@nuxt/devtools-wizard@npm:0.7.0"
+"@nuxt/devtools-wizard@npm:0.7.1":
+  version: 0.7.1
+  resolution: "@nuxt/devtools-wizard@npm:0.7.1"
   dependencies:
     consola: ^3.2.3
     diff: ^5.1.0
@@ -1452,24 +1466,24 @@ __metadata:
     semver: ^7.5.4
   bin:
     devtools-wizard: cli.mjs
-  checksum: e5a5aee320631432fde5bf045589a11436cc3bcc6a6b3421153f23f93b2d788ce5ec3471e41911528ccf756676e602735d5166f6474a78cc660baf29dd4bf170
+  checksum: 24953c7c07d622a2e26b460c455365c44fbdfa488d1dc2f8fe5389e5efcee2957bdac512633148c09eb7044336dd44cef9c37699cddcead15f93a065df3a95ca
   languageName: node
   linkType: hard
 
-"@nuxt/devtools@npm:0.7.0":
-  version: 0.7.0
-  resolution: "@nuxt/devtools@npm:0.7.0"
+"@nuxt/devtools@npm:0.7.1":
+  version: 0.7.1
+  resolution: "@nuxt/devtools@npm:0.7.1"
   dependencies:
-    "@nuxt/devtools-kit": 0.7.0
-    "@nuxt/devtools-wizard": 0.7.0
-    "@nuxt/kit": ^3.6.2
+    "@nuxt/devtools-kit": 0.7.1
+    "@nuxt/devtools-wizard": 0.7.1
+    "@nuxt/kit": ^3.6.5
     birpc: ^0.2.12
     boxen: ^7.1.1
     consola: ^3.2.3
     error-stack-parser-es: ^0.1.0
     execa: ^7.1.1
     fast-folder-size: ^2.1.0
-    fast-glob: ^3.3.0
+    fast-glob: ^3.3.1
     get-port-please: ^3.0.1
     global-dirs: ^3.0.1
     h3: ^1.7.1
@@ -1489,7 +1503,7 @@ __metadata:
     semver: ^7.5.4
     sirv: ^2.0.3
     unimport: ^3.1.0
-    vite-plugin-inspect: ^0.7.32
+    vite-plugin-inspect: ^0.7.33
     vite-plugin-vue-inspector: ^3.4.2
     wait-on: ^7.0.1
     which: ^3.0.1
@@ -1499,7 +1513,7 @@ __metadata:
     vite: "*"
   bin:
     devtools: cli.mjs
-  checksum: 71024d5b807772ec826c12e917e850e2775717c7485b102d26f26b572f31fafb1c0dede5d139724a5dddd3832d47723c71ebcac9a72508c1b057caa5f2bc4a90
+  checksum: 9a710414ffa2c947afef327b3fcbb0e08d858fa3e5f253eaae0b9178c9151dd09be884f10443acd10a162ee13f90a8a942a7e4b4623b89425a9e7316d3a2605c
   languageName: node
   linkType: hard
 
@@ -1712,7 +1726,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.6.5":
+"@nuxt/schema@npm:3.6.5, @nuxt/schema@npm:^3.6.5":
   version: 3.6.5
   resolution: "@nuxt/schema@npm:3.6.5"
   dependencies:
@@ -6359,6 +6373,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-glob@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "fast-glob@npm:3.3.1"
+  dependencies:
+    "@nodelib/fs.stat": ^2.0.2
+    "@nodelib/fs.walk": ^1.2.3
+    glob-parent: ^5.1.2
+    merge2: ^1.3.0
+    micromatch: ^4.0.4
+  checksum: b6f3add6403e02cf3a798bfbb1183d0f6da2afd368f27456010c0bc1f9640aea308243d4cb2c0ab142f618276e65ecb8be1661d7c62a7b4e5ba774b9ce5432e5
+  languageName: node
+  linkType: hard
+
 "fast-json-stable-stringify@npm:^2.0.0":
   version: 2.1.0
   resolution: "fast-json-stable-stringify@npm:2.1.0"
@@ -7249,7 +7276,7 @@ __metadata:
     "@commitlint/cli": 17.6.7
     "@commitlint/config-conventional": 17.6.7
     "@mdi/js": 7.2.96
-    "@nuxt/devtools": 0.7.0
+    "@nuxt/devtools": 0.7.1
     "@nuxt/eslint-config": 0.1.1
     "@nuxt/types": 2.17.1
     "@nuxt/vue-app": 2.17.1
@@ -13489,11 +13516,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-inspect@npm:^0.7.32":
-  version: 0.7.32
-  resolution: "vite-plugin-inspect@npm:0.7.32"
+"vite-plugin-inspect@npm:^0.7.33":
+  version: 0.7.33
+  resolution: "vite-plugin-inspect@npm:0.7.33"
   dependencies:
-    "@antfu/utils": ^0.7.4
+    "@antfu/utils": ^0.7.5
     "@rollup/pluginutils": ^5.0.2
     debug: ^4.3.4
     fs-extra: ^11.1.1
@@ -13502,7 +13529,7 @@ __metadata:
     sirv: ^2.0.3
   peerDependencies:
     vite: ^3.1.0 || ^4.0.0
-  checksum: ec0453e1e15f2ea3cdc5a0038b8f9b8f421e541a15b57e721c48a7b96e668a31dd191274b08da16cf0c1f3d9ae53b9d1d045b2cff6b09397457a9b9aa2f0a540
+  checksum: 780f568f95ba891826f7f173a19e893da8f72f42caa184acf4a4a69fca06e853f2408164b215673b4959d03768e9124e11b179de0c89f2f8aac2cce24bc5c3d8
   languageName: node
   linkType: hard
 
