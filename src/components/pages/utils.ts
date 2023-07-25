@@ -4,7 +4,7 @@ import HeaderArticle from "./components/HeaderArticle.vue";
 import LegalText from "./components/LegalText.vue";
 import RotatingCube from "./components/RotatingCube/main.vue";
 import SectionImage from "./components/SectionImage.vue";
-import SectionTimeline from "./components/SectionTimeline.vue";
+import SectionTimeline from "./components/SectionTimeline/main.vue";
 import ThumbsGallery from "./components/ThumbsGallery/main.vue";
 
 export const ASYNC_COMPONENTS: Record<string, any> = {

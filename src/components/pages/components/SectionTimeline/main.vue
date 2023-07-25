@@ -4,6 +4,8 @@ import { PropType } from "vue";
 import { CustomLink, CustomSection } from "@/components/shared";
 import { TimelineContent } from "@/types";
 
+import { TypeWriter } from "./components";
+
 defineProps({
   timeline: {
     required: true,
@@ -23,7 +25,7 @@ defineProps({
         target="_blank"
         :to="item.href"
       >
-        <span class="mention-name text-2 text-ellipsis"> {{ item.name }} </span>
+        <TypeWriter class="mention-name" :delay="66 * index" :title="item.name" />
 
         <div class="mention-separator" />
 
