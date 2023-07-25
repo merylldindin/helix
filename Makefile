@@ -23,9 +23,7 @@ serve: ## Serve the project
 	yarn serve
 
 deploy: ## Deploy the project
-	aws s3 sync ./dist/_nuxt/ s3://meryll-us-east-1/_nuxt/ --cache-control 'max-age=31536000,public,immutable' --delete --profile personal --region us-east-1
-	aws s3 sync ./dist/ s3://meryll-us-east-1/ --exclude '_nuxt/*' --cache-control 'max-age=0,public,must-revalidate' --delete --profile personal --region us-east-1
-	poetry run sirtuin cloudfront-invalidate .cloudfront -p personal
+	poetry run sirtuin cloudfront-deploy .cloudfront -p personal
 
 invalidate-fonts: ## Invalidate fonts
 	aws cloudfront create-invalidation --distribution-id E3SZTVEZV1G0WQ --paths '/fonts/*' --region eu-west-3 --profile personal
