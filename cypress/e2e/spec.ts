@@ -15,8 +15,8 @@ describe("Home page", () => {
     HomePageSelectors.CookieBannerDisclaimer.should("not.exist");
   });
 
-  it("Hustle navigation", () => {
-    HomePageSelectors.HustleNavigation.should("be.visible");
-    HomePageSelectors.HustleNavigation.should("have.attr", "href", "/hustle/");
+  it("Ventures navigation", () => {
+    HomePageSelectors.VenturesNavigation.should("be.visible");
+    HomePageSelectors.VenturesNavigation.should("have.attr", "href", "/ventures/");
   });
 });

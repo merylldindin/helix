@@ -9,7 +9,7 @@ export class HomePageSelectors {
     );
   }
 
-  public static get HustleNavigation() {
+  public static get VenturesNavigation() {
     return cy.get("[aria-label='Learn more about Meryll Dindin current work']");
   }
 }
