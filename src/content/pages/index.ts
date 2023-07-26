@@ -5,5 +5,5 @@ export { default as TERMS_OF_USE_CONTENT } from "./TERMS_OF_USE.json";
 export { default as THOUGHTS_PAGE_CONTENT } from "./THOUGHTS_PAGE.json";
 export { default as VENTURES_PAGE_CONTENT } from "./VENTURES_PAGE.json";
 
-export * from "./articles";
+export * from "./thoughts";
 export * from "./ventures";
