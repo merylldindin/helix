@@ -3,7 +3,7 @@
   "schema": {
     "type": "itemList",
     "prop": {
-      "source": "SECTION_TIMELINE"
+      "source": "TIMELINE_SECTION"
     }
   },
   "head": {
@@ -15,7 +15,7 @@
   },
   "components": [
     {
-      "name": "SECTION_TIMELINE",
+      "name": "TIMELINE_SECTION",
       "id": "mentions-section",
       "props": {
         "timeline": [

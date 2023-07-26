@@ -1,17 +1,15 @@
 import { ComponentName } from "@/types";
 
-import HeaderArticle from "./components/HeaderArticle.vue";
-import LegalText from "./components/LegalText.vue";
+import ArticleSection from "./components/ArticleSection.vue";
+import ImageSection from "./components/ImageSection.vue";
+import LegalSection from "./components/LegalSection.vue";
 import RotatingCube from "./components/RotatingCube/main.vue";
-import SectionImage from "./components/SectionImage.vue";
-import SectionTimeline from "./components/SectionTimeline/main.vue";
-import ThumbsGallery from "./components/ThumbsGallery/main.vue";
+import TimelineSection from "./components/TimelineSection/main.vue";
 
 export const ASYNC_COMPONENTS: Record<string, any> = {
-  [ComponentName.HEADER_ARTICLE]: HeaderArticle,
-  [ComponentName.LEGAL_TEXT]: LegalText,
+  [ComponentName.ARTICLE_SECTION]: ArticleSection,
+  [ComponentName.IMAGE_SECTION]: ImageSection,
+  [ComponentName.LEGAL_SECTION]: LegalSection,
   [ComponentName.ROTATING_CUBE]: RotatingCube,
-  [ComponentName.SECTION_IMAGE]: SectionImage,
-  [ComponentName.SECTION_TIMELINE]: SectionTimeline,
-  [ComponentName.THUMBS_GALLERY]: ThumbsGallery,
+  [ComponentName.TIMELINE_SECTION]: TimelineSection,
 };

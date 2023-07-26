@@ -3,8 +3,8 @@ import { ComponentName, TimelineContent } from "@/types";
 
 enum ItemListConfig {
   ROTATING_CUBE = "ROTATING_CUBE",
-  SECTION_IMAGE = "SECTION_IMAGE",
-  SECTION_TIMELINE = "SECTION_TIMELINE",
+  IMAGE_SECTION = "IMAGE_SECTION",
+  TIMELINE_SECTION = "TIMELINE_SECTION",
 }
 
 const getRotatingCubeItemList = (content: any): unknown => {
@@ -45,7 +45,7 @@ const getSectionImageItemList = (content: any): unknown => {
   const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
 
   const sections = content.components.filter(
-    (item: any) => item.name === ComponentName.SECTION_IMAGE
+    (item: any) => item.name === ComponentName.IMAGE_SECTION
   ) as any[];
 
   return {
@@ -69,7 +69,7 @@ const getSectionTimelineItemList = (content: any): unknown => {
   const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
 
   const section = content.components.find(
-    (item: any) => item.name === ComponentName.SECTION_TIMELINE
+    (item: any) => item.name === ComponentName.TIMELINE_SECTION
   );
 
   return {
@@ -94,11 +94,11 @@ export const getItemListSchema = (content: any): unknown => {
     return getRotatingCubeItemList(content);
   }
 
-  if (content.schema.prop.source === ItemListConfig.SECTION_IMAGE) {
+  if (content.schema.prop.source === ItemListConfig.IMAGE_SECTION) {
     return getSectionImageItemList(content);
   }
 
-  if (content.schema.prop.source === ItemListConfig.SECTION_TIMELINE) {
+  if (content.schema.prop.source === ItemListConfig.TIMELINE_SECTION) {
     return getSectionTimelineItemList(content);
   }
 

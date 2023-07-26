@@ -156,6 +156,14 @@
             },
             "profiles": [
               {
+                "slug": "Missions",
+                "icon": "COMPASS_OUTLINE",
+                "link": {
+                  "ariaLabel": "Have a look at Meryll Dindin's personal missions",
+                  "to": "/missions/"
+                }
+              },
+              {
                 "slug": "YouTube",
                 "icon": "YOUTUBE",
                 "link": {

@@ -3,7 +3,7 @@
   "schema": {
     "type": "itemList",
     "prop": {
-      "source": "SECTION_IMAGE"
+      "source": "IMAGE_SECTION"
     }
   },
   "head": {
@@ -15,7 +15,7 @@
   },
   "components": [
     {
-      "name": "SECTION_IMAGE",
+      "name": "IMAGE_SECTION",
       "id": "polygon-section",
       "props": {
         "content": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "name": "SECTION_IMAGE",
+      "name": "IMAGE_SECTION",
       "id": "dillygence-section",
       "props": {
         "content": [
@@ -99,7 +99,7 @@
       }
     },
     {
-      "name": "SECTION_IMAGE",
+      "name": "IMAGE_SECTION",
       "id": "auberge-section",
       "props": {
         "content": [
@@ -142,7 +142,7 @@
       }
     },
     {
-      "name": "SECTION_IMAGE",
+      "name": "IMAGE_SECTION",
       "id": "calaster-section",
       "props": {
         "content": [
@@ -184,7 +184,7 @@
       }
     },
     {
-      "name": "SECTION_IMAGE",
+      "name": "IMAGE_SECTION",
       "id": "fujitsu-section",
       "props": {
         "content": [
@@ -226,7 +226,7 @@
       }
     },
     {
-      "name": "SECTION_IMAGE",
+      "name": "IMAGE_SECTION",
       "id": "sysnav-section",
       "props": {
         "content": [
