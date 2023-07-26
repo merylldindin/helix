@@ -7,5 +7,48 @@
     "thumbnail": "https://cdn.merylldindin.com/thumbnails/compass.webp",
     "thumbnailAlt": "AI-generated anatomical-fused compass"
   },
-  "components": []
+  "components": [
+    {
+      "name": "FRAME_SECTION",
+      "id": "longevity-section",
+      "props": {
+        "title": "Unbounded Longevity",
+        "image": {
+          "altText": "Using a lo-fi, scientific, and algorithmic tone, create an abstract depiction of transhumanism that reflects the potential for humans to live beyond a thousand years. Consider the dichotomy of our primal origins and future bio-digital enhancements, and weave in the complexity and paradoxes of such an extended lifespan.",
+          "source": "https://cdn.merylldindin.com/assets/mission-longevity.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/mission-longevity-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/mission-longevity-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/mission-longevity-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "FRAME_SECTION",
+      "id": "city-section",
+      "props": {
+        "title": "Sustainable City",
+        "image": {
+          "altText": "Using a lo-fi, scientific, and algorithmic tone, envision and construct an abstract portrayal of a futuristic, self-sustaining city devoid of government, where humans live harmoniously amidst pollution-free surroundings. Highlight the seamless interactions, technological advancements, and societal norms that facilitate this perfect operation, while reflecting on the joy and contentment of its inhabitants.",
+          "source": "https://cdn.merylldindin.com/assets/mission-city.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/mission-city-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/mission-city-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/mission-city-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "FRAME_SECTION",
+      "id": "academy-section",
+      "props": {
+        "title": "Life-Long Academy",
+        "image": {
+          "altText": "Using a lo-fi, scientific, and algorithmic tone, develop a vision of a new-age academy, focusing on the mission of fostering critical thinking skills and the resurgence of autonomous, self-reliant humans. Illustrate how the innovative educational methods, culture of inquiry, and the empowering environment contribute to this intellectual and individualistic revolution.",
+          "source": "https://cdn.merylldindin.com/assets/mission-academy.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/mission-academy-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/mission-academy-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/mission-academy-mobile-lazy.webp"
+        }
+      }
+    }
+  ]
 }
