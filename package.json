@@ -28,7 +28,7 @@
     "nuxt-jsonld": "2.0.8",
     "nuxt-swiper": "1.2.0",
     "vue3-lottie": "3.0.0",
-    "vuetify": "3.3.9"
+    "vuetify": "3.3.10"
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.7",
@@ -38,22 +38,22 @@
     "@nuxt/eslint-config": "0.1.1",
     "@nuxt/types": "2.17.1",
     "@nuxt/vue-app": "2.17.1",
-    "@types/node": "18.17.0",
-    "@typescript-eslint/parser": "6.1.0",
-    "@unhead/addons": "1.1.32",
+    "@types/node": "18.17.1",
+    "@typescript-eslint/parser": "6.2.0",
+    "@unhead/addons": "1.1.33",
     "cypress": "12.17.2",
-    "eslint": "8.45.0",
+    "eslint": "8.46.0",
     "eslint-config-airbnb-base": "15.0.0",
-    "eslint-config-prettier": "8.8.0",
-    "eslint-plugin-import": "2.27.5",
+    "eslint-config-prettier": "8.9.0",
+    "eslint-plugin-import": "2.28.0",
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-sonarjs": "0.19.0",
-    "eslint-plugin-unicorn": "48.0.0",
+    "eslint-plugin-unicorn": "48.0.1",
     "eslint-plugin-vue": "9.15.1",
     "husky": "8.0.3",
     "nuxt": "3.6.5",
     "nuxt-link-checker": "1.0.5",
-    "nuxt-simple-sitemap": "3.0.12",
+    "nuxt-simple-sitemap": "3.0.15",
     "nuxt-unhead": "1.4.17",
     "postcss-html": "1.5.0",
     "postcss-scss": "4.0.6",
@@ -66,10 +66,10 @@
     "stylelint-config-recommended-scss": "12.0.0",
     "stylelint-config-recommended-vue": "1.5.0",
     "stylelint-config-standard-scss": "10.0.0",
-    "stylelint-prettier": "4.0.0",
+    "stylelint-prettier": "4.0.2",
     "typescript": "5.1.6",
     "vue-gtag-next": "1.14.0",
-    "vue-tsc": "1.8.6"
+    "vue-tsc": "1.8.8"
   },
   "packageManager": "yarn@3.6.1"
 }
