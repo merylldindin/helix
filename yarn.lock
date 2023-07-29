@@ -1502,7 +1502,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.6.5, @nuxt/schema@npm:^3.6.3, @nuxt/schema@npm:^3.6.5":
+"@nuxt/schema@npm:3.6.5, @nuxt/schema@npm:^3.6.5":
   version: 3.6.5
   resolution: "@nuxt/schema@npm:3.6.5"
   dependencies:
@@ -6814,7 +6814,7 @@ __metadata:
     nuxt: 3.6.5
     nuxt-jsonld: 2.0.8
     nuxt-link-checker: 1.0.5
-    nuxt-simple-sitemap: 3.0.15
+    nuxt-simple-sitemap: 3.1.0
     nuxt-swiper: 1.2.0
     nuxt-unhead: 1.4.17
     postcss-html: 1.5.0
@@ -9147,9 +9147,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-simple-sitemap@npm:3.0.15":
-  version: 3.0.15
-  resolution: "nuxt-simple-sitemap@npm:3.0.15"
+"nuxt-simple-sitemap@npm:3.1.0":
+  version: 3.1.0
+  resolution: "nuxt-simple-sitemap@npm:3.1.0"
   dependencies:
     "@nuxt/devtools-kit": ^0.7.1
     "@nuxt/kit": ^3.6.5
@@ -9158,42 +9158,42 @@ __metadata:
     escape-string-regexp: ^5.0.0
     fast-glob: ^3.3.1
     knitwork: ^1.0.0
-    nuxt-site-config: ^1.0.7
-    nuxt-site-config-kit: ^1.0.7
+    nuxt-site-config: ^1.0.8
+    nuxt-site-config-kit: ^1.0.8
     pathe: ^1.1.1
     radix3: ^1.0.1
     semver: ^7.5.4
-    site-config-stack: ^1.0.7
-    ufo: ^1.1.2
-  checksum: 31b4ff142e9008bed0d04cee762da12c590cb9d24bab1e632dd50e50043c05f1606a37d0ffb7de7dcd5cf63d295024ecd105816c24b8c9de9b1ea18318de1c11
+    site-config-stack: ^1.0.8
+    ufo: ^1.2.0
+  checksum: c2f262d069a6ab8400b5ecb2558894f6fa96e5ba731285a01eeae31edb3d54b081230ef54f31ca0cd0699bea37838faf0b9501a1d2f96b88e14b5be06d0d400e
   languageName: node
   linkType: hard
 
-"nuxt-site-config-kit@npm:1.0.7, nuxt-site-config-kit@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "nuxt-site-config-kit@npm:1.0.7"
+"nuxt-site-config-kit@npm:1.0.8, nuxt-site-config-kit@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "nuxt-site-config-kit@npm:1.0.8"
   dependencies:
-    "@nuxt/kit": ^3.6.3
-    "@nuxt/schema": ^3.6.3
+    "@nuxt/kit": ^3.6.5
+    "@nuxt/schema": ^3.6.5
     defu: ^6.1.2
     pkg-types: ^1.0.3
-    site-config-stack: 1.0.7
+    site-config-stack: 1.0.8
     ufo: ^1.1.2
-  checksum: c77dc559f8508c2fbc2cda969be7500af84e6fd7eca0236c132ab70b97912d99ccf263805f076a597ff4c85cb1a681bc9196e4e52dc227ec700c9c15ad1c3007
+  checksum: 61013ff9ff5ae5e812fac7e1afe3f1132c94fa20170952903931a3ebaeeede1f3603d73d0e5ec50a33a1e30cd0238dbbf99fa2e45f6a52eda9838ba79a6fe6d2
   languageName: node
   linkType: hard
 
-"nuxt-site-config@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "nuxt-site-config@npm:1.0.7"
+"nuxt-site-config@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "nuxt-site-config@npm:1.0.8"
   dependencies:
-    "@nuxt/kit": ^3.6.3
-    "@nuxt/schema": ^3.6.3
-    nuxt-site-config-kit: 1.0.7
+    "@nuxt/kit": ^3.6.5
+    "@nuxt/schema": ^3.6.5
+    nuxt-site-config-kit: 1.0.8
     pathe: ^1.1.1
-    site-config-stack: 1.0.7
+    site-config-stack: 1.0.8
     ufo: ^1.1.2
-  checksum: 6345cb7c8410c5bf2ad886595e62b5f60369ad40fbbd30ff70c33d46db2db2fa76c14a09374a45475bb3847459e115feec8ac5cb69b1981c8bb9a6e6e66811b4
+  checksum: f46c35cb5bb0c5db34697e083a20dcd8f652febb77d633c6f58dff77fb04e02f463c0d9f65b8a444ad399d3b95d48796bd17bb63ec60cb618aab17fe50f111e7
   languageName: node
   linkType: hard
 
@@ -11163,15 +11163,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"site-config-stack@npm:1.0.7, site-config-stack@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "site-config-stack@npm:1.0.7"
+"site-config-stack@npm:1.0.8, site-config-stack@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "site-config-stack@npm:1.0.8"
   dependencies:
-    "@nuxt/kit": ^3.6.3
+    "@nuxt/kit": ^3.6.5
     defu: ^6.1.2
     pkg-types: ^1.0.3
     ufo: ^1.1.2
-  checksum: c4d150da98195663a06cde13da489aded961d98cc9869ff5425621b10fc231490f6d83276b5706d5bcfa0e3d0a28706e7a3854ca5e1a670c7f2c429e16537d0e
+  checksum: 1d43b77ced169c2de1d89291d79eb685789bb22e5699f0b871c4edab6671e01299e68061d494947ceab0b2e14fe05e648ecd8c32289fdc118aa82b71962da3c6
   languageName: node
   linkType: hard
 
@@ -12351,6 +12351,13 @@ __metadata:
   version: 1.1.2
   resolution: "ufo@npm:1.1.2"
   checksum: 83c940a6a23b6d4fc0cd116265bb5dcf88ab34a408ad9196e413270ca607a4781c09b547dc518f43caee128a096f20fe80b5a0e62b4bcc0a868619896106d048
+  languageName: node
+  linkType: hard
+
+"ufo@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "ufo@npm:1.2.0"
+  checksum: eaac059b5fd64a6f80557093a49bb6bfd5d97aca433e641d5022db9cbd4be3e6a4011d2ffe1254cdb2fc8ab5cbe9942b0af834ee7ac7c63240ab542f5981f68e
   languageName: node
   linkType: hard
 
