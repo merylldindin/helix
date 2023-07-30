@@ -6831,7 +6831,7 @@ __metadata:
     nuxt: 3.6.5
     nuxt-jsonld: 2.0.8
     nuxt-link-checker: 1.0.5
-    nuxt-simple-sitemap: 3.1.2
+    nuxt-simple-sitemap: 3.1.3
     nuxt-swiper: 1.2.0
     nuxt-unhead: 1.4.17
     postcss-html: 1.5.0
@@ -9164,9 +9164,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-simple-sitemap@npm:3.1.2":
-  version: 3.1.2
-  resolution: "nuxt-simple-sitemap@npm:3.1.2"
+"nuxt-simple-sitemap@npm:3.1.3":
+  version: 3.1.3
+  resolution: "nuxt-simple-sitemap@npm:3.1.3"
   dependencies:
     "@nuxt/devtools-kit": ^0.7.1
     "@nuxt/kit": ^3.6.5
@@ -9175,42 +9175,42 @@ __metadata:
     escape-string-regexp: ^5.0.0
     fast-glob: ^3.3.1
     knitwork: ^1.0.0
-    nuxt-site-config: ^1.0.8
-    nuxt-site-config-kit: ^1.0.8
+    nuxt-site-config: ^1.0.9
+    nuxt-site-config-kit: ^1.0.9
     pathe: ^1.1.1
     radix3: ^1.0.1
     semver: ^7.5.4
-    site-config-stack: ^1.0.8
+    site-config-stack: ^1.0.9
     ufo: ^1.2.0
-  checksum: e7b07d1a6973bc784588c6666b06ef70f02dcee7cf256bcfe5e016a440aed3eec6e75358a2fb65994b040a338f7d32f267ba83bfffaa02d62f3b717235dceb34
+  checksum: 0eb373da260d5d4acc00398a9d1d1c145b7b63123106cb89b5f0473a2ceaffff69feee29113df555542d0c155cdfcde038dae417716fa26ffcd744dac1de27b2
   languageName: node
   linkType: hard
 
-"nuxt-site-config-kit@npm:1.0.8, nuxt-site-config-kit@npm:^1.0.8":
-  version: 1.0.8
-  resolution: "nuxt-site-config-kit@npm:1.0.8"
+"nuxt-site-config-kit@npm:1.0.9, nuxt-site-config-kit@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "nuxt-site-config-kit@npm:1.0.9"
   dependencies:
     "@nuxt/kit": ^3.6.5
     "@nuxt/schema": ^3.6.5
     defu: ^6.1.2
     pkg-types: ^1.0.3
-    site-config-stack: 1.0.8
-    ufo: ^1.1.2
-  checksum: 61013ff9ff5ae5e812fac7e1afe3f1132c94fa20170952903931a3ebaeeede1f3603d73d0e5ec50a33a1e30cd0238dbbf99fa2e45f6a52eda9838ba79a6fe6d2
+    site-config-stack: 1.0.9
+    ufo: ^1.2.0
+  checksum: c4be958ebe1e4b6875f798bd1d3f75c9910a08d8f03419a212a0a6aa1848b87f9fbc80be3b5e7b7f4d8fe06ab2e67b1cca0770ba8bccbfcfb973aef2b31ce816
   languageName: node
   linkType: hard
 
-"nuxt-site-config@npm:^1.0.8":
-  version: 1.0.8
-  resolution: "nuxt-site-config@npm:1.0.8"
+"nuxt-site-config@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "nuxt-site-config@npm:1.0.9"
   dependencies:
     "@nuxt/kit": ^3.6.5
     "@nuxt/schema": ^3.6.5
-    nuxt-site-config-kit: 1.0.8
+    nuxt-site-config-kit: 1.0.9
     pathe: ^1.1.1
-    site-config-stack: 1.0.8
-    ufo: ^1.1.2
-  checksum: f46c35cb5bb0c5db34697e083a20dcd8f652febb77d633c6f58dff77fb04e02f463c0d9f65b8a444ad399d3b95d48796bd17bb63ec60cb618aab17fe50f111e7
+    site-config-stack: 1.0.9
+    ufo: ^1.2.0
+  checksum: d3f1649f5f1df856cb17e87e8369d8e57b8ce3fc4d8c77a003c2373df0267ec59a3a0bbab4ee5d8cb8827c7b2d477e162bcf9087a4a97493fbd923a22fe1f69f
   languageName: node
   linkType: hard
 
@@ -11180,15 +11180,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"site-config-stack@npm:1.0.8, site-config-stack@npm:^1.0.8":
-  version: 1.0.8
-  resolution: "site-config-stack@npm:1.0.8"
+"site-config-stack@npm:1.0.9, site-config-stack@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "site-config-stack@npm:1.0.9"
   dependencies:
     "@nuxt/kit": ^3.6.5
     defu: ^6.1.2
     pkg-types: ^1.0.3
-    ufo: ^1.1.2
-  checksum: 1d43b77ced169c2de1d89291d79eb685789bb22e5699f0b871c4edab6671e01299e68061d494947ceab0b2e14fe05e648ecd8c32289fdc118aa82b71962da3c6
+    ufo: ^1.2.0
+  checksum: fb04ac763fc539d6fed0d01ccb758e5164572c8a97b7d565d9453fb07e13758616c9de8b212b638fd9416dd7be8a32dabdc911becc12ffbb55fb34a37b5e8ef6
   languageName: node
   linkType: hard
 
