@@ -1418,6 +1418,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxt/devtools-kit@npm:0.7.5":
+  version: 0.7.5
+  resolution: "@nuxt/devtools-kit@npm:0.7.5"
+  dependencies:
+    "@nuxt/kit": ^3.6.5
+    "@nuxt/schema": ^3.6.5
+    execa: ^7.2.0
+  peerDependencies:
+    nuxt: ^3.6.5
+    vite: "*"
+  checksum: 2ec1ac07cc90cc94209f7b0b0f0186614d7d350f12611f5e930be4ebb27ff668c6827c1318406bfd12013b5bff4804da0be36ee8e796c3bdf70ae6fbfd839b2b
+  languageName: node
+  linkType: hard
+
 "@nuxt/devtools-ui-kit@npm:^0.7.4":
   version: 0.7.4
   resolution: "@nuxt/devtools-ui-kit@npm:0.7.4"
@@ -1470,6 +1484,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxt/devtools-wizard@npm:0.7.5":
+  version: 0.7.5
+  resolution: "@nuxt/devtools-wizard@npm:0.7.5"
+  dependencies:
+    consola: ^3.2.3
+    diff: ^5.1.0
+    execa: ^7.2.0
+    global-dirs: ^3.0.1
+    magicast: ^0.2.10
+    pathe: ^1.1.1
+    picocolors: ^1.0.0
+    pkg-types: ^1.0.3
+    prompts: ^2.4.2
+    rc9: ^2.1.1
+    semver: ^7.5.4
+  bin:
+    devtools-wizard: cli.mjs
+  checksum: f1962547348bc005fd305a5eac63242dec3b364edbbb3d12c76d19e9cb6044c13b4d047b20f28dc088f8b60728e85b3a52c7d93c67abe761eeae71a196dd632a
+  languageName: node
+  linkType: hard
+
 "@nuxt/devtools@npm:0.7.4":
   version: 0.7.4
   resolution: "@nuxt/devtools@npm:0.7.4"
@@ -1514,6 +1549,53 @@ __metadata:
   bin:
     devtools: cli.mjs
   checksum: c2e4b166fb92d0e1ba079fc506805939926b7c7df71916b5c0c39c0f1bbcc47d0d3d436f9de6ef05440345c9aae49b76ca743ba02bbd17c2e55d51e41474ad9a
+  languageName: node
+  linkType: hard
+
+"@nuxt/devtools@npm:0.7.5":
+  version: 0.7.5
+  resolution: "@nuxt/devtools@npm:0.7.5"
+  dependencies:
+    "@nuxt/devtools-kit": 0.7.5
+    "@nuxt/devtools-wizard": 0.7.5
+    "@nuxt/kit": ^3.6.5
+    birpc: ^0.2.12
+    boxen: ^7.1.1
+    consola: ^3.2.3
+    error-stack-parser-es: ^0.1.0
+    execa: ^7.2.0
+    fast-folder-size: ^2.1.0
+    fast-glob: ^3.3.1
+    get-port-please: ^3.0.1
+    global-dirs: ^3.0.1
+    h3: ^1.7.1
+    hookable: ^5.5.3
+    image-meta: ^0.1.1
+    is-installed-globally: ^0.4.0
+    launch-editor: ^2.6.0
+    local-pkg: ^0.4.3
+    magicast: ^0.2.10
+    nypm: ^0.2.2
+    pacote: ^15.2.0
+    pathe: ^1.1.1
+    perfect-debounce: ^1.0.0
+    picocolors: ^1.0.0
+    pkg-types: ^1.0.3
+    rc9: ^2.1.1
+    semver: ^7.5.4
+    sirv: ^2.0.3
+    unimport: ^3.1.3
+    vite-plugin-inspect: ^0.7.35
+    vite-plugin-vue-inspector: ^3.5.0
+    wait-on: ^7.0.1
+    which: ^3.0.1
+    ws: ^8.13.0
+  peerDependencies:
+    nuxt: ^3.6.5
+    vite: "*"
+  bin:
+    devtools: cli.mjs
+  checksum: a058d8651c0a1074d1605e74d041409ba68b3b9f099d7e760729662917a4653086fe5319d65b6a25f4e493cb849e70c13e2a490cd18febb7aa3dc33eb129fad5
   languageName: node
   linkType: hard
 
@@ -3472,7 +3554,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:8.10.0, acorn@npm:^8.4.1, acorn@npm:^8.5.0, acorn@npm:^8.6.0, acorn@npm:^8.8.2, acorn@npm:^8.9.0":
+"acorn@npm:8.10.0, acorn@npm:^8.10.0, acorn@npm:^8.4.1, acorn@npm:^8.5.0, acorn@npm:^8.6.0, acorn@npm:^8.8.2, acorn@npm:^8.9.0":
   version: 8.10.0
   resolution: "acorn@npm:8.10.0"
   bin:
@@ -7342,7 +7424,7 @@ __metadata:
     "@commitlint/cli": 17.6.7
     "@commitlint/config-conventional": 17.6.7
     "@mdi/js": 7.2.96
-    "@nuxt/devtools": 0.7.4
+    "@nuxt/devtools": 0.7.5
     "@nuxt/eslint-config": 0.1.1
     "@nuxt/types": 2.17.1
     "@nuxt/vue-app": 2.17.1
@@ -12131,6 +12213,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"strip-literal@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "strip-literal@npm:1.3.0"
+  dependencies:
+    acorn: ^8.10.0
+  checksum: f5fa7e289df8ebe82e90091fd393974faf8871be087ca50114327506519323cf15f2f8fee6ebe68b5e58bfc795269cae8bdc7cb5a83e27b02b3fe953f37b0a89
+  languageName: node
+  linkType: hard
+
 "style-search@npm:^0.1.0":
   version: 0.1.0
   resolution: "style-search@npm:0.1.0"
@@ -13064,6 +13155,25 @@ __metadata:
     strip-literal: ^1.0.1
     unplugin: ^1.4.0
   checksum: e0773b72c316834206ea01f70d53db934476796e53a4d7adac6f2c399052cfb8ce31b5af4586a85482c829e22fee9093f01688a350a3e947e2ff26f96706e262
+  languageName: node
+  linkType: hard
+
+"unimport@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "unimport@npm:3.1.3"
+  dependencies:
+    "@rollup/pluginutils": ^5.0.2
+    escape-string-regexp: ^5.0.0
+    fast-glob: ^3.3.1
+    local-pkg: ^0.4.3
+    magic-string: ^0.30.2
+    mlly: ^1.4.0
+    pathe: ^1.1.1
+    pkg-types: ^1.0.3
+    scule: ^1.0.0
+    strip-literal: ^1.3.0
+    unplugin: ^1.4.0
+  checksum: e0b0a1f48e1b6db8fbdf5cd23a0df6fb668966dc8466c68dae57378202c7b0d1017a84f16a79d2738cdc763bedc6582b38a96bf47ac0c0f6be5ecd8ff3a2c2c4
   languageName: node
   linkType: hard
 
