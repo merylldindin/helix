@@ -1922,7 +1922,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.7.0":
+"@nuxt/kit@npm:3.7.0, @nuxt/kit@npm:^3.7.0":
   version: 3.7.0
   resolution: "@nuxt/kit@npm:3.7.0"
   dependencies:
@@ -8351,7 +8351,7 @@ __metadata:
     nuxt-jsonld: 2.0.8
     nuxt-link-checker: 2.1.4
     nuxt-simple-sitemap: 3.2.5
-    nuxt-swiper: 1.2.1
+    nuxt-swiper: 1.2.2
     nuxt-unhead: 1.4.17
     postcss-html: 1.5.0
     postcss-scss: 4.0.7
@@ -10946,13 +10946,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-swiper@npm:1.2.1":
-  version: 1.2.1
-  resolution: "nuxt-swiper@npm:1.2.1"
+"nuxt-swiper@npm:1.2.2":
+  version: 1.2.2
+  resolution: "nuxt-swiper@npm:1.2.2"
   dependencies:
-    "@nuxt/kit": ^3.6.5
+    "@nuxt/kit": ^3.7.0
     swiper: ^10.2.0
-  checksum: f9fa486299673b41ae4c520d92bd225dbc353fa705d58857561fb3233e116201d390af946a5ce0da4a94c93ee84e52218398beaa3cd70bb3661f5bb0143f5e9e
+  checksum: 9573c01f9d1182628a59a6b267472a5dff5448dd21e4473982c1dafd512171e7f98dd8ef468d101da371281a90f32104d235a38124dad8088246808e63a2f807
   languageName: node
   linkType: hard
 
