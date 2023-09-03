@@ -3322,19 +3322,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/addons@npm:1.4.1":
-  version: 1.4.1
-  resolution: "@unhead/addons@npm:1.4.1"
+"@unhead/addons@npm:1.5.0":
+  version: 1.5.0
+  resolution: "@unhead/addons@npm:1.5.0"
   dependencies:
     "@rollup/pluginutils": ^5.0.4
-    "@unhead/schema": 1.4.1
-    "@unhead/shared": 1.4.1
+    "@unhead/schema": 1.5.0
+    "@unhead/shared": 1.5.0
     magic-string: ^0.30.3
     mlly: ^1.4.1
     ufo: ^1.3.0
     unplugin: ^1.4.0
     unplugin-ast: ^0.8.2
-  checksum: b5b8a996e89e5e0412893d6d9e759c0fc43be616787aa8155ae722a49374f8dd13f62416cc0ff9ac4744120f35b929bf0a11616c6cf2f76ab8efc6a585a12f74
+  checksum: a68c769970f83e255605de2c321044ce2ff78769289cd02c42bfc6a98de6ac1f45041565d4a7aef11eda606c2534d5cf641f7b3cd4d9dc88b9aa875f7db8e13b
   languageName: node
   linkType: hard
 
@@ -3395,13 +3395,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/schema@npm:1.4.1":
-  version: 1.4.1
-  resolution: "@unhead/schema@npm:1.4.1"
+"@unhead/schema@npm:1.5.0":
+  version: 1.5.0
+  resolution: "@unhead/schema@npm:1.5.0"
   dependencies:
     hookable: ^5.5.3
     zhead: ^2.0.10
-  checksum: 2a3449e9408a1be21b9c3f829ad4b6d66fc0b31ccd3c4a76a118b47fb424137b855412d178659e5f2ebfcd0832286c8aebf3f8397dd7749f51a5c8bcdd477e73
+  checksum: 26b091046513c9d7c783beebf50920abb918970565a65075aa6155f24742ae84cd4abe485bd97aab592fd1755fce3fa356a20261a8a56fa8f7c4404bc63dfbd7
   languageName: node
   linkType: hard
 
@@ -3423,12 +3423,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/shared@npm:1.4.1":
-  version: 1.4.1
-  resolution: "@unhead/shared@npm:1.4.1"
+"@unhead/shared@npm:1.5.0":
+  version: 1.5.0
+  resolution: "@unhead/shared@npm:1.5.0"
   dependencies:
-    "@unhead/schema": 1.4.1
-  checksum: 9f24f5e92d62b70aa86260d5648923e8acca778c4772b66c8cd499d46ddf050985bf3583099ad5a75ff3e3d2aa0eb7fa4f5b74f5b036f184bc199cce23fd3c26
+    "@unhead/schema": 1.5.0
+  checksum: f871d4c93f920a7ab6692ef2fe2b7a60d044ad34814b9ed6668f0552f2bca921ebbb56fb97298ff1c499a743ec510a328aee4b199708ff96a3164094a3b86c2b
   languageName: node
   linkType: hard
 
@@ -8383,7 +8383,7 @@ __metadata:
     "@nuxt/vue-app": 2.17.1
     "@types/node": 18.17.14
     "@typescript-eslint/parser": 6.5.0
-    "@unhead/addons": 1.4.1
+    "@unhead/addons": 1.5.0
     cypress: 13.1.0
     eslint: 8.48.0
     eslint-config-airbnb-base: 15.0.0
