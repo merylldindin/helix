@@ -3127,10 +3127,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.18.4, @types/node@npm:^18.17.5":
-  version: 18.18.4
-  resolution: "@types/node@npm:18.18.4"
-  checksum: 4901e91c4cc479bb58acbcd79236a97a0ad6db4a53cb1f4ba4cf32af15324c61b16faa6e31c1b09bf538a20feb5f5274239157ce5237f5741db0b9ab71e69c52
+"@types/node@npm:18.18.5":
+  version: 18.18.5
+  resolution: "@types/node@npm:18.18.5"
+  checksum: fc8c9b2bf226270cf9085a7dac76ce09dd7c3519ec9b687ee2b50385954ab3709c45ca82d002d1536e24286803cd194d7ab7008acebdcd6681b8b19d4277fa5c
   languageName: node
   linkType: hard
 
@@ -3145,6 +3145,13 @@ __metadata:
   version: 16.18.39
   resolution: "@types/node@npm:16.18.39"
   checksum: eac9b202b76013256cb517ca8d3e3f61df206edb1615ca8d8df4c80616e92879fe4d3f8570a11d60f4216a82724a3265d5888b24c6994c80b057a0423c9ff1d2
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.17.5":
+  version: 18.18.4
+  resolution: "@types/node@npm:18.18.4"
+  checksum: 4901e91c4cc479bb58acbcd79236a97a0ad6db4a53cb1f4ba4cf32af15324c61b16faa6e31c1b09bf538a20feb5f5274239157ce5237f5741db0b9ab71e69c52
   languageName: node
   linkType: hard
 
@@ -6019,9 +6026,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:13.3.0":
-  version: 13.3.0
-  resolution: "cypress@npm:13.3.0"
+"cypress@npm:13.3.1":
+  version: 13.3.1
+  resolution: "cypress@npm:13.3.1"
   dependencies:
     "@cypress/request": ^3.0.0
     "@cypress/xvfb": ^1.2.4
@@ -6068,7 +6075,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: 6ad11bd6aabccfaf8be78afff0e854c9c8ccc935704c41efe4d8e9412ccfcb652f23791931c3aa26fc41068eeeb739a51563308670c9dada91cb272d08227caf
+  checksum: 51798ecc6c5a33860012ecf39c428540911c3cf4df6ee63ea950cafea4a6c415d18da87951721f45b8601637e9731af4cf1464d37d62a36ce7243f8bfc8a59d2
   languageName: node
   linkType: hard
 
@@ -8290,10 +8297,10 @@ __metadata:
     "@nuxt/eslint-config": 0.2.0
     "@nuxt/types": 2.17.1
     "@nuxt/vue-app": 2.17.1
-    "@types/node": 18.18.4
+    "@types/node": 18.18.5
     "@typescript-eslint/parser": 6.7.5
     "@unhead/addons": 1.7.4
-    cypress: 13.3.0
+    cypress: 13.3.1
     eslint: 8.51.0
     eslint-config-airbnb-base: 15.0.0
     eslint-config-prettier: 9.0.0
@@ -8313,7 +8320,7 @@ __metadata:
     postcss-scss: 4.0.9
     prettier: 3.0.3
     prettier-plugin-packagejson: 2.4.6
-    sass: 1.69.2
+    sass: 1.69.3
     serve: 14.2.1
     stylelint: 15.10.3
     stylelint-config-prettier: 9.0.5
@@ -8324,7 +8331,7 @@ __metadata:
     typescript: 5.2.2
     vue-gtag-next: 1.14.0
     vue-tsc: 1.8.19
-    vue3-lottie: 3.1.0
+    vue3-lottie: 3.2.0
     vuetify: 3.3.21
   languageName: unknown
   linkType: soft
@@ -12582,16 +12589,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.69.2":
-  version: 1.69.2
-  resolution: "sass@npm:1.69.2"
+"sass@npm:1.69.3":
+  version: 1.69.3
+  resolution: "sass@npm:1.69.3"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 25c6aaf993a40ce33e66c6c3a25690ce573a3c890024ba3dea5416a17c7db6ec39542d4b4e62c2c429005737630d6b48ab841f99fd534ac1b441f37d2c34e0c4
+  checksum: b89a3370c7ede462b344e2136bf1407bf375855c1ec54f73b6257b18fe59dae5377eb9f7b25f21ae4a25d8f0bc41a165d8d7e5f693d8285b1aa51ac6056c4d19
   languageName: node
   linkType: hard
 
@@ -14945,15 +14952,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue3-lottie@npm:3.1.0":
-  version: 3.1.0
-  resolution: "vue3-lottie@npm:3.1.0"
+"vue3-lottie@npm:3.2.0":
+  version: 3.2.0
+  resolution: "vue3-lottie@npm:3.2.0"
   dependencies:
     lodash-es: ^4.17.21
     lottie-web: 5.12.2
   peerDependencies:
     vue: ^3.2
-  checksum: 0b9b2080ebbcc4e7dbd68fabccafabd4e53c6f523fa645c7abe9df4caedec589d151d8203d2ea84b7cfca0501b02348aa0cb291c5969515febb55ac1227923b4
+  checksum: 9fa94a64606532d7c8113bb93c2b19840e87c4aa5c572df2a438f06bf3046a8cd1294f49033e401afb6e436fd3a20073d32c3eea885724c8f109d9afe2ffe44c
   languageName: node
   linkType: hard
 
