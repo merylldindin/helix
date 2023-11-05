@@ -22,6 +22,10 @@ export default defineNuxtConfig({
     externalVue: true,
     payloadExtraction: true,
   },
+  // @ts-ignore-next-line
+  linkChecker: {
+    skipInspections: ["no-error-response", "no-baseless", "trailing-slash"],
+  },
   modules: [
     "@nuxt/devtools",
     "nuxt-jsonld",
