@@ -1454,6 +1454,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxt/devtools-kit@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@nuxt/devtools-kit@npm:1.0.2"
+  dependencies:
+    "@nuxt/kit": "npm:^3.8.1"
+    "@nuxt/schema": "npm:^3.8.1"
+    execa: "npm:^7.2.0"
+  peerDependencies:
+    nuxt: ^3.8.1
+    vite: "*"
+  checksum: fae80f0423493b3e2832f9f5182297125ad34d313af1e04f054d6c4ce248efc31d235c7d4d7b8ce57b1d9795093460f38daaad8b76b7028880651c3d5c0763ee
+  languageName: node
+  linkType: hard
+
 "@nuxt/devtools-ui-kit@npm:^1.0.1":
   version: 1.0.1
   resolution: "@nuxt/devtools-ui-kit@npm:1.0.1"
@@ -1505,15 +1519,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-wizard@npm:1.0.1":
-  version: 1.0.1
-  resolution: "@nuxt/devtools-wizard@npm:1.0.1"
+"@nuxt/devtools-wizard@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@nuxt/devtools-wizard@npm:1.0.2"
   dependencies:
     consola: "npm:^3.2.3"
     diff: "npm:^5.1.0"
     execa: "npm:^7.2.0"
     global-directory: "npm:^4.0.1"
-    magicast: "npm:^0.3.1"
+    magicast: "npm:^0.3.2"
     pathe: "npm:^1.1.1"
     pkg-types: "npm:^1.0.3"
     prompts: "npm:^2.4.2"
@@ -1521,17 +1535,17 @@ __metadata:
     semver: "npm:^7.5.4"
   bin:
     devtools-wizard: cli.mjs
-  checksum: 1753b995bc2f001e98a484ee417753f3fe120c6978a828e0d7813e6e213b23151c43414437f1e1012ec96836c9f089778ae4c38eb22413aa1542707218287499
+  checksum: 4d54e7520cab7d6042f83ae82941cfaa71298ca00d276156f4e7443a63842dc517480556e4e20b9fed33e5e6bae16affc375a9f507462aadb9e3e9b054495319
   languageName: node
   linkType: hard
 
-"@nuxt/devtools@npm:1.0.1":
-  version: 1.0.1
-  resolution: "@nuxt/devtools@npm:1.0.1"
+"@nuxt/devtools@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@nuxt/devtools@npm:1.0.2"
   dependencies:
     "@antfu/utils": "npm:^0.7.6"
-    "@nuxt/devtools-kit": "npm:1.0.1"
-    "@nuxt/devtools-wizard": "npm:1.0.1"
+    "@nuxt/devtools-kit": "npm:1.0.2"
+    "@nuxt/devtools-wizard": "npm:1.0.2"
     "@nuxt/kit": "npm:^3.8.1"
     birpc: "npm:^0.2.14"
     consola: "npm:^3.2.3"
@@ -1547,7 +1561,7 @@ __metadata:
     is-installed-globally: "npm:^1.0.0"
     launch-editor: "npm:^2.6.1"
     local-pkg: "npm:^0.5.0"
-    magicast: "npm:^0.3.1"
+    magicast: "npm:^0.3.2"
     nitropack: "npm:^2.7.2"
     nypm: "npm:^0.3.3"
     ofetch: "npm:^1.3.3"
@@ -1567,11 +1581,11 @@ __metadata:
     which: "npm:^3.0.1"
     ws: "npm:^8.14.2"
   peerDependencies:
-    nuxt: ^3.7.4
+    nuxt: ^3.8.1
     vite: "*"
   bin:
     devtools: cli.mjs
-  checksum: 92c87fe70f14331b02b49040bb9ec3cbde3fbccfacff6bfa91861ee53d204de3036c6c8c1c0bf97ee8738e3903d04e2167eca0a967c233998210050ba74ff5be
+  checksum: a2cf8c5a5332a1fcf071a029b9ee39e97871f4e57c646d9a029591339e73031297768351df800147d989bbffa4ce8620e17cfa3ac815074098a53c27985371c6
   languageName: node
   linkType: hard
 
@@ -7339,7 +7353,7 @@ __metadata:
     "@commitlint/cli": "npm:18.4.0"
     "@commitlint/config-conventional": "npm:18.4.0"
     "@mdi/js": "npm:7.3.67"
-    "@nuxt/devtools": "npm:1.0.1"
+    "@nuxt/devtools": "npm:1.0.2"
     "@nuxt/eslint-config": "npm:0.2.0"
     "@nuxt/types": "npm:2.17.2"
     "@nuxt/vue-app": "npm:2.17.2"
@@ -8772,7 +8786,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magicast@npm:^0.3.1":
+"magicast@npm:^0.3.2":
   version: 0.3.2
   resolution: "magicast@npm:0.3.2"
   dependencies:
