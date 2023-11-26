@@ -3,7 +3,7 @@
   "schema": {
     "type": "itemList",
     "prop": {
-      "source": "TIMELINE_SECTION"
+      "source": "LINKS_SECTION"
     }
   },
   "head": {
@@ -15,8 +15,8 @@
   },
   "components": [
     {
-      "name": "TIMELINE_SECTION",
-      "id": "mentions-section",
+      "name": "LINKS_SECTION",
+      "id": "links-section",
       "props": {
         "content": [
           {
@@ -24,7 +24,7 @@
             "prop": {
               "level": 2,
               "text": "About Everything",
-              "typography": "text-lexend-deca headline-6 mb-6"
+              "typography": "text-lexend-deca headline-5 mb-6"
             }
           },
           {
@@ -40,7 +40,7 @@
             "prop": {
               "level": 2,
               "text": "About Technology",
-              "typography": "text-lexend-deca headline-6 mb-6"
+              "typography": "text-lexend-deca headline-5 mb-6"
             }
           },
           {
@@ -56,7 +56,7 @@
             "prop": {
               "level": 2,
               "text": "About Health",
-              "typography": "text-lexend-deca headline-6 mb-6"
+              "typography": "text-lexend-deca headline-5 mb-6"
             }
           },
           {
@@ -112,7 +112,7 @@
             "prop": {
               "level": 2,
               "text": "About Startups",
-              "typography": "text-lexend-deca headline-6 mb-6"
+              "typography": "text-lexend-deca headline-5 mb-6"
             }
           },
           {

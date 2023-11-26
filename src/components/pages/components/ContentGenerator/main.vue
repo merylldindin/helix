@@ -9,6 +9,7 @@ import {
   ArticleContent,
   NetworksContent,
   RedirectContent,
+  ReferenceContent,
   SocialsContent,
   YoutubeContent,
 } from "./components";
@@ -64,6 +65,11 @@ const { smAndDown } = useDisplay();
       />
 
       <RedirectContent v-else-if="item.type === ContentType.MORE" :link="item.prop" />
+
+      <ReferenceContent
+        v-else-if="item.type === ContentType.REFERENCE"
+        :reference="item.prop"
+      />
 
       <SocialsContent
         v-else-if="item.type === ContentType.SOCIALS"

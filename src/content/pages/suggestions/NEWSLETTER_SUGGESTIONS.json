@@ -3,7 +3,7 @@
   "schema": {
     "type": "itemList",
     "prop": {
-      "source": "TIMELINE_SECTION"
+      "source": "LINKS_SECTION"
     }
   },
   "head": {
@@ -15,8 +15,8 @@
   },
   "components": [
     {
-      "name": "TIMELINE_SECTION",
-      "id": "mentions-section",
+      "name": "LINKS_SECTION",
+      "id": "links-section",
       "props": {
         "content": [
           {
@@ -24,7 +24,7 @@
             "prop": {
               "level": 2,
               "text": "Technology Trends",
-              "typography": "text-lexend-deca headline-6 mb-6"
+              "typography": "text-lexend-deca headline-5 mb-6"
             }
           },
           {
@@ -72,7 +72,7 @@
             "prop": {
               "level": 2,
               "text": "Data Trends",
-              "typography": "text-lexend-deca headline-6 mb-6"
+              "typography": "text-lexend-deca headline-5 mb-6"
             }
           },
           {
@@ -104,7 +104,7 @@
             "prop": {
               "level": 2,
               "text": "Venture Trends",
-              "typography": "text-lexend-deca headline-6 mb-6"
+              "typography": "text-lexend-deca headline-5 mb-6"
             }
           },
           {
@@ -144,7 +144,7 @@
             "prop": {
               "level": 2,
               "text": "Health Trends",
-              "typography": "text-lexend-deca headline-6 mb-6"
+              "typography": "text-lexend-deca headline-5 mb-6"
             }
           },
           {

@@ -7,6 +7,7 @@ export enum ContentType {
   IMAGE = "image",
   MORE = "more",
   NETWORKS = "networks",
+  REFERENCE = "reference",
   SOCIALS = "socials",
   TEXT = "text",
   YOUTUBE = "youtube",
@@ -66,6 +67,18 @@ export interface NetworksContent {
   prop: NetworkItem;
 }
 
+export interface ReferenceItem {
+  href: string;
+  text: string;
+  description?: string;
+  detail?: string;
+}
+
+export interface ReferenceContent {
+  type: ContentType.REFERENCE;
+  prop: ReferenceItem;
+}
+
 export interface SocialsItem {
   ariaLabel: string;
   icon: string;
@@ -96,6 +109,7 @@ export type GenericContent =
   | ImageContent
   | MoreContent
   | NetworksContent
+  | ReferenceContent
   | SocialsContent
   | TextContent
   | YoutubeContent;

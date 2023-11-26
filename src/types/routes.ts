@@ -1,8 +1,10 @@
 export enum RoutePath {
   ARRHYTHIMIA_CLASSIFICATION = "/thoughts/arrhythmia-classification/",
   AUBERGE_DE_CERCOUX = "/ventures/auberge-de-cercoux/",
+  BOOK_SUGGESTIONS = "/suggestions/books/",
   CALASTER = "/ventures/calaster/",
   DILLYGENCE = "/ventures/dillygence/",
+  ENHANCER_SUGGESTIONS = "/suggestions/enhancers/",
   FUJITSU = "/ventures/fujitsu/",
   FUTURE_OF_STORYTELLING = "/thoughts/future-of-storytelling/",
   LANDING_PAGE = "/",
@@ -10,6 +12,8 @@ export enum RoutePath {
   MENTIONS = "/mentions/",
   MISSIONS = "/missions/",
   MODELS_HUMAN_COGNITION = "/thoughts/models-human-cognition/",
+  NEWSLETTER_SUGGESTIONS = "/suggestions/newsletters/",
+  PODCAST_SUGGESTIONS = "/suggestions/podcasts/",
   POLYGON = "/ventures/polygon/",
   PRIVACY_POLICY = "/legal/privacy-policy/",
   SLEEP_STAGE_CLASSIFICATION = "/thoughts/sleep-stage-classification/",
@@ -18,5 +22,6 @@ export enum RoutePath {
   THOUGHTS = "/thoughts/",
   TOMATO_CLUSTERING = "/thoughts/tomato-clustering/",
   TOPOLOGICAL_DATA_ANALYSIS = "/thoughts/topological-data-analysis/",
+  TOOLKIT_SUGGESTIONS = "/suggestions/toolkits/",
   VENTURES = "/ventures/",
 }
