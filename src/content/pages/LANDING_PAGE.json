@@ -298,6 +298,55 @@
                 }
               }
             ]
+          },
+          {
+            "headline": {
+              "prompt": "Suggest",
+              "ariaLabel": "Learn more about Meryll Dindin suggestions and recommendations",
+              "to": "/suggestions/"
+            },
+            "profiles": [
+              {
+                "slug": "Books",
+                "icon": "BOOKSHELF",
+                "link": {
+                  "ariaLabel": "Compilation of my book recommendations",
+                  "to": "/suggestions/books/"
+                }
+              },
+              {
+                "slug": "Enhancers",
+                "icon": "DNA",
+                "link": {
+                  "ariaLabel": "Compilation of my enhancers recommendations",
+                  "to": "/suggestions/enhancers/"
+                }
+              },
+              {
+                "slug": "Newsletters",
+                "icon": "EMAIL_NEWSLETTER",
+                "link": {
+                  "ariaLabel": "Compilation of my newsletter recommendations",
+                  "to": "/suggestions/newsletters/"
+                }
+              },
+              {
+                "slug": "Podcasts",
+                "icon": "PODCAST",
+                "link": {
+                  "ariaLabel": "Compilation of my podcast recommendations",
+                  "to": "/suggestions/podcasts/"
+                }
+              },
+              {
+                "slug": "Toolkits",
+                "icon": "TOOLS",
+                "link": {
+                  "ariaLabel": "Compilation of my toolkit recommendations",
+                  "to": "/suggestions/toolkits/"
+                }
+              }
+            ]
           }
         ]
       }
