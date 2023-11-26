@@ -1,9 +1,16 @@
 import { DEFAULT_URL } from "@/content";
-import { ComponentName, TimelineContent } from "@/types";
+import {
+  ComponentName,
+  ContentType,
+  GenericContent,
+  ReferenceItem,
+  TimelineContent,
+} from "@/types";
 
 enum ItemListConfig {
-  ROTATING_CUBE = "ROTATING_CUBE",
   IMAGE_SECTION = "IMAGE_SECTION",
+  LINKS_SECTION = "LINKS_SECTION",
+  ROTATING_CUBE = "ROTATING_CUBE",
   TIMELINE_SECTION = "TIMELINE_SECTION",
 }
 
@@ -89,6 +96,32 @@ const getSectionTimelineItemList = (content: any): unknown => {
   };
 };
 
+const getSectionReferenceItemList = (content: any): unknown => {
+  const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
+
+  const section = content.components.find(
+    (item: any) => item.name === ComponentName.LINKS_SECTION
+  );
+
+  const links = (section.props.content as GenericContent[])
+    .filter((link) => link.type === ContentType.REFERENCE)
+    .map((link, index) => {
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        url: (link.prop as ReferenceItem).href,
+      };
+    });
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: links,
+    numberOfItems: links.length,
+    url: pageUrl,
+  };
+};
+
 export const getItemListSchema = (content: any): unknown => {
   if (content.schema.prop.source === ItemListConfig.ROTATING_CUBE) {
     return getRotatingCubeItemList(content);
@@ -96,6 +129,10 @@ export const getItemListSchema = (content: any): unknown => {
 
   if (content.schema.prop.source === ItemListConfig.IMAGE_SECTION) {
     return getSectionImageItemList(content);
+  }
+
+  if (content.schema.prop.source === ItemListConfig.LINKS_SECTION) {
+    return getSectionReferenceItemList(content);
   }
 
   if (content.schema.prop.source === ItemListConfig.TIMELINE_SECTION) {
