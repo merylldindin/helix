@@ -1,0 +1,250 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "itemList",
+    "prop": {
+      "source": "TIMELINE_SECTION"
+    }
+  },
+  "head": {
+    "canonical": "/suggestions/toolkits/",
+    "title": "N/A",
+    "description": "N/A",
+    "thumbnail": "N/A",
+    "thumbnailAlt": "N/A"
+  },
+  "components": [
+    {
+      "name": "TIMELINE_SECTION",
+      "id": "mentions-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Web Development",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://fontjoy.com/",
+              "text": "Fontjoy",
+              "description": "Helps designers choose the best font combinations"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "http://colormind.io/",
+              "text": "Colormind",
+              "description": "Color scheme generator that uses deep learning"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "http://khroma.co/train/",
+              "text": "Khroma",
+              "description": "Uses AI to learn which colors you like and creates limitless palettes for you"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://www.svgator.com/",
+              "text": "SVGator",
+              "description": "The ultimate SVG animation generator"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://coolors.co/",
+              "text": "Coolors",
+              "description": "Generate or browse beautiful color combinations for your designs"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://chir.ag/projects/name-that-color",
+              "text": "Color Naming",
+              "description": "Name colors"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://www.colorful.app/",
+              "text": "Colorful",
+              "description": "Create jaw-dropping photos with the power of 3D"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://compressor.io/",
+              "text": "Compressor",
+              "description": "Fast and efficient image compression"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://lottiefiles.com/",
+              "text": "Lottie Files",
+              "description": "Lightweight, scalable animations for your websites and apps"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "VSCode Extensions",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments",
+              "text": "Better Comments",
+              "description": "Will help you create more human-friendly comments in your code"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=bierner.color-info",
+              "text": "Color Info",
+              "description": "Provides quick information css colors"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens",
+              "text": "GitLens",
+              "description": "Supercharges Git inside VS Code and unlocks untapped knowledge within each repository"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
+              "text": "Prettier Formatter",
+              "description": "Opinionated code formatter enforcing a consistent style"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot",
+              "text": "GitHub Copilot",
+              "description": "Uses OpenAI Codex to suggest code and entire functions in real-time right from your editor"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme",
+              "text": "GitHub Theme",
+              "description": "GitHub themes for VS Code"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github",
+              "text": "GitHub Pull Requests and Issues",
+              "description": "Allows you to review and manage GitHub pull requests and issues in Visual Studio Code"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-codemetrics",
+              "text": "CodeMetrics",
+              "description": "Computes complexity in TypeScript / JavaScript / Lua files"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=ms-python.python",
+              "text": "Python",
+              "description": "Rich support  including features such as IntelliSense (Pylance), linting, debugging, …"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=ms-python.python",
+              "text": "Python",
+              "description": "Rich support  including features such as IntelliSense (Pylance), linting, debugging, …"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance",
+              "text": "Pylance",
+              "description": "Works alongside Python in Visual Studio Code to provide performant language support"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter",
+              "text": "Jupyter",
+              "description": "Provides basic notebook support for language kernels that are supported in Jupyter Notebooks"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring",
+              "text": "autoDocstring",
+              "description": "Extension to quickly generate docstrings for python functions"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=Vue.volar",
+              "text": "Volar",
+              "description": "Vue Language Features is a language support extension built for Vue, Vitepress and petite-vue"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode",
+              "text": "SonarLint",
+              "description": "IDE extension that lets you fix coding issues before they exist"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=sourcery.sourcery",
+              "text": "Sourcery",
+              "description": "Pair programmer who will help you improve your code anytime you're working in Python"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode",
+              "text": "Tabnine",
+              "description": "Boost your productivity with the expert guidance of an AI code completion assistant"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

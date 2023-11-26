@@ -1,0 +1,378 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "itemList",
+    "prop": {
+      "source": "TIMELINE_SECTION"
+    }
+  },
+  "head": {
+    "canonical": "/suggestions/books/",
+    "title": "N/A",
+    "description": "N/A",
+    "thumbnail": "N/A",
+    "thumbnailAlt": "N/A"
+  },
+  "components": [
+    {
+      "name": "TIMELINE_SECTION",
+      "id": "mentions-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "About Mankind",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/BEYi2J",
+              "text": "Sapiens: A Brief History of Humankind",
+              "detail": "Yuval Noah Harari"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/htxQpi",
+              "text": "Homo Deus: A Brief History of Tomorrow",
+              "detail": "Yuval Noah Harari"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/4G8cnW",
+              "text": "21 Lessons for the 21st Century",
+              "detail": "Yuval Noah Harari"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/ZkijDN",
+              "text": "The Omnivore's Dilemma",
+              "detail": "Michael Pollan"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/AZYGqo",
+              "text": "Why We Sleep",
+              "detail": "Matthew Walker"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/5u1rPu",
+              "text": "Lifespan",
+              "detail": "David Sinclair"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/JHXtSf",
+              "text": "The Circadian Code",
+              "detail": "Satchin Pandar"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/zBx9En",
+              "text": "The Molecule of More",
+              "detail": "Daniel Z. Lieberman"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/odtk7k",
+              "text": "Livewired",
+              "detail": "David Eagleman"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/u3jSGu",
+              "text": "The Science and Technology of Growing Young",
+              "detail": "Sergey Young"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/VYsjMb",
+              "text": "Prisoners of Geography",
+              "detail": "Tim Marshall"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/4Z8nts",
+              "text": "The Population Bomb",
+              "detail": "Paul R. Ehrlich"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/rz9tWX",
+              "text": "Salt Sugar Fat",
+              "detail": "Michael Moss"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/q9YSi1",
+              "text": "Dopamine Nation",
+              "detail": "Anna Lembke"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/Q9DCK9",
+              "text": "Outlive: The Science and Art of Longevity",
+              "detail": "Bill Gifford"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "About Psychology",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/SYVa1j",
+              "text": "Blink",
+              "detail": "Malcolm Gladwell"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/tiZkwD",
+              "text": "The Subtle Art of Not Giving a F*ck",
+              "detail": "Mark Manson"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/kpRiSg",
+              "text": "The Social Animal",
+              "detail": "David Brooks"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/daotc4",
+              "text": "Thinking Fast and Slow",
+              "detail": "Daniel Kahneman"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/M1ZsAo",
+              "text": "Weapons of Math Destruction",
+              "detail": "Cathy O'Neil"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/9uFNuE",
+              "text": "Nudge",
+              "detail": "Cad Sunstein"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/kzvJeL",
+              "text": "Talking to Strangers",
+              "detail": "Malcolm Gladwell"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/6fzNS1",
+              "text": "Algorithms to Live By",
+              "detail": "Brian Christian"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/KRzDgq",
+              "text": "The 7 Habits of Highly Effective People",
+              "detail": "Stephen Covey"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "About Entrepreneurship",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/Zzh9Sa",
+              "text": "Work Rules!",
+              "detail": "Laszlo Bock"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/MnNBAm",
+              "text": "Zero to One",
+              "detail": "Peter Thiel"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/GvzUu6",
+              "text": "The No Asshole Rule",
+              "detail": "Robert I. Sutton"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/XpjVAk",
+              "text": "The Hard Thing About Hard Things",
+              "detail": "Ben Horowitz"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/niaJPM",
+              "text": "Never Eat Alone",
+              "detail": "Keith Ferrazzi"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/F351mr",
+              "text": "Amp It Up",
+              "detail": "Frank Slootman"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/ZJ4Mvz",
+              "text": "Crossing the Chasm",
+              "detail": "Geoffrey Moore"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "About Technology",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/t7W8ff",
+              "text": "AI Superpowers",
+              "detail": "Kai-Fu Lee"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/aoQQVp",
+              "text": "Work Pray Code",
+              "detail": "Carolyn Chen"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "About Education",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/cvc4sB",
+              "text": "War against the schools’ academic child abuse",
+              "detail": "Siegfried Engelmann"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/gUZ6xQ",
+              "text": "Disrupting Class",
+              "detail": "Clayton Christensen"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/9z8WG9",
+              "text": "The Autistic Brain",
+              "detail": "Richard Panek"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/Z31Yti",
+              "text": "Overcoming Dyslexia",
+              "detail": "Sally Shaywitz"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/ejKG3y",
+              "text": "The Dyslexic Advantage",
+              "detail": "Brock Eide"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://g.co/kgs/8Fos26",
+              "text": "Teach Your Child to Read in 100 Easy Lessons",
+              "detail": "Elaine Bruner"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

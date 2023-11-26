@@ -1,0 +1,138 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "itemList",
+    "prop": {
+      "source": "TIMELINE_SECTION"
+    }
+  },
+  "head": {
+    "canonical": "/suggestions/podcasts/",
+    "title": "N/A",
+    "description": "N/A",
+    "thumbnail": "N/A",
+    "thumbnailAlt": "N/A"
+  },
+  "components": [
+    {
+      "name": "TIMELINE_SECTION",
+      "id": "mentions-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "About Everything",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://open.spotify.com/show/1VXcH8QHkjRcTCEd88U3ti",
+              "text": "TED Talks Daily",
+              "description": "Every weekday, TED Talks Daily brings you the latest talks in audio"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "About Technology",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://open.spotify.com/show/2MAi0BvDc6GTFvKFPXnkCL?si=71f860183b044884",
+              "text": "Lex Friedman Podcast",
+              "description": "Conversations about the nature of intelligence, consciousness, love, and power"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "About Health",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://open.spotify.com/playlist/58fwvH3eGhPc21BVsviZ3m",
+              "text": "Lifespan with Dr. David Sinclair",
+              "description": "Topics discussed include the science behind aging and interventions for slowing it"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://open.spotify.com/show/04NcUniuNSDObfUpY8aiPO",
+              "text": "Longevity by Design",
+              "description": "Podcast for individuals looking to experience a longer, healthier life"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://open.spotify.com/show/50MFhL6rItlnDDEStFMSPu?si=5da4e4eb6d90440a",
+              "text": "The Doctor’s Pharmacy with Mark Hyman, M.D.",
+              "description": "Deep conversations about the critical issues of our time in the space of health, wellness, …"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://open.spotify.com/show/1aIVAabjRjnmiouX0zCzF3?si=9cfe056b43094343",
+              "text": "The Matthew Walker Podcast",
+              "description": "All about sleep, the brain, and the body"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://open.spotify.com/show/79CkJF3UJTHFV8Dse3Oy0P",
+              "text": "Huberman Lab",
+              "description": "Discusses science and science-based tools for everyday life"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://open.spotify.com/show/63AWQmsSnFNFHUqnRAOFtD",
+              "text": "The Peter Attia Drive",
+              "description": "All that goes into that from physical to cognitive to emotional health"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "About Startups",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://open.spotify.com/show/2IqXAVFR4e0Bmyjsdc8QzF",
+              "text": "All-In",
+              "description": "Cover all things economic, tech, political, social and poker with industry veterans"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://open.spotify.com/show/5CnDmMUG0S5bSSw612fs8C",
+              "text": "StartUp Podcast",
+              "description": "A documentary series about entrepreneurial life"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

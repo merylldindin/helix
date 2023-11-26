@@ -1,0 +1,170 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "itemList",
+    "prop": {
+      "source": "TIMELINE_SECTION"
+    }
+  },
+  "head": {
+    "canonical": "/suggestions/newsletters/",
+    "title": "N/A",
+    "description": "N/A",
+    "thumbnail": "N/A",
+    "thumbnailAlt": "N/A"
+  },
+  "components": [
+    {
+      "name": "TIMELINE_SECTION",
+      "id": "mentions-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Technology Trends",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://www.producthunt.com/newsletter",
+              "text": "ProductHunt",
+              "description": "Daily digest of the best of Product Hunt, created by your friends"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://link.morningbrew.com/click/22903793.56836/aHR0cHM6Ly93d3cubW9ybmluZ2JyZXcuY29tL2VtZXJnaW5nLXRlY2gvci8_a2lkPTU4Yzc4ZmQy/5cc8da29639ec8332b3b815aB90f17fa6",
+              "text": "Emerging Tech Brew",
+              "description": "Drones, automation, AI, and more. The technologies that will shape the future of business"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://www.tldrnewsletter.com/",
+              "text": "TLDR Newsletter",
+              "description": "Daily newsletter of the most interesting stories in startups, tech, and programming"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://pycoders.com/",
+              "text": "PyCoder",
+              "description": "Weekly newsletter for those interested in Python development"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://hackernewsletter.com/",
+              "text": "Hacker News",
+              "description": "Weekly newsletter of the best articles on startups, technology, programming, and more"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Data Trends",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://blog.amplifypartners.com/announcing-projects-to-know/",
+              "text": "Projects to Know",
+              "description": "Weekly newsletter featuring 3 academic papers and 3 open source projects in AI"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://dataelixir.com/",
+              "text": "Data Elixir",
+              "description": "Weekly dose of the top data science picks from around the web"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://dataelixir.com/",
+              "text": "Data Elixir",
+              "description": "Weekly dose of the top data science picks from around the web"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Venture Trends",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://ventureupward.substack.com/",
+              "text": "Venture Upward",
+              "description": "A field guide for surviving, getting ahead, and succeeding as a venture capitalist"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://angel.co/newsletters",
+              "text": "AngelList Weekly",
+              "description": "The best of the startup world, curated weekly"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://news.crunchbase.com/daily/",
+              "text": "CrunchBase Daily",
+              "description": "Stay up to date with recent funding rounds, acquisitions, and more"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://techcrunch.com/newsletters",
+              "text": "Techcrunch Newsletters",
+              "description": "Top news your startup can use"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Health Trends",
+              "typography": "text-lexend-deca headline-6 mb-6"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://hubermanlab.com/neural-network/",
+              "text": "The Neural Network",
+              "description": "Official newsletter of the Huberman Lab"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://centuryofbio.substack.com/",
+              "text": "The Century of Biology",
+              "description": "Weekly reads highlighting cutting-edge advances in the life sciences"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
