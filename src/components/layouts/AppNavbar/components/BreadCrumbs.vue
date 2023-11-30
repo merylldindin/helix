@@ -38,6 +38,12 @@ const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
     }
   }
 
+  if (routePath.length > 1) {
+    const pathSuffix = routePath[routePath.length - 1];
+
+    result[result.length - 2].item = `${result[result.length - 2].item}#${pathSuffix}`;
+  }
+
   return result;
 });
 
