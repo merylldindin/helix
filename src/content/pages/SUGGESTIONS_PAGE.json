@@ -1,0 +1,188 @@
+{
+  "layout": "snaped",
+  "schema": {
+    "type": "itemList",
+    "prop": {
+      "source": "IMAGE_SECTION"
+    }
+  },
+  "head": {
+    "canonical": "/suggestions/",
+    "title": "My Recommendations of Books, Health, Newsletters, Podcasts and Coding Tools | Meryll Dindin",
+    "description": "Explore Meryll Dindin's exclusive recommendations across five key areas: must-read books, health enhancements, essential newsletters, insightful podcasts, and efficient coding tools. Discover curated selections that shape my world and can inspire yours.",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/suggestions.webp",
+    "thumbnailAlt": "AI-generated abstract representation of suggestions"
+  },
+  "components": [
+    {
+      "name": "IMAGE_SECTION",
+      "id": "books-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Books",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I have curated a selection of must-read books across various genres. These are my personal favorites, each offering unique perspectives and insights. Check out my reviews to discover why these books are on my top recommended list."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Learn more about my books suggestions",
+              "to": "/suggestions/books/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "AI-generated abstract representation of books",
+          "source": "https://cdn.merylldindin.com/assets/books.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/books-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/books-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/books-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
+      "id": "enhancers-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Enhancers",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "In my pursuit of optimal health, I have explored various wearables, supplements, and health enhancements. I have handpicked the best products that significantly boost my daily wellness. Explore my top recommendations to enhance your health journey."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Learn more about my health enhancers recommendations",
+              "to": "/suggestions/enhancers/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "AI-generated abstract representation of enhancers",
+          "source": "https://cdn.merylldindin.com/assets/enhancers.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/enhancers-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/enhancers-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/enhancers-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
+      "id": "newsletters-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Newsletters",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Stay ahead of the curve with my favorite email newsletters. I have selected the best in technology, ventures, and health, providing you with the latest insights and trends right in your inbox."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Learn more about my books suggestions",
+              "to": "/suggestions/newsletters/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "AI-generated abstract representation of newsletters",
+          "source": "https://cdn.merylldindin.com/assets/newsletters.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/newsletters-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/newsletters-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/newsletters-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
+      "id": "podcasts-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Podcasts",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Join me in discovering the world of podcasts. My top picks focus on psychology, entrepreneurship, and health, offering a blend of engaging discussions and expert insights that are sure to enrich your knowledge."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Learn more about my podcasts suggestions",
+              "to": "/suggestions/podcasts/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "AI-generated abstract representation of podcasts",
+          "source": "https://cdn.merylldindin.com/assets/podcasts.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/podcasts-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/podcasts-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/podcasts-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
+      "id": "toolkits-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Toolkits",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Efficiency is key in coding, and I have compiled a list of essential tools that have streamlined my coding process. Explore these resources to enhance your coding efficiency and workflow."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Learn more about my toolkits suggestions",
+              "to": "/suggestions/toolkits/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "AI-generated abstract representation of toolkits",
+          "source": "https://cdn.merylldindin.com/assets/toolkits.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/toolkits-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/toolkits-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/toolkits-mobile-lazy.webp"
+        }
+      }
+    }
+  ]
+}

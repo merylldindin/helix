@@ -28,7 +28,7 @@ const { smAndDown } = useDisplay();
         class="reference-container"
         :class="{ 'mb-3': smAndDown && reference.detail }"
       >
-        <p class="reference-text text-1 mb-2 text-ellipsis"> {{ reference.text }} </p>
+        <p class="reference-text text-1 text-ellipsis"> {{ reference.text }} </p>
 
         <div v-if="reference.detail" class="reference-separator" />
 
@@ -37,7 +37,11 @@ const { smAndDown } = useDisplay();
         </span>
       </div>
 
-      <p v-if="reference.description" class="text-2 text-blue-grey-darken-2 mt-n3 mb-3">
+      <p
+        v-if="reference.description"
+        class="text-2 text-blue-grey-darken-2 mt-n3"
+        :class="smAndDown ? 'mb-3' : 'mb-1'"
+      >
         {{ reference.description }}
       </p>
     </div>
@@ -109,6 +113,10 @@ const { smAndDown } = useDisplay();
     padding: 0;
     flex-direction: column;
     align-items: flex-start;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
 </style>

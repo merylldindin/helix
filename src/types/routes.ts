@@ -17,6 +17,7 @@ export enum RoutePath {
   POLYGON = "/ventures/polygon/",
   PRIVACY_POLICY = "/legal/privacy-policy/",
   SLEEP_STAGE_CLASSIFICATION = "/thoughts/sleep-stage-classification/",
+  SUGGESTIONS = "/suggestions/",
   SYSNAV = "/ventures/sysnav/",
   TERMS_OF_USE = "/legal/terms-of-use/",
   THOUGHTS = "/thoughts/",
