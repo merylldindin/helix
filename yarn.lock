@@ -2312,7 +2312,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.9.0":
+"@nuxt/schema@npm:3.9.0, @nuxt/schema@npm:^3.9.0":
   version: 3.9.0
   resolution: "@nuxt/schema@npm:3.9.0"
   dependencies:
@@ -8714,7 +8714,7 @@ __metadata:
     nuxt: "npm:3.9.0"
     nuxt-jsonld: "npm:2.0.8"
     nuxt-link-checker: "npm:2.1.11"
-    nuxt-simple-sitemap: "npm:4.2.1"
+    nuxt-simple-sitemap: "npm:4.2.3"
     nuxt-swiper: "npm:1.2.2"
     nuxt-unhead: "npm:1.4.17"
     postcss-html: "npm:1.5.0"
@@ -10983,25 +10983,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-simple-sitemap@npm:4.2.1":
-  version: 4.2.1
-  resolution: "nuxt-simple-sitemap@npm:4.2.1"
+"nuxt-simple-sitemap@npm:4.2.3":
+  version: 4.2.3
+  resolution: "nuxt-simple-sitemap@npm:4.2.3"
   dependencies:
     "@nuxt/devtools-kit": "npm:^1.0.6"
     "@nuxt/devtools-ui-kit": "npm:^1.0.6"
     "@nuxt/kit": "npm:^3.9.0"
     chalk: "npm:^5.3.0"
     defu: "npm:^6.1.3"
-    nuxt-site-config: "npm:^2.1.2"
-    nuxt-site-config-kit: "npm:^2.1.2"
+    nuxt-site-config: "npm:^2.1.3"
+    nuxt-site-config-kit: "npm:^2.1.3"
     ofetch: "npm:^1.3.3"
     pathe: "npm:^1.1.1"
     radix3: "npm:^1.1.0"
     semver: "npm:^7.5.4"
     sirv: "npm:^2.0.4"
-    site-config-stack: "npm:^2.1.2"
+    site-config-stack: "npm:^2.1.3"
     ufo: "npm:^1.3.2"
-  checksum: 7fd82b0362efeaf53296dc89ec91302dc124ed915e7d5ccfe8702fc5c410e2a8d61b8e81a7daa7d49ebc39c3c27f23522ac290aacf7edfc926ea98507e5f8f87
+  checksum: 448db02ffe1c58889be9bec3d9f7851571854036f713ced86448246b7f35e9c736f7c5ac5affab78d3df134748fee7e744f6ab59140fa738d865e5a5d0519a93
   languageName: node
   linkType: hard
 
@@ -11019,17 +11019,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-site-config-kit@npm:2.1.2, nuxt-site-config-kit@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "nuxt-site-config-kit@npm:2.1.2"
+"nuxt-site-config-kit@npm:2.1.3, nuxt-site-config-kit@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "nuxt-site-config-kit@npm:2.1.3"
   dependencies:
-    "@nuxt/kit": "npm:^3.8.2"
-    "@nuxt/schema": "npm:^3.8.2"
+    "@nuxt/kit": "npm:^3.9.0"
+    "@nuxt/schema": "npm:^3.9.0"
     pkg-types: "npm:^1.0.3"
-    site-config-stack: "npm:2.1.2"
-    std-env: "npm:^3.6.0"
+    site-config-stack: "npm:2.1.3"
+    std-env: "npm:^3.7.0"
     ufo: "npm:^1.3.2"
-  checksum: 46013d62017d18bf539b274dd8c77ef84d1a09422177b647d46ac0df3df6d78ffa3e9cf79d73e2da1f26f2a51fd114bf054bb3c65e97096d227a6abde7eaf40c
+  checksum: 9dd873557734ddda55cdb54a6d3a68bb9b6d38da2460133aad7c51d4e182c2ec3340b5f22218f1d6df164ea41fa19e2ed4e6cff091fa0b12b797e6b88c20815e
   languageName: node
   linkType: hard
 
@@ -11051,21 +11051,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-site-config@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "nuxt-site-config@npm:2.1.2"
+"nuxt-site-config@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "nuxt-site-config@npm:2.1.3"
   dependencies:
     "@nuxt/devtools-kit": "npm:^1.0.6"
     "@nuxt/devtools-ui-kit": "npm:^1.0.6"
-    "@nuxt/kit": "npm:^3.8.2"
-    "@nuxt/schema": "npm:^3.8.2"
-    nuxt-site-config-kit: "npm:2.1.2"
+    "@nuxt/kit": "npm:^3.9.0"
+    "@nuxt/schema": "npm:^3.9.0"
+    nuxt-site-config-kit: "npm:2.1.3"
     pathe: "npm:^1.1.1"
     shiki-es: "npm:^0.14.0"
-    sirv: "npm:^2.0.3"
-    site-config-stack: "npm:2.1.2"
+    sirv: "npm:^2.0.4"
+    site-config-stack: "npm:2.1.3"
     ufo: "npm:^1.3.2"
-  checksum: 0191bd74040a61927733759c3a4fe73bc7be89f681a826799bb008f8ad683f6c5ab9f72c64f1b245d73a7b2bfa21b5e918b7cc6392e1abf145778e26b3b72d55
+  checksum: b63bc6b63172c073677564a1af93b4d8aeed5f564f72d2f01cede25a1280a36496e3f096a2520d551383f065998e3d5c4edc7d38479cc69e3669b4dc72c2df24
   languageName: node
   linkType: hard
 
@@ -13566,14 +13566,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"site-config-stack@npm:2.1.2, site-config-stack@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "site-config-stack@npm:2.1.2"
+"site-config-stack@npm:2.1.3, site-config-stack@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "site-config-stack@npm:2.1.3"
   dependencies:
     ufo: "npm:^1.3.2"
   peerDependencies:
     vue: ^3
-  checksum: 3821c8b24abd26605366944afc1a1580ca5c8b21a26a0e448ef7893ff8cc8aab0206176b5b2492d32101f7dbe739d843091ea7178e4143de657a6fb85e85ffcc
+  checksum: fec765ac695c0197a404624a131a7116a2d29f2595bb1c6c8423ab316bc3944fb7ebb6d3ff504dc902b589fbc28f2c34d29b020c32aba71df33787cbe7dc42a1
   languageName: node
   linkType: hard
 
