@@ -3262,16 +3262,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-core@npm:3.4.11":
-  version: 3.4.11
-  resolution: "@vue/compiler-core@npm:3.4.11"
+"@vue/compiler-core@npm:3.4.12":
+  version: 3.4.12
+  resolution: "@vue/compiler-core@npm:3.4.12"
   dependencies:
     "@babel/parser": "npm:^7.23.6"
-    "@vue/shared": "npm:3.4.11"
+    "@vue/shared": "npm:3.4.12"
     entities: "npm:^4.5.0"
     estree-walker: "npm:^2.0.2"
     source-map-js: "npm:^1.0.2"
-  checksum: ba682a021622c829f277e354792a951da5f8756100cf8743e074e66028aeb2ec0d481bfc4ac04eda3a8a90a24ba063b0a6a825aa9ec92f1f47d312b29311368a
+  checksum: a3ab546dbe278541fadd864f5353e818fc29ab32116e1408756f7cb8a5023ec6369940d9c5dfe7d436d7232145b3c05067232df598a0fd0048c824853bf395e1
   languageName: node
   linkType: hard
 
@@ -3288,13 +3288,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-dom@npm:3.4.11":
-  version: 3.4.11
-  resolution: "@vue/compiler-dom@npm:3.4.11"
+"@vue/compiler-dom@npm:3.4.12":
+  version: 3.4.12
+  resolution: "@vue/compiler-dom@npm:3.4.12"
   dependencies:
-    "@vue/compiler-core": "npm:3.4.11"
-    "@vue/shared": "npm:3.4.11"
-  checksum: 2ff178e3e01d0c0775e0341b42de8cc32eb7b89b71a534f3a342b2267a2d14088e1c51ecded89fe6127309aaad3843834276f4a482c2a9cedc630a8fea3018a7
+    "@vue/compiler-core": "npm:3.4.12"
+    "@vue/shared": "npm:3.4.12"
+  checksum: e863547032382ade6bf6fcb060a41178a907e8bf07a446ee51d652bc8abc14bfd8a3270fc33c7ddb84ad5522c613194785742ee43f702c36ffa74f97e5b4ce5f
   languageName: node
   linkType: hard
 
@@ -3323,20 +3323,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-sfc@npm:3.4.11":
-  version: 3.4.11
-  resolution: "@vue/compiler-sfc@npm:3.4.11"
+"@vue/compiler-sfc@npm:3.4.12":
+  version: 3.4.12
+  resolution: "@vue/compiler-sfc@npm:3.4.12"
   dependencies:
     "@babel/parser": "npm:^7.23.6"
-    "@vue/compiler-core": "npm:3.4.11"
-    "@vue/compiler-dom": "npm:3.4.11"
-    "@vue/compiler-ssr": "npm:3.4.11"
-    "@vue/shared": "npm:3.4.11"
+    "@vue/compiler-core": "npm:3.4.12"
+    "@vue/compiler-dom": "npm:3.4.12"
+    "@vue/compiler-ssr": "npm:3.4.12"
+    "@vue/shared": "npm:3.4.12"
     estree-walker: "npm:^2.0.2"
     magic-string: "npm:^0.30.5"
     postcss: "npm:^8.4.32"
     source-map-js: "npm:^1.0.2"
-  checksum: 72f95ae958619bfebbace097ee7938bd33d2196deb704175560038bb72d3ce8d1a27ac4bcc94e4e650330326c00f9434e277bb56cbbe3b94ed4862c99dc59558
+  checksum: 65d91ddca148d53d96c7586c37f6162f527d32adb772462f728066cb4f0ac9e94056acea236d1b37d09b9462c545eae0522494d5031721d467bbd9bb35e402b9
   languageName: node
   linkType: hard
 
@@ -3357,13 +3357,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-ssr@npm:3.4.11":
-  version: 3.4.11
-  resolution: "@vue/compiler-ssr@npm:3.4.11"
+"@vue/compiler-ssr@npm:3.4.12":
+  version: 3.4.12
+  resolution: "@vue/compiler-ssr@npm:3.4.12"
   dependencies:
-    "@vue/compiler-dom": "npm:3.4.11"
-    "@vue/shared": "npm:3.4.11"
-  checksum: 83a0da52a9e19d777de3abd43098a23eb5a0cebdeff1c16b36c811dbcbb18c0e17a61f705ba0654a1bd8dc14a82b40ca1a7c9b565778d2f3a66b8d8be225790d
+    "@vue/compiler-dom": "npm:3.4.12"
+    "@vue/shared": "npm:3.4.12"
+  checksum: b349ce98c45967ec671f99512a5966b8f48e6f0fa375df3c4d3042e02838850f51eb06f4da12d2844ae7eed6119080c573282cf7f36cc9f753c4ad7a2613cb96
   languageName: node
   linkType: hard
 
@@ -3448,10 +3448,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/shared@npm:3.4.11":
-  version: 3.4.11
-  resolution: "@vue/shared@npm:3.4.11"
-  checksum: 1890108c9541eb82976abab3ed21b99b2d9a9382d09596b97554c2990d738093da441109bea8f7e9c567c8675db81be9113544186724ff2d3b65423229d1711a
+"@vue/shared@npm:3.4.12":
+  version: 3.4.12
+  resolution: "@vue/shared@npm:3.4.12"
+  checksum: be8501d35696d9d2fb1f8368a6a2c1be1f476a4275ac0db66313e568bbeb73e8e8b4abc0d65b30941dd40226f8154692846937cb152acea828318a7d442d03d1
   languageName: node
   linkType: hard
 
@@ -7170,7 +7170,7 @@ __metadata:
     "@types/node": "npm:20.11.0"
     "@typescript-eslint/parser": "npm:6.18.1"
     "@unhead/addons": "npm:1.8.9"
-    "@vue/compiler-sfc": "npm:3.4.11"
+    "@vue/compiler-sfc": "npm:3.4.12"
     cypress: "npm:13.6.2"
     eslint: "npm:8.56.0"
     eslint-config-airbnb-base: "npm:15.0.0"
