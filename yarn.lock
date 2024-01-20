@@ -7466,7 +7466,7 @@ __metadata:
     vue-gtag-next: "npm:1.14.0"
     vue-tsc: "npm:1.8.27"
     vue3-lottie: "npm:3.2.0"
-    vuetify: "npm:3.5.0"
+    vuetify: "npm:3.5.1"
   languageName: unknown
   linkType: soft
 
@@ -13806,9 +13806,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:3.5.0":
-  version: 3.5.0
-  resolution: "vuetify@npm:3.5.0"
+"vuetify@npm:3.5.1":
+  version: 3.5.1
+  resolution: "vuetify@npm:3.5.1"
   peerDependencies:
     typescript: ">=4.7"
     vite-plugin-vuetify: ">=1.0.0-alpha.12"
@@ -13824,7 +13824,7 @@ __metadata:
       optional: true
     webpack-plugin-vuetify:
       optional: true
-  checksum: 5671d81367ad6f7e65c65726489dfa413c5ea7fdd3819d17ff1f30bcc03034821e7a2c48c533abc278cf0607fa5c26dc92400f714f56e5dd71e630ca33510050
+  checksum: c6a1176043ad1417991174dbca4246ba2be9750ed8b6aba0541bd56cf35fa1646c3b6d15a65c61b5e71a9e1857af7a71f54743a6d843e00d8eccfda3617fd4bb
   languageName: node
   linkType: hard
 
