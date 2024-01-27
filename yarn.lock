@@ -7443,7 +7443,7 @@ __metadata:
     eslint-plugin-sonarjs: "npm:0.23.0"
     eslint-plugin-unicorn: "npm:50.0.1"
     eslint-plugin-vue: "npm:9.20.1"
-    husky: "npm:8.0.3"
+    husky: "npm:9.0.6"
     nuxt: "npm:3.9.3"
     nuxt-jsonld: "npm:2.0.8"
     nuxt-link-checker: "npm:2.1.11"
@@ -7624,12 +7624,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:8.0.3":
-  version: 8.0.3
-  resolution: "husky@npm:8.0.3"
+"husky@npm:9.0.6":
+  version: 9.0.6
+  resolution: "husky@npm:9.0.6"
   bin:
-    husky: lib/bin.js
-  checksum: 6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
+    husky: bin.js
+  checksum: 1ef034899dcdc35e5bf5436e1e02f8a7177dbb8a10dd91b77456d7fe110c204d8d4a7d53180e0651b87e35f39d7e0e95a53b4b7c334f68aefbc0d93bce4b54f8
   languageName: node
   linkType: hard
 
