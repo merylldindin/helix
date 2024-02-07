@@ -3,11 +3,6 @@
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "verbatimModuleSyntax": false,
-    "types": [
-      "@nuxt/types",
-      "@nuxt/vue-app",
-      "@types/node",
-      "vuetify"
-    ]
-  },
+    "types": ["@nuxt/types", "@nuxt/vue-app", "@types/node", "vuetify"]
+  }
 }
