@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
 const cProps = defineProps({
   delay: {
@@ -21,29 +21,32 @@ const CHARACTERS_LIST =
 const shuffleIndex = ref<number>(0);
 const shuffleTitle = ref<string>(cProps.title);
 
-const shuffleAnimation = setInterval(() => {
-  for (let index = shuffleIndex.value; index < cProps.title.length; index += 1) {
-    shuffleTitle.value =
-      shuffleTitle.value.substr(0, index) +
-      CHARACTERS_LIST[Math.floor(Math.random() * CHARACTERS_LIST.length)] +
-      shuffleTitle.value.substr(index + 1);
-  }
-}, SHUFFLING_INTERVAL);
-
-setTimeout(() => {
-  const unshuffleAnimation = setInterval(() => {
-    if (shuffleIndex.value < cProps.title.length) {
+onMounted(() => {
+  const shuffleAnimation = setInterval(() => {
+    for (let index = shuffleIndex.value; index < cProps.title.length; index += 1) {
       shuffleTitle.value =
-        shuffleTitle.value.substr(0, shuffleIndex.value) +
-        cProps.title[shuffleIndex.value] +
-        shuffleTitle.value.substr(shuffleIndex.value + 1);
-      shuffleIndex.value += 1;
-    } else {
-      clearInterval(shuffleAnimation);
-      clearInterval(unshuffleAnimation);
+        shuffleTitle.value.substr(0, index) +
+        CHARACTERS_LIST[Math.floor(Math.random() * CHARACTERS_LIST.length)] +
+        shuffleTitle.value.substr(index + 1);
     }
-  }, UNSHUFFLING_INTERVAL);
-}, cProps.delay);
+  }, SHUFFLING_INTERVAL);
+
+  setTimeout(() => {
+    const unshuffleAnimation = setInterval(() => {
+      if (shuffleIndex.value < cProps.title.length) {
+        shuffleTitle.value =
+          shuffleTitle.value.substr(0, shuffleIndex.value) +
+          cProps.title[shuffleIndex.value] +
+          shuffleTitle.value.substr(shuffleIndex.value + 1);
+        shuffleIndex.value += 1;
+      } else {
+        clearInterval(shuffleAnimation);
+        clearInterval(unshuffleAnimation);
+      }
+    }, UNSHUFFLING_INTERVAL);
+  }, cProps.delay);
+})
+
 </script>
 
 <template>

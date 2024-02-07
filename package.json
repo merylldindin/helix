@@ -5,7 +5,7 @@
   "scripts": {
     "build": "nuxi generate",
     "checks": "yarn prettier & yarn stylelint & yarn eslint & yarn types &",
-    "clean": "nuxi clean",
+    "clean": "nuxi cleanup && nuxi prepare",
     "cypress": "cypress run --browser chrome",
     "cypress:open": "cypress open --browser chrome",
     "eslint": "eslint \"src/**/*.{ts,js,vue}\" --no-fix",
@@ -52,7 +52,7 @@
     "eslint-plugin-unicorn": "50.0.1",
     "eslint-plugin-vue": "9.21.1",
     "husky": "9.0.10",
-    "nuxt": "3.10.0",
+    "nuxt": "3.10.1",
     "nuxt-link-checker": "2.1.11",
     "nuxt-simple-sitemap": "4.4.1",
     "nuxt-unhead": "1.4.17",
