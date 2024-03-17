@@ -7663,7 +7663,7 @@ __metadata:
     typescript: "npm:5.4.2"
     vue-gtag-next: "npm:1.14.0"
     vue-tsc: "npm:2.0.6"
-    vue3-lottie: "npm:3.2.0"
+    vue3-lottie: "npm:3.3.0"
     vuetify: "npm:3.5.9"
   languageName: unknown
   linkType: soft
@@ -8794,13 +8794,6 @@ __metadata:
   dependencies:
     p-locate: "npm:^6.0.0"
   checksum: 10c0/139e8a7fe11cfbd7f20db03923cacfa5db9e14fa14887ea121345597472b4a63c1a42a8a5187defeeff6acf98fd568da7382aa39682d38f0af27433953a97751
-  languageName: node
-  linkType: hard
-
-"lodash-es@npm:^4.17.21":
-  version: 4.17.21
-  resolution: "lodash-es@npm:4.17.21"
-  checksum: 10c0/fb407355f7e6cd523a9383e76e6b455321f0f153a6c9625e21a8827d10c54c2a2341bd2ae8d034358b60e07325e1330c14c224ff582d04612a46a4f0479ff2f2
   languageName: node
   linkType: hard
 
@@ -13829,15 +13822,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue3-lottie@npm:3.2.0":
-  version: 3.2.0
-  resolution: "vue3-lottie@npm:3.2.0"
+"vue3-lottie@npm:3.3.0":
+  version: 3.3.0
+  resolution: "vue3-lottie@npm:3.3.0"
   dependencies:
-    lodash-es: "npm:^4.17.21"
+    fast-deep-equal: "npm:^3.1.3"
+    klona: "npm:^2.0.6"
     lottie-web: "npm:5.12.2"
   peerDependencies:
     vue: ^3.2
-  checksum: 10c0/601fbffd0596190dc16afd815eac0ad2e1050f5caa299885f3a08a064b3ff1801db162a73c67eb25c5fc35d3ef253a4aebc7956b66ebd2342a6387aa23f070f5
+  checksum: 10c0/5c6be2ae6feb7e32041036ea1596aedeabffcf14d9dc86c7733fa5ae313580d1c53f34f90aeeeb8caad9b1cf4d45ee8ab461ed1aff987e8c9cfe605176fc0f35
   languageName: node
   linkType: hard
 
