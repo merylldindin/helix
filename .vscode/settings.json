@@ -3,7 +3,7 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,

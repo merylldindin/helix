@@ -4,17 +4,16 @@
   "private": true,
   "scripts": {
     "build": "nuxi generate",
-    "checks": "yarn prettier & yarn stylelint & yarn eslint & yarn types &",
     "clean": "nuxi cleanup && nuxi prepare",
     "cypress": "cypress run --browser chrome",
     "cypress:open": "cypress open --browser chrome",
     "eslint": "eslint \"src/**/*.{ts,js,vue}\" --no-fix",
     "eslint:fix": "eslint \"src/**/*.{ts,js,vue}\" --fix",
-    "prepare": "nuxi prepare",
+    "prepare": "husky",
     "prettier": "prettier --check --log-level error \"src/**/*.{ts,js,scss,css,vue,json}\"",
     "prettier:fix": "prettier --write \"src/**/*.{ts,js,scss,css,vue,json}\"",
     "serve": "serve dist/",
-    "setup": "husky install && chmod ug+x .husky/*",
+    "setup": "husky init && rm .husky/pre-commit && chmod ug+x .husky/*",
     "start": "nuxi dev -o",
     "stylelint": "npx stylelint 'src/**/*.{vue,scss}'",
     "stylelint:fix": "npx stylelint 'src/**/*.{vue,scss}' --fix",
@@ -72,5 +71,5 @@
     "vue-gtag-next": "1.14.0",
     "vue-tsc": "2.0.13"
   },
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.1.1"
 }
