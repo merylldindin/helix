@@ -7,10 +7,10 @@ authors = ["Meryll Dindin <merylldin@gmail.com>"]
 description = "Nuxt 3 Template for Static Website"
 name = "helix"
 readme = "README.md"
-version = "0.1.0"
+version = "1.0.0"
 
 [tool.poetry.dependencies]
-python = "~3.11"
+python = "~3.12"
 
 [tool.poetry.group.devops.dependencies]
-sirtuin = "^0.1.3"
+sirtuin = "^1.0.1"

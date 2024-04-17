@@ -6,9 +6,12 @@ setup: ## Install developper experience
 	yarn setup
 
 install: ## Install project dependencies
+	poetry install --sync --no-root --with devops
 	yarn install
 
 install-hard: ## Install project dependencies from scratch
+	rm -rf .venv/
+	poetry lock --no-update
 	rm -rf node_modules/ yarn.lock
 	yarn cache clean
 	make install
