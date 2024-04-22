@@ -33,8 +33,8 @@ export const CUSTOM_HEAD = {
       rel: "preconnect",
     },
     {
-      as: "font" as "font",
-      crossorigin: "anonymous" as "anonymous",
+      as: "font" as const,
+      crossorigin: "anonymous" as const,
       href: `${DEFAULT_CDN_HOST}/fonts/lexend-deca-regular.woff`,
       rel: "preload",
       type: "font/woff",
@@ -42,7 +42,7 @@ export const CUSTOM_HEAD = {
   ],
   meta: [
     {
-      charset: "utf-8",
+      charset: "utf8",
     },
     {
       content: "© 2023 Meryll Dindin",

@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomHeadline, CustomImage, CustomSection } from "@/components/shared";
-import { DeliveredImage } from "@/types";
+import type { DeliveredImage } from "@/types";
 
 defineProps({
   image: {

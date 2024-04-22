@@ -28,6 +28,7 @@ export default defineNuxtConfig({
   },
   modules: [
     "@nuxt/devtools",
+    '@nuxt/eslint',
     "nuxt-jsonld",
     "nuxt-link-checker",
     "nuxt-simple-sitemap",

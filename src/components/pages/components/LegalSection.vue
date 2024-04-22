@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomHeadline, CustomSection, CustomText } from "@/components/shared";

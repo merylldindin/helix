@@ -1,4 +1,4 @@
-import { ThemeDefinition } from "vuetify";
+import type { ThemeDefinition } from "vuetify";
 
 import { ColorName } from "@/types";
 

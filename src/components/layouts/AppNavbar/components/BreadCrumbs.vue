@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import { ComputedRef, computed } from "vue";
+import type { ComputedRef } from "vue";
+import { computed } from "vue";
 import { useRoute } from "vue-router";
 import { useDisplay } from "vuetify";
 
@@ -39,9 +40,10 @@ const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
   }
 
   if (routePath.length > 1) {
-    const pathSuffix = routePath[routePath.length - 1];
+    const pathSuffix = routePath.at(-1);
 
-    result[result.length - 2].item = `${result[result.length - 2].item}#${pathSuffix}`;
+    // @ts-ignore
+    result.at(-2).item = `${result.at(-2).item}#${pathSuffix}`;
   }
 
   return result;

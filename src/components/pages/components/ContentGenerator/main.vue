@@ -1,9 +1,10 @@
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomHeadline, CustomImage, CustomLink } from "@/components/shared";
-import { ContentType, GenericContent } from "@/types";
+import type { GenericContent } from "@/types";
+import { ContentType } from "@/types";
 
 import {
   ArticleContent,

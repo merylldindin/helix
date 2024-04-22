@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ComputedRef, computed, onMounted } from "vue";
+import type { ComputedRef } from "vue";
+import { computed, onMounted } from "vue";
 import { useRoute } from "vue-router";
 
 import { DynamicPage } from "@/components/pages";
@@ -42,10 +43,10 @@ onMounted(() => {
   }
 
   if (pageSchema.value === "blogPosting") {
-    getBlogPostSchema(pageContent.value).forEach((schema) => {
+    for (const schema of getBlogPostSchema(pageContent.value)) {
       // @ts-ignore
       useJsonld(schema);
-    });
+    }
   }
 });
 </script>

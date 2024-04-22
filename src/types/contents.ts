@@ -1,4 +1,4 @@
-import { DeliveredImage } from "./global";
+import type { DeliveredImage } from "./global";
 
 export enum ContentType {
   ARTICLE = "article",

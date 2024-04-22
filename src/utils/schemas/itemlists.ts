@@ -1,11 +1,6 @@
 import { DEFAULT_URL } from "@/content";
-import {
-  ComponentName,
-  ContentType,
-  GenericContent,
-  ReferenceItem,
-  TimelineContent,
-} from "@/types";
+import type { GenericContent, ReferenceItem, TimelineContent } from "@/types";
+import { ComponentName, ContentType } from "@/types";
 
 enum ItemListConfig {
   IMAGE_SECTION = "IMAGE_SECTION",
@@ -59,7 +54,7 @@ const getSectionImageItemList = (content: any): unknown => {
     "@context": "https://schema.org",
     "@type": "ItemList",
     itemListElement: sections.map((section, index) => {
-      const url = section.props.content.slice(-1)[0].prop.to;
+      const url = section.props.content.at(-1).prop.to;
 
       return {
         "@type": "ListItem",

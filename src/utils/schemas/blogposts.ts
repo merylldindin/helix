@@ -1,11 +1,11 @@
 import { DEFAULT_NAME, DEFAULT_URL } from "@/content";
-import {
+import type {
   ArticleContent,
-  ContentType,
   GenericContent,
   HeadlineContent,
   SocialsContent,
 } from "@/types";
+import { ContentType } from "@/types";
 
 interface BlogPostConfig {
   dateModified: string;
@@ -38,13 +38,11 @@ const getBlogPostReferences = (content: any): unknown | null => {
     ? {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        itemListElement: [
-          ...references.map((reference, index) => ({
-            "@type": "ListItem",
-            position: index + 1,
-            url: reference,
-          })),
-        ],
+        itemListElement: references.map((reference, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          url: reference,
+        })),
         numberOfItems: references.length,
         url: pageUrl,
       }

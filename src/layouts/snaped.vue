@@ -13,9 +13,9 @@ const setSectionHeight = async () => {
 
   const sections = document.querySelectorAll("section");
 
-  sections.forEach((section) => {
+  for (const section of sections) {
     section.style.height = `${windowHeight}px`;
-  });
+  }
 };
 
 const setScrollPosition = async () => {
@@ -26,7 +26,7 @@ const setScrollPosition = async () => {
   if (route && route.hash) {
     const suffixRegex = /(-banner|-header|-section)$/;
 
-    const anchor = Array.from(sections).find(
+    const anchor = [...sections].find(
       (section) => section.id.replace(suffixRegex, "") === route.hash.slice(1)
     );
 
@@ -34,7 +34,7 @@ const setScrollPosition = async () => {
       anchor.scrollIntoView();
     }
   } else {
-    const header = Array.from(sections).find(
+    const header = [...sections].find(
       (section) => section.id.startsWith("header-") || section.id.startsWith("home-")
     );
 

@@ -8,11 +8,11 @@ import { COOKIE_BANNER_CONTENT } from "@/content";
 const DEFAULT_GA_TRACKING_KEY = "_hx_tracking";
 
 const isTracking = ref<boolean>(
-  process.client ? localStorage.getItem(DEFAULT_GA_TRACKING_KEY) === "true" : false
+  import.meta.client ? localStorage.getItem(DEFAULT_GA_TRACKING_KEY) === "true" : false
 );
 
 const dismissBanner = () => {
-  if (process.client) {
+  if (import.meta.client) {
     localStorage.setItem(DEFAULT_GA_TRACKING_KEY, "true");
   }
 

@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomImage, CustomSection } from "@/components/shared";
-import { DeliveredImage, GenericContent } from "@/types";
+import type { DeliveredImage, GenericContent } from "@/types";
 
 import ContentGenerator from "./ContentGenerator/main.vue";
 

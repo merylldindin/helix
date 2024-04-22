@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 
-import { ColorName, IconName } from "@/types";
+import type { ColorName, IconName } from "@/types";
 
 defineProps({
   ariaLabel: {

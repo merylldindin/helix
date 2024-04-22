@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { ComputedRef, PropType, computed, onMounted, ref, watch } from "vue";
+import type { ComputedRef, PropType } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 import { useDisplay } from "vuetify";
 
-import { DeliveredImage } from "@/types";
+import type { DeliveredImage } from "@/types";
 
 const cProps = defineProps({
   aspectRatio: {

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ColorName, IconName } from "@/types";
+import type { ColorName, IconName } from "@/types";
 
 import CustomImage from "./CustomImage.vue";
 
@@ -20,18 +20,24 @@ defineProps({
 
 const matchSizeToPixel = (size: string): string => {
   switch (size) {
-    case "x-small":
+    case "x-small": {
       return "12px";
-    case "small":
+    }
+    case "small": {
       return "14px";
-    case "medium":
+    }
+    case "medium": {
       return "16px";
-    case "large":
+    }
+    case "large": {
       return "22px";
-    case "x-large":
+    }
+    case "x-large": {
       return "28px";
-    default:
+    }
+    default: {
       return "16px";
+    }
   }
 };
 </script>

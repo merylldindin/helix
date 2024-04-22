@@ -13,9 +13,9 @@ const setSectionHeight = async () => {
 
   const sections = document.querySelectorAll("section");
 
-  sections.forEach((section) => {
+  for (const section of sections) {
     section.style.height = `${windowHeight}px`;
-  });
+  }
 };
 
 onMounted(async () => {

@@ -1,10 +1,11 @@
 <script lang="ts" setup>
-import { PropType, onMounted, onUnmounted, ref } from "vue";
+import type { PropType } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 import { useDisplay } from "vuetify";
 
 import ScrollDown from "@/assets/animations/scroll-down.json";
 import { CustomImage, CustomSection } from "@/components/shared";
-import { DeliveredImage, GenericContent } from "@/types";
+import type { DeliveredImage, GenericContent } from "@/types";
 
 import ContentGenerator from "./ContentGenerator/main.vue";
 
@@ -22,10 +23,10 @@ defineProps({
 const { mobile } = useDisplay();
 
 const pageMargin = ref<string>("80vh");
-const headerOpacity = ref<number>(1.0);
+const headerOpacity = ref<number>(1);
 
 const opacityScrollHandler = () => {
-  headerOpacity.value = 1.0 - window.scrollY / window.innerHeight;
+  headerOpacity.value = 1 - window.scrollY / window.innerHeight;
 };
 
 const marginResizeHandler = () => {

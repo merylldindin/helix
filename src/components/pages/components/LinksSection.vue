@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 
 import { CustomSection } from "@/components/shared";
-import { GenericContent } from "@/types";
+import type { GenericContent } from "@/types";
 
 import ContentGenerator from "./ContentGenerator/main.vue";
 

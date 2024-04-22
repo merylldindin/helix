@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref, onMounted } from "vue";
+import { onMounted, ref } from "vue";
 
 const cProps = defineProps({
   delay: {
@@ -25,9 +25,9 @@ onMounted(() => {
   const shuffleAnimation = setInterval(() => {
     for (let index = shuffleIndex.value; index < cProps.title.length; index += 1) {
       shuffleTitle.value =
-        shuffleTitle.value.substr(0, index) +
+        shuffleTitle.value.slice(0, Math.max(0, index)) +
         CHARACTERS_LIST[Math.floor(Math.random() * CHARACTERS_LIST.length)] +
-        shuffleTitle.value.substr(index + 1);
+        shuffleTitle.value.slice(index + 1);
     }
   }, SHUFFLING_INTERVAL);
 
@@ -35,9 +35,9 @@ onMounted(() => {
     const unshuffleAnimation = setInterval(() => {
       if (shuffleIndex.value < cProps.title.length) {
         shuffleTitle.value =
-          shuffleTitle.value.substr(0, shuffleIndex.value) +
+          shuffleTitle.value.slice(0, Math.max(0, shuffleIndex.value)) +
           cProps.title[shuffleIndex.value] +
-          shuffleTitle.value.substr(shuffleIndex.value + 1);
+          shuffleTitle.value.slice(shuffleIndex.value + 1);
         shuffleIndex.value += 1;
       } else {
         clearInterval(shuffleAnimation);
@@ -49,5 +49,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <p class="text-2 text-ellipsis"> {{ shuffleTitle }} </p>
+  <p class="text-2 text-ellipsis">
+    {{ shuffleTitle }}
+  </p>
 </template>

@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 
 import { CustomLink } from "@/components/shared";
-import { SocialsItem } from "@/types";
+import type { SocialsItem } from "@/types";
 
 defineProps({
   platforms: {

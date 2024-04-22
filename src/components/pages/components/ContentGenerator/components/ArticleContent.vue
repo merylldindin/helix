@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 
 import { CustomLink } from "@/components/shared";
-import { ArticleItem } from "@/types";
+import type { ArticleItem } from "@/types";
 
 defineProps({
   article: {
@@ -20,8 +20,12 @@ defineProps({
     target="_blank"
     :to="article.href"
   >
-    <p class="text-1 mb-2 text-ellipsis"> {{ article.title }} </p>
+    <p class="text-1 mb-2 text-ellipsis">
+      {{ article.title }}
+    </p>
 
-    <p class="text-2 text-blue-grey-darken-2"> {{ article.description }} </p>
+    <p class="text-2 text-blue-grey-darken-2">
+      {{ article.description }}
+    </p>
   </CustomLink>
 </template>

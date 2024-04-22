@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 
 import { CustomLink, CustomSection } from "@/components/shared";
-import { TimelineContent } from "@/types";
+import type { TimelineContent } from "@/types";
 
 import { TypeWriter } from "./components";
 

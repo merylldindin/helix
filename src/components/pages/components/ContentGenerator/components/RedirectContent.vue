@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 
 import LearnMore from "@/assets/animations/learn-more.json";
 import { CustomLink } from "@/components/shared";
-import { ButtonItem } from "@/types";
+import type { ButtonItem } from "@/types";
 
 defineProps({
   link: {

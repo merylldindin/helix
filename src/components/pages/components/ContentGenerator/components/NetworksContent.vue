@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import { ComputedRef, computed } from "vue";
+import type { ComputedRef } from "vue";
+import { computed } from "vue";
 import { useDisplay } from "vuetify";
 
 import FacebookIcon from "@/assets/animations/facebook-icon.json";

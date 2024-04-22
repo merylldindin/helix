@@ -3,7 +3,7 @@ import { useDisplay } from "vuetify";
 
 import SwipeHint from "@/assets/animations/swipe-hint.json";
 import { CustomLink } from "@/components/shared";
-import { IconName } from "@/types";
+import type { IconName } from "@/types";
 
 defineProps({
   grid: {

@@ -3,7 +3,7 @@ import { useDisplay } from "vuetify";
 
 import { CustomLink } from "@/components/shared";
 import { APP_FOOTER_CONTENT } from "@/content";
-import { IconName } from "@/types";
+import type { IconName } from "@/types";
 
 const { smAndDown } = useDisplay();
 </script>

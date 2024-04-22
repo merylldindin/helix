@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { PropType } from "vue";
+import type { PropType } from "vue";
 
-import { PageComponent, PageHead } from "@/types";
+import type { PageComponent, PageHead } from "@/types";
 import { extractHead } from "@/utils/meta";
 
 import { ASYNC_COMPONENTS } from "./utils";

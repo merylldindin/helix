@@ -1,5 +1,5 @@
-import { ColorName } from "@/plugins/vuetify.client/colors";
-import { IconName } from "@/plugins/vuetify.client/icons";
+import type { ColorName } from "@/plugins/vuetify.client/colors";
+import type { IconName } from "@/plugins/vuetify.client/icons";
 
 declare module "#app" {
   interface NuxtApp {

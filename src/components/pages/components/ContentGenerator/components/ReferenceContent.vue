@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomLink } from "@/components/shared";
-import { ReferenceItem } from "@/types";
+import type { ReferenceItem } from "@/types";
 
 defineProps({
   reference: {
@@ -28,7 +28,9 @@ const { smAndDown } = useDisplay();
         class="reference-container"
         :class="{ 'mb-3': smAndDown && reference.detail }"
       >
-        <p class="reference-text text-1 text-ellipsis"> {{ reference.text }} </p>
+        <p class="reference-text text-1 text-ellipsis">
+          {{ reference.text }}
+        </p>
 
         <div v-if="reference.detail" class="reference-separator" />
 
