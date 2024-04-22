@@ -45,8 +45,7 @@ onMounted(() => {
       }
     }, UNSHUFFLING_INTERVAL);
   }, cProps.delay);
-})
-
+});
 </script>
 
 <template>
