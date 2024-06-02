@@ -3337,19 +3337,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/addons@npm:1.9.11":
-  version: 1.9.11
-  resolution: "@unhead/addons@npm:1.9.11"
+"@unhead/addons@npm:1.9.12":
+  version: 1.9.12
+  resolution: "@unhead/addons@npm:1.9.12"
   dependencies:
     "@rollup/pluginutils": "npm:^5.1.0"
-    "@unhead/schema": "npm:1.9.11"
-    "@unhead/shared": "npm:1.9.11"
+    "@unhead/schema": "npm:1.9.12"
+    "@unhead/shared": "npm:1.9.12"
     magic-string: "npm:^0.30.10"
     mlly: "npm:^1.7.0"
     ufo: "npm:^1.5.3"
     unplugin: "npm:^1.10.1"
     unplugin-ast: "npm:^0.10.0"
-  checksum: 10c0/709725c3061b71d8d4eebc6ee86e098e230946751ac31c745459048d0a07b01d7d44f3407caaf4769e0f23faa5c0871843024dd81dca3ed3557b3f4178240a05
+  checksum: 10c0/95a983182226022d78a3d89cfdf91f31354018997332ed4c2836767ed366352b81d710955c1c43b1cb62488e59db439bdaf2613cdb6da2293e230345fbe91b2d
   languageName: node
   linkType: hard
 
@@ -3379,13 +3379,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/schema@npm:1.9.11":
-  version: 1.9.11
-  resolution: "@unhead/schema@npm:1.9.11"
+"@unhead/schema@npm:1.9.12":
+  version: 1.9.12
+  resolution: "@unhead/schema@npm:1.9.12"
   dependencies:
     hookable: "npm:^5.5.3"
     zhead: "npm:^2.2.4"
-  checksum: 10c0/91f973dc0f9e9636ffa0f97d2664085e64d879948abfdfb596457d2850a0ebd4f74303347b7b2d77cc415bcce3d3aa0ba2b4f77270fce2fb0d698b246d12000d
+  checksum: 10c0/06eec4c273c913dfb281a6b0e6941223d8ef8c428b742e9d572aabe6feae04e190498027b472823db0b8382786dd732aa3eb39c96923bf3fc61f26efd53d8d8f
   languageName: node
   linkType: hard
 
@@ -3399,12 +3399,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/shared@npm:1.9.11":
-  version: 1.9.11
-  resolution: "@unhead/shared@npm:1.9.11"
+"@unhead/shared@npm:1.9.12":
+  version: 1.9.12
+  resolution: "@unhead/shared@npm:1.9.12"
   dependencies:
-    "@unhead/schema": "npm:1.9.11"
-  checksum: 10c0/5cd4ca4ab98b5967166b928daf983b5d0eaf68dcf0d23e1c78c738f1178bbdc8fe6d32228d44610b3eb573a54fdf6c906ddd091293c20931c48e9431f55be8d3
+    "@unhead/schema": "npm:1.9.12"
+  checksum: 10c0/fdfb6e752a259a9aa7eb80443184d1761a1b73de773f83771a24049170e01c8f4f681caeeabf65d3d76c6f25b97779480e96442c123dd1237218a30be02b50e9
   languageName: node
   linkType: hard
 
@@ -7844,7 +7844,7 @@ __metadata:
     "@nuxt/vue-app": "npm:2.17.3"
     "@types/node": "npm:20.13.0"
     "@typescript-eslint/parser": "npm:7.11.0"
-    "@unhead/addons": "npm:1.9.11"
+    "@unhead/addons": "npm:1.9.12"
     "@vue/compiler-sfc": "npm:3.4.27"
     cypress: "npm:13.10.0"
     eslint: "npm:9.4.0"
