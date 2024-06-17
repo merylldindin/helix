@@ -57,7 +57,10 @@ export default defineNuxtConfig({
       siteUrl: process.env.NUXT_WEBSITE_URL,
       titleSeparator: "|",
       trailingSlash: true,
-    },
+    }
+  },
+  site: {
+    url: process.env.NUXT_WEBSITE_URL,
   },
   sourcemap: {
     client: false,
