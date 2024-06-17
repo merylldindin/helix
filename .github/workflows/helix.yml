@@ -35,7 +35,7 @@ jobs:
 
       - name: Install Dependencies
         if: steps.cache-dependencies.outputs.cache-hit != 'true' || steps.cache-cypress.outputs.cache-hit != 'true'
-        run: make install
+        run: yarn install
 
       - name: Run Prettier
         run: yarn prettier
