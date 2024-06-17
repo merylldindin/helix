@@ -4,22 +4,10 @@
 
 set -e
 
-yarn prettier &
-pid1=$!
+yarn prettier
 
-yarn stylelint &
-pid2=$!
+yarn stylelint
 
-yarn eslint &
-pid3=$!
+yarn eslint
 
-yarn types &
-pid4=$!
-
-wait $pid1
-
-wait $pid2
-
-wait $pid3
-
-wait $pid4
+yarn types
