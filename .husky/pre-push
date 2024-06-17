@@ -4,7 +4,7 @@
 
 set -e
 
-yarn prettier
+yarn prettier &
 pid1=$!
 
 yarn stylelint &
