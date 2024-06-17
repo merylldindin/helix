@@ -4,8 +4,8 @@
 
 set -e
 
-# yarn prettier
-# pid1=$!
+yarn prettier
+pid1=$!
 
 yarn stylelint &
 pid2=$!
@@ -16,7 +16,7 @@ pid3=$!
 yarn types &
 pid4=$!
 
-# wait $pid1
+wait $pid1
 
 wait $pid2
 
