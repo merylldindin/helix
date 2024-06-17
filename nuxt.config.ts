@@ -60,6 +60,7 @@ export default defineNuxtConfig({
     }
   },
   site: {
+    trailingSlash: true,
     url: process.env.NUXT_WEBSITE_URL,
   },
   sourcemap: {
