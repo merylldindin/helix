@@ -1,9 +1,25 @@
 #!/bin/sh
 
-yarn prettier
+. "$(dirname "$0")/_/husky.sh"
 
-yarn stylelint
+set -e
 
-yarn eslint
+# yarn prettier
+# pid1=$!
 
-yarn types
+yarn stylelint &
+pid2=$!
+
+yarn eslint &
+pid3=$!
+
+yarn types &
+pid4=$!
+
+# wait $pid1
+
+wait $pid2
+
+wait $pid3
+
+wait $pid4
