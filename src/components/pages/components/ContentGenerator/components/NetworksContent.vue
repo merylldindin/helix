@@ -5,7 +5,7 @@ import { useDisplay } from "vuetify";
 
 import FacebookIcon from "@/assets/animations/facebook-icon.json";
 import LinkedinIcon from "@/assets/animations/linkedin-icon.json";
-import TwitterIcon from "@/assets/animations/twitter-icon.json";
+import XIcon from "@/assets/animations/x-icon.json";
 import { CustomLink } from "@/components/shared";
 import { DEFAULT_URL } from "@/content";
 
@@ -69,7 +69,7 @@ const optionUrls: ComputedRef<
       width: 36,
     },
     {
-      animation: TwitterIcon,
+      animation: XIcon,
       arialabel: "Share this article via Twitter",
       url: twitterUrl.value,
       width: 40,

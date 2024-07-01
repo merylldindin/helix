@@ -12,7 +12,7 @@ export const DEFAULT_URL = "https://merylldindin.com";
 
 const DEFAULT_CDN_HOST = "https://cdn.merylldindin.com";
 
-const DEFAULT_THUMBNAIL = `${DEFAULT_CDN_HOST}/thumbnails/central-avatar.webp`;
+const DEFAULT_THUMBNAIL = `${DEFAULT_CDN_HOST}/thumbnails/minimalist.png`;
 
 const DEFAULT_THUMBNAIL_ALT = "Meryll Dindin's personal website";
 
@@ -45,7 +45,7 @@ export const CUSTOM_HEAD = {
       charset: "utf8",
     },
     {
-      content: "© 2023 Meryll Dindin",
+      content: "© 2024 Meryll Dindin",
       name: "copyright",
     },
     {
