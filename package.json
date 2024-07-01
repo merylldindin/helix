@@ -4,20 +4,21 @@
   "private": true,
   "scripts": {
     "build": "nuxi generate",
-    "clean": "nuxi cleanup && nuxi prepare",
+    "checks": "yarn prettier & yarn stylelint & yarn eslint & yarn types &",
+    "clean": "nuxi cleanup",
     "cypress": "cypress run --browser chrome",
     "cypress:open": "cypress open --browser chrome",
     "eslint": "eslint \"src/**/*.{ts,js,vue}\" --no-fix",
     "eslint:fix": "eslint \"src/**/*.{ts,js,vue}\" --fix",
-    "prepare": "husky",
+    "prepare": "nuxi prepare",
     "prettier": "prettier --check --log-level error \"src/**/*.{ts,js,scss,css,vue,json}\"",
     "prettier:fix": "prettier --write \"src/**/*.{ts,js,scss,css,vue,json}\"",
-    "serve": "serve dist/",
+    "serve": "nuxi preview -o",
     "setup": "husky init && rm .husky/pre-commit && chmod ug+x .husky/*",
     "start": "nuxi dev -o",
     "stylelint": "npx stylelint 'src/**/*.{vue,scss}'",
     "stylelint:fix": "npx stylelint 'src/**/*.{vue,scss}' --fix",
-    "types": "tsc --noEmit"
+    "types": "nuxi typecheck"
   },
   "resolutions": {
     "semver": ">= 7.5.2",
