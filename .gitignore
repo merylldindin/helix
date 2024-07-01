@@ -1,16 +1,42 @@
+# macos
+**/.DS_Store
+
+# node
+**/dist
+**/node_modules
+
+# nuxt
+**/.nitro
+**/.nuxt
+**/.output
+
+# python
+**/.idea
+**/.venv
+**/.ruff_cache
+**/.mypy_cache
+**/.pytest_cache
+**/.coverage
+**/*.pyc
+**/__pycache__
+
+# jupyter
+**/.ipython
+**/.jupyter
+**/.local
+**/.ipynb_checkpoints
+
 # yarn
-.yarn/*
+**/*.log
+**/.cache
+**/.yarn/*
 !.yarn/plugins
 !.yarn/releases
 
-# development
-dist
-node_modules
-.nuxt
-.nitro
-.cache
-.output
-*.log*
+# vscode
+**/.vscode/*
+**/!.vscode/extensions.json
+**/!.vscode/settings.json
 
 # cypress
 cypress/downloads
