@@ -1,6 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "assignees": ["merylldindin"],
+  "constraints": {
+    "typescript": "5.4.4",
+    "vue-tsc": "1.8.27"
+  },
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
   "extends": ["config:base"],

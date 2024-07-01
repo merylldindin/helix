@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { CookieBanner } from "@/components/layouts";
-import { DEFAULT_SCHEMA, WEBSITE_SCHEMA } from "@/content";
+import { CUSTOM_HEAD, DEFAULT_SCHEMA, WEBSITE_SCHEMA } from "@/content";
 
-import { clearError } from "#app";
+import { clearError, useHead } from "#app";
 import { useJsonld } from "#jsonld";
 
 useJsonld(
@@ -14,6 +14,8 @@ useJsonld(
   // @ts-ignore
   WEBSITE_SCHEMA
 );
+
+useHead(CUSTOM_HEAD);
 </script>
 
 <template>

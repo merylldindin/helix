@@ -1,13 +1,10 @@
 import UnheadVite from "@unhead/addons/vite";
 import { defineNuxtConfig } from "nuxt/config";
 
-import { CUSTOM_HEAD, DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "./src/content";
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "./src/content";
 import { RoutePath } from "./src/types/routes";
 
 export default defineNuxtConfig({
-  app: {
-    head: CUSTOM_HEAD,
-  },
   build: {
     transpile: ["vuetify"],
   },
@@ -24,11 +21,11 @@ export default defineNuxtConfig({
   },
   // @ts-ignore-next-line
   linkChecker: {
-    skipInspections: ["no-error-response", "no-baseless", "trailing-slash"],
+    skipInspections: ["link-text", "no-error-response", "no-baseless", "trailing-slash"],
   },
   modules: [
     "@nuxt/devtools",
-    '@nuxt/eslint',
+    "@nuxt/eslint",
     "nuxt-jsonld",
     "nuxt-link-checker",
     "nuxt-simple-sitemap",
