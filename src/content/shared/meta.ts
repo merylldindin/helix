@@ -1,12 +1,12 @@
 export const DEFAULT_NAME = "Meryll Dindin";
 
 export const DEFAULT_TITLE =
-  "Meryll Dindin: Transhumanist & Entrepreneur Driving Future Innovation | Meryll Dindin";
+  "Meryll Dindin - Innovator, Entrepreneur, and Transhumanist";
 
 const DEFAULT_COLOR = "#242424";
 
 export const DEFAULT_DESCRIPTION =
-  "Explore how Meryll Dindin, a serial entrepreneur, passionately shapes the future of industries like healthcare, mental health, manufacturing, and artificial intelligence through groundbreaking projects.";
+  "Welcome to my personal website where I share my journey and insights as an entrepreneur and transhumanist. Explore my contributions in industries like healthcare, AI, and education.";
 
 export const DEFAULT_URL = "https://merylldindin.com";
 
