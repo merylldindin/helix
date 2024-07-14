@@ -3756,19 +3756,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/addons@npm:1.9.15":
-  version: 1.9.15
-  resolution: "@unhead/addons@npm:1.9.15"
+"@unhead/addons@npm:1.9.16":
+  version: 1.9.16
+  resolution: "@unhead/addons@npm:1.9.16"
   dependencies:
     "@rollup/pluginutils": "npm:^5.1.0"
-    "@unhead/schema": "npm:1.9.15"
-    "@unhead/shared": "npm:1.9.15"
+    "@unhead/schema": "npm:1.9.16"
+    "@unhead/shared": "npm:1.9.16"
     magic-string: "npm:^0.30.10"
     mlly: "npm:^1.7.1"
     ufo: "npm:^1.5.3"
     unplugin: "npm:^1.11.0"
     unplugin-ast: "npm:^0.10.0"
-  checksum: 10c0/5e367c149d9cb9793a5cd627d2e96f81899fe80f5a45cacf7982b8d52fbfc4da36fddb3ab8e8ae8e59f231b49bbaa0cd7b2212dd47de84323574a2eace283638
+  checksum: 10c0/786ca5ca6a19b84a1f4cefad2d2f4f61fabd0e539595f9d12378d2ba7a93444d6e57f256083fb4f73b66a875bbc9bb28c3a7eb97c312d59cf215dbc2654f7f8b
   languageName: node
   linkType: hard
 
@@ -3818,6 +3818,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@unhead/schema@npm:1.9.16":
+  version: 1.9.16
+  resolution: "@unhead/schema@npm:1.9.16"
+  dependencies:
+    hookable: "npm:^5.5.3"
+    zhead: "npm:^2.2.4"
+  checksum: 10c0/70e4d17e28a5b6d0b5573efc020cb6a137c3fa946803fcdbd0b2d394aa14e4aba42fc098d638b99c76ff4481d353e5b714f6243a5b56947c4ffffd5140094da5
+  languageName: node
+  linkType: hard
+
 "@unhead/shared@npm:1.9.14":
   version: 1.9.14
   resolution: "@unhead/shared@npm:1.9.14"
@@ -3833,6 +3843,15 @@ __metadata:
   dependencies:
     "@unhead/schema": "npm:1.9.15"
   checksum: 10c0/289d3252054cea7287672d7fe904b3bdd2a7853b1cdd1355631a51d3230ac8b9ce64d96663ccbe69c5c5235e1e4744c9a13d6ebe9e4beb566a19675ad0efc675
+  languageName: node
+  linkType: hard
+
+"@unhead/shared@npm:1.9.16":
+  version: 1.9.16
+  resolution: "@unhead/shared@npm:1.9.16"
+  dependencies:
+    "@unhead/schema": "npm:1.9.16"
+  checksum: 10c0/2a68d68aba10fb9b7b70e4b62d7b1785863bbb63b657eaec9d89864fd6587f7b3986c4bdc103618926998596abe48b108d5cfd7decc0ef24911efd1c47ada7ed
   languageName: node
   linkType: hard
 
@@ -8339,7 +8358,7 @@ __metadata:
     "@types/lodash": "npm:^4.17.6"
     "@types/node": "npm:20.14.10"
     "@typescript-eslint/parser": "npm:7.16.0"
-    "@unhead/addons": "npm:1.9.15"
+    "@unhead/addons": "npm:1.9.16"
     "@vue/compiler-sfc": "npm:3.4.31"
     cypress: "npm:13.13.0"
     eslint: "npm:9.7.0"
