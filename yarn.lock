@@ -3971,19 +3971,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/addons@npm:1.10.4":
-  version: 1.10.4
-  resolution: "@unhead/addons@npm:1.10.4"
+"@unhead/addons@npm:1.11.1":
+  version: 1.11.1
+  resolution: "@unhead/addons@npm:1.11.1"
   dependencies:
     "@rollup/pluginutils": "npm:^5.1.0"
-    "@unhead/schema": "npm:1.10.4"
-    "@unhead/shared": "npm:1.10.4"
+    "@unhead/schema": "npm:1.11.1"
+    "@unhead/shared": "npm:1.11.1"
     magic-string: "npm:^0.30.11"
     mlly: "npm:^1.7.1"
     ufo: "npm:^1.5.4"
-    unplugin: "npm:^1.12.3"
+    unplugin: "npm:^1.13.1"
     unplugin-ast: "npm:^0.10.0"
-  checksum: 10c0/0c7f368f6d3fb3ffbb4897e68fa184c1f5d3be8c7a8c59d0b49c0011aebf9b8a7fe0acfd7907ea08d05132e4a2aa1342e4fafd0f36c2aa593eff25c4da0626f7
+  checksum: 10c0/2e5aa4b63bef4a5506f9f27b9ffd302fac4c112855349b3dfef1953da2fb6768a3efde37f3539911e9429493fc5fd12acf13cfc04b33c47625630b89d76e6f29
   languageName: node
   linkType: hard
 
@@ -4023,6 +4023,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@unhead/schema@npm:1.11.1":
+  version: 1.11.1
+  resolution: "@unhead/schema@npm:1.11.1"
+  dependencies:
+    hookable: "npm:^5.5.3"
+    zhead: "npm:^2.2.4"
+  checksum: 10c0/f69f6d332679820e7b00074d20e4430a26f971935962f10f1924603dcc6a72ba3a0dfdab0fe73e6fe33c00563ad7e3d390a1fa393888b3872a291b7e3b7d8d67
+  languageName: node
+  linkType: hard
+
 "@unhead/schema@npm:1.9.14":
   version: 1.9.14
   resolution: "@unhead/schema@npm:1.9.14"
@@ -4039,6 +4049,15 @@ __metadata:
   dependencies:
     "@unhead/schema": "npm:1.10.4"
   checksum: 10c0/aed05f046e50f09bd3ac81fc1347a6bc7a8bae187a6c374ea64b805d64a768ee2837ed6a87cdbd9e052fce9c4a7f4952eb3681cd2ae93c46ba48a370eaa54629
+  languageName: node
+  linkType: hard
+
+"@unhead/shared@npm:1.11.1":
+  version: 1.11.1
+  resolution: "@unhead/shared@npm:1.11.1"
+  dependencies:
+    "@unhead/schema": "npm:1.11.1"
+  checksum: 10c0/560a27ba63dc29543a639c5a2cd5aed771eab350c0517d9ef24767af0cf080bea04a54c0e158addbbf9ce91885ffd4c1abbf0d1ae86989234309fd719b9a7460
   languageName: node
   linkType: hard
 
@@ -8385,7 +8404,7 @@ __metadata:
     "@types/lodash": "npm:^4.17.6"
     "@types/node": "npm:20.16.5"
     "@typescript-eslint/parser": "npm:8.4.0"
-    "@unhead/addons": "npm:1.10.4"
+    "@unhead/addons": "npm:1.11.1"
     "@vue/compiler-sfc": "npm:3.5.3"
     cypress: "npm:13.14.2"
     eslint: "npm:9.10.0"
@@ -13817,7 +13836,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin@npm:^1.12.3":
+"unplugin@npm:^1.12.3, unplugin@npm:^1.13.1":
   version: 1.13.1
   resolution: "unplugin@npm:1.13.1"
   dependencies:
