@@ -3056,6 +3056,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rollup/pluginutils@npm:^5.1.2":
+  version: 5.1.2
+  resolution: "@rollup/pluginutils@npm:5.1.2"
+  dependencies:
+    "@types/estree": "npm:^1.0.0"
+    estree-walker: "npm:^2.0.2"
+    picomatch: "npm:^2.3.1"
+  peerDependencies:
+    rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+  peerDependenciesMeta:
+    rollup:
+      optional: true
+  checksum: 10c0/30f4a98e91a8699b6666b64ecdc665439bd53dddbe964bbeca56da81ff889cfde3a3e059144b80c5a2d9b48aa158df18a45e9a847a33b757d3e8336b278b8836
+  languageName: node
+  linkType: hard
+
 "@rollup/rollup-android-arm-eabi@npm:4.18.0":
   version: 4.18.0
   resolution: "@rollup/rollup-android-arm-eabi@npm:4.18.0"
@@ -4120,19 +4136,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/addons@npm:1.11.6":
-  version: 1.11.6
-  resolution: "@unhead/addons@npm:1.11.6"
+"@unhead/addons@npm:1.11.7":
+  version: 1.11.7
+  resolution: "@unhead/addons@npm:1.11.7"
   dependencies:
-    "@rollup/pluginutils": "npm:^5.1.0"
-    "@unhead/schema": "npm:1.11.6"
-    "@unhead/shared": "npm:1.11.6"
+    "@rollup/pluginutils": "npm:^5.1.2"
+    "@unhead/schema": "npm:1.11.7"
+    "@unhead/shared": "npm:1.11.7"
     magic-string: "npm:^0.30.11"
     mlly: "npm:^1.7.1"
     ufo: "npm:^1.5.4"
     unplugin: "npm:^1.14.1"
     unplugin-ast: "npm:^0.10.0"
-  checksum: 10c0/287641b14a27e76799c13815018c81ee5951a55172e7c17058178930e02ad368e6c5cff8b6a0305657c5bff1dccb291efe21e7a21b9a4739e3b4a5eb09a3e264
+  checksum: 10c0/0d75455c26980e546159948252df2d4af6f5c51ad2a88b0c0fa2e5b69abae714a77500dc6595e3c153ffad911781f073a4abafbb0b9cbe2f7dcac06a66c2f6a4
   languageName: node
   linkType: hard
 
@@ -4172,13 +4188,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/schema@npm:1.11.6":
-  version: 1.11.6
-  resolution: "@unhead/schema@npm:1.11.6"
+"@unhead/schema@npm:1.11.7":
+  version: 1.11.7
+  resolution: "@unhead/schema@npm:1.11.7"
   dependencies:
     hookable: "npm:^5.5.3"
     zhead: "npm:^2.2.4"
-  checksum: 10c0/3944eca6e9311848eb7f0dc9d35ca30aaf5986783bdca4a8a1023dfa4bc7888e3043f121e7fc42c488994f6b55bd55b99951218908a25469348555d78ec9d434
+  checksum: 10c0/a00bd9bd922141383ba57f7705c58a11728db4c3e8b07b8a3d4e3486a9acafb63831be0c66e2f7b7ccae9997b586617972884503b28759fbc1efa87d912203c2
   languageName: node
   linkType: hard
 
@@ -4201,12 +4217,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/shared@npm:1.11.6":
-  version: 1.11.6
-  resolution: "@unhead/shared@npm:1.11.6"
+"@unhead/shared@npm:1.11.7":
+  version: 1.11.7
+  resolution: "@unhead/shared@npm:1.11.7"
   dependencies:
-    "@unhead/schema": "npm:1.11.6"
-  checksum: 10c0/e356ec5812775b680d8c5b7451651e25fffd21a80f7c6c39e43b701e4b8d42ccb3c51bb28172f3bc5a7296692915e23172860454644bdf6950465901a4f42143
+    "@unhead/schema": "npm:1.11.7"
+  checksum: 10c0/d235e891af013c92c7fe4c53e191388f1f68f804c01640a7ec4ec454cb5c842506e56abf9f4208c26d524baa6897ce14a78dabac466136c1da39463904823d3b
   languageName: node
   linkType: hard
 
@@ -8666,7 +8682,7 @@ __metadata:
     "@types/lodash": "npm:^4.17.6"
     "@types/node": "npm:20.16.10"
     "@typescript-eslint/parser": "npm:8.7.0"
-    "@unhead/addons": "npm:1.11.6"
+    "@unhead/addons": "npm:1.11.7"
     "@vue/compiler-sfc": "npm:3.5.10"
     cypress: "npm:13.15.0"
     eslint: "npm:9.11.1"
