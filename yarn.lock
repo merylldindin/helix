@@ -1888,16 +1888,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.5.2":
-  version: 1.5.2
-  resolution: "@nuxt/devtools-kit@npm:1.5.2"
+"@nuxt/devtools-kit@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@nuxt/devtools-kit@npm:1.6.0"
   dependencies:
     "@nuxt/kit": "npm:^3.13.2"
     "@nuxt/schema": "npm:^3.13.2"
     execa: "npm:^7.2.0"
   peerDependencies:
     vite: "*"
-  checksum: 10c0/9f5056260d443fcdeb18cd14032f6196a8de2c1ed028a46322f96583dfc360d961f92321a3e5951a0111e1322ef0e7fcf081245aad33f2b0cba1e610b8b119d3
+  checksum: 10c0/4cb4ee53223ad147e08719822b4412fca80a518fd289e08b78e1a46b730d96fdd89b45332a150bcc2a9b7fde7a0305f62d243dd69fda8093870b1321a8540954
   languageName: node
   linkType: hard
 
@@ -1934,9 +1934,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-wizard@npm:1.5.2":
-  version: 1.5.2
-  resolution: "@nuxt/devtools-wizard@npm:1.5.2"
+"@nuxt/devtools-wizard@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@nuxt/devtools-wizard@npm:1.6.0"
   dependencies:
     consola: "npm:^3.2.3"
     diff: "npm:^7.0.0"
@@ -1950,17 +1950,17 @@ __metadata:
     semver: "npm:^7.6.3"
   bin:
     devtools-wizard: cli.mjs
-  checksum: 10c0/0752e6e3370527311ceba42bf3fbf0cd7a05e008f7514b34eaa3961cce037d79074e117f149b30c25d398a96f388f7818bf74fb43f7f8f2503925bebb114bcda
+  checksum: 10c0/b7cba06c2945c8b3334865ac3d84fcf52c0fd441187b99bbfc4a03fad04cea2960ba5fce834b842e5b3367899b62697e404d0a040dac45ff4252eccb7bab835e
   languageName: node
   linkType: hard
 
-"@nuxt/devtools@npm:1.5.2":
-  version: 1.5.2
-  resolution: "@nuxt/devtools@npm:1.5.2"
+"@nuxt/devtools@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@nuxt/devtools@npm:1.6.0"
   dependencies:
     "@antfu/utils": "npm:^0.7.10"
-    "@nuxt/devtools-kit": "npm:1.5.2"
-    "@nuxt/devtools-wizard": "npm:1.5.2"
+    "@nuxt/devtools-kit": "npm:1.6.0"
+    "@nuxt/devtools-wizard": "npm:1.6.0"
     "@nuxt/kit": "npm:^3.13.2"
     "@vue/devtools-core": "npm:7.4.4"
     "@vue/devtools-kit": "npm:7.4.4"
@@ -1999,7 +1999,7 @@ __metadata:
     vite: "*"
   bin:
     devtools: cli.mjs
-  checksum: 10c0/d1dcbd34e7faada49423a878d5ac2f9f94a93ec36920b67869ee739b03ad6e96f8c074c7ba8b526549783883ab4b1e8c2ce93c84a64661f8197a4ed751835904
+  checksum: 10c0/bae5296c2ba449ae8ece0693065a67dc903f3450a1f922fb97edb06481f7459e36cae0bc288c1d607a7d01f4ebfdad50b211a2c34cf8b86d609c525904bb9a5b
   languageName: node
   linkType: hard
 
@@ -8807,7 +8807,7 @@ __metadata:
     "@commitlint/cli": "npm:19.5.0"
     "@commitlint/config-conventional": "npm:19.5.0"
     "@mdi/js": "npm:7.4.47"
-    "@nuxt/devtools": "npm:1.5.2"
+    "@nuxt/devtools": "npm:1.6.0"
     "@nuxt/eslint": "npm:0.5.7"
     "@nuxt/eslint-config": "npm:0.5.7"
     "@nuxt/types": "npm:2.18.1"
