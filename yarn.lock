@@ -1853,7 +1853,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.6.3":
+"@nuxt/devtools-kit@npm:1.6.3, @nuxt/devtools-kit@npm:^1.6.3":
   version: 1.6.3
   resolution: "@nuxt/devtools-kit@npm:1.6.3"
   dependencies:
@@ -4820,31 +4820,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:^11.3.0":
-  version: 11.3.0
-  resolution: "@vueuse/core@npm:11.3.0"
+"@vueuse/core@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "@vueuse/core@npm:12.0.0"
   dependencies:
     "@types/web-bluetooth": "npm:^0.0.20"
-    "@vueuse/metadata": "npm:11.3.0"
-    "@vueuse/shared": "npm:11.3.0"
-    vue-demi: "npm:>=0.14.10"
-  checksum: 10c0/57ebed3ee2fd5b33297bbb36727424dc1707357db52954a1715366dd6583a4d53a05b10d17d16d1e5bf91fe8f12ea69fd6b232551f60167098ebc606b7234d4a
+    "@vueuse/metadata": "npm:12.0.0"
+    "@vueuse/shared": "npm:12.0.0"
+    vue: "npm:^3.5.13"
+  checksum: 10c0/416a5d2725069ace3901a77168ff24e0f9aea535b04174edf506bedd97c8f6a14d23105c80e1f58ed3b690c9931fc9089b1e5960e769e6a3e886fa8b9d320cbb
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:11.3.0":
-  version: 11.3.0
-  resolution: "@vueuse/metadata@npm:11.3.0"
-  checksum: 10c0/4548912f325d4f250595b029357977824431db66a94651bc6801c04e4992374286ff71eb41604470638ef100338c2b80df2039d663a20f66d92799f68ccba7e9
+"@vueuse/metadata@npm:12.0.0":
+  version: 12.0.0
+  resolution: "@vueuse/metadata@npm:12.0.0"
+  checksum: 10c0/f67a256fef7961883e9921d2369be334015a4a0193987c3082b9b6386e31ed2d90de555b8d9aca63c5dda6cb3cf8df5d9b7842db77488c1ba638437befffca08
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:11.3.0":
-  version: 11.3.0
-  resolution: "@vueuse/shared@npm:11.3.0"
+"@vueuse/shared@npm:12.0.0":
+  version: 12.0.0
+  resolution: "@vueuse/shared@npm:12.0.0"
   dependencies:
-    vue-demi: "npm:>=0.14.10"
-  checksum: 10c0/820af5359d204e434b27ef570e5dfb5fe765e19d540738665c51c8d1569b81dd000dbe292add15dffb1b9538cbcec890626d0b47a5525e624273a0963b524e1f
+    vue: "npm:^3.5.13"
+  checksum: 10c0/7900edc00f636b9cc5fcf96e13ff9e7ec8f4f7efc0960964227cc31a26b3b45123d613a201c6b5d331534b72908b5e754ae2cba4169c5a145255987d3ad7da78
   languageName: node
   linkType: hard
 
@@ -8813,7 +8813,7 @@ __metadata:
     lodash: "npm:4.17.21"
     nuxt: "npm:3.14.1592"
     nuxt-jsonld: "npm:2.1.0"
-    nuxt-link-checker: "npm:4.0.1"
+    nuxt-link-checker: "npm:4.0.2"
     nuxt-swiper: "npm:1.2.2"
     nuxt-unhead: "npm:1.4.20"
     postcss-html: "npm:1.7.0"
@@ -10858,25 +10858,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-link-checker@npm:4.0.1":
-  version: 4.0.1
-  resolution: "nuxt-link-checker@npm:4.0.1"
+"nuxt-link-checker@npm:4.0.2":
+  version: 4.0.2
+  resolution: "nuxt-link-checker@npm:4.0.2"
   dependencies:
-    "@nuxt/devtools-kit": "npm:^1.6.1"
+    "@nuxt/devtools-kit": "npm:^1.6.3"
     "@nuxt/kit": "npm:^3.14.1592"
-    "@vueuse/core": "npm:^11.3.0"
+    "@vueuse/core": "npm:^12.0.0"
     chalk: "npm:^5.3.0"
     cheerio: "npm:1.0.0"
     diff: "npm:^7.0.0"
     fuse.js: "npm:^7.0.0"
-    magic-string: "npm:^0.30.13"
-    nuxt-site-config: "npm:3.0.4"
+    magic-string: "npm:^0.30.14"
+    nuxt-site-config: "npm:3.0.6"
     pathe: "npm:^1.1.2"
     pkg-types: "npm:^1.2.1"
     radix3: "npm:^1.1.2"
     sirv: "npm:^3.0.0"
     ufo: "npm:^1.5.4"
-  checksum: 10c0/5f48be4100f31faa42f38a11e45f3dfc39f7616b21ca0387d87152d1167d656d8da36a57f22c4e1542b92c76fb1312c7ac23418ebe9362d499a1bea80cf60e60
+  checksum: 10c0/bf45c54b6d21284c68e92edd02a75e626f8514f271684176fc9dddcb41a9121cf2a9b85f67c0d30991793b49e464df3bed1d8416660cb091c4734844d7583c34
   languageName: node
   linkType: hard
 
@@ -10894,7 +10894,38 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-site-config@npm:3.0.4, nuxt-site-config@npm:^3.0.4":
+"nuxt-site-config-kit@npm:3.0.6":
+  version: 3.0.6
+  resolution: "nuxt-site-config-kit@npm:3.0.6"
+  dependencies:
+    "@nuxt/kit": "npm:^3.13.2"
+    "@nuxt/schema": "npm:^3.13.2"
+    pkg-types: "npm:^1.2.1"
+    site-config-stack: "npm:3.0.6"
+    std-env: "npm:^3.7.0"
+    ufo: "npm:^1.5.4"
+  checksum: 10c0/385e80c034876e7b51eca89b5718d1be0eeee9cbcc4750ea224c71488ed1a25fd9e6c3e70786906543c2f6019c506b33e8cc2413442d1ee234e563c1adebe010
+  languageName: node
+  linkType: hard
+
+"nuxt-site-config@npm:3.0.6":
+  version: 3.0.6
+  resolution: "nuxt-site-config@npm:3.0.6"
+  dependencies:
+    "@nuxt/devtools-kit": "npm:^1.6.0"
+    "@nuxt/kit": "npm:^3.13.2"
+    "@nuxt/schema": "npm:^3.13.2"
+    nuxt-site-config-kit: "npm:3.0.6"
+    pathe: "npm:^1.1.2"
+    pkg-types: "npm:^1.2.1"
+    sirv: "npm:^3.0.0"
+    site-config-stack: "npm:3.0.6"
+    ufo: "npm:^1.5.4"
+  checksum: 10c0/2ffa322180a7e26802979efb8e4c64d9e12f87302d044f352f23cd44eed706fa0b7d296fcc215aefdba798a29430c10662e9a6d06d8c169a9ae5f4e6626c7066
+  languageName: node
+  linkType: hard
+
+"nuxt-site-config@npm:^3.0.4":
   version: 3.0.4
   resolution: "nuxt-site-config@npm:3.0.4"
   dependencies:
@@ -13267,6 +13298,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"site-config-stack@npm:3.0.6":
+  version: 3.0.6
+  resolution: "site-config-stack@npm:3.0.6"
+  dependencies:
+    ufo: "npm:^1.5.4"
+  peerDependencies:
+    vue: ^3
+  checksum: 10c0/fb3a5e8e089a04577b792d2f4ae64b856ef6f79bbda93aaee6feac7b82696fdd824411f5ea83ea18b0fdfdd9217e97fb93a899e393cf8142b91fa0dd077ebf68
+  languageName: node
+  linkType: hard
+
 "slash@npm:^3.0.0":
   version: 3.0.0
   resolution: "slash@npm:3.0.0"
@@ -15307,22 +15349,6 @@ __metadata:
   version: 2.1.0
   resolution: "vue-client-only@npm:2.1.0"
   checksum: 10c0/7aae1e0b8c1d774740a8894dd18b54c45d21d2eaa2f622d5084cfb2719a6f129f291999bf3d290f1ee16e766c20b45b372e45437c159899576fa5cffa7635fd4
-  languageName: node
-  linkType: hard
-
-"vue-demi@npm:>=0.14.10":
-  version: 0.14.10
-  resolution: "vue-demi@npm:0.14.10"
-  peerDependencies:
-    "@vue/composition-api": ^1.0.0-rc.1
-    vue: ^3.0.0-0 || ^2.6.0
-  peerDependenciesMeta:
-    "@vue/composition-api":
-      optional: true
-  bin:
-    vue-demi-fix: bin/vue-demi-fix.js
-    vue-demi-switch: bin/vue-demi-switch.js
-  checksum: 10c0/a9ed8712fa36d01bc13c39757f95f30cebf42d557b99e94bff86d8660c81f2911b41220f7affc023d1ffcc19e13999e4a83019991e264787cca2c616e83aea48
   languageName: node
   linkType: hard
 
