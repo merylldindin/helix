@@ -1853,7 +1853,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.6.4":
+"@nuxt/devtools-kit@npm:1.6.4, @nuxt/devtools-kit@npm:^1.6.4":
   version: 1.6.4
   resolution: "@nuxt/devtools-kit@npm:1.6.4"
   dependencies:
@@ -8792,7 +8792,7 @@ __metadata:
     lodash: "npm:4.17.21"
     nuxt: "npm:3.14.1592"
     nuxt-jsonld: "npm:2.1.0"
-    nuxt-link-checker: "npm:4.0.2"
+    nuxt-link-checker: "npm:4.0.3"
     nuxt-swiper: "npm:1.2.2"
     nuxt-unhead: "npm:1.4.20"
     postcss-html: "npm:1.7.0"
@@ -10098,6 +10098,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"magic-string@npm:^0.30.15":
+  version: 0.30.15
+  resolution: "magic-string@npm:0.30.15"
+  dependencies:
+    "@jridgewell/sourcemap-codec": "npm:^1.5.0"
+  checksum: 10c0/7d10403cb0b403c0453d7af57d8d01a58c334b260e64653c5f5c2311800f4c6b1b7f4502153f9051dd8a87116acd50e5e3fce4bf79ec9d7127f087aa1c08b96b
+  languageName: node
+  linkType: hard
+
 "magicast@npm:^0.3.5":
   version: 0.3.5
   resolution: "magicast@npm:0.3.5"
@@ -10846,25 +10855,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-link-checker@npm:4.0.2":
-  version: 4.0.2
-  resolution: "nuxt-link-checker@npm:4.0.2"
+"nuxt-link-checker@npm:4.0.3":
+  version: 4.0.3
+  resolution: "nuxt-link-checker@npm:4.0.3"
   dependencies:
-    "@nuxt/devtools-kit": "npm:^1.6.3"
+    "@nuxt/devtools-kit": "npm:^1.6.4"
     "@nuxt/kit": "npm:^3.14.1592"
     "@vueuse/core": "npm:^12.0.0"
     chalk: "npm:^5.3.0"
     cheerio: "npm:1.0.0"
     diff: "npm:^7.0.0"
     fuse.js: "npm:^7.0.0"
-    magic-string: "npm:^0.30.14"
+    magic-string: "npm:^0.30.15"
     nuxt-site-config: "npm:3.0.6"
     pathe: "npm:^1.1.2"
     pkg-types: "npm:^1.2.1"
     radix3: "npm:^1.1.2"
     sirv: "npm:^3.0.0"
     ufo: "npm:^1.5.4"
-  checksum: 10c0/bf45c54b6d21284c68e92edd02a75e626f8514f271684176fc9dddcb41a9121cf2a9b85f67c0d30991793b49e464df3bed1d8416660cb091c4734844d7583c34
+  checksum: 10c0/dd8c447bf1ccf0fa8ba509122097a1eca930607dfe5ceaadefcd6acf5b53e99d60993fb2a76c54f52ca9723024cacecdc8292156d6dfa6ee202050cd2ddc250d
   languageName: node
   linkType: hard
 
