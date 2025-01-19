@@ -6711,9 +6711,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:13.17.0":
-  version: 13.17.0
-  resolution: "cypress@npm:13.17.0"
+"cypress@npm:14.0.0":
+  version: 14.0.0
+  resolution: "cypress@npm:14.0.0"
   dependencies:
     "@cypress/request": "npm:^3.0.6"
     "@cypress/xvfb": "npm:^1.2.4"
@@ -6760,7 +6760,7 @@ __metadata:
     yauzl: "npm:^2.10.0"
   bin:
     cypress: bin/cypress
-  checksum: 10c0/159ce620e32d2785082aaa1f4f30f203dcec466df4a8e80dfa299035358772fd513c35820070ba8db52e2bf58078a372ff7009068e26967f993656e7da62e221
+  checksum: 10c0/231af826d394b9a9f35200ab56e531e911f774b86b2ecb17a3183685982ac93d534e7c80cfe24ca36f74c99525025472fe28a3ccf2f246c8e67f85ecb768086b
   languageName: node
   linkType: hard
 
@@ -7656,14 +7656,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:9.1.0":
-  version: 9.1.0
-  resolution: "eslint-config-prettier@npm:9.1.0"
+"eslint-config-prettier@npm:10.0.1":
+  version: 10.0.1
+  resolution: "eslint-config-prettier@npm:10.0.1"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
-    eslint-config-prettier: bin/cli.js
-  checksum: 10c0/6d332694b36bc9ac6fdb18d3ca2f6ac42afa2ad61f0493e89226950a7091e38981b66bac2b47ba39d15b73fff2cd32c78b850a9cf9eed9ca9a96bfb2f3a2f10d
+    eslint-config-prettier: build/bin/cli.js
+  checksum: 10c0/e2434931669d211663c0493f2c1640a670a02ba4503a68f056a7eda133f383acbbb983a4a7bd0ad6cb3b2bc4d5731c3be8b32fe28e35087a76fea45f7061ae70
   languageName: node
   linkType: hard
 
@@ -9055,9 +9055,9 @@ __metadata:
     "@typescript-eslint/parser": "npm:8.20.0"
     "@unhead/addons": "npm:1.11.18"
     "@vue/compiler-sfc": "npm:3.5.13"
-    cypress: "npm:13.17.0"
+    cypress: "npm:14.0.0"
     eslint: "npm:9.18.0"
-    eslint-config-prettier: "npm:9.1.0"
+    eslint-config-prettier: "npm:10.0.1"
     eslint-plugin-prettier: "npm:5.2.3"
     eslint-plugin-unicorn: "npm:56.0.1"
     eslint-plugin-vue: "npm:9.32.0"
