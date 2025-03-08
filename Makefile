@@ -11,7 +11,7 @@ install: ## Install project dependencies
 
 install-hard: ## Install project dependencies from scratch
 	rm -rf .venv/
-	poetry lock --no-update
+	poetry lock
 	rm -rf node_modules/ yarn.lock
 	yarn cache clean
 	make install

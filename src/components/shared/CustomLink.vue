@@ -54,28 +54,39 @@ const cProps = defineProps({
   },
 });
 
-const parsedLink: ComputedRef<object> = computed(() => {
-  const parsedUrl = new URL(cProps.to, DEFAULT_URL);
-  const isSamePage = useRoute().path === parsedUrl.pathname;
+const route = useRoute();
 
-  if (!cProps.to.startsWith("http") && cProps.to.includes("#")) {
-    return {
-      external: isSamePage,
-      to: isSamePage
-        ? parsedUrl.hash
-        : {
-            hash: parsedUrl.hash,
-            path: parsedUrl.pathname,
-          },
-    };
+const parsedLink: ComputedRef<{
+  external: boolean;
+  href?: string;
+  to?: string | { hash: string; path: string };
+}> = computed(() => {
+  const parsedUrl = new URL(cProps.to, DEFAULT_URL);
+  const isSamePage = route.path === parsedUrl.pathname;
+
+  if (cProps.to.includes(":")) {
+    return { external: true, href: cProps.to };
   }
 
-  return { to: cProps.to };
+  return {
+    external: false,
+    to: isSamePage
+      ? parsedUrl.hash
+      : {
+          hash: parsedUrl.hash,
+          path: parsedUrl.pathname,
+        },
+  };
 });
+
+const isExternalLink: ComputedRef<boolean> = computed(
+  () => cProps.to.includes(":") || cProps.external || parsedLink.value.external
+);
 </script>
 
 <template>
   <nuxt-link
+    v-if="!isExternalLink"
     v-bind="{ ...cProps, ...parsedLink }"
     :class="[
       typography,
@@ -90,4 +101,21 @@ const parsedLink: ComputedRef<object> = computed(() => {
 
     <slot />
   </nuxt-link>
+
+  <a
+    v-else
+    v-bind="{ ...cProps, ...parsedLink, to: undefined }"
+    :class="[
+      typography,
+      underlined ? 'text-decoration-underline' : 'text-decoration-none',
+    ]"
+  >
+    <template v-if="prompt">
+      {{ prompt }}
+    </template>
+
+    <CustomIcon v-else-if="icon" :color="color" :icon="icon" :size="size" />
+
+    <slot />
+  </a>
 </template>

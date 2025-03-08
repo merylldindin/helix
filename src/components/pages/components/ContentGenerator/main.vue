@@ -31,7 +31,7 @@ const { smAndDown } = useDisplay();
       <CustomHeadline
         v-if="item.type === ContentType.HEADLINE"
         v-bind="item.prop"
-        :class="{ 'mt-3': index > 0 }"
+        :class="{ 'mt-9': index > 0 }"
       />
 
       <p

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { PropType } from "vue";
+import { PropType, ref } from "vue";
 
 import { CustomSection } from "@/components/shared";
 
@@ -11,6 +11,8 @@ defineProps({
     type: Array as PropType<object[]>,
   },
 });
+
+const containerRef = ref(null);
 
 const swiperConfig = {
   autoplay: {

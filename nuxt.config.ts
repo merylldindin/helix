@@ -28,7 +28,7 @@ export default defineNuxtConfig({
     skipInspections: ["link-text", "no-error-response", "no-baseless", "trailing-slash"]
   },
 
-  modules: ["@nuxt/devtools", "@nuxt/eslint", "@nuxtjs/sitemap", "nuxt-jsonld", "nuxt-link-checker", "nuxt-unhead"],
+  modules: ["@nuxt/devtools", "@nuxt/eslint", "@nuxtjs/sitemap", "nuxt-jsonld", "nuxt-link-checker", "nuxt-swiper", "nuxt-unhead"],
 
   nitro: {
     minify: true,
