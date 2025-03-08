@@ -35,13 +35,13 @@ const { smAndDown } = useDisplay();
         <div v-if="reference.detail" class="reference-separator" />
 
         <span v-if="reference.detail" class="reference-detail text-2">
-          {{ reference.detail }}
+          <span v-if="smAndDown">—</span> {{ reference.detail }}
         </span>
       </div>
 
       <p
         v-if="reference.description"
-        class="text-2 text-blue-grey-darken-2 mt-n3"
+        class="text-2 text-blue-grey-darken-2 mt-n1"
         :class="smAndDown ? 'mb-3' : 'mb-1'"
       >
         {{ reference.description }}
@@ -55,7 +55,7 @@ const { smAndDown } = useDisplay();
   order: 1;
 
   @include sm-down {
-    order: 3;
+    order: 1;
   }
 }
 

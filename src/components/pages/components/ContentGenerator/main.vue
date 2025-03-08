@@ -23,6 +23,24 @@ defineProps({
 });
 
 const { smAndDown } = useDisplay();
+
+ const getMarginFromTypography = (typography: string, index: number) => {
+  const headlineMatch = typography.match(/headline-(\d)/);
+  if (!headlineMatch) return "";
+
+  const headlineNumber = parseInt(headlineMatch[1]);
+
+  const marginMappings: Record<number, object> = {
+    1: {"mb-9": true, "mt-12": index > 0},
+    2: {"mb-8": true, "mt-10": index > 0},
+    3: {"mb-6": true, "mt-9": index > 0},
+    4: {"mb-5": true, "mt-7": index > 0},
+    5: {"mb-4": true, "mt-6": index > 0},
+    6: {"mb-3": true, "mt-4": index > 0}
+  };
+
+  return marginMappings[headlineNumber] || "";
+};
 </script>
 
 <template>
@@ -31,7 +49,7 @@ const { smAndDown } = useDisplay();
       <CustomHeadline
         v-if="item.type === ContentType.HEADLINE"
         v-bind="item.prop"
-        :class="{ 'mt-9': index > 0 }"
+        :class="getMarginFromTypography(item.prop.typography, index)"
       />
 
       <p

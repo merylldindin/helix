@@ -1,11 +1,6 @@
 {
   "layout": "scrolled",
-  "schema": {
-    "type": "itemList",
-    "prop": {
-      "source": "LINKS_SECTION"
-    }
-  },
+  "schema": { "type": "itemList", "prop": { "source": "LINKS_SECTION" } },
   "head": {
     "canonical": "/suggestions/books/",
     "title": "My Top Book Recommendations | Meryll Dindin",
@@ -22,7 +17,7 @@
             "prop": {
               "level": 2,
               "text": "About Mankind",
-              "typography": "text-lexend-deca headline-5 mb-4"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -166,7 +161,7 @@
             "prop": {
               "level": 2,
               "text": "About Psychology",
-              "typography": "text-lexend-deca headline-5 mt-6 mb-4"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -246,7 +241,7 @@
             "prop": {
               "level": 2,
               "text": "About Entrepreneurship",
-              "typography": "text-lexend-deca headline-5 mt-6 mb-4"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -310,7 +305,7 @@
             "prop": {
               "level": 2,
               "text": "About Technology",
-              "typography": "text-lexend-deca headline-5 mt-6 mb-4"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -334,7 +329,7 @@
             "prop": {
               "level": 2,
               "text": "About Education",
-              "typography": "text-lexend-deca headline-5 mt-6 mb-4"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {

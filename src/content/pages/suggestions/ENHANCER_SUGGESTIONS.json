@@ -1,11 +1,6 @@
 {
   "layout": "scrolled",
-  "schema": {
-    "type": "itemList",
-    "prop": {
-      "source": "LINKS_SECTION"
-    }
-  },
+  "schema": { "type": "itemList", "prop": { "source": "LINKS_SECTION" } },
   "head": {
     "canonical": "/suggestions/enhancers/",
     "title": "My Top Life Enhancements | Meryll Dindin",
@@ -22,7 +17,7 @@
             "prop": {
               "level": 2,
               "text": "Complements",
-              "typography": "text-lexend-deca headline-5 mb-6"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -70,7 +65,7 @@
             "prop": {
               "level": 2,
               "text": "Health Monitoring",
-              "typography": "text-lexend-deca headline-5 mb-6"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -182,7 +177,7 @@
             "prop": {
               "level": 2,
               "text": "Health Tests",
-              "typography": "text-lexend-deca headline-5 mb-6"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -246,7 +241,7 @@
             "prop": {
               "level": 2,
               "text": "Every Day Life",
-              "typography": "text-lexend-deca headline-5 mb-6"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
