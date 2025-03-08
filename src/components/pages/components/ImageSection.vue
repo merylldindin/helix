@@ -74,7 +74,8 @@ const { smAndDown } = useDisplay();
 }
 
 .image-wrapper {
-  max-height: auto;
+  height: auto;
+  max-height: none;
 
   @include sm-down {
     max-height: 45vh;
