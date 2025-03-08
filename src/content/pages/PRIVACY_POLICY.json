@@ -11,54 +11,49 @@
       "id": "privacy-policy",
       "props": {
         "title": "Privacy Policy",
-        "date": "Last updated on February 3, 2023",
+        "date": "Last updated on March 8, 2025",
         "content": [
-          {
-            "type": "subtitle",
-            "content": "Introduction"
-          },
+          { "type": "subtitle", "content": "Introduction" },
           {
             "type": "paragraph",
             "content": [
-              {
-                "type": "p",
-                "content": "The website "
-              },
+              { "type": "p", "content": "The website " },
               {
                 "type": "a",
                 "content": "merylldindin.com",
-                "props": {
-                  "to": "/"
-                }
+                "props": { "to": "/", "underlined": true }
               },
               {
                 "type": "p",
-                "content": " (“we”, “us”, or “our”) is committed to protecting the privacy of its users. This Privacy Policy applies to information collected through our website located at "
+                "content": " (''we'', ''us'', or ''our'') is committed to protecting the privacy of its users. This Privacy Policy applies to information collected through our website located at "
               },
               {
                 "type": "a",
                 "content": "https://merylldindin.com",
-                "props": {
-                  "to": "/",
-                  "underlined": true
-                }
+                "props": { "to": "/", "underlined": true }
               },
               {
                 "type": "p",
-                "content": " (the “Site”). This Privacy Policy describes the types of information we may collect from you or that you may provide when you visit the Site and our practices for collecting, using, maintaining, protecting, and disclosing that information."
+                "content": " (the ''Site''). This Privacy Policy describes the types of information we may collect from you, how we use it, and your rights regarding that information."
               }
             ]
           },
+          { "type": "subtitle", "content": "Information We Collect" },
           {
-            "type": "subtitle",
-            "content": "Information Collection, Use, and Sharing"
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We collect several types of information from and about users of our Site, including:"
+              }
+            ]
           },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "We use Google Analytics to collect information about use of the Site, such as the number of visitors and the pages visited. Google Analytics collects only the IP address assigned to the user on the date of visit, not the user's name or other personally identifiable information. The information collected by Google Analytics is used to improve the Site and enhance the user experience."
+                "content": "1. Usage Data: Information about your interaction with our Site, including IP address, browser type, operating system, pages visited, time spent on pages, and other browsing data. We collect this information using cookies and similar technologies."
               }
             ]
           },
@@ -67,53 +62,207 @@
             "content": [
               {
                 "type": "p",
-                "content": "We will not sell or rent this information to anyone. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, e.g. to ship an order."
+                "content": "2. Contact Information: If you contact us or sign up for our newsletter, we may collect your name and email address."
               }
             ]
           },
+          { "type": "subtitle", "content": "How We Use Your Information" },
           {
-            "type": "subtitle",
-            "content": "Your Access and Control Over Information"
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We use the information we collect about you for the following purposes:"
+              }
+            ]
           },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "You may opt out of data collection by Google Analytics by installing the Google Analytics opt-out browser add-on."
+                "content": "1. To improve our Site and present its contents to you."
               }
             ]
-          },
-          {
-            "type": "subtitle",
-            "content": "Security"
           },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "We take precautions to protect your information. When you submit sensitive information via the website, your information is protected both online and offline."
+                "content": "2. To analyze usage patterns and improve user experience."
               }
             ]
           },
           {
-            "type": "subtitle",
-            "content": "Changes to this Privacy Policy"
+            "type": "paragraph",
+            "content": [
+              { "type": "p", "content": "3. To respond to your inquiries or requests." }
+            ]
           },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. Your continued use of the Site after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy."
+                "content": "4. To send periodic emails if you have opted in to receive them."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Analytics and Cookies" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We use Google Analytics to collect information about use of the Site. Google Analytics collects information such as how often users visit the Site, what pages they visit, and what other sites they used prior to coming to the Site. We use this information to improve the Site and enhance the user experience."
               }
             ]
           },
           {
-            "type": "subtitle",
-            "content": "Contact Information"
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "Google Analytics collects only the IP address assigned to you on the date you visit the Site, rather than your name or other personally identifying information. We do not combine the information collected through Google Analytics with personally identifiable information."
+              }
+            ]
           },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "You can prevent Google Analytics from recognizing you on return visits to the Site by disabling cookies on your browser or by installing the "
+              },
+              {
+                "type": "a",
+                "content": "Google Analytics Opt-out Browser Add-on",
+                "props": {
+                  "external": true,
+                  "to": "https://tools.google.com/dlpage/gaoptout",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                  "underlined": true
+                }
+              },
+              { "type": "p", "content": "." }
+            ]
+          },
+          { "type": "subtitle", "content": "Third-Party Disclosure" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties except in the following circumstances:"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "1. To service providers who assist us in operating our Site, conducting our business, or serving you, so long as those parties agree to keep this information confidential."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "2. When we believe release is appropriate to comply with the law, enforce our site policies, or protect our or others' rights, property, or safety."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Your Rights and Choices" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "Depending on your location, you may have certain rights regarding your personal information, including:"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "1. The right to access and receive a copy of your personal information."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "2. The right to request correction of inaccurate personal information."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "3. The right to request deletion of your personal information."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "4. The right to opt out of certain data processing activities."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "To exercise these rights, please contact us using the information provided in the \"Contact Information\" section below."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Data Security" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We implement reasonable security measures to protect your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure. However, the transmission of information via the internet is not completely secure. We cannot guarantee the security of your personal information transmitted to our Site."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Children's Privacy" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "Our Site is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are under 13, please do not provide any information on this Site."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Changes to Our Privacy Policy" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We may update our Privacy Policy from time to time. If we make material changes, we will notify you by posting the updated Privacy Policy on this page with a new effective date. Your continued use of the Site after we post any modifications to the Privacy Policy will constitute your acknowledgment of the modifications and your consent to the updated Privacy Policy."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Contact Information" },
           {
             "type": "paragraph",
             "content": [
@@ -126,16 +275,13 @@
                 "content": "email",
                 "props": {
                   "external": true,
-                  "to": "mailto:merylldin@gmail.com",
+                  "to": "mailto:merylldindin@icloud.com",
                   "rel": "noopener noreferrer",
                   "target": "_blank",
                   "underlined": true
                 }
               },
-              {
-                "type": "p",
-                "content": "."
-              }
+              { "type": "p", "content": "." }
             ]
           },
           {
@@ -143,7 +289,7 @@
             "content": [
               {
                 "type": "p",
-                "content": "This Privacy Policy is effective as of February 3, 2023, and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page."
+                "content": "This Privacy Policy is effective as of March 8, 2025, and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page."
               }
             ]
           }

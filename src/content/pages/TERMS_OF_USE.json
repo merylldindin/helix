@@ -8,32 +8,27 @@
   "components": [
     {
       "name": "LEGAL_SECTION",
-      "id": "privacy-policy",
+      "id": "terms-of-use",
       "props": {
         "title": "Terms of Use",
-        "date": "Last updated on February 3, 2023",
+        "date": "Last updated on March 8, 2025",
         "content": [
-          {
-            "type": "subtitle",
-            "content": "Introduction"
-          },
+          { "type": "subtitle", "content": "Introduction" },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "These terms of use (“Terms”) govern your access to and use of Meryll Dindin's website, including any content, functionality, and services offered on or through "
+                "content": "These terms of use (''Terms'') govern your access to and use of this website, including any content, functionality, and services offered on or through "
               },
               {
                 "type": "a",
                 "content": "merylldindin.com",
-                "props": {
-                  "to": "/"
-                }
+                "props": { "to": "/", "underlined": true }
               },
               {
                 "type": "p",
-                "content": " (the “Site”), whether as a guest or a registered user."
+                "content": " (the ''Site''), whether as a guest or a registered user."
               }
             ]
           },
@@ -42,44 +37,26 @@
             "content": [
               {
                 "type": "p",
-                "content": "Please read these Terms carefully before you start to use the Site. By using the Site, you accept and agree to be bound and abide by these Terms and our Privacy Policy, found at "
+                "content": "Please read these Terms carefully before you start to use the Site. By using the Site, you accept and agree to be bound by these Terms and our Privacy Policy, found at "
               },
               {
                 "type": "a",
                 "content": "merylldindin.com/legal/privacy-policy",
-                "props": {
-                  "to": "/legal/privacy-policy/"
-                }
+                "props": { "to": "/legal/privacy-policy/", "underlined": true }
               },
               {
                 "type": "p",
-                "content": ", incorporated herein by reference. If you do not want to agree to these Terms or the Privacy Policy, you must not access or use the Site."
+                "content": ", incorporated herein by reference. If you do not agree to these Terms or the Privacy Policy, you must not access or use the Site."
               }
             ]
           },
-          {
-            "type": "subtitle",
-            "content": "Intellectual Property"
-          },
+          { "type": "subtitle", "content": "Intellectual Property Rights" },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "The Site and its original content, features, and functionality are and will remain the exclusive property of Meryll Dindin's website and its licensors. The Site is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Meryll Dindin's website."
-              }
-            ]
-          },
-          {
-            "type": "subtitle",
-            "content": "User Content"
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "The Site may allow you to submit, upload, publish, or otherwise make available content, including but not limited to text, photographs, videos, and audio (“User Content”). You retain all rights in, and are solely responsible for, the User Content you make available through the Site."
+                "content": "The Site and its entire contents, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio) are owned by the Site owner or its licensors and are protected by United States and international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws."
               }
             ]
           },
@@ -88,7 +65,17 @@
             "content": [
               {
                 "type": "p",
-                "content": "By making any User Content available through the Site, you grant to Meryll Dindin's website a non-exclusive, transferable, sub-licensable, royalty-free, worldwide license to use, copy, modify, create derivative works based on, distribute, publicly display, publicly perform, and otherwise exploit in any manner such User Content in all formats and distribution channels now known or hereafter devised (including in connection with the Site and Meryll Dindin's business and on third-party sites and services), without further notice to or consent from you, and without the requirement of payment to you or any other person or entity."
+                "content": "These Terms permit you to use the Site for your personal, non-commercial use only. You must not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any material from our Site except as permitted by these Terms."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "User Content" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "The Site may allow you to submit, upload, publish, or otherwise make available content, including but not limited to text, photographs, videos, and audio (''User Content''). You retain all rights in, and are solely responsible for, the User Content you make available through the Site."
               }
             ]
           },
@@ -97,72 +84,7 @@
             "content": [
               {
                 "type": "p",
-                "content": "You represent and warrant that: (i) you either are the sole and exclusive owner of all User Content or you have all rights, licenses, consents, releases, and clearances to grant the rights granted in these Terms; and (ii) neither the User Content, your submission, upload, publication, or otherwise making available of such User Content, nor Meryll Dindin's website use of the User Content as permitted herein will infringe, misappropriate, or violate a third party’s patent, copyright, trademark, trade secret, moral rights, or proprietary or other proprietary rights, or result in the violation of any applicable law or regulation."
-              }
-            ]
-          },
-          {
-            "type": "subtitle",
-            "content": "User Conduct"
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "You agree not to engage in any of the following prohibited activities: (i) copying, distributing, or disclosing any part of the Site in any medium, including without limitation by any automated or non-automated “scraping”; (ii) using any automated system, including without limitation “robots,” “spiders,” “offline readers,” etc., to access the Site; (iii) transmitting spam, chain letters, or other unsolicited email; (iv) attempting to interfere with, compromise the system integrity or security, or decipher any transmissions to or from the servers running the Site; (v) taking any action that imposes, or may impose at our sole discretion an unreasonable or disproportionately large load on our infrastructure; (vi) uploading invalid data, viruses, worms, or other software agents through the Site; (vii) collecting or harvesting any personally identifiable information, including account names of others; (viii) using the Site for any commercial solicitation purposes; (ix) impersonating another person or entity, or falsifying your affiliation with a person or entity; (x) violating the privacy of any third party, or attempting to harvest or collect any personally identifiable information of users of the Site; or (xi) engaging in any other conduct that restricts or inhibits anyone's use or enjoyment of the Site, or which, as determined by Meryll Dindin's website, may harm Meryll Dindin's website or users of the Site or expose them to liability."
-              }
-            ]
-          },
-          {
-            "type": "subtitle",
-            "content": "Modifications to Site"
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "Meryll Dindin's website reserves the right to modify, suspend, or discontinue the Site or any portion thereof at any time with or without notice to you, and Meryll Dindin's will not be liable to you or to any third party should it exercise such rights."
-              }
-            ]
-          },
-          {
-            "type": "subtitle",
-            "content": "Modifications to Terms"
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "Meryll Dindin's website reserves the right, at its sole discretion, to modify or replace these Terms at any time. If a revision is material, Meryll Dindin's website will provide at least 30 days’ notice prior to any new terms taking effect. What constitutes a material change will be determined at Meryll Dindin's sole discretion. By continuing to access or use the Site after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Site."
-              }
-            ]
-          },
-          {
-            "type": "subtitle",
-            "content": "Termination"
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "Meryll Dindin's website may terminate or suspend your access to all or part of the Site, with or without notice and with or without cause, at any time and effective immediately. If you wish to terminate these Terms or your Meryll Dindin's website account (if you have one), you may discontinue using the Site."
-              }
-            ]
-          },
-          {
-            "type": "subtitle",
-            "content": "Disclaimers"
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "The Site is provided on an “AS IS” and “AS AVAILABLE” basis without any representation or warranty, whether express, implied, or statutory. Meryll Dindin's website makes no representation, warranty, or guarantee that the Site will be uninterrupted, timely, secure, or error-free."
+                "content": "By making any User Content available through the Site, you grant to the Site owner a non-exclusive, transferable, sub-licensable, royalty-free, worldwide license to use, copy, modify, create derivative works based on, distribute, publicly display, publicly perform, and otherwise exploit in any manner such User Content in all formats and distribution channels now known or hereafter devised, without further notice to or consent from you, and without the requirement of payment to you or any other person or entity."
               }
             ]
           },
@@ -171,53 +93,137 @@
             "content": [
               {
                 "type": "p",
-                "content": "You understand that your use of the Site and any User Content is at your own risk. Meryll Dindin's website does not warrant that User Content, including without limitation any information provided through the Site, will be accurate, reliable, or complete, and Meryll Dindin's website will have no liability for any errors or omissions in the User Content."
+                "content": "You represent and warrant that: (i) you own or have the necessary rights to share the User Content and to grant the rights and licenses contained in these Terms; (ii) the User Content does not violate or infringe upon the rights of any third party, including intellectual property rights, privacy rights, or rights of publicity; and (iii) the User Content complies with these Terms and all applicable laws and regulations."
               }
             ]
           },
+          { "type": "subtitle", "content": "Prohibited Uses" },
           {
-            "type": "subtitle",
-            "content": "Indemnification"
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "You agree not to use the Site: (i) in any way that violates any applicable law or regulation; (ii) to transmit any advertising or promotional material without prior permission; (iii) to impersonate or attempt to impersonate the Site owner or any other person or entity; (iv) to engage in any activity that interferes with or disrupts the Site; (v) to attempt to gain unauthorized access to any part of the Site; (vi) to conduct any automated use of the system; (vii) to introduce viruses, trojan horses, worms, or other harmful code; or (viii) to collect or harvest any personally identifiable information from the Site."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Changes to the Terms" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We reserve the right to modify these Terms at any time in our sole discretion. All changes are effective immediately when posted and apply to all access to and use of the Site thereafter. Your continued use of the Site following the posting of revised Terms means that you accept and agree to the changes. You are expected to check this page periodically so you are aware of any changes."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Termination" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We may terminate or suspend your access to all or part of the Site, without notice, for any conduct that we, in our sole discretion, believe violates these Terms or is harmful to other users of the Site, us, or third parties, or for any other reason."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Disclaimer of Warranties" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "THE SITE IS PROVIDED ON AN ''AS IS'' AND ''AS AVAILABLE'' BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. NEITHER THE SITE OWNER NOR ANY PERSON ASSOCIATED WITH THE SITE MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY, OR AVAILABILITY OF THE SITE."
+              }
+            ]
           },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "You agree to indemnify, defend, and hold harmless Meryll Dindin's website, its affiliates, licensors, and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors, assigns, content providers, and other agents from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys’ fees) arising out of your violation of these Terms or your use of the Site, including User Content submitted by you, or your violation of any rights of another."
+                "content": "THE FOREGOING DOES NOT AFFECT ANY WARRANTIES THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW."
               }
             ]
           },
+          { "type": "subtitle", "content": "Limitation of Liability" },
           {
-            "type": "subtitle",
-            "content": "Governing Law and Jurisdiction"
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "IN NO EVENT WILL THE SITE OWNER, ITS AFFILIATES, OR THEIR LICENSORS, SERVICE PROVIDERS, EMPLOYEES, AGENTS, OFFICERS, OR DIRECTORS BE LIABLE FOR DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF, OR INABILITY TO USE, THE SITE, ANY WEBSITES LINKED TO IT, ANY CONTENT ON THE SITE OR SUCH OTHER WEBSITES, INCLUDING ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES."
+              }
+            ]
           },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "These Terms and your use of the Site will be governed under Washington State law. Any dispute arising from these Terms or your use of the Site will be resolved exclusively in the courts located in Santa Monica, California, and you consent to the personal jurisdiction of such courts."
+                "content": "THE FOREGOING DOES NOT AFFECT ANY LIABILITY THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW."
               }
             ]
           },
+          { "type": "subtitle", "content": "Indemnification" },
           {
-            "type": "subtitle",
-            "content": "Miscellaneous"
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "You agree to defend, indemnify, and hold harmless the Site owner, its affiliates, licensors, and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors, and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the Site."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Governing Law and Jurisdiction" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "These Terms and any dispute or claim arising out of or related to them shall be governed by and construed in accordance with the laws of the State of Washington, without giving effect to any choice or conflict of law provision or rule."
+              }
+            ]
           },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "These Terms, together with the Privacy Policy and any additional terms to which you agree when using particular elements of the Site, constitute the entire agreement between you and Meryll Dindin's website with respect to the use of the Site. If any provision of these Terms is held to be invalid or unenforce to the enforceability of the remaining provisions. The failure of Meryll Dindin's website to enforce any right or provision in these Terms shall not constitute a waiver of such right or provision unless acknowledged and agreed to by us in writing."
+                "content": "Any legal suit, action, or proceeding arising out of, or related to, these Terms or the Site shall be instituted exclusively in the federal courts of the United States or the courts of the State of Washington."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Waiver and Severability" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "No waiver by the Site owner of any term or condition set out in these Terms shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure to assert a right or provision under these Terms shall not constitute a waiver of such right or provision."
               }
             ]
           },
           {
-            "type": "subtitle",
-            "content": "Contact Information"
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "If any provision of these Terms is held by a court or other tribunal of competent jurisdiction to be invalid, illegal, or unenforceable for any reason, such provision shall be eliminated or limited to the minimum extent such that the remaining provisions of the Terms will continue in full force and effect."
+              }
+            ]
           },
+          { "type": "subtitle", "content": "Entire Agreement" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "The Terms, our Privacy Policy, and any terms and conditions incorporated herein constitute the sole and entire agreement between you and the Site owner regarding the Site and supersede all prior and contemporaneous understandings, agreements, representations, and warranties, both written and oral, regarding the Site."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Contact Information" },
           {
             "type": "paragraph",
             "content": [
@@ -230,16 +236,13 @@
                 "content": "email",
                 "props": {
                   "external": true,
-                  "to": "mailto:merylldin@gmail.com",
+                  "to": "mailto:merylldindin@icloud.com",
                   "rel": "noopener noreferrer",
                   "target": "_blank",
                   "underlined": true
                 }
               },
-              {
-                "type": "p",
-                "content": "."
-              }
+              { "type": "p", "content": "." }
             ]
           },
           {
@@ -247,7 +250,7 @@
             "content": [
               {
                 "type": "p",
-                "content": "These Terms of Use are effective as of February 3, 2023, and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page."
+                "content": "These Terms of Use are effective as of March 8, 2025, and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page."
               }
             ]
           }

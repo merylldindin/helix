@@ -1,5 +1,5 @@
 import { DEFAULT_NAME, DEFAULT_URL } from "@/content";
-import { findLast } from "lodash";
+import findLast from "lodash/findLast";
 
 export const getWebPageSchema = (route: string): object => {
   const pageUrl = `${DEFAULT_URL}${route}`;
