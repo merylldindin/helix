@@ -9,6 +9,8 @@ export default defineNuxtConfig({
     transpile: ["vuetify"]
   },
 
+  compatibilityDate: "2025-03-08",
+
   components: [{
     extensions: [".vue"],
     path: "~/components"
@@ -26,7 +28,7 @@ export default defineNuxtConfig({
     skipInspections: ["link-text", "no-error-response", "no-baseless", "trailing-slash"]
   },
 
-  modules: ["@nuxt/devtools", "@nuxt/eslint", "@nuxtjs/sitemap", "nuxt-jsonld", "nuxt-link-checker", "nuxt-swiper", "nuxt-unhead"],
+  modules: ["@nuxt/devtools", "@nuxt/eslint", "@nuxtjs/sitemap", "nuxt-jsonld", "nuxt-link-checker", "nuxt-unhead"],
 
   nitro: {
     minify: true,
@@ -80,16 +82,25 @@ export default defineNuxtConfig({
       cssCodeSplit: true,
       manifest: true,
       minify: true,
+
       rollupOptions: {
+        onwarn(warning, warn) {
+          if (warning.code === "EVAL" && warning.id && warning.id.includes("lottie-web")) {
+            return;
+          }
+
+          warn(warning);
+        },
+
         output: {
           compact: true,
           manualChunks: {
             lottie: ["vue3-lottie"],
-            swiper: ["nuxt-swiper"],
             vuetify: ["vuetify"]
           }
         }
       },
+
       sourcemap: "hidden"
     },
 
@@ -113,6 +124,4 @@ export default defineNuxtConfig({
 
     plugins: [UnheadVite()],
   },
-
-  compatibilityDate: "2025-03-08"
 });
