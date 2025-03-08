@@ -1,5 +1,7 @@
 name: CloudFront Invalidation
 
+run-name: "ci(github): invalidate cloudfront distribution"
+
 on:
   workflow_dispatch:
   schedule:

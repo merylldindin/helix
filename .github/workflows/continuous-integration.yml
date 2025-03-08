@@ -1,5 +1,7 @@
 name: Continuous Integration
 
+run-name: "ci(helix): continuous integration"
+
 on: [merge_group, pull_request, workflow_dispatch]
 
 env:
