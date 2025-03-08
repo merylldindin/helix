@@ -4,6 +4,7 @@
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
   "extends": ["config:base"],
+  "force": { "constraints": { "python": "3.12.9" } },
   "packageRules": [
     {
       "automerge": true,
@@ -30,6 +31,7 @@
       "semanticCommitType": "chore"
     }
   ],
+  "ignorePresets": ["python"],
   "platformAutomerge": true,
   "schedule": ["every weekend"]
 }
