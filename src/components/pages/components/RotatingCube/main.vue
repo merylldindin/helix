@@ -33,11 +33,7 @@ const swiperConfig = {
   <CustomSection fullscreen>
     <template #background>
       <ClientOnly>
-        <swiper-container
-          ref="containerRef"
-          v-bind="swiperConfig"
-          class="cube-wrapper"
-        >
+        <swiper-container ref="containerRef" v-bind="swiperConfig" class="cube-wrapper">
           <swiper-slide
             v-for="(page, index) in pages"
             :key="index"

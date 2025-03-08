@@ -1,7 +1,7 @@
 import { DEFAULT_NAME, DEFAULT_URL } from "@/content";
 import { findLast } from "lodash";
 
-export const getWebPageSchema = (route: string): Object => {
+export const getWebPageSchema = (route: string): object => {
   const pageUrl = `${DEFAULT_URL}${route}`;
 
   const subpath = findLast(route.split("/"), Boolean) || "";

@@ -12,7 +12,7 @@ enum LegalTextType {
 defineProps({
   content: {
     required: true,
-    type: Array as PropType<{ type: LegalTextType; content: string | Object }[]>,
+    type: Array as PropType<{ type: LegalTextType; content: string | object }[]>,
   },
   date: {
     required: true,

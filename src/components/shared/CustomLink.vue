@@ -54,7 +54,7 @@ const cProps = defineProps({
   },
 });
 
-const parsedLink: ComputedRef<Object> = computed(() => {
+const parsedLink: ComputedRef<object> = computed(() => {
   const parsedUrl = new URL(cProps.to, DEFAULT_URL);
   const isSamePage = useRoute().path === parsedUrl.pathname;
 
