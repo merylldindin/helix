@@ -1,11 +1,11 @@
 name: Continuous Integration
 
-run-name: "ci(helix): continuous integration"
+run-name: 'ci(helix): continuous integration'
 
 on: [merge_group, pull_request, workflow_dispatch]
 
 env:
-  NODE_VERSION: "22.14.0"
+  NODE_VERSION: '22.14.0'
 
 jobs:
   workflow:
@@ -61,5 +61,5 @@ jobs:
           command: yarn cypress
           install: false
           start: make serve
-          wait-on: "http://localhost:3000/"
+          wait-on: 'http://localhost:3000/'
           wait-on-timeout: 60

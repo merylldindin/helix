@@ -1,6 +1,6 @@
 name: CloudFront Invalidation
 
-run-name: "ci(github): invalidate cloudfront distribution"
+run-name: 'ci(github): invalidate cloudfront distribution'
 
 on:
   workflow_dispatch:
@@ -24,4 +24,4 @@ jobs:
 
       - name: Invalidate CloudFront distribution
         run: |
-          aws cloudfront create-invalidation --distribution-id E3SZTVEZV1G0WQ --paths '/fonts/*'
+          aws cloudfront create-invalidation --distribution-id E3SZTVEZV1G0WQ --paths /fonts/*
