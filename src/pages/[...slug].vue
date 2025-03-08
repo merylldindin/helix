@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { ComputedRef } from "vue";
-import { computed, onMounted } from "vue";
+import { computed } from "vue";
 import { useRoute } from "vue-router";
 
 import { DynamicPage } from "@/components/pages";
@@ -12,15 +12,16 @@ import {
   getWebPageSchema,
 } from "@/utils/schemas";
 
-import { definePageMeta, setPageLayout } from "#imports";
-import { useJsonld } from "#jsonld";
+import { definePageMeta, useHead } from "#imports";
 
 definePageMeta({
-  layout: false,
+  layout: "default",
 });
 
+const route = useRoute();
+
 const pageContent = computed(() => {
-  return ROUTES_CONTENT[useRoute().path as keyof typeof ROUTES_CONTENT];
+  return ROUTES_CONTENT[route.path as keyof typeof ROUTES_CONTENT];
 });
 
 const pageSchema: ComputedRef<string | undefined> = computed(() => {
@@ -28,26 +29,28 @@ const pageSchema: ComputedRef<string | undefined> = computed(() => {
   return pageContent.value.schema?.type;
 });
 
-onMounted(() => {
-  setPageLayout(pageContent.value.layout);
+useHead(() => {
+  const schemas = [];
 
-  // @ts-ignore
-  useJsonld(getBreadcrumbsSchema(useRoute().path));
+  schemas.push(getBreadcrumbsSchema(route.path));
 
-  // @ts-ignore
-  useJsonld(getWebPageSchema(useRoute().path));
+  schemas.push(getWebPageSchema(route.path));
 
   if (pageSchema.value === "itemList") {
     // @ts-ignore
-    useJsonld(getItemListSchema(pageContent.value));
+    schemas.push(getItemListSchema(pageContent.value));
   }
 
   if (pageSchema.value === "blogPosting") {
-    for (const schema of getBlogPostSchema(pageContent.value)) {
-      // @ts-ignore
-      useJsonld(schema);
-    }
+    schemas.push(...getBlogPostSchema(pageContent.value));
   }
+
+  return {
+    script: schemas.map((schema) => ({
+      children: JSON.stringify(schema),
+      type: "application/ld+json",
+    })),
+  };
 });
 </script>
 

@@ -1,6 +1,6 @@
 name: helix
 
-on: [pull_request, merge_group]
+on: [merge_group, pull_request, workflow_dispatch]
 
 env:
   NODE_VERSION: "22.14.0"

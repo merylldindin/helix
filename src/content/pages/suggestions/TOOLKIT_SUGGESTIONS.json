@@ -1,11 +1,6 @@
 {
   "layout": "scrolled",
-  "schema": {
-    "type": "itemList",
-    "prop": {
-      "source": "LINKS_SECTION"
-    }
-  },
+  "schema": { "type": "itemList", "prop": { "source": "LINKS_SECTION" } },
   "head": {
     "canonical": "/suggestions/toolkits/",
     "title": "Essential Toolkits for Efficient Coding | Meryll Dindin",
@@ -22,7 +17,7 @@
             "prop": {
               "level": 2,
               "text": "Web Development",
-              "typography": "text-lexend-deca headline-5 mb-6"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -102,7 +97,7 @@
             "prop": {
               "level": 2,
               "text": "VSCode Extensions",
-              "typography": "text-lexend-deca headline-5 mb-6"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {

@@ -1,11 +1,6 @@
 {
   "layout": "scrolled",
-  "schema": {
-    "type": "itemList",
-    "prop": {
-      "source": "LINKS_SECTION"
-    }
-  },
+  "schema": { "type": "itemList", "prop": { "source": "LINKS_SECTION" } },
   "head": {
     "canonical": "/suggestions/enhancers/",
     "title": "My Top Life Enhancements | Meryll Dindin",
@@ -22,7 +17,7 @@
             "prop": {
               "level": 2,
               "text": "Complements",
-              "typography": "text-lexend-deca headline-5 mb-6"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -66,11 +61,27 @@
             }
           },
           {
+            "type": "reference",
+            "prop": {
+              "href": "https://davidprotein.com/",
+              "text": "David Protein",
+              "description": "Introducing the most effective portable protein on this planet"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://blueprint.bryanjohnson.com/",
+              "text": "Blueprint",
+              "description": "World’s best Longevity protocol, powered by precision evidence doses to enhance your energy, cognition, and overall well-being"
+            }
+          },
+          {
             "type": "headline",
             "prop": {
               "level": 2,
               "text": "Health Monitoring",
-              "typography": "text-lexend-deca headline-5 mb-6"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -178,11 +189,19 @@
             }
           },
           {
+            "type": "reference",
+            "prop": {
+              "href": "https://www.hellolingo.com/",
+              "text": "Lingo",
+              "description": "Stream glucose data directly to your phone with the Lingo biosensor, a continuous glucose monitor"
+            }
+          },
+          {
             "type": "headline",
             "prop": {
               "level": 2,
               "text": "Health Tests",
-              "typography": "text-lexend-deca headline-5 mb-6"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -242,11 +261,35 @@
             }
           },
           {
+            "type": "reference",
+            "prop": {
+              "href": "https://www.endless.health/",
+              "text": "Endless Health",
+              "description": "Know your long-term cardiovascular health, and plan to move forward"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://zoi.com/en/",
+              "text": "Zoï",
+              "description": "Check-up à 360° à Paris et application de suivi, pour optimiser sa qualité de vie, au quotidien et pour longtemps"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://www.biograph.com/",
+              "text": "Biograph",
+              "description": "Biograph is the world's most advanced preventive health and diagnostics clinic, driving meaningful advances in human healthspan and lifespan"
+            }
+          },
+          {
             "type": "headline",
             "prop": {
               "level": 2,
               "text": "Every Day Life",
-              "typography": "text-lexend-deca headline-5 mb-6"
+              "typography": "text-lexend-deca headline-5"
             }
           },
           {
@@ -295,6 +338,22 @@
               "href": "https://yuka.io/en/",
               "text": "Yuka",
               "description": "Yuka deciphers product labels and analyzes the health impact of food products and cosmetics"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://www.roka.com/collections/winddown-prescription-eyeglasses",
+              "text": "Roka",
+              "description": "Premium red-lens eyewear that filters short-wavelength light and reduces digital eye strain"
+            }
+          },
+          {
+            "type": "reference",
+            "prop": {
+              "href": "https://joovv.com/",
+              "text": "Joov",
+              "description": "The best medical-grade devices for at-home red light therapy"
             }
           }
         ]
