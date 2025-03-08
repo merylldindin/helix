@@ -10,7 +10,7 @@
     "cypress:open": "cypress open --browser chrome",
     "eslint": "eslint \"src/**/*.{ts,js,vue}\" --no-fix",
     "eslint:fix": "eslint \"src/**/*.{ts,js,vue}\" --fix",
-    "prepare": "husky",
+    "prepare": "husky && yarn nuxt prepare",
     "prettier": "prettier --check --log-level error \"src/**/*.{ts,js,scss,css,vue,json}\"",
     "prettier:fix": "prettier --write \"src/**/*.{ts,js,scss,css,vue,json}\"",
     "serve": "nuxi preview -o",
