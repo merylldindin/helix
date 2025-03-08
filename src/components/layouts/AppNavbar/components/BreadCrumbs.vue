@@ -32,18 +32,22 @@ const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
 
     path += `/${element}`;
 
-    if (Object.values(RoutePath).includes(`${path}/` as RoutePath)) {
+    const validRoute = Object.values(RoutePath).includes(`${path}/` as RoutePath);
+
+    if (validRoute) {
       result.push({ item: `${path}/`, name });
     } else {
       result.push({ name });
     }
   }
 
-  if (routePath.length > 1) {
+  if (routePath.length > 1 && result.length > 1) {
     const pathSuffix = routePath.at(-1);
+    const previousItem = result.at(-2);
 
-    // @ts-ignore
-    result.at(-2).item = `${result.at(-2).item}#${pathSuffix}`;
+    if (previousItem && previousItem.item) {
+      previousItem.item = `${previousItem.item}#${pathSuffix}`;
+    }
   }
 
   return result;
@@ -87,8 +91,9 @@ const displayedBreadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
 
         <nuxt-link
           v-if="index < displayedBreadcrumbs.length - 1 || smAndDown"
+          v-bind="item.item ? { to: item.item } : { disabled: true }"
           class="breadcrumb-text text-decoration-none text-1 text-cartesian text-uppercase"
-          :to="item.item"
+          :class="{ 'pointer-events': item.item ? 'auto' : 'none' }"
         >
           {{ item.name }}
         </nuxt-link>

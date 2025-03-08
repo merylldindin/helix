@@ -1,4 +1,4 @@
-name: helix
+name: Continuous Integration
 
 on: [merge_group, pull_request, workflow_dispatch]
 
@@ -38,7 +38,7 @@ jobs:
         run: yarn install
 
       - name: Prepare Environment
-        run: yarn prepare
+        run: yarn nuxt prepare
 
       - name: Run Prettier
         run: yarn prettier
