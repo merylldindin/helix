@@ -4,7 +4,7 @@ import type { PropType } from "vue";
 import type { PageComponent, PageHead } from "@/types";
 import { extractHead } from "@/utils/meta";
 
-import { ASYNC_COMPONENTS } from "./utils";
+import { ASYNC_COMPONENTS } from "./utilities";
 
 import { useSeoMeta } from "#imports";
 

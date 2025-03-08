@@ -4,10 +4,10 @@ clean: ## Clean the project
 
 setup: ## Install developper experience
 	yarn setup
+	poetry install --no-root --with devops
 
 install: ## Install project dependencies
-	poetry install --sync --no-root --with devops
-	yarn install
+	@yarn install
 
 install-hard: ## Install project dependencies from scratch
 	rm -rf .venv/
@@ -17,19 +17,19 @@ install-hard: ## Install project dependencies from scratch
 	make install
 
 start: ## Start the project
-	yarn start
+	@yarn start
 
 build: ## Build the project
-	NUXT_ENVIRONMENT=production yarn build
+	@NUXT_ENVIRONMENT=production yarn build
 
 serve: ## Serve the project
-	yarn serve
+	@yarn serve
 
 deploy: ## Deploy the project
-	poetry run sirtuin cloudfront-deploy .cloudfront -p personal
+	@poetry run sirtuin cloudfront-deploy .cloudfront -p personal
 
 invalidate-fonts: ## Invalidate fonts
-	aws cloudfront create-invalidation --distribution-id E3SZTVEZV1G0WQ --paths '/fonts/*' --region eu-west-3 --profile personal
+	@aws cloudfront create-invalidation --distribution-id E3SZTVEZV1G0WQ --paths '/fonts/*' --region eu-west-3 --profile personal
 
 help: ## Description of the Makefile commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-25s\033[0m %s\n", $$1, $$2}'

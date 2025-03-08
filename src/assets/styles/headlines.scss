@@ -1,3 +1,5 @@
+@use "../variables/mixins.scss" as *;
+
 %headline {
   text-align: left !important;
   font-weight: 700 !important;

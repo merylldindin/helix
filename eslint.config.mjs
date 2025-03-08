@@ -1,13 +1,10 @@
 import globals from "globals";
-import typescriptParser from "@typescript-eslint/parser";
-import typescriptPlugin from "@typescript-eslint/eslint-plugin";
 import eslint from "@eslint/js";
 import withNuxt from "./.nuxt/eslint.config.mjs";
 import prettierConfig from "eslint-config-prettier";
 import unicornPlugin from "eslint-plugin-unicorn";
-import vuePlugin from "eslint-plugin-vue";
 
-export default withNuxt().append([
+export default withNuxt([
   // Base Config
   eslint.configs["recommended"],
   // Typescript Config
@@ -20,32 +17,15 @@ export default withNuxt().append([
         ...globals.es6,
         ...globals.node,
       },
-      parser: typescriptParser,
       parserOptions: {
         project: "./tsconfig.json",
       },
       sourceType: "module",
     },
     plugins: {
-      "@typescript-eslint": typescriptPlugin,
       unicorn: unicornPlugin,
-    },
-    rules: {
-      ...typescriptPlugin.configs["recommended"].rules,
-      ...typescriptPlugin.configs["eslint-recommended"].rules,
-    },
+    }
   },
-  // Unicorn Config
-  {
-    plugins: {
-      unicorn: unicornPlugin,
-    },
-    rules: {
-      ...unicornPlugin.configs["recommended"].rules,
-    },
-  },
-  // Vue Config
-  ...vuePlugin.configs["flat/recommended"],
   // Prettier Config
   prettierConfig,
   // Override Rules
@@ -118,6 +98,7 @@ export default withNuxt().append([
       "unicorn/no-array-for-each": "off",
       "unicorn/no-array-reduce": "off",
       "unicorn/no-null": "off",
+      "unicorn/prefer-query-selector": "off",
       "unicorn/prevent-abbreviations": [
         "error",
         {

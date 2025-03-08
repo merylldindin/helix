@@ -3,7 +3,7 @@ name: helix
 on: [pull_request, merge_group]
 
 env:
-  NODE_VERSION: "20.14.0"
+  NODE_VERSION: "22.14.0"
 
 jobs:
   workflow:
