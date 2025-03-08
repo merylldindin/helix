@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomButton, CustomText } from "@/components/shared";
@@ -7,15 +7,18 @@ import { COOKIE_BANNER_CONTENT } from "@/content";
 
 const DEFAULT_GA_TRACKING_KEY = "_hx_tracking";
 
-const isTracking = ref<boolean>(
-  import.meta.client ? localStorage.getItem(DEFAULT_GA_TRACKING_KEY) === "true" : false
-);
+const isTracking = ref(false);
+const isMounted = ref(false);
+
+onMounted(() => {
+  if (localStorage.getItem(DEFAULT_GA_TRACKING_KEY) === "true") {
+    isTracking.value = true;
+  }
+  isMounted.value = true;
+});
 
 const dismissBanner = () => {
-  if (import.meta.client) {
-    localStorage.setItem(DEFAULT_GA_TRACKING_KEY, "true");
-  }
-
+  localStorage.setItem(DEFAULT_GA_TRACKING_KEY, "true");
   isTracking.value = true;
 };
 
