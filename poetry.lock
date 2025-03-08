@@ -286,13 +286,13 @@ files = [
 
 [[package]]
 name = "sirtuin"
-version = "1.0.1"
+version = "1.0.3"
 description = "AWS routines for Python projects"
 optional = false
 python-versions = "<3.13,>=3.10"
 files = [
-    {file = "sirtuin-1.0.1-py3-none-any.whl", hash = "sha256:96095fbd7bc9e4bfee325fcbfd7f7843b5ba7f9fdf739a88a47bb09af02aca61"},
-    {file = "sirtuin-1.0.1.tar.gz", hash = "sha256:0937afd012bcb564e967f2b6ca493f99aefdb1f8e6ae145e284f3e4720f6f582"},
+    {file = "sirtuin-1.0.3-py3-none-any.whl", hash = "sha256:866bef78cd63db85988fd5d074360820a5c019fc56941ea5d35b4e8324a5b274"},
+    {file = "sirtuin-1.0.3.tar.gz", hash = "sha256:97c3bbd010e472e89e52626e5286f7a533c3a33fce26ab11a277ccf39f0361dc"},
 ]
 
 [package.dependencies]
