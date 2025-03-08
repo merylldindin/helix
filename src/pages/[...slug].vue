@@ -46,10 +46,10 @@ useHead(() => {
   }
 
   return {
-    script: schemas.map(schema => ({
+    script: schemas.map((schema) => ({
       children: JSON.stringify(schema),
-      type: "application/ld+json"
-    }))
+      type: "application/ld+json",
+    })),
   };
 });
 </script>
