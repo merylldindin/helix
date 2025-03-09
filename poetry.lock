@@ -298,21 +298,21 @@ files = [
 
 [[package]]
 name = "sirtuin"
-version = "1.0.3"
+version = "1.1.0"
 description = "AWS routines for Python projects"
 optional = false
-python-versions = "<3.13,>=3.10"
+python-versions = "<3.14,>=3.12"
 groups = ["devops"]
 files = [
-    {file = "sirtuin-1.0.3-py3-none-any.whl", hash = "sha256:866bef78cd63db85988fd5d074360820a5c019fc56941ea5d35b4e8324a5b274"},
-    {file = "sirtuin-1.0.3.tar.gz", hash = "sha256:97c3bbd010e472e89e52626e5286f7a533c3a33fce26ab11a277ccf39f0361dc"},
+    {file = "sirtuin-1.1.0-py3-none-any.whl", hash = "sha256:5bdaabd3417a4510236428e2507b37961b59a9ff1fde2afe745cc742bc4bacb5"},
+    {file = "sirtuin-1.1.0.tar.gz", hash = "sha256:79445fa35da8ce06750a398397e57df6a42aa32cb4f8392ce1a384f26217976d"},
 ]
 
 [package.dependencies]
 pydantic = ">=2.6.3,<3.0.0"
 pyyaml = ">=6.0,<7.0"
 tomli = ">=2.0,<3.0"
-typer = {version = ">=0.12.0,<0.13.0", extras = ["all"]}
+typer = {version = ">=0.15.0,<0.16.0", extras = ["all"]}
 
 [[package]]
 name = "tomli"
@@ -328,14 +328,14 @@ files = [
 
 [[package]]
 name = "typer"
-version = "0.12.3"
+version = "0.15.2"
 description = "Typer, build great CLIs. Easy to code. Based on Python type hints."
 optional = false
 python-versions = ">=3.7"
 groups = ["devops"]
 files = [
-    {file = "typer-0.12.3-py3-none-any.whl", hash = "sha256:070d7ca53f785acbccba8e7d28b08dcd88f79f1fbda035ade0aecec71ca5c914"},
-    {file = "typer-0.12.3.tar.gz", hash = "sha256:49e73131481d804288ef62598d97a1ceef3058905aa536a1134f90891ba35482"},
+    {file = "typer-0.15.2-py3-none-any.whl", hash = "sha256:46a499c6107d645a9c13f7ee46c5d5096cae6f5fc57dd11eccbbb9ae3e44ddfc"},
+    {file = "typer-0.15.2.tar.gz", hash = "sha256:ab2fab47533a813c49fe1f16b1a370fd5819099c00b119e0633df65f22144ba5"},
 ]
 
 [package.dependencies]
@@ -359,4 +359,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "~3.12"
-content-hash = "42a5087686be717ef4f80400d272462e47323adfd70d0a947d1703eef4b3f3c4"
+content-hash = "7f0a5dc0e1ccc22a96c37c2c5d6b677ccf03a12056b3522c58cb7b53323ecfc3"
