@@ -3532,9 +3532,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/addons@npm:2.0.3":
-  version: 2.0.3
-  resolution: "@unhead/addons@npm:2.0.3"
+"@unhead/addons@npm:2.0.4":
+  version: 2.0.4
+  resolution: "@unhead/addons@npm:2.0.4"
   dependencies:
     "@rollup/pluginutils": "npm:^5.1.4"
     estree-walker: "npm:^3.0.3"
@@ -3543,7 +3543,7 @@ __metadata:
     ufo: "npm:^1.5.4"
     unplugin: "npm:^2.2.2"
     unplugin-ast: "npm:^0.14.4"
-  checksum: 10c0/dc02447bd14b6f6d6e902c3b182a238ae3f1e9c0d3a48df468d3d9fc6ee6eef7324b64e3c6c472e4035544c59577b9d370c0c99647787b29199774695cc5c61a
+  checksum: 10c0/26674c36e5c0538c427ea0110f3568b3d5e26fc8bee13005613c1491ba88aae2233ddb8306c24115106b41d29219bea6ed24a2c2e5fe64d814baa35da2cbe829
   languageName: node
   linkType: hard
 
@@ -7580,7 +7580,7 @@ __metadata:
     "@types/lodash": "npm:4.17.16"
     "@types/node": "npm:22.14.0"
     "@typescript-eslint/parser": "npm:8.29.0"
-    "@unhead/addons": "npm:2.0.3"
+    "@unhead/addons": "npm:2.0.4"
     "@vue/compiler-sfc": "npm:3.5.13"
     cypress: "npm:14.2.1"
     eslint: "npm:9.24.0"
@@ -7603,7 +7603,7 @@ __metadata:
     rollup: "npm:4.39.0"
     sass: "npm:1.86.3"
     serve: "npm:14.2.4"
-    stylelint: "npm:16.17.0"
+    stylelint: "npm:16.18.0"
     stylelint-config-recommended-scss: "npm:14.1.0"
     stylelint-config-recommended-vue: "npm:1.6.0"
     stylelint-config-standard-scss: "npm:14.0.0"
@@ -12097,9 +12097,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:16.17.0":
-  version: 16.17.0
-  resolution: "stylelint@npm:16.17.0"
+"stylelint@npm:16.18.0":
+  version: 16.18.0
+  resolution: "stylelint@npm:16.18.0"
   dependencies:
     "@csstools/css-parser-algorithms": "npm:^3.0.4"
     "@csstools/css-tokenizer": "npm:^3.0.3"
@@ -12141,7 +12141,7 @@ __metadata:
     write-file-atomic: "npm:^5.0.1"
   bin:
     stylelint: bin/stylelint.mjs
-  checksum: 10c0/0b1bb4e362babe799afc42086fdc3a5621c230a0d4ad4a947a44d14311b758bf5a0fab0dea4fef31223dde97617f43510a37480d25f9eed23e2ff71e97c33e07
+  checksum: 10c0/7e6646c850a1862033d1e91ab04a72ef021facf5ef1b8fd130b5ccd680ae2b9e783f8f594a4ac844c51ffd07a04838c601bb6c0beb446d9c3c90aa5dcd9a92d0
   languageName: node
   linkType: hard
 
