@@ -2038,16 +2038,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/sitemap@npm:7.2.9":
-  version: 7.2.9
-  resolution: "@nuxtjs/sitemap@npm:7.2.9"
+"@nuxtjs/sitemap@npm:7.2.10":
+  version: 7.2.10
+  resolution: "@nuxtjs/sitemap@npm:7.2.10"
   dependencies:
-    "@nuxt/devtools-kit": "npm:^2.3.0"
-    "@nuxt/kit": "npm:^3.16.0"
+    "@nuxt/devtools-kit": "npm:^2.3.2"
+    "@nuxt/kit": "npm:^3.16.2"
     chalk: "npm:^5.4.1"
     defu: "npm:^6.1.4"
     h3-compression: "npm:^0.3.2"
-    nuxt-site-config: "npm:^3.1.5"
+    nuxt-site-config: "npm:^3.1.9"
     ofetch: "npm:^1.4.1"
     pathe: "npm:^2.0.3"
     pkg-types: "npm:^2.1.0"
@@ -2055,7 +2055,7 @@ __metadata:
     semver: "npm:^7.7.1"
     sirv: "npm:^3.0.1"
     ufo: "npm:^1.5.4"
-  checksum: 10c0/eda0fca57db6b41cc2cb99b06081438906fc2011a6b8afa56d17639b0aa66fc68f17e44c3bf4d420547446779098c91d24a997401fe0d7c968ddcf754f177e9d
+  checksum: 10c0/b26a368397f366adb8cacc87a0248cc6bbcda55a6388565ca46b3f8c4595b14ec15cb3f1b02ac854012600b0dce49bf5a9d451b755896e6b9f4f688757d066ba
   languageName: node
   linkType: hard
 
@@ -7575,7 +7575,7 @@ __metadata:
     "@nuxt/eslint-config": "npm:1.3.0"
     "@nuxt/types": "npm:2.18.1"
     "@nuxt/vue-app": "npm:2.18.1"
-    "@nuxtjs/sitemap": "npm:7.2.9"
+    "@nuxtjs/sitemap": "npm:7.2.10"
     "@types/eslint": "npm:9.6.1"
     "@types/lodash": "npm:4.17.16"
     "@types/node": "npm:22.14.0"
@@ -9476,19 +9476,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-site-config-kit@npm:3.1.5":
-  version: 3.1.5
-  resolution: "nuxt-site-config-kit@npm:3.1.5"
-  dependencies:
-    "@nuxt/kit": "npm:^3.16.0"
-    pkg-types: "npm:^2.1.0"
-    site-config-stack: "npm:3.1.5"
-    std-env: "npm:^3.8.1"
-    ufo: "npm:^1.5.4"
-  checksum: 10c0/73542b69106c6b310b9cf389e76346a447da1590ab30f6a3643e784af064fb8104087c83be3beb179b68c160a94bf093fba07c097c3c389e48c142c9be0a305f
-  languageName: node
-  linkType: hard
-
 "nuxt-site-config-kit@npm:3.1.7":
   version: 3.1.7
   resolution: "nuxt-site-config-kit@npm:3.1.7"
@@ -9502,18 +9489,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-site-config@npm:^3.1.5":
-  version: 3.1.5
-  resolution: "nuxt-site-config@npm:3.1.5"
+"nuxt-site-config-kit@npm:3.1.9":
+  version: 3.1.9
+  resolution: "nuxt-site-config-kit@npm:3.1.9"
   dependencies:
-    "@nuxt/kit": "npm:^3.16.0"
-    nuxt-site-config-kit: "npm:3.1.5"
-    pathe: "npm:^2.0.3"
+    "@nuxt/kit": "npm:^3.16.2"
     pkg-types: "npm:^2.1.0"
-    sirv: "npm:^3.0.1"
-    site-config-stack: "npm:3.1.5"
+    site-config-stack: "npm:3.1.9"
+    std-env: "npm:^3.9.0"
     ufo: "npm:^1.5.4"
-  checksum: 10c0/62930088605332e7a9fd98a44a3e3b1b1364903ca02253561447dd04f284bc8d88aaced95d8ad5b3de92690d3b480c27e02642f197b47bf8756eb20b5bc21228
+  checksum: 10c0/b6cbf26a8660188ec73dc8ed7066080ab9f612016945bb607370de9500b80a15e72764dab1bf4c52acae8a3386b3d8878b91e7b8a832ec4df863841c9726bb61
   languageName: node
   linkType: hard
 
@@ -9529,6 +9514,21 @@ __metadata:
     site-config-stack: "npm:3.1.7"
     ufo: "npm:^1.5.4"
   checksum: 10c0/708a8da2a4263d03845c0715edcc925cbb896aa6455aaab9d495de2498215e84909f5bd30183a2ea470242447341d51faa09f760927cc1a1d8421cc0e44f834b
+  languageName: node
+  linkType: hard
+
+"nuxt-site-config@npm:^3.1.9":
+  version: 3.1.9
+  resolution: "nuxt-site-config@npm:3.1.9"
+  dependencies:
+    "@nuxt/kit": "npm:^3.16.2"
+    nuxt-site-config-kit: "npm:3.1.9"
+    pathe: "npm:^2.0.3"
+    pkg-types: "npm:^2.1.0"
+    sirv: "npm:^3.0.1"
+    site-config-stack: "npm:3.1.9"
+    ufo: "npm:^1.5.4"
+  checksum: 10c0/986dc77da981bceb2ad2dce603c826cc36bd9057dbf038bf8f552f656cf88c12f0f57a5cf04e0cd2be80c312610d879aee0ea56c53371b7f04c70209de7dd3d6
   languageName: node
   linkType: hard
 
@@ -11558,17 +11558,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"site-config-stack@npm:3.1.5":
-  version: 3.1.5
-  resolution: "site-config-stack@npm:3.1.5"
-  dependencies:
-    ufo: "npm:^1.5.4"
-  peerDependencies:
-    vue: ^3
-  checksum: 10c0/dee3be9e59dacc81e4b8141084e65263fc271d1962628a2b5b7edae7474963fb464852b422b185a50242727b3643e56f2aa77b4b29c7bedd9bf78f4774715d7f
-  languageName: node
-  linkType: hard
-
 "site-config-stack@npm:3.1.7":
   version: 3.1.7
   resolution: "site-config-stack@npm:3.1.7"
@@ -11577,6 +11566,17 @@ __metadata:
   peerDependencies:
     vue: ^3
   checksum: 10c0/c04a6f54945b5449647672261627468a67a8430dc73bf91e3f11d2a5b49a738d4ed13eb6e66cc740f814b89985141c947023738f89e69e53b678dc27878d4f55
+  languageName: node
+  linkType: hard
+
+"site-config-stack@npm:3.1.9":
+  version: 3.1.9
+  resolution: "site-config-stack@npm:3.1.9"
+  dependencies:
+    ufo: "npm:^1.5.4"
+  peerDependencies:
+    vue: ^3
+  checksum: 10c0/4ca626ede7a5a9ac6e185c81baca50cb8a4f790a40b0130070300f6f5a4578186a173f648fdd6c52beb8519b9776f1656a51c468daffd8dc66e61d3cce763e95
   languageName: node
   linkType: hard
 
@@ -11834,6 +11834,13 @@ __metadata:
   version: 3.8.1
   resolution: "std-env@npm:3.8.1"
   checksum: 10c0/e9b19cca6bc6f06f91607db5b636662914ca8ec9efc525a99da6ec7e493afec109d3b017d21d9782b4369fcfb2891c7c4b4e3c60d495fdadf6861ce434e07bf8
+  languageName: node
+  linkType: hard
+
+"std-env@npm:^3.9.0":
+  version: 3.9.0
+  resolution: "std-env@npm:3.9.0"
+  checksum: 10c0/4a6f9218aef3f41046c3c7ecf1f98df00b30a07f4f35c6d47b28329bc2531eef820828951c7d7b39a1c5eb19ad8a46e3ddfc7deb28f0a2f3ceebee11bab7ba50
   languageName: node
   linkType: hard
 
