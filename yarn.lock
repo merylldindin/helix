@@ -1973,7 +1973,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:2.5.0":
+"@nuxt/devtools-kit@npm:2.5.0, @nuxt/devtools-kit@npm:^2.5.0":
   version: 2.5.0
   resolution: "@nuxt/devtools-kit@npm:2.5.0"
   dependencies:
@@ -2373,12 +2373,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/sitemap@npm:7.3.1":
-  version: 7.3.1
-  resolution: "@nuxtjs/sitemap@npm:7.3.1"
+"@nuxtjs/sitemap@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@nuxtjs/sitemap@npm:7.4.0"
   dependencies:
-    "@nuxt/devtools-kit": "npm:^2.4.1"
-    "@nuxt/kit": "npm:^3.17.4"
+    "@nuxt/devtools-kit": "npm:^2.5.0"
+    "@nuxt/kit": "npm:^3.17.5"
     chalk: "npm:^5.4.1"
     defu: "npm:^6.1.4"
     h3-compression: "npm:^0.3.2"
@@ -2390,7 +2390,7 @@ __metadata:
     semver: "npm:^7.7.2"
     sirv: "npm:^3.0.1"
     ufo: "npm:^1.6.1"
-  checksum: 10c0/55d4dacd5676e9a81bf45fa9e98e8e480d99705620bdb4b1d3291b3b56d32a015691e3f406f89798f6caba004b0dde60cc929b39099385edf1ed1165e0b1da0d
+  checksum: 10c0/9b23c72b8841c5319fbc0eed229564b702de43fce8f51b332ffd07717c12ed754ad8ba4301b492de806fb06079b1c1ab8381906093b133840f3662a76119f1b4
   languageName: node
   linkType: hard
 
@@ -8856,7 +8856,7 @@ __metadata:
     "@nuxt/eslint-config": "npm:1.4.1"
     "@nuxt/types": "npm:2.18.1"
     "@nuxt/vue-app": "npm:2.18.1"
-    "@nuxtjs/sitemap": "npm:7.3.1"
+    "@nuxtjs/sitemap": "npm:7.4.0"
     "@types/eslint": "npm:9.6.1"
     "@types/lodash": "npm:4.17.17"
     "@types/node": "npm:22.15.31"
