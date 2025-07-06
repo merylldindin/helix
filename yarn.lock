@@ -3865,9 +3865,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unhead/addons@npm:2.0.11":
-  version: 2.0.11
-  resolution: "@unhead/addons@npm:2.0.11"
+"@unhead/addons@npm:2.0.12":
+  version: 2.0.12
+  resolution: "@unhead/addons@npm:2.0.12"
   dependencies:
     "@rollup/pluginutils": "npm:^5.2.0"
     estree-walker: "npm:^3.0.3"
@@ -3876,7 +3876,7 @@ __metadata:
     ufo: "npm:^1.6.1"
     unplugin: "npm:^2.3.5"
     unplugin-ast: "npm:^0.15.0"
-  checksum: 10c0/35ef867fd61cf8208ee1eaf457884be2cbb3eacc8de63431313e135764918f11e6d143d9a72e12e8d41600f5011086cc9cc699e34fe4795f16ce03b80369dbf7
+  checksum: 10c0/bd31190a733c5fde6948451a358751b62607f7c9d8abf4c64ec26179e0fc3d35abd55bbe9a4055935d1aefdeb2fa79324ee44f0a2147597a987e3b4cf6c68869
   languageName: node
   linkType: hard
 
@@ -8446,7 +8446,7 @@ __metadata:
     "@types/lodash": "npm:4.17.20"
     "@types/node": "npm:22.16.0"
     "@typescript-eslint/parser": "npm:8.35.1"
-    "@unhead/addons": "npm:2.0.11"
+    "@unhead/addons": "npm:2.0.12"
     "@vue/compiler-sfc": "npm:3.5.17"
     cypress: "npm:14.5.1"
     eslint: "npm:9.30.1"
