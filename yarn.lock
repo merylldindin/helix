@@ -3111,6 +3111,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@pkgr/core@npm:^0.2.9":
+  version: 0.2.9
+  resolution: "@pkgr/core@npm:0.2.9"
+  checksum: 10c0/ac8e4e8138b1a7a4ac6282873aef7389c352f1f8b577b4850778f5182e4a39a5241facbe48361fec817f56d02b51691b383010843fb08b34a8e8ea3614688fd5
+  languageName: node
+  linkType: hard
+
 "@polka/url@npm:^1.0.0-next.24":
   version: 1.0.0-next.28
   resolution: "@polka/url@npm:1.0.0-next.28"
@@ -9115,7 +9122,7 @@ __metadata:
     postcss-html: "npm:1.8.0"
     postcss-scss: "npm:4.0.9"
     prettier: "npm:3.6.2"
-    prettier-plugin-packagejson: "npm:2.5.18"
+    prettier-plugin-packagejson: "npm:2.5.19"
     rollup: "npm:4.45.1"
     sass: "npm:1.89.2"
     serve: "npm:14.2.4"
@@ -12581,18 +12588,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-packagejson@npm:2.5.18":
-  version: 2.5.18
-  resolution: "prettier-plugin-packagejson@npm:2.5.18"
+"prettier-plugin-packagejson@npm:2.5.19":
+  version: 2.5.19
+  resolution: "prettier-plugin-packagejson@npm:2.5.19"
   dependencies:
     sort-package-json: "npm:3.4.0"
-    synckit: "npm:0.11.8"
+    synckit: "npm:0.11.11"
   peerDependencies:
     prettier: ">= 1.16.0"
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: 10c0/f689b93f9703e92f221104f5b74067658b47c16cd8a505eae693c334cc8ea7133dbee7b72d9cf1df9f6d840749bf07ad6251e5472050c4ee37208012796028b4
+  checksum: 10c0/288b8658fae8c620d3a7175f64026af8f450f053b8357b86b7d4c697287eae7e706c825d6819959bae1b539103a586f72d8b829574970392d0082f6ec5520d3f
   languageName: node
   linkType: hard
 
@@ -14262,7 +14269,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"synckit@npm:0.11.8, synckit@npm:^0.11.7":
+"synckit@npm:0.11.11":
+  version: 0.11.11
+  resolution: "synckit@npm:0.11.11"
+  dependencies:
+    "@pkgr/core": "npm:^0.2.9"
+  checksum: 10c0/f0761495953d12d94a86edf6326b3a565496c72f9b94c02549b6961fb4d999f4ca316ce6b3eb8ed2e4bfc5056a8de65cda0bd03a233333a35221cd2fdc0e196b
+  languageName: node
+  linkType: hard
+
+"synckit@npm:^0.11.7":
   version: 0.11.8
   resolution: "synckit@npm:0.11.8"
   dependencies:
