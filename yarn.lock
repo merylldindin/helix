@@ -15625,21 +15625,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tldts-core@npm:^6.1.83":
-  version: 6.1.83
-  resolution: "tldts-core@npm:6.1.83"
-  checksum: 10c0/097be8b909eb86a420d11e74a17461407b517b7f1fa26434de6b5a3f43b1336065e4162024ef02404d1425b572fb6afdeff31c5d03e9d42d806166394bcbd588
+"tldts-core@npm:^7.0.13":
+  version: 7.0.13
+  resolution: "tldts-core@npm:7.0.13"
+  checksum: 10c0/10880af8a790d7e9fd1a612a4fe5163a8fd00a05519bb919697e2cc5afdac2f37bf664985ad26cb45a1752630b6565330250ae40c5b041af7451001dafd08428
   languageName: node
   linkType: hard
 
-"tldts@npm:^6.1.32":
-  version: 6.1.83
-  resolution: "tldts@npm:6.1.83"
+"tldts@npm:^7.0.5":
+  version: 7.0.13
+  resolution: "tldts@npm:7.0.13"
   dependencies:
-    tldts-core: "npm:^6.1.83"
+    tldts-core: "npm:^7.0.13"
   bin:
     tldts: bin/cli.js
-  checksum: 10c0/85186a9ae342e4d0eac34d0b1a645e8c35e62dbdcc5f0ee8ae11e7a8221eb9bce5a97e57723b12d76e3866c2467f232b6408c09d94c907ecc7998a507ca2c66b
+  checksum: 10c0/955f93e3de8113c17d7e422ef2a18b3ec12449c168d1afcc86958c412b9801177780404e8b78d762f873ea2260969db0cfaf4d653fe745b8c1d497f55d6b5fc3
   languageName: node
   linkType: hard
 
@@ -15697,11 +15697,11 @@ __metadata:
   linkType: hard
 
 "tough-cookie@npm:>=5.1.2":
-  version: 5.1.2
-  resolution: "tough-cookie@npm:5.1.2"
+  version: 6.0.0
+  resolution: "tough-cookie@npm:6.0.0"
   dependencies:
-    tldts: "npm:^6.1.32"
-  checksum: 10c0/5f95023a47de0f30a902bba951664b359725597d8adeabc66a0b93a931c3af801e1e697dae4b8c21a012056c0ea88bd2bf4dfe66b2adcf8e2f42cd9796fe0626
+    tldts: "npm:^7.0.5"
+  checksum: 10c0/7b17a461e9c2ac0d0bea13ab57b93b4346d0b8c00db174c963af1e46e4ea8d04148d2a55f2358fc857db0c0c65208a98e319d0c60693e32e0c559a9d9cf20cb5
   languageName: node
   linkType: hard
 
