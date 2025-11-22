@@ -7522,7 +7522,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:10.5.1, eslint-plugin-vue@npm:^10.5.1":
+"eslint-plugin-vue@npm:10.6.0":
+  version: 10.6.0
+  resolution: "eslint-plugin-vue@npm:10.6.0"
+  dependencies:
+    "@eslint-community/eslint-utils": "npm:^4.4.0"
+    natural-compare: "npm:^1.4.0"
+    nth-check: "npm:^2.1.1"
+    postcss-selector-parser: "npm:^7.1.0"
+    semver: "npm:^7.6.3"
+    xml-name-validator: "npm:^4.0.0"
+  peerDependencies:
+    "@stylistic/eslint-plugin": ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
+    "@typescript-eslint/parser": ^7.0.0 || ^8.0.0
+    eslint: ^8.57.0 || ^9.0.0
+    vue-eslint-parser: ^10.0.0
+  peerDependenciesMeta:
+    "@stylistic/eslint-plugin":
+      optional: true
+    "@typescript-eslint/parser":
+      optional: true
+  checksum: 10c0/78fa8d69dbd65f6166a990f45f562b81d555bad5902437fbc3026ef2e90c76888e22e054eff592476a7e685e551a1d2aef49798ec74109ca98f1331c193bc7bd
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-vue@npm:^10.5.1":
   version: 10.5.1
   resolution: "eslint-plugin-vue@npm:10.5.1"
   dependencies:
@@ -8704,7 +8728,7 @@ __metadata:
     eslint-config-prettier: "npm:10.1.8"
     eslint-plugin-prettier: "npm:5.5.4"
     eslint-plugin-unicorn: "npm:61.0.2"
-    eslint-plugin-vue: "npm:10.5.1"
+    eslint-plugin-vue: "npm:10.6.0"
     globals: "npm:16.5.0"
     husky: "npm:9.1.7"
     lodash: "npm:4.17.21"
