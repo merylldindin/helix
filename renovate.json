@@ -4,8 +4,11 @@
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
   "extends": ["config:base"],
-  "force": { "constraints": { "python": "3.12.9" } },
   "packageRules": [
+    {
+      "matchDepNames": ["python"],
+      "enabled": false
+    },
     {
       "automerge": true,
       "groupName": "yarn-minor",
@@ -29,9 +32,15 @@
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["major"],
       "semanticCommitType": "chore"
+    },
+    {
+      "automerge": true,
+      "groupName": "uv-minor",
+      "matchManagers": ["uv"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "semanticCommitType": "chore"
     }
   ],
-  "ignorePresets": ["python"],
   "platformAutomerge": true,
   "schedule": ["every weekend"]
 }

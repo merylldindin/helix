@@ -1,41 +1,59 @@
 import UnheadVite from "@unhead/addons/vite";
 import { defineNuxtConfig } from "nuxt/config";
-
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "./src/content";
 import { RoutePath } from "./src/types/routes";
 
 export default defineNuxtConfig({
   build: {
-    transpile: ["vuetify"]
+    transpile: ["vuetify"],
   },
 
-  compatibilityDate: "2025-03-08",
+  // @ts-ignore-next-line
+  compatibilityDate: "2025-08-03",
 
-  components: [{
-    extensions: [".vue"],
-    path: "~/components"
-  }],
+  components: [
+    {
+      extensions: [".vue"],
+      path: "~/components",
+    },
+  ],
 
   css: ["@/assets/styles/index.scss", "vuetify/lib/styles/main.sass"],
 
+  dir: {
+    public: "src/public",
+  },
+
   experimental: {
     externalVue: true,
-    payloadExtraction: true
+    payloadExtraction: true,
   },
 
   // @ts-ignore-next-line
   linkChecker: {
-    skipInspections: ["link-text", "no-error-response", "no-baseless", "trailing-slash"]
+    skipInspections: [
+      "link-text",
+      "no-baseless",
+      "no-error-response",
+      "trailing-slash",
+    ],
   },
 
-  modules: ["@nuxt/devtools", "@nuxt/eslint", "@nuxtjs/sitemap", "nuxt-jsonld", "nuxt-link-checker", "nuxt-swiper", "nuxt-unhead"],
+  modules: [
+    "@nuxt/devtools",
+    "@nuxt/eslint",
+    "@nuxtjs/sitemap",
+    "nuxt-jsonld",
+    "nuxt-link-checker",
+    "nuxt-swiper",
+  ],
 
   nitro: {
     minify: true,
     prerender: {
       crawlLinks: true,
-      routes: Object.values(RoutePath)
-    }
+      routes: Object.values(RoutePath),
+    },
   },
 
   plugins: ["@/plugins/vuetify.client/index.ts"],
@@ -43,7 +61,7 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       cssnano: { preset: "default" },
-    }
+    },
   },
 
   runtimeConfig: {
@@ -54,18 +72,18 @@ export default defineNuxtConfig({
       siteName: DEFAULT_TITLE,
       siteUrl: process.env.NUXT_WEBSITE_URL,
       titleSeparator: "|",
-      trailingSlash: true
-    }
+      trailingSlash: true,
+    },
   },
 
   site: {
     trailingSlash: true,
-    url: process.env.NUXT_WEBSITE_URL
+    url: process.env.NUXT_WEBSITE_URL,
   },
 
   sourcemap: {
     client: false,
-    server: false
+    server: false,
   },
 
   srcDir: "src/",
@@ -74,7 +92,7 @@ export default defineNuxtConfig({
 
   typescript: {
     shim: true,
-    typeCheck: "build"
+    typeCheck: "build",
   },
 
   vite: {
@@ -82,44 +100,43 @@ export default defineNuxtConfig({
       cssCodeSplit: true,
       manifest: true,
       minify: true,
-
       rollupOptions: {
         onwarn(warning, warn) {
-          if (warning.code === "EVAL" && warning.id && warning.id.includes("lottie-web")) {
+          if (
+            warning.code === "EVAL" &&
+            warning.id &&
+            warning.id.includes("lottie-web")
+          ) {
             return;
           }
 
           warn(warning);
         },
-
         output: {
           compact: true,
           manualChunks: {
             lottie: ["vue3-lottie"],
-            vuetify: ["vuetify"]
-          }
-        }
+            vuetify: ["vuetify"],
+          },
+        },
       },
-
-      sourcemap: "hidden"
+      sourcemap: "hidden",
     },
 
     css: {
       preprocessorOptions: {
         sass: {
-          api: "modern-compiler",
-          silenceDeprecations: ["legacy-js-api"]
+          silenceDeprecations: ["legacy-js-api"],
         },
         scss: {
           additionalData: "@use '@/assets/variables/index.scss' as *;",
-          api: "modern-compiler",
-          silenceDeprecations: ["legacy-js-api"]
+          silenceDeprecations: ["legacy-js-api"],
         },
       },
     },
 
     define: {
-      "process.env.DEBUG": false
+      "process.env.DEBUG": false,
     },
 
     plugins: [UnheadVite()],

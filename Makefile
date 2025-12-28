@@ -2,16 +2,16 @@ clean: ## Clean the project
 	yarn clean
 	yarn prepare
 
-setup: ## Install developper experience
+setup: ## Install developer experience
 	yarn setup
-	poetry install --no-root --with devops
+	uv sync --group devops
 
 install: ## Install project dependencies
 	@yarn install
 
 install-hard: ## Install project dependencies from scratch
 	rm -rf .venv/
-	poetry lock
+	uv lock
 	rm -rf node_modules/ yarn.lock
 	yarn cache clean
 	make install
@@ -26,7 +26,7 @@ serve: ## Serve the project
 	@yarn serve
 
 deploy: ## Deploy the project
-	@poetry run sirtuin cloudfront-deploy .cloudfront -p personal
+	@uv run sirtuin cloudfront-deploy .cloudfront -p personal
 
 invalidate-fonts: ## Invalidate fonts
 	@aws cloudfront create-invalidation --distribution-id E3SZTVEZV1G0WQ --paths '/fonts/*' --region eu-west-3 --profile personal

@@ -4,9 +4,6 @@ run-name: 'ci(helix): continuous integration'
 
 on: [merge_group, pull_request, workflow_dispatch]
 
-env:
-  NODE_VERSION: '22.14.0'
-
 jobs:
   workflow:
     runs-on: ubuntu-latest
@@ -14,29 +11,31 @@ jobs:
 
     steps:
       - name: Checkout Codebase
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+
+      - name: Extract Node Version
+        id: node-version
+        run: |
+          NODE_VERSION=$(jq -r '.engines.node' package.json)
+          echo "version=$NODE_VERSION" >> $GITHUB_OUTPUT
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version: ${{ steps.node-version.outputs.version }}
 
       - name: Cache Dependencies
-        id: cache-dependencies
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
-          path: node_modules
-          key: ${{ runner.OS }}-helix-${{ hashFiles('yarn.lock') }}
-
-      - name: Cache Cypress
-        id: cache-cypress
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/Cypress
-          key: ${{ runner.OS }}-cypress-${{ hashFiles('yarn.lock') }}
+          path: |
+            .yarn/cache
+            node_modules
+            ~/.cache/Cypress
+          key: ${{ runner.OS }}-helix-yarn-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-helix-yarn-
 
       - name: Install Dependencies
-        if: steps.cache-dependencies.outputs.cache-hit != 'true' || steps.cache-cypress.outputs.cache-hit != 'true'
         run: yarn install
 
       - name: Prepare Environment
@@ -55,7 +54,7 @@ jobs:
         run: make build
 
       - name: Run Cypress
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v6
         with:
           browser: chrome
           command: yarn cypress

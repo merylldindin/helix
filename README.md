@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/github/issues/merylldindin/helix.svg?style=for-the-badge" alt="issues"/>
   </a>
 
-  <a href="https://github.com/merylldindin/helix/blob/master/LICENSE.txt" target="_blank">
+  <a href="https://github.com/merylldindin/helix/blob/main/LICENSE.txt" target="_blank">
     <img src="https://img.shields.io/github/license/merylldindin/helix.svg?style=for-the-badge" alt="license"/>
   </a>
 </div>
@@ -92,7 +92,7 @@ To maintain some minimal standards within our codebase, I rely on [prettier](htt
 
 ### Helpers:
 
-I use Node 19.5, and rely on [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable). Alongside that environment, I use the following tools to maintain high code standards:
+I use [nvm](https://github.com/nvm-sh/nvm) for Node version management (see `.nvmrc`), [yarn](https://yarnpkg.com/) for package management, and [uv](https://docs.astral.sh/uv/) for Python dependency management (see `.python-version`). Alongside that environment, I use the following tools to maintain high code standards:
 
 - [prettier](https://prettier.io/) configured in `.prettierrc`
 - [eslint](https://eslint.org/) configured in `.eslintrc`
@@ -137,11 +137,11 @@ I aim to make our types as specific as possible. The use `any` is strongly disco
 
 ### Branches:
 
-I have a simple convention for branch naming: `{initials}/{descriptive-kebab-case}`. Keep them all loIrcase. For John Doe working on a feature A, that would be `jd/feature-a`.
+I have a simple convention for branch naming: `{initials}/{descriptive-kebab-case}`. Keep them all lowercase. For John Doe working on a feature A, that would be `jd/feature-a`.
 
 ### Commits:
 
-The Conventional Commits specification is a lightIight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages. Learn more [here](https://www.conventionalcommits.org/en/v1.0.0/).
+The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages. Learn more [here](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ### Pull requests:
 

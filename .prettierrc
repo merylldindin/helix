@@ -6,6 +6,7 @@
   "htmlWhitespaceSensitivity": "strict",
   "insertPragma": false,
   "jsxSingleQuote": true,
+  "plugins": ["prettier-plugin-packagejson"],
   "printWidth": 88,
   "proseWrap": "preserve",
   "quoteProps": "as-needed",

@@ -1,8 +1,8 @@
 {
-  "exclude": [".nuxt", ".output", "node_modules", "dist"],
-  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "verbatimModuleSyntax": false,
-    "types": ["@nuxt/types", "@nuxt/vue-app", "@types/node", "vuetify"]
-  }
+    "types": ["@types/node", "vuetify"]
+  },
+  "exclude": [".nuxt", ".output", "node_modules", "dist"],
+  "extends": "./.nuxt/tsconfig.json"
 }
