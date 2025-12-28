@@ -6,7 +6,15 @@
   "htmlWhitespaceSensitivity": "strict",
   "insertPragma": false,
   "jsxSingleQuote": true,
-  "plugins": ["prettier-plugin-packagejson"],
+  "overrides": [
+    {
+      "files": ".claude/**/*.md",
+      "options": {
+        "embeddedLanguageFormatting": "off"
+      }
+    }
+  ],
+  "plugins": ["prettier-plugin-packagejson", "prettier-plugin-toml"],
   "printWidth": 88,
   "proseWrap": "preserve",
   "quoteProps": "as-needed",

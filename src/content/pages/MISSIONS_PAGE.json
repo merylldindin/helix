@@ -2,8 +2,9 @@
   "layout": "snaped",
   "head": {
     "canonical": "/missions/",
-    "title": "My Missions and Dreams | Meryll Dindin",
-    "description": "Explore my visions for the future, including unbounded longevity, sustainable cities, and lifelong learning. Learn about my goals and the innovative projects driving these missions."
+    "description": "My visions for the future: unbounded longevity, sustainable cities, and lifelong learning. Explore the goals driving my work.",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/minimalist.png",
+    "title": "My Missions and Dreams | Meryll Dindin"
   },
   "components": [
     {
@@ -11,6 +12,7 @@
       "id": "longevity-section",
       "props": {
         "title": "Unbounded Longevity",
+        "description": "I believe humans can transcend biological limits. Through advances in AI-driven healthcare, regenerative medicine, and bioinformatics, we can extend healthspan dramatically. My work in digital health and predictive diagnostics aims to accelerate this vision of radical life extension.",
         "image": {
           "altText": "Using a lo-fi, scientific, and algorithmic tone, create an abstract depiction of transhumanism that reflects the potential for humans to live beyond a thousand years. Consider the dichotomy of our primal origins and future bio-digital enhancements, and weave in the complexity and paradoxes of such an extended lifespan.",
           "source": "https://cdn.merylldindin.com/assets/mission-longevity.webp",
@@ -25,6 +27,7 @@
       "id": "city-section",
       "props": {
         "title": "Sustainable City",
+        "description": "I envision self-sustaining urban ecosystems powered by renewable energy, smart infrastructure, and decentralized governance. Cities should harmonize technology with nature, eliminating pollution while maximizing human flourishing. Building the future requires rethinking how we live together.",
         "image": {
           "altText": "Using a lo-fi, scientific, and algorithmic tone, envision and construct an abstract portrayal of a futuristic, self-sustaining city devoid of government, where humans live harmoniously amidst pollution-free surroundings. Highlight the seamless interactions, technological advancements, and societal norms that facilitate this perfect operation, while reflecting on the joy and contentment of its inhabitants.",
           "source": "https://cdn.merylldindin.com/assets/mission-city.webp",
@@ -39,6 +42,7 @@
       "id": "academy-section",
       "props": {
         "title": "Life-Long Academy",
+        "description": "Education should never stop. I advocate for continuous learning systems that foster critical thinking, creativity, and intellectual autonomy. By leveraging AI and personalized curricula, we can empower individuals to keep growing throughout their extended lives.",
         "image": {
           "altText": "Using a lo-fi, scientific, and algorithmic tone, develop a vision of a new-age academy, focusing on the mission of fostering critical thinking skills and the resurgence of autonomous, self-reliant humans. Illustrate how the innovative educational methods, culture of inquiry, and the empowering environment contribute to this intellectual and individualistic revolution.",
           "source": "https://cdn.merylldindin.com/assets/mission-academy.webp",

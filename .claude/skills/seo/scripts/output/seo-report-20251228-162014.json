@@ -1,0 +1,88 @@
+{
+  "timestamp": "2025-12-28T16:20:14.860835",
+  "website": "https://merylldindin.com",
+  "issues": [
+    {
+      "severity": "medium",
+      "category": "meta_tags",
+      "page": "TERMS_OF_USE",
+      "message": "Title too short (28 chars, min 30)",
+      "recommendation": "Expand title with keywords: 'Terms of Use | Meryll Dindin'",
+      "code_example": null
+    },
+    {
+      "severity": "medium",
+      "category": "meta_tags",
+      "page": "TERMS_OF_USE",
+      "message": "Description too short (115 chars, min 120)",
+      "recommendation": "Expand description with keywords and details",
+      "code_example": null
+    },
+    {
+      "severity": "medium",
+      "category": "meta_tags",
+      "page": "THOUGHTS_PAGE",
+      "message": "Description too short (118 chars, min 120)",
+      "recommendation": "Expand description with keywords and details",
+      "code_example": null
+    },
+    {
+      "severity": "medium",
+      "category": "meta_tags",
+      "page": "ENHANCER_SUGGESTIONS",
+      "message": "Description too short (110 chars, min 120)",
+      "recommendation": "Expand description with keywords and details",
+      "code_example": null
+    },
+    {
+      "severity": "medium",
+      "category": "meta_tags",
+      "page": "NEWSLETTER_SUGGESTIONS",
+      "message": "Description too short (119 chars, min 120)",
+      "recommendation": "Expand description with keywords and details",
+      "code_example": null
+    },
+    {
+      "severity": "medium",
+      "category": "meta_tags",
+      "page": "FUJITSU_PAGE",
+      "message": "Description too short (117 chars, min 120)",
+      "recommendation": "Expand description with keywords and details",
+      "code_example": null
+    },
+    {
+      "severity": "medium",
+      "category": "meta_tags",
+      "page": "DILLYGENCE_PAGE",
+      "message": "Description too short (111 chars, min 120)",
+      "recommendation": "Expand description with keywords and details",
+      "code_example": null
+    },
+    {
+      "severity": "medium",
+      "category": "content",
+      "page": "LANDING_PAGE",
+      "message": "Potentially thin content (~0 chars)",
+      "recommendation": "Consider adding more descriptive content for better SEO",
+      "code_example": null
+    },
+    {
+      "severity": "medium",
+      "category": "content",
+      "page": "MISSIONS_PAGE",
+      "message": "Potentially thin content (~52 chars)",
+      "recommendation": "Consider adding more descriptive content for better SEO",
+      "code_example": null
+    }
+  ],
+  "summary": {
+    "total_issues": 9,
+    "high_priority": 0,
+    "medium_priority": 9,
+    "low_priority": 0,
+    "by_category": {
+      "meta_tags": 7,
+      "content": 2
+    }
+  }
+}

@@ -78,7 +78,7 @@ I recommend working with VSCode, an IDE that does not need to be presented. Inte
 Many of our internal toolings are enforced via [husky](https://typicode.github.io/husky/#/), a wrapper for Git hooks. I currently enforce two hooks:
 
 - `commit-msg` relying on [commitlint](https://commitlint.js.org/) to make sure that our commit conventions are respected
-- `pre-push` relying on a `yarn` command to run locally a majority of our CI scripts
+- `pre-commit` relying on [lint-staged](https://github.com/lint-staged/lint-staged) to run linters on staged files before committing
 
 Make sure those hooks are correctly configured via
 
@@ -95,8 +95,9 @@ To maintain some minimal standards within our codebase, I rely on [prettier](htt
 I use [nvm](https://github.com/nvm-sh/nvm) for Node version management (see `.nvmrc`), [yarn](https://yarnpkg.com/) for package management, and [uv](https://docs.astral.sh/uv/) for Python dependency management (see `.python-version`). Alongside that environment, I use the following tools to maintain high code standards:
 
 - [prettier](https://prettier.io/) configured in `.prettierrc`
-- [eslint](https://eslint.org/) configured in `.eslintrc`
-- [stylelint](https://stylelint.io/) configured in `.stylelint.config.js`
+- [eslint](https://eslint.org/) configured in `eslint.config.mjs`
+- [stylelint](https://stylelint.io/) configured in `stylelint.config.js`
+- [lint-staged](https://github.com/lint-staged/lint-staged) configured in `.lintstagedrc.mjs`
 - [typescript](https://typescript.nuxtjs.org/) configured in `tsconfig.json`
 
 ### Naming Conventions:

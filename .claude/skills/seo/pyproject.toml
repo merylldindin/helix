@@ -1,0 +1,10 @@
+[project]
+name = "skill-seo"
+version = "0.0.1"
+description = "SEO audit tools for Helix portfolio"
+authors = [{ name = "Meryll Dindin", email = "merylldin@gmail.com" }]
+requires-python = "==3.13.*"
+dependencies = [
+    "httpx==0.28.1",
+    "pydantic==2.12.5",
+]
