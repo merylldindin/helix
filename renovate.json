@@ -3,7 +3,7 @@
   "assignees": ["merylldindin"],
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
-  "extends": ["config:base"],
+  "extends": ["config:recommended"],
   "packageRules": [
     {
       "matchDepNames": ["python"],
