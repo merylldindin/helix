@@ -23,17 +23,25 @@
   "[vue]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
+  "css.validate": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
   "editor.formatOnSave": true,
-  "editor.inlineSuggest.enabled": true,
+  "eslint.useFlatConfig": true,
+  "eslint.validate": ["javascript", "typescript", "vue"],
+  "files.associations": {
+    "*.css": "css",
+    "*.scss": "scss"
+  },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "npm.packageManager": "yarn",
-  "stylelint.validate": ["vue"],
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss", "vue"],
+  "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.startupEditor": "none"
 }

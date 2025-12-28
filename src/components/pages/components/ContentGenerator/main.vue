@@ -26,7 +26,7 @@ const { smAndDown } = useDisplay();
 
 const getMarginFromTypography = (typography: string, index: number) => {
   const headlineMatch = typography.match(/headline-(\d)/);
-  if (!headlineMatch) return "";
+  if (!headlineMatch?.[1]) return "";
 
   const headlineNumber = parseInt(headlineMatch[1]);
 

@@ -14,7 +14,14 @@ const { smAndDown } = useDisplay();
 <template>
   <div class="youtube-player" :class="smAndDown ? 'my-6' : 'my-12'">
     <iframe
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+      "
       allowfullscreen
       :frameborder="0"
       height="315"

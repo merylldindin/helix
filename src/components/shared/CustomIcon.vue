@@ -44,17 +44,17 @@ const matchSizeToPixel = (size: string): string => {
 
 <template>
   <CustomImage
-    v-if="$ICON[icon!].startsWith('https')"
+    v-if="icon && $ICON[icon as IconName]?.startsWith('https')"
     :aspect-ratio="1"
     :image="{
       altText: 'icon',
-      source: $ICON[icon!],
+      source: $ICON[icon as IconName]!,
     }"
     :width="matchSizeToPixel(size)"
   />
 
   <v-icon
-    v-else
+    v-else-if="icon"
     :color="color as ColorName"
     :icon="$ICON[icon as IconName]"
     :size="size"

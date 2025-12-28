@@ -1,4 +1,4 @@
-import type { MetaFlatInput } from "zhead";
+import type { MetaFlatInput } from "unhead/types";
 
 import { DEFAULT_URL } from "@/content";
 

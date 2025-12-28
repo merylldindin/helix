@@ -50,11 +50,11 @@ const getBlogPostReferences = (content: any): unknown | null => {
 };
 
 const getBlogHeadline = (content: any): string => {
-  return (
-    content.components[0].props.content.filter(
-      (item: GenericContent) => item.type === ContentType.HEADLINE
-    ) as HeadlineContent[]
-  )[0].prop.text;
+  const headlines = content.components[0].props.content.filter(
+    (item: GenericContent) => item.type === ContentType.HEADLINE
+  ) as HeadlineContent[];
+
+  return headlines[0]?.prop.text ?? "";
 };
 
 const getBlogImage = (content: any): string => {

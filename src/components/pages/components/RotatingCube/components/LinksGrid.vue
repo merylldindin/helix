@@ -82,10 +82,10 @@ const { mobile } = useDisplay();
   display: flex;
   justify-content: space-between;
   transition: all 0.3s ease-in-out;
-  background-color: rgba(255 255 255 / 10%);
+  background-color: rgb(255 255 255 / 10%);
 
   &:hover {
-    background-color: rgba(255 255 255 / 25%);
+    background-color: rgb(255 255 255 / 25%);
   }
 
   @include xs-only {
