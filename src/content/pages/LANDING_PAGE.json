@@ -34,11 +34,11 @@
             },
             "profiles": [
               {
-                "slug": "Polygon Psychology",
-                "icon": "BRAIN",
+                "slug": "Parallel Learning",
+                "icon": "SCHOOL",
                 "link": {
-                  "ariaLabel": "Learn more about Meryll Dindin work at Polygon",
-                  "to": "/ventures/polygon/"
+                  "ariaLabel": "Learn more about Meryll Dindin work at Parallel Learning",
+                  "to": "/ventures/#parallel"
                 }
               },
               {
@@ -64,6 +64,14 @@
               "prompt": "Narrate"
             },
             "profiles": [
+              {
+                "slug": "Polygon Psychology",
+                "icon": "BRAIN",
+                "link": {
+                  "ariaLabel": "Learn more about Meryll Dindin work at Polygon",
+                  "to": "/ventures/polygon/"
+                }
+              },
               {
                 "slug": "CalAster",
                 "icon": "FIRE",

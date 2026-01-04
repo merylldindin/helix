@@ -8,11 +8,46 @@
   },
   "head": {
     "canonical": "/ventures/",
-    "description": "Explore my ventures in AI, healthcare, and education. From Polygon to Dillygence, see how I drive innovation through entrepreneurship.",
+    "description": "Explore my ventures in AI, healthcare, and education. From Parallel Learning to Dillygence, see how I drive innovation through entrepreneurship.",
     "thumbnail": "https://cdn.merylldindin.com/thumbnails/minimalist.png",
     "title": "My Ventures and Startups | Meryll Dindin"
   },
   "components": [
+    {
+      "name": "IMAGE_SECTION",
+      "id": "parallel",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Parallel Learning",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "VP of Product and Engineering",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Parallel Learning is the leading K-12 teletherapy platform connecting schools with licensed special education providers. Through its ISO27001-certified technology, Parallel delivers psychoeducational assessments, speech therapy, and specialized instruction to students with learning differences across 25+ states."
+          }
+        ],
+        "image": {
+          "altText": "Logo of Parallel Learning, Inc.",
+          "source": "https://cdn.merylldindin.com/assets/logo-parallel.webp",
+          "lazySource": "https://cdn.merylldindin.com/assets/logo-parallel-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/assets/logo-parallel-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/assets/logo-parallel-mobile-lazy.webp"
+        }
+      }
+    },
     {
       "name": "IMAGE_SECTION",
       "id": "polygon-section",
