@@ -1,5 +1,11 @@
 {
   "layout": "scrolled",
+  "schema": {
+    "type": "webPage",
+    "prop": {
+      "additionalType": "TermsOfService"
+    }
+  },
   "head": {
     "canonical": "/legal/terms-of-use/",
     "description": "Learn about the policies, user responsibilities, and terms of access that guide the use of Meryll Dindin's website. Familiarize yourself with our terms.",

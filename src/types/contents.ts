@@ -125,10 +125,38 @@ export interface PageHead {
   title: string;
   description?: string;
   thumbnail?: string;
+  thumbnailAlt?: string;
 }
 
 export interface PageComponent {
   id: string;
   name: string;
-  props?: Record<string, any>;
+  props?: Record<string, unknown>;
+}
+
+// Schema type definitions for JSON-LD structured data
+export type ItemListSource =
+  | "IMAGE_SECTION"
+  | "LINKS_SECTION"
+  | "ROTATING_CUBE"
+  | "TIMELINE_SECTION";
+
+export type SchemaType = "aboutPage" | "blogPosting" | "itemList" | "webPage";
+
+export interface PageSchema {
+  type: string;
+  prop?: {
+    additionalType?: string;
+    dateModified?: string;
+    datePublished?: string;
+    keywords?: string;
+    source?: string;
+  };
+}
+
+export interface PageContent {
+  components: PageComponent[];
+  head: PageHead;
+  layout: string;
+  schema?: PageSchema;
 }

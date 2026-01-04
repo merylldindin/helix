@@ -230,6 +230,7 @@ class SchemaValidator:
             ("webpages.ts", IssueSeverity.MEDIUM, "WebPage for each page"),
             ("itemlists.ts", IssueSeverity.LOW, "ItemList for collections"),
             ("blogposts.ts", IssueSeverity.MEDIUM, "BlogPosting for articles"),
+            ("profile.ts", IssueSeverity.LOW, "ProfilePage for landing page"),
         ]
 
         for generator, severity, purpose in expected_generators:

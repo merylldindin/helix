@@ -3,6 +3,7 @@ import type {
   ArticleContent,
   GenericContent,
   HeadlineContent,
+  PageContent,
   SocialsContent,
 } from "@/types";
 import { ContentType } from "@/types";
@@ -10,25 +11,36 @@ import { ContentType } from "@/types";
 interface BlogPostConfig {
   dateModified: string;
   datePublished: string;
-  keywords: string[];
+  keywords: string | string[];
 }
 
-const getBlogPostReferences = (content: any): unknown | null => {
-  const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
+interface ArticleSectionProps {
+  background: { source: string };
+  content: GenericContent[];
+}
 
-  const articles = content.components[0].props.content.filter(
+const getArticleProps = (content: PageContent): ArticleSectionProps => {
+  const props = content.components[0]?.props;
+  return props as unknown as ArticleSectionProps;
+};
+
+const getBlogPostReferences = (content: PageContent): unknown | null => {
+  const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
+  const props = getArticleProps(content);
+
+  const articles = props.content.filter(
     (item: GenericContent) => item.type === ContentType.ARTICLE
   ) as ArticleContent[];
 
-  const articleLinks = articles.reduce((accumulator: any, article: ArticleContent) => {
+  const articleLinks = articles.reduce((accumulator: string[], article: ArticleContent) => {
     return [...accumulator, article.prop.href];
   }, []);
 
-  const socials = content.components[0].props.content.filter(
+  const socials = props.content.filter(
     (item: GenericContent) => item.type === ContentType.SOCIALS
   ) as SocialsContent[];
 
-  const socialLinks = socials.reduce((accumulator: any, social: SocialsContent) => {
+  const socialLinks = socials.reduce((accumulator: string[], social: SocialsContent) => {
     return [...accumulator, ...social.prop.map((item) => item.to)];
   }, []);
 
@@ -49,22 +61,25 @@ const getBlogPostReferences = (content: any): unknown | null => {
     : null;
 };
 
-const getBlogHeadline = (content: any): string => {
-  const headlines = content.components[0].props.content.filter(
+const getBlogHeadline = (content: PageContent): string => {
+  const props = getArticleProps(content);
+  const headlines = props.content.filter(
     (item: GenericContent) => item.type === ContentType.HEADLINE
   ) as HeadlineContent[];
 
   return headlines[0]?.prop.text ?? "";
 };
 
-const getBlogImage = (content: any): string => {
-  return content.components[0].props.background.source;
+const getBlogImage = (content: PageContent): string => {
+  const props = getArticleProps(content);
+  return props.background.source;
 };
 
-const getBlogBody = (content: any): string => {
-  return content.components[0].props.content
+const getBlogBody = (content: PageContent): string => {
+  const props = getArticleProps(content);
+  return props.content
     .filter((item: GenericContent) => item.type === ContentType.TEXT)
-    .map((article: ArticleContent) => article.prop)
+    .map((item) => item.prop as string)
     .join(" ");
 };
 
@@ -72,10 +87,23 @@ const getBlogWordCount = (articleBody: string): number => {
   return articleBody.split(" ").length;
 };
 
-const getBlogSchema = (content: any): unknown => {
+const getReadingTime = (wordCount: number): string => {
+  const minutes = Math.ceil(wordCount / 200);
+  return `PT${minutes}M`;
+};
+
+const parseKeywords = (keywords: string | string[]): string[] => {
+  if (Array.isArray(keywords)) {
+    return keywords;
+  }
+  return keywords.split(",").map((k) => k.trim());
+};
+
+const getBlogSchema = (content: PageContent): unknown => {
   const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
-  const configs: BlogPostConfig = content.schema.prop;
+  const configs = content.schema?.prop as BlogPostConfig;
   const blogBody = getBlogBody(content);
+  const wordCount = getBlogWordCount(blogBody);
 
   return {
     "@context": "https://schema.org",
@@ -83,7 +111,7 @@ const getBlogSchema = (content: any): unknown => {
     "@type": "BlogPosting",
     articleBody: blogBody,
     author: {
-      "@id": "https://merylldindin.com/#identity",
+      "@id": `${DEFAULT_URL}#identity`,
       "@type": "Person",
       name: DEFAULT_NAME,
     },
@@ -92,22 +120,25 @@ const getBlogSchema = (content: any): unknown => {
     description: content.head.description,
     headline: getBlogHeadline(content),
     image: getBlogImage(content),
-    keywords: configs.keywords,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${DEFAULT_URL}#website` },
+    keywords: parseKeywords(configs.keywords),
     mainEntityOfPage: {
       "@id": pageUrl,
       "@type": "WebPage",
     },
     publisher: {
-      "@id": "https://merylldindin.com/#identity",
+      "@id": `${DEFAULT_URL}#identity`,
       "@type": "Person",
       name: DEFAULT_NAME,
     },
+    timeRequired: getReadingTime(wordCount),
     url: pageUrl,
-    wordCount: getBlogWordCount(blogBody),
+    wordCount,
   };
 };
 
-export const getBlogPostSchema = (content: any): unknown[] => {
+export const getBlogPostSchema = (content: PageContent): unknown[] => {
   return [getBlogSchema(content), getBlogPostReferences(content)].filter(
     (item) => item !== null
   );

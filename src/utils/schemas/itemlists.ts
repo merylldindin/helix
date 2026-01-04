@@ -1,5 +1,10 @@
 import { DEFAULT_URL } from "@/content";
-import type { GenericContent, ReferenceItem, TimelineContent } from "@/types";
+import type {
+  GenericContent,
+  PageContent,
+  ReferenceItem,
+  TimelineContent,
+} from "@/types";
 import { ComponentName, ContentType } from "@/types";
 
 enum ItemListConfig {
@@ -9,55 +14,96 @@ enum ItemListConfig {
   TIMELINE_SECTION = "TIMELINE_SECTION",
 }
 
-const getRotatingCubeItemList = (content: any): unknown => {
+interface ListItemData {
+  name?: string;
+  url: string;
+}
+
+interface RotatingCubeProfile {
+  link: { external?: boolean; to: string };
+  slug: string;
+}
+
+interface RotatingCubePage {
+  headline: { prompt: string; to?: string };
+  profiles: RotatingCubeProfile[];
+}
+
+interface RotatingCubeProps {
+  pages: RotatingCubePage[];
+}
+
+interface ImageSectionProps {
+  content: GenericContent[];
+}
+
+interface TimelineSectionProps {
+  timeline: TimelineContent[];
+}
+
+interface LinksSectionProps {
+  content: GenericContent[];
+}
+
+const getRotatingCubeItemList = (content: PageContent): unknown => {
   const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
 
-  const links: string[] = [];
+  const items: ListItemData[] = [];
 
   content.components
-    .filter((item: any) => item.name === ComponentName.ROTATING_CUBE)
-    .forEach((component: any) =>
-      component.props.pages.forEach((page: any) => {
+    .filter((item) => item.name === ComponentName.ROTATING_CUBE)
+    .forEach((component) => {
+      const props = component.props as unknown as RotatingCubeProps;
+      props.pages.forEach((page: RotatingCubePage) => {
         if (page.headline.to) {
-          links.push(`${DEFAULT_URL}${page.headline.to}`);
+          items.push({
+            name: page.headline.prompt,
+            url: `${DEFAULT_URL}${page.headline.to}`,
+          });
         }
 
-        page.profiles.forEach((profile: any) => {
-          links.push(
-            profile.link.external ? profile.link.to : `${DEFAULT_URL}${profile.link.to}`
-          );
+        page.profiles.forEach((profile: RotatingCubeProfile) => {
+          items.push({
+            name: profile.slug,
+            url: profile.link.external ? profile.link.to : `${DEFAULT_URL}${profile.link.to}`,
+          });
         });
-      })
-    );
+      });
+    });
 
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    itemListElement: links.map((link, index) => ({
+    itemListElement: items.map((item, index) => ({
       "@type": "ListItem",
+      name: item.name,
       position: index + 1,
-      url: link,
+      url: item.url,
     })),
-    numberOfItems: links.length,
+    numberOfItems: items.length,
     url: pageUrl,
   };
 };
 
-const getSectionImageItemList = (content: any): unknown => {
+const getSectionImageItemList = (content: PageContent): unknown => {
   const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
 
   const sections = content.components.filter(
-    (item: any) => item.name === ComponentName.IMAGE_SECTION
-  ) as any[];
+    (item) => item.name === ComponentName.IMAGE_SECTION
+  );
 
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
     itemListElement: sections.map((section, index) => {
-      const url = section.props.content.at(-1).prop.to;
+      const props = section.props as unknown as ImageSectionProps;
+      const lastItem = props.content.at(-1);
+      const url = (lastItem?.prop as { to?: string })?.to ?? "";
+      const headline = props.content.find((c) => c.type === ContentType.HEADLINE);
 
       return {
         "@type": "ListItem",
+        name: (headline?.prop as { text?: string })?.text,
         position: index + 1,
         url: url.startsWith("http") ? url : `${DEFAULT_URL}${url}`,
       };
@@ -67,44 +113,51 @@ const getSectionImageItemList = (content: any): unknown => {
   };
 };
 
-const getSectionTimelineItemList = (content: any): unknown => {
+const getSectionTimelineItemList = (content: PageContent): unknown => {
   const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
 
   const section = content.components.find(
-    (item: any) => item.name === ComponentName.TIMELINE_SECTION
+    (item) => item.name === ComponentName.TIMELINE_SECTION
   );
+
+  const props = section?.props as unknown as TimelineSectionProps;
+  const timeline = props?.timeline ?? [];
 
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    itemListElement: (section.props.timeline as TimelineContent[]).map(
-      (link, index) => {
-        return {
-          "@type": "ListItem",
-          position: index + 1,
-          url: link.href,
-        };
-      }
-    ),
-    numberOfItems: section.props.timeline.length,
+    itemListElement: timeline.map((link, index) => {
+      return {
+        "@type": "ListItem",
+        name: link.name,
+        position: index + 1,
+        url: link.href,
+      };
+    }),
+    numberOfItems: timeline.length,
     url: pageUrl,
   };
 };
 
-const getSectionReferenceItemList = (content: any): unknown => {
+const getSectionReferenceItemList = (content: PageContent): unknown => {
   const pageUrl = `${DEFAULT_URL}${content.head.canonical}`;
 
   const section = content.components.find(
-    (item: any) => item.name === ComponentName.LINKS_SECTION
+    (item) => item.name === ComponentName.LINKS_SECTION
   );
 
-  const links = (section.props.content as GenericContent[])
+  const props = section?.props as unknown as LinksSectionProps;
+  const sectionContent = props?.content ?? [];
+
+  const links = sectionContent
     .filter((link) => link.type === ContentType.REFERENCE)
     .map((link, index) => {
+      const reference = link.prop as ReferenceItem;
       return {
         "@type": "ListItem",
+        name: reference.text,
         position: index + 1,
-        url: (link.prop as ReferenceItem).href,
+        url: reference.href,
       };
     });
 
@@ -117,20 +170,22 @@ const getSectionReferenceItemList = (content: any): unknown => {
   };
 };
 
-export const getItemListSchema = (content: any): unknown => {
-  if (content.schema.prop.source === ItemListConfig.ROTATING_CUBE) {
+export const getItemListSchema = (content: PageContent): unknown => {
+  const source = content.schema?.prop?.source;
+
+  if (source === ItemListConfig.ROTATING_CUBE) {
     return getRotatingCubeItemList(content);
   }
 
-  if (content.schema.prop.source === ItemListConfig.IMAGE_SECTION) {
+  if (source === ItemListConfig.IMAGE_SECTION) {
     return getSectionImageItemList(content);
   }
 
-  if (content.schema.prop.source === ItemListConfig.LINKS_SECTION) {
+  if (source === ItemListConfig.LINKS_SECTION) {
     return getSectionReferenceItemList(content);
   }
 
-  if (content.schema.prop.source === ItemListConfig.TIMELINE_SECTION) {
+  if (source === ItemListConfig.TIMELINE_SECTION) {
     return getSectionTimelineItemList(content);
   }
 

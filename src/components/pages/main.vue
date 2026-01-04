@@ -1,12 +1,16 @@
 <script setup lang="ts">
 import type { PropType } from "vue";
+import { useRoute } from "vue-router";
 
+import { DEFAULT_URL } from "@/content";
 import type { PageComponent, PageHead } from "@/types";
 import { extractHead } from "@/utils/meta";
 
 import { ASYNC_COMPONENTS } from "./utilities";
 
-import { useSeoMeta } from "#imports";
+import { useHead, useSeoMeta } from "#imports";
+
+const route = useRoute();
 
 const cProps = defineProps({
   components: {
@@ -19,10 +23,14 @@ const cProps = defineProps({
   },
 });
 
-useSeoMeta(
-  // @ts-ignore
-  extractHead(cProps.head)
-);
+const canonicalPath = cProps.head.canonical ?? route.path;
+const canonicalUrl = `${DEFAULT_URL}${canonicalPath}`;
+
+useHead({
+  link: [{ href: canonicalUrl, rel: "canonical" }],
+});
+
+useSeoMeta(extractHead({ ...cProps.head, canonical: canonicalPath }));
 </script>
 
 <template>

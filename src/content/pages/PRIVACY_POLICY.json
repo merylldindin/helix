@@ -1,5 +1,11 @@
 {
   "layout": "scrolled",
+  "schema": {
+    "type": "webPage",
+    "prop": {
+      "additionalType": "PrivacyPolicy"
+    }
+  },
   "head": {
     "canonical": "/legal/privacy-policy/",
     "description": "We prioritize your privacy. Explore our concise and clear privacy policy to understand how we handle and protect your information.",

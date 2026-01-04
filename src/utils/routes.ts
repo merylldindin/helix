@@ -26,9 +26,10 @@ import {
   TOPOLOGICAL_DATA_ANALYSIS_BLOG,
   VENTURES_PAGE_CONTENT,
 } from "@/content";
+import type { PageContent } from "@/types";
 import { RoutePath } from "@/types";
 
-export const ROUTES_CONTENT = {
+export const ROUTES_CONTENT: Record<RoutePath, PageContent> = {
   [RoutePath.ARRHYTHIMIA_CLASSIFICATION]: ARRHYTHMIA_CLASSIFICATION,
   [RoutePath.AUBERGE_DE_CERCOUX]: AUBERGE_PAGE_CONTENT,
   [RoutePath.BOOK_SUGGESTIONS]: BOOK_SUGGESTIONS,

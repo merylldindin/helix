@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import type { ComputedRef } from "vue";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 
 import { DynamicPage } from "@/components/pages";
+import type { PageContent, RoutePath } from "@/types";
 import { ROUTES_CONTENT } from "@/utils/routes";
 import {
   getBlogPostSchema,
   getBreadcrumbsSchema,
   getItemListSchema,
+  getProfilePageSchema,
   getWebPageSchema,
 } from "@/utils/schemas";
 
@@ -20,28 +21,30 @@ definePageMeta({
 
 const route = useRoute();
 
-const pageContent = computed(() => {
-  return ROUTES_CONTENT[route.path as keyof typeof ROUTES_CONTENT];
+const pageContent = computed((): PageContent | undefined => {
+  return ROUTES_CONTENT[route.path as RoutePath];
 });
 
-const pageSchema: ComputedRef<string | undefined> = computed(() => {
-  // @ts-ignore
-  return pageContent.value.schema?.type;
+const pageSchemaType = computed(() => {
+  return pageContent.value?.schema?.type;
 });
 
 useHead(() => {
   const schemas = [];
 
+  // Add ProfilePage schema on landing page
+  if (route.path === "/") {
+    schemas.push(getProfilePageSchema());
+  }
+
   schemas.push(getBreadcrumbsSchema(route.path));
+  schemas.push(getWebPageSchema(route.path, pageContent.value));
 
-  schemas.push(getWebPageSchema(route.path));
-
-  if (pageSchema.value === "itemList") {
-    // @ts-ignore
+  if (pageSchemaType.value === "itemList" && pageContent.value) {
     schemas.push(getItemListSchema(pageContent.value));
   }
 
-  if (pageSchema.value === "blogPosting") {
+  if (pageSchemaType.value === "blogPosting" && pageContent.value) {
     schemas.push(...getBlogPostSchema(pageContent.value));
   }
 
@@ -55,5 +58,5 @@ useHead(() => {
 </script>
 
 <template>
-  <DynamicPage v-bind="pageContent" />
+  <DynamicPage v-if="pageContent" v-bind="pageContent" />
 </template>

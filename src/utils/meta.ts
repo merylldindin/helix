@@ -12,6 +12,7 @@ export type HeadContent = {
 };
 
 const setMetaCanonical = (canonical: string) => ({
+  canonical: `${DEFAULT_URL}${canonical}`,
   ogUrl: `${DEFAULT_URL}${canonical}`,
 });
 
