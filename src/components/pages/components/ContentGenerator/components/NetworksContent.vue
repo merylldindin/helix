@@ -40,7 +40,7 @@ const articleUrl: ComputedRef<string> = computed(() => {
 });
 
 const twitterUrl: ComputedRef<string> = computed(() => {
-  return `https://twitter.com/share${encodeAsUrlParameters({
+  return `https://x.com/share${encodeAsUrlParameters({
     text: cProps.quote,
     url: articleUrl.value,
   })}`;

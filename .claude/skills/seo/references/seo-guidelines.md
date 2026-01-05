@@ -72,7 +72,7 @@ Meryll Dindin is a serial entrepreneur shaping healthcare, mental health, and AI
   "sameAs": [
     "https://linkedin.com/in/merylldindin",
     "https://github.com/merylldindin",
-    "https://twitter.com/merylldindin"
+    "https://x.com/merylldindin"
   ],
   "alumniOf": [...],
   "worksFor": [...]
