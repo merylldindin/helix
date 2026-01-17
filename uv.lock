@@ -45,7 +45,7 @@ devops = [
 [package.metadata]
 
 [package.metadata.requires-dev]
-devops = [{ name = "sirtuin", specifier = "==1.2.0" }]
+devops = [{ name = "sirtuin", specifier = "==1.3.0" }]
 
 [[package]]
 name = "markdown-it-py"
@@ -157,7 +157,7 @@ wheels = [
 
 [[package]]
 name = "sirtuin"
-version = "1.2.0"
+version = "1.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pydantic" },
@@ -165,9 +165,9 @@ dependencies = [
     { name = "tomli" },
     { name = "typer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b9/bc/cb960b362d28b40f5f22a158b121771879b8c6b85b7616254a401e81f40b/sirtuin-1.2.0.tar.gz", hash = "sha256:b06087dd43935a348babde11a510106bb5d1290852d060eba91684ab8b520115", size = 19933, upload-time = "2025-12-28T12:04:05.93Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0b/4b/95479bb717b54e1b372fbb429a5f140b0bbac9e943e78a52a7b3b9d375e0/sirtuin-1.3.0.tar.gz", hash = "sha256:5313b7fb28cb09b1ecae121464d0677d207e59946e284e62b0ebb1ae8d4c8c7c", size = 20014, upload-time = "2026-01-17T02:43:51.188Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/48/5f/7ade70d53eac63a0528bd39047d08fd3ebe5525dadddb1c47bd21c1f90cd/sirtuin-1.2.0-py3-none-any.whl", hash = "sha256:32e0ad6cc0403d87477b4a38e95b87d79e3385b0fd7f9afdecd7b9012aae2e90", size = 15451, upload-time = "2025-12-28T12:04:04.798Z" },
+    { url = "https://files.pythonhosted.org/packages/64/52/28e8bdeb7a81152ef4470f0035fa0fd190ee692ddc265fcfc1ac47751f8e/sirtuin-1.3.0-py3-none-any.whl", hash = "sha256:ec0dbd5649a75be0adb76303831663bf79569588d96fd66a217a867faac5fe99", size = 15431, upload-time = "2026-01-17T02:43:50.367Z" },
 ]
 
 [[package]]
