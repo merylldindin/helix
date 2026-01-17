@@ -65,7 +65,9 @@ const getRotatingCubeItemList = (content: PageContent): unknown => {
         page.profiles.forEach((profile: RotatingCubeProfile) => {
           items.push({
             name: profile.slug,
-            url: profile.link.external ? profile.link.to : `${DEFAULT_URL}${profile.link.to}`,
+            url: profile.link.external
+              ? profile.link.to
+              : `${DEFAULT_URL}${profile.link.to}`,
           });
         });
       });

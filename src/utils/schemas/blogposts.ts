@@ -32,17 +32,23 @@ const getBlogPostReferences = (content: PageContent): unknown | null => {
     (item: GenericContent) => item.type === ContentType.ARTICLE
   ) as ArticleContent[];
 
-  const articleLinks = articles.reduce((accumulator: string[], article: ArticleContent) => {
-    return [...accumulator, article.prop.href];
-  }, []);
+  const articleLinks = articles.reduce(
+    (accumulator: string[], article: ArticleContent) => {
+      return [...accumulator, article.prop.href];
+    },
+    []
+  );
 
   const socials = props.content.filter(
     (item: GenericContent) => item.type === ContentType.SOCIALS
   ) as SocialsContent[];
 
-  const socialLinks = socials.reduce((accumulator: string[], social: SocialsContent) => {
-    return [...accumulator, ...social.prop.map((item) => item.to)];
-  }, []);
+  const socialLinks = socials.reduce(
+    (accumulator: string[], social: SocialsContent) => {
+      return [...accumulator, ...social.prop.map((item) => item.to)];
+    },
+    []
+  );
 
   const references = [...socialLinks, ...articleLinks];
 
