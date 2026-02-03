@@ -43,6 +43,9 @@ cypress/downloads
 cypress/screenshots
 cypress/videos
 
-# claude skills outputs
+# claude skills
+.claude/skills/**/.env
 .claude/skills/**/output/*
 !.claude/skills/**/output/.gitkeep
+.claude/skills/**/input/*
+!.claude/skills/**/input/.gitkeep

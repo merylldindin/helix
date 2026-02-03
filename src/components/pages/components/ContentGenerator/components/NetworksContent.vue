@@ -1,15 +1,16 @@
 <script lang="ts" setup>
-import type { ComputedRef } from "vue";
+import { mdiFacebook, mdiLinkedin, mdiTwitter } from "@mdi/js";
 import { computed } from "vue";
 import { useDisplay } from "vuetify";
 
-import FacebookIcon from "@/assets/animations/facebook-icon.json";
-import LinkedinIcon from "@/assets/animations/linkedin-icon.json";
-import XIcon from "@/assets/animations/x-icon.json";
 import { CustomLink } from "@/components/shared";
 import { DEFAULT_URL } from "@/content";
 
 const cProps = defineProps({
+  hasMoreContent: {
+    default: false,
+    type: Boolean,
+  },
   quote: {
     default: "",
     type: String,
@@ -22,89 +23,55 @@ const cProps = defineProps({
 
 const { smAndDown } = useDisplay();
 
-const encodeAsUrlParameters = (object: {
-  [key: string]: string | number | undefined | null;
-}) => {
-  const parameters = Object.entries(object)
-    .filter(([, value]) => value !== undefined && value !== null)
-    .map(
-      ([key, value]) =>
-        `${encodeURIComponent(key)}=${encodeURIComponent(String(value))}`
-    );
-
-  return parameters.length > 0 ? `?${parameters.join("&")}` : "";
+const buildShareUrl = (base: string, params: Record<string, string>) => {
+  const query = new URLSearchParams(params).toString();
+  return query ? `${base}?${query}` : base;
 };
 
-const articleUrl: ComputedRef<string> = computed(() => {
-  return `${DEFAULT_URL}${cProps.url}`;
-});
+const articleUrl = computed(() => `${DEFAULT_URL}${cProps.url}`);
 
-const twitterUrl: ComputedRef<string> = computed(() => {
-  return `https://x.com/share${encodeAsUrlParameters({
-    text: cProps.quote,
-    url: articleUrl.value,
-  })}`;
-});
+const iconSize = computed(() => (smAndDown.value ? "20" : "24"));
 
-const facebookUrl: ComputedRef<string> = computed(() => {
-  return `https://www.facebook.com/sharer/sharer.php${encodeAsUrlParameters({
-    u: articleUrl.value,
-  })}`;
-});
-
-const linkedinUrl: ComputedRef<string> = computed(() => {
-  return `https://www.linkedin.com/sharing/share-offsite/${encodeAsUrlParameters({
-    url: articleUrl.value,
-  })}`;
-});
-
-const optionUrls: ComputedRef<
-  { animation: unknown; arialabel: string; url: string; width: number }[]
-> = computed(() => {
-  return [
-    {
-      animation: LinkedinIcon,
-      arialabel: "Share this article via LinkedIn",
-      url: linkedinUrl.value,
-      width: 36,
-    },
-    {
-      animation: XIcon,
-      arialabel: "Share this article via Twitter",
-      url: twitterUrl.value,
-      width: 40,
-    },
-    {
-      animation: FacebookIcon,
-      arialabel: "Share this article via Facebook",
-      url: facebookUrl.value,
-      width: 56,
-    },
-  ];
-});
+const shareOptions = computed(() => [
+  {
+    ariaLabel: "Share this article via LinkedIn",
+    icon: mdiLinkedin,
+    url: buildShareUrl("https://www.linkedin.com/sharing/share-offsite/", {
+      url: articleUrl.value,
+    }),
+  },
+  {
+    ariaLabel: "Share this article via X",
+    icon: mdiTwitter,
+    url: buildShareUrl("https://x.com/share", {
+      text: cProps.quote,
+      url: articleUrl.value,
+    }),
+  },
+  {
+    ariaLabel: "Share this article via Facebook",
+    icon: mdiFacebook,
+    url: buildShareUrl("https://www.facebook.com/sharer/sharer.php", {
+      u: articleUrl.value,
+    }),
+  },
+]);
 </script>
 
 <template>
-  <div class="networks-wrapper">
+  <div class="networks-wrapper" :class="{ 'has-more-content': cProps.hasMoreContent }">
     <CustomLink
-      v-for="(option, index) in optionUrls"
-      :key="index"
-      :aria-label="option.arialabel"
-      class="align-self-center ml-4"
-      :color="$COLOR.DEL_RIO"
+      v-for="option in shareOptions"
+      :key="option.ariaLabel"
+      :aria-label="option.ariaLabel"
+      class="social-icon align-self-center"
       external
-      :prompt="undefined"
       rel="nofollow noopener noreferrer external"
       size="large"
       target="_blank"
       :to="option.url"
     >
-      <client-only>
-        <Vue3Lottie
-          :animation-data="option.animation"
-          :width="`${smAndDown ? 0.75 * option.width : option.width}px`"
-        />
-      </client-only>
+      <v-icon :icon="option.icon" :size="iconSize" />
     </CustomLink>
   </div>
 </template>
@@ -112,15 +79,33 @@ const optionUrls: ComputedRef<
 <style lang="scss" scoped>
 .networks-wrapper {
   display: flex;
-  flex-direction: row;
-  width: 100%;
   justify-content: space-around;
-  margin: 60px 0;
-  border-radius: 16px;
-  background-color: rgb(0 0 0 / 3%);
+  width: 100%;
+  margin: 48px 0 0;
+  padding: 24px 0 0;
+  border-top: 1px solid rgb(0 0 0 / 15%);
+
+  &.has-more-content {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgb(0 0 0 / 15%);
+
+    @include sm-down {
+      padding-bottom: 20px;
+    }
+  }
 
   @include sm-down {
-    margin: 48px 0;
+    margin: 36px 0 0;
+    padding: 20px 0 0;
+  }
+}
+
+.social-icon {
+  color: rgb(var(--v-theme-primary));
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
   }
 }
 </style>

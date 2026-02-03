@@ -81,6 +81,7 @@ const getMarginFromTypography = (typography: string, index: number) => {
       <NetworksContent
         v-else-if="item.type === ContentType.NETWORKS"
         v-bind="item.prop"
+        :has-more-content="index < content.length - 1"
       />
 
       <RedirectContent v-else-if="item.type === ContentType.MORE" :link="item.prop" />

@@ -22,36 +22,34 @@ defineProps({
 
 const { mobile } = useDisplay();
 
-const pageMargin = ref<string>("80vh");
-const headerOpacity = ref<number>(1);
+const HEADER_HEIGHT_RATIO = 0.72;
 
-const opacityScrollHandler = () => {
-  headerOpacity.value = 1 - window.scrollY / window.innerHeight;
+const pageMargin = ref("72vh");
+const headerOpacity = ref(1);
+
+const getHeaderHeight = () => HEADER_HEIGHT_RATIO * window.innerHeight;
+
+const handleScroll = () => {
+  headerOpacity.value = 1 - window.scrollY / getHeaderHeight();
 };
 
-const marginResizeHandler = () => {
-  pageMargin.value = `${Math.floor(0.9 * window.innerHeight)}px`;
+const handleResize = () => {
+  pageMargin.value = `${Math.floor(getHeaderHeight())}px`;
 };
 
 const scrollDown = () => {
-  window.scrollTo({
-    behavior: "smooth",
-    top: Math.floor(0.9 * window.innerHeight),
-  });
+  window.scrollTo({ behavior: "smooth", top: Math.floor(getHeaderHeight()) });
 };
 
 onMounted(() => {
-  marginResizeHandler();
-
-  window.addEventListener("resize", marginResizeHandler);
-
-  window.addEventListener("scroll", opacityScrollHandler);
+  handleResize();
+  window.addEventListener("resize", handleResize, { passive: true });
+  window.addEventListener("scroll", handleScroll, { passive: true });
 });
 
 onUnmounted(() => {
-  window.removeEventListener("resize", marginResizeHandler);
-
-  window.removeEventListener("scroll", opacityScrollHandler);
+  window.removeEventListener("resize", handleResize);
+  window.removeEventListener("scroll", handleScroll);
 });
 </script>
 
@@ -59,8 +57,7 @@ onUnmounted(() => {
   <CustomSection>
     <template #background>
       <CustomImage
-        class="image-wrapper custom-shadow"
-        cover
+        class="image-wrapper"
         :image="background"
         :style="{ opacity: headerOpacity }"
       />
@@ -92,14 +89,22 @@ onUnmounted(() => {
 <style lang="scss" scoped>
 .image-wrapper {
   position: fixed;
-  height: calc(100vh - 112px);
-  max-width: calc(100vw - 64px);
-  margin: 80px 32px 32px;
-  opacity: 1;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60vh;
+  width: 60vh;
+
+  :deep(img) {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
 
   @include sm-down {
-    max-width: calc(100vw - 32px);
-    margin: 64px 16px 16px;
+    top: 40%;
+    height: 50vh;
+    width: 90vw;
   }
 }
 
@@ -148,10 +153,10 @@ onUnmounted(() => {
 }
 
 .text-wrapper {
-  margin: 52px auto;
+  margin: 80px auto 52px;
 
   @include sm-down {
-    margin: 5vh auto 0;
+    margin: 10vh auto 0;
   }
 }
 </style>
