@@ -6,7 +6,7 @@ authors = [{ name = "Meryll Dindin", email = "merylldin@gmail.com" }]
 requires-python = "==3.13.*"
 dependencies = [
     "boto3==1.42.30",
-    "google-genai==1.59.0",
+    "google-genai==1.62.0",
     "pillow==11.2.1",
     "pydantic==2.12.5",
     "python-dotenv==1.2.1",
