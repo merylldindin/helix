@@ -139,6 +139,7 @@ export default defineNuxtConfig({
       "process.env.DEBUG": false,
     },
 
+    // @ts-expect-error - @unhead/addons built with vite 7.2, type drift in Plugin.hotUpdate
     plugins: [UnheadVite()],
   },
 });
