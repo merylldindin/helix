@@ -1,20 +1,9 @@
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import UnheadVite from "@unhead/addons/vite";
 import { defineNuxtConfig } from "nuxt/config";
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "./src/content";
 import { RoutePath } from "./src/types/routes";
-
-function extractFrontmatter(markdown: string) {
-  const match = markdown.match(/^---\n([\s\S]*?)\n---/);
-  if (!match?.[1]) return {};
-
-  const titleMatch = match[1].match(/^title:\s*"?([^"\n]+)"?\s*$/m);
-  const descMatch = match[1].match(/^\s+description:\s*"?([^"\n]+)"?\s*$/m);
-
-  return {
-    title: titleMatch?.[1],
-    description: descMatch?.[1],
-  };
-}
 
 export default defineNuxtConfig({
   build: {
@@ -44,47 +33,13 @@ export default defineNuxtConfig({
 
   hooks: {
     // @ts-expect-error mdream:llms-txt hook type is generated at build time
-    "mdream:llms-txt": (payload: {
-      content: string;
-      pages: {
-        title: string;
-        url: string;
-        content: string;
-        metadata: { title: string; description: string };
-      }[];
-    }) => {
-      for (const page of payload.pages) {
-        const { title, description } = extractFrontmatter(page.content);
-        if (title) {
-          page.title = title;
-          page.metadata.title = title;
-        }
-        if (description) {
-          page.metadata.description = description;
-        }
-      }
-
-      const origin = "https://merylldindin.com";
-      const lines = [
-        `# Meryll Dindin`,
-        "",
-        `> ${DEFAULT_DESCRIPTION}`,
-        "",
-        `Canonical Origin: ${origin}`,
-        "",
-        "## Pages",
-        "",
-      ];
-
-      for (const page of payload.pages) {
-        const desc = page.metadata.description || "";
-        const truncated =
-          desc.length > 100 ? `${desc.substring(0, 100)}...` : desc;
-        const pageUrl = page.url.replace(/\/index\.md$/, "/");
-        lines.push(`- [${page.title}](${origin}${pageUrl}): ${truncated}`);
-      }
-
-      payload.content = `${lines.join("\n")}\n`;
+    "mdream:llms-txt": (payload: { content: string; fullContent: string }) => {
+      const publicDir = resolve(__dirname, "src/public");
+      payload.content = readFileSync(resolve(publicDir, "llms.txt"), "utf-8");
+      payload.fullContent = readFileSync(
+        resolve(publicDir, "llms-full.txt"),
+        "utf-8",
+      );
     },
   },
 

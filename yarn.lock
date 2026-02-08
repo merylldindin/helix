@@ -1961,6 +1961,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mdream/nuxt@npm:0.15.3":
+  version: 0.15.3
+  resolution: "@mdream/nuxt@npm:0.15.3"
+  dependencies:
+    "@nuxt/kit": "npm:^4.2.1"
+    consola: "npm:^3.4.2"
+    defu: "npm:^6.1.4"
+    mdream: "npm:0.15.3"
+    nuxt-site-config: "npm:^3.2.11"
+    pathe: "npm:^2.0.3"
+  checksum: 10c0/de748455609e015234e8c15b90db4f6d2646389fdf76534300af274c5e2929d6b76c6e2a5638db425e5acdbf81e2882c9a1829b33e2a83f6865bdc4f4d4e60e9
+  languageName: node
+  linkType: hard
+
 "@napi-rs/wasm-runtime@npm:^0.2.11":
   version: 0.2.11
   resolution: "@napi-rs/wasm-runtime@npm:0.2.11"
@@ -8130,6 +8144,7 @@ __metadata:
     "@commitlint/cli": "npm:20.4.1"
     "@commitlint/config-conventional": "npm:20.4.1"
     "@mdi/js": "npm:7.4.47"
+    "@mdream/nuxt": "npm:0.15.3"
     "@nuxt/devtools": "npm:3.1.1"
     "@nuxt/eslint": "npm:1.14.0"
     "@nuxt/eslint-config": "npm:1.14.0"
@@ -9429,6 +9444,19 @@ __metadata:
   version: 2.26.0
   resolution: "mdn-data@npm:2.26.0"
   checksum: 10c0/e5f17f4dac247f3e260c081761628d371e23659a7ff13413f83f5bd7fd0f2d8317e72277bb77f0e13115041334ff728a5363db64aabaf376c0e1b0b31016d0b8
+  languageName: node
+  linkType: hard
+
+"mdream@npm:0.15.3":
+  version: 0.15.3
+  resolution: "mdream@npm:0.15.3"
+  dependencies:
+    cac: "npm:^6.7.14"
+    pathe: "npm:^2.0.3"
+    tinyglobby: "npm:^0.2.15"
+  bin:
+    mdream: bin/mdream.mjs
+  checksum: 10c0/2e4ddeef79d0a6c23d4025a8e4edc2d5bc16be1630075d6292d4836794717b39b4f0f7c0582fd5ffbffe7130a0671ed7ac25a94874eceb9103d4ecc2418125b6
   languageName: node
   linkType: hard
 
