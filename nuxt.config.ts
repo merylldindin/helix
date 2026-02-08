@@ -81,6 +81,10 @@ export default defineNuxtConfig({
     url: process.env.NUXT_WEBSITE_URL,
   },
 
+  sitemap: {
+    zeroRuntime: true,
+  },
+
   sourcemap: {
     client: false,
     server: false,
