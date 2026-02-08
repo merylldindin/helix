@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <span class="custom-chip text-2">
+  <span class="custom-chip">
     {{ label }}
   </span>
 </template>
@@ -18,8 +18,9 @@ defineProps({
   border: 1px solid rgb(0 0 0 / 25%);
   border-radius: 4px;
   flex-shrink: 0;
+  font-size: 1.1rem;
   line-height: 1;
-  padding: 0.2rem 0.6rem;
+  padding: 0.1rem 0.4rem;
   white-space: nowrap;
 }
 </style>
