@@ -13,6 +13,7 @@ export enum RoutePath {
   MISSIONS = "/missions/",
   MODELS_HUMAN_COGNITION = "/thoughts/models-human-cognition/",
   NEWSLETTER_SUGGESTIONS = "/suggestions/newsletters/",
+  PARALLEL_LEARNING = "/ventures/parallel-learning/",
   PODCAST_SUGGESTIONS = "/suggestions/podcasts/",
   POLYGON = "/ventures/polygon/",
   PRIVACY_POLICY = "/legal/privacy-policy/",

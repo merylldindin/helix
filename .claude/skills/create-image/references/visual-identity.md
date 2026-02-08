@@ -29,11 +29,23 @@ Meryll Dindin's portfolio uses a consistent minimalist visual language across al
 
 ### 4. Prohibited Elements
 
-- **NO TEXT**: No labels, words, letters, numbers
+- **NO TEXT**: No labels, words, letters, numbers (for portfolio images)
 - **NO FACES**: No human faces or bodies
 - **NO COLOR**: Only black on white
 - **NO COMPLEXITY**: No busy scenes, multiple objects, or detailed backgrounds
 - **NO REALISM**: No photographs or photorealistic renders
+- **NO BORDERS**: No frames, borders, or edge decorations - content extends to edges
+
+### 5. LinkedIn Carousel Specific
+
+For LinkedIn carousels, text IS required. Additional rules:
+- **Dimensions**: 1080x1350 px (true 4:5 portrait ratio)
+- **Consistent numbering**: Content slides use "0X TITLE" format (01, 02, 03...)
+- **No borders/frames**: Pure white background extends to ALL edges
+- **Colors**: Strictly black and white only - no colors, gradients, or gray backgrounds
+- **Data-driven**: Include specific numbers, percentages, statistics
+- **Center crop only**: Never resize/stretch images - only center crop
+- **Content centering**: ALL important content must be in the CENTER 80% of the image (edges get cropped)
 
 ## Image Prompt Template
 
