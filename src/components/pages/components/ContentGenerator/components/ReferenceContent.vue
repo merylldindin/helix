@@ -2,7 +2,7 @@
 import type { PropType } from "vue";
 import { useDisplay } from "vuetify";
 
-import { CustomLink } from "@/components/shared";
+import { CustomChip, CustomLink } from "@/components/shared";
 import type { ReferenceItem } from "@/types";
 
 defineProps({
@@ -32,6 +32,8 @@ const { smAndDown } = useDisplay();
           {{ reference.text }}
         </p>
 
+        <CustomChip v-if="reference.isPending" class="reference-chip" label="Pending" />
+
         <div v-if="reference.detail" class="reference-separator" />
 
         <span v-if="reference.detail" class="reference-detail text-2">
@@ -51,6 +53,15 @@ const { smAndDown } = useDisplay();
 </template>
 
 <style lang="scss" scoped>
+.reference-chip {
+  flex-shrink: 0;
+  order: 2;
+
+  @include sm-down {
+    order: 1;
+  }
+}
+
 .reference-text {
   order: 1;
 
@@ -64,7 +75,7 @@ const { smAndDown } = useDisplay();
   display: flex;
   height: 1px;
   background-color: rgb(0 0 0 / 25%);
-  order: 2;
+  order: 3;
 
   @include sm-down {
     display: none;
@@ -73,7 +84,7 @@ const { smAndDown } = useDisplay();
 
 .reference-detail {
   min-width: 32px;
-  order: 3;
+  order: 4;
 
   @include sm-down {
     order: 1;

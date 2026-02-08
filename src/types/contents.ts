@@ -72,6 +72,7 @@ export interface ReferenceItem {
   text: string;
   description?: string;
   detail?: string;
+  isPending?: boolean;
 }
 
 export interface ReferenceContent {
