@@ -40,14 +40,17 @@ uv run python scripts/create_image.py --list-assets
 
 ## Image Types
 
-| Type         | Dimensions | CDN Path      | Use Case         |
-| ------------ | ---------- | ------------- | ---------------- |
-| `section`    | 1080x1080  | `assets/`     | Section images   |
-| `fullpage`   | 1080x1080  | `assets/`     | Full-page images |
-| `thumbnail`  | 1200x630   | `thumbnails/` | OG images        |
-| `background` | 1920x1080  | `assets/`     | Page backgrounds |
+| Type         | Dimensions | Aspect Ratio | CDN Path      | Use Case                  |
+| ------------ | ---------- | ------------ | ------------- | ------------------------- |
+| `section`    | 1080x1080  | 1:1          | `assets/`     | Section images            |
+| `fullpage`   | 1080x1080  | 1:1          | `assets/`     | Full-page images          |
+| `thumbnail`  | 1200x630   | 16:9         | `thumbnails/` | OG images                 |
+| `background` | 1920x1080  | 16:9         | `assets/`     | Page backgrounds          |
+| `portrait`   | 768x1365   | 9:16         | `assets/`     | Mobile vertical images    |
 
 ## Output Variants
+
+### Standard types (section, fullpage, background)
 
 Each image produces 4 WebP files:
 
@@ -55,6 +58,13 @@ Each image produces 4 WebP files:
 - Desktop lazy (100px, 20% quality)
 - Mobile (16:9 center crop, 768px)
 - Mobile lazy (50px, 15% quality)
+
+### Portrait type
+
+Produces 2 mobile-only WebP files (no cropping, just resize):
+
+- Mobile (768px wide, 80% quality) — suffix `-mobile`
+- Mobile lazy (50px wide, 15% quality) — suffix `-mobile-lazy`
 
 ## Visual Identity Summary
 

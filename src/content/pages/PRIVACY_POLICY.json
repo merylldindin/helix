@@ -18,13 +18,16 @@
       "id": "privacy-policy",
       "props": {
         "title": "Privacy Policy",
-        "date": "Last updated on March 8, 2025",
+        "date": "Last updated on February 11, 2026",
         "content": [
           { "type": "subtitle", "content": "Introduction" },
           {
             "type": "paragraph",
             "content": [
-              { "type": "p", "content": "The website " },
+              {
+                "type": "p",
+                "content": "Meryll Dindin (''we'', ''us'', or ''our'') operates the website located at "
+              },
               {
                 "type": "a",
                 "content": "merylldindin.com",
@@ -32,16 +35,16 @@
               },
               {
                 "type": "p",
-                "content": " (''we'', ''us'', or ''our'') is committed to protecting the privacy of its users. This Privacy Policy applies to information collected through our website located at "
-              },
-              {
-                "type": "a",
-                "content": "https://merylldindin.com",
-                "props": { "to": "/", "underlined": true }
-              },
+                "content": " (the ''Site''). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our Site. We are committed to protecting your privacy in accordance with the General Data Protection Regulation (GDPR), the California Consumer Privacy Act as amended by the California Privacy Rights Act (CCPA/CPRA), and other applicable data protection laws."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
               {
                 "type": "p",
-                "content": " (the ''Site''). This Privacy Policy describes the types of information we may collect from you, how we use it, and your rights regarding that information."
+                "content": "Please read this Privacy Policy carefully. By accessing or using the Site, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree, please do not access or use the Site."
               }
             ]
           },
@@ -51,7 +54,7 @@
             "content": [
               {
                 "type": "p",
-                "content": "We collect several types of information from and about users of our Site, including:"
+                "content": "We collect information in two categories: information collected automatically and information you provide voluntarily."
               }
             ]
           },
@@ -60,7 +63,7 @@
             "content": [
               {
                 "type": "p",
-                "content": "1. Usage Data: Information about your interaction with our Site, including IP address, browser type, operating system, pages visited, time spent on pages, and other browsing data. We collect this information using cookies and similar technologies."
+                "content": "Automatically Collected Information: When you visit our Site, certain information is collected automatically through cookies and similar tracking technologies. This includes your IP address, browser type and version, operating system, referring URLs, pages visited, time spent on pages, click patterns, and other browsing behavior data. This information is collected primarily through Google Analytics 4 (measurement ID: G-YJHQMGJVMX)."
               }
             ]
           },
@@ -69,7 +72,7 @@
             "content": [
               {
                 "type": "p",
-                "content": "2. Contact Information: If you contact us or sign up for our newsletter, we may collect your name and email address."
+                "content": "Voluntarily Provided Information: If you contact us via email, we may collect your name, email address, and the content of your communication. We do not operate user accounts, registration forms, or newsletter signups on this Site."
               }
             ]
           },
@@ -79,7 +82,27 @@
             "content": [
               {
                 "type": "p",
-                "content": "We use the information we collect about you for the following purposes:"
+                "content": "We use the information we collect for the following purposes: (1) to operate, maintain, and improve the Site and its content; (2) to analyze usage patterns, traffic sources, and user behavior to enhance the user experience; (3) to monitor and ensure the security and integrity of the Site; (4) to respond to your inquiries or communications; and (5) to comply with legal obligations and enforce our terms."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Legal Basis for Processing (GDPR)" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "For visitors in the European Economic Area (EEA) and the United Kingdom, we process personal data under the following legal bases: (1) Legitimate Interests — we have a legitimate interest in understanding how visitors use our Site to improve content and user experience; (2) Consent — where required by applicable law, we obtain your consent before placing non-essential cookies or processing your data for analytics purposes; and (3) Legal Obligation — we may process data to comply with applicable legal requirements."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Cookies and Analytics" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "We use Google Analytics 4 (GA4) to collect and analyze information about the use of our Site. GA4 uses first-party cookies to measure user interactions. GA4 collects data such as pages viewed, session duration, approximate geographic location (based on IP address), device and browser information, and traffic sources. Google may use this data in accordance with its own privacy policy."
               }
             ]
           },
@@ -88,7 +111,7 @@
             "content": [
               {
                 "type": "p",
-                "content": "1. To improve our Site and present its contents to you."
+                "content": "We have configured GA4 with IP anonymization enabled by default. We do not use Google Analytics advertising features, and we do not link analytics data with personally identifiable information."
               }
             ]
           },
@@ -97,50 +120,7 @@
             "content": [
               {
                 "type": "p",
-                "content": "2. To analyze usage patterns and improve user experience."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              { "type": "p", "content": "3. To respond to your inquiries or requests." }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "4. To send periodic emails if you have opted in to receive them."
-              }
-            ]
-          },
-          { "type": "subtitle", "content": "Analytics and Cookies" },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "We use Google Analytics to collect information about use of the Site. Google Analytics collects information such as how often users visit the Site, what pages they visit, and what other sites they used prior to coming to the Site. We use this information to improve the Site and enhance the user experience."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "Google Analytics collects only the IP address assigned to you on the date you visit the Site, rather than your name or other personally identifying information. We do not combine the information collected through Google Analytics with personally identifiable information."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "You can prevent Google Analytics from recognizing you on return visits to the Site by disabling cookies on your browser or by installing the "
+                "content": "You can opt out of Google Analytics tracking by installing the "
               },
               {
                 "type": "a",
@@ -153,16 +133,49 @@
                   "underlined": true
                 }
               },
-              { "type": "p", "content": "." }
+              {
+                "type": "p",
+                "content": ", or by adjusting your browser's cookie settings to block cookies from Google Analytics."
+              }
             ]
           },
-          { "type": "subtitle", "content": "Third-Party Disclosure" },
+          { "type": "subtitle", "content": "Third-Party Services" },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties except in the following circumstances:"
+                "content": "Our Site uses the following third-party services: (1) Google Analytics 4 — for web analytics and usage statistics; (2) Amazon CloudFront — as a content delivery network (CDN) to serve static assets and images efficiently. These services may collect technical information as described in their respective privacy policies. We do not sell, rent, or trade your personal information to any third party."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "International Data Transfers" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "Your information may be transferred to and processed in countries other than your country of residence, including the United States, where our hosting and analytics services operate. These countries may have data protection laws that differ from your jurisdiction. Where required, we rely on appropriate safeguards such as Standard Contractual Clauses approved by the European Commission to ensure that your data is protected in accordance with applicable law."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Data Retention" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "Analytics data collected through Google Analytics is retained for a period of 14 months, after which it is automatically deleted. Any personal data you provide through direct communication (such as email) is retained only as long as necessary to respond to your inquiry and for our legitimate record-keeping purposes, after which it is securely deleted."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Your Rights" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "Under the GDPR (for EEA and UK residents): You have the right to access the personal data we hold about you; the right to rectification of inaccurate or incomplete data; the right to erasure (''right to be forgotten''); the right to data portability; the right to restrict processing; the right to object to processing based on legitimate interests; and the right to withdraw consent at any time where processing is based on consent. You also have the right to lodge a complaint with your local supervisory authority."
               }
             ]
           },
@@ -171,7 +184,7 @@
             "content": [
               {
                 "type": "p",
-                "content": "1. To service providers who assist us in operating our Site, conducting our business, or serving you, so long as those parties agree to keep this information confidential."
+                "content": "Under the CCPA/CPRA (for California residents): You have the right to know what personal information is collected, used, shared, or sold; the right to delete personal information held by us; the right to opt out of the sale or sharing of personal information (note: we do not sell or share personal information as defined by the CCPA/CPRA); and the right to non-discrimination for exercising your privacy rights. We will not discriminate against you for exercising any of these rights."
               }
             ]
           },
@@ -180,72 +193,7 @@
             "content": [
               {
                 "type": "p",
-                "content": "2. When we believe release is appropriate to comply with the law, enforce our site policies, or protect our or others' rights, property, or safety."
-              }
-            ]
-          },
-          { "type": "subtitle", "content": "Your Rights and Choices" },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "Depending on your location, you may have certain rights regarding your personal information, including:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "1. The right to access and receive a copy of your personal information."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "2. The right to request correction of inaccurate personal information."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "3. The right to request deletion of your personal information."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "4. The right to opt out of certain data processing activities."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "To exercise these rights, please contact us using the information provided in the \"Contact Information\" section below."
-              }
-            ]
-          },
-          { "type": "subtitle", "content": "Data Security" },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "p",
-                "content": "We implement reasonable security measures to protect your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure. However, the transmission of information via the internet is not completely secure. We cannot guarantee the security of your personal information transmitted to our Site."
+                "content": "To exercise any of these rights, please contact us using the information provided in the Contact section below. We will respond to verified requests within the timeframes required by applicable law (generally within 30 days for GDPR requests and 45 days for CCPA/CPRA requests)."
               }
             ]
           },
@@ -255,27 +203,37 @@
             "content": [
               {
                 "type": "p",
-                "content": "Our Site is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are under 13, please do not provide any information on this Site."
+                "content": "Our Site is not directed at children under the age of 13 (or 16 in the EEA). We do not knowingly collect personal information from children. In compliance with the Children's Online Privacy Protection Act (COPPA), if we become aware that we have inadvertently collected personal information from a child under the applicable age, we will take steps to delete such information promptly. If you believe we may have collected information from a child, please contact us immediately."
               }
             ]
           },
-          { "type": "subtitle", "content": "Changes to Our Privacy Policy" },
+          { "type": "subtitle", "content": "Security" },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "We may update our Privacy Policy from time to time. If we make material changes, we will notify you by posting the updated Privacy Policy on this page with a new effective date. Your continued use of the Site after we post any modifications to the Privacy Policy will constitute your acknowledgment of the modifications and your consent to the updated Privacy Policy."
+                "content": "We implement reasonable technical and organizational security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. Our Site is served over HTTPS with TLS encryption. However, no method of transmission over the Internet or method of electronic storage is completely secure, and we cannot guarantee absolute security."
               }
             ]
           },
-          { "type": "subtitle", "content": "Contact Information" },
+          { "type": "subtitle", "content": "Changes to This Privacy Policy" },
           {
             "type": "paragraph",
             "content": [
               {
                 "type": "p",
-                "content": "If you have any questions or concerns about this Privacy Policy, please contact us via "
+                "content": "We may update this Privacy Policy from time to time to reflect changes in our practices, applicable laws, or for other operational, legal, or regulatory reasons. When we make material changes, we will update the ''Last updated'' date at the top of this page. We encourage you to review this Privacy Policy periodically. Your continued use of the Site after any changes constitutes your acceptance of the updated Privacy Policy."
+              }
+            ]
+          },
+          { "type": "subtitle", "content": "Contact" },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "p",
+                "content": "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us via "
               },
               {
                 "type": "a",
@@ -288,15 +246,9 @@
                   "underlined": true
                 }
               },
-              { "type": "p", "content": "." }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
               {
                 "type": "p",
-                "content": "This Privacy Policy is effective as of March 8, 2025, and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page."
+                "content": ". We will endeavor to respond to all legitimate requests in a timely manner."
               }
             ]
           }

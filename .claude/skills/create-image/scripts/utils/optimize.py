@@ -6,7 +6,7 @@ Uses ImageMagick (convert) and cwebp for all image processing.
 import subprocess
 from pathlib import Path
 
-from models.image import DESKTOP_VARIANTS, MOBILE_VARIANTS
+from models.image import DESKTOP_VARIANTS, MOBILE_VARIANTS, PORTRAIT_VARIANTS
 
 
 def get_image_dimensions(image_path: Path) -> tuple[int, int]:
@@ -192,6 +192,47 @@ def generate_all_variants(
             output_path,
             max_width=variant.max_width,
             quality=variant.quality,
+        )
+        created_paths.append(output_path)
+        print(f"    Saved: {output_path.name}")
+
+    return created_paths
+
+
+def generate_portrait_variants(
+    source_png: Path,
+    output_dir: Path,
+    base_name: str,
+) -> list[Path]:
+    """Generate portrait WebP variants from a 9:16 source PNG.
+
+    Portrait images are used as mobile backgrounds - no cropping needed,
+    just resize and compress.
+
+    Creates:
+    - {base_name}-mobile.webp (768px wide, 80% quality)
+    - {base_name}-mobile-lazy.webp (50px wide, 15% quality)
+
+    Args:
+        source_png: Source PNG file from image generation (should be 9:16)
+        output_dir: Directory to save variants
+        base_name: Base name for output files
+
+    Returns:
+        List of paths to all created variants
+    """
+    output_dir.mkdir(parents=True, exist_ok=True)
+    created_paths: list[Path] = []
+
+    for variant in PORTRAIT_VARIANTS:
+        output_path: Path = output_dir / f"{base_name}{variant.suffix}.webp"
+
+        print(f"  Creating {variant.description}...")
+        convert_to_webp(
+            source_png,
+            output_path,
+            quality=variant.quality,
+            max_width=variant.max_width,
         )
         created_paths.append(output_path)
         print(f"    Saved: {output_path.name}")

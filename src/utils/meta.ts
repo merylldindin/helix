@@ -6,6 +6,7 @@ export type HeadContent = {
   canonical?: string;
   title?: string;
   description?: string;
+  ogType?: string;
   thumbnail?: string;
   thumbnailAlt?: string;
   noindex?: boolean;
@@ -39,10 +40,15 @@ const setMetaThumbnailAlt = (thumbnailAlt: string) => ({
   twitterImageAlt: thumbnailAlt,
 });
 
+const setMetaOgType = (ogType: string) => ({
+  ogType,
+});
+
 export const extractHead = ({
   canonical,
   title,
   description,
+  ogType,
   thumbnail,
   thumbnailAlt,
   noindex,
@@ -50,6 +56,7 @@ export const extractHead = ({
   const metaCanonical = canonical ? setMetaCanonical(canonical) : {};
   const metaTitle = title ? setMetaTitle(title) : {};
   const metaDescription = description ? setMetaDescription(description) : {};
+  const metaOgType = ogType ? setMetaOgType(ogType) : {};
   const metaThumbnail = thumbnail ? setMetaThumbnail(thumbnail) : {};
   const metaThumbnailAlt = thumbnailAlt ? setMetaThumbnailAlt(thumbnailAlt) : {};
   const metaRobots = noindex ? { robots: { all: false } } : {};
@@ -58,6 +65,7 @@ export const extractHead = ({
     ...metaCanonical,
     ...metaTitle,
     ...metaDescription,
+    ...metaOgType,
     ...metaThumbnail,
     ...metaThumbnailAlt,
     ...metaRobots,

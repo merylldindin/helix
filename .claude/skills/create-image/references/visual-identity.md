@@ -105,10 +105,11 @@ These are simpler, single-concept visuals:
 | Section        | 1080x1080  | 1:1 (square) |
 | Full Page      | 1080x1080  | 1:1 (square) |
 | Background     | 1920x1080  | 16:9         |
+| Portrait       | 768x1365   | 9:16         |
 
 ### Optimization
 
-All images are served as WebP with 4 variants:
+**Standard types** are served as WebP with 4 variants:
 
 - Desktop full resolution (1:1, 85% quality)
 - Desktop lazy placeholder (1:1, 20% quality, 100px width)
@@ -116,6 +117,13 @@ All images are served as WebP with 4 variants:
 - Mobile lazy (16:9 center crop, 15% quality, 50px width)
 
 **Workflow:** Generate a square (1:1) image, then crop to 16:9 for mobile variants.
+
+**Portrait type** produces 2 mobile-only WebP variants (no cropping):
+
+- Mobile (9:16, 80% quality, 768px max width)
+- Mobile lazy (9:16, 15% quality, 50px width)
+
+**Workflow:** Generate a 9:16 image, resize for mobile variants. Use portrait type to replace mobile variants of fullscreen sections that look bad with landscape crops on phone screens.
 
 ## Prohibited Elements
 

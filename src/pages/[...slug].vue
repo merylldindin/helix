@@ -50,7 +50,7 @@ useHead(() => {
 
   return {
     script: schemas.map((schema) => ({
-      children: JSON.stringify(schema),
+      innerHTML: JSON.stringify(schema),
       type: "application/ld+json",
     })),
   };

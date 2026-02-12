@@ -29,7 +29,7 @@ from models.image import (
     ImageType,
 )
 from utils.aws import list_cdn_assets, upload_image_variants
-from utils.optimize import generate_all_variants, generate_thumbnail_variants
+from utils.optimize import generate_all_variants, generate_portrait_variants, generate_thumbnail_variants
 
 SCRIPTS_DIR: Path = Path(__file__).parent
 OUTPUT_DIR: Path = SCRIPTS_DIR / "output"
@@ -138,6 +138,8 @@ def run_generate(
         variant_paths: list[Path] = generate_thumbnail_variants(
             png_path, output_dir, base_filename
         )
+    elif image_type == ImageType.PORTRAIT:
+        variant_paths = generate_portrait_variants(png_path, output_dir, base_filename)
     else:
         variant_paths = generate_all_variants(png_path, output_dir, base_filename)
 
@@ -242,6 +244,8 @@ def run_enhance(
         variant_paths: list[Path] = generate_thumbnail_variants(
             png_path, output_dir, base_filename
         )
+    elif image_type == ImageType.PORTRAIT:
+        variant_paths = generate_portrait_variants(png_path, output_dir, base_filename)
     else:
         variant_paths = generate_all_variants(png_path, output_dir, base_filename)
 
@@ -452,7 +456,7 @@ Examples:
 
     parser.add_argument(
         "--type",
-        choices=["thumbnail", "section", "fullpage", "background"],
+        choices=["thumbnail", "section", "fullpage", "background", "portrait"],
         default="section",
         help="Image type (default: section)",
     )

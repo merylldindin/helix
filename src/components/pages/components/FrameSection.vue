@@ -22,7 +22,11 @@ const { smAndDown } = useDisplay();
 <template>
   <CustomSection fullscreen snap>
     <template #background>
-      <CustomImage class="image-wrapper custom-shadow" cover :image="image" />
+      <CustomImage
+        class="image-wrapper custom-shadow"
+        :cover="!smAndDown"
+        :image="image"
+      />
     </template>
 
     <div class="title-wrapper">

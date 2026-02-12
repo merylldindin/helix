@@ -12,6 +12,7 @@ class ImageType(str, Enum):
     SECTION = "section"
     FULLPAGE = "fullpage"
     BACKGROUND = "background"
+    PORTRAIT = "portrait"
 
 
 class ImageResolution(str, Enum):
@@ -47,6 +48,13 @@ IMAGE_TYPE_CONFIG: dict[ImageType, dict] = {
         "aspect_ratio": "16:9",
         "width": 1920,
         "height": 1080,
+        "cdn_path": "assets",
+        "format": "webp",
+    },
+    ImageType.PORTRAIT: {
+        "aspect_ratio": "9:16",
+        "width": 768,
+        "height": 1365,
         "cdn_path": "assets",
         "format": "webp",
     },
@@ -93,6 +101,24 @@ MOBILE_VARIANTS: list[ImageVariant] = [
         max_width=50,
         quality=15,
         description="Mobile blur placeholder (16:9)",
+        is_mobile=True,
+    ),
+]
+
+# Portrait variants (9:16 for mobile backgrounds, no cropping needed)
+PORTRAIT_VARIANTS: list[ImageVariant] = [
+    ImageVariant(
+        suffix="-mobile",
+        max_width=768,
+        quality=80,
+        description="Portrait mobile (9:16)",
+        is_mobile=True,
+    ),
+    ImageVariant(
+        suffix="-mobile-lazy",
+        max_width=50,
+        quality=15,
+        description="Portrait mobile blur placeholder (9:16)",
         is_mobile=True,
     ),
 ]

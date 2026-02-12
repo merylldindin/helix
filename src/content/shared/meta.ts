@@ -45,7 +45,7 @@ export const CUSTOM_HEAD = {
       charset: "utf8",
     },
     {
-      content: "© 2025 Meryll Dindin",
+      content: "© 2026 Meryll Dindin",
       name: "copyright",
     },
     {
@@ -87,6 +87,10 @@ export const CUSTOM_HEAD = {
     {
       content: DEFAULT_THUMBNAIL_ALT,
       property: "og:image:alt",
+    },
+    {
+      content: "Meryll Dindin",
+      property: "og:site_name",
     },
     {
       content: "website",

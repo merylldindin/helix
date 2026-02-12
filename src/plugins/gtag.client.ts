@@ -14,8 +14,16 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(VueGtag, {
     property: {
       id: "G-YJHQMGJVMX",
+      params: {
+        send_page_view: false,
+      },
     },
   });
 
-  trackRouter(useRouter());
+  trackRouter(useRouter(), {
+    template: (to) => ({
+      page_path: to.path,
+      page_title: document.title,
+    }),
+  });
 });

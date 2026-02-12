@@ -125,6 +125,7 @@ export interface PageHead {
   canonical: string;
   title: string;
   description?: string;
+  ogType?: string;
   thumbnail?: string;
   thumbnailAlt?: string;
 }

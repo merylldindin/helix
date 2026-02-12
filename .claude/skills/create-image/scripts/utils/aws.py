@@ -7,7 +7,7 @@ from pathlib import Path
 import boto3
 from botocore.config import Config
 
-from models.image import IMAGE_TYPE_CONFIG, ImageType, UploadResult
+from models.image import IMAGE_TYPE_CONFIG, ImageType, PORTRAIT_VARIANTS, UploadResult
 
 
 def get_versioned_name(base_name: str, suffix: str = "") -> str:
@@ -166,6 +166,9 @@ def upload_image_variants(
     # Generate JSON snippet for content files (with versioned names)
     if image_type == ImageType.THUMBNAIL:
         json_snippet: str = f'''"thumbnail": "https://{cdn_domain}/{cdn_path}/{versioned_base}.webp"'''
+    elif image_type == ImageType.PORTRAIT:
+        json_snippet = f'''"mobile": "https://{cdn_domain}/{cdn_path}/{versioned_base}-mobile.webp",
+"lazyMobile": "https://{cdn_domain}/{cdn_path}/{versioned_base}-mobile-lazy.webp"'''
     else:
         json_snippet = f'''"image": {{
   "altText": "AI-generated abstract representation",
