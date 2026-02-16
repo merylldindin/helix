@@ -5,7 +5,7 @@ description = "Image generator for Helix portfolio - minimalist black and white 
 authors = [{ name = "Meryll Dindin", email = "merylldin@gmail.com" }]
 requires-python = "==3.13.*"
 dependencies = [
-    "boto3==1.42.44",
+    "boto3==1.42.50",
     "google-genai==1.59.0",
     "pillow==11.3.0",
     "pydantic==2.12.5",
