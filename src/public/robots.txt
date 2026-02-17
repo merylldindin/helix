@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /_nuxt/
+Disallow: /__sitemap__/
+Disallow: /*_payload.json$
 
 Sitemap: https://merylldindin.com/sitemap.xml
 LLMs-Txt: https://merylldindin.com/llms.txt
