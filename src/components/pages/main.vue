@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { PropType } from "vue";
-import { useRoute } from "vue-router";
 
 import { DEFAULT_URL } from "@/content";
 import type { PageComponent, PageHead } from "@/types";
@@ -8,7 +7,7 @@ import { extractHead } from "@/utils/meta";
 
 import { ASYNC_COMPONENTS } from "./utilities";
 
-import { useHead, useSeoMeta } from "#imports";
+import { useHead, useRoute, useSeoMeta } from "#imports";
 
 const route = useRoute();
 

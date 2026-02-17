@@ -1,12 +1,13 @@
 <script lang="ts" setup>
 import type { ComputedRef } from "vue";
 import { computed } from "vue";
-import { useRoute } from "vue-router";
 import { useDisplay } from "vuetify";
 
 import { CustomHeadline } from "@/components/shared";
 import { WEBSITE_TITLE_CONTENT } from "@/content";
 import { RoutePath } from "@/types";
+
+import { useRoute } from "#imports";
 
 const route = useRoute();
 
@@ -27,7 +28,7 @@ const breadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
     const words = element.split("-");
 
     const name = words
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ");
 
     path += `/${element}`;

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import { useRoute } from "vue-router";
 
 import { DynamicPage } from "@/components/pages";
 import type { PageContent, RoutePath } from "@/types";
@@ -13,7 +12,7 @@ import {
   getWebPageSchema,
 } from "@/utils/schemas";
 
-import { definePageMeta, useHead } from "#imports";
+import { definePageMeta, useHead, useRoute } from "#imports";
 
 definePageMeta({
   layout: "default",

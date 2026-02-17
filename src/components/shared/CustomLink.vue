@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 import type { ComputedRef } from "vue";
 import { computed } from "vue";
-import { useRoute } from "vue-router";
 
 import { DEFAULT_URL } from "@/content";
+
+import { useRoute } from "#imports";
 
 import CustomIcon from "./CustomIcon.vue";
 

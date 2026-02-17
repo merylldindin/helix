@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 import { nextTick, onMounted, onUnmounted, watch } from "vue";
-import { useRoute } from "vue-router";
 
 import { AppFooter, AppNavbar } from "@/components/layouts";
+
+import { useRoute } from "#imports";
 
 const route = useRoute();
 
