@@ -1,8 +1,14 @@
-import VueGtag, { trackRouter } from "vue-gtag-next";
+import VueGtag from "vue-gtag-next";
 
 import { Environment } from "@/types";
 
 import { defineNuxtPlugin, useRouter, useRuntimeConfig } from "#app";
+
+declare global {
+  interface Window {
+    gtag?: (...arguments_: unknown[]) => void;
+  }
+}
 
 export default defineNuxtPlugin((nuxtApp) => {
   const { environment } = useRuntimeConfig().public;
@@ -11,19 +17,29 @@ export default defineNuxtPlugin((nuxtApp) => {
     return;
   }
 
-  nuxtApp.vueApp.use(VueGtag, {
-    property: {
-      id: "G-YJHQMGJVMX",
-      params: {
-        send_page_view: false,
+  const initGA = () => {
+    nuxtApp.vueApp.use(VueGtag, {
+      property: {
+        id: "G-YJHQMGJVMX",
       },
-    },
-  });
+    });
 
-  trackRouter(useRouter(), {
-    template: (to) => ({
-      page_path: to.path,
-      page_title: document.title,
-    }),
-  });
+    const router = useRouter();
+
+    router.afterEach((to) => {
+      setTimeout(() => {
+        if (typeof window !== "undefined" && window.gtag) {
+          window.gtag("event", "page_view", {
+            page_location: window.location.href,
+            page_path: to.fullPath,
+            page_title: document.title,
+          });
+        }
+      }, 100);
+    });
+  };
+
+  if (typeof window !== "undefined") {
+    setTimeout(initGA, 3000);
+  }
 });
