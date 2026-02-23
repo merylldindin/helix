@@ -1,7 +1,6 @@
 export const DEFAULT_NAME = "Meryll Dindin";
 
-export const DEFAULT_TITLE =
-  "Meryll Dindin - AI Executive and Serial Entrepreneur";
+export const DEFAULT_TITLE = "Meryll Dindin - AI Executive and Serial Entrepreneur";
 
 const DEFAULT_COLOR = "#242424";
 
