@@ -9,7 +9,7 @@ from PIL import Image
 
 from models.image import IMAGE_TYPE_CONFIG, ImageResolution, ImageType
 
-GEMINI_IMAGE_MODEL: str = "gemini-3-pro-image-preview"
+GEMINI_IMAGE_MODEL: str = "gemini-3.1-flash-image-preview"
 
 VISUAL_IDENTITY_SUFFIX: str = """
 Style Requirements (CRITICAL - MUST FOLLOW EXACTLY):
