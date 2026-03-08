@@ -20,7 +20,6 @@ defineProps({
       <CustomLink
         :aria-label="`Read more about Meryll in the article ${item.name}`"
         class="mention-wrapper"
-        external
         rel="nofollow noopener noreferrer external"
         target="_blank"
         :to="item.href"

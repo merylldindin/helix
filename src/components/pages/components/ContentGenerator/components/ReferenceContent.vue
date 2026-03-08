@@ -18,7 +18,6 @@ const { smAndDown } = useDisplay();
 <template>
   <CustomLink
     class="d-flex flex-column"
-    external
     rel="noopener noreferrer nofollow external"
     target="_blank"
     :to="reference.href"

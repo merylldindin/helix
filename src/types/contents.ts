@@ -26,7 +26,6 @@ export interface ArticleContent {
 
 export interface ButtonItem {
   ariaLabel: string;
-  external?: boolean;
   prompt: string;
   rel?: string;
   target?: string;

@@ -15,7 +15,6 @@ defineProps({
 <template>
   <CustomLink
     class="d-flex flex-column"
-    external
     rel="noopener noreferrer nofollow external"
     target="_blank"
     :to="article.href"

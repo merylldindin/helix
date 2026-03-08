@@ -65,7 +65,6 @@ const shareOptions = computed(() => [
       :key="option.ariaLabel"
       :aria-label="option.ariaLabel"
       class="social-icon align-self-center"
-      external
       rel="nofollow noopener noreferrer external"
       size="large"
       target="_blank"

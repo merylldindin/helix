@@ -65,7 +65,6 @@
             "type": "button",
             "prop": {
               "ariaLabel": "Find the academic paper here",
-              "external": true,
               "prompt": "📄 Original paper",
               "to": "https://geometrica.saclay.inria.fr/team/Steve.Oudot/papers/cgos-pbc-09/cgos-pbcrm-11.pdf",
               "target": "_blank",
@@ -80,7 +79,6 @@
             "type": "button",
             "prop": {
               "ariaLabel": "Find the codebase on Github",
-              "external": true,
               "prompt": "🐙 Github Project",
               "to": "https://github.com/merylldindin/tdatoolbox/",
               "target": "_blank",

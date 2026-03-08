@@ -83,18 +83,12 @@ const displayedBreadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
         :key="index"
         class="align-self-center d-flex"
       >
-        <span
-          v-if="index < displayedBreadcrumbs.length"
-          class="text-1 breadcrumb-separator"
-        >
-          /
-        </span>
+        <span class="text-1 breadcrumb-separator">/</span>
 
         <nuxt-link
-          v-if="index < displayedBreadcrumbs.length - 1 || smAndDown"
-          v-bind="item.item ? { to: item.item } : { disabled: true }"
+          v-if="(index < displayedBreadcrumbs.length - 1 || smAndDown) && item.item"
           class="breadcrumb-text text-decoration-none text-1 text-cartesian text-uppercase"
-          :class="{ 'pointer-events': item.item ? 'auto' : 'none' }"
+          :to="item.item"
         >
           {{ item.name }}
         </nuxt-link>

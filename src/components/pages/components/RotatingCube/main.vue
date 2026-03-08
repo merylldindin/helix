@@ -2,12 +2,13 @@
 import { PropType, onMounted, ref } from "vue";
 
 import { CustomSection } from "@/components/shared";
+import { isExternalUrl } from "@/utils/links";
 
 import { LinksGrid } from "./components";
 
 interface PageProfile {
   slug: string;
-  link: { ariaLabel: string; to: string; external?: boolean };
+  link: { ariaLabel: string; to: string };
 }
 
 interface PageData {
@@ -60,7 +61,7 @@ const swiperConfig = {
               :aria-label="profile.link.ariaLabel"
               :href="profile.link.to"
               v-bind="
-                profile.link.external
+                isExternalUrl(profile.link.to)
                   ? { target: '_blank', rel: 'noopener noreferrer' }
                   : {}
               "

@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { ComputedRef } from "vue";
 import { computed } from "vue";
 
 import { DEFAULT_URL } from "@/content";
+import { isExternalUrl } from "@/utils/links";
 
 import { useRoute } from "#imports";
 
@@ -16,10 +16,6 @@ const cProps = defineProps({
   color: {
     default: "mine-shaft",
     type: String,
-  },
-  external: {
-    default: false,
-    type: Boolean,
   },
   icon: {
     default: undefined,
@@ -57,15 +53,15 @@ const cProps = defineProps({
 
 const route = useRoute();
 
-const parsedLink: ComputedRef<{
+const parsedLink = computed<{
   external: boolean;
   href?: string;
   to?: string | { hash: string; path: string };
-}> = computed(() => {
+}>(() => {
   const parsedUrl = new URL(cProps.to, DEFAULT_URL);
   const isSamePage = route.path === parsedUrl.pathname;
 
-  if (cProps.to.includes(":")) {
+  if (isExternalUrl(cProps.to)) {
     return { external: true, href: cProps.to };
   }
 
@@ -80,9 +76,7 @@ const parsedLink: ComputedRef<{
   };
 });
 
-const isExternalLink: ComputedRef<boolean> = computed(
-  () => cProps.to.includes(":") || cProps.external || parsedLink.value.external
-);
+const isExternalLink = computed(() => parsedLink.value.external);
 </script>
 
 <template>

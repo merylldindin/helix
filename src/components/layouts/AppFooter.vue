@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { computed } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomLink } from "@/components/shared";
@@ -8,22 +7,17 @@ import type { IconName } from "@/types";
 
 const { smAndDown } = useDisplay();
 
-const mobileFooterLinks = computed(() => {
-  return [...APP_FOOTER_CONTENT.sitemapLinks, ...APP_FOOTER_CONTENT.legalLinks];
-});
+const footerLinks = [
+  ...APP_FOOTER_CONTENT.sitemapLinks,
+  ...APP_FOOTER_CONTENT.legalLinks,
+];
 </script>
 
 <template>
   <v-footer class="global-footer">
     <div class="footer-content">
       <div v-if="!smAndDown" class="footer-links">
-        <div
-          v-for="(link, index) in [
-            ...APP_FOOTER_CONTENT.sitemapLinks,
-            ...APP_FOOTER_CONTENT.legalLinks,
-          ]"
-          :key="index"
-        >
+        <div v-for="(link, index) in footerLinks" :key="index">
           <CustomLink v-bind="link" typography="text-cartesian text-2 text-foam" />
         </div>
 
@@ -35,7 +29,7 @@ const mobileFooterLinks = computed(() => {
       </div>
 
       <div v-if="smAndDown" class="footer-links footer-mobile-grid">
-        <div v-for="(link, index) in mobileFooterLinks" :key="index">
+        <div v-for="(link, index) in footerLinks" :key="index">
           <CustomLink v-bind="link" typography="text-cartesian text-2 text-foam" />
         </div>
 

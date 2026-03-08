@@ -1,5 +1,4 @@
 @use "../variables/constants.scss" as *;
-@use "../variables/mixins.scss" as *;
 @use "vuetify/settings" with (
   $grid-breakpoints: (
     "xs": $xs-breakpoint,
@@ -8,13 +7,6 @@
     "lg": $lg-breakpoint,
     "xl": $xl-breakpoint,
     "xxl": 2560px,
-  ),
-  $container-max-widths: (
-    "md": $md-breakpoint,
-    "lg": $page-max-width,
-    "xl": $page-max-width,
-    "xxl": $page-max-width,
-  ),
-  $container-padding-x: $page-padding
+  )
 );
 @use "vuetify/styles";

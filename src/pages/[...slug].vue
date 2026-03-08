@@ -12,11 +12,7 @@ import {
   getWebPageSchema,
 } from "@/utils/schemas";
 
-import { definePageMeta, useHead, useRoute } from "#imports";
-
-definePageMeta({
-  layout: "default",
-});
+import { useHead, useRoute } from "#imports";
 
 const route = useRoute();
 

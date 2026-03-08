@@ -6,6 +6,7 @@ import type {
   TimelineContent,
 } from "@/types";
 import { ComponentName, ContentType } from "@/types";
+import { isExternalUrl } from "@/utils/links";
 
 enum ItemListConfig {
   IMAGE_SECTION = "IMAGE_SECTION",
@@ -20,7 +21,7 @@ interface ListItemData {
 }
 
 interface RotatingCubeProfile {
-  link: { external?: boolean; to: string };
+  link: { to: string };
   slug: string;
 }
 
@@ -65,7 +66,7 @@ const getRotatingCubeItemList = (content: PageContent): unknown => {
         page.profiles.forEach((profile: RotatingCubeProfile) => {
           items.push({
             name: profile.slug,
-            url: profile.link.external
+            url: isExternalUrl(profile.link.to)
               ? profile.link.to
               : `${DEFAULT_URL}${profile.link.to}`,
           });

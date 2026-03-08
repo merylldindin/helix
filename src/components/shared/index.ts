@@ -1,4 +1,3 @@
-export { default as CustomButton } from "./CustomButton.vue";
 export { default as CustomChip } from "./CustomChip.vue";
 export { default as CustomHeadline } from "./CustomHeadline.vue";
 export { default as CustomImage } from "./CustomImage.vue";

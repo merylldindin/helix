@@ -2,8 +2,9 @@
 import { computed, onMounted, ref } from "vue";
 import { useDisplay } from "vuetify";
 
-import { CustomButton, CustomText } from "@/components/shared";
+import { CustomText } from "@/components/shared";
 import { COOKIE_BANNER_CONTENT } from "@/content";
+import type { ColorName, IconName } from "@/types";
 
 const DEFAULT_GA_TRACKING_KEY = "_hx_tracking";
 
@@ -35,11 +36,19 @@ const cookieBannerText = computed(() => {
       <div class="custom-shadow cookie-wrapper">
         <CustomText class="cookie-text" :text="cookieBannerText" typography="text-2" />
 
-        <CustomButton
+        <v-btn
+          :aria-label="COOKIE_BANNER_CONTENT.button.ariaLabel"
           class="cookie-button"
-          v-bind="COOKIE_BANNER_CONTENT.button"
+          icon
+          variant="tonal"
           @click="dismissBanner"
-        />
+        >
+          <v-icon
+            :color="COOKIE_BANNER_CONTENT.button.color as ColorName"
+            :icon="$ICON[COOKIE_BANNER_CONTENT.button.icon as IconName]"
+            size="x-large"
+          />
+        </v-btn>
       </div>
     </v-card>
   </v-slide-y-transition>

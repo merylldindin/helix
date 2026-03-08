@@ -4,10 +4,6 @@ defineProps({
     default: false,
     type: Boolean,
   },
-  hideContainer: {
-    default: false,
-    type: Boolean,
-  },
   offsetY: {
     default: false,
     type: Boolean,
@@ -33,7 +29,7 @@ defineProps({
     </div>
 
     <div
-      v-if="$slots.default && !hideContainer"
+      v-if="$slots.default"
       class="section-wrapper"
       :class="{
         'section-wrapper--offset-y': offsetY,
