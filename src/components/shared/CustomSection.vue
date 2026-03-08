@@ -32,7 +32,7 @@ defineProps({
       <slot name="background" />
     </div>
 
-    <v-container
+    <div
       v-if="$slots.default && !hideContainer"
       class="section-wrapper"
       :class="{
@@ -41,7 +41,7 @@ defineProps({
       }"
     >
       <slot />
-    </v-container>
+    </div>
   </section>
 </template>
 
@@ -72,9 +72,15 @@ defineProps({
 .section-wrapper {
   position: relative;
   z-index: 2;
+  width: 100%;
+  max-width: $page-max-width;
+  margin: 0 auto;
+  padding-right: $page-padding;
+  padding-left: $page-padding;
 
   &--fullscreen {
     padding-top: 66px;
+    padding-bottom: $page-padding;
   }
 
   &--offset-y {

@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     },
   ],
 
-  css: ["@/assets/styles/index.scss", "vuetify/lib/styles/main.sass"],
+  css: ["@/assets/styles/index.scss", "@/assets/styles/vuetify.scss"],
 
   dir: {
     public: "src/public",
@@ -131,6 +131,10 @@ export default defineNuxtConfig({
 
   vite: {
     build: {
+      // Vuetify 4 emits nested @layer blocks that trigger esbuild CSS minify warnings.
+      // PostCSS/cssnano still runs, so disabling the extra Vite CSS minify pass avoids the warnings
+      // without changing Vuetify's cascade semantics.
+      cssMinify: false,
       cssCodeSplit: true,
       manifest: true,
       minify: true,

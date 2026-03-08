@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import { useDisplay } from "vuetify";
 
 import { CustomLink } from "@/components/shared";
@@ -6,30 +7,23 @@ import { APP_FOOTER_CONTENT } from "@/content";
 import type { IconName } from "@/types";
 
 const { smAndDown } = useDisplay();
+
+const mobileFooterLinks = computed(() => {
+  return [...APP_FOOTER_CONTENT.sitemapLinks, ...APP_FOOTER_CONTENT.legalLinks];
+});
 </script>
 
 <template>
-  <v-footer class="py-4 global-footer">
-    <v-container>
-      <v-row class="ma-0" :justify="smAndDown ? 'space-around' : 'space-between'">
+  <v-footer class="global-footer">
+    <div class="footer-content">
+      <div v-if="!smAndDown" class="footer-links">
         <div
-          v-for="(link, index) in smAndDown
-            ? APP_FOOTER_CONTENT.sitemapLinks
-            : [...APP_FOOTER_CONTENT.sitemapLinks, ...APP_FOOTER_CONTENT.legalLinks]"
+          v-for="(link, index) in [
+            ...APP_FOOTER_CONTENT.sitemapLinks,
+            ...APP_FOOTER_CONTENT.legalLinks,
+          ]"
           :key="index"
         >
-          <CustomLink v-bind="link" typography="text-cartesian text-2 text-foam" />
-        </div>
-
-        <div v-if="!smAndDown" class="global-copyright">
-          <span class="text-cartesian text-2 text-foam">
-            {{ APP_FOOTER_CONTENT.copyright }}
-          </span>
-        </div>
-      </v-row>
-
-      <v-row v-if="smAndDown" class="mx-0 my-6" justify="space-around">
-        <div v-for="(link, index) in APP_FOOTER_CONTENT.legalLinks" :key="index">
           <CustomLink v-bind="link" typography="text-cartesian text-2 text-foam" />
         </div>
 
@@ -38,17 +32,27 @@ const { smAndDown } = useDisplay();
             {{ APP_FOOTER_CONTENT.copyright }}
           </span>
         </div>
-      </v-row>
+      </div>
 
-      <v-divider class="my-4" :color="$COLOR.FOAM" />
+      <div v-if="smAndDown" class="footer-links footer-mobile-grid">
+        <div v-for="(link, index) in mobileFooterLinks" :key="index">
+          <CustomLink v-bind="link" typography="text-cartesian text-2 text-foam" />
+        </div>
 
-      <v-row justify="space-between">
-        <v-col
+        <div class="global-copyright">
+          <span class="text-cartesian text-2 text-foam">
+            {{ APP_FOOTER_CONTENT.copyright }}
+          </span>
+        </div>
+      </div>
+
+      <v-divider class="footer-divider" :color="$COLOR.FOAM" />
+
+      <div class="footer-socials">
+        <div
           v-for="(profile, index) in APP_FOOTER_CONTENT.socialsLinks"
           :key="index"
-          class="text-center"
-          cols="3"
-          sm="auto"
+          class="footer-social"
         >
           <CustomLink v-bind="profile.link" class="grid-link">
             <v-icon
@@ -57,22 +61,71 @@ const { smAndDown } = useDisplay();
               size="small"
             />
           </CustomLink>
-        </v-col>
-      </v-row>
-    </v-container>
+        </div>
+      </div>
+    </div>
   </v-footer>
 </template>
 
 <style lang="scss" scoped>
 .global-footer {
+  padding: 16px 0;
   z-index: 1000;
   background-color: rgb(var(--v-theme-slate-gray)) !important;
   scroll-snap-align: start;
 }
 
-.global-copyright {
+.footer-content {
+  width: 100%;
+  max-width: $page-max-width;
+  margin: 0 auto;
+  padding: 0 $page-padding;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem 2.4rem;
+}
+
+.footer-mobile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  place-items: start center;
+  gap: 1.6rem 1.2rem;
+  margin: 2.4rem 0;
+  text-align: center;
+}
+
+.footer-mobile-grid > div,
+.footer-mobile-grid > .global-copyright {
+  width: 100%;
+}
+
+.footer-divider {
+  margin: 1.6rem 0;
+}
+
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+
   @include xs-only {
-    text-align: end;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.global-copyright {
+  text-align: center;
 }
 </style>

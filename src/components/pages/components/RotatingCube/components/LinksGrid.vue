@@ -54,6 +54,7 @@ const { mobile } = useDisplay();
 
 <style lang="scss" scoped>
 .grid-links {
+  box-sizing: content-box;
   height: calc(66vh - 12vh);
   width: calc(100% - 12vw);
   align-items: center;
@@ -74,6 +75,7 @@ const { mobile } = useDisplay();
 }
 
 .grid-link {
+  box-sizing: content-box;
   width: 100%;
   border-radius: 3vh;
   padding: 1vh 2.5vh;

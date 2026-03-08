@@ -8,13 +8,11 @@ import { COOKIE_BANNER_CONTENT } from "@/content";
 const DEFAULT_GA_TRACKING_KEY = "_hx_tracking";
 
 const isTracking = ref(false);
-const isMounted = ref(false);
 
 onMounted(() => {
   if (localStorage.getItem(DEFAULT_GA_TRACKING_KEY) === "true") {
     isTracking.value = true;
   }
-  isMounted.value = true;
 });
 
 const dismissBanner = () => {
@@ -34,17 +32,11 @@ const cookieBannerText = computed(() => {
 <template>
   <v-slide-y-transition>
     <v-card v-if="!isTracking" class="cookie-banner">
-      <div class="custom-shadow cookie-wrapper d-flex flex-row">
-        <CustomText
-          class="align-self-center"
-          :text="cookieBannerText"
-          typography="text-2"
-        />
-
-        <v-spacer />
+      <div class="custom-shadow cookie-wrapper">
+        <CustomText class="cookie-text" :text="cookieBannerText" typography="text-2" />
 
         <CustomButton
-          class="ml-6"
+          class="cookie-button"
           v-bind="COOKIE_BANNER_CONTENT.button"
           @click="dismissBanner"
         />
@@ -71,6 +63,9 @@ const cookieBannerText = computed(() => {
 }
 
 .cookie-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
   padding: 1.5rem 2rem;
 
   @include md-down {
@@ -78,9 +73,11 @@ const cookieBannerText = computed(() => {
   }
 }
 
-.button-wrapper {
-  display: flex;
-  align-self: center;
-  justify-content: flex-end;
+.cookie-text {
+  flex: 1;
+}
+
+.cookie-button {
+  margin-left: auto;
 }
 </style>

@@ -1,9 +1,11 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer app-reset {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 
 :root {
@@ -21,7 +23,7 @@ html {
   min-height: 100%;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  overflow: hidden;
+  overflow: hidden scroll;
   font-family: "Lexend Deca", Arial, sans-serif !important;
 }
 
@@ -35,18 +37,20 @@ body {
   -ms-scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: rgb(var(--v-theme-primary)) !important;
-  font-family: Cartesian, serif !important;
-}
+@layer app-base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: rgb(var(--v-theme-primary));
+    font-family: Cartesian, serif;
+  }
 
-p,
-a,
-span {
-  color: rgb(var(--v-theme-primary)) !important;
+  p,
+  a,
+  span {
+    color: rgb(var(--v-theme-primary));
+  }
 }

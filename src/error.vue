@@ -26,20 +26,18 @@ const statusCode = computed(() => cProps.error.statusCode.toString());
 <template>
   <v-app class="error-background">
     <v-main class="error-wrapper">
-      <v-container class="error-container">
-        <v-row>
-          <v-col class="error-content" cols="12">
-            <CustomHeadline
-              class="text-center mb-8"
-              :level="1"
-              :text="statusCode"
-              typography="headline-1 text-slate-gray"
-            />
+      <div class="error-container">
+        <div class="error-content">
+          <CustomHeadline
+            class="text-center mb-8"
+            :level="1"
+            :text="statusCode"
+            typography="headline-1 text-slate-gray"
+          />
 
-            <ErrorButton />
-          </v-col>
-        </v-row>
-      </v-container>
+          <ErrorButton />
+        </div>
+      </div>
     </v-main>
   </v-app>
 </template>

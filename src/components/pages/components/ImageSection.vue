@@ -27,13 +27,13 @@ const { smAndDown } = useDisplay();
 
 <template>
   <CustomSection fullscreen snap>
-    <v-row class="columns-wrapper">
-      <v-col
+    <div class="columns-wrapper">
+      <div
         class="text-wrapper"
-        :class="reverse ? 'text-wrapper--reverse' : 'text-wrapper--default'"
-        cols="12"
-        md="6"
-        :order="smAndDown ? 2 : reverse ? 1 : 2"
+        :class="{
+          'text-wrapper--default': !reverse,
+          'text-wrapper--reverse': reverse,
+        }"
       >
         <ContentGenerator
           v-if="content.length > 0"
@@ -41,23 +41,17 @@ const { smAndDown } = useDisplay();
         />
 
         <slot />
-      </v-col>
+      </div>
 
-      <v-col
-        class="align-self-center py-0"
-        cols="12"
-        md="6"
-        :order="smAndDown ? 1 : reverse ? 2 : 1"
-      >
+      <div class="image-column" :class="{ 'image-column--reverse': reverse }">
         <CustomImage
           :aspect-ratio="smAndDown ? 1.77 : 1"
           class="image-wrapper custom-shadow"
-          :class="{ 'image-wrapper--reverse': reverse }"
           cover
           :image="image"
         />
-      </v-col>
-    </v-row>
+      </div>
+    </div>
   </CustomSection>
 </template>
 
@@ -65,7 +59,9 @@ const { smAndDown } = useDisplay();
 .columns-wrapper {
   height: 100%;
   overflow: hidden;
-  margin: 0 -12px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 (-$page-gutter);
   align-content: center;
 
   @include sm-down {
@@ -83,13 +79,17 @@ const { smAndDown } = useDisplay();
 }
 
 .text-wrapper {
+  width: 50%;
+  flex: 0 0 50%;
   align-self: center;
+  order: 2;
+  padding: $page-gutter;
 
   &--default {
     padding-left: 96px;
 
     @include sm-down {
-      padding-left: 12px;
+      padding-left: $page-gutter;
     }
   }
 
@@ -97,7 +97,43 @@ const { smAndDown } = useDisplay();
     padding-right: 96px;
 
     @include sm-down {
-      padding-right: 12px;
+      padding-right: $page-gutter;
+    }
+  }
+}
+
+.image-column {
+  width: 50%;
+  flex: 0 0 50%;
+  order: 1;
+  align-self: center;
+  padding: 0 $page-gutter;
+
+  &--reverse {
+    order: 2;
+  }
+}
+
+@include sm-down {
+  .text-wrapper,
+  .image-column {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .text-wrapper {
+    &,
+    &--reverse {
+      order: 2;
+      padding-right: $page-gutter;
+      padding-left: $page-gutter;
+    }
+  }
+
+  .image-column {
+    &,
+    &--reverse {
+      order: 1;
     }
   }
 }

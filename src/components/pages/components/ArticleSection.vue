@@ -60,11 +60,12 @@ onUnmounted(() => {
         class="image-wrapper"
         :image="background"
         :style="{ opacity: headerOpacity }"
+        :use-mobile-source="false"
       />
     </template>
 
     <client-only>
-      <v-row class="column-wrapper" :style="{ marginTop: pageMargin }">
+      <div class="column-wrapper" :style="{ marginTop: pageMargin }">
         <Vue3Lottie
           :animation-data="ScrollDown"
           class="scroll-hint"
@@ -73,15 +74,15 @@ onUnmounted(() => {
           @click="scrollDown"
         />
 
-        <v-col class="text-wrapper" cols="12" md="8">
+        <div class="text-wrapper">
           <ContentGenerator
             v-if="content.length > 0"
             :content="content as GenericContent[]"
           />
 
           <slot />
-        </v-col>
-      </v-row>
+        </div>
+      </div>
     </client-only>
   </CustomSection>
 </template>
@@ -109,6 +110,7 @@ onUnmounted(() => {
 }
 
 .column-wrapper {
+  display: flow-root;
   height: fit-content;
   margin-bottom: 6rem;
   margin-right: auto;
@@ -153,9 +155,12 @@ onUnmounted(() => {
 }
 
 .text-wrapper {
+  width: min(100%, calc(100% * 8 / 12));
+  padding: $page-gutter;
   margin: 80px auto 52px;
 
   @include sm-down {
+    width: 100%;
     margin: 10vh auto 0;
   }
 }

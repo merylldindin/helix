@@ -18,6 +18,10 @@ const cProps = defineProps({
     required: true,
     type: Object as PropType<DeliveredImage>,
   },
+  useMobileSource: {
+    default: true,
+    type: Boolean,
+  },
   width: {
     default: "100%",
     type: String,
@@ -44,7 +48,7 @@ watch(
 );
 
 const imageSource: ComputedRef<string> = computed(() => {
-  if (smAndDown.value && cProps.image.mobile) {
+  if (cProps.useMobileSource && smAndDown.value && cProps.image.mobile) {
     return cProps.image.mobile;
   }
 
@@ -52,7 +56,7 @@ const imageSource: ComputedRef<string> = computed(() => {
 });
 
 const imageLazySource: ComputedRef<string | undefined> = computed(() => {
-  if (smAndDown.value && cProps.image.lazySource) {
+  if (cProps.useMobileSource && smAndDown.value && cProps.image.lazySource) {
     return cProps.image.lazyMobile;
   }
 
