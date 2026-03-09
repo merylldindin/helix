@@ -37,10 +37,31 @@ const swiperConfig = {
   },
   centeredSlides: true,
   cubeEffect: {
-    shadowScale: 1.0,
+    shadow: true,
+    shadowOffset: 28,
+    shadowScale: 1.08,
+    slideShadows: true,
   },
   effect: "cube",
   grabCursor: true,
+  injectStyles: [
+    `
+      .swiper-cube .swiper-cube-shadow {
+        opacity: var(--cube-shadow-opacity, 0.6);
+      }
+
+      .swiper-cube .swiper-cube-shadow::before {
+        background: radial-gradient(
+          ellipse at center,
+          rgba(var(--cube-shadow-core-rgb, 0, 0, 0), var(--cube-shadow-core-alpha, 0.28)) 0%,
+          rgba(var(--cube-shadow-glow-rgb, 0, 0, 0), var(--cube-shadow-glow-alpha, 0.14)) 42%,
+          transparent 78%
+        );
+        filter: blur(var(--cube-shadow-blur, 56px));
+        transform: scale(1.18);
+      }
+    `,
+  ],
   loop: true,
   mousewheel: true,
   slidesPerView: 1,
@@ -122,12 +143,39 @@ const swiperConfig = {
 }
 
 .cube-wrapper {
+  --cube-shadow-opacity: 0.34;
+  --cube-shadow-core-rgb: var(--v-theme-primary);
+  --cube-shadow-core-alpha: 0.16;
+  --cube-shadow-glow-rgb: var(--v-theme-primary);
+  --cube-shadow-glow-alpha: 0.06;
+  --cube-shadow-blur: 58px;
+
   height: 100%;
   width: 66vh;
   display: flex;
   flex-direction: row;
   margin: auto;
   padding-bottom: 4rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5.5rem;
+    width: 72%;
+    height: 18%;
+    background: radial-gradient(
+      ellipse at center,
+      rgb(var(--cube-shadow-core-rgb) / var(--cube-shadow-core-alpha)) 0%,
+      rgb(var(--cube-shadow-glow-rgb) / var(--cube-shadow-glow-alpha)) 48%,
+      transparent 78%
+    );
+    filter: blur(calc(var(--cube-shadow-blur) * 0.72));
+    opacity: var(--cube-shadow-opacity);
+    pointer-events: none;
+    transform: translateX(-50%) scaleY(0.42);
+  }
 
   @include xs-only {
     width: calc(100% - 32px);
@@ -153,6 +201,23 @@ const swiperConfig = {
   @include xs-only {
     height: calc(100% - 64px);
   }
+}
+
+:global(:root[data-app-theme="dark"] .cube-wrapper .swiper-slide) {
+  background-color: rgb(var(--v-theme-surface));
+}
+
+:global(:root[data-app-theme="dark"] .cube-wrapper) {
+  --cube-shadow-opacity: 1;
+  --cube-shadow-core-rgb: var(--v-theme-on-surface-variant);
+  --cube-shadow-core-alpha: 0.28;
+  --cube-shadow-glow-rgb: var(--v-theme-on-surface-variant);
+  --cube-shadow-glow-alpha: 0.1;
+  --cube-shadow-blur: 88px;
+}
+
+:global(:root[data-app-theme="dark"] .cube-wrapper::after) {
+  mix-blend-mode: screen;
 }
 
 :global(:root[data-app-theme="dark"] .cube-backdrop) {
