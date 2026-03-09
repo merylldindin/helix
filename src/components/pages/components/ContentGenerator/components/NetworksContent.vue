@@ -77,16 +77,44 @@ const shareOptions = computed(() => [
 
 <style lang="scss" scoped>
 .networks-wrapper {
+  --network-divider-opacity: 0.25;
+  --network-divider-opacity-hover: 0.5;
+
+  position: relative;
   display: flex;
   justify-content: space-around;
   width: 100%;
   margin: 48px 0 0;
   padding: 24px 0 0;
-  border-top: 1px solid rgb(0 0 0 / 15%);
+  transition: opacity 0.25s ease;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: rgb(var(--v-theme-primary));
+    opacity: var(--network-divider-opacity);
+    transition: opacity 0.25s ease;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    display: none;
+    bottom: 0;
+  }
 
   &.has-more-content {
     padding-bottom: 24px;
-    border-bottom: 1px solid rgb(0 0 0 / 15%);
+
+    &::after {
+      display: block;
+    }
 
     @include sm-down {
       padding-bottom: 20px;
@@ -96,6 +124,13 @@ const shareOptions = computed(() => [
   @include sm-down {
     margin: 36px 0 0;
     padding: 20px 0 0;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      opacity: var(--network-divider-opacity-hover);
+    }
   }
 }
 

@@ -69,11 +69,12 @@ const displayedBreadcrumbs: ComputedRef<BreadcrumbSchema[]> = computed(() => {
 
 <template>
   <div class="breadcrumbs-container">
-    <nuxt-link class="text-decoration-none" to="/">
+    <nuxt-link class="text-decoration-none website-title-link" to="/">
       <CustomHeadline
+        class="website-title"
         :level="1"
         :text="WEBSITE_TITLE_CONTENT.headline"
-        typography="headline-4 text-slate-gray text-major-mono-display"
+        typography="headline-4 text-major-mono-display"
       />
     </nuxt-link>
 
@@ -129,6 +130,18 @@ li {
   z-index: 2;
   display: flex;
   flex-direction: row;
+}
+
+.website-title-link {
+  color: rgb(var(--v-theme-primary));
+  transition: color 0.35s ease;
+}
+
+.website-title {
+  :deep(h1) {
+    color: rgb(var(--v-theme-primary)) !important;
+    transition: color 0.35s ease;
+  }
 }
 
 .breadcrumb-text {

@@ -61,7 +61,7 @@ const cookieBannerText = computed(() => {
   right: 0;
   position: fixed;
   border-radius: 0;
-  background-color: rgb(var(--v-theme-foam));
+  background-color: rgb(var(--v-theme-surface));
   margin: 0 auto 16px;
   max-width: min(70rem, calc(100% - 28px));
   transition: all 0.2s ease;

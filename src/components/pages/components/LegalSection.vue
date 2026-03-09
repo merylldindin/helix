@@ -33,14 +33,14 @@ const { smAndDown } = useDisplay();
       class="legal-title"
       :level="1"
       :text="title"
-      typography="headline-3 text-slate-gray"
+      typography="headline-3 text-primary"
     />
 
     <CustomHeadline
       class="legal-date"
       :level="2"
       :text="date"
-      typography="headline-6 text-slate-gray"
+      typography="headline-6 text-primary"
     />
 
     <div v-for="(chunk, index) in content" :key="index">
@@ -49,7 +49,7 @@ const { smAndDown } = useDisplay();
         :class="smAndDown ? 'mt-6' : 'mt-8'"
         :level="3"
         :text="chunk.content as string"
-        typography="headline-5  text-slate-gray"
+        typography="headline-5 text-primary"
         underlined
       />
 
@@ -57,7 +57,7 @@ const { smAndDown } = useDisplay();
         v-else
         :class="smAndDown ? 'mt-4' : 'mt-6'"
         :text="chunk.content as object"
-        typography="text-1 text-slate-gray"
+        typography="text-1 text-primary"
       />
     </div>
   </CustomSection>

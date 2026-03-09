@@ -1,11 +1,12 @@
 <script lang="ts" setup>
 import type { PropType } from "vue";
-import { onMounted, onUnmounted, ref } from "vue";
-import { useDisplay } from "vuetify";
+import { computed, onMounted, onUnmounted, ref } from "vue";
+import { useDisplay, useTheme } from "vuetify";
 
 import ScrollDown from "@/assets/animations/scroll-down.json";
 import { CustomImage, CustomSection } from "@/components/shared";
 import type { DeliveredImage, GenericContent } from "@/types";
+import { cloneLottieWithColor } from "@/utils/lottie";
 
 import ContentGenerator from "./ContentGenerator/main.vue";
 
@@ -21,11 +22,21 @@ defineProps({
 });
 
 const { mobile } = useDisplay();
+const theme = useTheme();
 
 const HEADER_HEIGHT_RATIO = 0.72;
 
 const pageMargin = ref("72vh");
 const headerOpacity = ref(1);
+
+const scrollHintColor = computed(() => {
+  const primaryColor = theme.current.value.colors.primary;
+
+  return typeof primaryColor === "string" ? primaryColor : "#040707";
+});
+const scrollHintAnimation = computed(() => {
+  return cloneLottieWithColor(ScrollDown, scrollHintColor.value);
+});
 
 const getHeaderHeight = () => HEADER_HEIGHT_RATIO * window.innerHeight;
 
@@ -67,7 +78,8 @@ onUnmounted(() => {
     <client-only>
       <div class="column-wrapper" :style="{ marginTop: pageMargin }">
         <Vue3Lottie
-          :animation-data="ScrollDown"
+          :key="scrollHintColor"
+          :animation-data="scrollHintAnimation"
           class="scroll-hint"
           :height="mobile ? '12vw' : '5vh'"
           :style="{ opacity: headerOpacity / 2 }"
@@ -78,6 +90,7 @@ onUnmounted(() => {
           <ContentGenerator
             v-if="content.length > 0"
             :content="content as GenericContent[]"
+            :follow-theme-for-images="false"
           />
 
           <slot />
@@ -116,9 +129,10 @@ onUnmounted(() => {
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  background-color: rgb(var(--v-theme-foam));
+  background-color: rgb(var(--v-theme-surface));
   border-radius: 4px 4px 0 0;
   z-index: 1;
+  transition: background-color 0.35s ease;
 
   &::before {
     content: "";
@@ -127,7 +141,7 @@ onUnmounted(() => {
     left: 0;
     right: 0;
     height: 10vh;
-    box-shadow: rgb(0 0 0 / 10%) 0 -4px 6px -1px;
+    box-shadow: rgb(var(--v-theme-primary) / 10%) 0 -4px 6px -1px;
     z-index: -1;
 
     @include sm-down {

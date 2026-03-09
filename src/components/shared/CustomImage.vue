@@ -14,6 +14,10 @@ const cProps = defineProps({
     default: false,
     type: Boolean,
   },
+  followTheme: {
+    default: true,
+    type: Boolean,
+  },
   image: {
     required: true,
     type: Object as PropType<DeliveredImage>,
@@ -47,6 +51,10 @@ const imageLazySource = computed(() => {
 });
 
 const imageKey = computed(() => `${imageSource.value}:${imageLazySource.value ?? ""}`);
+
+const imageClasses = computed(() => ({
+  "custom-image-follow-theme": cProps.followTheme,
+}));
 </script>
 
 <template>
@@ -54,6 +62,7 @@ const imageKey = computed(() => `${imageSource.value}:${imageLazySource.value ??
     :key="imageKey"
     :alt="image.altText"
     :aspect-ratio="aspectRatio"
+    :class="imageClasses"
     :cover="cover"
     :eager="image.eager"
     :lazy-src="imageLazySource"
@@ -61,3 +70,21 @@ const imageKey = computed(() => `${imageSource.value}:${imageLazySource.value ??
     :width="width"
   />
 </template>
+
+<style lang="scss">
+:root[data-app-theme="dark"] .custom-image-follow-theme {
+  background-color: rgb(var(--v-theme-background));
+}
+
+:root[data-app-theme="dark"]
+  .custom-image-follow-theme
+  :is(
+    img,
+    [class~="v-img__img"],
+    [class~="v-img__img--preload"],
+    [class~="v-img__picture"] img
+  ) {
+  filter: invert(1) hue-rotate(180deg);
+  mix-blend-mode: screen;
+}
+</style>

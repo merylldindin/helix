@@ -42,7 +42,7 @@ const { smAndDown } = useDisplay();
 
       <p
         v-if="reference.description"
-        class="text-2 text-blue-grey-darken-2 mt-n1"
+        class="reference-description text-2 mt-n1"
         :class="smAndDown ? 'mb-3' : 'mb-1'"
       >
         {{ reference.description }}
@@ -52,6 +52,11 @@ const { smAndDown } = useDisplay();
 </template>
 
 <style lang="scss" scoped>
+.reference-wrapper {
+  --reference-divider-opacity: 0.25;
+  --reference-divider-opacity-hover: 0.5;
+}
+
 .reference-chip {
   flex-shrink: 0;
   order: 2;
@@ -73,8 +78,10 @@ const { smAndDown } = useDisplay();
   flex-grow: 1;
   display: flex;
   height: 1px;
-  background-color: rgb(0 0 0 / 25%);
+  background-color: rgb(var(--v-theme-primary));
+  opacity: var(--reference-divider-opacity);
   order: 3;
+  transition: opacity 0.25s ease;
 
   @include sm-down {
     display: none;
@@ -111,12 +118,13 @@ const { smAndDown } = useDisplay();
   padding: 1rem 3rem;
   border-radius: 3vh;
   gap: 1rem;
+  transition: background-color 0.25s ease;
 
   &:hover {
-    background-color: rgb(0 0 0 / 3%);
+    background-color: rgb(var(--v-theme-primary) / 3%);
 
     .reference-separator {
-      background-color: rgb(0 0 0 / 50%);
+      opacity: var(--reference-divider-opacity-hover);
     }
   }
 
@@ -130,5 +138,9 @@ const { smAndDown } = useDisplay();
       background-color: transparent;
     }
   }
+}
+
+.reference-description {
+  color: rgb(var(--v-theme-primary) / 68%);
 }
 </style>

@@ -3,10 +3,11 @@ import { mdi } from "vuetify/iconsets/mdi-svg";
 
 import { ColorName } from "@/types";
 
-import { CustomTheme } from "./colors";
+import { HelixDarkTheme, HelixLightTheme } from "./colors";
 import { VuetifyComponents } from "./components";
 import { VuetifyDefaults } from "./defaults";
 import { ICONS } from "./icons";
+import { DARK_THEME_NAME, LIGHT_THEME_NAME, syncBrowserTheme } from "./theme";
 
 import { defineNuxtPlugin } from "#app";
 
@@ -32,12 +33,15 @@ export default defineNuxtPlugin((nuxtApp) => {
     },
     ssr: true,
     theme: {
-      defaultTheme: "CustomTheme",
+      defaultTheme: LIGHT_THEME_NAME,
       themes: {
-        CustomTheme,
+        [DARK_THEME_NAME]: HelixDarkTheme,
+        [LIGHT_THEME_NAME]: HelixLightTheme,
       },
     },
   });
+
+  syncBrowserTheme(LIGHT_THEME_NAME);
 
   nuxtApp.provide("ICON", ICONS);
   nuxtApp.provide("COLOR", ColorName);

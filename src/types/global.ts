@@ -1,5 +1,10 @@
+export enum ImageDarkModeTreatment {
+  INVERT_ON_DARK = "invert-on-dark",
+}
+
 export interface DeliveredImage {
   altText: string;
+  darkModeTreatment?: ImageDarkModeTreatment;
   source: string;
   eager?: boolean;
   lazySource?: string;

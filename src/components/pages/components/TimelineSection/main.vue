@@ -35,6 +35,11 @@ defineProps({
 </template>
 
 <style lang="scss" scoped>
+.mention-wrapper {
+  --mention-divider-opacity: 0.25;
+  --mention-divider-opacity-hover: 0.5;
+}
+
 .mention-name {
   order: 1;
 
@@ -47,8 +52,10 @@ defineProps({
   flex-grow: 1;
   display: flex;
   height: 1px;
-  background-color: rgb(0 0 0 / 25%);
+  background-color: rgb(var(--v-theme-primary));
+  opacity: var(--mention-divider-opacity);
   order: 2;
+  transition: opacity 0.25s ease;
 
   @include sm-down {
     display: none;
@@ -72,12 +79,13 @@ defineProps({
   padding: 1rem 3rem;
   border-radius: 3vh;
   gap: 1rem;
+  transition: background-color 0.25s ease;
 
   &:hover {
-    background-color: rgb(0 0 0 / 3%);
+    background-color: rgb(var(--v-theme-primary) / 3%);
 
     .mention-separator {
-      background-color: rgb(0 0 0 / 50%);
+      opacity: var(--mention-divider-opacity-hover);
     }
   }
 

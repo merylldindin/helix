@@ -1,9 +1,12 @@
 <script lang="ts" setup>
 import type { PropType } from "vue";
+import { computed } from "vue";
+import { useTheme } from "vuetify";
 
 import LearnMore from "@/assets/animations/learn-more.json";
 import { CustomLink } from "@/components/shared";
 import type { ButtonItem } from "@/types";
+import { cloneLottieWithColor } from "@/utils/lottie";
 
 defineProps({
   link: {
@@ -11,13 +14,30 @@ defineProps({
     type: Object as PropType<ButtonItem>,
   },
 });
+
+const theme = useTheme();
+
+const learnMoreColor = computed(() => {
+  const primaryColor = theme.current.value.colors.primary;
+
+  return typeof primaryColor === "string" ? primaryColor : "#040707";
+});
+
+const learnMoreAnimation = computed(() => {
+  return cloneLottieWithColor(LearnMore, learnMoreColor.value);
+});
 </script>
 
 <template>
   <div class="more-link">
     <CustomLink v-bind="link">
       <client-only>
-        <Vue3Lottie :animation-data="LearnMore" pause-on-hover :width="'120px'" />
+        <Vue3Lottie
+          :key="learnMoreColor"
+          :animation-data="learnMoreAnimation"
+          pause-on-hover
+          :width="'120px'"
+        />
       </client-only>
     </CustomLink>
   </div>

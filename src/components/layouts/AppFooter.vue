@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { useDisplay } from "vuetify";
 
+import { DARK_THEME_NAME } from "@/plugins/vuetify.client/theme";
 import { CustomLink } from "@/components/shared";
 import { APP_FOOTER_CONTENT } from "@/content";
 import type { IconName } from "@/types";
@@ -14,7 +15,7 @@ const footerLinks = [
 </script>
 
 <template>
-  <v-footer class="global-footer">
+  <v-footer class="global-footer" color="background" :theme="DARK_THEME_NAME">
     <div class="footer-content">
       <div v-if="!smAndDown" class="footer-links">
         <div v-for="(link, index) in footerLinks" :key="index">
@@ -65,7 +66,6 @@ const footerLinks = [
 .global-footer {
   padding: 16px 0;
   z-index: 1000;
-  background-color: rgb(var(--v-theme-slate-gray)) !important;
   scroll-snap-align: start;
 }
 

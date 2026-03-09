@@ -50,6 +50,8 @@ const swiperConfig = {
 <template>
   <CustomSection fullscreen>
     <template #background>
+      <div class="cube-backdrop" />
+
       <nav v-if="!mounted" aria-label="Site navigation" class="sr-only">
         <ul v-for="(page, index) in cProps.pages" :key="index">
           <li v-if="page.headline.to">
@@ -71,7 +73,7 @@ const swiperConfig = {
           </li>
         </ul>
       </nav>
-      <ClientOnly>
+      <ClientOnly fallback-tag="div">
         <swiper-container ref="containerRef" v-bind="swiperConfig" class="cube-wrapper">
           <swiper-slide
             v-for="(page, index) in pages"
@@ -97,6 +99,26 @@ const swiperConfig = {
   clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
+}
+
+.cube-backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 50% 38%,
+      rgb(var(--v-theme-primary) / 4%) 0,
+      rgb(var(--v-theme-primary) / 2%) 18%,
+      transparent 42%
+    ),
+    linear-gradient(
+      180deg,
+      rgb(var(--v-theme-background)) 0%,
+      rgb(var(--v-theme-surface)) 100%
+    );
+  transition:
+    background 0.45s ease,
+    filter 0.45s ease;
 }
 
 .cube-wrapper {
@@ -131,5 +153,23 @@ const swiperConfig = {
   @include xs-only {
     height: calc(100% - 64px);
   }
+}
+
+:global(:root[data-app-theme="dark"] .cube-backdrop) {
+  background:
+    radial-gradient(
+      circle at 50% 38%,
+      rgb(var(--v-theme-lemon) / 16%) 0,
+      rgb(var(--v-theme-lemon) / 6%) 18%,
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 50% 52%,
+      rgb(var(--v-theme-foam) / 14%) 0,
+      rgb(var(--v-theme-foam) / 4%) 24%,
+      transparent 52%
+    ),
+    linear-gradient(180deg, #050808 0%, #0d1212 54%, #050808 100%);
+  filter: saturate(1.05);
 }
 </style>

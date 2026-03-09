@@ -20,6 +20,10 @@ defineProps({
     default: () => [],
     type: Array as PropType<GenericContent[]>,
   },
+  followThemeForImages: {
+    default: true,
+    type: Boolean,
+  },
 });
 
 const { smAndDown } = useDisplay();
@@ -63,6 +67,7 @@ const getMarginFromTypography = (typography: string, index: number) => {
       <CustomImage
         v-else-if="item.type === ContentType.IMAGE"
         :class="smAndDown ? 'my-6' : 'my-12'"
+        :follow-theme="followThemeForImages"
         :image="item.prop"
       />
 

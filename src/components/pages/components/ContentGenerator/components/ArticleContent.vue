@@ -23,8 +23,14 @@ defineProps({
       {{ article.title }}
     </p>
 
-    <p class="text-2 text-blue-grey-darken-2">
+    <p class="article-description text-2">
       {{ article.description }}
     </p>
   </CustomLink>
 </template>
+
+<style lang="scss" scoped>
+.article-description {
+  color: rgb(var(--v-theme-primary) / 68%);
+}
+</style>
