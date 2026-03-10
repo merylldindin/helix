@@ -46,17 +46,20 @@ const ariaLabel = computed(() => {
 }
 
 .theme-toggle-track {
+  --theme-toggle-track-width: 68px;
+  --theme-toggle-track-height: 36px;
+  --theme-toggle-thumb-size: 26px;
+  --theme-toggle-thumb-offset: 4px;
+  --theme-toggle-thumb-travel: 32px;
+
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 68px;
-  height: 36px;
-  padding: 0 10px;
+  display: block;
+  width: var(--theme-toggle-track-width);
+  height: var(--theme-toggle-track-height);
   overflow: hidden;
-  border: 1px solid rgb(var(--v-theme-primary) / 22%);
+  border: 1px solid color-mix(in srgb, rgb(var(--v-theme-primary)) 22%, transparent);
   border-radius: 999px;
-  background-color: rgb(var(--v-theme-background) / 82%);
+  background-color: color-mix(in srgb, rgb(var(--v-theme-background)) 82%, transparent);
   backdrop-filter: blur(14px);
   box-shadow: 0 16px 30px rgb(0 0 0 / 10%);
   transition:
@@ -66,6 +69,10 @@ const ariaLabel = computed(() => {
 }
 
 .theme-toggle-glyph {
+  position: absolute;
+  top: var(--theme-toggle-thumb-offset);
+  width: var(--theme-toggle-thumb-size);
+  height: var(--theme-toggle-thumb-size);
   z-index: 1;
   display: flex;
   align-items: center;
@@ -74,12 +81,20 @@ const ariaLabel = computed(() => {
   transition: color 0.35s ease;
 }
 
+.theme-toggle-glyph-light {
+  left: var(--theme-toggle-thumb-offset);
+}
+
+.theme-toggle-glyph-dark {
+  right: var(--theme-toggle-thumb-offset);
+}
+
 .theme-toggle-thumb {
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 26px;
-  height: 26px;
+  top: var(--theme-toggle-thumb-offset);
+  left: var(--theme-toggle-thumb-offset);
+  width: var(--theme-toggle-thumb-size);
+  height: var(--theme-toggle-thumb-size);
   border-radius: 50%;
   background-color: rgb(var(--v-theme-foam));
   box-shadow:
@@ -92,8 +107,15 @@ const ariaLabel = computed(() => {
 }
 
 .theme-toggle-light {
+  .theme-toggle-thumb {
+    background-color: rgb(var(--v-theme-slate-gray));
+    box-shadow:
+      0 10px 18px rgb(0 0 0 / 18%),
+      inset 0 0 0 1px rgb(var(--v-theme-foam) / 12%);
+  }
+
   .theme-toggle-glyph-light {
-    color: rgb(var(--v-theme-slate-gray));
+    color: rgb(var(--v-theme-foam));
   }
 }
 
@@ -109,7 +131,8 @@ const ariaLabel = computed(() => {
   }
 
   .theme-toggle-thumb {
-    transform: translateX(32px);
+    background-color: rgb(var(--v-theme-foam));
+    transform: translateX(var(--theme-toggle-thumb-travel));
   }
 }
 </style>
