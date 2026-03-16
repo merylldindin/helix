@@ -1,0 +1,55 @@
+src/components/layouts/AppNavbar/components/AppThemeToggle.vue
+  aa35026bb75e2c17 78,85,107,109,149
+src/components/layouts/AppNavbar/components/BreadCrumbs.vue
+  aa35026bb75e2c17 117,122
+src/components/layouts/AppNavbar/main.vue
+  aa35026bb75e2c17 46,52
+.claude/plans/rosy-squishing-puppy.md
+  c00100566980f2a5 1-235
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.12",
+  "base_commit_sha": "be434789b391f754f9e7104fbcc245f48e503f3d",
+  "prompts": {
+    "04e3f5a6b8cf4d01": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019cf4ce-dbe6-7fe1-b3f3-0b35b3dc844d",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 6,
+      "accepted_lines": 0,
+      "overriden_lines": 0
+    },
+    "aa35026bb75e2c17": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d712ea7f-0441-4d37-a64b-570107df7208",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 62,
+      "total_deletions": 38,
+      "accepted_lines": 10,
+      "overriden_lines": 1
+    },
+    "c00100566980f2a5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ef072c55-89f9-44be-b9df-99f3c69e8fe0",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 235,
+      "total_deletions": 0,
+      "accepted_lines": 235,
+      "overriden_lines": 0
+    }
+  }
+}
