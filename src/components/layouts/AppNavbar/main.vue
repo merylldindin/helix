@@ -32,18 +32,36 @@ import { AnimatedAvatar, AppThemeToggle, BreadCrumbs } from "./components";
   }
 
   &__actions {
+    --navbar-action-gap: 1.2rem;
+    --navbar-avatar-size: 4rem;
+    --navbar-toggle-hit-width: 76px;
+    --navbar-toggle-hit-height: 44px;
+    --navbar-toggle-track-width: 68px;
+    --navbar-toggle-track-height: 36px;
+    --navbar-toggle-thumb-size: 26px;
+    --navbar-toggle-thumb-offset: 4px;
+    --navbar-toggle-icon-size: 16px;
+
     position: absolute;
-    top: 1.8rem;
+    top: 50%;
     right: 4rem;
     z-index: 2;
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: var(--navbar-action-gap);
+    transform: translateY(-50%);
 
     @include xs-only {
-      top: 1.2rem;
+      --navbar-action-gap: 0.8rem;
+      --navbar-avatar-size: 3rem;
+      --navbar-toggle-hit-width: 52px;
+      --navbar-toggle-track-width: 44px;
+      --navbar-toggle-track-height: 24px;
+      --navbar-toggle-thumb-size: 18px;
+      --navbar-toggle-thumb-offset: 3px;
+      --navbar-toggle-icon-size: 12px;
+
       right: 1.2rem;
-      gap: 0.8rem;
     }
   }
 }

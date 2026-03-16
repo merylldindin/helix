@@ -19,19 +19,20 @@ const ariaLabel = computed(() => {
       'theme-toggle-dark': isDark,
       'theme-toggle-light': !isDark,
     }"
-    height="44"
-    min-width="76"
     rounded="pill"
     variant="text"
     @click="toggleTheme"
   >
     <span class="theme-toggle-track">
       <span class="theme-toggle-glyph theme-toggle-glyph-light">
-        <v-icon :icon="mdiWhiteBalanceSunny" size="16" />
+        <v-icon class="theme-toggle-icon" :icon="mdiWhiteBalanceSunny" />
       </span>
 
-      <span class="theme-toggle-glyph theme-toggle-glyph-dark">
-        <v-icon :icon="mdiMoonWaningCrescent" size="16" />
+      <span
+        class="theme-toggle-glyph theme-toggle-glyph-dark"
+        style="padding-left: 6px"
+      >
+        <v-icon class="theme-toggle-icon" :icon="mdiMoonWaningCrescent" />
       </span>
 
       <span class="theme-toggle-thumb" />
@@ -41,16 +42,20 @@ const ariaLabel = computed(() => {
 
 <style lang="scss" scoped>
 .theme-toggle {
+  height: var(--navbar-toggle-hit-height, 44px) !important;
   padding: 0 !important;
-  min-width: 76px !important;
+  min-width: var(--navbar-toggle-hit-width, 76px) !important;
 }
 
 .theme-toggle-track {
-  --theme-toggle-track-width: 68px;
-  --theme-toggle-track-height: 36px;
-  --theme-toggle-thumb-size: 26px;
-  --theme-toggle-thumb-offset: 4px;
-  --theme-toggle-thumb-travel: 32px;
+  --theme-toggle-track-width: var(--navbar-toggle-track-width, 68px);
+  --theme-toggle-track-height: var(--navbar-toggle-track-height, 36px);
+  --theme-toggle-thumb-size: var(--navbar-toggle-thumb-size, 26px);
+  --theme-toggle-thumb-offset: var(--navbar-toggle-thumb-offset, 4px);
+  --theme-toggle-thumb-travel: calc(
+    var(--theme-toggle-track-width) - var(--theme-toggle-thumb-size) -
+      (var(--theme-toggle-thumb-offset) * 2)
+  );
 
   position: relative;
   display: block;
@@ -70,15 +75,23 @@ const ariaLabel = computed(() => {
 
 .theme-toggle-glyph {
   position: absolute;
-  top: var(--theme-toggle-thumb-offset);
+  top: 50%;
   width: var(--theme-toggle-thumb-size);
   height: var(--theme-toggle-thumb-size);
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateY(-50%);
   color: rgb(var(--v-theme-primary) / 45%);
   transition: color 0.35s ease;
+}
+
+.theme-toggle-icon {
+  :deep(svg) {
+    width: var(--navbar-toggle-icon-size, 16px);
+    height: var(--navbar-toggle-icon-size, 16px);
+  }
 }
 
 .theme-toggle-glyph-light {
@@ -91,8 +104,9 @@ const ariaLabel = computed(() => {
 
 .theme-toggle-thumb {
   position: absolute;
-  top: var(--theme-toggle-thumb-offset);
+  top: 50%;
   left: var(--theme-toggle-thumb-offset);
+  transform: translateY(-50%);
   width: var(--theme-toggle-thumb-size);
   height: var(--theme-toggle-thumb-size);
   border-radius: 50%;
@@ -132,7 +146,7 @@ const ariaLabel = computed(() => {
 
   .theme-toggle-thumb {
     background-color: rgb(var(--v-theme-foam));
-    transform: translateX(var(--theme-toggle-thumb-travel));
+    transform: translateY(-50%) translateX(var(--theme-toggle-thumb-travel));
   }
 }
 </style>

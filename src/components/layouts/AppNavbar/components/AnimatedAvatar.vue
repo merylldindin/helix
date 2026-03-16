@@ -1,16 +1,12 @@
 <script setup lang="ts">
-import { useDisplay } from "vuetify";
-
 import { CustomImage } from "@/components/shared";
 import { ANIMATED_AVATAR_CONTENT } from "@/content";
-
-const { smAndDown } = useDisplay();
 </script>
 
 <template>
   <NuxtLink to="/">
     <div class="animation-wrapper">
-      <v-avatar class="custom-shadow" :size="smAndDown ? '3rem' : '4rem'">
+      <v-avatar class="animation-wrapper__avatar custom-shadow">
         <CustomImage :follow-theme="false" :image="ANIMATED_AVATAR_CONTENT" />
       </v-avatar>
     </div>
@@ -23,5 +19,10 @@ const { smAndDown } = useDisplay();
   justify-content: center;
   align-items: center;
   transition: all 1.5s ease-in-out;
+
+  &__avatar {
+    width: var(--navbar-avatar-size, 4rem);
+    height: var(--navbar-avatar-size, 4rem);
+  }
 }
 </style>

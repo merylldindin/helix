@@ -114,14 +114,14 @@ li {
   position: absolute;
   transition: all 0.3s ease-in-out;
   align-items: center;
-  top: 1.8rem;
+  top: 50%;
   left: 4rem;
   z-index: 2;
   display: flex;
   flex-direction: row;
+  transform: translateY(-50%);
 
   @include xs-only {
-    top: 1.6rem;
     left: 1.6rem;
   }
 }
