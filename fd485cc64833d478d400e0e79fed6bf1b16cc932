@@ -1,0 +1,35 @@
+.claude/skills/create-article/references/registration-checklist.md
+  b766255831230cfc 50
+.claude/skills/create-article/references/article-conventions.md
+  b766255831230cfc 146
+src/types/routes.ts
+  b766255831230cfc 2
+src/utils/routes.ts
+  b766255831230cfc 2,37
+src/content/pages/thoughts/AI_MEETS_MENTAL_HEALTH.json
+  b766255831230cfc 1-248
+src/content/pages/THOUGHTS_PAGE.json
+  b766255831230cfc 104,111,119,125,130-131,136,138-141
+src/content/pages/thoughts/index.ts
+  b766255831230cfc 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "fd485cc64833d478d400e0e79fed6bf1b16cc932",
+  "prompts": {
+    "b766255831230cfc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7c74d39e-8ac6-4ae2-997e-59231c1e959d",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 354,
+      "total_deletions": 59,
+      "accepted_lines": 319,
+      "overriden_lines": 0
+    }
+  }
+}
