@@ -1,0 +1,328 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-03-04",
+      "datePublished": "2026-03-04",
+      "keywords": "specific learning disability, SLD, PSW, discrepancy model, clinical reasoning, dyslexia, IDEA, special education, learning disability identification"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/sld-identification/",
+    "title": "SLD Identification Crisis | Meryll Dindin",
+    "description": "Algorithmic models for learning disability identification fail at the level of chance. The research case for clinical reasoning over formulaic gatekeeping.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/sld-identification-20260323T085122.webp",
+    "thumbnailAlt": "Fractured diagnostic scoring grid with geometric cells breaking apart into scattered data points"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Dissolving diagnostic matrix with geometric cells and threshold lines fragmenting into scattered nodes",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/sld-identification-20260323T085200.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/sld-identification-20260323T085200-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/sld-identification-20260323T085200-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/sld-identification-20260323T085200-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "SLD Identification Crisis",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published March 4, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "It started with a PDF dropped into our clinical team\u2019s Slack channel. Jordan Wright, our Chief Clinical Officer at Parallel Learning, shared a systematic review concluding that the dominant method for identifying learning disabilities in American schools performs \u201cat the level of chance.\u201d The conversation that followed, between clinical managers, speech-language pathologists, and an engineer who kept pushing for a clean algorithm, turned into the most productive diagnostic argument I\u2019ve witnessed inside a company."
+          },
+          {
+            "type": "text",
+            "prop": "This article is the longer version of that argument. It won\u2019t end with a formula."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Premise That Broke",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "For nearly fifty years, American schools have tried to reduce learning disability identification to arithmetic. Administer an IQ test, administer an achievement test, compute the gap. If the gap was large enough, the child had a Specific Learning Disability. If not, tough luck."
+          },
+          {
+            "type": "text",
+            "prop": "This IQ-achievement discrepancy model was codified in 1977 under the Education for All Handicapped Children Act and dominated practice across all fifty states for three decades. Its appeal was administrative clarity. Its fatal flaw: it required children to fail badly enough, for long enough, to produce a statistically significant gap. Critics called it \u201cwait to fail.\u201d By the time a third or fourth grader\u2019s scores diverged enough to cross the threshold, the most critical windows for early literacy intervention had already closed."
+          },
+          {
+            "type": "text",
+            "prop": "The scientific case against discrepancy accumulated steadily. Children who met the criteria were largely indistinguishable from low achievers who didn\u2019t, on reading measures, phonological processing, neuroimaging, and intervention response alike. An OSEP researcher roundtable concluded that \u201cIQ-achievement discrepancy is neither necessary nor sufficient for identifying individuals with SLD.\u201d The model measured baseline IQ. It said nothing about why a student was struggling or what to do about it."
+          },
+          {
+            "type": "text",
+            "prop": "When Congress reauthorized IDEA in 2004, states were explicitly prohibited from requiring the discrepancy model. They were required to permit Response to Intervention approaches. And they were given a third option, \u201cother alternative research-based procedures,\u201d an opening that a new generation of formulaic models would walk through."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Sophisticated Successor",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The Pattern of Strengths and Weaknesses model emerged in the early 2000s as the discrepancy model\u2019s more ambitious replacement. Where discrepancy asked one question (is the gap big enough?), PSW asked three: Does the student have a cognitive processing weakness? Does that weakness align with an academic deficit? Are other cognitive abilities relatively intact?"
+          },
+          {
+            "type": "text",
+            "prop": "Three major variants developed: the Concordance/Discordance Model, Cross-Battery Assessment, and the Dual Discrepancy/Consistency method. All shared the same premise. If you could identify which cognitive process was deficient, you could target interventions more precisely. The theory was appealing. The data have not cooperated."
+          },
+          {
+            "type": "text",
+            "prop": "A 2025 systematic review, the one Jordan shared, concluded that PSW approaches identify SLD \u201cat the level of chance.\u201d The authors analyzed diagnostic accuracy across PSW methods, instruments, and data types (real and simulated) and recommended that practitioners \u201cconsider alternatives\u201d because PSW \u201cmay not be worth the time or effort.\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "The psychometric problems run deep. Simulation studies found that PSW methods flag only 1 to 2 percent of the population as having an SLD, despite epidemiological evidence suggesting dyslexia alone affects 7 to 15 percent of students. The models create an artificial bottleneck. Not because learning disabilities are rare, but because the probability of simultaneously meeting multiple aligned score thresholds is mathematically tiny."
+          },
+          {
+            "type": "text",
+            "prop": "Decision instability compounds the accuracy problem. When researchers applied the same PSW criteria using different achievement test batteries on the same students, classification decisions changed. The specific students flagged shifted depending on which tests the evaluator happened to select. Correlated instruments produce slightly different composite scores that fall on different sides of arbitrary thresholds. Positive agreement across batteries ranged from 0.33 to 0.59, unreliable enough to make eligibility decisions effectively arbitrary."
+          },
+          {
+            "type": "text",
+            "prop": "And PSW classification doesn\u2019t predict how students respond to intervention. In a direct test, LD status identified through both major PSW methods showed no association with differential treatment response to intensive reading instruction. Pretest reading scores already contained everything PSW was supposed to add. The cognitive profiling gatekept access to services without guiding what those services should be."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why Algorithms Break Against Biology",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I pushed Jordan on the reproducibility question. If not a statistical model, wouldn\u2019t clinical judgment vary drastically from one practitioner to the next? His response reframed the problem: \u201cHumans are messy and unfortunately not statistical. Identifying an SLD is actually more of a thesis and argument, not a right/wrong decision. Actuarial data support the argument, but shouldn\u2019t be making the decision.\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "The reason algorithms keep failing is biological. Specific Learning Disabilities aren\u2019t single-deficit conditions with clean cognitive signatures. Bruce Pennington\u2019s multiple deficit model argues that neurodevelopmental disorders like dyslexia emerge probabilistically from multiple interacting risk factors: phonological processing, orthographic processing, rapid automatized naming, working memory, processing speed. No single necessary or sufficient cognitive cause."
+          },
+          {
+            "type": "text",
+            "prop": "This shows up within each named subtype. Not every child with dyslexia struggles with the same thing. Some have phonological processing weaknesses. Others show relatively spared phonology but weak naming speed or poor fluency. The International Dyslexia Association\u2019s 2025 revised definition, the first update since 2002, formally acknowledged this: \u201cunderlying difficulties with phonological and morphological processing are common but not universal.\u201d Dyslexia exists \u201calong a continuum of severity,\u201d and its causes \u201cinvolve combinations of genetic, neurobiological, and environmental influences that interact throughout development.\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "The same heterogeneity shows up in dyscalculia and dysgraphia, each encompassing multiple distinct deficit profiles that respond to different interventions."
+          },
+          {
+            "type": "text",
+            "prop": "I tried the diabetes analogy. Two people diagnosed with diabetes go through similar interventions with stress-tested methods. Jordan\u2019s correction was precise: \u201cNot every kid with dyslexia is struggling with exactly the same thing, which may be qualitatively different than, say, diabetes. So two kids with dyslexia may not need the same intervention.\u201d Medicine itself has moved away from binary cutoffs for heterogeneous conditions. Depression, pain disorders, hypertension are managed across continua with individualized thresholds. SLD diagnosis lacks even the biomarker specificity that makes medical thresholds defensible."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Landscape of Inconsistency",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Formulaic identification plays out as geographic lottery. IDEA\u2019s \u201cmust not require / must permit / may permit\u201d language left states and districts with remarkable latitude. The vast majority of states still allow the discrepancy model as an option. At least 35 states include PSW language as a permitted method. Policy reviews have found dozens of different discrepancy formulas within a single state, meaning the same student could qualify in one district and be denied in the next."
+          },
+          {
+            "type": "text",
+            "prop": "A recent experimental study made the inconsistency vivid: when school psychologists evaluated the same psychoeducational vignette under different identification model conditions, the identification model did not predict the SLD decision. What did? The evaluator\u2019s demographics and years of experience. The framework mattered less than the person applying it."
+          },
+          {
+            "type": "text",
+            "prop": "This creates real casualties. Any model with low sensitivity systematically misses students with persistent, impairing skill deficits. When program access depends on crossing a threshold rather than on functional need plus intervention response, false negatives become service denials by design."
+          },
+          {
+            "type": "text",
+            "prop": "One of our clinical directors described the pattern she sees repeatedly: parents pay thousands for private neuropsychological evaluations that document clear dyslexia under DSM-5 criteria, then bring those evaluations to their school district, which runs its own assessment under different IDEA-based criteria and reaches a different eligibility determination. The legal mechanisms for resolving this, IEP meetings, independent educational evaluations, due process hearings, are often inaccessible to families without resources."
+          },
+          {
+            "type": "text",
+            "prop": "A clinical manager on our team raised a compliance dimension that rarely surfaces publicly. She has experienced pressure from special education teams to qualify students under Speech-Language Impairment when it looks like they won\u2019t qualify under SLD criteria, often because the PSW pattern isn\u2019t there. Many \u201cspeech only\u201d students end up receiving services well beyond speech-language intervention. If a district were audited, the mismatch between eligibility category and actual service delivery creates Child Find exposure. IDEA requires districts to identify, locate, and evaluate all children with disabilities. Using the right categories, not convenient ones."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Clinical Reasoning Is Not Guesswork",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The Ontario Psychological Association published guidelines in 2018 that formalize what structured clinical reasoning looks like in practice: a 10-step assessment process that balances actuarial data with explicit clinical judgment requirements."
+          },
+          {
+            "type": "text",
+            "prop": "Jordan cited these guidelines as his preferred framework. What makes them distinctive is a mandatory formulation step. Clinicians must synthesize quantitative and qualitative evidence into a coherent diagnostic narrative that connects findings to individualized recommendations. Scores inform but don\u2019t determine the diagnosis. The guidelines state directly that diagnosing a learning disability is \u201cmore complex than simply providing scores and cut-off points.\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "The OPA framework requires five conditions: a history of below-expected academic functioning, standardized achievement scores at least one standard deviation below the mean, evidence of underlying cognitive processing differences, at least average thinking and reasoning abilities, and exclusion of other primary causes. But it explicitly empowers clinicians to exercise judgment when scores fall in borderline ranges, acknowledging that language-heavy IQ tests often artificially suppress the scores of students whose reading and language disabilities are the very thing being assessed."
+          },
+          {
+            "type": "text",
+            "prop": "The psychometrics are necessary. They\u2019re just not sufficient on their own, especially when the consequences of misclassification are service access, accommodation eligibility, and long-term trajectories."
+          },
+          {
+            "type": "text",
+            "prop": "The legitimate concern is calibration. How do you prevent clinical judgment from becoming uncalibrated variability? The OPA framework addresses this by requiring multiple converging data sources, explicit attention to limits of certainty, and documentation norms that make reasoning auditable. Increasing discretion can increase inequity unless practice is standardized through training and accountability. But the formulaic alternative hasn\u2019t solved the consistency problem either. The experimental data showing that evaluator demographics predict decisions more than model choice suggest that rigid frameworks create an illusion of objectivity without delivering it."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Where Technology Actually Helps",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "For those of us building technology in this space, the research points to a specific and constrained role. AI can\u2019t resolve the construct validity problems that plague algorithmic identification. If PSW models produce inconsistent classifications, an AI system trained on PSW-labeled data will automate and scale those inconsistencies."
+          },
+          {
+            "type": "text",
+            "prop": "Where technology does contribute is in the data layer that supports clinical reasoning: universal screening to flag at-risk students, progress monitoring to track intervention response over time, adaptive assessment to reduce floor and ceiling effects. AI-powered handwriting analysis and oral reading assessment are showing promise as screening signals, but they\u2019re risk indicators, not diagnostic endpoints. The strongest opportunity sits in the assessment-to-intervention loop, feeding adaptive assessment data into clinical workflows and generating the longitudinal instructional response profiles that the hybrid identification approach now favors."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Argument, Not the Algorithm",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A 2025 article framed SLD identification as a \u201cwicked problem,\u201d one that resists clean algorithmic solutions because it involves heterogeneous constructs, contested measurement, value-laden eligibility decisions, and irreducible clinical complexity. Wicked problems aren\u2019t solved by better formulas. They\u2019re managed through structured reasoning, continuous evidence, and the professional judgment of people who understand both the data and the child sitting in front of them."
+          },
+          {
+            "type": "text",
+            "prop": "Jordan put it plainly: \u201cActuarial data support the argument, but shouldn\u2019t be making the decision.\u201d That distinction, between data that informs and algorithms that decide, is where the future of SLD identification turns."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''SLD Identification Crisis'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/sld-identification/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://journals.sagepub.com/doi/10.1177/10731911231194992",
+              "title": "Assessment of Specific Learning Disabilities and Intellectual Disabilities",
+              "description": "Miciak & Fletcher (2024) review literature on SLD and intellectual disability assessment in Assessment."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.tandfonline.com/doi/full/10.1080/2372966X.2024.2369494",
+              "title": "A Systematic Review of PSW Diagnostic Accuracy for SLD Identification",
+              "description": "Dombrowski, Benson & Maki (2025) systematic review in School Psychology Review concluding PSW performs at chance level."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://journals.sagepub.com/doi/abs/10.1177/07342829251328205",
+              "title": "Science and Practice of Identifying SLD: Kind Conversations About a Wicked Problem",
+              "description": "Hajovsky, Maki, Niileksela & McGill (2025) in Journal of Psychoeducational Assessment, 43(4)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.sciencedirect.com/science/article/abs/pii/S0022440523001085",
+              "title": "Measurement Error and Positive Predictive Value of PSW Methods",
+              "description": "Schneider et al. (2024) argue buffer zones around thresholds can improve PSW classification stability."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.psych.on.ca/getmedia/9710b802-aae3-4b6e-a215-789f2bfe59c5/OPA-Guidelines-for-Diagnosis-and-Assessment-of-Learning-Disabilities-03-2020.pdf",
+              "title": "Ontario Psychological Association Guidelines for LD Diagnosis",
+              "description": "OPA 10-step clinical reasoning framework for learning disability assessment (2018, revised 2020)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://dyslexiaida.org/idas-revised-2025-dyslexia-definition-now-open-for-public-comment/",
+              "title": "IDA Revised 2025 Dyslexia Definition",
+              "description": "First update since 2002 acknowledging phonological difficulties are common but not universal in dyslexia."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://hechingerreport.org/how-a-disgraced-method-of-diagnosing-learning-disabilities-persists-in-our-nations-schools/",
+              "title": "How a Disgraced Method of Diagnosing Learning Disabilities Persists",
+              "description": "Hechinger Report investigation into the IQ-discrepancy model's continued use in American schools."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.advocacyinstitute.org/resources/SLD.Identification.State.Policy.shtml",
+              "title": "SLD Identification: An Analysis of State Policies",
+              "description": "Advocacy Institute review of state-level SLD identification policies and cross-state variability."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://sites.ed.gov/idea/files/Identification_of_SLD_10-4-06.pdf",
+              "title": "IDEA Regulations: Identification of Specific Learning Disabilities",
+              "description": "Federal regulations implementing IDEA 2004 provisions for SLD identification procedures."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10023181/",
+              "title": "Speech/Language Impairment or Specific Learning Disability Categorization",
+              "description": "PMC (2023) study on trends in S/LI vs SLD classification and implications for service delivery."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

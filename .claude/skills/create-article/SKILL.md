@@ -8,7 +8,7 @@ argument-hint: [topic or source description]
 
 # Create Article
 
-End-to-end workflow for publishing a new article to `/thoughts/`. See `references/article-conventions.md` for JSON structure and `references/registration-checklist.md` for integration steps. Also see `.claude/rules/content-system.md` for general page conventions.
+End-to-end workflow for publishing a new article to `/thoughts/`. References: `references/article-conventions.md` (JSON structure + unicode), `references/registration-checklist.md` (integration steps), `references/editorial-guidelines.md` (voice and pitfalls). Also see `.claude/rules/content-system.md` for general page conventions.
 
 ## When to Use
 
@@ -25,7 +25,7 @@ Read all provided materials:
 - Screenshots/images via Read tool (multimodal)
 - Any other URLs via WebFetch
 
-Extract key facts, arguments, quotes, data points, and references.
+Extract key facts, arguments, quotes, data points, and references. If sources include Slack threads or internal conversations, read them via MCP Slack tools.
 
 ### 2. Draft Mock-up
 
@@ -45,7 +45,7 @@ Launch 3 parallel subagents to verify all claims:
 - Named programs, organizations, tools
 - Policy details and deadlines
 
-Apply corrections. Flag unverifiable claims for removal.
+Apply corrections. Soften unverifiable claims rather than removing them. See `references/editorial-guidelines.md` for additional tips.
 
 ### 4. Humanize
 
@@ -62,7 +62,7 @@ Launch a subagent for editorial review covering:
 - Audience clarity and register consistency
 - Pacing, redundancy, opening/closing quality
 
-Apply recommended revisions. Ask user before cutting entire sections.
+Apply recommended revisions. Ask user before cutting entire sections. See `references/editorial-guidelines.md` for common editorial pitfalls (weak technology sections, conclusion restatements, late-introduced framings).
 
 ### 6. Create JSON, Register, and Update Listing
 
@@ -72,7 +72,7 @@ These three steps are independent — do them in parallel:
 
 **Register route:** Update 3 files per `references/registration-checklist.md` (routes.ts, index.ts barrel, routes mapping — all alphabetical).
 
-**Update listing:** Add `IMAGE_SECTION` to `THOUGHTS_PAGE.json` components array, **sorted by publication date (newest first)**. Check surrounding entry dates to find the correct position. Use placeholder image URLs.
+**Update listing:** Add `IMAGE_SECTION` to `THOUGHTS_PAGE.json` per `references/article-conventions.md` (date-sorted, newest first). Use placeholder image URLs.
 
 ### 7. Generate Images
 

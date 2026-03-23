@@ -58,6 +58,49 @@
     },
     {
       "name": "IMAGE_SECTION",
+      "id": "sld-identification-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "SLD Identification Crisis",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "March 4, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Algorithmic models for learning disability identification fail at the level of chance. The research case for clinical reasoning over formulaic gatekeeping."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article SLD Identification Crisis",
+              "to": "/thoughts/sld-identification/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Cracked psychometric assessment grid with fractures radiating outward from a centered scoring matrix",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/sld-identification-20260323T085239.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/sld-identification-20260323T085239-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/sld-identification-20260323T085239-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/sld-identification-20260323T085239-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "measuring-student-outcomes-section",
       "props": {
         "content": [

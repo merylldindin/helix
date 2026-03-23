@@ -99,9 +99,15 @@ src/content/pages/thoughts/SCREAMING_SNAKE_NAME.json
 ```json
 {
   "type": "text",
-  "prop": "Paragraph content here. Use \\u2014 for em-dashes."
+  "prop": "Paragraph content here."
 }
 ```
+
+**Unicode escaping:** Use curly quotes and typographic punctuation in article body text, never straight ASCII equivalents.
+
+- `\u2019` — right single quote / apostrophe (')
+- `\u201c` / `\u201d` — left / right double quotes ("")
+- `\u2014` — em-dash (—)
 
 ### Social Share Block (after final paragraph, before references)
 

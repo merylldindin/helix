@@ -51,11 +51,4 @@ Add `IMAGE_SECTION` in the `components` array **sorted by publication date (newe
 
 ## 5. Verification
 
-Run in parallel:
-
-```bash
-yarn types      # TypeScript compilation
-yarn eslint:fix # Lint and auto-fix
-```
-
-Both must pass before committing.
+Handled by main workflow Step 8 (`yarn types` and `yarn eslint:fix` in parallel).
