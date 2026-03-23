@@ -1,0 +1,248 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2025-11-22",
+      "datePublished": "2025-11-22",
+      "keywords": "HLTH 2025, artificial intelligence, mental health, ambient AI, clinical oversight, teen mental health, Digital Health Awards, healthcare technology"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/ai-meets-mental-health/",
+    "title": "AI at HLTH 2025 | Meryll Dindin",
+    "description": "Five dispatches from HLTH 2025 on ambient AI, teen chatbot dependency, clinical oversight, and why human ingenuity still sets the ceiling.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/ai-meets-mental-health-20260323T070248.webp",
+    "thumbnailAlt": "Brain-shaped network with organic neural branches merging into geometric circuit board traces"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Network graph of scattered nodes connected by geometric lines with a dense central cluster",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/ai-meets-mental-health-20260323T070329.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/ai-meets-mental-health-20260323T070329-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/ai-meets-mental-health-20260323T070329-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/ai-meets-mental-health-20260323T070329-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "AI at HLTH 2025",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published November 22, 2025",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Last November Las Vegas hosted HLTH, the largest health innovation conference in the U.S. I live here, so no flight required \u2014 just a short drive to the Venetian. Over four days I sat through panels, cornered founders in hallways, and collected a prize on behalf of Parallel Learning: the Mental & Behavioral Health Rising Star award at the Digital Health Awards 2025. I'd been sharing observations with my team each evening, and what follows is that thread cleaned up. Five dispatches on what AI is doing to healthcare, and where it's falling short."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Floor and the Ceiling",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "During a session titled \u201cAuthentic Connections, Artificial World,\u201d a panelist quoted Dara Treseder, Chief Marketing Officer at Autodesk:"
+          },
+          {
+            "type": "text",
+            "prop": "\u201cAI is raising the floor, but it\u2019s actually human ingenuity that\u2019s going to raise the ceiling.\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "HLTH this year was anchored around two themes, AI and Women\u2019s Health, and this line captured the undercurrent. AI keeps lifting baselines: faster drafts, cleaner templates, sharper diagnostic tools. Creative leaps, novel care models, clinical judgment calls? Still ours."
+          },
+          {
+            "type": "text",
+            "prop": "The gap between AI enthusiasm and AI results remains enormous. A report from MIT published in August 2025 found that 95% of generative AI pilots at companies fail to deliver measurable business impact. Healthcare is no different. Plenty of pilots, very few scaled deployments that change patient care. The risk isn\u2019t replacement. It\u2019s wasting years competing with AI at the floor instead of building where only humans can reach."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Maternal Intelligence",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "One theme stuck with me: empathy as a design principle. Geoffrey Hinton, one of the so-called Godfathers of AI, was quoted via a framing he introduced at the Ai4 Conference earlier that summer:"
+          },
+          {
+            "type": "text",
+            "prop": "\u201cWe need AI mothers rather than AI assistants. An assistant is someone you can fire. You can\u2019t fire your mother.\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "Instead of designing AI with competitive logic, the kind that optimizes to win or control, Hinton argues we should embed what he called maternal instincts. Systems that care, protect, and preserve. Humans are the child; AI is the mother. It\u2019s the only model we have, he noted, of a more intelligent thing being controlled by a less intelligent one. The idea reframes AI safety from control to care: rather than designing systems to obey us, design them to want our wellbeing."
+          },
+          {
+            "type": "text",
+            "prop": "I run an AI company that builds tools for children with learning differences. The maternal framing isn\u2019t abstract to me. Every product decision we make at Parallel Learning encodes an answer to Hinton\u2019s question: is this tool an assistant you can fire, or something that genuinely protects the people using it? A therapy tool built to optimize engagement metrics is a different animal from one built to optimize patient outcomes. Same technology, different mothers."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Age of Ambient AI",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Unlike the chatbots we interact with directly, ambient AI operates invisibly. It listens, observes, adapts without being asked. Systems working in the background, learning patterns, anticipating needs through context, voice, or environment."
+          },
+          {
+            "type": "text",
+            "prop": "This is agentic AI in practice. Autonomous agents that act proactively across systems, from homes to clinics to workplaces. At Parallel Learning, the application is immediate. Picture speech therapy where AI listens during a session, drafts the clinical notes, queues the next steps. The clinician stays present. The paperwork handles itself."
+          },
+          {
+            "type": "text",
+            "prop": "We\u2019re heading toward a world where AI isn\u2019t an app you open but an atmosphere you inhabit. For companies that own their teleconferencing infrastructure end-to-end, as we do, the opportunity to build ambient clinical intelligence is already within reach."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Chatbot Dependency Problem",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "One of the more sobering moments came from Jon Cohen, CEO of Talkspace, on the rise of AI \u201cfriend\u201d chatbots and their effects on teenagers. Talkspace was three to six months from releasing their own HIPAA-protected conversational agent, which gave his warnings particular weight."
+          },
+          {
+            "type": "text",
+            "prop": "The numbers are striking. A Common Sense Media survey from July 2025 found that 72% of U.S. teens have used AI companions, with over half using them regularly. One-third said they\u2019ve discussed serious or important matters with bots instead of turning to peers or adults. Nearly a third reported that AI conversations feel as satisfying as human ones."
+          },
+          {
+            "type": "text",
+            "prop": "Psychiatrists call it an illusion of safe, endless validation. \u201cFriends\u201d that never judge, never disagree, never leave. The result: emotional dependency, distorted self-perception, difficulty managing real relationships. Some researchers are mapping the pattern onto addiction frameworks. Tolerance. Withdrawal. Relapse."
+          },
+          {
+            "type": "text",
+            "prop": "AI companionship among minors is being framed as a public health concern, not a tech trend. Where it mimics care without responsibility, it risks harm. For providers and caregivers working with kids, staying current isn\u2019t optional. They\u2019re already using these tools."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Oversight Versus Off-Roading",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The conference sharpened a distinction I shared with my team on the last day. Anyone working in digital mental health needs to internalize it."
+          },
+          {
+            "type": "text",
+            "prop": "Clinical oversight means AI used inside legitimate healthcare systems, supervised by licensed professionals. These tools follow evidence-based protocols, meet HIPAA or FDA standards, and act as clinical support. A therapist-in-the-loop monitors outcomes and keeps the AI within safe, accountable bounds."
+          },
+          {
+            "type": "text",
+            "prop": "Clinical off-roading is the opposite: AI that simulates therapy or emotional care without oversight, regulation, or data protection. These chatbots can mimic empathy, reinforce biases, mishandle crises, expose sensitive data. Experts call it a \u201cshadow care system.\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "Regulators are catching up. Illinois became the first state to explicitly regulate AI in psychotherapy, passing the Wellness and Oversight for Psychological Resources Act in August 2025. The law prohibits AI from making independent therapeutic decisions or generating treatment plans without licensed professional review. California followed with narrower measures around disclosure and anti-impersonation. New governance frameworks, including one from the Multi-Regional Clinical Trials Center at Harvard, are pushing for human-led oversight wherever AI touches therapeutic domains."
+          },
+          {
+            "type": "text",
+            "prop": "Remember the MIT stat from the top of this piece, 95% of AI pilots failing to deliver? Most of those failures are execution problems. In mental health, the failure mode is different. An unregulated chatbot that \u201cworks\u201d \u2014 one that keeps users engaged \u2014 might be the most dangerous outcome of all. The floor and the ceiling matter here too. Regulation sets the floor. What we choose to build above it, the care we encode, the oversight we insist on, that\u2019s where the ceiling goes."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''AI at HLTH 2025'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/ai-meets-mental-health/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/",
+              "title": "MIT Report: 95% of Generative AI Pilots at Companies Are Failing",
+              "description": "MIT NANDA Initiative report on the state of AI in business, August 2025."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.commonsensemedia.org/press-releases/nearly-3-in-4-teens-have-used-ai-companions-new-national-survey-finds",
+              "title": "Talk, Trust, and Trade-Offs: How and Why Teens Use AI Companions",
+              "description": "Common Sense Media national survey on teen AI companion usage, July 2025."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.entrepreneur.com/business-news/godfather-of-ai-geoffrey-hinton-ai-needs-maternal-instincts/495867",
+              "title": "Godfather of AI Geoffrey Hinton: AI Needs Maternal Instincts",
+              "description": "Geoffrey Hinton's remarks on maternal AI at the Ai4 Conference, August 2025."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.cnbc.com/2025/10/10/talkspace-online-therapy-therapists-mental-health.html",
+              "title": "Talkspace CEO on AI Chatbot Risks for Teen Mental Health",
+              "description": "Jon R. Cohen, M.D. on AI companionship and teen mental health at HLTH 2025."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://idfpr.illinois.gov/news/2025/gov-pritzker-signs-state-leg-prohibiting-ai-therapy-in-il.html",
+              "title": "Illinois Passes Wellness and Oversight for Psychological Resources Act",
+              "description": "First state law explicitly regulating AI in psychotherapy, August 2025."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://mrctcenter.org/resource/framework-for-ai-adoption-and-oversight-in-clinical-research/",
+              "title": "Framework for AI Adoption and Oversight in Clinical Research",
+              "description": "Multi-Regional Clinical Trials Center at Harvard framework for AI governance, June 2025."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.digitalhealthhub.org/awards/2025/winners",
+              "title": "7th Annual Digital Health Awards 2025 Winners",
+              "description": "Digital Health Hub Foundation awards announced at HLTH 2025, November 2025."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

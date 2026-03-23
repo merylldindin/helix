@@ -72,7 +72,7 @@ These three steps are independent — do them in parallel:
 
 **Register route:** Update 3 files per `references/registration-checklist.md` (routes.ts, index.ts barrel, routes mapping — all alphabetical).
 
-**Update listing:** Add `IMAGE_SECTION` to top of `THOUGHTS_PAGE.json` components array. Use placeholder image URLs.
+**Update listing:** Add `IMAGE_SECTION` to `THOUGHTS_PAGE.json` components array, **sorted by publication date (newest first)**. Check surrounding entry dates to find the correct position. Use placeholder image URLs.
 
 ### 7. Generate Images
 

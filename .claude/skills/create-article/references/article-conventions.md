@@ -143,7 +143,7 @@ src/content/pages/thoughts/SCREAMING_SNAKE_NAME.json
 
 ## Listing Page Entry (THOUGHTS_PAGE.json)
 
-Add at the **top** of the `components` array:
+Add to the `components` array, **sorted by publication date (newest first)**:
 
 ```json
 {

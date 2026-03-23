@@ -47,7 +47,7 @@ export const ROUTES_CONTENT: Record<RoutePath, PageContent> = {
 
 ## 4. Listing Page (`src/content/pages/THOUGHTS_PAGE.json`)
 
-Add `IMAGE_SECTION` at the **top** of the `components` array (most recent article first). See `article-conventions.md` for the full template.
+Add `IMAGE_SECTION` in the `components` array **sorted by publication date (newest first)**. Check the dates of surrounding entries to find the correct position — do NOT always insert at the top. See `article-conventions.md` for the full template.
 
 ## 5. Verification
 
