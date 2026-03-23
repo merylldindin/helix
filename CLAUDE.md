@@ -25,11 +25,12 @@ See `.claude/rules/` for detailed guidelines:
 
 ## Skills
 
-| Skill        | Command         | Purpose                                            |
-| ------------ | --------------- | -------------------------------------------------- |
-| create-image | `/create-image` | Generate minimalist B&W images, upload to CDN      |
-| review-seo   | `/review-seo`   | SEO audit for meta tags, schemas, content          |
-| create-skill | `/create-skill` | Create, optimize, or audit skills/rules/references |
+| Skill          | Command           | Purpose                                            |
+| -------------- | ----------------- | -------------------------------------------------- |
+| create-article | `/create-article` | End-to-end article creation for /thoughts/         |
+| create-image   | `/create-image`   | Generate minimalist B&W images, upload to CDN      |
+| review-seo     | `/review-seo`     | SEO audit for meta tags, schemas, content          |
+| create-skill   | `/create-skill`   | Create, optimize, or audit skills/rules/references |
 
 ## Project Structure
 

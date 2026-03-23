@@ -1,5 +1,6 @@
 export enum RoutePath {
-  ARRHYTHIMIA_CLASSIFICATION = "/thoughts/arrhythmia-classification/",
+  AI_SPECIAL_EDUCATION = "/thoughts/ai-special-education/",
+  ARRHYTHMIA_CLASSIFICATION = "/thoughts/arrhythmia-classification/",
   AUBERGE_DE_CERCOUX = "/ventures/auberge-de-cercoux/",
   BOOK_SUGGESTIONS = "/suggestions/books/",
   CALASTER = "/ventures/calaster/",

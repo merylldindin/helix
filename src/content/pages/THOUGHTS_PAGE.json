@@ -15,6 +15,49 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "ai-special-education-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "AI for Special Education",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "March 8, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "AI tools for special education are outpacing the policies meant to govern them. A look at IDEA compliance, assistive technology, data privacy, and what districts are getting wrong."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article The Case for AI in Special Education",
+              "to": "/thoughts/ai-special-education/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "AI-generated hand reaching toward interconnected accessibility symbols and geometric nodes",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/ai-special-education-20260322T215730.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/ai-special-education-20260322T215730-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/ai-special-education-20260322T215730-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/ai-special-education-20260322T215730-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "learning-differences-section",
       "props": {
         "content": [

@@ -1,0 +1,256 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-03-08",
+      "datePublished": "2026-03-08",
+      "keywords": "special education, artificial intelligence, IDEA, assistive technology, IEP, FAPE, accessibility, edtech, learning disabilities"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/ai-special-education/",
+    "title": "The Case for AI in Special Education | Meryll Dindin",
+    "description": "AI tools for special education are outpacing the policies meant to govern them. IDEA compliance, assistive technology, and what districts are getting wrong.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/ai-special-education-20260322T215629.webp",
+    "thumbnailAlt": "AI-generated isometric school building with circuit board trace patterns"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "AI-generated accessibility symbols and document shapes interconnected by circuit board patterns",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/ai-special-education-20260322T215655.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/ai-special-education-20260322T215655-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/ai-special-education-20260322T215655-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/ai-special-education-20260322T215655-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "The Case for AI in Special Education",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published March 8, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "AI policy in schools is being written by the wrong people. Building codes are never drafted without architects, yet we're writing the future of education without consulting the experts on accessibility. Too many school districts are developing AI policies without input from education professionals, handing the work to external consultants with no special education expertise. More than 30 states have rolled out K-12 AI guidance. Fewer than 70% of those documents even mention students with disabilities."
+          },
+          {
+            "type": "text",
+            "prop": "The students who stand to gain the most from AI are invisible in the policies dictating its use. What follows draws from my LinkedIn series on AI in special education and from sessions at CASE 2025 \u2014 the legal foundations, the tools that already exist, and the choices districts are making right now."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Legal Floor Already Exists",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Most people in edtech don't know this: Congress already mandated that schools consider assistive technology for every student with an IEP. Not as an option \u2014 as a legal requirement under IDEA. And yet research consistently shows that AT consideration is either skipped or treated as a checkbox exercise. A building code that requires ramps, but nobody checks whether the ramps got built."
+          },
+          {
+            "type": "text",
+            "prop": "AI changes this. Adaptive reading tools, automated writing feedback, real-time translation for families, content differentiated to any reading level in seconds. The gap is no longer capability. It's will."
+          },
+          {
+            "type": "text",
+            "prop": "If your district is still debating whether to \"allow\" AI, the better question is: can you afford not to, when the law already expects you to deliver what these tools now make possible? The strongest argument for AI in special education isn't innovation. It's compliance."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "FAPE and Specially Designed Instruction",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "CASE 2025 foregrounded the hard questions. Does AI support or risk compromising a Free Appropriate Public Education? Can it adapt content, methodology, or delivery to meet a student's unique needs? How is it being used to collect and analyze data for progress monitoring?"
+          },
+          {
+            "type": "text",
+            "prop": "These aren't hypothetical. Project AI SCORE, developed at the University of Kansas, is a free system that instantly scores student writing across content, organization, and style on a six-point rubric, then returns personalized feedback. A teacher with 25 students might take a week to return writing feedback. For a middle schooler with a learning disability, that delay is the difference between connecting effort to outcome and losing the thread entirely."
+          },
+          {
+            "type": "text",
+            "prop": "Think about getting your blood pressure checked once a year versus wearing a monitor that alerts you in real time. The information isn't just faster. It changes what you believe is possible. Frequent, immediate feedback lets students see their own growth while they're still in the act of growing. For a kid who's internalized a story about what they can't do, that evidence \u2014 right there, right then \u2014 rewrites the narrative."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "AI as Accommodation vs. AI as Instruction",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "CASE 2025 raised a question most districts haven't answered: are staff trained to tell the difference between AI as an accommodation and AI as instruction? Can AI tools count as valid accommodations under a student's IEP or 504 Plan?"
+          },
+          {
+            "type": "text",
+            "prop": "The Oregon Department of Education's K-12 AI guidance offers a useful image: AI as an electric bike, not a robot vacuum. On the bike, the rider stays aware and in control while their effort is multiplied. The vacuum just does the work. AI can simplify complex text, personalize practice, and hand hours of administrative time back to teachers. It can also quietly privilege students with stronger devices, better home coaching, and more stable Wi-Fi."
+          },
+          {
+            "type": "text",
+            "prop": "Every parent asks eventually: should I let my kid use AI? The sharper question is whether we're teaching them to think with it without letting it think for them. For neurodivergent students, this cuts both ways. These tools can personalize pacing, clarify complex text, and strip away counterproductive cognitive load. They can also erode productive struggle \u2014 the friction that builds mastery."
+          },
+          {
+            "type": "text",
+            "prop": "A scaffold supports comprehension, organization, and expression. A crutch replaces synthesis, reasoning, and voice. The line between them is rarely technical. It's guided use, explicit norms, and shared reflection."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Question Nobody's Asking",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "When a district adopts an AI tool, someone should be asking: who owns the student data? Is the tool FERPA-compliant? Does it meet IDEA's confidentiality requirements? What stops it from encoding the biases already present in the training data?"
+          },
+          {
+            "type": "text",
+            "prop": "Most districts aren't asking. They're buying first."
+          },
+          {
+            "type": "text",
+            "prop": "Project AI SCORE shows what responsible design looks like. Student writing never reaches researchers in identifiable form \u2014 it's deidentified before it leaves the district, and patterns are verified without anyone seeing the originals. The Student Data Privacy Consortium, with 28 state alliances backing its National Data Privacy Agreement, offers a governance model that other tools could follow. The NIST AI Risk Management Framework provides a broader evaluation lens. But having frameworks available isn't the same as using them."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Where AI Matters Most: The IEP Meeting",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "All of this is happening against a backdrop of declining student performance \u2014 NAEP 2024 showed eighth-grade science scores down across every percentile versus 2019, and PISA 2022 found nearly one in three 15-year-olds internationally below basic math proficiency. Special education teams are seeing more referrals where the issue isn't inability but interrupted opportunity. The urgency isn't theoretical."
+          },
+          {
+            "type": "text",
+            "prop": "And the decisions that shape a student's trajectory don't happen at a desk. They happen in IEP meetings. These meetings have a problem that better classroom tools won't fix."
+          },
+          {
+            "type": "text",
+            "prop": "Under IDEA, parents have the right to participate in the IEP process. But participation without comprehension is theater. For families navigating dense legal language, clinical terminology, or a second language, an IEP meeting can feel like being present but not included."
+          },
+          {
+            "type": "text",
+            "prop": "Real-time translation of IEP documents. Plain-language explanations of procedural safeguards. AI-assisted preparation so families walk in knowing what decisions are on the table and what questions to ask. That's the gap between performative inclusion and the real thing."
+          },
+          {
+            "type": "text",
+            "prop": "Most AI conversations in special education focus on classrooms. But the families with the least social capital benefit most from clarity and preparation \u2014 and they're the ones least likely to have it. Family-facing AI isn't novel. It's overdue."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Legal Walls Closing In",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Of course, none of this works if the tools themselves aren't accessible. \"Deliberate indifference\" under Title II of the ADA means knowing about inaccessible digital platforms and failing to act. Every untagged PDF, every broken screen reader interaction, every platform that excludes a student with a disability leaves a trail. Organizations can't claim ignorance anymore."
+          },
+          {
+            "type": "text",
+            "prop": "The legal landscape is messy. In Acheson Hotels v. Laufer (2023), the Supreme Court dismissed the case as moot without ruling on the merits. The national circuit split remains unresolved: the 1st, 4th, and 11th Circuits allow tester standing; the 2nd, 5th, and 10th reject it. Where you are determines what you face."
+          },
+          {
+            "type": "text",
+            "prop": "For large public entities, the Title II ADA compliance deadline is April 24, 2026, though the DOJ submitted a revised interim final rule in February 2026 that may push this timeline. The underlying obligation doesn't change with the deadline. WCAG standards are one path to Title II compliance, but WCAG alone doesn't address accessibility for all students served under IDEA. Districts need to look past web standards to the full scope of digital tools used in instruction \u2014 the learning platforms, the assessment tools, the communication apps."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Choice Districts Are Making",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Districts that treat AI as infrastructure \u2014 with clear norms around when it supports thinking and when it replaces it \u2014 will bend it toward inclusion. Districts that don't will watch it widen the gaps they meant to close. The tools already exist: the VITAL team at the University of Kansas has been curating free and low-cost AI tools for diverse learners, from Diffit for leveling content to MagicSchool for IEP supports to Goblin Tools for neurodivergent productivity. IDEA already requires districts to consider these kinds of supports. The question was never whether the tools would arrive. It's whether the adults in the room would be ready when they did."
+          },
+          {
+            "type": "text",
+            "prop": "The rules are being written now. Without disability-informed voices in the room, protective frameworks turn into exclusionary walls \u2014 locking out the students who need these tools the most. Advocacy groups, special education researchers, legal specialists, and families need seats at the drafting table today. Not after the frameworks are finished. Now."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''The Case for AI in Special Education'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/ai-special-education/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://projectaiscore.org",
+              "title": "Project AI SCORE \u2014 University of Kansas",
+              "description": "A free progress monitoring system that instantly scores student writing across content, organization, and style, providing immediate personalized feedback for students with learning disabilities."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://vitalworkedu.com",
+              "title": "VITAL \u2014 Variability and Innovation in Teaching ALL Learners",
+              "description": "A resource for educators and families to improve student outcomes through innovation and evidence-based practices, ensuring every student receives a personalized education."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nist.gov/itl/ai-risk-management-framework",
+              "title": "NIST AI Risk Management Framework (AI RMF 1.0)",
+              "description": "A framework developed by NIST to better manage risks to individuals, organizations, and society associated with artificial intelligence."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://privacy.a4l.org/national-dpa/",
+              "title": "Student Data Privacy Consortium \u2014 National Data Privacy Agreement",
+              "description": "A streamlined approach to student data privacy with 28 state alliances supporting consistent governance for educational technology tools."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
