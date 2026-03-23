@@ -1,0 +1,324 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-02-13",
+      "datePublished": "2026-02-13",
+      "keywords": "AI literacy, DOL, workforce development, generative AI, AI training, WIOA, EU AI Act, AI skills, workforce policy"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/ai-literacy-mandate/",
+    "title": "AI Literacy Mandate | Meryll Dindin",
+    "description": "The U.S. Department of Labor just made AI literacy a foundational workforce skill. What that means for every role at every company, and what the framework gets wrong.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/ai-literacy-mandate-20260323T112209.webp",
+    "thumbnailAlt": "Abstract circular emblem dissolving into branching network pathways and circuit nodes"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Concentric geometric rings fragmenting into branching network pathways with terminal nodes",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/ai-literacy-mandate-20260323T112252.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/ai-literacy-mandate-20260323T112252-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/ai-literacy-mandate-20260323T112252-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/ai-literacy-mandate-20260323T112252-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "AI Literacy Mandate",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published February 13, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Today, the U.S. Department of Labor released a Training and Employment Notice that formally positions AI literacy alongside reading, math, and digital fluency as a foundational workforce skill. I shared it with my team this morning because the framing matters: this isn\u2019t a suggestion. It\u2019s the federal government telling every workforce board, community college, and employer-training program in the country to start teaching people how to use AI."
+          },
+          {
+            "type": "text",
+            "prop": "I\u2019ve spent the last year building AI into our engineering workflows at Parallel Learning and watching the gap widen between people who treat these tools as a curiosity and people who treat them as infrastructure. That gap is about to become a career-defining fault line. McKinsey found that 92 percent of companies plan to increase AI investment, but only 1 percent of leaders classify their organizations as mature in AI deployment. Capital is flowing in faster than people know how to spend it."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What the DOL Actually Said",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The framework comes through TEN 07-25, signed by Henry Mack (Assistant Secretary) and Taylor Stockton (Chief Innovation Officer). It defines AI literacy as \u201ca foundational set of competencies that enable individuals to use and evaluate AI technologies responsibly, with a primary focus on generative AI, which is increasingly central to the modern workplace.\u201d Five content areas, seven delivery principles. The content areas: understand AI principles, explore AI uses, direct AI effectively, evaluate AI outputs, and use AI responsibly."
+          },
+          {
+            "type": "text",
+            "prop": "The delivery principles are where the document gets interesting. Experiential learning comes first. Embedded in job context, not abstracted into a classroom. Building complementary human skills alongside AI skills. Addressing prerequisites like digital literacy and broadband access. And designing for agility, because any curriculum that takes two years to update is already obsolete."
+          },
+          {
+            "type": "text",
+            "prop": "This isn\u2019t the DOL\u2019s first move. Executive Order 14277 in April 2025 created a White House Task Force on AI education. Subsequent guidance opened WIOA funding for AI skills, and America\u2019s Talent Strategy made AI literacy a strategic pillar across Labor, Commerce, and Education. TEN 07-25 delivers the actual framework."
+          },
+          {
+            "type": "text",
+            "prop": "The policy chain is unusually tight for workforce guidance. And it\u2019s explicitly tied to a competitiveness narrative: reindustrialization, the Golden Age, winning the AI race. Whether you buy that framing or not, the operational signal is clear. Federal training dollars will follow this framework."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What the Framework Gets Right",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The DOL\u2019s five content areas are sensible enough: understand AI, explore its uses, direct it, evaluate its outputs, use it responsibly. What makes the framework worth reading are the delivery principles."
+          },
+          {
+            "type": "text",
+            "prop": "\u201cEnable experiential learning\u201d isn\u2019t pedagogy jargon. The research consistently shows that AI literacy developed through hands-on use in real tasks transfers to the workplace. Abstract training doesn\u2019t. A 2025 study conducted within a Navy robotics training program found that scenario-based AI tasks predicted applied literacy far better than knowledge tests."
+          },
+          {
+            "type": "text",
+            "prop": "Context-embedded learning is equally important. A clinician learning AI through clinical workflows will retain and apply more than one sitting through a generic \u201cIntroduction to AI\u201d course. Same for engineers, customer service reps, operations managers. The DOL\u2019s insistence on industry-specific, occupation-relevant training reflects what practitioners have been saying for years."
+          },
+          {
+            "type": "text",
+            "prop": "The complementary human skills principle deserves its own emphasis. The World Economic Forum\u2019s 2025 Future of Jobs Report found that analytical thinking, not AI skills per se, remains the most sought-after competency. Seven in ten employers cite it as essential. AI doesn\u2019t replace thinking. It amplifies the thinking you already do. If you lack judgment, AI gives you faster bad judgment."
+          },
+          {
+            "type": "text",
+            "prop": "The places where I see these principles play out daily: directing AI effectively is where the widest variance shows up between teammates. Prompting is a skill, not a personality trait. Some people get mediocre results and conclude the tool is mediocre. Others get strong results from the same tool because they\u2019ve learned how to ask. And evaluating outputs is the hardest competency to teach and the easiest to skip, because AI outputs look polished even when they\u2019re wrong. The DOL is right to make evaluation a standalone content area rather than burying it under \u201cresponsible use.\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "Designing for agility is the right response to the shelf-life problem. AI tools update every few months. Curricula update every few years. The DOL is telling training providers to build modular, updateable programs. Correct in principle, but it demands organizational capacity that most workforce boards don\u2019t have."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What the Framework Misses",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The DOL\u2019s focus on generative AI is strategically understandable but too narrow. Workers don\u2019t only encounter AI as users of ChatGPT or Copilot. They encounter it as subjects of hiring algorithms, scheduling systems, productivity monitoring, and benefits-determination tools. The majority of large companies now use AI-enabled hiring tools. Brookings research found that interacting with biased AI made respondents more likely to make biased decisions themselves."
+          },
+          {
+            "type": "text",
+            "prop": "The framework teaches you to use AI responsibly. It doesn\u2019t teach you what to do when AI is used on you."
+          },
+          {
+            "type": "text",
+            "prop": "The EU\u2019s AI Act takes a broader view. Article 4 creates a legal obligation for providers and deployers of AI systems to ensure sufficient AI literacy among staff. The EU treats AI literacy as organizational accountability, not just individual skill. The DOL framework does address employers and training providers, but because it\u2019s voluntary guidance rather than binding regulation, the practical burden of building AI competence falls more heavily on workers themselves."
+          },
+          {
+            "type": "text",
+            "prop": "There\u2019s a gap around governance literacy too. Understanding regulatory environments, rights of redress, and accountability mechanisms doesn\u2019t appear in the DOL\u2019s five content areas. For workers in healthcare, education, or financial services, those are daily operational realities."
+          },
+          {
+            "type": "text",
+            "prop": "And the \u201cuse AI responsibly\u201d content area addresses individual behaviors without touching structural questions. Who bears the cost when AI makes an error in a clinical workflow? Who audits the AI that scores your performance review? These aren\u2019t edge cases anymore. They\u2019re the questions that connect the framework\u2019s gaps to the industries where the stakes are highest."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Healthcare and Education",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I work at a company that sits at the intersection of healthcare and education. Our clinicians assess children for learning disabilities. Our engineers build tools that support those assessments. Our product managers translate between both worlds. AI literacy here isn\u2019t abstract workforce development. It\u2019s clinical safety."
+          },
+          {
+            "type": "text",
+            "prop": "When a speech-language pathologist uses AI to help draft a progress report, the evaluation skill matters more than the prompting skill. Is the generated language clinically accurate? Does it reflect the specific child? Does it comply with IDEA documentation requirements? A generic AI literacy program won\u2019t answer those questions. Domain-embedded training will."
+          },
+          {
+            "type": "text",
+            "prop": "When an engineer deploys a model that flags students as at-risk, the responsible-use dimension goes well beyond \u201cdon\u2019t share sensitive data.\u201d It includes bias, false positive rates, and what happens when an algorithm gets the recommendation wrong. We\u2019ve written about why algorithmic identification of learning disabilities performs at the level of chance. AI literacy for our team means understanding why that happens and building the guardrails that prevent it."
+          },
+          {
+            "type": "text",
+            "prop": "The DOL\u2019s delivery principle about context-embedded learning is the most important line in the entire framework. But it requires organizations to invest in building role-specific AI training, not just hand everyone the same webinar."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Equity Problem",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The $2.75 billion Digital Equity Act program, which would have built the prerequisite infrastructure for AI literacy in underserved communities, was cancelled in May 2025. The DOL framework that assumes that infrastructure exists arrived ten months later."
+          },
+          {
+            "type": "text",
+            "prop": "The DOL acknowledges prerequisites: digital literacy, device access, broadband connectivity. The National Skills Coalition found that one-third of workers lack foundational digital skills, with disproportionate impact on workers of color, low-income individuals, and rural residents. Brookings identified 6.1 million workers facing both high AI exposure and low adaptive capacity. Disproportionately lower-income, less-educated, non-metropolitan. The workers most likely to be displaced by AI systems they can\u2019t use, contest, or understand."
+          },
+          {
+            "type": "text",
+            "prop": "If AI literacy becomes a baseline employability requirement, and it will, then the digital divide becomes the AI divide. The DOL\u2019s framework is voluntary. It relies on market incentives and WIOA funding flexibility. Historically, that model underinvests in training for the people who need it most. The EU\u2019s binding mandate creates an accountability floor. The U.S. approach creates an opportunity ceiling that not everyone can reach."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Comes After",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "AI literacy requirements will enter job descriptions and hiring criteria across professional services, healthcare, finance, and government. The DOL framework accelerates a process that employer demand was already driving. Gallup\u2019s Q3 2025 data already shows the diffusion curve: 45 percent of employees use AI at least a few times a year, but daily use sits around 10 percent. The gap between casual exposure and deep integration is where this framework will either succeed or become compliance theater."
+          },
+          {
+            "type": "text",
+            "prop": "The competency model will tier out. The DOL\u2019s baseline is necessary but not sufficient. Organizations will need to distinguish between general AI literacy for everyone, job-context AI fluency for specific roles, and builder-level capability for technical teams. The framework acknowledges this implicitly but doesn\u2019t operationalize it."
+          },
+          {
+            "type": "text",
+            "prop": "And the bigger shift will come from the tools themselves. As AI becomes more autonomous, literacy won\u2019t mean knowing how to write a good prompt. It\u2019ll mean knowing how to supervise a multi-step AI workflow: setting constraints, monitoring progress, auditing outputs, verifying provenance. The DOL\u2019s emphasis on evaluation and accountability already points in this direction, even if the current examples don\u2019t reach it yet."
+          },
+          {
+            "type": "text",
+            "prop": "Whether the framework\u2019s measurement of AI literacy captures actual capability or just training completion rates will determine whether this produces a more competent workforce or just a more credentialed one."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''AI Literacy Mandate'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/ai-literacy-mandate/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.dol.gov/agencies/eta/advisories/ten-07-25",
+              "title": "TEN 07-25: U.S. Department of Labor AI Literacy Framework",
+              "description": "DOL Training and Employment Notice releasing the AI Literacy Framework for workforce and education systems (February 2026)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/",
+              "title": "Executive Order 14277: Advancing AI Education for American Youth",
+              "description": "Presidential executive order establishing the White House Task Force on AI Education (April 2025)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.dol.gov/agencies/eta/advisories/tegl-03-25",
+              "title": "TEGL 03-25: Encouraging WIOA Funding for AI Skills",
+              "description": "DOL guidance encouraging states to use Workforce Innovation and Opportunity Act funding for AI skills development (August 2025)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.dol.gov/sites/dolgov/files/OPA/newsreleases/2025/08/Americas-Talent-Strategy-Building-the-Workforce-for-the-Golden-Age.pdf",
+              "title": "America\u2019s Talent Strategy: Building the Workforce for the Golden Age",
+              "description": "Joint DOL, Commerce, and Education workforce strategy identifying AI literacy as a strategic pillar (August 2025)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.euaiact.com/article/4",
+              "title": "EU AI Act Article 4: AI Literacy",
+              "description": "Legal obligation for AI providers and deployers to ensure sufficient AI literacy among staff (effective February 2025)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+              "title": "McKinsey: The State of AI in 2025",
+              "description": "McKinsey survey finding 92% of companies plan to increase AI investment while only 1% classify as mature in deployment."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+              "title": "World Economic Forum: Future of Jobs Report 2025",
+              "description": "WEF report finding analytical thinking remains the most sought-after skill, cited as essential by 7 in 10 employers."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.gallup.com/workplace/699689/ai-use-at-work-rises.aspx",
+              "title": "Gallup: AI Use at Work Rises",
+              "description": "Gallup Q3 2025 data showing 45% of employees use AI at work at least a few times a year, with daily use at 10%."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.brookings.edu/articles/measuring-us-workers-capacity-to-adapt-to-ai-driven-job-displacement/",
+              "title": "Brookings: Measuring Workers\u2019 Capacity to Adapt to AI",
+              "description": "Brookings analysis identifying 6.1 million workers facing high AI exposure and low adaptive capacity."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.brookings.edu/articles/ais-threat-to-individual-autonomy-in-hiring-decisions/",
+              "title": "Brookings: AI\u2019s Threat to Autonomy in Hiring Decisions",
+              "description": "Brookings research finding that interacting with biased AI increased biased decision-making in respondents."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://nationalskillscoalition.org/news/press-releases/new-report-92-of-jobs-require-digital-skills-one-third-of-workers-have-low-or-no-digital-skills-due-to-historic-underinvestment-structural-inequities/",
+              "title": "National Skills Coalition: Digital Skills Divide",
+              "description": "Report finding one-third of workers lack foundational digital skills, with disproportionate impact on marginalized communities."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://arxiv.org/abs/2511.05475",
+              "title": "AI Literacy Assessment Revisited: A Task-Oriented Approach",
+              "description": "Study conducted within a Navy robotics training program finding scenario-based tasks outperform knowledge tests for AI literacy assessment."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

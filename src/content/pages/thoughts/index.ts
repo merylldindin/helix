@@ -1,3 +1,4 @@
+export { default as AI_LITERACY_MANDATE } from "./AI_LITERACY_MANDATE.json";
 export { default as AI_MEETS_MENTAL_HEALTH } from "./AI_MEETS_MENTAL_HEALTH.json";
 export { default as AI_SPECIAL_EDUCATION } from "./AI_SPECIAL_EDUCATION.json";
 export { default as ARRHYTHMIA_CLASSIFICATION } from "./ARRHYTHMIA_CLASSIFICATION.json";

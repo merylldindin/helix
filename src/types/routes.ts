@@ -1,4 +1,5 @@
 export enum RoutePath {
+  AI_LITERACY_MANDATE = "/thoughts/ai-literacy-mandate/",
   AI_MEETS_MENTAL_HEALTH = "/thoughts/ai-meets-mental-health/",
   AI_SPECIAL_EDUCATION = "/thoughts/ai-special-education/",
   ARRHYTHMIA_CLASSIFICATION = "/thoughts/arrhythmia-classification/",

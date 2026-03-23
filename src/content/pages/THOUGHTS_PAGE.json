@@ -101,6 +101,49 @@
     },
     {
       "name": "IMAGE_SECTION",
+      "id": "ai-literacy-mandate-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "AI Literacy Mandate",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "February 13, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The U.S. Department of Labor just made AI literacy a foundational workforce skill. What that means for every role at every company, and what the framework gets wrong."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article AI Literacy Mandate",
+              "to": "/thoughts/ai-literacy-mandate/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Geometric emblem with concentric rings dissolving into circuit-like branching pathways",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/ai-literacy-mandate-20260323T112339.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/ai-literacy-mandate-20260323T112339-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/ai-literacy-mandate-20260323T112339-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/ai-literacy-mandate-20260323T112339-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "measuring-student-outcomes-section",
       "props": {
         "content": [
