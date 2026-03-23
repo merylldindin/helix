@@ -1,0 +1,39 @@
+.claude/skills/create-article/references/registration-checklist.md
+  2e3ec2d4855ec7b6 54
+.claude/skills/create-article/SKILL.md
+  2e3ec2d4855ec7b6 11,48,75
+src/content/pages/THOUGHTS_PAGE.json
+  2e3ec2d4855ec7b6 61-101
+src/utils/routes.ts
+  2e3ec2d4855ec7b6 23,59
+src/types/routes.ts
+  2e3ec2d4855ec7b6 23
+.claude/skills/create-article/references/article-conventions.md
+  2e3ec2d4855ec7b6 102,106-110
+src/content/pages/thoughts/SLD_IDENTIFICATION.json
+  2e3ec2d4855ec7b6 1-328
+src/content/pages/thoughts/index.ts
+  2e3ec2d4855ec7b6 8
+.claude/skills/create-article/references/editorial-guidelines.md
+  2e3ec2d4855ec7b6 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "dbb8b758463086abce17cc401ea969382eeba3d2",
+  "prompts": {
+    "2e3ec2d4855ec7b6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "af46b41e-ff8a-43c2-acf5-1ff69d4f9bed",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 478,
+      "total_deletions": 66,
+      "accepted_lines": 424,
+      "overriden_lines": 0
+    }
+  }
+}
