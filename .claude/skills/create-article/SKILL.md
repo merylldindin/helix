@@ -97,7 +97,7 @@ yarn eslint:fix  # Fix any issues
 
 ### 9. Get User Approval
 
-Show the user the final article on dev server (`make start`) for visual review.
+Ask the user to review the final article on their local dev server (do NOT start the server — the user manages it).
 
 ## Dependent Skills
 
