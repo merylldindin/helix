@@ -10,6 +10,7 @@ export enum RoutePath {
   FUTURE_OF_STORYTELLING = "/thoughts/future-of-storytelling/",
   LANDING_PAGE = "/",
   LEARNING_DIFFERENCES = "/thoughts/learning-differences/",
+  MEASURING_STUDENT_OUTCOMES = "/thoughts/measuring-student-outcomes/",
   MENTIONS = "/mentions/",
   MISSIONS = "/missions/",
   MODELS_HUMAN_COGNITION = "/thoughts/models-human-cognition/",

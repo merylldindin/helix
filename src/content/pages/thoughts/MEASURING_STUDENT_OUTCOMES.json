@@ -1,0 +1,256 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2025-12-09",
+      "datePublished": "2025-12-09",
+      "keywords": "student outcomes, IEP goals, special education, progress monitoring, telehealth, data analytics, speech therapy, learning differences"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/measuring-student-outcomes/",
+    "title": "Measuring Student Outcomes | Meryll Dindin",
+    "description": "How we built a data system to track IEP progress across thousands of students, and what 98% at-or-above target tells us about virtual special education.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/measuring-student-outcomes-20260322T222547.webp",
+    "thumbnailAlt": "Ascending line with geometric data point nodes suggesting measured progress"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Interlocking line graphs with ascending data points and geometric nodes representing tracked progress over time",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/measuring-student-outcomes-20260322T222551.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/measuring-student-outcomes-20260322T222551-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/measuring-student-outcomes-20260322T222551-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/measuring-student-outcomes-20260322T222551-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Measuring Student Outcomes",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published December 9, 2025",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Special education runs on paperwork and promises. Districts write Individualized Education Programs for every qualifying student, then have no reliable way to prove those plans worked. The services happen. Whether they produce results anyone can measure is a different question."
+          },
+          {
+            "type": "text",
+            "prop": "I\u2019ve spent the last two years at Parallel Learning building the data systems to answer that. The answer turned out to be more technical and more human than I expected."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Staffing Hole",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Sixteen thousand more special education teachers leave the profession each year than enter it. Student numbers keep climbing: 7.5 million in the 2022-2023 school year, up from 7.1 million four years earlier, now roughly 15% of all public school students. The $190 billion in federal pandemic aid that propped up programs expired in September 2024."
+          },
+          {
+            "type": "text",
+            "prop": "Parallel Learning works with school districts to fill that gap through virtual service delivery. During the 2024-2025 school year, our providers delivered more than 77,000 sessions to students across 18 states. These weren\u2019t supplemental. They were the legally mandated services written into each student\u2019s IEP: speech-language therapy, behavioral mental health counseling, specialized instruction, psychoeducational evaluations. Eighty percent of the communities we served scored High or Very High on the CDC\u2019s Social Vulnerability Index, meaning we were reaching the districts least equipped to solve their own shortages."
+          },
+          {
+            "type": "text",
+            "prop": "Our platform, Pathway, is where all of this gets tracked. Goals, metrics, session notes, and progress charts live inside the same telehealth interface providers use to deliver services. No toggling between a video call and a separate system. That design choice would matter later, when we started measuring what we\u2019d built."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Makes This Hard",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Every student\u2019s IEP looks different. One kid has a single articulation goal. Another has four goals spanning reading comprehension, written expression, and social-emotional behavior. The goals vary in type: over 90% of ours are accuracy-based, but we also track frequency, prompting levels (how much adult support a student needs), and duration. The targets are different. The timelines are different."
+          },
+          {
+            "type": "text",
+            "prop": "Completion rates seemed like the obvious starting metric. Did the student meet their goal or not? Simple."
+          },
+          {
+            "type": "text",
+            "prop": "It didn\u2019t work. Providers consistently under-report completion. Many inherit students mid-cycle from other clinicians and don\u2019t feel authorized to mark objectives as achieved. Out of thousands of tracked objectives, only 170 showed manual completion marking. Completion data told us almost nothing about whether students were actually advancing."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "From Completion to Progress",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "So we shifted to baseline-to-peak progress. Compare each student\u2019s first recorded metric against their highest recorded value. A student who started at 26.7% accuracy and reached 92.8% made progress, regardless of whether anyone clicked an \u201cachieved\u201d button."
+          },
+          {
+            "type": "text",
+            "prop": "This required a few deliberate choices. We use actual baseline performance, not zero-baseline. Some districts advocate for zero-baseline calculations, but our clinical team argues the first recorded metric is more accurate given provider assessment protocols. When a student starts above their IEP target and stays there, we count that as progress too, because targets are sometimes set below a student\u2019s actual capability. And we filter for data sufficiency: at minimum two recorded metrics per objective, with a clinical standard of five sessions, representing roughly a month of intervention."
+          },
+          {
+            "type": "text",
+            "prop": "Since Pathway\u2019s release, we\u2019ve captured 102,400 individual metrics across 4,697 students with quantified IEP objectives. Students average four sessions generating progress data. Metrics get recorded every 16.7 days on average across 18,709 tracked objectives. Median gap between consecutive recordings: eight days."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What the Data Shows",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The methodology comes from a white paper we published in late 2025, written by Dr. A. Jordan Wright and Stacie Corder. Every student\u2019s IEP year starts at a different calendar point, so we standardized goals across students, weighted them equally, and scaled target expectations by how long each student had been working. A student whose IEP was set in February and whose school year ended in June would have a target of completing 50% of their goals by year\u2019s end."
+          },
+          {
+            "type": "text",
+            "prop": "We defined three categories: below expectations (more than 10% under target), on target (within 10%), and above expectations (more than 10% over). The 10% threshold was chosen as a reasonable confidence interval given the natural variance in session-to-session performance."
+          },
+          {
+            "type": "text",
+            "prop": "Across all service lines, 98% of students were at or above target expectations. Only 2.1% of speech-language pathology students fell below. For behavioral mental health and specialized instruction, zero percent."
+          },
+          {
+            "type": "text",
+            "prop": "We also run satisfaction surveys at the end of every session, a slider on a 0-10 scale calibrated for children. Average score for how students feel about their provider: 8.9 out of 10. People assume a screen makes therapeutic relationships harder. The students don\u2019t seem to agree."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Appointment Count Is the Signal",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The clearest pattern in our data: more appointments mean more progress. Students who showed progress averaged 13.88 appointments. Students without progress averaged 5.70. The median tells the same story: 13 versus 4."
+          },
+          {
+            "type": "text",
+            "prop": "What\u2019s interesting isn\u2019t the direction of the correlation, which is obvious. It\u2019s the magnitude of the gap. The distributions barely overlap. Students with fewer than five sessions almost never show progress; students with more than ten almost always do. That makes the case for consistent service delivery concrete and numerical. In a field plagued by cancellations, no-shows, and staffing gaps, the data now says exactly what\u2019s at stake when a session doesn\u2019t happen."
+          },
+          {
+            "type": "text",
+            "prop": "Age and geography, by contrast, aren\u2019t strong predictors. Mean age for students with and without progress is nearly identical: 10.14 versus 10.20. Regional progress rates hold steady across the Midwest, Northeast, South, and West, ranging from 82% to 86%. Whatever drives progress, it isn\u2019t where the student lives or how old they are. It\u2019s whether they show up, and whether someone shows up for them."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Comes Next",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Progress measurement was the foundation, not the end. The next step is normalized regression metrics: progress velocity calculations and cross-student comparisons that could eventually power an intervention recommendation engine. If we know that students with certain profiles respond faster to specific approaches, we can stop guessing and start prescribing."
+          },
+          {
+            "type": "text",
+            "prop": "We\u2019re also restructuring goal writing itself. AI-assisted goal creation and a goal bank should standardize the format while preserving clinical flexibility. Data capture gets cleaner when goals are written in ways that naturally produce comparable outputs."
+          },
+          {
+            "type": "text",
+            "prop": "Further out, we\u2019re training the system to flag whether poor performance stems from individual providers or systemic account-level factors, using statistical benchmarks against organization-wide averages. When a whole account underperforms, the diagnosis changes. These tools make the clinical team faster. They don\u2019t replace their judgment."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why This Matters",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Federal law requires districts to deliver special education services. It says almost nothing about proving those services work. The gap between mandate and measurement has persisted because the problem is hard and nobody was forced to close it."
+          },
+          {
+            "type": "text",
+            "prop": "We\u2019re closing it. And the question that should follow isn\u2019t whether 98% is impressive. It\u2019s why every provider of special education services isn\u2019t held to the same standard of proof."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Measuring Student Outcomes'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/measuring-student-outcomes/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.parallellearning.com",
+              "title": "Parallel Learning Outcomes: 2024-2025 School Year",
+              "description": "White paper by A. Jordan Wright, PhD and Stacie Corder, M.Ed., Ed.S. on student progress measurement methodology."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.atsdr.cdc.gov/place-health/php/svi/index.html",
+              "title": "CDC/ATSDR Social Vulnerability Index",
+              "description": "Measures community-level demographic and socioeconomic factors affecting resilience to health stressors."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1037/pst0000167",
+              "title": "Collecting and Delivering Progress Feedback: A Meta-Analysis of Routine Outcome Monitoring",
+              "description": "Lambert, Whipple & Kleinstauber (2018). Psychotherapy, 55(4), 520-537."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1377/hlthaff.26.5.1220",
+              "title": "Vulnerable People, Groups, and Populations: Societal View",
+              "description": "Mechanic & Tanner (2007). Health Affairs, 26(5), 1220-1230."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1016/j.cpr.2017.04.005",
+              "title": "The Application of a Feedback-Informed Approach in Psychological Service with Youth",
+              "description": "Tam & Ronan (2017). Clinical Psychology Review, 55, 41-55."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
