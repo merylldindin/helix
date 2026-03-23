@@ -1,0 +1,31 @@
+src/types/routes.ts
+  a981901f9d0ce18b 13
+src/content/pages/thoughts/index.ts
+  a981901f9d0ce18b 5
+src/content/pages/thoughts/MEASURING_STUDENT_OUTCOMES.json
+  a981901f9d0ce18b 1-256
+src/content/pages/THOUGHTS_PAGE.json
+  a981901f9d0ce18b 61-101
+src/utils/routes.ts
+  a981901f9d0ce18b 13,47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "07c08376802f36f09ebff06156743cad9d96832e",
+  "prompts": {
+    "a981901f9d0ce18b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "298150ae-06e5-42ff-8077-286b0b36dd90",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 339,
+      "total_deletions": 36,
+      "accepted_lines": 303,
+      "overriden_lines": 0
+    }
+  }
+}
