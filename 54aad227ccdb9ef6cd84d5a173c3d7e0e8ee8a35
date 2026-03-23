@@ -1,0 +1,31 @@
+src/utils/routes.ts
+  362973089b3cbf68 2,39
+src/content/pages/THOUGHTS_PAGE.json
+  362973089b3cbf68 104-144
+src/content/pages/thoughts/AI_LITERACY_MANDATE.json
+  362973089b3cbf68 1-324
+src/types/routes.ts
+  362973089b3cbf68 2
+src/content/pages/thoughts/index.ts
+  362973089b3cbf68 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "54aad227ccdb9ef6cd84d5a173c3d7e0e8ee8a35",
+  "prompts": {
+    "362973089b3cbf68": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7d8886e3-216f-4f2c-b71c-53c002532463",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 388,
+      "total_deletions": 17,
+      "accepted_lines": 371,
+      "overriden_lines": 0
+    }
+  }
+}
