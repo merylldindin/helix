@@ -1,0 +1,52 @@
+src/types/routes.ts
+  9e068d559261852d 2-3
+src/content/pages/thoughts/index.ts
+  9e068d559261852d 1
+src/content/pages/THOUGHTS_PAGE.json
+  9e068d559261852d 18-58
+src/utils/routes.ts
+  9e068d559261852d 2,35-36
+.claude/skills/create-article/references/article-conventions.md
+  9e068d559261852d 1-196
+src/content/pages/thoughts/AI_SPECIAL_EDUCATION.json
+  9e068d559261852d 1-256
+CLAUDE.md
+  9e068d559261852d 28-33
+.claude/skills/create-article/SKILL.md
+  9e068d559261852d 1-105
+.claude/skills/create-article/references/registration-checklist.md
+  9e068d559261852d 1-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "0806df80159d1b6d1fb6d0100688bd1e1334ddcb",
+  "prompts": {
+    "9e068d559261852d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "00aa7a39-c545-42d8-8a00-b0ffa08dacf6",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 754,
+      "total_deletions": 88,
+      "accepted_lines": 673,
+      "overriden_lines": 0
+    },
+    "c00100566980f2a5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ef072c55-89f9-44be-b9df-99f3c69e8fe0",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 658,
+      "total_deletions": 381,
+      "accepted_lines": 421,
+      "overriden_lines": 0
+    }
+  }
+}
