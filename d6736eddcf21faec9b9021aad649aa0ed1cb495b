@@ -1,0 +1,27 @@
+src/content/pages/LANDING_PAGE.json
+  969f62aece89dd70 223
+src/content/schemas/default.json
+  969f62aece89dd70 51
+src/public/llms-full.txt
+  969f62aece89dd70 20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "d6736eddcf21faec9b9021aad649aa0ed1cb495b",
+  "prompts": {
+    "969f62aece89dd70": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c636afb8-fcb5-4080-bded-2e9d3c2c9ae4",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 3,
+      "total_deletions": 3,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    }
+  }
+}
