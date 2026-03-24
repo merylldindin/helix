@@ -1,0 +1,31 @@
+src/types/routes.ts
+  9f5f303d027433aa 3
+src/content/pages/thoughts/index.ts
+  9f5f303d027433aa 2
+src/content/pages/THOUGHTS_PAGE.json
+  9f5f303d027433aa 18-58
+src/utils/routes.ts
+  9f5f303d027433aa 41
+src/content/pages/thoughts/AI_NEEDS_A_SPONSOR.json
+  9f5f303d027433aa 1-344
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "f789910cb0f326640df628e24e827b55760f609b",
+  "prompts": {
+    "9f5f303d027433aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "98bf7a79-c72c-4b05-9edf-b0cd0962f1e2",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 721,
+      "total_deletions": 46,
+      "accepted_lines": 674,
+      "overriden_lines": 0
+    }
+  }
+}
