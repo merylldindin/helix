@@ -10,6 +10,7 @@ export enum RoutePath {
   DILLYGENCE = "/ventures/dillygence/",
   ENHANCER_SUGGESTIONS = "/suggestions/enhancers/",
   FUJITSU = "/ventures/fujitsu/",
+  FULL_STACK_BUILDER = "/thoughts/full-stack-builder/",
   FUTURE_OF_STORYTELLING = "/thoughts/future-of-storytelling/",
   LANDING_PAGE = "/",
   LEARNING_DIFFERENCES = "/thoughts/learning-differences/",

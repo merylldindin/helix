@@ -1,0 +1,272 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-03-20",
+      "datePublished": "2026-03-20",
+      "keywords": "full-stack builder, AI tools, generalist, prompt-to-app, agentic AI, taste, smoke marketing, lean team, CLI agents, creation tools"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/full-stack-builder/",
+    "title": "Full-Stack Builder | Meryll Dindin",
+    "description": "Full-stack used to mean frontend and backend. Now it means one person shipping what used to take a cross-functional team. What changed.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/full-stack-builder-20260323T173128.webp",
+    "thumbnailAlt": "Overlapping geometric tool shapes fused into a single form at the intersection of radiating grid lines"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Multiple geometric tool silhouettes converging along parallel lines toward a single vanishing point",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/full-stack-builder-20260323T173206.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/full-stack-builder-20260323T173206-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/full-stack-builder-20260323T173206-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/full-stack-builder-20260323T173206-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Full-Stack Builder",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published March 20, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A year ago, \u201cfull-stack\u201d meant you could write frontend and backend code. Today it means you can research a market, build a prototype, design the landing page, write the copy, set up analytics, deploy it, and iterate on user feedback, all before lunch. The tools caught up to the ambition."
+          },
+          {
+            "type": "text",
+            "prop": "I watch it happen every week. Non-engineers at my company build polished deliverables that used to require cross-functional teams and multi-week timelines. I advise early-stage founders who operate as solo technical teams, shipping products that would have required five people eighteen months ago."
+          },
+          {
+            "type": "text",
+            "prop": "The question isn\u2019t whether one person can do the work of a team. The question is what kind of person, and what separates the ones who build real things from the ones who generate noise."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Know What You\u2019re Choosing Between",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The AI landscape has split into four categories, and understanding the split matters because each demands something different from you."
+          },
+          {
+            "type": "text",
+            "prop": "Ambient AI is the quiet winner. Gemini transcribing your meetings. Slack summarizing channels you missed. Linear auto-triaging tickets. Zendesk deflecting tier-one support. You turn it on, collect the data, and six months later you have a searchable corpus of every conversation your company has ever had. Companies that started collecting early are sitting on an advantage that\u2019s nearly impossible to backfill."
+          },
+          {
+            "type": "text",
+            "prop": "On the builder side, CLI agents like Claude Code, Gemini CLI, Cursor, and Windsurf have turned coding into a collaborative conversation with tools that understand your entire codebase. Prompt-to-app platforms like Replit and Lovable let anyone ship a working application from a text description. And agentic AI, where autonomous agents plan, use tools, and iterate across multi-step tasks, is where most of the real operational value sits for companies that have their data layer in order."
+          },
+          {
+            "type": "text",
+            "prop": "What connects all of this is MCP, the Model Context Protocol. Think of it as USB-C for AI: one protocol to plug models into any system. CRM, database, ticketing, support. Salesforce Agentforce, Notion AI, Airtable Agents all expose their data through MCP servers. The procurement question stopped being \u201cwhich tool is best?\u201d and became \u201cwhich tools connect with each other?\u201d Isolated tools are already obsolete."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Everyone Became a Creator",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The shift that matters most for founders isn\u2019t in code. It\u2019s in everything adjacent to code that used to require specialized hires or expensive contractors."
+          },
+          {
+            "type": "text",
+            "prop": "The person who adopted AI most aggressively at my company was the biggest skeptic six months ago. She runs operations. She stopped typing SOPs and started dictating them with voice-to-text, and her output tripled. At our last team meeting, she gave a presentation on the workflow to the entire company. She now trains other people on it."
+          },
+          {
+            "type": "text",
+            "prop": "She\u2019s not an outlier. I haven\u2019t manually created a slide deck in months. A customer success lead built a client-facing template in Figma Make in an hour, without involving design or engineering. Marketing creates social assets with image generation. Clinical teams prepare visuals for provider meetings the same way. No designer bottleneck. No ticket queue. The tools didn\u2019t replace anyone\u2019s judgment. They removed the friction between having an idea and expressing it."
+          },
+          {
+            "type": "text",
+            "prop": "The people who benefit most aren\u2019t the technical staff. They\u2019re the operational, clinical, and commercial people whose work was bottlenecked by their ability to produce polished output. That pattern is consistent across every team I\u2019ve watched adopt these tools."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Smoke Marketing and Taste",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Here\u2019s where I get opinionated."
+          },
+          {
+            "type": "text",
+            "prop": "The barrier to producing professional-looking output has collapsed. Mostly good. But the market is flooding with content, products, and pitches that look polished and say nothing. Prompt-to-app platforms let anyone ship a working demo in minutes. That demo will have clean CSS, responsive layout, and zero differentiation."
+          },
+          {
+            "type": "text",
+            "prop": "The bottleneck moved from production to taste."
+          },
+          {
+            "type": "text",
+            "prop": "When anyone can generate, the differentiator is knowing what\u2019s good. Taste in product decisions. Taste in messaging. Taste in what to build and what to skip. The founder who can look at ten generated options and pick the right one, or reject all ten and articulate why, has leverage that no tool can replicate."
+          },
+          {
+            "type": "text",
+            "prop": "Every SaaS product is \u201cAI-powered\u201d now. Every startup pitch includes the word \u201cagentic.\u201d Most of it is positioning, not capability. The founders who win are the ones who evaluate what\u2019s real, switch tools when something better arrives, and avoid getting locked into a stack that\u2019s aging underneath them. Loyalty to a vendor is not a strategy."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Lean Team",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I run a technology team of seven. Three developers, myself, one AI specialist, one data analyst, one designer. We maintain a production platform, a data lake with hundreds of thousands of documented nodes, an internal AI agent used across every department, security and compliance infrastructure, and a continuous stream of new capabilities."
+          },
+          {
+            "type": "text",
+            "prop": "This works because every person on the team operates as a full-stack builder within their domain. The AI specialist builds Slack integrations, data pipelines, and agent skills. The data analyst writes queries, builds dashboards, and maintains documentation. The developers ship features, review AI-generated code, and design system architecture."
+          },
+          {
+            "type": "text",
+            "prop": "I was pitched by engineering leaders who told me I needed twenty engineers. I knew that math was wrong. Not because twenty couldn\u2019t do more, but because the coordination overhead would consume most of the additional capacity. A lean team with good tools, clear ownership, and minimal handoff friction will outpace a large team drowning in coordination every time."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Defines the Builder",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "When production is free, curation becomes the scarce resource. AI amplifies taste. It doesn\u2019t create it. The founder who can look at ten generated options and pick the right one has leverage that no tool can replicate. This applies to code, copy, design, strategy, and hiring."
+          },
+          {
+            "type": "text",
+            "prop": "Opinions matter more than they used to. The market is flooded with noise. Strong, informed opinions about what works and what doesn\u2019t are how you cut through. Not stubbornness. The willingness to evaluate, decide, move, and change your mind when the evidence changes."
+          },
+          {
+            "type": "text",
+            "prop": "Generalist thinking is what AI rewards most. The best applications come from understanding the whole business, not just your function. The customer success lead who built that Figma template wasn\u2019t just saving herself design time. She was creating a pattern every team member could reuse, which raised the quality bar for client-facing materials across the whole team. That\u2019s systemic thinking, and it comes from seeing the business as one connected thing rather than a collection of departments."
+          },
+          {
+            "type": "text",
+            "prop": "And the pace rewards people who are energized by change rather than paralyzed by it. Every month, something in your stack becomes obsolete or gets a major upgrade. Waiting for stability that will never arrive is the most expensive decision you can make. Not that one person replaces a team. But a small team of capable generalists, armed with tools that eliminate production bottlenecks, can operate at a scale that previously required an org chart."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Full-Stack Builder'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/full-stack-builder/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://modelcontextprotocol.io/",
+              "title": "Model Context Protocol (MCP)",
+              "description": "Open protocol for connecting AI models to external data sources and tools, enabling cross-system integration."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://claude.ai/claude-code",
+              "title": "Claude Code",
+              "description": "Anthropic\u2019s CLI tool for agentic coding with full codebase context, tests, reviews, and deploys."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://blog.google/technology/google-deepmind/gemini-cli/",
+              "title": "Gemini CLI",
+              "description": "Google\u2019s open-source CLI agent for coding and task automation with deep Google ecosystem integration."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://cursor.com/",
+              "title": "Cursor",
+              "description": "AI-native code editor with agentic capabilities for full-task execution from natural language."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://replit.com/",
+              "title": "Replit",
+              "description": "Cloud development platform with AI-powered prompt-to-app capabilities for rapid prototyping."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://lovable.dev/",
+              "title": "Lovable",
+              "description": "Prompt-to-app platform for shipping working web applications from text descriptions."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://gamma.app/",
+              "title": "Gamma",
+              "description": "AI-native presentation and document creation tool used across departments for polished output."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.figma.com/make/",
+              "title": "Figma Make",
+              "description": "Figma\u2019s text-to-prototype feature for rapid UI design iteration without traditional design skills."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.wispr.ai/",
+              "title": "Wispr Flow",
+              "description": "Voice-to-text tool that flows into any application for dictation-based content creation."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
