@@ -1,0 +1,344 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-03-19",
+      "datePublished": "2026-03-19",
+      "keywords": "AI adoption, executive sponsorship, AI literacy, workforce development, AI policy, token economics, talent retention, DOL AI framework"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/ai-needs-a-sponsor/",
+    "title": "AI Needs a Sponsor | Meryll Dindin",
+    "description": "AI adoption doesn\u2019t start with a strategy deck. It starts with one person who has the authority to make it everyone\u2019s job.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/ai-needs-a-sponsor-20260323T172151.webp",
+    "thumbnailAlt": "Geometric key shape composed of interconnected circuit nodes radiating branching network pathways"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Branching geometric pathways flowing from a single origin point across a structured network",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/ai-needs-a-sponsor-20260323T172234.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/ai-needs-a-sponsor-20260323T172234-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/ai-needs-a-sponsor-20260323T172234-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/ai-needs-a-sponsor-20260323T172234-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "AI Needs a Sponsor",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published March 19, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I\u2019ve given some version of this talk three times in the past two months. Different audiences, different industries, same pattern. Someone in the room asks, \u201cWhere do we start with AI?\u201d and someone else answers with a strategy deck, a vendor shortlist, or a pilot project. Wrong answer every time."
+          },
+          {
+            "type": "text",
+            "prop": "AI adoption starts with a person. One person with enough organizational authority to make it everyone\u2019s incentive, not just the engineering team\u2019s curiosity. I call that person a sponsor, and without one, your best AI initiatives will die in procurement."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why Strategy Decks Stall",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I run product, engineering, data, and security at a healthcare company that sells special education services to K-12 school districts across the United States. On paper, we\u2019re one of the last companies that should be leading on AI. Healthcare compliance, K-12 bureaucracy, a remote team spread across time zones. Every instinct says \u201cwait and see.\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "We went the other direction. Not because we had a strategy deck. Because we had executive sponsorship that turned AI from an engineering experiment into a company initiative."
+          },
+          {
+            "type": "text",
+            "prop": "Here\u2019s what happens without a sponsor. One team adopts a tool. Another team blocks it. Legal reviews drag past the tool\u2019s relevance window. Security concerns become blanket vetoes rather than informed decisions. No budget gets allocated for experimentation because nobody owns the outcome. I\u2019ve watched this pattern repeat at companies three times our size and I\u2019ve watched it paralyze startups with twelve people."
+          },
+          {
+            "type": "text",
+            "prop": "With a sponsor, the dynamic changes. There\u2019s a clear policy that teaches rather than restricts. Budget for tokens, tools, and training. Legal and IT become enablers instead of gatekeepers. Adoption becomes a company initiative rather than a side project someone squeezes in between quarterly planning sessions."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "A Hiring Signal You Can\u2019t Fake",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "AI fluency is becoming a filter. When I grew my team recently, I was struck by how many candidates across product, engineering, IT, and security asked about our AI tooling during interviews. Not out of curiosity. To decide whether they wanted to work here."
+          },
+          {
+            "type": "text",
+            "prop": "One senior engineer told me he was \u201cfreaking out\u201d when he misunderstood and thought we weren\u2019t paying for premium AI coding seats. The best people want to go where they can move fast, and right now, moving fast means access to tools that eliminate the repetitive parts of knowledge work."
+          },
+          {
+            "type": "text",
+            "prop": "The instinct at most companies is to restrict. Set monthly token budgets per employee. Limit AI tool access to specific roles. Require approval for every new tool. Monitor usage as a cost center. Every one of these instincts is wrong."
+          },
+          {
+            "type": "text",
+            "prop": "Gallup\u2019s Q3 2025 data shows the diffusion curve: 45 percent of employees already use AI at work at least a few times a year, but daily use sits around 10 percent. The gap between casual exposure and deep integration is where the talent fight is happening. Your best people don\u2019t want to be in the 45 percent. They want to be in the 10 percent, and they\u2019ll go where the company lets them."
+          },
+          {
+            "type": "text",
+            "prop": "Restricting usage trains people not to experiment. The cost of tokens is dropping quarter over quarter. The cost of a slow team is not. Treat AI access like internet access, a baseline, not a perk. Define clear policies on data handling and security, then let people run."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Token Math",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I keep running into founders who think AI is expensive. So I started doing the math in front of them. A knowledge worker produces roughly three million tokens of output per year and consumes about sixteen million. The raw API cost to match that output? A few hundred dollars. Even with agentic overhead, you\u2019re at 0.5 to 2 percent of what you\u2019d pay a person. The ratio holds even with a supervision tax."
+          },
+          {
+            "type": "text",
+            "prop": "The question isn\u2019t whether AI is cheaper for production work. It\u2019s fifty to two hundred times cheaper at raw throughput. The question is what percentage of a knowledge worker\u2019s value is actually token-producible. Judgment, relationships, persistent context, those aren\u2019t. But first drafts, data pulls, formatting, research synthesis? That pays for itself in weeks. I\u2019d rather invest in my existing people than hire more. Give them speed. Give them tools that make the boring parts disappear."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Legal and IT Won\u2019t Lead This",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Legal and IT will never have the natural incentive to push AI adoption. Their job is risk management, and AI reads as risk. That\u2019s not a criticism. It\u2019s structural. If you wait for legal and IT to greenlight AI initiatives, you\u2019ll wait forever, because the calculus never favors them saying yes."
+          },
+          {
+            "type": "text",
+            "prop": "McKinsey put numbers to the gap in early 2025: 92 percent of companies plan to increase AI investment, but only 1 percent of leaders classify their organizations as mature in AI deployment. Capital is flowing in faster than organizations know how to spend it. The bottleneck isn\u2019t budget. It\u2019s organizational will."
+          },
+          {
+            "type": "text",
+            "prop": "Sponsorship means someone at the executive level makes it their job to push technology forward across every department, legal, IT, and finance included. A clear policy that teaches rather than restricts. The budget conversation before someone asks for it."
+          },
+          {
+            "type": "text",
+            "prop": "At our company, I\u2019m not the only sponsor. Our CEO is equally invested, which matters. When questions come up about permissions, security structure, or rollout strategy, those conversations happen at the executive level with people who have context on both the opportunity and the risk. That\u2019s different from a team lead asking for permission to try a new tool."
+          },
+          {
+            "type": "text",
+            "prop": "The worst version of this I see is what I call the \u201cgreat status quo.\u201d Everyone feels like they\u2019re doing their job. No one is incentivized to do better. Skepticism propagates from the top down, and nothing changes. If you\u2019re a founder reading this, that\u2019s the scenario you should be most afraid of. Not that AI will disrupt your industry. That you\u2019ll be standing still while it does."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Sponsorship Looks Like",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Sponsorship is structural, not performative."
+          },
+          {
+            "type": "text",
+            "prop": "Someone owns the AI policy document. Not a strategy deck that sits in a shared drive. A living document that defines what tools are approved, what data can flow where, what the security boundaries are, and what the escalation path looks like when someone wants to try something new."
+          },
+          {
+            "type": "text",
+            "prop": "There\u2019s a budget line item. Tokens, seats, training. Not buried in engineering\u2019s discretionary budget. Visible to the company as an investment."
+          },
+          {
+            "type": "text",
+            "prop": "There\u2019s a feedback loop. When someone discovers a workflow improvement, there\u2019s a mechanism to share it. When something breaks or produces a bad result, there\u2019s a mechanism to report it without fear. We run an internal Slack channel where AI wins and failures get equal airtime. That channel has done more for adoption than any training session we could design."
+          },
+          {
+            "type": "text",
+            "prop": "And someone is willing to have the uncomfortable conversations with department heads who are skeptical. Not to override them. To understand their concerns, address the real ones, and call out the ones that are just inertia wearing a security costume."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "AI Literacy Is Now Federal Policy",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "In February 2026, the U.S. Department of Labor released TEN 07-25, a framework that formally positions AI literacy as a foundational workforce skill alongside reading, math, and digital fluency. The framework didn\u2019t arrive in isolation. It follows Executive Order 14277, which created a White House Task Force on AI education, and TEGL 03-25, which opened WIOA funding for AI skills development. America\u2019s Talent Strategy, co-issued across Labor, Commerce, and Education, made AI literacy a strategic pillar. TEN 07-25 delivers the operational framework."
+          },
+          {
+            "type": "text",
+            "prop": "The DOL defines AI literacy as \u201ca foundational set of competencies that enable individuals to use and evaluate AI technologies responsibly, with a primary focus on generative AI.\u201d Five content areas: understand AI principles, explore uses, direct AI effectively, evaluate outputs, use responsibly. The most important delivery principle is experiential learning embedded in actual job context, not abstracted into a classroom."
+          },
+          {
+            "type": "text",
+            "prop": "The convergence is international. The EU\u2019s AI Act creates a binding legal obligation under Article 4 for providers and deployers of AI systems to ensure sufficient AI literacy among staff. Finland\u2019s \u201cElements of AI\u201d has reached over two million learners across 170 countries. Singapore and South Korea are running national literacy programs at population scale."
+          },
+          {
+            "type": "text",
+            "prop": "The DOL\u2019s framework is voluntary guidance, not regulation. But the policy chain is unusually tight for workforce guidance, and it\u2019s explicitly tied to WIOA funding. Federal training dollars will follow this framework. If your company isn\u2019t teaching its own people, you\u2019re behind the policy curve, not just the technology curve."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Shadow, Don\u2019t Mandate",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Context-embedded learning. That\u2019s the DOL delivery principle that matters most for founders, and the one I\u2019ve seen work firsthand."
+          },
+          {
+            "type": "text",
+            "prop": "You can\u2019t teach people AI literacy in a webinar. You teach it by sitting next to them, watching their workflow, and showing them where a tool can eliminate thirty minutes of manual work. We call this shadowing, and it\u2019s the most effective adoption initiative we\u2019ve run."
+          },
+          {
+            "type": "text",
+            "prop": "Top-down mandates to \u201cuse AI\u201d with no context don\u2019t work. Training sessions disconnected from real workflows don\u2019t stick. Expecting adoption without giving people time to experiment produces resentment, not results. Measuring AI usage by tool adoption metrics rather than output quality incentivizes the wrong behavior."
+          },
+          {
+            "type": "text",
+            "prop": "What works: an engineer or AI-literate team member sits with people in their actual workflow, spots acceleration opportunities, and shows them what\u2019s possible. The World Economic Forum\u2019s 2025 Future of Jobs Report found that analytical thinking remains the most sought-after competency, cited as essential by seven in ten employers. AI doesn\u2019t replace thinking. It amplifies the thinking you already do. If you lack judgment, AI gives you faster bad judgment."
+          },
+          {
+            "type": "text",
+            "prop": "The most skeptical person on our team, someone in operations who used to wake up at 4 AM for manual processes, became the company\u2019s most enthusiastic AI advocate after someone showed her how voice-to-text could eliminate hours of SOP documentation. She didn\u2019t need a strategy deck. She needed someone to meet her where she was. She now trains other people on the workflow."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Start With a Sponsor",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "If you\u2019re a founder who\u2019s been waiting for the right time to push AI adoption, the right time was six months ago. The second best time is now. Make yourself the sponsor if nobody else will. Then go sit with your team and watch how they work, because the highest-leverage applications are never the ones you predicted from your desk."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''AI Needs a Sponsor'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/ai-needs-a-sponsor/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.dol.gov/agencies/eta/advisories/ten-07-25",
+              "title": "TEN 07-25: U.S. Department of Labor AI Literacy Framework",
+              "description": "DOL Training and Employment Notice releasing the AI Literacy Framework for workforce and education systems (February 2026)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/",
+              "title": "Executive Order 14277: Advancing AI Education for American Youth",
+              "description": "Presidential executive order establishing the White House Task Force on AI Education (April 2025)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.dol.gov/agencies/eta/advisories/tegl-03-25",
+              "title": "TEGL 03-25: Encouraging WIOA Funding for AI Skills",
+              "description": "DOL guidance encouraging states to use Workforce Innovation and Opportunity Act funding for AI skills development (August 2025)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.dol.gov/sites/dolgov/files/OPA/newsreleases/2025/08/Americas-Talent-Strategy-Building-the-Workforce-for-the-Golden-Age.pdf",
+              "title": "America\u2019s Talent Strategy: Building the Workforce for the Golden Age",
+              "description": "Joint DOL, Commerce, and Education workforce strategy identifying AI literacy as a strategic pillar (August 2025)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.euaiact.com/article/4",
+              "title": "EU AI Act Article 4: AI Literacy",
+              "description": "Legal obligation for AI providers and deployers to ensure sufficient AI literacy among staff (effective February 2025)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/superagency-in-the-workplace",
+              "title": "McKinsey: Superagency in the Workplace (January 2025)",
+              "description": "McKinsey survey of US CxOs finding 92% plan to increase AI investment while only 1% classify as mature in deployment."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+              "title": "World Economic Forum: Future of Jobs Report 2025",
+              "description": "WEF report finding analytical thinking remains the most sought-after skill, cited as essential by 7 in 10 employers."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.gallup.com/workplace/699689/ai-use-at-work-rises.aspx",
+              "title": "Gallup: AI Use at Work Rises",
+              "description": "Gallup Q3 2025 data showing 45% of employees use AI at work at least a few times a year, with daily use at 10%."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.elementsofai.com/",
+              "title": "Elements of AI (University of Helsinki)",
+              "description": "Free online AI literacy course reaching over two million learners across 170 countries."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://aisingapore.org/",
+              "title": "AI Singapore: AI for Everyone",
+              "description": "Singapore\u2019s national AI literacy program running from primary students to enterprise professionals."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
