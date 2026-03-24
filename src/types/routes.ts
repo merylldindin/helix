@@ -12,6 +12,7 @@ export enum RoutePath {
   FUJITSU = "/ventures/fujitsu/",
   FULL_STACK_BUILDER = "/thoughts/full-stack-builder/",
   FUTURE_OF_STORYTELLING = "/thoughts/future-of-storytelling/",
+  INFORMATION_TRANSIT = "/thoughts/information-transit/",
   LANDING_PAGE = "/",
   LEARNING_DIFFERENCES = "/thoughts/learning-differences/",
   MEASURING_STUDENT_OUTCOMES = "/thoughts/measuring-student-outcomes/",

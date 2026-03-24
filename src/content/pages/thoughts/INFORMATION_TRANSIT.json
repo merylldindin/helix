@@ -1,0 +1,236 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-03-23",
+      "datePublished": "2026-03-23",
+      "keywords": "information transit, AI productivity, coordination costs, data layer, knowledge agents, generalist hiring, tool silos, agentic AI, organizational design"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/information-transit/",
+    "title": "Information Transit | Meryll Dindin",
+    "description": "The AI productivity story focuses on individuals. The real bottleneck is how information moves between teams. Production got cheaper. Coordination didn\u2019t.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/information-transit-20260323T175241.webp",
+    "thumbnailAlt": "Data packets flowing through parallel channels interrupted by vertical barriers representing organizational friction"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Isolated node clusters on the left bridged by a central routing hub on the right showing unified information flow",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/information-transit-20260323T175337.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/information-transit-20260323T175337-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/information-transit-20260323T175337-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/information-transit-20260323T175337-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Information Transit",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published March 23, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Every AI conversation I hear right now is about individual productivity. The 10x engineer. The marketer who writes twice as many campaigns. The salesperson who personalizes outreach at scale. These stories are real, but they\u2019re missing the point."
+          },
+          {
+            "type": "text",
+            "prop": "The bottleneck at most companies isn\u2019t how fast any one person works. It\u2019s how information moves between people. Too many handoffs between narrowly scoped roles. Information siloed in department-specific tools. Meetings that exist to share context that should be searchable. Approval chains that serialize naturally parallel work. AI can accelerate individual output all day long, and you\u2019ll still be slow if the transit layer is broken."
+          },
+          {
+            "type": "text",
+            "prop": "I learned this running technology at a healthcare company where every department touches AI, and the biggest gains came from making information move without friction, not from making individuals faster."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The 10x Fallacy",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "There\u2019s a version of the AI productivity story that CTOs tell at conferences. \u201cMy engineers are seeing 10x productivity gains from AI coding tools.\u201d And then, a few minutes later: \u201cBut we haven\u2019t actually shipped more, because the deploy process, the review cycle, the rollout, the marketing, the compliance checks, all of that still takes the same amount of time.\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "The individual got faster. The system didn\u2019t."
+          },
+          {
+            "type": "text",
+            "prop": "The same pattern shows up everywhere. A salesperson can research a prospect in minutes instead of hours, but the CRM doesn\u2019t connect to the territory data, so they still spend time manually cross-referencing. An operations manager can draft an SOP in ten minutes with voice-to-text, but getting three departments to review and approve it takes two weeks. A data analyst can run a complex query in seconds, but explaining the results to a non-technical stakeholder requires a meeting, a slide deck, and a follow-up meeting."
+          },
+          {
+            "type": "text",
+            "prop": "Production got cheaper. Coordination didn\u2019t."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Friction Catalog",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The friction patterns I see across departments are remarkably consistent regardless of company size."
+          },
+          {
+            "type": "text",
+            "prop": "Tool silos are the most expensive. Every department has its own system. Revenue lives in the CRM. Support lives in the ticketing system. Clinical ops lives in a proprietary platform. Finance lives in spreadsheets and an ERP. The information in each system is valuable. The fact that these systems don\u2019t talk to each other is the problem. \u201cWhich customers had support issues that correlate with churn risk?\u201d requires manually pulling data from three systems and cross-referencing in a spreadsheet. That\u2019s a plumbing problem, not an analysis problem."
+          },
+          {
+            "type": "text",
+            "prop": "Handoff chains compound it. Context lost at every transition, reformatted and re-explained until the original need is unrecognizable. Meetings that exist solely to transfer information from one person to another. Approval workflows that serialize work because oversight was designed for a world where every step needed human attention. The friction is structural, and it\u2019s consistent across every company I\u2019ve advised."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "AI Fixes Transit, Not Just Speed",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The highest-leverage AI applications I\u2019ve built are the ones that remove transit friction between teams, not the ones that make individuals faster."
+          },
+          {
+            "type": "text",
+            "prop": "We built an internal agent that any team member can query from Slack. Ask a business question in plain language, get an answer grounded in actual company data. Revenue asks about objection patterns. Operations asks about ticket trends. Leadership reviews customer health without attending every account meeting. The question that used to require an email to the data team, a dashboard request, and a three-day turnaround now takes thirty seconds."
+          },
+          {
+            "type": "text",
+            "prop": "We enforce transcription by default on every meeting. Six months of transcribed meetings creates a searchable institutional memory that no wiki can replicate, because it captures the reasoning behind decisions, not just the decisions themselves. New hires search prior decisions instead of asking five people what happened. Managers review meetings they couldn\u2019t attend without a debrief. The compound effect is significant."
+          },
+          {
+            "type": "text",
+            "prop": "We built knowledge agents that handle the questions people ask repeatedly. \u201cHow does the billing system handle this edge case?\u201d \u201cWhat\u2019s the SOP for provider onboarding?\u201d A well-grounded agent handles the majority of these, and the human expert only gets involved for genuinely novel cases."
+          },
+          {
+            "type": "text",
+            "prop": "The key word in all of this is \u201ccurated.\u201d A knowledge base that\u2019s reviewed, categorized, and version-controlled produces grounded answers citing internal sources. A raw document dump produces hallucinated answers that sound right and aren\u2019t. Garbage in, garbage out isn\u2019t just a data engineering truism. It\u2019s the single most important principle in applied AI."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Data Layer Prerequisite",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "None of this works without a data strategy. I keep coming back to this point because it\u2019s the prerequisite most companies skip."
+          },
+          {
+            "type": "text",
+            "prop": "If your tools don\u2019t feed into a centralized data layer, your AI applications will be limited to individual-level productivity. Useful, but not what changes a company. The real leverage comes when AI can reason across systems: when the agent answering a revenue question can also see the support ticket history, the meeting transcript from last week, and the financial data that contextualizes the whole picture."
+          },
+          {
+            "type": "text",
+            "prop": "Building that data layer isn\u2019t glamorous. ETL pipelines, schema documentation, data quality checks, the unglamorous process of making sure every system feeds into a central warehouse with consistent naming conventions. We invested in this early, before AI was the obvious use case, because we needed reliable reporting. That investment turned out to be the foundation everything else sits on."
+          },
+          {
+            "type": "text",
+            "prop": "Every month of centralized data you collect becomes context you can use later. And it\u2019s nearly impossible to backfill. Start collecting now, even if you don\u2019t know what you\u2019ll do with it yet."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Hire for Breadth",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "If the bottleneck is information transit, the organizational response isn\u2019t to hire more specialists. Hire fewer people with broader scope and give them AI tools that cover the breadth."
+          },
+          {
+            "type": "text",
+            "prop": "A generalist who understands sales, operations, and product can use an AI agent to pull context from all three domains and synthesize a recommendation. A specialist who only understands one domain will produce faster output within that domain but still need to coordinate with two other teams to turn it into action."
+          },
+          {
+            "type": "text",
+            "prop": "The lean team advantage is real, but it\u2019s about information flow, not work ethic. A small team where everyone has visibility into the whole business, supported by AI tools that make cross-domain queries trivial, will outpace a large team where each person only sees their slice. You want people who are curious across functions, comfortable with ambiguity, and willing to learn new tools quarterly. People who ask \u201cwhy does it work this way?\u201d rather than \u201cthat\u2019s not my department.\u201d"
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Where the ROI Actually Lives",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The token math is compelling on its own. AI output is fifty to two hundred times cheaper than human output at raw throughput. But the ROI that actually changes a company lives in the coordination costs you eliminate. Every meeting you don\u2019t need to schedule. Every handoff you don\u2019t need to manage. Every question that gets answered in thirty seconds instead of three days."
+          },
+          {
+            "type": "text",
+            "prop": "Start with the data layer. Every month of centralized, searchable context you build now is context you can\u2019t backfill later. The meeting that wasn\u2019t transcribed, the sales call that wasn\u2019t logged, the support ticket that wasn\u2019t categorized: that information is gone. And in six months, when you want an agent that can reason across your entire business, you\u2019ll wish you\u2019d started collecting today."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Information Transit'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/information-transit/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://modelcontextprotocol.io/",
+              "title": "Model Context Protocol (MCP)",
+              "description": "Open protocol for connecting AI models to external data sources and tools, enabling cross-system integration."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/superagency-in-the-workplace",
+              "title": "McKinsey: Superagency in the Workplace (January 2025)",
+              "description": "McKinsey survey of US CxOs finding 92% plan to increase AI investment while only 1% classify as mature in deployment."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.gallup.com/workplace/699689/ai-use-at-work-rises.aspx",
+              "title": "Gallup: AI Use at Work Rises (Q3 2025)",
+              "description": "Gallup data showing 45% of employees use AI at work at least a few times a year, with daily use at 10%."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

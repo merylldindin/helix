@@ -15,14 +15,14 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
-      "id": "ai-needs-a-sponsor-section",
+      "id": "information-transit-section",
       "props": {
         "content": [
           {
             "type": "headline",
             "prop": {
               "level": 2,
-              "text": "AI Needs a Sponsor",
+              "text": "Information Transit",
               "typography": "text-cartesian headline-2"
             }
           },
@@ -30,29 +30,29 @@
             "type": "headline",
             "prop": {
               "level": 3,
-              "text": "March 19, 2026",
+              "text": "March 23, 2026",
               "typography": "text-lexend-deca headline-6 mb-3"
             }
           },
           {
             "type": "text",
-            "prop": "AI adoption doesn\u2019t start with a strategy deck. It starts with one person who has the authority to make it everyone\u2019s job."
+            "prop": "The AI productivity story focuses on individuals. The real bottleneck is how information moves between teams. Production got cheaper. Coordination didn’t."
           },
           {
             "type": "more",
             "prop": {
-              "ariaLabel": "Read the blog article AI Needs a Sponsor",
-              "to": "/thoughts/ai-needs-a-sponsor/"
+              "ariaLabel": "Read the blog article Information Transit",
+              "to": "/thoughts/information-transit/"
             }
           }
         ],
         "image": {
-          "altText": "Single catalyst node radiating thin lines to a constellation of smaller nodes in concentric rings",
+          "altText": "Network lines converging through a narrow passage with data nodes queuing on the congested side",
           "darkModeTreatment": "invert-on-dark",
-          "source": "https://cdn.merylldindin.com/articles/posters/ai-needs-a-sponsor-20260323T172259.webp",
-          "lazySource": "https://cdn.merylldindin.com/articles/posters/ai-needs-a-sponsor-20260323T172259-lazy.webp",
-          "mobile": "https://cdn.merylldindin.com/articles/posters/ai-needs-a-sponsor-20260323T172259-mobile.webp",
-          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/ai-needs-a-sponsor-20260323T172259-mobile-lazy.webp"
+          "source": "https://cdn.merylldindin.com/articles/posters/information-transit-20260323T175408.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/information-transit-20260323T175408-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/information-transit-20260323T175408-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/information-transit-20260323T175408-mobile-lazy.webp"
         }
       }
     },
@@ -96,6 +96,49 @@
           "lazySource": "https://cdn.merylldindin.com/articles/posters/full-stack-builder-20260323T173244-lazy.webp",
           "mobile": "https://cdn.merylldindin.com/articles/posters/full-stack-builder-20260323T173244-mobile.webp",
           "lazyMobile": "https://cdn.merylldindin.com/articles/posters/full-stack-builder-20260323T173244-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
+      "id": "ai-needs-a-sponsor-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "AI Needs a Sponsor",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "March 19, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "AI adoption doesn’t start with a strategy deck. It starts with one person who has the authority to make it everyone’s job."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article AI Needs a Sponsor",
+              "to": "/thoughts/ai-needs-a-sponsor/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Single catalyst node radiating thin lines to a constellation of smaller nodes in concentric rings",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/ai-needs-a-sponsor-20260323T172259.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/ai-needs-a-sponsor-20260323T172259-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/ai-needs-a-sponsor-20260323T172259-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/ai-needs-a-sponsor-20260323T172259-mobile-lazy.webp"
         }
       }
     },
