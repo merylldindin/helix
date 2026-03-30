@@ -1,0 +1,57 @@
+src/content/pages/THOUGHTS_PAGE.json
+  f4b2e29f761569ef 18-58
+src/utils/routes.ts
+  f4b2e29f761569ef 47
+src/types/routes.ts
+  f4b2e29f761569ef 6
+src/content/pages/thoughts/BIOLOGICAL_AGE.json
+  f4b2e29f761569ef 1-450
+src/content/pages/thoughts/index.ts
+  f4b2e29f761569ef 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "2142f77e2131b914917d8e3e137153cb36bfa289",
+  "prompts": {
+    "3799c8d4a6a7e0fe": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "64b7b064-0808-40b7-87b3-e5dfca49637a",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 3,
+      "total_deletions": 0,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    },
+    "9f5f303d027433aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "98bf7a79-c72c-4b05-9edf-b0cd0962f1e2",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 284,
+      "overriden_lines": 0
+    },
+    "f4b2e29f761569ef": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "29f3d564-c4c4-4601-94a1-4f7928730ac5",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 567,
+      "total_deletions": 45,
+      "accepted_lines": 521,
+      "overriden_lines": 0
+    }
+  }
+}
