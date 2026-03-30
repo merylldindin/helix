@@ -43,6 +43,9 @@ cypress/downloads
 cypress/screenshots
 cypress/videos
 
+# claude plans
+.claude/plans/
+
 # claude skills
 .claude/skills/**/.env
 .claude/skills/**/output/*
