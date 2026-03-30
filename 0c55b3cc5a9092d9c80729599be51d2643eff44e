@@ -1,0 +1,51 @@
+.claude/skills/create-article/references/editorial-guidelines.md
+  f4b2e29f761569ef 22-29
+.claude/skills/create-article/references/article-conventions.md
+  f4b2e29f761569ef 112-128
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "0c55b3cc5a9092d9c80729599be51d2643eff44e",
+  "prompts": {
+    "3799c8d4a6a7e0fe": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "64b7b064-0808-40b7-87b3-e5dfca49637a",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    },
+    "9f5f303d027433aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "98bf7a79-c72c-4b05-9edf-b0cd0962f1e2",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 284,
+      "overriden_lines": 0
+    },
+    "f4b2e29f761569ef": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "29f3d564-c4c4-4601-94a1-4f7928730ac5",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 25,
+      "overriden_lines": 0
+    }
+  }
+}
