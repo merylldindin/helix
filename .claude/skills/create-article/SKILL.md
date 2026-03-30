@@ -74,6 +74,36 @@ These three steps are independent — do them in parallel:
 
 **Update listing:** Add `IMAGE_SECTION` to `THOUGHTS_PAGE.json` per `references/article-conventions.md` (date-sorted, newest first). Use placeholder image URLs.
 
+### 6b. Embed User-Provided Images
+
+If the user provides screenshots or images to include in the article body:
+
+1. Find the image file (check `~/Downloads/` for recent files matching the content)
+2. Convert to WebP variants **without AI processing** — use `cwebp` directly:
+   ```bash
+   TIMESTAMP=$(date +%Y%m%dT%H%M%S)
+   cwebp -q 85 "$SRC" -o "${NAME}.webp"
+   cwebp -q 20 -resize 100 0 "$SRC" -o "${NAME}-lazy.webp"
+   cwebp -q 80 -resize 768 0 "$SRC" -o "${NAME}-mobile.webp"
+   cwebp -q 15 -resize 50 0 "$SRC" -o "${NAME}-mobile-lazy.webp"
+   ```
+3. Upload to S3: `aws s3 cp FILE s3://network-eu-west-3/CDN_PATH/NAME-TIMESTAMP.webp --content-type "image/webp"`
+4. Add inline image block in the article JSON content array:
+   ```json
+   {
+     "type": "image",
+     "prop": {
+       "altText": "Descriptive alt text",
+       "source": "https://cdn.merylldindin.com/CDN_PATH/NAME-TIMESTAMP.webp",
+       "lazySource": "...TIMESTAMP-lazy.webp",
+       "mobile": "...TIMESTAMP-mobile.webp",
+       "lazyMobile": "...TIMESTAMP-mobile-lazy.webp"
+     }
+   }
+   ```
+
+IMPORTANT: Do NOT use `--enhance` for user-provided images — that runs them through Gemini which alters the original. User images must be uploaded as-is, only converted to WebP.
+
 ### 7. Generate Images
 
 Run `/create-image` skill 3 times **in parallel**:

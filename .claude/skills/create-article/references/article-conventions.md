@@ -109,6 +109,23 @@ src/content/pages/thoughts/SCREAMING_SNAKE_NAME.json
 - `\u201c` / `\u201d` — left / right double quotes ("")
 - `\u2014` — em-dash (—)
 
+### Inline Images (within body, between text blocks)
+
+```json
+{
+  "type": "image",
+  "prop": {
+    "altText": "Descriptive alt text for the inline image",
+    "source": "https://cdn.merylldindin.com/articles/sections/{slug}-{timestamp}.webp",
+    "lazySource": "...sections/{slug}-{timestamp}-lazy.webp",
+    "mobile": "...sections/{slug}-{timestamp}-mobile.webp",
+    "lazyMobile": "...sections/{slug}-{timestamp}-mobile-lazy.webp"
+  }
+}
+```
+
+Use for user-provided screenshots, diagrams, or data visualizations embedded within the article body. These are distinct from the background header image. Place immediately after the paragraph that contextualizes the image.
+
 ### Social Share Block (after final paragraph, before references)
 
 ```json
