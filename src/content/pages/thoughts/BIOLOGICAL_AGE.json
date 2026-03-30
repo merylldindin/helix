@@ -1,0 +1,450 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-03-29",
+      "datePublished": "2026-03-29",
+      "keywords": "biological age, epigenetic clock, DunedinPace, OMICm age, SYMPHONYAge, TruDiagnostics, aging pace, longevity, DNA methylation, organ aging"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/biological-age/",
+    "title": "How I See Biological Age | Meryll Dindin",
+    "description": "Your chronological age is a timestamp. Your biological age is a signal. How epigenetic clocks, aging pace, and organ-level data changed how I think about getting older.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/biological-age-20260329T173728.webp",
+    "thumbnailAlt": "Abstract DNA methylation pattern visualization in minimalist black and white"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Abstract DNA helix dissolving into scattered data points representing biological age measurement uncertainty",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/biological-age-20260329T173807.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/biological-age-20260329T173807-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/biological-age-20260329T173807-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/biological-age-20260329T173807-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "How I See Biological Age",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published March 29, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "One of the three missions I\u2019ve given myself in life is to make it to 1,000 years old. Chronologically. I\u2019m aware of how that sounds. But it\u2019s less about the number and more about the orientation: if you\u2019re aiming for a millennium, you take the long view on everything. You stop optimizing for next quarter and start optimizing for decades."
+          },
+          {
+            "type": "text",
+            "prop": "I\u2019m 31. My body thinks I\u2019m 26. My brain scan says 46. All three numbers are \u201ccorrect,\u201d and none of them mean what you think."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Side-by-side comparison of biological age results from four platforms: Function Health showing 16 years, Whoop showing 22.0, DexaFit showing 26 years, and TruDiagnostic OMICm showing 26.2 years",
+              "source": "https://cdn.merylldindin.com/articles/sections/biological-age-platforms-20260329T174511.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/biological-age-platforms-20260329T174511-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/biological-age-platforms-20260329T174511-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/biological-age-platforms-20260329T174511-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Chronological age is the laziest metric in medicine. It tells you when you were born. It doesn\u2019t tell you how fast you\u2019re deteriorating, which organs are ahead or behind, or whether anything you\u2019re doing is working. For most of human history, it was all we had. That changed in 2013, when Steve Horvath (the godfather of epigenetic aging research) published a paper that quietly broke the field open."
+          },
+          {
+            "type": "text",
+            "prop": "I\u2019ve been tracking my health data seriously for four years now. Epigenetic clocks from TruDiagnostics. Blood panels from Function Health. DEXA and VO2 max from DexaFit. A brain age scan from Kernel. Continuous wearable data from Whoop, Oura, and EightSleep. The results don\u2019t agree with each other. None of them use the same underlying metrics. And that disagreement turned out to be the most useful thing I learned."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Clock That Reads Your DNA",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Every cell in your body carries the same DNA, but which genes are active depends on chemical tags attached to specific positions along the genome. These tags, called methyl groups, shift predictably as you age. Horvath figured out that if you measure the right ones, you can estimate how old a tissue sample is without knowing anything about the person it came from. His model looked at 353 of these positions across 51 tissue types and nailed chronological age with startling accuracy."
+          },
+          {
+            "type": "text",
+            "prop": "That was the first epigenetic clock. It was also immediately insufficient."
+          },
+          {
+            "type": "text",
+            "prop": "Horvath\u2019s clock and the Hannum clock that followed were trained to match your birthday. They\u2019re good at that. But they\u2019re weak at the thing that actually matters: predicting whether you\u2019ll get sick or die. A 2025 study comparing 14 clocks across 174 disease outcomes confirmed what researchers had suspected. First-generation clocks don\u2019t tell you much about your health trajectory."
+          },
+          {
+            "type": "text",
+            "prop": "The second generation changed what the clocks were aiming at. GrimAge, published in 2019, wasn\u2019t trained on chronological age at all. It was trained on time-to-death, using methylation patterns that track proteins linked to inflammation, kidney function, and smoking exposure. The question shifted from \u201chow old do your cells look?\u201d to \u201chow fast are things breaking down?\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "Then came what I think of as the real breakthrough."
+          },
+          {
+            "type": "text",
+            "prop": "DunedinPACE, published by Daniel Belsky et al. in 2022, doesn\u2019t estimate your biological age. It estimates your pace of aging. Every prior clock is an odometer. DunedinPACE is a speedometer."
+          },
+          {
+            "type": "text",
+            "prop": "What makes it credible is the training data. The Dunedin Study tracked over a thousand people born in New Zealand in the early 1970s, measuring biomarkers across heart, metabolism, kidneys, liver, immune system, lungs, and even dental health at four points over two decades. That gave researchers actual longitudinal aging trajectories, not cross-sectional snapshots. Belsky\u2019s team then trained DunedinPACE to predict those trajectories from a single blood sample. The ground truth isn\u2019t a statistical guess. It\u2019s twenty years of measured change."
+          },
+          {
+            "type": "text",
+            "prop": "A score of 1.0 means you\u2019re aging at the average rate. Below 1.0, slower. My most recent reading: 0.76. Roughly nine biological months per calendar year. The reason I trust this number more than any other is its test-retest reliability. If you draw my blood twice in a week, DunedinPACE gives you nearly the same answer both times. Most other clocks don\u2019t."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "My Numbers, Honestly",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Four quarterly TruDiagnostics tests over the past year. My OMICm age readings: 28.2, 20.4, 23.8, 26.2. Chronological age at the last draw: 31.2."
+          },
+          {
+            "type": "text",
+            "prop": "That 20.4 was not a real ten-year reversal. I didn\u2019t discover the fountain of youth between my first and second test. The swing across four readings spans nearly eight years, and the published literature says that\u2019s normal. Technical noise alone, running the same blood sample through the same machine twice, can produce deviations of 3 to 9 years on major clocks. On top of that, most clocks shift with your circadian rhythm. Blood drawn at midnight looks roughly two years younger than blood drawn at noon. My draws weren\u2019t at the same time of day. That explains a lot."
+          },
+          {
+            "type": "text",
+            "prop": "OMICm age is a third-generation clock developed at Harvard\u2019s Brigham and Women\u2019s Hospital in collaboration with TruDiagnostics. During training, it pulls from multiple data layers: epigenetic markers, proteins, metabolites, and clinical records. But the test itself only needs a methylation array. Richer signal in, cheaper test out. It was published in Nature Aging in 2026, though TruDiagnostics was selling it before peer review completed. That gap between commercial launch and published validation is common in this field. Worth knowing."
+          },
+          {
+            "type": "text",
+            "prop": "My current reading of 26.2 at chronological 31.2 puts me in the 31st percentile among 31-year-old males in TruDiagnostics\u2019 database. But that database is made up of people who pay $499 for an epigenetic test. The denominator isn\u2019t the general population. It\u2019s the health-optimization crowd. Being in the 31st percentile of that group is a different statement than it sounds."
+          },
+          {
+            "type": "text",
+            "prop": "The number I actually track is the DunedinPACE trend. Not a position. A rate. Less sensitive to single-draw noise. Consistent across readings. 0.76, and holding. That I can work with."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Your Organs Age at Different Speeds",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The most granular view comes from SYMPHONYAge, developed at Yale and licensed by TruDiagnostics. Instead of one composite age, it reports a separate biological age for each of 11 organ systems, each trained against health outcomes specific to that system. The lung clock predicts lung cancer. The heart clock predicts coronary disease."
+          },
+          {
+            "type": "text",
+            "prop": "The spread across my organs tells me more than any single number. My brain reads youngest at 21.7, nearly a decade below chronological age. My hormone system is the oldest at 30.0, basically where you\u2019d expect for a 31-year-old. Musculoskeletal sits at 27.8, which I attribute to training volume. I exercise every day: running, strength, rucking, averaging 14,000 to 16,000 steps a day. That keeps cardiovascular and metabolic clocks low but accumulates mechanical stress."
+          },
+          {
+            "type": "text",
+            "prop": "What I find most useful is watching the trajectory. My kidney clock dropped from 33.2 to 25.2 across four tests. Liver from 34.2 to 26.2. Both were flagged in my first test and both improved. I adjusted supplements, diet timing, and hydration all at once, so I can\u2019t isolate what worked. But the direction is consistent across multiple readings, and that\u2019s the kind of signal I\u2019m looking for."
+          },
+          {
+            "type": "text",
+            "prop": "SYMPHONYAge launched commercially in June 2024 based on a preprint, not a peer-reviewed paper. The validation data looks solid, but the algorithm hasn\u2019t been through the full scrutiny process. I use the data. I hold the conclusions loosely."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Brain Problem",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "In October 2025, I sat under a Kernel Flow helmet for a brain age scan. The result: 46.1 years. Fifteen years older than my chronological age."
+          },
+          {
+            "type": "text",
+            "prop": "Kernel uses functional near-infrared spectroscopy, which measures blood flow and oxygenation patterns in the brain. It\u2019s reading hemodynamic activity, not methylation. Completely different measurement, completely different construct."
+          },
+          {
+            "type": "text",
+            "prop": "There\u2019s a well-known bias in brain age models: they run high for younger people and low for older ones. Cole and Franke (the two researchers who defined the field of brain age prediction) documented this in 2017. The raw number matters less than the bias-corrected gap, and Kernel accounts for this in their methodology."
+          },
+          {
+            "type": "text",
+            "prop": "My SYMPHONYAge brain clock reads 21.7. Kernel reads 46.1. That\u2019s a 24-year gap on the same brain. One infers from blood methylation patterns. The other measures real-time neural activity. They can diverge wildly in the same person, and I think that divergence is actually the point. If every tool agreed, you wouldn\u2019t need multiple tools. The disagreements are where you learn something."
+          },
+          {
+            "type": "text",
+            "prop": "One data point from an exploratory tool. I\u2019m not panicking. I\u2019m filing it."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Discrepancy Problem",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "This is the part that nobody in the biological age space talks about honestly enough: different tools don\u2019t just give you different numbers. They use entirely different inputs, different algorithms, and different definitions of what \u201cbiological age\u201d even means."
+          },
+          {
+            "type": "text",
+            "prop": "TruDiagnostics reads DNA methylation. Function Health runs blood biomarkers through a variant of Morgan Levine\u2019s PhenoAge formula (one of the most cited biological age algorithms in the literature), which uses nine standard lab values like albumin, C-reactive protein, and glucose. DexaFit combines body composition and fitness data through a proprietary AI layer. Whoop builds a composite from wearable sensor data: heart rate variability, sleep patterns, estimated VO2 max. Each platform is measuring a legitimate dimension of health. None of them are measuring the same thing."
+          },
+          {
+            "type": "text",
+            "prop": "Function Health told me I\u2019m 15.5 years younger than my chronological age. Whoop says 9.5 years younger. DexaFit says 5 years. TruDiagnostics says 5 years. Kernel says 15 years older. These aren\u2019t rounding errors. They reflect different tools asking different questions about different biological systems."
+          },
+          {
+            "type": "text",
+            "prop": "The 2025 research confirms this isn\u2019t just a consumer-product problem. A study comparing proteomic age and epigenetic age in the same individuals found weak agreement between them. A 2025 opinion piece in a Nature-affiliated aging journal asked the uncomfortable question: do we actually need aging clocks? The authors\u2019 argument is that these molecular layers don\u2019t converge on one \u201cbiological age.\u201d They\u2019re each capturing something real. They\u2019re just not capturing the same thing."
+          },
+          {
+            "type": "text",
+            "prop": "For me, the takeaway isn\u2019t that the tools are useless. It\u2019s that no single tool gives you the picture. I use TruDiagnostics for pace-of-aging trends and organ-level tracking. Function Health for comprehensive blood biomarker coverage. DexaFit for body composition and VO2 max. Whoop, Oura, and EightSleep for daily recovery and sleep patterns. They overlap in places and contradict in others. The contradictions are where I pay the most attention."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Actually Moves the Needle",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The evidence for most interventions is thinner than the supplement industry wants you to believe."
+          },
+          {
+            "type": "text",
+            "prop": "Only two interventions have large, multi-year, placebo-controlled RCT evidence for slowing epigenetic aging. The first is caloric restriction. The CALERIE-2 trial put 220 non-obese adults on 25% fewer calories for two years and found a modest but real slowing of DunedinPACE. In population data, that effect size translates to roughly 10 to 15 percent lower mortality risk. That\u2019s an extrapolation, not a directly measured outcome, but the direction is consistent. Other clocks like PhenoAge and GrimAge didn\u2019t budge. CR slows the rate. It doesn\u2019t reset the clock."
+          },
+          {
+            "type": "text",
+            "prop": "The second is omega-3 supplementation. The DO-HEALTH trial tested omega-3, vitamin D, and exercise in a factorial design across 777 older adults over three years. Omega-3 alone slowed multiple clocks. Vitamin D and exercise alone didn\u2019t. Three to four months of slowed aging over three years. Not dramatic, but it\u2019s real randomized controlled trial data."
+          },
+          {
+            "type": "text",
+            "prop": "Exercise has the strongest observational signal of anything on this list. VO2 max, your maximum oxygen uptake during exertion, has the tightest relationship with all-cause mortality of any fitness metric. Moving from low fitness to even moderate fitness cuts mortality risk roughly in half. I train daily for this reason more than any other. But nobody has run a randomized trial measuring epigenetic clocks with exercise as the sole variable."
+          },
+          {
+            "type": "text",
+            "prop": "Sleep matters too. A 2025 Mendelian randomization study found insomnia causally accelerates one of the second-generation clocks. Observational data consistently links poor sleep and irregular sleep timing with faster biological aging. But again, no controlled trial has isolated sleep as the variable."
+          },
+          {
+            "type": "text",
+            "prop": "The supplement landscape is mostly hype. NMN and NR, two supplements marketed as precursors to a molecule called NAD+ that dominate longevity marketing, have no epigenetic clock data from human trials. A 2025 review in Nature Metabolism concluded the clinical evidence for slowing aging is insufficient. Charles Brenner (the biochemist who actually discovered how NR feeds into NAD metabolism), has consistently argued that the claims outpace the science. Dasatinib plus quercetin, a senolytic combination, produced a troubling result in its first human epigenetic study: the 19 participants showed clock acceleration, not deceleration. Small study, but not the direction anyone predicted."
+          },
+          {
+            "type": "text",
+            "prop": "My own protocol isn\u2019t optimized for any single score. One meal a day with occasional two-meal windows. Daily exercise mixing cardio, strength, and rucking. Consistent sleep tracked through Oura and EightSleep. I don\u2019t know which of these is responsible for my DunedinPACE of 0.76, and I probably never will. The quarterly testing tells me whether the aggregate is trending the right way."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What I\u2019ve Actually Learned",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I started serious blood work four years ago. Before epigenetic clocks, before organ-level data, before any of the tools I\u2019ve described. The most valuable thing I have now isn\u2019t any single number. It\u2019s a baseline."
+          },
+          {
+            "type": "text",
+            "prop": "When you\u2019ve been collecting data for years, you stop reacting to individual readings. You stop celebrating the good ones and worrying about the bad ones. You watch the trend. My kidney clock dropping from 33 to 25 over a year matters more to me than whether it reads 25.2 or 24.8 on any given draw. My DunedinPACE holding at 0.76 across multiple draws matters more than whatever my OMICm age does on a Tuesday."
+          },
+          {
+            "type": "text",
+            "prop": "The noise in this field is real and well-documented. Technical replicates vary by years. Circadian rhythms shift readings. Platform updates retroactively change your historical scores. TruDiagnostics updated their algorithm in late 2025 and my earlier readings were recalculated. The trend I\u2019d been watching moved. That\u2019s disorienting when you\u2019re paying $499 per test and tracking quarterly."
+          },
+          {
+            "type": "text",
+            "prop": "The cost compounds. Quarterly epigenetics alone is $2,000 a year, before blood panels, DEXA scans, or wearables. This level of health surveillance is available to a narrow demographic. I\u2019m aware of that."
+          },
+          {
+            "type": "text",
+            "prop": "A 2025 paper in Frontiers in Aging asked the blunt question: are commercial biological age products ahead of the science for individual use? The researchers who build these tools said yes. The clocks work at population scale. For guiding one person\u2019s decisions, the evidence isn\u2019t there yet."
+          },
+          {
+            "type": "text",
+            "prop": "I still test quarterly. Not because I think any single reading is definitive. Because four years of data points have given me something no single test can: a sense of direction. I know roughly where my body was when I started paying attention, and I can see, imperfectly and noisily, whether the things I\u2019m doing are moving the needle."
+          },
+          {
+            "type": "text",
+            "prop": "Everything in this space should be taken with a grain of salt. The tools are young, the science is evolving, and any number you get on a given day is one data point from one instrument measuring one dimension of an impossibly complex system. But if you\u2019re going to track anything about your health over decades, trend beats snapshot every time. And if someone tells you they\u2019ve reversed their biological age by ten years, ask them which clock, how many draws, and whether the algorithm changed since their last test."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''How I See Biological Age'' by Meryll Dindin \ud83d\udc27",
+              "url": "/thoughts/biological-age/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-10-r115",
+              "title": "Horvath, S. (2013). DNA methylation age of human tissues and cell types.",
+              "description": "The foundational paper introducing the first pan-tissue epigenetic clock using 353 CpG sites. Genome Biology."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pubmed.ncbi.nlm.nih.gov/23177740/",
+              "title": "Hannum, G. et al. (2013). Genome-wide methylation profiles reveal quantitative views of human aging rates.",
+              "description": "Blood-specific epigenetic clock using 71 CpG markers. Molecular Cell."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.aging-us.com/article/101684/text",
+              "title": "Lu, A.T. et al. (2019). DNA methylation GrimAge strongly predicts lifespan and healthspan.",
+              "description": "Second-generation clock trained on time-to-death using DNA methylation surrogates for plasma proteins. Aging."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://elifesciences.org/articles/73420",
+              "title": "Belsky, D.W. et al. (2022). DunedinPACE, a DNA methylation biomarker of the pace of aging.",
+              "description": "Third-generation clock measuring rate of aging from the Dunedin longitudinal cohort study. eLife."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s43587-026-01073-7",
+              "title": "Chen, Q. et al. (2026). OMICmAge: An integrative multi-omics approach to quantify biological age.",
+              "description": "Multi-omic biological age clock integrating epigenomics, proteomics, and metabolomics. Nature Aging."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.biorxiv.org/content/10.1101/2023.07.13.548904v1",
+              "title": "Sehgal, R. et al. (2023). Systems Age: Aging heterogeneity across 11 physiological systems.",
+              "description": "Organ-specific biological aging clocks developed at Yale using 133 biomarkers per system. bioRxiv."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.cell.com/trends/neurosciences/fulltext/S0166-2236(17)30187-X",
+              "title": "Cole, J.H. & Franke, K. (2017). Predicting age using neuroimaging.",
+              "description": "Established brain age prediction and documented systematic bias in younger vs older participants. Trends in Neurosciences."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s41467-025-66106-y",
+              "title": "Verschoor, C.P. et al. (2025). An unbiased comparison of 14 epigenetic clocks.",
+              "description": "Systematic evaluation of clock performance across 174 incident disease outcomes. Nature Communications."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s43587-022-00357-y",
+              "title": "Waziry, R. et al. (2023). Effect of long-term caloric restriction on DNA methylation measures of biological aging.",
+              "description": "CALERIE-2 trial showing caloric restriction slows DunedinPACE. Nature Aging."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pubmed.ncbi.nlm.nih.gov/39900648/",
+              "title": "Bischoff-Ferrari, H.A. et al. (2025). Omega-3, vitamin D, and exercise effects on epigenetic clocks.",
+              "description": "DO-HEALTH trial showing omega-3 slows multiple epigenetic aging clocks over three years. Nature Aging."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9586209/",
+              "title": "Higgins-Chen, A.T. et al. (2022). A computational solution for bolstering reliability of epigenetic clocks.",
+              "description": "Documents 3-to-9-year technical noise in epigenetic clock replicates. Nature Aging."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://onlinelibrary.wiley.com/doi/10.1111/acel.14170",
+              "title": "Koncevi\u010dius, K. et al. (2024). Epigenetic age oscillates during the day.",
+              "description": "Finds 13 of 17 epigenetic clocks show significant circadian variation in biological age estimates. Aging Cell."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s41591-024-03164-7",
+              "title": "Oh, E.S. et al. (2024). Proteomic aging clock predicts mortality and disease risk.",
+              "description": "Plasma proteomic clock from 2,897 proteins predicting 18 chronic diseases. Nature Medicine."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s42255-025-01387-7",
+              "title": "Vinten, L.A. et al. (2025). NAD+ precursor supplementation in human ageing.",
+              "description": "Review concluding clinical evidence for NMN and NR slowing aging remains insufficient. Nature Metabolism."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://trudiagnostic.com",
+              "title": "TruDiagnostic",
+              "description": "Epigenetic testing platform offering OMICm age, DunedinPACE, and SYMPHONYAge organ-level clocks."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://kernel.com",
+              "title": "Kernel",
+              "description": "Brain age measurement using functional near-infrared spectroscopy."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://functionhealth.com",
+              "title": "Function Health",
+              "description": "Comprehensive blood biomarker testing with biological age estimation."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

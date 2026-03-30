@@ -15,6 +15,49 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "biological-age-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "How I See Biological Age",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "March 29, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Your chronological age is a timestamp. Your biological age is a signal. How epigenetic clocks, aging pace, and organ-level data changed how I think about getting older."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article How I See Biological Age",
+              "to": "/thoughts/biological-age/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Abstract DNA methylation pattern dissolving into scattered data points",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/biological-age-20260329T173831.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/biological-age-20260329T173831-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/biological-age-20260329T173831-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/biological-age-20260329T173831-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "information-transit-section",
       "props": {
         "content": [
