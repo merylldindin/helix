@@ -1,0 +1,58 @@
+src/content/pages/THOUGHTS_PAGE.json
+  d829d30cac2e77b2 18-58
+src/utils/routes.ts
+  d829d30cac2e77b2 11,53
+src/content/pages/thoughts/index.ts
+  d829d30cac2e77b2 6
+src/types/routes.ts
+  d829d30cac2e77b2 11
+src/content/pages/thoughts/COMPANY_BRAIN.json
+  d829d30cac2e77b2 1-58,60-70,72-89,91-105,107-124,126-140,142-144,146-148,150-192,194-220,222-226,232-235,237-347,349-355,357-363,365-372
+  c75cc13d136a9a87 59,71,90,106,125,141,145,149,193,221,227-231,236,348,356,364
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.4",
+  "base_commit_sha": "78ba57123f6f08ef61e5b4e273e28685392b0c30",
+  "prompts": {
+    "9f5f303d027433aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "98bf7a79-c72c-4b05-9edf-b0cd0962f1e2",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 284,
+      "overriden_lines": 0
+    },
+    "c75cc13d136a9a87": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "14bf991f-474e-4b2f-bb36-85d29e549911",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 19,
+      "overriden_lines": 0
+    },
+    "d829d30cac2e77b2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2cf1ecca-0b2e-44ee-a45c-e45f0f7f243d",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 464,
+      "overriden_lines": 0
+    }
+  }
+}
