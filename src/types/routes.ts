@@ -8,6 +8,7 @@ export enum RoutePath {
   AUBERGE_DE_CERCOUX = "/ventures/auberge-de-cercoux/",
   BOOK_SUGGESTIONS = "/suggestions/books/",
   CALASTER = "/ventures/calaster/",
+  COMPANY_BRAIN = "/thoughts/company-brain/",
   DILLYGENCE = "/ventures/dillygence/",
   ENHANCER_SUGGESTIONS = "/suggestions/enhancers/",
   FUJITSU = "/ventures/fujitsu/",

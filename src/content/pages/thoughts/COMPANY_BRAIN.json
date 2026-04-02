@@ -1,0 +1,372 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-03-30",
+      "datePublished": "2026-03-30",
+      "keywords": "company brain, AI agent, internal AI, knowledge graph, Slack bot, PydanticAI, agentic AI, knowledge management, RAG, Voltaire"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/company-brain/",
+    "title": "Wiring a Company Brain | Meryll Dindin",
+    "description": "What happens when a company connects its data warehouse, documents, tickets, and code into a single AI agent that any employee can talk to in Slack.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/company-brain-20260330T113044.webp",
+    "thumbnailAlt": "Brain silhouette composed of interconnected circuit nodes with data streams converging from multiple directions"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Isolated node clusters converging through pathways into a unified central hub representing a company brain architecture",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/company-brain-20260330T113113.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/company-brain-20260330T113113-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/company-brain-20260330T113113-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/company-brain-20260330T113113-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Wiring a Company Brain",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published March 30, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Our CEO walks into an AE meeting on a Monday morning. She opens Slack, types a question to our internal agent: \u201cWhat are the top objections from New York districts this quarter?\u201d Thirty seconds later she has a sourced answer pulling from Salesforce notes, support tickets, and call transcripts. No dashboard. No data request. No analyst."
+          },
+          {
+            "type": "text",
+            "prop": "That\u2019s a regular morning at Parallel Learning."
+          },
+          {
+            "type": "text",
+            "prop": "I\u2019ve written about why AI adoption needs an executive sponsor, why the real bottleneck is information transit rather than individual speed, and why lean teams need full-stack builders. This article is about what we actually built. An internal AI agent called Voltaire connects our entire knowledge surface and makes it conversational. The arguments I made in those pieces? This is the implementation behind them."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Problem Worth Solving",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Parallel Learning is a venture-backed healthcare and ed-tech company delivering licensed special-education services to school districts across the US. We\u2019re small, a few dozen people, running a proprietary telehealth platform called Pathway. Our data lives in BigQuery. Documents are scattered across Google Drive. Support tickets sit in Zendesk. Engineering work is tracked in Linear. Meeting transcripts pile up in Drive. The codebase is navigable by three developers."
+          },
+          {
+            "type": "text",
+            "prop": "Every department had the same complaint, phrased differently. Revenue couldn\u2019t get territory data without a data pull. Operations couldn\u2019t answer edge-case questions without pinging a senior team member. Leadership couldn\u2019t review customer health without sitting through account meetings. The information existed. Getting to it always required a human intermediary."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram showing human intermediaries before Voltaire: Revenue emails Data Analyst with 3 day turnaround, Operations DMs Senior Staff when available, Leadership meets Account Manager for 30 minute debriefs",
+              "source": "https://cdn.merylldindin.com/articles/sections/company-brain-before-20260330T121030.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/company-brain-before-20260330T121030-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/company-brain-before-20260330T121030-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/company-brain-before-20260330T121030-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The transit cost was brutal. Not because anyone was slow, but because every question required routing through someone else\u2019s calendar."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Voltaire Actually Is",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire is a Slack bot. Any employee mentions it in a channel or sends it a direct message, and it responds in-thread with a sourced answer. That\u2019s the interface. Nothing to install, nothing new to learn, no dashboard to bookmark."
+          },
+          {
+            "type": "text",
+            "prop": "Calling it a bot undersells the architecture, though. Voltaire is an agentic system. When it receives a question, it doesn\u2019t pattern-match against a FAQ or retrieve the nearest document chunk. It plans which data sources are relevant, dispatches specialized agents to query them, pulls the results together, and formats a response with citations. A single question might trigger a SQL query against our data warehouse, a search through our knowledge graph, and a ticket retrieval from Zendesk, all in one turn."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of Voltaire request lifecycle: Employee Slack message flows through Identity Resolution, Knowledge Planner selects tools, Orchestrator dispatches BigQuery Agent, Document Search, and Ticket Retrieval in parallel, results pass through PII Scrubber back to Employee",
+              "source": "https://cdn.merylldindin.com/articles/sections/company-brain-lifecycle-20260330T121030.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/company-brain-lifecycle-20260330T121030-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/company-brain-lifecycle-20260330T121030-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/company-brain-lifecycle-20260330T121030-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The architectural choice that matters most: the orchestrator doesn\u2019t see the internals of each agent. It calls query_bigquery and gets back a finished result. The BigQuery agent handles table discovery, SQL generation, error recovery, and PII filtering on its own. The orchestrator stays clean. That isolation is how we add new data sources without rewriting the reasoning layer."
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire is explicitly not customer-facing and not clinical. Internal knowledge only. That boundary matters because it lets us give the agent broad access to company data without the liability surface of a customer-facing product."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Knowledge Surface",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The value of a company brain isn\u2019t any single data source. It\u2019s reasoning across all of them in one turn."
+          },
+          {
+            "type": "text",
+            "prop": "The data warehouse is the most valuable source. Revenue metrics, student outcomes, operational KPIs, financial data, CRM records mirrored from Salesforce, and data piped in from every other internal tool we run. The BigQuery agent translates natural language into SQL, finds the right tables from a documented catalog, writes the query, and self-corrects if the SQL fails. \u201cWhat\u2019s our net revenue retention for districts that renewed in Q1?\u201d gets a grounded number, not a hallucinated estimate."
+          },
+          {
+            "type": "text",
+            "prop": "The document layer is where scale gets interesting. We have over 250,000 files across Google Drive and Zendesk, and that\u2019s just external-facing knowledge, not even counting internal documents. PDFs, slide decks, SOPs, policy documents, knowledge base articles. These aren\u2019t dumped into a vector database and left to rot. They\u2019re crawled into an offline knowledge graph: an SQLite snapshot with full-text search, classification tags, AI-generated summaries, similarity edges, and per-user access controls. When the agent searches for \u201cour onboarding SOP for new providers,\u201d it\u2019s querying a curated, classified, permission-aware index. Not running a naive similarity search over raw embeddings."
+          },
+          {
+            "type": "text",
+            "prop": "Support tickets give operational intelligence. \u201cWhat are the top issues from California districts this month?\u201d pulls from Zendesk ticket history and finds patterns across hundreds of conversations. Linear and the codebase answer product and engineering questions from source, not from someone\u2019s recollection of last sprint\u2019s decisions."
+          },
+          {
+            "type": "text",
+            "prop": "Every meeting transcribed via Gemini gets stored in Drive and indexed. Six months of transcripts creates a searchable institutional memory that no wiki can replicate. Wikis capture decisions. Transcripts capture the reasoning behind them."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why Trust Is a One-Shot Problem",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "If the agent gives a bad answer three times, nobody comes back."
+          },
+          {
+            "type": "text",
+            "prop": "Trust compounds slowly and collapses fast. You don\u2019t get to iterate your way to adoption when the first impression is a hallucinated revenue number that someone drops into a board deck. We learned this early and designed for it at every layer."
+          },
+          {
+            "type": "text",
+            "prop": "Every response includes sources. SQL queries are visible so you can verify the logic. Document references link directly to Google Drive. If the agent cites a Zendesk article, you can click through and read it yourself. Transparency isn\u2019t something we bolted on after launch. It\u2019s the reason people kept using it past the first week."
+          },
+          {
+            "type": "text",
+            "prop": "When a question touches restricted data \u2014 student PII, sensitive HR information \u2014 the agent doesn\u2019t just refuse. It explains what it can\u2019t access and proposes a safe reformulation. \u201cI can\u2019t show individual student names, but here\u2019s the same analysis using anonymized IDs.\u201d A hard refusal with no path forward trains people to stop asking. A refusal with a reformulation trains people to ask smarter questions."
+          },
+          {
+            "type": "text",
+            "prop": "The knowledge routing layer is where trust lives architecturally. Before the orchestrator runs, a lightweight planner decides which knowledge articles to inject and which agents to activate. Bad tool selection produces bad answers regardless of how capable the model is. Send a revenue question to the codebase agent instead of the BigQuery agent, and no amount of reasoning saves the response. Getting the routing right matters more than picking the best model."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Actually Changed",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The CEO no longer opens Salesforce dashboards. She asks Voltaire for objection patterns across territories before an AE meeting and gets a sourced answer in thirty seconds. That\u2019s not a faster version of the old workflow. It\u2019s a different workflow, one where leadership can self-serve operational intelligence without a meeting or a data request."
+          },
+          {
+            "type": "text",
+            "prop": "Our support ops manager was the biggest AI skeptic in the company. After a shadow session where we sat with her and showed how voice-to-text could replace her manual SOP writing, she started building her own workflows. Within weeks she was giving a company-wide presentation on what she\u2019d automated. Voltaire now answers her team\u2019s edge-case questions from the knowledge base. Those questions used to land in a senior staff member\u2019s DMs."
+          },
+          {
+            "type": "text",
+            "prop": "A phishing incident hit our BDR team. Investigating it meant reconstructing a timeline: which links were clicked, which IP addresses showed up, whether forwarding rules had been planted, whether OAuth grants needed cleanup, whether devices were compromised. Manual forensics would have taken a full day. With an AI-assisted workflow pulling from Google Workspace audit logs, it took an hour."
+          },
+          {
+            "type": "text",
+            "prop": "Our head of business development came back from a conference with an attendee list. 280 names, no contact details, no CRM mapping. Someone doing this manually spends days cross-referencing LinkedIn, company websites, and Salesforce. Voltaire checked which names already existed in Salesforce, ran parallel lookups for contact information, verified the results, and dropped enriched records into a shared sheet. Minutes instead of days."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Boring Infrastructure",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire took two and a half weeks to build. The data infrastructure underneath it took two years."
+          },
+          {
+            "type": "text",
+            "prop": "This is the part that doesn\u2019t demo well. ETL pipelines feeding into BigQuery from every operational system: Salesforce, Zendesk, and a dozen other internal tools. dbt transformations that normalize and document the data. Column-level descriptions for every table in the warehouse, because an AI agent that doesn\u2019t know what a column means will write SQL that looks right and returns wrong numbers."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of full infrastructure stack: Salesforce, Zendesk, and internal tools feed through ETL into BigQuery and dbt, Knowledge Layer crawls Drive and Zendesk into SQLite graph, Voltaire Agents and Orchestrator with RBAC",
+              "source": "https://cdn.merylldindin.com/articles/sections/company-brain-infra-20260401T170604.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/company-brain-infra-20260401T170604-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/company-brain-infra-20260401T170604-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/company-brain-infra-20260401T170604-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The knowledge graph deserves its own article, and it\u2019ll get one. Short version: we crawl every Google Drive shared drive and personal drive using domain-wide delegation, resolve Google Group memberships into per-email access controls, classify over 250,000 files with AI-generated tags, build search summaries and similarity edges, and package everything into a versioned SQLite snapshot that Voltaire loads at startup. The agent can only see files that the requesting user has permission to access. That check runs in real time, resolved from the same HR data that feeds our RBAC system."
+          },
+          {
+            "type": "text",
+            "prop": "None of the AI layer works without the data layer underneath it. An LLM with access to an undocumented, inconsistently named data warehouse will generate confident SQL that returns wrong numbers. An LLM searching an uncurated document dump will retrieve irrelevant chunks and hallucinate connections between them. The boring infrastructure is the entire moat."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What I\u2019d Tell You to Build First",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Not Voltaire. Not yet."
+          },
+          {
+            "type": "text",
+            "prop": "Build the data layer. Get your operational systems feeding into a central warehouse. Document your schemas \u2014 column-level descriptions, not just table names. Start transcribing meetings and storing them somewhere searchable. Every month of centralized data you collect now is context you can\u2019t backfill later."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of recommended build sequence: Phase 1 Foundation with data warehouse and documentation, Phase 2 Single Agent with natural language SQL, Phase 3 Expand with documents and tickets, Phase 4 Brain with knowledge graph and cross-source reasoning",
+              "source": "https://cdn.merylldindin.com/articles/sections/company-brain-phases-20260330T121030.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/company-brain-phases-20260330T121030-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/company-brain-phases-20260330T121030-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/company-brain-phases-20260330T121030-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Start with a single agent that answers questions from one data source well. Natural language to SQL against your warehouse is the highest-ROI starting point because the data is structured and the answers are verifiable. If the SQL returns the wrong number, you can see why. That debuggability builds trust before you expand."
+          },
+          {
+            "type": "text",
+            "prop": "Then add document retrieval. Then tickets. Then code. Each source compounds the value because the orchestrator can reason across all of them. A question that touches revenue data and support tickets and a knowledge base article gets an answer that no single-source system could produce."
+          },
+          {
+            "type": "text",
+            "prop": "The mistake I see most often is building a chatbot wrapper around an LLM with no grounded data. You get confident answers with no relationship to reality, and you burn the trust you need for the version that actually works. The other mistake is waiting until the data is \u201cready.\u201d It won\u2019t be. Start collecting now, start documenting now, and build the AI layer on whatever foundation you have. You can improve data quality while building the agent. You can\u2019t build the agent on data that was never collected."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Wiring a Company Brain'' by Meryll Dindin \ud83d\udc27",
+              "url": "/thoughts/company-brain/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://ai.pydantic.dev/",
+              "title": "PydanticAI",
+              "description": "Python agent framework used for Voltaire\u2019s orchestrator and structured output."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://cloud.google.com/vertex-ai",
+              "title": "Vertex AI / Gemini",
+              "description": "LLM and embedding provider powering Voltaire\u2019s model chains and semantic recall."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://cloud.google.com/bigquery",
+              "title": "Google BigQuery",
+              "description": "Data warehouse for structured company data, queried via natural language through Voltaire\u2019s BigQuery agent."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.getdbt.com/",
+              "title": "dbt (Data Build Tool)",
+              "description": "Data transformation and schema documentation layer that makes AI-generated SQL accurate."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://api.slack.com/bolt",
+              "title": "Slack Bolt",
+              "description": "Event-driven framework for building Slack integrations, used for Voltaire\u2019s message handling."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.sqlite.org/fts5.html",
+              "title": "SQLite FTS5",
+              "description": "Full-text search engine in SQLite, used for Voltaire\u2019s offline knowledge graph retrieval."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/ai-needs-a-sponsor/",
+              "title": "AI Needs a Sponsor | Meryll Dindin",
+              "description": "Prior article on why AI adoption needs an executive sponsor, not a strategy deck."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/information-transit/",
+              "title": "Information Transit | Meryll Dindin",
+              "description": "Prior article on data layers, coordination costs, and why the bottleneck is information flow."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/full-stack-builder/",
+              "title": "Full-Stack Builder | Meryll Dindin",
+              "description": "Prior article on lean teams, the AI tool landscape, and taste as a competitive differentiator."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
