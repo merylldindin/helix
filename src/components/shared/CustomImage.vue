@@ -4,6 +4,7 @@ import { computed } from "vue";
 import { useDisplay } from "vuetify";
 
 import type { DeliveredImage } from "@/types";
+import { ImageDarkModeTreatment } from "@/types";
 
 const cProps = defineProps({
   aspectRatio: {
@@ -32,6 +33,11 @@ const cProps = defineProps({
   },
 });
 
+const isInvertOnDark = computed(
+  () =>
+    cProps.image.darkModeTreatment === ImageDarkModeTreatment.INVERT_ON_DARK,
+);
+
 const { smAndDown } = useDisplay();
 
 const imageSource = computed(() => {
@@ -53,7 +59,8 @@ const imageLazySource = computed(() => {
 const imageKey = computed(() => `${imageSource.value}:${imageLazySource.value ?? ""}`);
 
 const imageClasses = computed(() => ({
-  "custom-image-follow-theme": cProps.followTheme,
+  "custom-image-follow-theme": cProps.followTheme && !isInvertOnDark.value,
+  "custom-image-invert-on-dark": isInvertOnDark.value,
 }));
 </script>
 
@@ -86,5 +93,16 @@ const imageClasses = computed(() => ({
   ) {
   filter: invert(1) hue-rotate(180deg);
   mix-blend-mode: screen;
+}
+
+:root[data-app-theme="dark"]
+  .custom-image-invert-on-dark
+  :is(
+    img,
+    [class~="v-img__img"],
+    [class~="v-img__img--preload"],
+    [class~="v-img__picture"] img
+  ) {
+  filter: invert(1);
 }
 </style>
