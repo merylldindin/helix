@@ -33,7 +33,7 @@ Create a markdown draft at `/tmp/{slug}-article-mockup.md`.
 
 Structure: opening hook, 5-7 sections building a coherent argument, closing that lands. Include a metadata block (title, description, canonical, keywords, date) and a sources section.
 
-IMPORTANT: Title must fit on one line in the Cartesian font at headline-2 size. Keep under ~35 characters. Test visually if uncertain.
+IMPORTANT: Title must fit on one line in the Cartesian font at headline-2 size. Keep under ~22 characters (including spaces). Titles over 22 characters WILL break onto two lines — shorten before proceeding. Count characters explicitly.
 
 IMPORTANT: Description must be 120-160 characters per SEO rules in `.claude/rules/content-system.md`.
 
