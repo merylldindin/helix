@@ -126,6 +126,68 @@ src/content/pages/thoughts/SCREAMING_SNAKE_NAME.json
 
 Use for user-provided screenshots, diagrams, or data visualizations embedded within the article body. These are distinct from the background header image. Place immediately after the paragraph that contextualizes the image.
 
+### Mermaid Diagrams (inline, between text blocks)
+
+For technical or architectural articles, mermaid diagrams are pre-rendered to PNG, converted to WebP, and embedded as image blocks with dark mode inversion support.
+
+**When to use:** Architecture flows, request lifecycles, infrastructure stacks, build roadmaps. Use sparingly — only when a diagram communicates something the text alone cannot. If the text already enumerates a list, a diagram restating that list in boxes adds nothing.
+
+**Diagram rules:**
+- All diagrams must use `graph LR` (left-to-right). Minimize vertical height.
+- Avoid fan-in/fan-out patterns (many nodes → one node) — mermaid stacks these vertically regardless of `LR`. Instead, consolidate multiple sources into grouped nodes using `<br/>` line breaks.
+- No subgraph wrappers unless they add real semantic grouping — subgraphs force vertical stacking.
+- Keep node labels short. Use `·` as a separator within grouped nodes.
+
+**Theme and rendering:**
+- Use a B&W mermaid theme config (white backgrounds, black text/borders, no color).
+- Render with transparent background (`-b transparent`). The `darkModeTreatment: "invert-on-dark"` property on the image triggers a dedicated CSS class (`custom-image-invert-on-dark`) that applies only `filter: invert(1)` — no background color, no blend mode — so transparency is preserved in both light and dark modes.
+- Mermaid config:
+  ```json
+  {
+    "theme": "base",
+    "themeVariables": {
+      "primaryColor": "#ffffff",
+      "primaryTextColor": "#000000",
+      "primaryBorderColor": "#000000",
+      "lineColor": "#000000",
+      "secondaryColor": "#ffffff",
+      "tertiaryColor": "#ffffff",
+      "background": "#ffffff",
+      "mainBkg": "#ffffff",
+      "nodeBorder": "#000000",
+      "clusterBkg": "#ffffff",
+      "clusterBorder": "#000000",
+      "titleColor": "#000000",
+      "edgeLabelBackground": "#ffffff",
+      "nodeTextColor": "#000000"
+    }
+  }
+  ```
+- Render: `npx @mermaid-js/mermaid-cli -i diagram.mmd -o diagram.png -w 1600 -b transparent -c mermaid-config.json`
+- Convert with alpha preserved: `cwebp -q 85 -alpha_q 100 input.png -o output.webp`
+
+**Conversion and upload:**
+Same as user-provided images (cwebp → S3), uploaded to `articles/sections/`.
+
+**JSON block:**
+```json
+{
+  "type": "image",
+  "prop": {
+    "darkModeTreatment": "invert-on-dark",
+    "altText": "Diagram of [what it shows]",
+    "source": "https://cdn.merylldindin.com/articles/sections/{slug}-{name}-{timestamp}.webp",
+    "lazySource": "...-lazy.webp",
+    "mobile": "...-mobile.webp",
+    "lazyMobile": "...-mobile-lazy.webp"
+  }
+}
+```
+
+IMPORTANT: Always include `"darkModeTreatment": "invert-on-dark"` — this inverts the diagram in dark mode (black-on-white → white-on-black) via the `ContentGenerator` component.
+
+**Redundancy check:** Before finalizing, review all diagrams against the surrounding text. Remove any diagram that merely restates what the text already says. A good diagram shows relationships or flow that prose handles poorly. A bad diagram puts a bulleted list into boxes.
+
 ### Social Share Block (after final paragraph, before references)
 
 ```json

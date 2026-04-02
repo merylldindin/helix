@@ -104,6 +104,18 @@ If the user provides screenshots or images to include in the article body:
 
 IMPORTANT: Do NOT use `--enhance` for user-provided images — that runs them through Gemini which alters the original. User images must be uploaded as-is, only converted to WebP.
 
+### 6c. Render Mermaid Diagrams
+
+If the article includes architectural or workflow diagrams:
+
+1. Write each diagram as a `.mmd` file in `/tmp/mermaid-diagrams/`
+2. Create the B&W theme config and puppeteer config (see `references/article-conventions.md` for exact JSON)
+3. Render all diagrams: `npx @mermaid-js/mermaid-cli -i diagram.mmd -o diagram.png -w 1600 -b transparent -p puppeteer-config.json -c mermaid-config.json`
+4. **Visually verify** each rendered PNG — check that layout is horizontal (LR) and not vertically stacked. If mermaid stacks nodes vertically, consolidate fan-in/fan-out nodes into grouped boxes.
+5. Convert to WebP variants (same as Step 6b) and upload to `articles/sections/`
+6. Add image blocks to the article JSON with `"darkModeTreatment": "invert-on-dark"`
+7. **Redundancy check:** Review each diagram against surrounding text. Remove any diagram that merely restates what the prose already communicates. Keep only diagrams that show relationships or flow that text handles poorly.
+
 ### 7. Generate Images
 
 Run `/create-image` skill 3 times **in parallel**:
