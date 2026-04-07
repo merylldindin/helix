@@ -15,6 +15,49 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "body-of-evidence-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Body of Evidence",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "April 6, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Most people track weight and maybe cholesterol. I track over 100 biomarkers quarterly. Here is how I learned which ones matter and which are noise."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article Body of Evidence",
+              "to": "/thoughts/body-of-evidence/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Abstract nested geometric layers representing a biomarker hierarchy with increasingly defined inner rings",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/body-of-evidence-20260406T205156.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/body-of-evidence-20260406T205156-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/body-of-evidence-20260406T205156-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/body-of-evidence-20260406T205156-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "company-brain-section",
       "props": {
         "content": [

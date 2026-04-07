@@ -1,0 +1,315 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-04-06",
+      "datePublished": "2026-04-06",
+      "keywords": "biomarkers, blood work, Function Health, VO2 max, body composition, DEXA scan, longevity, health tracking, preventive health, biomarker hierarchy"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/body-of-evidence/",
+    "title": "Body of Evidence | Meryll Dindin",
+    "description": "Most people track weight and maybe cholesterol. I track over 100 biomarkers quarterly. Here is how I learned which ones matter and which are noise.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/body-of-evidence-20260406T205056.webp",
+    "thumbnailAlt": "Abstract test tube centered within concentric measurement rings and data points in minimalist black and white"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Abstract parallel waveforms and data traces flowing horizontally representing multiple biomarker signals being monitored simultaneously",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/body-of-evidence-20260406T205123.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/body-of-evidence-20260406T205123-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/body-of-evidence-20260406T205123-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/body-of-evidence-20260406T205123-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Body of Evidence",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published April 6, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I didn\u2019t start tracking biomarkers because I was sick. I started because I realized I had no idea what healthy looked like from the inside."
+          },
+          {
+            "type": "text",
+            "prop": "Six years ago, my last annual physical gave me a CBC, a metabolic panel, and a thumbs up. I haven\u2019t been back since. Everything was \u201cwithin normal range.\u201d That phrase should make you suspicious. Normal range means you fall between the 2.5th and 97.5th percentile of the lab\u2019s reference population, which includes people with undiagnosed conditions, sedentary lifestyles, and metabolic dysfunction. Being normal in a sick population isn\u2019t reassuring. It\u2019s the floor."
+          },
+          {
+            "type": "text",
+            "prop": "Standard blood work isn\u2019t wrong. It\u2019s just sparse. A basic metabolic panel checks 8 markers. Even a comprehensive one only gets to 14. Function Health tests over 100. That gap is the difference between glancing at a dashboard and actually reading the gauges."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Not All Markers Are Created Equal",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "After four years of quarterly testing across multiple platforms, I\u2019ve sorted biomarkers into a rough hierarchy. The ranking principle is simple: how strongly does the evidence link this marker to dying or not dying? Mortality prediction first, disease risk second, protocol feedback third, curiosity last."
+          },
+          {
+            "type": "text",
+            "prop": "VO2 max sits at the top of Tier 1, the mortality predictors. Mandsager et al. followed over 120,000 patients in a 2018 study and found that cardiorespiratory fitness was the single strongest predictor of survival, stronger than smoking, diabetes, or coronary disease. Moving from low fitness to moderate cuts mortality risk roughly in half. Moving to elite keeps cutting. No plateau. My most recent reading: 53.2, classified as Superior for my age by DexaFit. I test this annually because it\u2019s the one number that, if it drops, would make me restructure everything."
+          },
+          {
+            "type": "text",
+            "prop": "Grip strength is the other one nobody talks about. A 2015 Lancet study of nearly 140,000 adults in 17 countries found it predicted cardiovascular death more reliably than systolic blood pressure. I keep a hand dynamometer at home. Ten seconds. Tells you about neuromuscular reserve, sarcopenia risk, and systemic health. Cheap, fast, underrated."
+          },
+          {
+            "type": "text",
+            "prop": "Tier 2 is metabolic and inflammatory markers, the systems that break down over decades before you feel anything. HbA1c, fasting insulin, and fasting glucose form the metabolic triad. Most physicians only flag HbA1c above 5.7 (the pre-diabetes threshold), but trajectory matters more than threshold. Mine sits at 5.3, stable across two years. Fasting insulin at 4.7, low enough to suggest good insulin sensitivity without raising other questions."
+          },
+          {
+            "type": "text",
+            "prop": "High-sensitivity C-reactive protein (hs-CRP) is the best inflammatory marker in standard blood work. Below 1.0 is optimal. Above 3.0 signals chronic inflammation. Mine reads 0.4. You can\u2019t game this one with supplements. It reflects your systemic inflammatory load: diet, sleep, training, stress, body fat. When this number moves, something real changed."
+          },
+          {
+            "type": "text",
+            "prop": "Lipids deserve their own paragraph because most people read them wrong. Total cholesterol on its own tells you almost nothing. LDL-C (mine: 132) is the conventional risk marker, but it counts the cholesterol inside LDL particles, not the number of particles hitting your arterial walls. ApoB gives you that count directly, one molecule per atherogenic particle. Mine came back at 88 mg/dL on my latest Function Health panel, which is within their normal range. My LDL particle number is 1,605 with a Pattern A (large, buoyant), which is the more favorable profile. The triglyceride-to-HDL ratio (mine: 57/67 = 0.85) adds another angle as a proxy for insulin resistance."
+          },
+          {
+            "type": "text",
+            "prop": "Tier 3 is body composition. DEXA scans give you what a scale never can: lean mass, fat mass, bone mineral density, and where each sits in your body. My scan: 180 lbs total, 140.3 lean, 18.6% body fat, BMD T-score 0.7. Lean mass matters more than the body fat percentage. Sarcopenia, the progressive loss of muscle mass that accelerates after 40, is one of the biggest predictors of frailty in older adults. Building muscle now is insurance for decades from now."
+          },
+          {
+            "type": "text",
+            "prop": "Visceral fat, the fat packed around your organs, is the composition metric most tightly linked to metabolic disease. DEXA gives you a visceral fat estimate that a bathroom scale or BMI can\u2019t touch. BMI says I\u2019m overweight at 180 lbs and 5\u201910\u201d. My DEXA tells a different story."
+          },
+          {
+            "type": "text",
+            "prop": "Tier 4 covers organ-specific and exploratory markers. Liver enzymes (ALT, AST, GGT), kidney function (creatinine, eGFR, BUN), thyroid panels, hormones. Not mortality predictors in healthy ranges, but they catch problems early. My kidney clock on TruDiagnostics dropped from 33.2 to 25.2 across four tests, a flag I first noticed through out-of-range creatinine that corrected with better hydration timing (and me being less crazy about supplements for a while). Without the baseline, I wouldn\u2019t have seen the trend."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Where Epigenetic Age Fits",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "In a previous article, I covered epigenetic clocks, DunedinPACE, and organ-level aging data in detail. Those tools measure something different from everything above. Blood biomarkers tell you what\u2019s happening right now: your inflammation, your insulin sensitivity, your lipid load. Epigenetic clocks tell you the cumulative trajectory, how fast your biology is aging relative to calendar time. My DunedinPACE at 0.76 and my biomarkers painting a healthy metabolic picture are consistent, and that consistency across different measurement layers is what builds actual confidence. When the epigenetic data and the blood work diverge, that\u2019s when I start digging."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Testing Stack",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I rotate across four platforms, roughly quarterly."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram showing testing cadence from continuous wearable monitoring through monthly, quarterly, semi-annual, and annual testing platforms",
+              "source": "https://cdn.merylldindin.com/articles/sections/body-of-evidence-testing-cadence-20260406T210928.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/body-of-evidence-testing-cadence-20260406T210928-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/body-of-evidence-testing-cadence-20260406T210928-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/body-of-evidence-testing-cadence-20260406T210928-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Function Health every 6 months gives me the broadest panel: over 100 biomarkers spanning metabolic, inflammatory, hormonal, organ function, cancer markers, nutrient levels, and heavy metals. Their biological age estimate uses a biomarker-based formula, likely inspired by algorithms like Morgan Levine\u2019s PhenoAge (which combines nine blood biomarkers with chronological age). They told me I\u2019m 14.9 years younger. I take the direction, not the magnitude."
+          },
+          {
+            "type": "text",
+            "prop": "Whoop panels every 6 months, alternating with Function. I used to use InsideTracker for this slot but switched when Whoop integrated blood work into their platform. Standard markers: CBC, CMP, lipids, thyroid, testosterone, vitamin D. Narrower scope, but useful for tracking the basics on a different cadence from Function."
+          },
+          {
+            "type": "text",
+            "prop": "DexaFit once a year. DEXA body composition scan plus VO2 max test. The DEXA takes about 7 minutes. The VO2 max puts you on a treadmill with a mask measuring oxygen consumption at maximal effort. Together they answer two questions: how much muscle do I have, and how well does my cardiovascular system perform under load?"
+          },
+          {
+            "type": "text",
+            "prop": "TruDiagnostics quarterly for epigenetic age, pace of aging, and organ-level clocks. I covered this in a previous article. The value is pace-of-aging trends over time, not any single reading."
+          },
+          {
+            "type": "text",
+            "prop": "Wearables continuously. Oura for sleep architecture and resting heart rate (mine averages 48 bpm). Whoop for strain, recovery, and heart rate variability. EightSleep for sleep temperature. Omron arm cuff for blood pressure. This data isn\u2019t diagnostic. It\u2019s directional. When my HRV trends down for a week, something is off. I don\u2019t need a blood draw to know that. I need the blood draw to know why."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What the Numbers Changed",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "My LDL at 132 would get me a statin conversation with most physicians. I haven\u2019t medicated it. The surrounding context matters: ApoB at 88, LDL Pattern A, triglyceride-to-HDL at 0.85, hs-CRP at 0.4, fasting insulin at 4.7. The full lipid and metabolic picture doesn\u2019t support the same intervention that an isolated LDL reading might. Data tells you which questions to ask next, not which pills to take."
+          },
+          {
+            "type": "text",
+            "prop": "The creatinine story from Tier 4 is the best example of why context beats isolated readings. What looked like kidney damage was actually dehydration plus training volume plus supplement load. One marker, three confounders, zero actual pathology. Without the quarterly cadence, I would have either panicked or ignored it."
+          },
+          {
+            "type": "text",
+            "prop": "VO2 max at 53.2 puts me in the Superior category now, but I track it annually because it declines roughly 10% per decade starting in your mid-30s if you don\u2019t fight it. I\u2019m not chasing a peak. I\u2019m building a buffer large enough that even with age-related decline, I stay well above the longevity threshold into my 60s and beyond."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Cost Problem",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I won\u2019t pretend this is cheap."
+          },
+          {
+            "type": "text",
+            "prop": "Function Health runs $365 per year. Quarterly TruDiagnostics adds up quickly depending on the kit. DexaFit for a scan plus VO2 max test is $250 to $400 depending on location. Wearables cost another $400 to $600 in subscriptions. Total: low thousands per year, all out of pocket."
+          },
+          {
+            "type": "text",
+            "prop": "That\u2019s inaccessible for most people. Worth being honest about it."
+          },
+          {
+            "type": "text",
+            "prop": "If I could only pick one test, it would be the annual VO2 max. Strongest mortality predictor, directly actionable, roughly $150. Second: a broad blood panel with metabolic and inflammatory markers. Third: DEXA for body composition baseline. Epigenetic testing is where I spend the most and learn the least per dollar, but the longitudinal trend data has made it worth it for me."
+          },
+          {
+            "type": "text",
+            "prop": "The standard annual physical checks almost none of the markers that predict mortality most strongly. It\u2019s designed to catch disease, not to track health. If you\u2019re only going to measure a few things, start with the ones that have the strongest evidence for predicting what kills people, and build from there."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What I\u2019m Still Figuring Out",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I don\u2019t have a clean answer on hormones. My testosterone is in normal range. Thyroid markers too. But \u201cnormal range\u201d has the same problem here as everywhere: the reference population includes people in declining health, and the ranges are wide. Optimal and normal aren\u2019t the same thing. I\u2019m watching the trend, but I don\u2019t have enough data points yet to know what my personal baseline looks like."
+          },
+          {
+            "type": "text",
+            "prop": "I also can\u2019t tell you which protocol is responsible for which outcome. I changed diet, exercise, sleep, and supplementation roughly in parallel. When my inflammatory markers improved, was it the time-restricted feeding, the consistent training, or the omega-3s? I genuinely don\u2019t know. Quarterly panels tell me the aggregate is trending well. They don\u2019t run attribution analysis."
+          },
+          {
+            "type": "text",
+            "prop": "That\u2019s the honest limitation of n=1 health tracking. You\u2019re running an uncontrolled experiment on yourself with confounded variables and noisy measurements. But the alternative isn\u2019t a controlled trial. It\u2019s flying blind."
+          },
+          {
+            "type": "text",
+            "prop": "Body composition and VO2 max deserve their own deep dive, because those two numbers have shaped my training more than anything else on this list."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Body of Evidence'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/body-of-evidence/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2707428",
+              "title": "Mandsager, K. et al. (2018). Association of Cardiorespiratory Fitness With Long-term Mortality.",
+              "description": "Study of 122,007 patients showing cardiorespiratory fitness as the strongest predictor of survival. JAMA Network Open."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(14)62000-6/fulltext",
+              "title": "Leong, D.P. et al. (2015). Prognostic value of grip strength.",
+              "description": "PURE study of 139,691 adults showing grip strength predicts cardiovascular mortality better than blood pressure. The Lancet."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.aging-us.com/article/101414/text",
+              "title": "Levine, M.E. et al. (2018). An epigenetic biomarker of aging for lifespan and healthspan.",
+              "description": "PhenoAge algorithm combining nine blood biomarkers with chronological age to estimate biological age. Aging."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://academic.oup.com/eurheartj/article/38/32/2459/3745109",
+              "title": "Ference, B.A. et al. (2017). Low-density lipoproteins cause atherosclerotic cardiovascular disease.",
+              "description": "Consensus statement on ApoB-containing lipoproteins as causal in cardiovascular disease. European Heart Journal."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/biological-age/",
+              "title": "Dindin, M. (2026). How I See Biological Age.",
+              "description": "Article covering epigenetic clocks, DunedinPACE, and organ-level aging data."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://functionhealth.com",
+              "title": "Function Health",
+              "description": "Comprehensive blood biomarker testing platform with over 100 markers per panel."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://dexafit.com",
+              "title": "DexaFit",
+              "description": "DEXA body composition scanning and VO2 max testing facilities."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://trudiagnostic.com",
+              "title": "TruDiagnostic",
+              "description": "Epigenetic testing platform offering OMICm age, DunedinPACE, and SYMPHONYAge organ-level clocks."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

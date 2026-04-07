@@ -3,6 +3,7 @@ export { default as AI_NEEDS_A_SPONSOR } from "./AI_NEEDS_A_SPONSOR.json";
 export { default as AI_MEETS_MENTAL_HEALTH } from "./AI_MEETS_MENTAL_HEALTH.json";
 export { default as AI_SPECIAL_EDUCATION } from "./AI_SPECIAL_EDUCATION.json";
 export { default as BIOLOGICAL_AGE } from "./BIOLOGICAL_AGE.json";
+export { default as BODY_OF_EVIDENCE } from "./BODY_OF_EVIDENCE.json";
 export { default as COMPANY_BRAIN } from "./COMPANY_BRAIN.json";
 export { default as ARRHYTHMIA_CLASSIFICATION } from "./ARRHYTHMIA_CLASSIFICATION.json";
 export { default as FULL_STACK_BUILDER } from "./FULL_STACK_BUILDER.json";
