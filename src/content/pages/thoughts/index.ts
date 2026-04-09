@@ -12,6 +12,7 @@ export { default as INFORMATION_TRANSIT } from "./INFORMATION_TRANSIT.json";
 export { default as LEARNING_DIFFERENCES } from "./LEARNING_DIFFERENCES.json";
 export { default as MEASURING_STUDENT_OUTCOMES } from "./MEASURING_STUDENT_OUTCOMES.json";
 export { default as MODELS_HUMAN_COGNITION } from "./MODELS_HUMAN_COGNITION.json";
+export { default as REASONING_LOOP } from "./REASONING_LOOP.json";
 export { default as SLD_IDENTIFICATION } from "./SLD_IDENTIFICATION.json";
 export { default as SLEEP_STAGE_CLASSIFICATION } from "./SLEEP_STAGE_CLASSIFICATION.json";
 export { default as TOMATO_CLUSTERING_BLOG } from "./TOMATO_CLUSTERING.json";

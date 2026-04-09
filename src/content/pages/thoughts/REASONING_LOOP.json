@@ -1,0 +1,345 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-04-08",
+      "datePublished": "2026-04-08",
+      "keywords": "AI orchestrator, agentic AI, knowledge routing, PydanticAI, prompt engineering, reasoning loop, model chains"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/reasoning-loop/",
+    "title": "The Reasoning Loop | Meryll Dindin",
+    "description": "How Voltaire routes a Slack question through identity resolution, knowledge planning, and a reasoning loop with real tools to build grounded answers.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/reasoning-loop-20260408T213859.webp",
+    "thumbnailAlt": "Minimalist black and white signal path flowing through geometric nodes representing an AI reasoning pipeline"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Wide horizontal signal path flowing through connected geometric nodes representing an AI reasoning pipeline",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/reasoning-loop-20260408T213932.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/reasoning-loop-20260408T213932-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/reasoning-loop-20260408T213932-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/reasoning-loop-20260408T213932-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "The Reasoning Loop",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published April 8, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Most people imagine an AI assistant as a single prompt: question in, answer out. That works for a chatbot riffing on general knowledge. It falls apart the moment you need the AI to pull real data from real systems, respect who\u2019s asking, and get the answer right."
+          },
+          {
+            "type": "text",
+            "prop": "I built Voltaire, the internal AI assistant at Parallel Learning. The hardest problem wasn\u2019t getting an LLM to generate text. It was everything around it: identity, context selection, tool orchestration, safety checks. I wrote previously about what Voltaire is and what it connects. This one goes under the hood: the path a question takes from a Slack message to a grounded answer."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Path of a Question",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Here\u2019s what actually happens when someone mentions Voltaire in Slack. The request passes through six distinct stages before a single word of the response gets written."
+          },
+          {
+            "type": "text",
+            "prop": "First, the Slack handler receives the event and runs a sensitive-request gate: a lightweight model call that screens for queries that should be refused outright (requests for personal contact info, clinical advice, or data the requester shouldn\u2019t access). Second, the system resolves the user\u2019s identity. Who is this person? What department? What role? What timezone? Third, a pre-orchestrator planner decides what context the AI needs and which tools to make available. Fourth, the orchestrator itself runs a reasoning loop: thinking, planning tool calls, observing results, and iterating until it has enough evidence to answer. Fifth, PII redaction runs inside each tool at the point of data retrieval, not as a post-processing pass. Sixth, the formatted answer lands back in the Slack thread."
+          },
+          {
+            "type": "text",
+            "prop": "Six stages. Multiple model invocations before a user ever sees a word. A hard budget on tool calls. And a wall-clock deadline of four minutes to get it all done (longer for complex queries)."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of the full request lifecycle from Slack message through sensitive gate, identity resolution, knowledge planner, orchestrator loop, to Slack response",
+              "source": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-lifecycle-20260408T213529.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-lifecycle-20260408T213529-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-lifecycle-20260408T213529-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-lifecycle-20260408T213529-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Most of the intelligence lives before the orchestrator even starts. Get identity and context routing right, and the reasoning loop becomes straightforward."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Know Who\u2019s Asking",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire\u2019s first move isn\u2019t answering. It\u2019s figuring out who asked."
+          },
+          {
+            "type": "text",
+            "prop": "From the user\u2019s email, the system queries the employee directory and builds a UserContext: display name, job title, department, timezone, and a computed role. That role comes from an RBAC policy file mapping departments to access tiers (executive, clinical, operations, default)."
+          },
+          {
+            "type": "text",
+            "prop": "The same question from different people should produce different answers. When someone from the clinical team asks about session metrics, the system steers the AI toward patient-facing context and clinical glossary terms. Sales asks about a school district? Competitive intelligence and pipeline data get loaded instead. An executive gets broader access; a contractor sees a restricted set of knowledge sections."
+          },
+          {
+            "type": "text",
+            "prop": "Identity also feeds into PII enforcement, and it works at two points: at the beginning, by controlling what knowledge and tools become available, and at the tool level, where each data-retrieval function applies its own redaction rules before returning results. PII never reaches the reasoning loop in the first place."
+          },
+          {
+            "type": "text",
+            "prop": "Most AI systems treat identity as a binary gate: authenticated or not. That\u2019s a missed opportunity. Identity is a spectrum, and it should shape every downstream decision."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Load the Right Context",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire maintains a YAML knowledge base organized into topic-specific sections: competitive positioning, compliance policies, organizational contacts, product glossary, state-level market intelligence. At any given time, fewer than a dozen of these are relevant to a question. Loading them all would waste tokens, dilute the model\u2019s attention, and slow things down."
+          },
+          {
+            "type": "text",
+            "prop": "So a pre-orchestrator planner runs first. It\u2019s a separate, cheaper model call using the smallest model in the Gemini family. Given the user\u2019s question, catalogs of available knowledge sections, agents, and skills, it returns three decisions: which knowledge sections to inject, whether a skill or a set of agents should handle the request, and whether the orchestrator needs tools at all."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of the knowledge planner routing a user query into three paths: short-circuit with no tools, agent mode with selected agents, or skill mode with prescribed tools",
+              "source": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-planner-routing-20260408T213529.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-planner-routing-20260408T213529-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-planner-routing-20260408T213529-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-planner-routing-20260408T213529-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "That third decision is the short-circuit. If someone asks \u201chow do you define a high-priority district?\u201d and the knowledge base already has a section on district prioritization criteria, the planner returns routing_mode: short_circuit. The orchestrator gets the knowledge context but no tools. Single pass, no tool-calling machinery, answer from context alone."
+          },
+          {
+            "type": "text",
+            "prop": "A meaningful fraction of questions get short-circuited this way. It saves seconds per request and eliminates the risk of unnecessary tool calls producing confusing results."
+          },
+          {
+            "type": "text",
+            "prop": "For questions that do need tools, the planner selects one to four agents from the registry. Ask about enrollment trends? The data warehouse agent. A support ticket? The ticket search agent. Both data and document context needed? Both agents get selected. The orchestrator only sees the tools it actually needs, which keeps the surface minimal and cuts down on hallucinated tool calls."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Loop",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The orchestrator is a PydanticAI agent. Default model: Gemini Flash, with a fallback chain that drops to lighter models if the primary fails or times out. Try the best model first, fall back to cheaper ones, never let a single model failure crash the request."
+          },
+          {
+            "type": "text",
+            "prop": "It receives a system prompt assembled from Jinja2 templates (more on that shortly), dynamic instructions injected at runtime (the user\u2019s identity, temporal context, loaded knowledge, guidance about which agents were pre-selected), and the user\u2019s question."
+          },
+          {
+            "type": "text",
+            "prop": "Then it reasons. Read the prompt, decide which tool to call, observe the result, decide whether to call another tool or write the final answer. Each tool call maps to a domain-specific agent or a deterministic function: query the data warehouse, search Google Drive, look up a support ticket, search the web, read a document."
+          },
+          {
+            "type": "text",
+            "prop": "None of this works without a tool-call budget. Default: 10 calls. With --think (for harder questions): 14. With --ultrathink: 20. Hard limits, enforced at the runtime level. The prompt actually advertises a lower number to preserve headroom for the final response."
+          },
+          {
+            "type": "text",
+            "prop": "Without hard limits, an LLM will call tools in a loop until you stop it. I\u2019ve watched orchestrators burn through 40 tool calls on a question that needed two. Each unnecessary call adds latency and cost, and the user is sitting in Slack waiting. The budget forces the model to plan: which tools give the highest-signal evidence in the fewest calls?"
+          },
+          {
+            "type": "text",
+            "prop": "Then there\u2019s the timeout. The entire run has a wall-clock budget that varies by execution mode. Each tool call has its own deadline inside that. If the data warehouse takes too long, the orchestrator gets a partial result and works with what it has. If the whole run times out, a recovery path synthesizes whatever tool outputs completed into a best-effort response rather than returning nothing."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Tools, Agents, Skills",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Lumping every external call into a single \u201ctool\u201d abstraction is a common first pass. It breaks down fast. A SQL executor, a multi-step data warehouse researcher, and a prescribed session-tracing workflow have different failure modes, different levels of autonomy, and different needs for oversight. Voltaire separates them into three runtime primitives."
+          },
+          {
+            "type": "text",
+            "prop": "Tools are deterministic functions. A tool runs a SQL query against the data warehouse. A tool exports data to a spreadsheet. A tool renders a chart. Pure inputs, pure outputs, no LLM reasoning involved. They\u2019re the atoms of the system, and the design intent is to keep them as isolated as possible so each one can be tested and trusted independently."
+          },
+          {
+            "type": "text",
+            "prop": "Agents are domain-specific reasoning engines that wrap tools. The orchestrator calls an agent entry point, and the agent handles multi-step logic internally. Ask the data warehouse agent a question, and it runs its own loop: plan which tables to query, generate SQL, validate it against PII rules, execute it, check for errors, repair if needed, then return a synthesized result. The orchestrator never sees those internals. It asked a question and got an answer."
+          },
+          {
+            "type": "text",
+            "prop": "Skills are prescribed playbooks. A skill definition specifies the exact tools available, a fixed step-by-step sequence, custom PII rules for that workflow, pre-built SQL queries, and a separate tool-call budget. Unlike agents, skills expose their tools directly to the orchestrator. The orchestrator follows the script rather than deciding its own approach."
+          },
+          {
+            "type": "text",
+            "prop": "What actually separates these isn\u2019t complexity. It\u2019s visibility. In agent mode, the orchestrator asks \u201cwhat do I need to know?\u201d and delegates the \u201chow\u201d entirely. In skill mode, the orchestrator operates at the level of individual tool calls, following a prescribed sequence. Agents hide complexity; skills make it explicit."
+          },
+          {
+            "type": "text",
+            "prop": "The planner routes between these two modes. When someone asks \u201cwhat\u2019s happening with enrollment in California?\u201d the planner selects one to four agents, the orchestrator calls them in whatever order its reasoning dictates, and the final answer emerges from synthesis. Each agent internally decides how to use its tools. When someone asks \u201ctrace session ABC-123,\u201d the planner matches a skill instead. The skill declares two tools (a log query function and a SQL executor), prescribes a sequence (fetch session events, cross-reference with audit logs, synthesize a timeline), and includes its own PII policy. Same playbook every time."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram comparing agent mode with an open tool surface versus skill mode with a locked tool surface and prescribed sequence, both converging to a synthesized answer",
+              "source": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-orchestrator-modes-20260408T213529.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-orchestrator-modes-20260408T213529-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-orchestrator-modes-20260408T213529-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/reasoning-loop-orchestrator-modes-20260408T213529-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The routing contract is strict: the planner returns either matched skills or matched agents, never both. If a skill matches, agents get cleared. The orchestrator can\u2019t access tools outside the skill\u2019s declared surface."
+          },
+          {
+            "type": "text",
+            "prop": "We tried a single mode first. It doesn\u2019t work. Exploratory questions need the flexibility of agent reasoning; operational workflows need the predictability of a deterministic playbook. One mode can\u2019t do both well."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Prompts as Code",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Nearly every system prompt, agent description, and tool instruction in Voltaire lives in a Jinja2 template file, not in Python code."
+          },
+          {
+            "type": "text",
+            "prop": "The first thing this buys you: prompts become version-controlled artifacts. When the AI misbehaves, you can git blame the prompt template and see exactly what changed. You can review prompt changes in pull requests with the same rigor as code changes. No more mystery regressions because someone edited an inline string."
+          },
+          {
+            "type": "text",
+            "prop": "The template system also enables composition. The main orchestrator prompt includes shared fragments for company context, temporal context, PII policy, Slack formatting rules. Skills inject their own instructions into the same template structure. Update the PII policy in one place, it propagates everywhere."
+          },
+          {
+            "type": "text",
+            "prop": "And XML-structured sections give the model clear boundaries. The orchestrator prompt is organized into tagged blocks: identity, company_context, temporal_context, tone, tools, pii_policy, knowledge, formatting, guardrails. The model can attend to the relevant section for any given decision rather than parsing a wall of unstructured text."
+          },
+          {
+            "type": "text",
+            "prop": "On top of this static structure sits a dynamic instruction layer. At runtime, functions inject the user\u2019s identity, the current date and timezone, the planner\u2019s selected knowledge sections, response budget constraints, and guidance about pre-selected agents. Static template defines the shape. Dynamic layer fills in the specifics."
+          },
+          {
+            "type": "text",
+            "prop": "When we added a new agent for Google Workspace search, the core wiring was modular: a registry entry, an agent description, routing rules. New capabilities plug in without rewriting the orchestrator."
+          },
+          {
+            "type": "text",
+            "prop": "The orchestration brain itself accounts for roughly 12% of Voltaire\u2019s codebase. Everything around it, the identity layer, the planner, the skill system, the PII enforcement, the audit logging, exists to make that 12% reliable. That\u2019s the real work of building an AI assistant: not the model, but the pipeline that lets you trust it. The model gets better every quarter. The orchestration layer is what lets you actually ship it."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''The Reasoning Loop'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/reasoning-loop/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://ai.pydantic.dev/",
+              "title": "PydanticAI",
+              "description": "Agent framework for building production-grade AI applications with structured outputs and tool orchestration."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://jinja.palletsprojects.com/",
+              "title": "Jinja2 Template Engine",
+              "description": "Python template engine used for prompt-as-code architecture and composable system prompts."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://deepmind.google/technologies/gemini/",
+              "title": "Google Gemini",
+              "description": "Model family powering orchestration, sub-agent reasoning, and knowledge routing in Voltaire."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://cloud.google.com/vertex-ai/docs/generative-ai/embeddings/get-text-embeddings",
+              "title": "Vertex AI Embeddings",
+              "description": "Text embedding models used for semantic recall and knowledge base vector search."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/company-brain/",
+              "title": "One Brain to Query",
+              "description": "What Voltaire is, what it connects, and what it changed at Parallel Learning."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/information-transit/",
+              "title": "Information Transit",
+              "description": "The data infrastructure prerequisite that makes AI orchestration possible."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

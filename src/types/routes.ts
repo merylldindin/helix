@@ -27,6 +27,7 @@ export enum RoutePath {
   PODCAST_SUGGESTIONS = "/suggestions/podcasts/",
   POLYGON = "/ventures/polygon/",
   PRIVACY_POLICY = "/legal/privacy-policy/",
+  REASONING_LOOP = "/thoughts/reasoning-loop/",
   SLD_IDENTIFICATION = "/thoughts/sld-identification/",
   SLEEP_STAGE_CLASSIFICATION = "/thoughts/sleep-stage-classification/",
   SUGGESTIONS = "/suggestions/",

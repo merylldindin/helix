@@ -27,7 +27,7 @@ export const HelixLightTheme: ThemeDefinition = {
 
 export const HelixDarkTheme: ThemeDefinition = {
   colors: {
-    [ColorName.BACKGROUND]: "#050808",
+    [ColorName.BACKGROUND]: "#000000",
     [ColorName.ERROR]: "#F6F609",
     [ColorName.FOAM]: "#F5FEFE",
     [ColorName.INFO]: "#F6F609",
