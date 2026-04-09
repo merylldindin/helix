@@ -1,0 +1,65 @@
+src/content/pages/thoughts/REASONING_LOOP.json
+  ac82018867bed1e9 1-345
+CLAUDE.md
+  ac82018867bed1e9 30-34
+src/plugins/vuetify.client/colors.ts
+  ac82018867bed1e9 30
+src/content/pages/THOUGHTS_PAGE.json
+  ac82018867bed1e9 18-58
+.claude/skills/publish-article/references/voice-calibration.md
+  ac82018867bed1e9 1-68
+src/content/pages/thoughts/index.ts
+  ac82018867bed1e9 15
+src/types/routes.ts
+  ac82018867bed1e9 30
+src/utils/routes.ts
+  ac82018867bed1e9 30,74
+.claude/skills/publish-article/SKILL.md
+  ac82018867bed1e9 1-93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.6",
+  "base_commit_sha": "242b0ebbdbb29a0cc7badeb6f01c86e65812b336",
+  "prompts": {
+    "9f5f303d027433aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "98bf7a79-c72c-4b05-9edf-b0cd0962f1e2",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 284,
+      "overriden_lines": 0
+    },
+    "ac82018867bed1e9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "396f1306-01d1-4911-b8a8-f44b4c46cc66",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 618,
+      "total_deletions": 64,
+      "accepted_lines": 559,
+      "overriden_lines": 1
+    },
+    "d829d30cac2e77b2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2cf1ecca-0b2e-44ee-a45c-e45f0f7f243d",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 2,
+      "overriden_lines": 0
+    }
+  }
+}
