@@ -7,7 +7,7 @@ requires-python = "==3.13.*"
 dependencies = [
     "boto3==1.42.68",
     "google-genai==1.67.0",
-    "pillow==12.1.1",
+    "pillow==12.2.0",
     "pydantic==2.12.5",
     "python-dotenv==1.2.2",
 ]
