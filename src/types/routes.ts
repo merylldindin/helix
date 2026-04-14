@@ -5,6 +5,7 @@ export enum RoutePath {
   AI_SPECIAL_EDUCATION = "/thoughts/ai-special-education/",
   BIOLOGICAL_AGE = "/thoughts/biological-age/",
   BODY_OF_EVIDENCE = "/thoughts/body-of-evidence/",
+  EATING_ONCE_A_DAY = "/thoughts/eating-once-a-day/",
   ARRHYTHMIA_CLASSIFICATION = "/thoughts/arrhythmia-classification/",
   AUBERGE_DE_CERCOUX = "/ventures/auberge-de-cercoux/",
   BOOK_SUGGESTIONS = "/suggestions/books/",

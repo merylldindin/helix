@@ -1,0 +1,372 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-04-13",
+      "datePublished": "2026-04-13",
+      "keywords": "OMAD, one meal a day, time-restricted feeding, metabolic health, CGM, continuous glucose monitor, fasting, ketones, body composition, DEXA, insulin sensitivity, leptin"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/eating-once-a-day/",
+    "title": "Eating Once a Day | Meryll Dindin",
+    "description": "I eat one meal a day, spend $25, and my metabolic markers look better than most. Ten years of data on what happens when you stop snacking.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/eating-once-a-day-20260413T185540.webp",
+    "thumbnailAlt": "Minimalist clock-plate with geometric food shapes representing time-restricted eating in black and white"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Abstract plate with geometric food shapes and clock markers representing one meal a day eating pattern",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/eating-once-a-day-20260413T185614.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/eating-once-a-day-20260413T185614-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/eating-once-a-day-20260413T185614-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/eating-once-a-day-20260413T185614-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Eating Once a Day",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published April 13, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "People hear \u201cone meal a day\u201d and assume I\u2019m starving myself. I\u2019m not. I weigh 180 pounds, I train every day, and I\u2019ve maintained my lean mass for a decade. The scale hasn\u2019t moved, the bloodwork keeps improving, and I\u2019ve never had more stable energy in my life."
+          },
+          {
+            "type": "text",
+            "prop": "I don\u2019t think of it as a diet. It started with a question that had nothing to do with food."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why One Meal",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I didn\u2019t arrive at one meal a day (OMAD) through a fasting protocol or a longevity podcast. I arrived at it through time."
+          },
+          {
+            "type": "text",
+            "prop": "When you\u2019re running a company, every hour you spend on logistics is an hour you\u2019re not building. Breakfast is a decision. Lunch is a disruption. Snacking is a slow drip of choices that fragments your focus. I realized early on that food was taking up more mental bandwidth than it deserved. Not the eating itself, but the planning, the timing, the constant negotiation with hunger signals that weren\u2019t even real hunger."
+          },
+          {
+            "type": "text",
+            "prop": "So I consolidated. One meal, one window, everything in one sitting. I stack my calls from 8 AM to 2 PM, hit the gym, then cook and eat. Fifteen to twenty minutes of cooking, right before I sit down, so everything is fresh. Nothing past 5 PM. Coffee cuts off at 4 PM. That frees up something most people underestimate: cognitive space. The 2 PM blood sugar dip that kills the back half of everyone\u2019s afternoon? Gone. The micro-decision about whether to grab something before a meeting? Gone. Those small eliminations compound over years."
+          },
+          {
+            "type": "text",
+            "prop": "I also discovered something I didn\u2019t expect. When your body isn\u2019t processing food all day, your energy flatlines. I mean that as a compliment. Same level at 8 AM as at noon as at 8 PM. That predictability turned out to be worth more than any productivity hack I\u2019ve tried."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What\u2019s on the Plate",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I eat vegetables and protein. That\u2019s it. No carbs to speak of. No bread, no rice, no pasta, no sugar. Every meal is whole food, cooked the day I eat it, mostly organic, sourced from places I trust."
+          },
+          {
+            "type": "text",
+            "prop": "A typical plate: a large portion of protein (wild-caught fish, grass-fed beef, organic chicken, or eggs), a generous spread of roasted or sauteed vegetables (broccoli, Brussels sprouts, spinach, zucchini, peppers, whatever is seasonal), and usually some fermented vegetables on the side. I cook with olive oil, season aggressively, and rotate ingredients based on what\u2019s available. There\u2019s no restriction on volume. I eat until I\u2019m full, which on this composition means roughly 1,800 to 2,200 calories in one sitting."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "A typical OMAD plate with seared steak topped with caramelized onions and a fried egg, alongside a tray of mixed vegetables, Dijon mustard, AG1 bottle, and a bowl of blackberries",
+              "source": "https://cdn.merylldindin.com/articles/sections/eating-once-meal-20260413T185934.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/eating-once-meal-20260413T185934-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/eating-once-meal-20260413T185934-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/eating-once-meal-20260413T185934-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "My grocery budget runs $20 to $25 a day. Organic protein is the biggest line item. Vegetables are cheap. I spend 15 to 20 minutes cooking right before I eat, no meal prep services, no supplement shakes standing in for real food. Everything is cooked fresh, which is part of the point. I want to taste what I\u2019m eating."
+          },
+          {
+            "type": "text",
+            "prop": "I\u2019m the son of cooks. Growing up, food was never an afterthought in my house. That probably explains why I can\u2019t settle for reheated leftovers or sad desk lunches. When you have one meal a day, it has to be good. The constraints didn\u2019t make me compromise on quality. They made me care more."
+          },
+          {
+            "type": "text",
+            "prop": "The no-carb part raises the most eyebrows. I just found that carbohydrates, even complex ones, introduce variability into my energy that I don\u2019t want. A sweet potato with dinner means a different next morning than no sweet potato. Over hundreds of observations, the signal was clear enough that I stopped including them. My body runs on fat. It has for years. And the metabolic data supports it."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Glucose, Up Close",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I wore a continuous glucose monitor (CGM) before non-diabetics were really doing it. I met the co-founder of Signos in a jacuzzi in San Francisco, which is about as Silicon Valley as origin stories get. He explained what they were building. I was already deep into health tracking. I got my first CGM through a prescription within a week."
+          },
+          {
+            "type": "text",
+            "prop": "This was a Dexcom G6, paired through the Signos app. The kind of sensor diabetic patients use, repurposed for metabolic optimization. Wearing it as a non-diabetic felt almost frivolous at the time. Nobody in my circle was doing it. But the data hit fast."
+          },
+          {
+            "type": "text",
+            "prop": "The first thing I learned: I wasn\u2019t as metabolically stable as I assumed. Glucose rising 40 to 60 mg/dL above my baseline after meals I thought were clean. The second thing: hydration matters more than most people realize. Even moderate dehydration shifted my glucose readings. Third: sleep quality the night before was often as influential on my fasting glucose as what I ate for dinner."
+          },
+          {
+            "type": "text",
+            "prop": "Diving into my Apple Health data from that period feels like opening a time capsule. Over the fourteen months I tracked blood glucose (September 2021 to November 2022), my readings ranged from 39 to 273 mg/dL. I was in range 91 to 98% of the time, with a monthly average between 92 and 110 mg/dL. Those numbers look clean until you notice the bottom end: 1 to 8% of readings below 70 mg/dL, and 0.1 to 1% below 54. That\u2019s where the real story is."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Apple Health blood glucose data showing two periods: August 2021 to February 2022 with range 39 to 273 mg/dL and weekly average 76 to 123, and May to November 2022 with range 39 to 239 mg/dL and weekly average 94 to 141",
+              "source": "https://cdn.merylldindin.com/articles/sections/eating-once-cgm-data-20260413T191214.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/eating-once-cgm-data-20260413T191214-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/eating-once-cgm-data-20260413T191214-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/eating-once-cgm-data-20260413T191214-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I was experimenting with extended fasts. Forty-eight to seventy-two hours, while maintaining my full training schedule (running, strength work, rucking). I\u2019d done several without issues. One night, my Dexcom alarm went off at 3 AM. Blood glucose had dropped below the low threshold. I was hypoglycemic, in the clinical sense, while asleep. The 39 mg/dL floor in my data? That was the kind of moment that put it there."
+          },
+          {
+            "type": "text",
+            "prop": "That shook me. I\u2019d been treating fasting as a willpower exercise. The CGM showed me it was a metabolic one. You can push through hunger. You can\u2019t push through your brain running out of fuel. I pulled back on extended fasts immediately and shifted to what eventually became my OMAD pattern: a single, substantial feeding window every day, not multi-day deprivation."
+          },
+          {
+            "type": "text",
+            "prop": "The CGM taught me one more thing that I still think about. After a few months of consistent data, the learning curve flattened. I knew what spiked my glucose. I knew what didn\u2019t. I knew what my fasting baseline looked like. The device stopped telling me new things. So I took it off. The sensor itself isn\u2019t the most comfortable thing in the world (genuinely, respect to anyone with diabetes who wears these every day), and once the marginal information dropped to near zero, the tradeoff didn\u2019t make sense. Services like Levels and Lingo have since made access much easier for non-diabetics, and my routine has evolved enough that I\u2019m considering a few weeks with a newer sensor to answer some specific questions. But I haven\u2019t pulled the trigger yet."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Metabolic Receipts",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "My blood tells the same story my energy does. Over a dozen draws across multiple platforms in four years, nothing cherry-picked."
+          },
+          {
+            "type": "text",
+            "prop": "Fasting glucose: 77 to 89 mg/dL across ten draws, most recently 84. Flat as a board. HbA1c between 4.9% and 5.5%, most recently 5.3%. Four years, no drift."
+          },
+          {
+            "type": "text",
+            "prop": "Fasting insulin is the marker I watch most closely in the context of OMAD. Mine runs between 2.9 and 4.7 uIU/mL. High fasting insulin is one of the earliest signals of metabolic dysfunction, often appearing years before glucose starts to climb. Most lab reference ranges cap \u201cnormal\u201d at 18 or 25, but in preventive medicine, anything under 5 is where you want to be. My most recent reading at 4.7 sits right at that line."
+          },
+          {
+            "type": "text",
+            "prop": "Triglycerides have trended down over the years, most recently 57 mg/dL. Triglyceride-to-HDL ratio: 0.85. hs-CRP: 0.3 mg/L. I covered what these numbers mean and how they fit into a broader biomarker hierarchy in a previous article. What matters here is the direction: every metabolic marker that should improve with time-restricted feeding has improved."
+          },
+          {
+            "type": "text",
+            "prop": "Then there\u2019s leptin. This one is underappreciated. Leptin is the hormone your fat cells release to signal how much energy you have stored. In most overweight individuals, leptin is chronically elevated, and the brain stops responding to it (leptin resistance). My leptin: 0.7 ng/mL. The normal range for adult lean males is 0.3 to 13.4. I\u2019m at the floor. Leptin scales directly with fat mass, and at 18.6% body fat with a daily fasting window, this reading makes physiological sense. It means my adipose tissue isn\u2019t throwing distress signals. The system is calibrated to running on less."
+          },
+          {
+            "type": "text",
+            "prop": "Add it up: low glucose, low insulin, low triglycerides, low inflammation, low leptin. Everything that should be low is low. This doesn\u2019t prove OMAD caused it. I changed exercise, sleep, and supplementation over the same period. But the metabolic signature is consistent with what the literature predicts for sustained time-restricted feeding with adequate nutrition."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Same Weight, Ten Years",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I weigh myself every morning. Not obsessively, but consistently. The number has hovered around 180 pounds for roughly a decade. That stability is deliberate."
+          },
+          {
+            "type": "text",
+            "prop": "I don\u2019t count calories. I never have. The feedback loop is simpler: weigh yourself every morning, check body composition annually via DEXA, train consistently. If the scale drifts up, eat a bit less. If lean mass drops, push harder in the gym. The daily weigh-in isn\u2019t about the number on any given day. It\u2019s about the 30-day moving average. That trend is what I manage."
+          },
+          {
+            "type": "text",
+            "prop": "The one number that keeps me honest about OMAD specifically is lean mass. My most recent DEXA showed a 2.0 lb drop year-over-year, from 142.3 to 140.3 lbs. That could be measurement noise (DEXA carries a 1 to 2 lb margin depending on hydration), or it could be real. I can\u2019t tell from a single comparison. If the next scan confirms the trend, I\u2019ll need to increase my protein intake or adjust training volume. OMAD\u2019s biggest risk is under-eating for your activity level, and I take that seriously."
+          },
+          {
+            "type": "text",
+            "prop": "The question I get most often is: don\u2019t you crash during workouts? No. And this confused me at first too. When you\u2019re fat-adapted, your body preferentially oxidizes fat during moderate-intensity exercise and shifts to glycogen only at high intensity. Most of my training sits in the moderate zone. The fuel is always available because I\u2019m carrying it."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Predictable by Design",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The outcome I value most from OMAD isn\u2019t a biomarker. It\u2019s what my days feel like."
+          },
+          {
+            "type": "text",
+            "prop": "I used to have mornings where I\u2019d be fired up and afternoons where I was irritable. Sharp after coffee, foggy after lunch. That variance is gone. People around me notice before I mention it. When someone asks how I\u2019m so even-tempered, the honest answer is that I stopped riding the glucose roller coaster."
+          },
+          {
+            "type": "text",
+            "prop": "Without carbohydrates driving insulin spikes and subsequent crashes, my blood sugar stays flat. My body runs on fat oxidation and produces ketones in the morning (I confirmed this with blood strips for months, usually 0.5 to 1.5 mmol/L, the range indicating nutritional ketosis). The subjective experience is a low hum of consistent focus, hour after hour, that I didn\u2019t know was possible when I was eating three meals a day."
+          },
+          {
+            "type": "text",
+            "prop": "That consistency is what makes this sustainable over a decade. Not discipline. Not willpower. Just stable chemistry."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What I Don\u2019t Know",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I changed too many variables at once to prove anything cleanly."
+          },
+          {
+            "type": "text",
+            "prop": "OMAD, consistent training, good sleep, supplementation, they all shifted in rough parallel over the past decade. The quarterly blood panels tell me the aggregate is trending well. They can\u2019t run attribution."
+          },
+          {
+            "type": "text",
+            "prop": "The best controlled evidence for eating less comes from the CALERIE-2 trial, which I covered in a previous article. Even a modest 12% caloric reduction over two years slowed biological aging. My protocol isn\u2019t caloric restriction per se, but the downstream metabolic signature (low insulin, low glucose, low leptin, low inflammation) overlaps substantially with what that trial measured."
+          },
+          {
+            "type": "text",
+            "prop": "I also can\u2019t tell you this is right for everyone. I\u2019m a 31-year-old male with a decade of adaptation. OMAD without adequate protein intake leads to muscle loss. OMAD with a history of disordered eating is dangerous. OMAD while pregnant or growing is contraindicated. This works for me because I\u2019ve built the infrastructure around it: consistent cooking, enough protein, daily training, regular monitoring. Without those, the protocol is just skipping meals."
+          },
+          {
+            "type": "text",
+            "prop": "But if you\u2019ve never measured what a single meal does to your blood sugar, your insulin, your energy, and your mood, you\u2019re optimizing in the dark. I eat once a day and my fasting insulin is 4.7. That number didn\u2019t come from a protocol I read. It came from ten years of cooking my own food, weighing myself every morning, and paying attention."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Eating Once a Day'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/eating-once-a-day/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nejm.org/doi/full/10.1056/nejmra1905136",
+              "title": "de Cabo, R. & Mattson, M.P. (2019). Effects of Intermittent Fasting on Health, Aging, and Disease.",
+              "description": "Comprehensive review of intermittent fasting health effects including metabolic, cardiovascular, and neurological outcomes. New England Journal of Medicine."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s43587-022-00357-y",
+              "title": "Waziry, R. et al. (2023). Effect of long-term caloric restriction on DNA methylation measures of biological aging.",
+              "description": "CALERIE-2 trial showing even modest caloric restriction slows DunedinPACE aging measure in non-obese adults. Nature Aging."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pubmed.ncbi.nlm.nih.gov/27810402/",
+              "title": "Mattson, M.P. et al. (2017). Impact of intermittent fasting on health and disease processes.",
+              "description": "Review of cellular and molecular mechanisms linking intermittent fasting to disease prevention. Ageing Research Reviews."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://onlinelibrary.wiley.com/doi/full/10.1002/oby.22065",
+              "title": "Anton, S.D. et al. (2018). Flipping the Metabolic Switch.",
+              "description": "Describes the metabolic switch from glucose to fat oxidation and ketone production during fasting. Obesity."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2707428",
+              "title": "Mandsager, K. et al. (2018). Association of Cardiorespiratory Fitness With Long-term Mortality.",
+              "description": "Study of 122,007 patients showing cardiorespiratory fitness as the strongest predictor of survival. JAMA Network Open."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pubmed.ncbi.nlm.nih.gov/17413096/",
+              "title": "Stote, K.S. et al. (2007). A controlled trial of reduced meal frequency without caloric restriction.",
+              "description": "Controlled trial of one meal a day eating pattern in healthy normal-weight middle-aged adults. American Journal of Clinical Nutrition."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pubmed.ncbi.nlm.nih.gov/27304506/",
+              "title": "Longo, V.D. & Panda, S. (2016). Fasting, Circadian Rhythms, and Time-Restricted Feeding in Healthy Lifespan.",
+              "description": "Review connecting fasting patterns and circadian biology to lifespan extension. Cell Metabolism."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/body-of-evidence/",
+              "title": "Dindin, M. (2026). Body of Evidence.",
+              "description": "Article covering biomarker tracking hierarchy and testing stack for health optimization."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://dexafit.com",
+              "title": "DexaFit",
+              "description": "DEXA body composition scanning and VO2 max testing facilities."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://functionhealth.com",
+              "title": "Function Health",
+              "description": "Comprehensive blood biomarker testing platform with over 100 markers per panel."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
