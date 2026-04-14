@@ -1,0 +1,72 @@
+src/content/pages/thoughts/EATING_ONCE_A_DAY.json
+  568709932312e3f8 1-372
+src/content/pages/thoughts/index.ts
+  568709932312e3f8 8
+src/types/routes.ts
+  568709932312e3f8 8
+src/utils/routes.ts
+  568709932312e3f8 14,59
+src/content/schemas/default.json
+  568709932312e3f8 32
+src/content/pages/THOUGHTS_PAGE.json
+  568709932312e3f8 18-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "c2484a2cc2104fe85ebd25700f21491565db442a",
+  "prompts": {
+    "568709932312e3f8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4b5e5e9a-d071-4e07-9339-1b9279e10b66",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 480,
+      "total_deletions": 61,
+      "accepted_lines": 420,
+      "overriden_lines": 0
+    },
+    "9f5f303d027433aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "98bf7a79-c72c-4b05-9edf-b0cd0962f1e2",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 284,
+      "overriden_lines": 0
+    },
+    "ac82018867bed1e9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "396f1306-01d1-4911-b8a8-f44b4c46cc66",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    },
+    "d829d30cac2e77b2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2cf1ecca-0b2e-44ee-a45c-e45f0f7f243d",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 2,
+      "overriden_lines": 0
+    }
+  }
+}
