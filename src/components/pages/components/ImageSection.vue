@@ -45,10 +45,11 @@ const { smAndDown } = useDisplay();
 
       <div class="image-column" :class="{ 'image-column--reverse': reverse }">
         <CustomImage
-          :aspect-ratio="smAndDown ? 1.77 : 1"
+          :aspect-ratio="smAndDown ? undefined : 1"
           class="image-wrapper custom-shadow"
-          cover
+          :cover="!smAndDown"
           :image="image"
+          :use-mobile-source="false"
         />
       </div>
     </div>
@@ -65,7 +66,7 @@ const { smAndDown } = useDisplay();
   align-content: center;
 
   @include sm-down {
-    align-content: space-between;
+    flex-direction: column;
   }
 }
 
@@ -74,7 +75,8 @@ const { smAndDown } = useDisplay();
   max-height: none;
 
   @include sm-down {
-    max-height: 45vh;
+    max-height: none;
+    height: calc(100% - 24px);
   }
 }
 
@@ -118,13 +120,13 @@ const { smAndDown } = useDisplay();
   .text-wrapper,
   .image-column {
     width: 100%;
-    flex-basis: 100%;
   }
 
   .text-wrapper {
     &,
     &--reverse {
       order: 2;
+      flex: 0 0 auto;
       padding-right: $page-gutter;
       padding-left: $page-gutter;
     }
@@ -134,7 +136,18 @@ const { smAndDown } = useDisplay();
     &,
     &--reverse {
       order: 1;
+      flex: 1 1 0;
+      min-height: 0;
+      overflow: hidden;
     }
+  }
+}
+</style>
+
+<style lang="scss">
+@include sm-down {
+  .image-column .v-img__img {
+    object-fit: contain !important;
   }
 }
 </style>
