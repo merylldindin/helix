@@ -1,0 +1,342 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-04-15",
+      "datePublished": "2026-04-15",
+      "keywords": "BigQuery agent, schema-aware SQL, PII filtering, self-healing queries, TOON format, natural language to SQL, data warehouse AI"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/sql-agent/",
+    "title": "The SQL Agent | Meryll Dindin",
+    "description": "How Voltaire turns natural language into schema-aware SQL, filters PII before the model sees it, and repairs broken queries automatically.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/sql-agent-20260415T211107.webp",
+    "thumbnailAlt": "Minimalist black and white illustration of a question mark dissolving through a funnel gate into structured rows of data blocks"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Wide horizontal composition of scattered geometric fragments flowing through vertical gates into neatly aligned rows of rectangular data blocks",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/sql-agent-20260415T211149.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/sql-agent-20260415T211149-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/sql-agent-20260415T211149-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/sql-agent-20260415T211149-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "The SQL Agent",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published April 15, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Ask a large language model to write SQL and it will happily oblige. It will also invent table names, hallucinate column names, ignore your access controls, and return results that look plausible but wrong. The gap between \u201cgenerates SQL\u201d and \u201cgenerates correct, safe, auditable SQL against your actual data warehouse\u201d is where most natural-language-to-SQL projects die."
+          },
+          {
+            "type": "text",
+            "prop": "I built the data warehouse agent inside Voltaire, the internal AI assistant at Parallel Learning. It handles nearly 700 tables across 30-plus source systems, enforces PII restrictions at the schema level, and repairs its own broken queries. I wrote previously about how the orchestrator routes questions through a reasoning loop. This one goes deeper: what happens inside the data warehouse agent when the orchestrator hands it a question."
+          },
+          {
+            "type": "text",
+            "prop": "The model never sees your full schema. It never sees PII columns. It never runs unvalidated SQL. When it gets a query wrong, it reads the error message and tries again."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Six Stages of a Query",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "When the orchestrator calls the data warehouse agent, the question passes through six stages before any SQL touches the database. A table planner selects relevant tables from a compact catalog of nearly 700. The selected tables\u2019 column schemas get serialized and injected into the SQL generation prompt, with PII columns stripped out. A separate model generates SQL under strict constraints. The generated SQL passes through multi-layer validation: AST parsing, column existence checks against the loaded schema, deprecated table blocking, PII column guards. The validated SQL executes against the data warehouse with a 45-second timeout. If it fails with a repairable error, a repair loop generates corrected SQL using the error message and valid column hints. Results get serialized into a token-efficient format and returned to the orchestrator."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of the BigQuery agent pipeline from user question through table planner, schema injection, SQL generator, validation, execution with repair loop, to TOON results returned to the orchestrator",
+              "source": "https://cdn.merylldindin.com/articles/sections/sql-agent-pipeline-20260415T210952.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/sql-agent-pipeline-20260415T210952-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/sql-agent-pipeline-20260415T210952-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/sql-agent-pipeline-20260415T210952-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Two model calls (planner and generator). One optional repair call. Multiple deterministic gates between each. The whole pipeline runs inside a single tool call from the orchestrator\u2019s perspective. It asked a question and got an answer."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Schema First",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The most common failure mode in natural-language-to-SQL is hallucinated schema. The model confidently references tables and columns that don\u2019t exist. Better prompting doesn\u2019t fix this. Restricting what the model can see does."
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire maintains a structured catalog of every table in the data warehouse: name, dataset, type (dbt model vs raw source), and a human-written description. This catalog uses TOON, a compact serialization format designed for tabular data. Where JSON repeats key names for every row, TOON declares the schema once and uses positional values. For 700 tables with four fields each, that roughly halves the token count compared to JSON."
+          },
+          {
+            "type": "text",
+            "prop": "The table planner sees only this catalog. No columns, no full schemas. Just table names and descriptions. Given the user\u2019s question, it selects one to fifteen relevant tables and produces a query plan. Every selected table name must be copied verbatim from the catalog. No invention, no abbreviation."
+          },
+          {
+            "type": "text",
+            "prop": "Models still hallucinate table names despite this constraint. So after the planner returns, a deterministic check validates every selection against the known set. Hallucinated tables trigger a rerun with an explicit correction: \u201cYour previous attempt selected tables that do NOT exist in the catalog. Revise your plan using only real tables.\u201d If it hallucinates again, those tables get dropped."
+          },
+          {
+            "type": "text",
+            "prop": "After table selection, the SQL generator receives full column schemas for only the selected tables: name, type, and description for each column. The generator never sees the full catalog. It works with exactly the tables the planner chose, with exactly the columns that exist."
+          },
+          {
+            "type": "text",
+            "prop": "The dbt layer underneath matters. The warehouse has two tiers: dbt models (cleaned, documented, tested) and raw source tables (as-ingested from 30-plus systems). The planner explicitly prefers dbt models over raw sources when both cover the same data. Raw sources are the fallback. This means the SQL generator usually works with well-documented columns that have clear descriptions, consistent types, and known relationships. Clean metadata in, clean SQL out."
+          },
+          {
+            "type": "text",
+            "prop": "Business logic gets injected too. A YAML configuration describes domain-specific conventions: school year runs July through June, pay periods are semi-monthly, timestamps are UTC and need timezone conversion. Matching strategies are codified: exact equality for structured values like state codes, case-insensitive LIKE for free-text identifiers like account names. Anti-patterns are explicitly forbidden: no INFORMATION_SCHEMA queries, no Oracle/Postgres functions, always SAFE_DIVIDE instead of raw division."
+          },
+          {
+            "type": "text",
+            "prop": "The SQL generator doesn\u2019t need to be creative. It needs to be constrained. Narrow, accurate context plus explicit rules equals reliable SQL."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "PII by Omission",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Most PII protection in AI systems works as a post-processing filter: generate the output, scan for sensitive data, redact. By the time you\u2019re redacting, the model has already seen the PII. It might reference it in its explanation. It might use it as a join condition that leaks information through cardinality."
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire\u2019s approach: remove PII columns from the schema before the model ever sees them. The model cannot reference columns it doesn\u2019t know exist."
+          },
+          {
+            "type": "text",
+            "prop": "A PII registry maps every sensitive column across every table to a tag: employee_name, employee_email, student_email, ssn, phone, address, birth_date. When the SQL generator\u2019s schema context is built, columns with sensitive tags get filtered out. The model receives a complete, functional schema minus the dangerous fields."
+          },
+          {
+            "type": "text",
+            "prop": "Not all tagged columns disappear. Employee names and emails are whitelisted for internal queries. You need to look up your colleagues. Provider-specific columns in provider tables are whitelisted. Student PII is never whitelisted. The filtering considers both the PII tag and the table context: a name column in an employee table is safe; the same tag on a student record is not."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of the five-layer PII filtering pipeline from PII registry through schema filter, SQL generator, AST validation, query execution, and result validation to safe output",
+              "source": "https://cdn.merylldindin.com/articles/sections/sql-agent-pii-filtering-20260415T210952.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/sql-agent-pii-filtering-20260415T210952-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/sql-agent-pii-filtering-20260415T210952-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/sql-agent-pii-filtering-20260415T210952-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "After the model generates SQL, a second layer kicks in. The SQL gets parsed into an abstract syntax tree using sqlglot, a SQL parser with BigQuery dialect support. The validator walks SELECT expressions, resolves table aliases, checks every selected column against the PII registry. SELECT * is blocked by default, forcing explicit column selection. Any PII column in the output means rejection before execution."
+          },
+          {
+            "type": "text",
+            "prop": "Then a third check on the actual results. After execution, returned column names are verified against the PII registry again. Defense in depth: if a PII column somehow slipped through schema filtering and AST validation, it gets caught here."
+          },
+          {
+            "type": "text",
+            "prop": "When a query gets blocked, the system proposes alternatives. \u201cI can\u2019t look up students by name. Please provide the Pathway ID instead.\u201d Never just block. Refuse the PII while offering a safe path to the same insight using anonymized identifiers."
+          },
+          {
+            "type": "text",
+            "prop": "For authorized users, a privileged mode includes PII columns in the schema. Every privileged query is logged for compliance audit. Your department and title determine whether PII columns appear in the schema at all."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "SQL That Fixes Itself",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Even with a perfect schema and explicit constraints, generated SQL fails. The model picks a function that doesn\u2019t exist in BigQuery. It writes a correlated subquery the engine can\u2019t handle. It divides by zero."
+          },
+          {
+            "type": "text",
+            "prop": "The first defense is pre-execution validation. Before SQL touches the database: Does it start with SELECT or WITH? Exactly one statement? No named parameters? No deprecated tables? Do all referenced columns exist in the schema? Each check is deterministic. No model calls. Parsing and comparing."
+          },
+          {
+            "type": "text",
+            "prop": "When SQL passes validation but fails at execution, the repair loop takes over. The system reads the error message and classifies it. Unrecognized column names, syntax mistakes, type mismatches, unsupported function signatures, division by zero: all repairable. Network timeouts, permission denials on the underlying table: not repairable, returned to the orchestrator immediately."
+          },
+          {
+            "type": "text",
+            "prop": "The repair request includes the original question, the failed SQL, the exact error message, and valid column hints for relevant tables. When the error says \u201ccolumn X not found in table Y,\u201d the repair prompt includes every valid column for table Y. The model sees the options instead of guessing."
+          },
+          {
+            "type": "text",
+            "prop": "Prior errors accumulate across tool calls. Up to three recent failures get injected into subsequent instructions as \u201cPRIOR SQL ERRORS (do NOT repeat these mistakes).\u201d The model doesn\u2019t make the same mistake twice in the same conversation."
+          },
+          {
+            "type": "text",
+            "prop": "One repair attempt. That\u2019s the budget. If the repaired SQL also fails, the system returns the error to the orchestrator. One attempt catches most fixable errors. More attempts add latency without improving success rates, and the orchestrator can always reformulate and try a different approach."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Token Economics",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "All the schema injection and repair context described above competes for space in the model\u2019s context window. A query returning 500 rows with 12 columns produces a lot of data, and every tool result feeds back into that same window. Token efficiency isn\u2019t a cost optimization. It\u2019s a reliability constraint. Bloated context means less room for the model to reason about what the data actually says."
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire uses TOON for query results. TOON is a compact serialization format backed by a Rust library. For tabular data, it declares column names once in a header and uses positional values per row. A 500-row JSON result repeats the same key names 500 times. TOON states them once. The savings scale linearly with row count."
+          },
+          {
+            "type": "text",
+            "prop": "TOON isn\u2019t just for results. The table catalog is TOON. Column schemas are TOON. The format runs through the entire data pipeline within the agent. The planner reads the catalog in TOON. The SQL generator reads column schemas in TOON. The orchestrator reads query results in TOON. At every stage, the context window stays as dense with useful information and as free of structural noise as possible."
+          },
+          {
+            "type": "text",
+            "prop": "CSV would be denser, but it loses type information, can\u2019t represent nested structures, and has no metadata support. TOON keeps the structure while cutting the overhead."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The dbt Prerequisite",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "None of this works without a foundation. The 700 tables didn\u2019t describe themselves. Each has a human-written description, documented columns with types and descriptions, PII classifications, deprecation flags, business logic annotations. That metadata comes from the dbt layer: 19 schema domains, 30-plus source systems, maintained and tested as part of the regular data engineering workflow."
+          },
+          {
+            "type": "text",
+            "prop": "The data warehouse agent is where the investment in data infrastructure pays off concretely. Every documented column description makes the table planner more accurate. Every PII annotation makes the filtering more precise. Every dbt model that cleans a raw source table means better inputs for the SQL generator."
+          },
+          {
+            "type": "text",
+            "prop": "A 2026 benchmark from dbt Labs put numbers on this. They compared deterministic semantic layers (pre-modeled metrics and dimensions) against raw text-to-SQL across multiple LLMs. The semantic layer hit 98\u2013100% accuracy on modeled questions. Text-to-SQL topped out around 90%, and its failure mode was worse: plausible but wrong answers instead of clean refusals. The benchmark\u2019s sharpest insight: \u201cWith text-to-SQL, failure looks like a plausible but incorrect answer. With the Semantic Layer, failure looks like an error message.\u201d"
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire\u2019s data layer was built from the start as a semantic layer for the agent. The table catalog with human-written descriptions, the business logic YAML, the PII registry, the preference for dbt models over raw sources: the model never sees raw DDL. It sees curated metadata with domain context. When our head of data shared the dbt benchmark internally, the architecture already matched what they were advocating. We chose to generate SQL from that semantic metadata rather than compile deterministic queries from a constrained metric spec. The tradeoff is intentional: deterministic compilation is safer for recurring KPIs, but it locks you into a rigid coverage surface. Every new question type requires a new metric definition. Text-to-SQL with strong validation handles anything the schema covers, and it gets better every time the underlying model improves. We don\u2019t have to update our scaffolding when the next model generation ships."
+          },
+          {
+            "type": "text",
+            "prop": "There\u2019s a fine line here about how much scaffolding to build around a model that keeps getting smarter. Every deterministic guardrail you add is maintenance you carry forward, and some of it becomes dead weight when the next model generation lands. The dbt benchmark measured models from early 2026. By the time you read this, text-to-SQL accuracy has probably moved again. Our bet is that the right investment is in the semantic metadata itself (descriptions, PII tags, business logic) rather than in deterministic query compilation on top of it. The metadata makes every model better. A rigid compilation layer only helps the current one."
+          },
+          {
+            "type": "text",
+            "prop": "If you want an AI that can query your data, start with the data. Clean schemas, documented columns, classified sensitivity. The AI layer is the last 10% of effort and the first thing users see. Everything underneath is what makes it work."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''The SQL Agent'' by Meryll Dindin \ud83d\udc40",
+              "url": "/thoughts/sql-agent/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026",
+              "title": "Semantic Layer vs. Text-to-SQL: 2026 Benchmark",
+              "description": "dbt Labs benchmark comparing deterministic semantic layers against raw text-to-SQL across multiple LLMs."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://github.com/tobymao/sqlglot",
+              "title": "sqlglot",
+              "description": "SQL parser and transpiler supporting BigQuery dialect, used for AST-level validation and PII column detection."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://ai.pydantic.dev/",
+              "title": "PydanticAI",
+              "description": "Agent framework used for sub-agent orchestration in the table planner and SQL generator."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.getdbt.com/",
+              "title": "dbt (data build tool)",
+              "description": "Transformation layer that produces the documented, tested models the SQL agent depends on."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/company-brain/",
+              "title": "One Brain to Query",
+              "description": "What Voltaire is, what it connects, and what it changed at Parallel Learning."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/reasoning-loop/",
+              "title": "The Reasoning Loop",
+              "description": "How the orchestrator routes questions through identity resolution, knowledge planning, and a reasoning loop."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/information-transit/",
+              "title": "Information Transit",
+              "description": "The data infrastructure prerequisite that makes AI orchestration possible."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

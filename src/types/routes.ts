@@ -31,6 +31,7 @@ export enum RoutePath {
   REASONING_LOOP = "/thoughts/reasoning-loop/",
   SLD_IDENTIFICATION = "/thoughts/sld-identification/",
   SLEEP_STAGE_CLASSIFICATION = "/thoughts/sleep-stage-classification/",
+  SQL_AGENT = "/thoughts/sql-agent/",
   SUGGESTIONS = "/suggestions/",
   SYSNAV = "/ventures/sysnav/",
   TERMS_OF_USE = "/legal/terms-of-use/",

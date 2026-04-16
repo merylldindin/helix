@@ -15,6 +15,49 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "sql-agent-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The SQL Agent",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "April 15, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "How Voltaire turns natural language into schema-aware SQL, filters PII before the model sees it, and repairs broken queries automatically."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article The SQL Agent",
+              "to": "/thoughts/sql-agent/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Minimalist grid of geometric cells with selectively removed columns suggesting data filtering for privacy",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/sql-agent-20260415T211213.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/sql-agent-20260415T211213-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/sql-agent-20260415T211213-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/sql-agent-20260415T211213-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "eating-once-a-day-section",
       "props": {
         "content": [
