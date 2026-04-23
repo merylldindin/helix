@@ -1,0 +1,48 @@
+src/content/pages/THOUGHTS_PAGE.json
+  24fc15bcf8e6f084 18-60
+  76c6545128e65b72 61-101
+src/content/pages/thoughts/index.ts
+  76c6545128e65b72 21
+  24fc15bcf8e6f084 13
+src/types/routes.ts
+  76c6545128e65b72 38
+  24fc15bcf8e6f084 20
+src/content/pages/thoughts/KNOWLEDGE_GRAPH.json
+  24fc15bcf8e6f084 1-357
+src/utils/routes.ts
+  76c6545128e65b72 38,86
+  24fc15bcf8e6f084 20,68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2",
+  "base_commit_sha": "c8642889276bfc4ffc4735639e397f1f81306253",
+  "prompts": {
+    "24fc15bcf8e6f084": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3191956d-0b42-4d8e-91fd-9879309ce4fa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 460,
+      "total_deletions": 56,
+      "accepted_lines": 404,
+      "overriden_lines": 0
+    },
+    "76c6545128e65b72": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "863bf81c-05d4-4841-93b4-5f2ef591e40f",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 336,
+      "total_deletions": 15,
+      "accepted_lines": 321,
+      "overriden_lines": 0
+    }
+  }
+}
