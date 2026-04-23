@@ -10,6 +10,7 @@ export { default as ARRHYTHMIA_CLASSIFICATION } from "./ARRHYTHMIA_CLASSIFICATIO
 export { default as FULL_STACK_BUILDER } from "./FULL_STACK_BUILDER.json";
 export { default as FUTURE_OF_STORYTELLING } from "./FUTURE_OF_STORYTELLING.json";
 export { default as INFORMATION_TRANSIT } from "./INFORMATION_TRANSIT.json";
+export { default as KNOWLEDGE_GRAPH } from "./KNOWLEDGE_GRAPH.json";
 export { default as LEARNING_DIFFERENCES } from "./LEARNING_DIFFERENCES.json";
 export { default as MEASURING_STUDENT_OUTCOMES } from "./MEASURING_STUDENT_OUTCOMES.json";
 export { default as MODELS_HUMAN_COGNITION } from "./MODELS_HUMAN_COGNITION.json";
@@ -17,5 +18,6 @@ export { default as REASONING_LOOP } from "./REASONING_LOOP.json";
 export { default as SLD_IDENTIFICATION } from "./SLD_IDENTIFICATION.json";
 export { default as SLEEP_STAGE_CLASSIFICATION } from "./SLEEP_STAGE_CLASSIFICATION.json";
 export { default as SQL_AGENT } from "./SQL_AGENT.json";
+export { default as TEN_MINUTES_OF_RED } from "./TEN_MINUTES_OF_RED.json";
 export { default as TOMATO_CLUSTERING_BLOG } from "./TOMATO_CLUSTERING.json";
 export { default as TOPOLOGICAL_DATA_ANALYSIS_BLOG } from "./TOPOLOGICAL_DATA_ANALYSIS.json";

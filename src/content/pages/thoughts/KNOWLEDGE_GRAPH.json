@@ -1,0 +1,357 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-04-22",
+      "datePublished": "2026-04-22",
+      "keywords": "knowledge graph, RAG, Vertex AI Search, Discovery Engine, BigQuery vector search, SQLite, domain-wide delegation, ACL indexing, embeddings, hybrid search"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/knowledge-graph/",
+    "title": "A Knowledge Graph for the Rest of Us | Meryll Dindin",
+    "description": "How my internal AI went from a SQLite knowledge graph crawling every Google Drive file to a managed search engine and a BigQuery vector table.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/knowledge-graph-20260422T203632.webp",
+    "thumbnailAlt": "Minimalist black and white illustration of a dense node graph collapsing into two clean tables with a routing arrow between them"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Wide horizontal composition of a tangled web of nodes and edges on the left compacting into two neat grids on the right, representing simplification of a knowledge graph into managed tables",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/knowledge-graph-20260422T203625.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/knowledge-graph-20260422T203625-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/knowledge-graph-20260422T203625-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/knowledge-graph-20260422T203625-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "A Knowledge Graph",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published April 22, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Every RAG architecture diagram I’ve seen in the last eighteen months assumes the same thing: that you should own your knowledge graph. Crawl the documents yourself. Index them yourself. Store the embeddings yourself. Enforce the access controls yourself. Refresh the snapshot on a schedule you control."
+          },
+          {
+            "type": "text",
+            "prop": "That’s what I did. Twice. Then I stopped, looked at the operational surface I’d built, and replaced most of it with managed services."
+          },
+          {
+            "type": "text",
+            "prop": "I previously wrote about Voltaire, my internal AI agent at Parallel. I wrote about how it routes questions, how it translates natural language into SQL. This piece is the part I didn’t want to write, because it’s the part where the architecture I spent weeks building got replaced. The knowledge graph that was going to unify every document, email, ticket, and calendar event across the company into a single index. It’s smaller now, and it works better. I’m still not sure it’s the right shape, but it’s the best answer I’ve found so far."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Starting Small",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The first version was a SQLite file. Nothing more."
+          },
+          {
+            "type": "text",
+            "prop": "I picked SQLite on purpose. The team’s Help Center had a few hundred articles, the corpus was small, everyone in the company could read all of it, and it barely changed. For a knowledge base that small, a hosted search service felt like carrying a club to swat a fly. SQLite gave me three things that mattered for a first version: sub-10 millisecond query latency because everything ran in-process, zero operational footprint because there was no service to run, and local governance because the entire index lived in a single file I could version, diff, or hand to a colleague without any migration work."
+          },
+          {
+            "type": "text",
+            "prop": "The pipeline was a nightly job that fetched articles, stripped HTML, and wrote the result into a SQLite file with a full-text index over the titles. Voltaire downloaded the latest file on startup and queried it read-only. When someone asked “what’s our refund policy,” it returned the right article nearly every time."
+          },
+          {
+            "type": "text",
+            "prop": "That version only lived for a few days. The request I knew was coming landed almost immediately: “Can Voltaire search Google Drive too?”"
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Expanding to Drive",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Drive is a different kind of problem. A Help Center is one bucket everyone can read. Drive is millions of buckets, each with its own access list. A single file might be shared with a specific person, with a Google Group, with the entire company, or with nobody outside its owner. If Voltaire surfaces a document to the wrong person, I’ve built an exfiltration tool."
+          },
+          {
+            "type": "text",
+            "prop": "So I wrote a full crawler. It walked every shared drive, then every person’s private drive through domain-wide delegation, impersonating each user long enough to list what they could see. For every file, it pulled the access control list and stored it alongside the file’s metadata. Google Groups were flattened to individual emails so that group-based access could be filtered at query time without hitting Google again. Folder hierarchies and shortcuts became graph edges. Deletions and trashing reconciled against saved cursors."
+          },
+          {
+            "type": "text",
+            "prop": "The resulting snapshot held 150,000-plus files on top of the Help Center corpus and ended up around three gigabytes. The permissions table alone had a few million rows, one per (file, person) pair. A full rebuild took about thirty minutes, and the pipeline had enough retry loops, backoff, drift-correction sweeps, and state machines for deleted and trashed files to qualify as its own small product."
+          },
+          {
+            "type": "text",
+            "prop": "I built a little visualization tool just to see what I was dealing with. The colored dots are assets, the lines are edges between them, and the colors mark different types (Help Center articles, Drive documents, folders, images). The dense cluster in the middle isn’t a bug. That’s what institutional knowledge actually looks like when you pull it all together: a handful of hub documents everyone links back to, a long tail of orphans, and dense clusters around specific teams and projects."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Screenshot of an internal visualization tool showing a dense cluster of colored nodes (red, orange, yellow, white) connected by edges on a dark background, with asset type filters for Zendesk and Google Drive on the left sidebar, a graph statistics panel showing 747 visible nodes of around 235,000, and a tooltip on a hovered Zendesk section node",
+              "source": "https://cdn.merylldindin.com/articles/sections/knowledge-graph-old-visualizer-20260422T205404.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/knowledge-graph-old-visualizer-20260422T205404-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/knowledge-graph-old-visualizer-20260422T205404-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/knowledge-graph-old-visualizer-20260422T205404-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Query-time filtering fit in a single SQL statement: match the question against the indexed titles, exclude anything trashed or deleted, and join to the permissions table on the requester’s email. Sub-10 millisecond latency, correct against the snapshot I had."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Adding Semantics",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Full-text search over titles hits a ceiling fast. If someone asks “how do we onboard new providers” and the document is titled “Provider Activation Workflow v3,” a keyword index doesn’t know those are the same thing. So I added a semantic layer on top."
+          },
+          {
+            "type": "text",
+            "prop": "I ran every document through Gemini to tag it (session notes, IEPs, SOPs, invoices, templates, and so on, plus a sensitivity label for student, provider, or employee data). Every file got an AI-generated summary and an embedding. A subset of content-rich file types went through a second pass that extracted the actual body text and re-embedded from that. At query time, keyword matches got reranked by embedding similarity, weighted by tag match, path match, and freshness."
+          },
+          {
+            "type": "text",
+            "prop": "It actually worked. Recall improved on the kinds of queries where the user’s wording didn’t match the document title. The snapshot stayed fast because the embedding comparison only ran on the hundred or so keyword candidates per query, not the full corpus."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Where It Broke",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The search quality was fine. The operational shape was the problem."
+          },
+          {
+            "type": "text",
+            "prop": "Four things added up."
+          },
+          {
+            "type": "text",
+            "prop": "First, freshness. The snapshot was rebuilt every few days. For a Help Center that changes weekly, fine. For an active Drive where someone ships a proposal at 3pm and wants Voltaire to find it at 4pm, not fine. Google applies a shared rate limit across every call my crawler made, and a domain-wide permissions crawl burned through it fast. I could either index more often or index more comprehensively, not both."
+          },
+          {
+            "type": "text",
+            "prop": "Second, permission drift. Google’s change stream tells me when a file is renamed, moved, newly shared, or trashed. It does not tell me when someone is added to a Google Group. If a colleague joined a group on Monday, the Drive API showed zero change on any file that group had access to, because the file’s permission record was unchanged. Catching that required re-resolving every group in the company on every run. A lot of API calls to discover, most of the time, that nothing changed."
+          },
+          {
+            "type": "text",
+            "prop": "Third, cost. Not dollar cost, operational cost. The build pipeline had accumulated enough failure modes that I was the only person on the team who could fix it when it broke. That’s a warning sign when the team is small."
+          },
+          {
+            "type": "text",
+            "prop": "Fourth, scope. The knowledge graph wanted to be the single front door to every search. But Drive changes constantly, tickets change constantly, and email and calendar were already on the backlog. Every new source meant a new crawler, a new permission model, a new staleness tradeoff."
+          },
+          {
+            "type": "text",
+            "prop": "At some point the cost of keeping the graph working crossed the value it delivered. That’s the moment to stop."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Split",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I replaced it in two pieces."
+          },
+          {
+            "type": "text",
+            "prop": "For Google Workspace (Drive, Gmail, Calendar, Chat), I moved to Vertex AI Search. Google has first-party connectors for its own Workspace products that enforce real-time access controls against the caller’s Google identity. When Voltaire gets a question, it impersonates the Slack user’s Google identity, hits four search endpoints in parallel (one per source), and merges the results. Failed engines come back empty, the others return independently. Typical latency is a few hundred milliseconds per engine. Newly created Drive docs show up in results within a couple of hours, with no rebuild needed on my side."
+          },
+          {
+            "type": "text",
+            "prop": "Two surprises cost me an afternoon each. One was an undocumented API version quirk: only the alpha surface returns results for Workspace data; the stable surface returns nothing. The other was credentials: the standard way of impersonating a user in Google’s SDK doesn’t work for Workspace searches, because that path applies the service account’s permissions instead of the user’s. Neither is mentioned in the quickstart. Someone had to run into them first so I could write about them second."
+          },
+          {
+            "type": "text",
+            "prop": "For the Help Center, I went the other direction: away from SQLite, not toward a managed engine. Because the Help Center is domain-wide, I didn’t need per-user filtering. I needed semantic search over a small, slow-changing corpus. I ended up with two BigQuery tables: one for articles, one for attachments. BigQuery has a vector similarity function that takes either table, its embedding column, and a query vector, and returns ranked results in one SQL call. Cosine similarity is a named argument. That’s the whole query."
+          },
+          {
+            "type": "text",
+            "prop": "A nightly job pulls new or changed articles, calls Gemini to generate a summary and an embedding, and upserts the articles table. Screenshots and images inside articles go through Gemini’s image understanding to produce a searchable description, then get embedded the same way and written to the attachments table. Keeping them separate means each row type stays clean (one is prose, the other is an image caption) and the runtime can decide which surface to query based on what the user’s question is asking about. Multi-tenant routing falls out naturally from the tenant column on every row."
+          },
+          {
+            "type": "text",
+            "prop": "The Help Center part of my stack is now two BigQuery tables, one Gemini call per asset at ingestion, and one vector search SQL query at runtime. The SQLite file, the full-text rebuild, the per-tenant crawl script: all gone."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of the current split architecture: a Slack question flows to a knowledge router, which fans out to Vertex AI Search across Drive, Gmail, Calendar, and Chat on one side, and BigQuery VECTOR_SEARCH over the Zendesk table on the other, with both paths merging into a ranked, PII-redacted answer",
+              "source": "https://cdn.merylldindin.com/articles/sections/knowledge-graph-architecture-20260422T203544.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/knowledge-graph-architecture-20260422T203544-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/knowledge-graph-architecture-20260422T203544-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/knowledge-graph-architecture-20260422T203544-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What’s Left of the Graph",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The word “graph” turned out to be load-bearing for me for a long time. I had nodes and edges and ancestry and similarity edges and hybrid rankings and freshness buckets. It looked the part of a serious system. It was also doing the work of two systems that, outside my company, already exist as products: an enterprise search engine and a vector database."
+          },
+          {
+            "type": "text",
+            "prop": "I’m still wrapping my head around what the right shape is here. Managing knowledge for a whole company is one of the hardest conceptual problems I’ve worked on, and also one of the most exciting. Every department has its own notion of what a “document” is. Email threads, calendar events, Slack messages, meeting recordings, spreadsheets, wiki pages, codebases. Each has its own freshness curve, its own sensitivity, its own permission model. A unified index is the seductive abstraction. The real question is where the unification actually happens, and I keep moving that line."
+          },
+          {
+            "type": "text",
+            "prop": "What I’m confident about now is the division of labor. The hard part of retrieval isn’t the index. It’s identity resolution (who is asking), access enforcement (what can they see), and freshness (how current is the index). For Google Workspace specifically, I was racing a team at Google whose full-time job is getting those three right. I was losing that race before I noticed, because the loss was invisible until the snapshot was a week stale and someone escalated."
+          },
+          {
+            "type": "text",
+            "prop": "The right-sized knowledge graph for a company our size isn’t a graph at all. It’s a managed search layer for the content that has access-control complexity, a vector table for the content that doesn’t, and a thin routing layer in front of both. That’s the architecture I have now. The SQLite file, the crawler, the rebuild job: all deleted."
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire didn’t get dumber when I ripped the graph out. The sources it reaches grew (email, calendar, and chat came along with the migration), freshness improved from days to hours, and the operational surface shrank to almost nothing. That last part is the one I keep coming back to. The version I run today takes an order of magnitude less time to maintain and covers more ground than the version it replaced."
+          },
+          {
+            "type": "text",
+            "prop": "You could argue that the current stack (managed Workspace search, the Help Center vector tables, the Slack search Voltaire already uses, and the BigQuery agent that queries our data warehouse) collectively covers every source of institutional data and knowledge the company runs. Whether the orchestrator picks a tool or a human invokes one directly as a standalone surface, there’s a retrieval path to every document, ticket, email, calendar event, conversation, and metric. I didn’t plan it that way. It’s what the pieces turned into once I stopped trying to unify them under a single graph."
+          },
+          {
+            "type": "text",
+            "prop": "And I fully expect to rewrite it again."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''A Knowledge Graph for the Rest of Us'' by Meryll Dindin 👀",
+              "url": "/thoughts/knowledge-graph/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://cloud.google.com/generative-ai-app-builder/docs/introduction",
+              "title": "Vertex AI Search (Discovery Engine)",
+              "description": "Managed enterprise search with first-party connectors for Google Drive, Gmail, Calendar, and Chat."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://cloud.google.com/bigquery/docs/reference/standard-sql/search_functions",
+              "title": "BigQuery VECTOR_SEARCH",
+              "description": "Native vector similarity search in BigQuery, with cosine, Euclidean, and dot-product distance."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://ai.google.dev/gemini-api/docs/embeddings",
+              "title": "Gemini embeddings",
+              "description": "Google’s embedding model that powers the document vectors behind the Help Center search path."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://developers.google.com/workspace/drive/api/guides/limits",
+              "title": "Google Drive API usage limits",
+              "description": "Shared per-project quota that made a continuous domain-wide permissions crawl impractical."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://support.google.com/a/answer/162106",
+              "title": "Domain-wide delegation",
+              "description": "Workspace impersonation pattern used for both the legacy Drive crawl and the current per-user Discovery Engine auth."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.sqlite.org/fts5.html",
+              "title": "SQLite FTS5",
+              "description": "Full-text search virtual table that anchored the first two versions of my knowledge graph."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/company-brain/",
+              "title": "One Brain to Query",
+              "description": "What Voltaire is, what it connects, and what it changed at Parallel."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/reasoning-loop/",
+              "title": "The Reasoning Loop",
+              "description": "How the orchestrator routes a Slack question through identity resolution, knowledge planning, and tool calls."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/sql-agent/",
+              "title": "The SQL Agent",
+              "description": "How Voltaire turns natural language into schema-aware SQL against my BigQuery warehouse."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/information-transit/",
+              "title": "Information Transit",
+              "description": "The data infrastructure prerequisite that makes this kind of AI surface possible."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
