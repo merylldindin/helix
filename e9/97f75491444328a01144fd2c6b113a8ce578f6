@@ -1,0 +1,36 @@
+src/content/pages/thoughts/TEN_MINUTES_OF_RED.json
+  76c6545128e65b72 1-274
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "e997f75491444328a01144fd2c6b113a8ce578f6",
+  "prompts": {
+    "3c2f2f656a23b710": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a05991df-e089-400e-9318-2ef57095eb0d",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 1591,
+      "overriden_lines": 0
+    },
+    "76c6545128e65b72": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "863bf81c-05d4-4841-93b4-5f2ef591e40f",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 274,
+      "overriden_lines": 0
+    }
+  }
+}
