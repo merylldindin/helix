@@ -1,0 +1,44 @@
+src/content/pages/THOUGHTS_PAGE.json
+  3c2f2f656a23b710 18-58
+src/content/pages/thoughts/MY_AI_PHARMACIST.json
+  3c2f2f656a23b710 1-342
+src/types/routes.ts
+  3c2f2f656a23b710 27
+src/utils/routes.ts
+  3c2f2f656a23b710 27,76
+src/content/pages/thoughts/index.ts
+  3c2f2f656a23b710 17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "04d20f4ef996f34f5171bfcd37ec5f05ee2d916c",
+  "prompts": {
+    "24fc15bcf8e6f084": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3191956d-0b42-4d8e-91fd-9879309ce4fa",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 0,
+      "overriden_lines": 0
+    },
+    "3c2f2f656a23b710": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a05991df-e089-400e-9318-2ef57095eb0d",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin",
+      "messages": [],
+      "total_additions": 2005,
+      "total_deletions": 25,
+      "accepted_lines": 1965,
+      "overriden_lines": 15
+    }
+  }
+}
