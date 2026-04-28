@@ -1,0 +1,342 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-04-27",
+      "datePublished": "2026-04-27",
+      "keywords": "AI supplement stack, personalized supplementation, ChatGPT Health, ChatGPT for Clinicians, Perplexity Health, omega-3, creatine, NAD precursors, longevity supplements, biomarker-driven, third-party tested supplements, Momentous, Thorne, Function Health"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/my-ai-pharmacist/",
+    "title": "My AI Pharmacist | Meryll Dindin",
+    "description": "I fed three years of biomarkers into a chat window and asked for a supplement stack. The output was sharper than what most clinicians would produce.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/my-ai-pharmacist-20260427T200519.webp",
+    "thumbnailAlt": "Minimalist black and white composition of a chat bubble feeding into a row of supplement capsules, representing an AI-built supplement stack"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Minimalist black and white composition of a chat bubble dispensing pills along a clean horizontal line, evoking an AI-driven personal pharmacy",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/my-ai-pharmacist-20260427T200540.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/my-ai-pharmacist-20260427T200540-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/my-ai-pharmacist-20260427T200540-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/my-ai-pharmacist-20260427T200540-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "My AI Pharmacist",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published April 27, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Last month I spent one hour on my phone, prompting Perplexity and ChatGPT Health, and walked out with a supplement protocol I’d been meaning to design for over a year. The trigger was my mother. Elevated cholesterol runs on her side of the family, lipoprotein(a) is the kind of cardiovascular signal you can’t train your way out of, and she started statins about a year ago. That’s the kind of family history I read as a starting gun, not a verdict. My own panels have been creeping in the same direction. I’d been covering the obvious bases all along (low vitamin D, take vitamin D; low ferritin, fix the iron; insufficient omega-3 index, add fish oil), one first-order correction at a time. What I hadn’t done was step back and design a stack that targeted the second and third-order effects: the LDL trajectory, the longevity pathways, the senolytic and autophagy levers that don’t show up in any single biomarker."
+          },
+          {
+            "type": "text",
+            "prop": "Then I gave the right path to a model. The model already had everything it needed. Three years of biomarkers from blood sampling (Function Health, InsideTracker, Quest Diagnostics, WHOOP Panels). DEXA scans, VO2 max numbers, a Kernel BrainAge. Two TruDiagnostics epigenetic clocks per quarter, broken down by organ system. Training and recovery from WHOOP and Oura. Sleep from EightSleep and Oura. Blood pressure from Omron, daily weight, an anecdotal grip strength log from a hand dynamometer. My own eating logs sitting next to it."
+          },
+          {
+            "type": "text",
+            "prop": "What I asked for was specific: a stack to address the lipid trajectory, support my training, and target the longevity pathways my biomarkers said were already responding. Avoid red yeast rice. Stick to compounds with USP, NSF, IFOS, or Informed Sport certification. Give me a stack a normal customer can buy without a clinician unlocking a portal."
+          },
+          {
+            "type": "text",
+            "prop": "The red yeast rice constraint is its own small case study in how this category works. Until recently, every longevity-adjacent platform I read recommended it as a natural alternative to statins. I had taken it on and off for years. Then the recommendation flipped almost overnight. Asking the model why was the kind of question the chat window handles well: red yeast rice contains monacolin K, which is biochemically identical to lovastatin, with all the same drug-interaction and liver-stress profile and none of the regulatory oversight. The dose varies wildly batch to batch, citrinin contamination is common, and the EU has effectively capped it at sub-therapeutic levels. The model surfaced the relevant studies, I read them, and the swap from “take it” to “avoid it” went from received wisdom to defensible position in fifteen minutes."
+          },
+          {
+            "type": "text",
+            "prop": "What came back wasn’t a list of products. It was a synthesis of the trial data behind each compound, mapped against my own numbers, with the actual studies linked so I could read them in real time and judge for myself whether I belonged to the cohorts that were tested. Optimization under constraint, not life or death. The constraints might shift in six months, and that’s fine. I was never trying to cure anything. I was trying to compress a hundred hours of literature review into something I could actually run."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Data Was Already Structured",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The reason this worked “out of the box” has nothing to do with the model and everything to do with what I fed it. I haven’t been writing about my health stack publicly for long, but I’ve been keeping a quarter-by-quarter experimentation log of it for years. Panels filed by date, supplement habits with their start and end dates, training cycles, sleep tracking, the things that worked and the things that didn’t. A handful of those threads have made it into recent articles on this blog. The biomarker hierarchy in one. The OMAD eating window and the metabolic receipts behind it in another. The DEXA and DunedinPACE numbers in a third."
+          },
+          {
+            "type": "text",
+            "prop": "When I opened the chat, I wasn’t starting from zero. I pasted in the relevant articles as context, attached the most recent panels as PDFs, and wrote a paragraph of intent: my biomarker baseline, what I wanted the protocol to address, and the constraints I wanted enforced. After establishing my profile, I asked the model to first surface the science most relevant to someone at my age, sex, and biomarker profile. Compound by compound, what does the trial literature say for a 31-year-old male with my LDL trajectory, my VO2 max, my body composition, my metabolic markers? Only after that pass did I let it move to brand selection and dosing. The first reply was already 80% useful. Three rounds of follow-ups got it to 95%."
+          },
+          {
+            "type": "text",
+            "prop": "The model is only as good as the structured context you hand it. Walk in with a vague description of your lifestyle and a vague goal, you get a vague stack. Walk in with three years of longitudinal data, a clear hypothesis, and explicit constraints, you get a research analyst. Most of the people I see complaining that AI gives bad (health) advice are skipping the first half of that sentence. Garbage in, garbage out."
+          },
+          {
+            "type": "text",
+            "prop": "Side note that deserves its own article: this is exactly where every brand, lab, and clinical platform needs to start investing in AI Search Engine Optimization. When the chat window becomes the first place a motivated patient looks, your COA, your study links, your label data, and your dose justifications are what the model surfaces or ignores. SEO got us to a decade of content marketing. AI SEO will replace it inside 18 months, and the platforms that already publish structured, machine-readable evidence are the ones that will keep showing up in protocols like mine."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What I Asked For",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The prompt, distilled, was this. Build a stack that addresses my elevated LDL without red yeast rice (I want statin-class biology, not statin-class side effects, and I don’t want to mask the marker my doctor is reading). Cover the longevity pathways the evidence is strongest for at my profile: NAD precursors (NR feeds the NAD+ pool, and my methylation clocks have been trending favorably alongside the rest of my protocol), autophagy support (my fasting protocol already activates it; spermidine adds dietary substrate), senolytic activity (I’m 31, and pulsing now is cheaper than pulsing at 50). Support my training: creatine, omega-3 at therapeutic dose, ubiquinol because high-volume training is one of the contexts where supplemental CoQ10 has a defensible mechanism. Sleep and recovery: magnesium glycinate. Fiber. Vitamin D at a maintenance dose, since my latest panel showed me sufficient."
+          },
+          {
+            "type": "text",
+            "prop": "Hard constraints: third-party tested. Direct-to-consumer (no practitioner dispensary). Minimum number of vendors. No proprietary blends I can’t dose precisely. Schedule it around my eating window, which is one large meal between 1 and 2 PM after training."
+          },
+          {
+            "type": "text",
+            "prop": "The first output was a table: compound, target dose, recommended brand, why that brand, how to dose it to hit the target. I asked for a consolidation pass that minimized the number of vendors without dropping below my testing standards, which collapsed the list to three core brands plus one specialty shop. A third pass mapped the entire stack to my eating window: what to take with the morning coffee, what to take with the post-workout meal, what to take before bed."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Stack That Came Back",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Eleven compounds, four vendors. Most of the volume routes through Momentous (omega-3, creatine, ubiquinol, all NSF Certified for Sport) and Thorne (magnesium bisglycinate, berberine 500 mg). Nature Made covers the USP-verified commodities (D3 2,000 IU, plant sterols and stanols at 1,800 mg/day from CholestOff Complete, the only non-statin LDL lever with an FDA-authorized health claim). NOW Foods organic psyllium for the soluble fiber. The longevity-specific compounds with no major-brand equivalents (NR via Tru Niagen at 300 mg/day, SpermidineLIFE at ~1 mg per daily serving from wheat-germ extract, Omre’s quercetin-plus-fisetin combo for senolytic pulsing) come from the brands that actually publish clinical material on them."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "The full eleven-compound stack lined up on a kitchen counter: Thorne Magnesium Glycinate, Thorne Berberine, Momentous Ubiquinol, Quercetin and Fisetin, Momentous Vitamin D3, SpermidineLIFE, Momentous Omega-3, Momentous Creatine, Tru Niagen, Nature Made CholestOff Complete, and NOW Foods Organic Psyllium Husk Powder",
+              "source": "https://cdn.merylldindin.com/articles/sections/my-ai-pharmacist-stack-20260428T074659.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/my-ai-pharmacist-stack-20260428T074659-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/my-ai-pharmacist-stack-20260428T074659-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/my-ai-pharmacist-stack-20260428T074659-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "What the constraint set bought me is verifiability. Every compound has either an FDA-authorized claim, a published clinical dose-response, or a third-party purity certificate I can pull from a public database. Nothing is on the list because it sounds futuristic. Each item is on it because the biomarker said so, or because the mechanism is defensible against the goal I named."
+          },
+          {
+            "type": "text",
+            "prop": "The vendor consolidation is the part most people underestimate. Practitioner dispensaries (Fullscript, Wellevate, Emerson Ecologics) carry the cleanest brands but require a clinician account to unlock. Most of the consumer brands you can buy on Amazon either skip the third-party testing step or hide the certificate of analysis behind a contact form. The middle ground (direct-to-consumer brands that publish COAs) is small and not always discoverable. Asking the model to minimize vendors while preserving testing standards collapsed the list to four checkouts and a renewal-date spreadsheet. A clinician could have done this. Most don’t, and the ones who do usually have a financial relationship with the dispensary they recommend, which makes the recommendation suspect even when it’s correct. The model has no such conflict."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Mapping the Stack to My Day",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The schedule is half the value of any stack. Fat-soluble compounds need fat, berberine wants to precede a meal, magnesium glycinate works better as a wind-down than a wake-up. My eating window is one main meal between 1 and 2 PM after training, with an optional pre-meal earlier in the morning when I have time (a bowl of Greek yogurt with a mix of raw nuts and honey). The model read my OMAD article, picked up the rhythm, and dropped each compound into the right slot: omega-3, D3, NR, spermidine, fisetin/quercetin and the first berberine with the morning yogurt; psyllium, the second berberine, creatine, ubiquinol and the rest of the plant sterols with the main meal; magnesium glycinate one to two hours before sleep. I didn’t have to translate."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Just Shipped Changes the Calculus",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The workflow I just described is the manual version of a category of products I’ve been using as they ship."
+          },
+          {
+            "type": "text",
+            "prop": "ChatGPT Health came first, in January 2026. It’s where I started. The consumer-facing tier lets you connect medical records and wellness apps, ask questions, get plain-language lab explanations. It was good enough to keep me asking the right questions, but the data I cared about lived in too many places for the early integrations to cover, and the interpretive layer was still a wrapper around generalist ChatGPT."
+          },
+          {
+            "type": "text",
+            "prop": "Perplexity Health, in March 2026, fixed most of that. It connects directly to Apple Health, EHRs from over 1.7 million providers, and wearable platforms (Fitbit, Ultrahuman, Withings, Oura via Apple Health), pulls from records, labs and wearable data simultaneously, cites peer-reviewed sources on every response, and pressure-tests output through a clinician advisory board. Health data isn’t used to train models. Access is gated to Pro and Max subscribers in the US. The bulk of the iteration that produced this stack happened there."
+          },
+          {
+            "type": "text",
+            "prop": "ChatGPT for Clinicians, on April 23, 2026, completes the strategy with a professional surface I won’t qualify for as a non-clinician. Free for verified physicians, nurse practitioners, physician assistants, and pharmacists, with deep medical research, cited clinical search, and reusable workflow skills (prior authorizations, evidence reviews). OpenAI shipped HealthBench Professional alongside it, an open benchmark for clinician chat tasks. The pattern across all three is the same: consumer, prosumer, professional, all converging on the same thesis that AI is a better partner for routine clinical reasoning than the appointment system was ever going to be."
+          },
+          {
+            "type": "text",
+            "prop": "What none of these products solves yet is the vendor consolidation problem. None of them will hand you a brand recommendation tied to a real shopping cart, and the brand-by-brand reasoning still requires you to drive. The category is early. The fact that a chat session can already produce a better protocol than the appointment system tells you most of what you need to know about how much further the dedicated products can go."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Where I Did Not Trust the Output",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The stack is good because I had data. I had data because I’ve been collecting it for years. The model didn’t generate biomarkers. It interpreted them, and that distinction matters when deciding what parts of the output to take at face value."
+          },
+          {
+            "type": "text",
+            "prop": "A few things I checked outside the chat. Every recommended SKU was cross-referenced against the database of the certification claimed (NSF Sport, USP Verified, IFOS). For each compound, I pulled up the trial data the model cited and asked the harder question: do I belong in the cohort that was tested? Berberine trials enroll people with elevated fasting glucose; mine sits at 84 mg/dL, on the floor of healthy, so it stays in only because the LDL/Lp(a) story is the reason for it, not glycemic control. I read the major omega-3 cardiovascular trials and confirmed my lipid profile lines up with the populations that showed effect. None of this required a second opinion. It required time with PubMed and a willingness to admit when the cohort fit was thin."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Honest Asymmetry",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The reason I trust AI with this and not, say, a diagnosis, is that supplementation is a relatively low-stakes, slow-feedback domain. If the protocol is wrong, the worst case is that I’ve spent money on inert pills for a quarter. If it’s right, the marginal benefit is real but small in any given month, and only compounds into something visible over years. Bounded downside, asymmetric upside."
+          },
+          {
+            "type": "text",
+            "prop": "A diagnosis works the other way. The downside is unbounded (a missed cancer, a wrong heart workup), and the model’s confidence calibration on rare presentations is still suspect. I wouldn’t ask the same chat window to read my MRI. I would ask it to summarize the report a radiologist already wrote, then take that summary into a real consult."
+          },
+          {
+            "type": "text",
+            "prop": "The supplement stack sits in a sweet spot for AI: structured data, slow feedback, and personalization requirements that defeat any off-the-shelf protocol. AI isn’t replacing the clinician here. It’s replacing the half of the clinician’s time that should have been spent reading the latest IFOS database and wasn’t."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What This Feels Like in Practice",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Selecting a high-quality omega-3 was never a clinical decision. It was a consumer research project that doctors agreed to do because no other system was available. A different system is now available, and the constraint has flipped: it’s no longer access to information, but the willingness to gather your own data and put it in front of a model that can reason about it."
+          },
+          {
+            "type": "text",
+            "prop": "I’ve been collecting that data for years for other reasons (epigenetic clocks, body composition, training adaptation). The supplement stack is the first place the collection paid off in a way that felt like an actual product rather than a quantified-self hobby. The pharmacist on the corner still has a role for prescription fills. The pharmacist in my chat window covers the part the corner pharmacy was never structured to do."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''My AI Pharmacist'' by Meryll Dindin 👀",
+              "url": "/thoughts/my-ai-pharmacist/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://openai.com/index/making-chatgpt-better-for-clinicians/",
+              "title": "OpenAI. (2026). Making ChatGPT better for clinicians.",
+              "description": "Announcement of ChatGPT for Clinicians and HealthBench Professional, April 23, 2026."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://openai.com/index/introducing-chatgpt-health/",
+              "title": "OpenAI. (2026). Introducing ChatGPT Health.",
+              "description": "Consumer-facing ChatGPT Health tier with medical record and wellness app connectivity, January 2026."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.perplexity.ai/hub/blog/introducing-perplexity-health",
+              "title": "Perplexity. (2026). Introducing Perplexity Health.",
+              "description": "Personal health data search engine connecting Apple Health, EHR records, and wearable data, March 2026."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nsfsport.com/certified-products/",
+              "title": "NSF. Certified for Sport Products Database.",
+              "description": "Public database of supplements certified for athletic-grade purity and label accuracy."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://certifications.nutrasource.ca/about/how-certifications-work/ifos",
+              "title": "Nutrasource. International Fish Oil Standards Program.",
+              "description": "IFOS testing program for omega-3 purity, potency, and oxidation."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.usp.org/verification-services/program-participants",
+              "title": "USP Verified Mark Program.",
+              "description": "Public list of USP-verified dietary supplements and manufacturing facilities."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.livemomentous.com/blogs/all/third-party-certified-supplements",
+              "title": "Momentous. Third-Party Certified Supplements.",
+              "description": "Overview of NSF and Informed Sport certification across the Momentous product line."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.truniagen.com/blogs/tru-niagen-labs/the-harsh-reality-of-nr-supplements-whats-in-your-supplements",
+              "title": "Tru Niagen. Clinical Evidence for Nicotinamide Riboside.",
+              "description": "Summary of human clinical trial data and third-party testing for Niagen."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/body-of-evidence/",
+              "title": "Dindin, M. (2026). Body of Evidence.",
+              "description": "Article covering biomarker tracking hierarchy and testing stack for health optimization."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/eating-once-a-day/",
+              "title": "Dindin, M. (2026). Eating Once a Day.",
+              "description": "Article on OMAD, CGM data, and metabolic markers under time-restricted feeding."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/biological-age/",
+              "title": "Dindin, M. (2026). Biological Age Is Not a Number.",
+              "description": "Article on epigenetic clocks, DunedinPACE, and organ-level aging measurement."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

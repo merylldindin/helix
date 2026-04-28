@@ -14,6 +14,7 @@ export { default as KNOWLEDGE_GRAPH } from "./KNOWLEDGE_GRAPH.json";
 export { default as LEARNING_DIFFERENCES } from "./LEARNING_DIFFERENCES.json";
 export { default as MEASURING_STUDENT_OUTCOMES } from "./MEASURING_STUDENT_OUTCOMES.json";
 export { default as MODELS_HUMAN_COGNITION } from "./MODELS_HUMAN_COGNITION.json";
+export { default as MY_AI_PHARMACIST } from "./MY_AI_PHARMACIST.json";
 export { default as REASONING_LOOP } from "./REASONING_LOOP.json";
 export { default as SLD_IDENTIFICATION } from "./SLD_IDENTIFICATION.json";
 export { default as SLEEP_STAGE_CLASSIFICATION } from "./SLEEP_STAGE_CLASSIFICATION.json";

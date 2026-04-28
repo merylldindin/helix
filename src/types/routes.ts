@@ -24,6 +24,7 @@ export enum RoutePath {
   MENTIONS = "/mentions/",
   MISSIONS = "/missions/",
   MODELS_HUMAN_COGNITION = "/thoughts/models-human-cognition/",
+  MY_AI_PHARMACIST = "/thoughts/my-ai-pharmacist/",
   NEWSLETTER_SUGGESTIONS = "/suggestions/newsletters/",
   PARALLEL_LEARNING = "/ventures/parallel-learning/",
   PODCAST_SUGGESTIONS = "/suggestions/podcasts/",
