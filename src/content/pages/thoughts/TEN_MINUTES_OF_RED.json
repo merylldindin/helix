@@ -1,0 +1,274 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-04-20",
+      "datePublished": "2026-04-20",
+      "keywords": "red light therapy, photobiomodulation, PBM, LLLT, near-infrared, Joovv, cytochrome c oxidase, mitochondria, hair growth, skin collagen, muscle recovery, longevity, Huberman"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/ten-minutes-of-red/",
+    "title": "Ten Minutes of Red | Meryll Dindin",
+    "description": "Ten minutes under a red light panel every morning. What photobiomodulation actually does, what it probably doesn’t, and why I still plug it in.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/ten-minutes-of-red-20260420T203545.webp",
+    "thumbnailAlt": "Minimalist black and white composition of a figure standing in front of a light panel"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Minimalist black and white scene of a figure bathed in geometric light from a panel, suggesting a morning red light therapy ritual",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/ten-minutes-of-red-20260420T203557.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/ten-minutes-of-red-20260420T203557-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/ten-minutes-of-red-20260420T203557-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/ten-minutes-of-red-20260420T203557-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Ten Minutes of Red",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published April 20, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I wake up, pour a liter of water with electrolytes, and sit in seiza on a floor pillow in front of a Joovv panel for ten minutes. Upper body only. The panel hangs a foot or two from my chest and floods the corner of my townhouse with a color the morning light hasn’t decided on yet. My partner stopped asking about it months ago."
+          },
+          {
+            "type": "text",
+            "prop": "I got here through the Huberman podcast, like most people did. The first time I heard him read ad copy for Joovv, my reflex was skepticism. Not of Huberman. Of the category. Another gadget with a sticker price that should come with a car. I went through the research anyway, and the mechanism turned out to be less speculative than the marketing. I bought the panel about a year ago and I’ve used it almost every morning since."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What the Light Actually Does",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Photobiomodulation, or PBM, is the current umbrella term for what used to be called low-level laser therapy (LLLT). The field renamed itself in 2015 because the old label was a mess. “Low-level” was undefined, and LEDs turned out to work as well as coherent lasers on the same targets. The photons are what matter, not the source."
+          },
+          {
+            "type": "text",
+            "prop": "The short version of the mechanism: red and near-infrared photons hit cytochrome c oxidase in your mitochondria, displace an inhibitory nitric oxide molecule, and local ATP output goes up. Red around 660 nanometers and near-infrared around 850 nanometers are the workhorses because they sit inside the “optical window” where light actually reaches tissue a few millimeters deep. Joovv panels run both. The panels ship with modes (Red, NIR, Recovery+, a couple of ambient settings) that drive different combinations of those two chips. You can overthink the mode selection. I don’t."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "My Protocol, Unromanticized",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Ten minutes, upper body only, every morning, right after waking up. Panel distance around 16 to 20 inches. Red and near-infrared together. I sit seiza on a floor pillow, knees folded, and use the stillness as a meditation stance. Goggles on, electrolyte water next to me, no phone. After the timer goes off I walk outside for thirty minutes to get actual sunlight into my eyes, which is the morning protocol Huberman has been yelling about for years and which probably matters more for my circadian rhythm than any LED panel ever will."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Joovv red light therapy panel mounted vertically on a stand in a townhouse corner, with a white floor pillow and rolled yoga mat below it for seiza meditation, a snake plant to the left and a coat rack to the right",
+              "source": "https://cdn.merylldindin.com/articles/sections/ten-minutes-of-red-setup-20260420T211332.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/ten-minutes-of-red-setup-20260420T211332-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/ten-minutes-of-red-setup-20260420T211332-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/ten-minutes-of-red-setup-20260420T211332-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Two points of honesty."
+          },
+          {
+            "type": "text",
+            "prop": "First, the dose-response curve for PBM is biphasic. The literature calls this the Arndt-Schulz effect, and the lay version is simple: more light is not more benefit. Stand too close or go too long and you either plateau or reverse the effect. Ten to fifteen minutes is where most of the research sits. The $1,000 mat that journalists like to spend an hour on every day is not the dose most studies actually test. The device matters less than the exposure."
+          },
+          {
+            "type": "text",
+            "prop": "Second, I don’t do my back. My back is fully tattooed, shoulder to shoulder. PBM at consumer LED irradiance isn’t in the same class as IPL or Q-switched lasers, which are genuine contraindications over tattoos and will burn or shatter pigment. But there’s a 2016 case report of blistering from LLLT exposure over a dark, iron-oxide-pigmented tattoo, where metallic ink absorbed near-infrared and heated locally. My Joovv isn’t that power class. Still, I’d rather keep that risk at zero than argue about it over the long run. I face the panel."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What It Actually Does For Me",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A chunk of the subjective benefit is almost certainly the ritual itself. Ten minutes of standing still, hydrating, and not being on my phone is already a protocol. I don’t try to untangle the light from the routine around it."
+          },
+          {
+            "type": "text",
+            "prop": "What I actually notice: slightly better skin tone, faster recovery on heavy training weeks, and a morning that settles the rest of the day. That’s it. No thicker hair, no cognitive thunderbolt. I didn’t buy the panel expecting anything ground-breaking. My skin has always regenerated fast (my tattoo artist called me “little jesus” six years ago, well before any of this), so I can’t credit the panel for that either."
+          },
+          {
+            "type": "text",
+            "prop": "The evidence maps pretty cleanly to that experience. The strongest consumer-grade data is for hair. Multiple laser-cap devices are FDA-cleared (note: cleared, not approved) for androgenetic alopecia. Bryan Johnson’s Blueprint store sells a “302 Laser Cap” with 302 laser diodes stacked into a helmet; there are many products in that class. Meta-analyses of LLLT for hair loss show statistically significant density gains over sham in both men and women. The effect is real, modest, and slow. After hair, everything softens: collagen in skin, joint and tendon pain, muscle recovery, transcranial mood effects. Each has some support. None of it is dramatic."
+          },
+          {
+            "type": "text",
+            "prop": "A recent New York Times piece by Amy X. Wang captured the cultural moment better than any market report. Wang spent a month on a high-end red-light mat and concluded that the most interesting effect wasn’t on her skin or her hair; it was on her mood. Red is the color of stop signs and alarm buttons. It flooded her mornings with an energy that sat closer to irritation than calm. Her piece hovers between ritual and absurdity. That’s roughly where this category lives right now, and I think she’s mostly right. The ritual is doing a lot of the work."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Exclusion Problem",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Wang’s piece is worth reading for the cultural commentary. The sharpest critique of this category came from someone else. Under the reviews for Bryan Johnson’s laser cap, a reader pointed out that most PBM research and most consumer products are designed around Fitzpatrick skin types I to III, the lighter end of the scale. The absorption physics is the entire story. Melanin is a strong absorber in the red range. Darker skin types can receive meaningfully less therapeutic dose at the target tissue, and at higher irradiances they can experience more superficial heating. Some papers quantify three to six times more heating for comparable exposures."
+          },
+          {
+            "type": "text",
+            "prop": "Clinical guidance for Fitzpatrick IV to VI typically recommends longer wavelengths (near-infrared over red) and reduced intensity. Most consumer products, including mine, ship with a generic protocol that doesn’t address this. The reader’s critique was honest: you’re buying a product that was probably never tested on you, and the manufacturer isn’t telling you that. I don’t think this is malicious. I think it’s the way consumer wellness works when the research base and the product base both skew the same way. Naming it is the minimum."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Part I Can’t Justify",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A Joovv full-body setup is not cheap. The competitive landscape isn’t cheap either. I won’t pretend the cost is proportional to the measured benefit. The muscle-recovery data is mixed. The skin and hair effects are real but modest. If you bought the panel expecting to reverse visible aging inside a quarter, you’ll feel the way Wang did by day thirty: hyped, slightly agitated, and unsure whether the effect on your face was the light or the mirror."
+          },
+          {
+            "type": "text",
+            "prop": "What I can justify is the slot it occupies in a broader protocol. Daily training, quarterly blood work, one meal a day, eight hours of sleep. The interventions with the largest measured effects on my biomarkers are mundane. Running, lifting, eating real food, sleeping on time. Red light is on the edge of the evidence base. It’s a small bet at the margin of a stack that’s already doing most of the work."
+          },
+          {
+            "type": "text",
+            "prop": "On mornings when I travel, I don’t use it. The world doesn’t end. The bloodwork doesn’t shift."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Ten Minutes of Red'' by Meryll Dindin 👀",
+              "url": "/thoughts/ten-minutes-of-red/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5215870/",
+              "title": "Hamblin, M.R. & de Freitas, L.F. (2017). Photobiomodulation in human health.",
+              "description": "Foundational review on PBM mechanisms, cytochrome c oxidase activation, and clinical evidence across indications."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4390214/",
+              "title": "Anders, J.J., Lanzafame, R.J. & Arany, P.R. (2015). Low-Level Light/Laser Therapy Versus Photobiomodulation Therapy.",
+              "description": "Consensus paper adopting photobiomodulation (PBM) as the official replacement for LLLT terminology."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8675345/",
+              "title": "Meta-analysis of low-level laser therapy for androgenetic alopecia.",
+              "description": "Aggregated evidence across eleven randomized trials showing statistically significant hair density gains over sham in both sexes."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.jaad.org/article/S0190-9622(24)00186-5/fulltext",
+              "title": "JAAD CME review on photobiomodulation for skin (2024).",
+              "description": "Dermatology review of PBM effects on collagen synthesis, photoaging, and wound healing in clinical practice."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10807857/",
+              "title": "Effect of skin color on optical properties and medical optical technologies.",
+              "description": "Review of melanin absorption differences across Fitzpatrick types and the resulting dose and heating implications for PBM."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.sciencedirect.com/science/article/abs/pii/S1360859216300559",
+              "title": "Scott, K. & Khoo, S.K. (2016). Blistering from LLLT exposure over a dark tattoo.",
+              "description": "Case report documenting localized thermal injury from LLLT interacting with iron-oxide pigment in a dark tattoo."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nytimes.com/2026/03/31/magazine/red-light-therapy.html",
+              "title": "Wang, A.X. (2026). What One Month of Intense Red-Light Therapy Did to My Mind.",
+              "description": "New York Times long-form essay on the cultural and psychological effects of red-light therapy use."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.hubermanlab.com/episode/using-light-sunlight-blue-light-and-red-light-to-optimize-health",
+              "title": "Huberman Lab Episode 68: Using Light to Optimize Health.",
+              "description": "Podcast episode covering sunlight, blue light, and red-light therapy for circadian rhythm and health."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://joovv.com",
+              "title": "Joovv",
+              "description": "Consumer red and near-infrared light therapy panels used for this protocol."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://blueprint.bryanjohnson.com/products/laser-cap",
+              "title": "Blueprint 302 Laser Cap",
+              "description": "Bryan Johnson Blueprint laser cap for LLLT hair restoration."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/body-of-evidence/",
+              "title": "Dindin, M. (2026). Body of Evidence.",
+              "description": "Article covering biomarker tracking hierarchy and testing stack for health optimization."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
