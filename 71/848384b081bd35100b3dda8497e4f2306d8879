@@ -1,0 +1,22 @@
+app/content/pages/suggestions/BOOK_SUGGESTIONS.json
+  s_f70f214572e7b0::t_3781386dc819f0 181-195
+  s_f70f214572e7b0::t_65803cbc3dd979 51-56
+  s_f70f214572e7b0::t_7af1fe64b8d3b7 420-427
+  s_f70f214572e7b0::t_1a17eece7cb3fe 636-652
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "71848384b081bd35100b3dda8497e4f2306d8879",
+  "prompts": {},
+  "sessions": {
+    "s_f70f214572e7b0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "990af497-8a65-4a7d-bde7-b668d2967bf9",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
