@@ -21,6 +21,7 @@
     "types": "NODE_OPTIONS='--max-old-space-size=4096' nuxi typecheck"
   },
   "resolutions": {
+    "@mdream/rust-wasm32-wasi": "npm:@mdream/rust-darwin-arm64@1.1.0",
     "@nuxt/kit": ">=4.2.2",
     "defu": "^6.1.6",
     "devalue": ">=5.6.2",
@@ -53,10 +54,10 @@
     "vuetify": "4.0.7"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.5.3",
-    "@commitlint/config-conventional": "20.5.3",
+    "@commitlint/cli": "21.0.0",
+    "@commitlint/config-conventional": "21.0.0",
     "@mdi/js": "7.4.47",
-    "@mdream/nuxt": "0.17.1",
+    "@mdream/nuxt": "1.1.0",
     "@nuxt/devtools": "3.2.4",
     "@nuxt/eslint": "1.15.2",
     "@nuxt/eslint-config": "1.15.2",
@@ -69,7 +70,7 @@
     "concurrently": "9.2.1",
     "cypress": "15.14.2",
     "eslint": "10.3.0",
-    "eslint-plugin-unicorn": "63.0.0",
+    "eslint-plugin-unicorn": "64.0.0",
     "eslint-plugin-vue": "10.9.1",
     "globals": "17.6.0",
     "husky": "9.1.7",
