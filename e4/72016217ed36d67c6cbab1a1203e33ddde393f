@@ -1,0 +1,37 @@
+src/components/shared/CustomImage.vue
+  s_e9f4567fe37a25::t_2cf869838382e3 2-7,107-110,271
+  s_e9f4567fe37a25::t_13f3b9380d22da 9,46,70-103,111-182,186-270,272-274
+src/plugins/vuetify.client/components.ts
+  041d74dc34ab1105 6,20
+src/types/global.ts
+  041d74dc34ab1105 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "e472016217ed36d67c6cbab1a1203e33ddde393f",
+  "prompts": {
+    "041d74dc34ab1105": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6d57b354-85af-424d-b206-27d14fd73ce8",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 386,
+      "overriden_lines": 0
+    }
+  },
+  "sessions": {
+    "s_e9f4567fe37a25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac351d00-0e6d-4c18-8380-5e093630a467",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
