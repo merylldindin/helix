@@ -1,0 +1,28 @@
+.claude/skills/create-image/uv.lock
+  ai_agent 179,193,195,429
+package.json
+  s_e9f4567fe37a25::t_8bacefe1016780 73
+  s_e9f4567fe37a25::t_ef3b083b5e0090 24
+  s_e9f4567fe37a25::t_a480b486e20f9c 60
+  s_e9f4567fe37a25::t_689cf6f394816c 57-58
+yarn.lock
+  ai_agent 442-450,452,455,459-461,463,465,469-471,473,475,479-481,483,485,489-492,496-498,500,502,506-508,510,512,516-518,520-524,528-530,532-535,541,545-548,552-554,556,559,563-565,567-568,571,575-577,579-580,584,588-590,592-596,600-603,607-609,612,616-618,622,1464-1466,1468-1481,1483-1485,1487-1571,4735-4741,5114-5122,6216-6242,7145,7282-7283,7285,7298,7529,8551-8594,8597,13239
+.claude/skills/create-image/pyproject.toml
+  s_e9f4567fe37a25::t_63b3678356bbaf 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "794aae29d6664230b14ec0af571926e3c4a6fac7",
+  "prompts": {},
+  "sessions": {
+    "s_e9f4567fe37a25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac351d00-0e6d-4c18-8380-5e093630a467",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
