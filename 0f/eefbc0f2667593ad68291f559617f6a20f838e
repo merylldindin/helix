@@ -1,0 +1,44 @@
+app/content/pages/THOUGHTS_PAGE.json
+  s_2331104c6a5a61::t_1d438f80007c06 52
+  s_2331104c6a5a61::t_5e0d44c146bea8 54
+  s_2331104c6a5a61::t_1cd701de09fc14 55
+  s_2331104c6a5a61::t_53444063a6622a 53
+  s_2331104c6a5a61::t_a4bb5973d1c0fc 18-51,56-58
+app/utils/routes.ts
+  s_2331104c6a5a61::t_f031b21967381f 86
+  s_2331104c6a5a61::t_503474c854dce8 33
+app/content/pages/thoughts/PRESSURE_READING.json
+  s_2331104c6a5a61::t_2eeb4f7f9f2e79 28
+  s_2331104c6a5a61::t_ff5136698df29b 161-164
+  s_2331104c6a5a61::t_7950e0a892df8a 177
+  s_2331104c6a5a61::t_b1b5f1c53ba8dd 191,197,201
+  s_2331104c6a5a61::t_b9d88544434dea 113
+  s_2331104c6a5a61::t_ffaeee5568aa28 29
+  s_2331104c6a5a61::t_178b1d4987a363 1-15,17-26,31-64,66-70,72-78,80-112,114-160,165-176,178-184,186-190,192-196,198-200,202-306
+  s_2331104c6a5a61::t_9d060927820586 16
+  s_2331104c6a5a61::t_73626ef4a62f4f 185
+  s_2331104c6a5a61::t_88a4a6d6100572 27
+  s_2331104c6a5a61::t_101b34d2afbac1 65,71
+  s_2331104c6a5a61::t_a284ceb3850a25 30
+  s_2331104c6a5a61::t_5d133621b7af3e 79
+app/types/routes.ts
+  s_2331104c6a5a61::t_dd72b5af9c2bbe 33
+app/content/pages/thoughts/index.ts
+  s_2331104c6a5a61::t_b26328c1050861 19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "0feefbc0f2667593ad68291f559617f6a20f838e",
+  "prompts": {},
+  "sessions": {
+    "s_2331104c6a5a61": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f0bbb324-0570-4640-bb18-d2bc26533b51",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
