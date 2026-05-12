@@ -1,0 +1,30 @@
+tests/e2e/selectors.ts
+  s_e9f4567fe37a25::t_7172e4d7955167 1-19
+playwright.config.ts
+  s_e9f4567fe37a25::t_852a00b554771e 1-27
+.gitignore
+  s_e9f4567fe37a25::t_27026ece1d4ad3 41-44
+tests/e2e/spec.spec.ts
+  s_e9f4567fe37a25::t_c840f026923b0b 1-29
+package.json
+  s_e9f4567fe37a25::t_c8930f8c7847a6 9-10
+  s_e9f4567fe37a25::t_716c6d1dec4601 64
+.github/workflows/continuous-integration.yml
+  s_e9f4567fe37a25::t_1fff8c525e5caf 55-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "d328de04baf9392a6591cca147f0d3cf8a8bb282",
+  "prompts": {},
+  "sessions": {
+    "s_e9f4567fe37a25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac351d00-0e6d-4c18-8380-5e093630a467",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
