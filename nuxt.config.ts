@@ -186,7 +186,6 @@ export default defineNuxtConfig({
         "@mdi/js",
         "@vue/devtools-core",
         "@vue/devtools-kit",
-        "lodash/findLast",
         "vue-gtag-next",
         "vue3-lottie",
       ],

@@ -1,11 +1,10 @@
 import { DEFAULT_NAME, DEFAULT_URL } from "@/content";
 import type { PageContent } from "@/types";
-import findLast from "lodash/findLast";
 
 export const getWebPageSchema = (route: string, content?: PageContent): object => {
   const pageUrl = `${DEFAULT_URL}${route}`;
 
-  const subpath = findLast(route.split("/"), Boolean) || "";
+  const subpath = route.split("/").findLast(Boolean) ?? "";
 
   const pageName = subpath
     .split("-")
