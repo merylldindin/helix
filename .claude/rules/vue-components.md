@@ -29,4 +29,4 @@ ComponentName/
 
 ## Dynamic Rendering
 
-Pages use JSON-driven component rendering via component name mapping in `src/components/pages/`.
+Pages use JSON-driven component rendering via component name mapping in `app/components/pages/`.

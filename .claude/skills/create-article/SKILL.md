@@ -68,7 +68,7 @@ Apply recommended revisions. Ask user before cutting entire sections. See `refer
 
 These three steps are independent — do them in parallel:
 
-**Article JSON:** Create `src/content/pages/thoughts/{SCREAMING_SNAKE}.json` following `references/article-conventions.md`. Use placeholder image URLs.
+**Article JSON:** Create `app/content/pages/thoughts/{SCREAMING_SNAKE}.json` following `references/article-conventions.md`. Use placeholder image URLs.
 
 **Register route:** Update 3 files per `references/registration-checklist.md` (routes.ts, index.ts barrel, routes mapping — all alphabetical).
 

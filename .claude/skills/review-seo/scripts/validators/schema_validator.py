@@ -27,8 +27,8 @@ class SchemaValidator:
 
     def __init__(self, project_root: Path):
         self.project_root = project_root
-        self.schemas_dir = project_root / "src" / "content" / "schemas"
-        self.utils_schemas_dir = project_root / "src" / "utils" / "schemas"
+        self.schemas_dir = project_root / "app" / "content" / "schemas"
+        self.utils_schemas_dir = project_root / "app" / "utils" / "schemas"
 
     def validate_all_schemas(self) -> list[SEOIssue]:
         """Validate all Schema.org implementations."""
@@ -52,7 +52,7 @@ class SchemaValidator:
                     category=IssueCategory.SCHEMA,
                     page="global",
                     message="Missing default.json schema file",
-                    recommendation="Create Person schema in src/content/schemas/",
+                    recommendation="Create Person schema in app/content/schemas/",
                 )
             ]
 
@@ -177,7 +177,7 @@ class SchemaValidator:
                     category=IssueCategory.SCHEMA,
                     page="global",
                     message="Missing website.json schema",
-                    recommendation="Create WebSite schema in src/content/schemas/",
+                    recommendation="Create WebSite schema in app/content/schemas/",
                 )
             ]
 

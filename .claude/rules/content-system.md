@@ -2,7 +2,7 @@
 
 ## Page JSON Structure
 
-Pages are defined in `src/content/pages/*.json`:
+Pages are defined in `app/content/pages/*.json`:
 
 ```json
 {
@@ -23,17 +23,17 @@ Pages are defined in `src/content/pages/*.json`:
 ## File Naming
 
 - JSON content: SCREAMING_SNAKE_CASE (LANDING_PAGE.json)
-- Export from `src/content/pages/index.ts`
+- Export from `app/content/pages/index.ts`
 
 ## Adding New Pages
 
-1. Create JSON in `src/content/pages/NEW_PAGE.json`
-2. Export from `src/content/pages/index.ts`
-3. Add route to `src/types/routes.ts`
+1. Create JSON in `app/content/pages/NEW_PAGE.json`
+2. Export from `app/content/pages/index.ts`
+3. Add route to `app/types/routes.ts`
 4. Create page component if needed
 
 ## Schema.org Integration
 
-- Static schemas: `src/content/schemas/` (JSON)
-- Dynamic generators: `src/utils/schemas/` (TypeScript)
+- Static schemas: `app/content/schemas/` (JSON)
+- Dynamic generators: `app/utils/schemas/` (TypeScript)
 - Injected via `nuxt-jsonld` module

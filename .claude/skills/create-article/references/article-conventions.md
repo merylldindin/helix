@@ -3,7 +3,7 @@
 ## File Structure
 
 ```
-src/content/pages/thoughts/SCREAMING_SNAKE_NAME.json
+app/content/pages/thoughts/SCREAMING_SNAKE_NAME.json
 ```
 
 ## Top-Level Schema

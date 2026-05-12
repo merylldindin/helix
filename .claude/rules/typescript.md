@@ -3,7 +3,7 @@
 ## Type Safety
 
 - Avoid `any`, prefer `unknown` when type is uncertain
-- Define types in `src/types/`
+- Define types in `app/types/`
 - Use explicit return types for public functions
 - Use explicit member accessibility in classes
 

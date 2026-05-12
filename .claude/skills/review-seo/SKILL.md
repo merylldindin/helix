@@ -41,9 +41,9 @@ uv run python scripts/seo_audit.py --technical # robots.txt, sitemap
 
 | File                       | Purpose                       |
 | -------------------------- | ----------------------------- |
-| `src/content/pages/*.json` | Page meta tags (head.\*)      |
-| `src/content/schemas/`     | Static Schema.org definitions |
-| `src/utils/schemas/`       | Dynamic schema generators     |
+| `app/content/pages/*.json` | Page meta tags (head.\*)      |
+| `app/content/schemas/`     | Static Schema.org definitions |
+| `app/utils/schemas/`       | Dynamic schema generators     |
 | `nuxt.config.ts`           | Sitemap and SEO config        |
 
 ## Quick Reference
@@ -68,6 +68,6 @@ See `references/seo-guidelines.md` for full guidelines.
 
 1. Run `--all` to identify issues
 2. Review reports in `scripts/output/`
-3. Fix issues in `src/` files
+3. Fix issues in `app/` files
 4. Re-run specific validators to confirm
 5. Run `--live` after deployment to verify

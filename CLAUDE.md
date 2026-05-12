@@ -36,7 +36,7 @@ See `.claude/rules/` for detailed guidelines:
 ## Project Structure
 
 ```
-src/
+app/
 ├── components/          # Vue components (layouts/, pages/, shared/)
 ├── content/             # JSON content (pages/, schemas/, layouts/)
 ├── types/               # TypeScript definitions
@@ -48,7 +48,7 @@ src/
 
 ### Content-Driven Pages
 
-Pages are JSON in `src/content/pages/`:
+Pages are JSON in `app/content/pages/`:
 
 ```json
 {
@@ -59,7 +59,7 @@ Pages are JSON in `src/content/pages/`:
 
 ### Adding New Colors
 
-1. Add to `src/plugins/vuetify.client/colors.ts`
+1. Add to `app/plugins/vuetify.client/colors.ts`
 2. Name using [Name That Color](https://chir.ag/projects/name-that-color)
 3. Access: `rgb(var(--v-theme-color-name))`
 

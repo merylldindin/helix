@@ -24,7 +24,7 @@ class TechnicalSEOChecker:
     def _check_robots_txt(self) -> list[SEOIssue]:
         """Check robots.txt exists and is properly configured."""
         issues: list[SEOIssue] = []
-        robots_file = self.project_root / "src" / "public" / "robots.txt"
+        robots_file = self.project_root / "public" / "robots.txt"
 
         if not robots_file.exists():
             issues.append(
@@ -33,7 +33,7 @@ class TechnicalSEOChecker:
                     category=IssueCategory.TECHNICAL,
                     page="robots.txt",
                     message="Missing robots.txt",
-                    recommendation="Create robots.txt in src/public/",
+                    recommendation="Create robots.txt in public/",
                     code_example="User-agent: *\nAllow: /\n\nSitemap: https://merylldindin.com/sitemap.xml",
                 )
             )

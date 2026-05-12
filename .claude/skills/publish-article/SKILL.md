@@ -18,12 +18,12 @@ Generates promotion materials for a published `/thoughts/` article: a LinkedIn p
 
 ### 1. Read the Article
 
-Read `src/content/pages/thoughts/{SCREAMING_SNAKE}.json` to extract:
+Read `app/content/pages/thoughts/{SCREAMING_SNAKE}.json` to extract:
 - The full article text (all `type: "text"` props)
 - Title, description, canonical URL
 - Keywords and publication date
 
-If the user provides a slug (e.g., `reasoning-loop`), map it to the JSON file. If ambiguous, check `src/types/routes.ts` for the mapping.
+If the user provides a slug (e.g., `reasoning-loop`), map it to the JSON file. If ambiguous, check `app/types/routes.ts` for the mapping.
 
 ### 2. Read Prior Articles (if any)
 

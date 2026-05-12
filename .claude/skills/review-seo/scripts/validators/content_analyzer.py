@@ -11,7 +11,7 @@ class ContentAnalyzer:
 
     def __init__(self, project_root: Path):
         self.project_root = project_root
-        self.content_dir = project_root / "src" / "content" / "pages"
+        self.content_dir = project_root / "app" / "content" / "pages"
 
     def analyze_all_pages(self, pages: list[str] | None = None) -> list[SEOIssue]:
         """Analyze content for all or specified pages."""

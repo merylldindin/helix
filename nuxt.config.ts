@@ -2,8 +2,8 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import UnheadVite from "@unhead/addons/vite";
 import { defineNuxtConfig } from "nuxt/config";
-import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "./src/content";
-import { RoutePath } from "./src/types/routes";
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "./app/content";
+import { RoutePath } from "./app/types/routes";
 
 export default defineNuxtConfig({
   build: {
@@ -21,10 +21,6 @@ export default defineNuxtConfig({
 
   css: ["@/assets/styles/index.scss", "@/assets/styles/vuetify.scss"],
 
-  dir: {
-    public: "src/public",
-  },
-
   experimental: {
     payloadExtraction: "client",
     sharedPrerenderData: true,
@@ -33,7 +29,7 @@ export default defineNuxtConfig({
   hooks: {
     // @ts-expect-error mdream:llms-txt hook type is generated at build time
     "mdream:llms-txt": (payload: { content: string; fullContent: string }) => {
-      const publicDir = resolve(__dirname, "src/public");
+      const publicDir = resolve(__dirname, "public");
       payload.content = readFileSync(resolve(publicDir, "llms.txt"), "utf-8");
       payload.fullContent = readFileSync(
         resolve(publicDir, "llms-full.txt"),
@@ -125,7 +121,6 @@ export default defineNuxtConfig({
     server: false,
   },
 
-  srcDir: "src/",
   ssr: true,
   telemetry: false,
 
