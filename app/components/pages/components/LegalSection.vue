@@ -4,10 +4,12 @@ import { useDisplay } from "vuetify";
 
 import { CustomHeadline, CustomSection, CustomText } from "@/components/shared";
 
-enum LegalTextType {
-  SUBTITLE = "subtitle",
-  PARAGRAPH = "paragraph",
-}
+const LegalTextType = {
+  PARAGRAPH: "paragraph",
+  SUBTITLE: "subtitle",
+} as const;
+
+type LegalTextType = (typeof LegalTextType)[keyof typeof LegalTextType];
 
 defineProps({
   content: {

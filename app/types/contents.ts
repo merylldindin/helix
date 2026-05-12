@@ -1,17 +1,19 @@
 import type { DeliveredImage } from "./global";
 
-export enum ContentType {
-  ARTICLE = "article",
-  BUTTON = "button",
-  HEADLINE = "headline",
-  IMAGE = "image",
-  MORE = "more",
-  NETWORKS = "networks",
-  REFERENCE = "reference",
-  SOCIALS = "socials",
-  TEXT = "text",
-  YOUTUBE = "youtube",
-}
+export const ContentType = {
+  ARTICLE: "article",
+  BUTTON: "button",
+  HEADLINE: "headline",
+  IMAGE: "image",
+  MORE: "more",
+  NETWORKS: "networks",
+  REFERENCE: "reference",
+  SOCIALS: "socials",
+  TEXT: "text",
+  YOUTUBE: "youtube",
+} as const;
+
+export type ContentType = (typeof ContentType)[keyof typeof ContentType];
 
 export interface ArticleItem {
   href: string;
@@ -20,7 +22,7 @@ export interface ArticleItem {
 }
 
 export interface ArticleContent {
-  type: ContentType.ARTICLE;
+  type: typeof ContentType.ARTICLE;
   prop: ArticleItem;
 }
 
@@ -33,7 +35,7 @@ export interface ButtonItem {
 }
 
 export interface ButtonContent {
-  type: ContentType.BUTTON;
+  type: typeof ContentType.BUTTON;
   prop: ButtonItem;
 }
 
@@ -45,24 +47,24 @@ interface HeadlineItem {
 }
 
 export interface HeadlineContent {
-  type: ContentType.HEADLINE;
+  type: typeof ContentType.HEADLINE;
   prop: HeadlineItem;
 }
 
 export interface ImageContent {
-  type: ContentType.IMAGE;
+  type: typeof ContentType.IMAGE;
   prop: DeliveredImage;
 }
 
 export interface MoreContent {
-  type: ContentType.MORE;
+  type: typeof ContentType.MORE;
   prop: ButtonItem;
 }
 
 type NetworkItem = { quote: string; url: string };
 
 export interface NetworksContent {
-  type: ContentType.NETWORKS;
+  type: typeof ContentType.NETWORKS;
   prop: NetworkItem;
 }
 
@@ -75,7 +77,7 @@ export interface ReferenceItem {
 }
 
 export interface ReferenceContent {
-  type: ContentType.REFERENCE;
+  type: typeof ContentType.REFERENCE;
   prop: ReferenceItem;
 }
 
@@ -88,17 +90,17 @@ export interface SocialsItem {
 }
 
 export interface SocialsContent {
-  type: ContentType.SOCIALS;
+  type: typeof ContentType.SOCIALS;
   prop: SocialsItem[];
 }
 
 export interface TextContent {
-  type: ContentType.TEXT;
+  type: typeof ContentType.TEXT;
   prop: string;
 }
 
 export interface YoutubeContent {
-  type: ContentType.YOUTUBE;
+  type: typeof ContentType.YOUTUBE;
   prop: string;
 }
 

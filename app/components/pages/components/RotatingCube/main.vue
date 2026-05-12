@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import { PropType, onMounted, ref } from "vue";
+import type { PropType } from "vue";
+import { onMounted, ref } from "vue";
 
 import { CustomSection } from "@/components/shared";
 import { isExternalUrl } from "@/utils/links";

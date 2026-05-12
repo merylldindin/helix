@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "verbatimModuleSyntax": false,
+    "erasableSyntaxOnly": true,
     "types": ["@types/node", "vuetify"]
   },
   "exclude": [".nuxt", ".output", "node_modules", "dist"],

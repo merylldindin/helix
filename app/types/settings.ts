@@ -1,4 +1,6 @@
-export enum Environment {
-  DEVELOPMENT = "development",
-  PRODUCTION = "production",
-}
+export const Environment = {
+  DEVELOPMENT: "development",
+  PRODUCTION: "production",
+} as const;
+
+export type Environment = (typeof Environment)[keyof typeof Environment];

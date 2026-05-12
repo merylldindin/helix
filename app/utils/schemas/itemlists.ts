@@ -8,12 +8,12 @@ import type {
 import { ComponentName, ContentType } from "@/types";
 import { isExternalUrl } from "@/utils/links";
 
-enum ItemListConfig {
-  IMAGE_SECTION = "IMAGE_SECTION",
-  LINKS_SECTION = "LINKS_SECTION",
-  ROTATING_CUBE = "ROTATING_CUBE",
-  TIMELINE_SECTION = "TIMELINE_SECTION",
-}
+const ItemListConfig = {
+  IMAGE_SECTION: "IMAGE_SECTION",
+  LINKS_SECTION: "LINKS_SECTION",
+  ROTATING_CUBE: "ROTATING_CUBE",
+  TIMELINE_SECTION: "TIMELINE_SECTION",
+} as const;
 
 interface ListItemData {
   name?: string;

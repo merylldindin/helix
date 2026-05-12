@@ -1,6 +1,9 @@
-export enum ImageDarkModeTreatment {
-  INVERT_ON_DARK = "invert-on-dark",
-}
+export const ImageDarkModeTreatment = {
+  INVERT_ON_DARK: "invert-on-dark",
+} as const;
+
+export type ImageDarkModeTreatment =
+  (typeof ImageDarkModeTreatment)[keyof typeof ImageDarkModeTreatment];
 
 export interface DeliveredImage {
   altText: string;
@@ -13,13 +16,15 @@ export interface DeliveredImage {
   zoomable?: boolean;
 }
 
-export enum TextChunkType {
-  BOLD = "b",
-  ITALIC = "i",
-  LINK = "a",
-  PARAGRAPH = "p",
-  UNDERLINE = "u",
-}
+export const TextChunkType = {
+  BOLD: "b",
+  ITALIC: "i",
+  LINK: "a",
+  PARAGRAPH: "p",
+  UNDERLINE: "u",
+} as const;
+
+export type TextChunkType = (typeof TextChunkType)[keyof typeof TextChunkType];
 
 interface InternalLink {
   to: string;
