@@ -186,7 +186,7 @@ export default defineNuxtConfig({
         "@mdi/js",
         "@vue/devtools-core",
         "@vue/devtools-kit",
-        "vue-gtag-next",
+        "vue-gtag",
         "vue3-lottie",
       ],
     },

@@ -7324,7 +7324,7 @@ __metadata:
     vite: "npm:8.0.12"
     vue: "npm:3.5.34"
     vue-eslint-parser: "npm:10.4.0"
-    vue-gtag-next: "npm:1.14.0"
+    vue-gtag: "npm:3.7.1"
     vue-tsc: "npm:3.2.8"
     vue3-lottie: "npm:3.3.1"
     vuetify: "npm:4.0.7"
@@ -12920,12 +12920,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-gtag-next@npm:1.14.0":
-  version: 1.14.0
-  resolution: "vue-gtag-next@npm:1.14.0"
+"vue-gtag@npm:3.7.1":
+  version: 3.7.1
+  resolution: "vue-gtag@npm:3.7.1"
   peerDependencies:
-    vue: ^3.0.0-rc.11
-  checksum: 10c0/46ce80ff652fcf34f383c091024e90f7d2565102490075ebb47836fb706baa8ef6f1b97d32d9d1b950230cb1f45d0c109d117295e21ec847159da73abd25ed73
+    vue: ^3.5.13
+    vue-router: ^4.5.0 || ^5.0.0
+  peerDependenciesMeta:
+    vue-router:
+      optional: true
+  checksum: 10c0/1f9c0c21ca5097c7c248cec3ea7afb6fe65d42a284e1203fd1091f5e2bc0d9dcbb3a4c2ae0d829712089a66ee00fb4b986f93f55c079182318ca91c01e015768
   languageName: node
   linkType: hard
 
