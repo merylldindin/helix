@@ -16,6 +16,7 @@ export { default as LEARNS_FROM_ITSELF } from "./LEARNS_FROM_ITSELF.json";
 export { default as MEASURING_STUDENT_OUTCOMES } from "./MEASURING_STUDENT_OUTCOMES.json";
 export { default as MODELS_HUMAN_COGNITION } from "./MODELS_HUMAN_COGNITION.json";
 export { default as MY_AI_PHARMACIST } from "./MY_AI_PHARMACIST.json";
+export { default as PRESSURE_READING } from "./PRESSURE_READING.json";
 export { default as REASONING_LOOP } from "./REASONING_LOOP.json";
 export { default as SKILLS_NOT_FEATURES } from "./SKILLS_NOT_FEATURES.json";
 export { default as SLD_IDENTIFICATION } from "./SLD_IDENTIFICATION.json";

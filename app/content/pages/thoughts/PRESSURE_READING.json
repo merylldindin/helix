@@ -1,0 +1,306 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-05-12",
+      "datePublished": "2026-05-12",
+      "keywords": "blood pressure, hypertension, longevity, home monitoring, OMRON, WHOOP MG, Oura, FDA, cardiovascular risk, Lp(a), SPRINT trial"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/pressure-reading/",
+    "title": "Pressure Reading | Meryll Dindin",
+    "description": "My blood pressure has flirted with elevated since adolescence. Here is what I learned about measuring it correctly and the science behind the number.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/pressure-reading-20260512T132517.webp",
+    "thumbnailAlt": "Abstract pressure gauge centered in minimalist black and white"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Minimalist black and white horizontal pressure waveform expanding across the frame",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/pressure-reading-20260512T132518.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/pressure-reading-20260512T132518-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/pressure-reading-20260512T132518-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/pressure-reading-20260512T132518-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Pressure Reading",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published May 12, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A general practitioner once refused to sign my skydiving certificate. I was in my early twenties, in decent shape, and his cuff kept reading 140 over a number he didn’t like. He told me to see a cardiologist before he’d clear me to jump out of a plane. I did. The specialist ran an echo, listened patiently, and told me my heart was fine but my pressure was something to watch. Then he handed me back to the GP, who signed the paper, and I jumped."
+          },
+          {
+            "type": "text",
+            "prop": "That visit stuck. Not because anything was urgent, but because it was the first time a clinician treated my blood pressure as a problem in waiting rather than a number to ignore. Years later, 23andMe came back with what I already half suspected: genetic predisposition to higher blood pressure. Then Function Health flagged elevated Lp(a), the lipoprotein particle that 20% of the population inherits at concentrations the rest of their stack can’t correct for. My LDL has always been on the high side. My family history reads like a cardiology textbook."
+          },
+          {
+            "type": "text",
+            "prop": "I’ve been measuring my blood pressure seriously for a year. This is what I learned."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Most Actionable Number",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "VO2 max is still the single best predictor of how long you’ll live in working condition. Blood pressure is the most actionable. It responds to almost every lever you can pull, and it has decades of randomized trials behind each one."
+          },
+          {
+            "type": "text",
+            "prop": "The Lifetime Risk Pooling Project followed roughly 11,500 adults across five US cohorts and found that lower 10-year cumulative systolic blood pressure was associated with 4.1 years longer survival and 5.4 years later onset of cardiovascular disease. Not 4 months. Four years. SPRINT, the trial that rewrote the guidelines, randomized 9,361 high-risk adults to aggressive control (target under 120) versus standard (under 140). The intensive arm had 25% fewer major cardiovascular events and 27% lower all-cause mortality at a median follow-up of 3.33 years. They stopped the trial early. The benefit was too large to keep the standard arm running."
+          },
+          {
+            "type": "text",
+            "prop": "The reason blood pressure does this is mechanical. Every heartbeat is a pressure wave. Higher peak pressure means more shear stress on endothelial cells, more remodeling of the arterial wall, more left ventricular hypertrophy, more chronic kidney damage. The kidneys are the part most people underestimate. They filter blood through millions of tiny vessels, and sustained high pressure scars those vessels over years. By the time serum creatinine starts climbing on a routine panel, the filter has already lost a meaningful chunk of its capacity. None of it hurts on the way there. None of it shows up in symptoms until it shows up as a stroke, a heart attack, or a creatinine that has tripled."
+          },
+          {
+            "type": "text",
+            "prop": "About 48% of US adults have hypertension. Roughly 2 in 5 of them don’t know it. Among adults 18 to 39, the undiagnosed rate climbs to about 73%. Most people learn their blood pressure is a problem when they’re already in the cascade."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why I Trust the Cuff",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I bought an OMRON for the same reason I bought a hand dynamometer. I wanted a number I could anchor everything else to."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "OMRON upper-arm blood pressure monitor with cuff sitting on a wooden table",
+              "source": "https://cdn.merylldindin.com/articles/sections/pressure-reading-omron-device-20260512T132221.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/pressure-reading-omron-device-20260512T132221-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/pressure-reading-omron-device-20260512T132221-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/pressure-reading-omron-device-20260512T132221-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The American Heart Association’s protocol for home monitoring is specific, and most people violate it without realizing. Upper arm cuff, never wrist. Bare skin, not over a sleeve. Five minutes of quiet rest first. Feet flat on the floor, back supported, arm resting at heart level, not dangling and not held up. No coffee or exercise in the prior 30 minutes. Empty bladder. Two readings, one minute apart, both morning and evening, ideally for a week before drawing any conclusion. The single most common error is using the wrong cuff size, which can over-read by 10 mmHg or more."
+          },
+          {
+            "type": "text",
+            "prop": "When I do measure, the conditions stay the same. Right after waking up, a glass of water, a few minutes of breathing to get grounded, then the cuff. Consistent inputs are the only way the readings mean anything across months. Across the last 12 months my OMRON average sits at 125 over 76. Not great by SPRINT standards. Not bad by population standards. About what I’d expect given my genetics and lipid profile. The number tells me what to do, which is keep pushing it down."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "OMRON year-over-year history showing blood pressure averaging 125 over 76 from May 2025 through February 2026",
+              "source": "https://cdn.merylldindin.com/articles/sections/pressure-reading-omron-history-20260512T132221.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/pressure-reading-omron-history-20260512T132221-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/pressure-reading-omron-history-20260512T132221-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/pressure-reading-omron-history-20260512T132221-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Wearable Problem",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "In May 2025, WHOOP launched the MG and shipped a feature called Blood Pressure Insights. It uses the optical PPG signal on your wrist, combined with sleep and heart-rate data, to estimate a daily blood pressure range after you calibrate it against three cuff readings. I’ve been running it for months."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "WHOOP MG app screens showing a daily Blood Pressure Insights estimate of 127 over 75 and a prompt to recalibrate the Blood Pressure Profile",
+              "source": "https://cdn.merylldindin.com/articles/sections/pressure-reading-whoop-bpi-20260512T132221.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/pressure-reading-whoop-bpi-20260512T132221-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/pressure-reading-whoop-bpi-20260512T132221-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/pressure-reading-whoop-bpi-20260512T132221-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "It works, sort of. The estimate tracks my cuff in the right neighborhood most days, and the trend shape is right. But two things became obvious quickly. First, WHOOP almost always reads a few points below the OMRON, which is consistent with the broader literature on PPG-based estimation. Pulse transit time correlates with blood pressure, but it’s also moved by autonomic tone, vasoactive medications, hydration, and aging-induced arterial stiffening. Second, the calibration decays. I’ve had to recalibrate against the cuff more often than I expected, sometimes after a stretch of poor sleep or heavy training. Without that recalibration, the wearable drifts."
+          },
+          {
+            "type": "text",
+            "prop": "The FDA noticed. In July 2025, it sent WHOOP a warning letter arguing that a daily estimated blood pressure range is a medical device claim no matter what marketing copy surrounds it. WHOOP pushed back, framed the feature as a wellness output rather than a diagnostic, and kept it live. As of January 2026 the FDA’s revised general wellness guidance widened enough to give them room. Oura is now running its own Blood Pressure Profile study in Oura Labs, also PPG-based, also positioned as a risk indicator rather than a diagnostic, and pursuing FDA clearance for a future version. Apple is in the same race."
+          },
+          {
+            "type": "text",
+            "prop": "I want these to work. I also want to be honest about what they currently are. They’re pattern detectors. They notice when something has changed in your cardiovascular signal and they nudge you to investigate. They’re not a cuff. They probably won’t be a cuff for a while."
+          },
+          {
+            "type": "text",
+            "prop": "That said, I’m glad WHOOP and Oura are pushing this onto the wrist and the finger of millions of consumers who would never have measured their blood pressure otherwise. Putting a trendline next to a sleep score is one of the bigger health literacy wins available right now. Most people don’t know their number. Most people don’t know what would move it. Surfacing the question at all is most of the work."
+          },
+          {
+            "type": "text",
+            "prop": "If you’re going to use one, calibrate it carefully, keep a cuff in the drawer, and treat the daily number as a trend, not a verdict."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Actually Moves the Number",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The intervention math here is unusually clean. Few areas of lifestyle medicine have this much randomized evidence behind every lever."
+          },
+          {
+            "type": "text",
+            "prop": "Sodium reduction to roughly 1,500 mg per day moves systolic pressure down 5 to 6 mmHg in people who are sensitive to it. The full DASH dietary pattern, heavy on fruit, vegetables, whole grains, nuts, and low-fat dairy, lowered systolic pressure by 5.5 mmHg on average and by 11.4 mmHg in adults whose pressure was already elevated, a magnitude comparable to a single antihypertensive medication. Regular aerobic activity at 150 minutes per week gives you another 5 to 8 mmHg, more if you started sedentary. Weight loss is roughly 1 mmHg per kilogram lost. Alcohol cessation moves the number by 3 to 4 mmHg in heavier drinkers and less in moderate ones. Stack them and the realistic combined effect for someone with stage 1 hypertension is 15 to 20 mmHg of systolic reduction. That’s back to normal, without a prescription."
+          },
+          {
+            "type": "text",
+            "prop": "I don’t have stage 1 hypertension, and I’m not avoiding medication on principle. I’ve just spent years pushing the levers and watching the number respond. The annoying truth is that blood pressure is downstream of everything else: sleep, training, hydration, stress, body composition. When the rest of the stack drifts, the cuff finds out a week later."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "How I Actually Track It",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The cuff stays in the drawer next to my desk. Weight I measure daily. Blood pressure, not so much anymore. Now that the wearable and the cuff agree to within a few points, I pull out the OMRON every couple of weeks, sometimes triggered by a poor night’s sleep or a heavy training block, sometimes just because it’s been a while. It’s less a routine than a deliberate prompt that this number belongs on the dashboard and deserves a real strategy."
+          },
+          {
+            "type": "text",
+            "prop": "When I do measure, I pay more attention to the spread than to the single reading. A 2025 analysis in the Journal of the American Heart Association followed nearly 17,000 adults and found that visit-to-visit blood pressure variability independently predicted cardiovascular events and all-cause mortality, controlled for mean pressure. Two people with the same mean systolic of 130 can have very different prognoses if one bounces between 110 and 150 while the other holds steady. Every cuff reading is also a check on whether the wearable algorithm has drifted. When the gap widens, I recalibrate."
+          },
+          {
+            "type": "text",
+            "prop": "There’s a skydiving certificate sitting in a drawer. I’d like to be in a position to renew it at 70."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Pressure Reading'' by Meryll Dindin 👀",
+              "url": "/thoughts/pressure-reading/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nejm.org/doi/full/10.1056/NEJMoa1511939",
+              "title": "A Randomized Trial of Intensive versus Standard Blood-Pressure Control (SPRINT)",
+              "description": "Landmark trial showing 25% fewer cardiovascular events and 27% lower all-cause mortality with systolic target under 120 mmHg."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15650",
+              "title": "Cumulative Systolic Blood Pressure and Long-Term Cardiovascular Risk",
+              "description": "Lifetime Risk Pooling Project finding 4.1 years longer survival and 5.4 years later onset of cardiovascular disease with lower cumulative systolic pressure."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home",
+              "title": "Home Blood Pressure Monitoring",
+              "description": "American Heart Association protocol for measuring blood pressure at home accurately."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.ahajournals.org/doi/10.1161/HYP.0000000000000087",
+              "title": "Measurement of Blood Pressure in Humans",
+              "description": "American Heart Association Scientific Statement on standardized blood pressure measurement, including cuff sizing and positioning."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000803",
+              "title": "Self-Measured Blood Pressure Monitoring at Home",
+              "description": "Joint AHA and AMA policy statement on home blood pressure monitoring protocols and clinical use."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nejm.org/doi/full/10.1056/NEJM200101043440101",
+              "title": "Effects on Blood Pressure of Reduced Dietary Sodium and the DASH Diet",
+              "description": "DASH-Sodium trial documenting the magnitude of blood pressure reduction from dietary intervention."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.cdc.gov/high-blood-pressure/data-research/facts-stats/index.html",
+              "title": "High Blood Pressure Facts",
+              "description": "CDC data on US hypertension prevalence, awareness, and control."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/whoop-inc-709755-07142025",
+              "title": "FDA Warning Letter to WHOOP, Inc.",
+              "description": "July 2025 warning letter addressing the marketing of Blood Pressure Insights without device clearance."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://ouraring.com/blog/new-blood-pressure-profile-study/",
+              "title": "Blood Pressure Profile Study in Oura Labs",
+              "description": "Oura’s investigational PPG-based hypertension risk feature, launched in December 2025."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.ahajournals.org/doi/10.1161/ATV.0000000000000147",
+              "title": "Lipoprotein(a): A Genetically Determined Causal Risk Factor",
+              "description": "AHA Scientific Statement on Lp(a) as an independent, heritable cardiovascular risk factor."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

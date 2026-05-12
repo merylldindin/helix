@@ -30,6 +30,7 @@ export const RoutePath = {
   PARALLEL_LEARNING: "/ventures/parallel-learning/",
   PODCAST_SUGGESTIONS: "/suggestions/podcasts/",
   POLYGON: "/ventures/polygon/",
+  PRESSURE_READING: "/thoughts/pressure-reading/",
   PRIVACY_POLICY: "/legal/privacy-policy/",
   REASONING_LOOP: "/thoughts/reasoning-loop/",
   SKILLS_NOT_FEATURES: "/thoughts/skills-not-features/",

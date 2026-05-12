@@ -15,6 +15,49 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "pressure-reading-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Pressure Reading",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "May 12, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "My blood pressure has flirted with elevated since adolescence. Here is what I learned about measuring it correctly and the science behind the number."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article Pressure Reading",
+              "to": "/thoughts/pressure-reading/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Minimalist black and white poster of a pressure gauge with a single needle resting in the upper register",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/pressure-reading-20260512T132523.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/pressure-reading-20260512T132523-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/pressure-reading-20260512T132523-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/pressure-reading-20260512T132523-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "skills-not-features-section",
       "props": {
         "content": [
