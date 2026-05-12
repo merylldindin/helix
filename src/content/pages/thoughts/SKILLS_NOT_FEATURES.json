@@ -1,0 +1,390 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-05-07",
+      "datePublished": "2026-05-07",
+      "keywords": "agent skills, declarative agents, XML playbooks, Jinja2, prompt engineering, prescribed instructions, composable AI agents, prompts as code, skill orchestration, tool surface"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/skills-not-features/",
+    "title": "Skills, Not Features | Meryll Dindin",
+    "description": "How Voltaire ships AI workflows as declarative XML playbooks: tool surface, instruction sequence, audience, budget, and PII addenda all in one file.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/skills-not-features-20260507T110038.webp",
+    "thumbnailAlt": "Minimalist black and white illustration of geometric building blocks snapping together into a composed structure"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Wide horizontal composition of small uniform document-like cards aligned across the canvas, connected by thin lines suggesting they snap into a larger system",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/skills-not-features-20260507T110037.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/skills-not-features-20260507T110037-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/skills-not-features-20260507T110037-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/skills-not-features-20260507T110037-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Skills, Not Features",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published May 7, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Most internal AI workflows start the same way. Someone asks for a thing the agent should do every Tuesday. An engineer wires up the tools, writes a function, gates it behind a feature flag, ships. Two months later, the agent has fifteen “things it should do every Tuesday,” each living somewhere different, each owned by whoever wrote it, each impossible to reason about as a unit."
+          },
+          {
+            "type": "text",
+            "prop": "I’ve seen it happen and happen again, in conversation after conversation with AI leaders building internal agents. The agent gets smarter, and the codebase gets dumber. The model improves; the scaffolding around it doesn’t."
+          },
+          {
+            "type": "text",
+            "prop": "When I built Voltaire, our internal AI agent at Parallel, I refused to add a feature. I added a skill instead. There are now 21 of them. Every one is a single XML file. Every one declares its tools, its instruction sequence, its audience, its budget, and its data policy in one place. None of them is wired in code. The orchestrator discovers them at startup by reading a folder."
+          },
+          {
+            "type": "text",
+            "prop": "The distinction matters more than it sounds. Skills are not a different way to write the same workflow. They’re a different thing entirely."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The traditional mental model",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The traditional way to add a workflow to an AI agent looks like this: a function in code that calls some tools, with a system prompt assembled inline, gated by an if-statement on the user’s role, with a budget that’s whatever the surrounding orchestrator gave it."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of the traditional approach: user query routed through code into per-workflow functions, each with its own inline prompt, tool list, and auth check, all flowing into a single model call",
+              "source": "https://cdn.merylldindin.com/articles/sections/skills-not-features-traditional-20260507T105945.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/skills-not-features-traditional-20260507T105945-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/skills-not-features-traditional-20260507T105945-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/skills-not-features-traditional-20260507T105945-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Every feature is its own ad-hoc bundle. The prompt is buried in a Python f-string. The auth check is one helper deep. The PII rules are an import away. The budget is whatever the calling code decided. To audit what the agent does on Tuesday, you read code. To change the prompt, you ship a release. To gate access, you grep for role names."
+          },
+          {
+            "type": "text",
+            "prop": "This is the model most teams default to because it’s how every other piece of software gets built. It works for products that ship features. It does not work for an agent whose surface area is “anything an employee might ask, in natural language.”"
+          },
+          {
+            "type": "text",
+            "prop": "The reason it breaks: each “feature” needs the same five things, and code organizes them in five different places. A description, so the orchestrator knows when to invoke it. A tool surface, so the model can only touch what’s safe. An instruction sequence, so behavior is deterministic. An audience, so the wrong people can’t run it. A data policy, so PII doesn’t leak."
+          },
+          {
+            "type": "text",
+            "prop": "When those five live in the same file, in a format you can read without running anything, the workflow becomes an artifact. When they don’t, the workflow is folklore."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Anatomy of a skill",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A Voltaire skill is a single .j2 file. The container is XML, the body is Jinja2. The orchestrator parses it at boot, validates the tool modules exist, and registers the skill. There is no code path that knows the skill is there. Adding one means dropping a file in a folder."
+          },
+          {
+            "type": "text",
+            "prop": "Here is the shape of one (analyze_queries, the skill that audits slow database calls). The container declares a description, a routing block (slug, requires, usecase) for the planner to match against, the tools it can call, the prescribed instruction sequence, the audience that can run it, the tool-call budget by execution mode, and the PII addendum specific to this workflow. Description, routing, tools, instructions, audience, budget, PII. Six blocks. One file."
+          },
+          {
+            "type": "text",
+            "prop": "That file is the entire feature. There is no Python wrapper. There is no router. The pre-orchestrator’s planner reads the routing block to decide if the user’s request matches. If it does, the skill orchestrator builds a dedicated agent on the fly with exactly the declared tool, the instructions injected as the system prompt, the budget as a tool-call ceiling, and the PII addendum appended."
+          },
+          {
+            "type": "text",
+            "prop": "Other skills declare more: named SQL queries, knowledge stems to load, departments allowed, models required (pro for the premium tier), batch_only to enforce parallel execution, background to opt into a longer timeout. Every dial is in the file. Nothing is in code."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Tools, agents, skills",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire runs on three primitives, and they don’t do the same job. Tools are deterministic functions that take inputs and return outputs: query the warehouse, fetch a document, search a Slack channel, identify a person. They have no judgment and no memory. They’re the verbs."
+          },
+          {
+            "type": "text",
+            "prop": "Agents are open-ended reasoners with a tool surface. When the orchestrator calls the data warehouse agent, that agent decides which tables to plan against, generates the SQL, validates it, repairs it on error, and returns a structured result. The agent is allowed to think. It picks the path. Tools are how it acts."
+          },
+          {
+            "type": "text",
+            "prop": "Skills are declarative playbooks that pin a workflow. The tools to call, the order to call them, the constraints on what gets returned, the audience allowed to ask, the cache freshness, the PII addendum. A skill is the artifact you write down when you already know what should happen and want it to happen the same way every time."
+          },
+          {
+            "type": "text",
+            "prop": "Tools are the verbs. Agents are the experts. Skills are the protocols. The orchestrator routes between agent mode (open-ended reasoning over the full agent surface) and skill mode (constrained execution of a declared playbook) on every turn."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Declarative tool surfaces",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The piece I underestimated at the start is how much you get from declaring the tool surface in the skill, not in code."
+          },
+          {
+            "type": "text",
+            "prop": "In default agent mode, the orchestrator has access to roughly 22 registered tools across 15 agents. The model picks. It can call a database agent, a web search, a codebase search, a calendar lookup, a Slack search. That’s the right shape for open-ended questions: someone asks something the system has never seen before, and the model figures out which tools to combine."
+          },
+          {
+            "type": "text",
+            "prop": "In skill mode, the orchestrator’s tool surface is exactly what the skill declares. Three tools. Or one. Or four plus two named SQL queries. Nothing else. The model literally cannot call something the skill didn’t list, because the skill orchestrator’s toolset is constructed from the declaration and only from the declaration."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Routing diagram from user query through pre-planner into either skill orchestrator with declared tools only, or agent orchestrator with all registered agents, both flowing into synthesis",
+              "source": "https://cdn.merylldindin.com/articles/sections/skills-not-features-routing-20260507T105945.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/skills-not-features-routing-20260507T105945-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/skills-not-features-routing-20260507T105945-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/skills-not-features-routing-20260507T105945-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "This is what makes skills deterministic. A skill that traces a telehealth session calls four queries and two log fetchers. The model can’t decide to also search Slack, because Slack isn’t on the table. It can’t fetch a document, because that’s not declared. The behavior is bounded by the file."
+          },
+          {
+            "type": "text",
+            "prop": "Most agent frameworks register every tool globally and let the model pick from the full set. Skill mode inverts that: register nothing by default, let the skill say what’s allowed."
+          },
+          {
+            "type": "text",
+            "prop": "The second shape is what gives you confidence to deploy these things to non-engineering users. Sales can run an account-review skill that has access to the data warehouse and four named SQL queries, and nothing else. Clinical can run a session-trace skill that reads logs and four metadata queries, and nothing else. The blast radius is the file."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Prescribed instruction sequences",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The other thing skills give you is sequence as a primitive."
+          },
+          {
+            "type": "text",
+            "prop": "In agent mode, the model decides the order. It might call the codebase search first, then identity, then the warehouse. Or it might do the warehouse first if it thinks the question is data-shaped. That flexibility is the right behavior for the long tail of internal questions, but it’s the wrong behavior when you actually know what should happen."
+          },
+          {
+            "type": "text",
+            "prop": "A skill encodes that knowledge. The instructions block is the system prompt the skill orchestrator runs under, and it almost always contains a numbered SEQUENCE. Sometimes three steps, sometimes eight. The model is told what to do and in what order. Tools fire in that order. Synthesis follows."
+          },
+          {
+            "type": "text",
+            "prop": "The session-trace skill, used for debugging telehealth appointments, has this shape: extract the appointment UUID from the question, call the session log fetcher and the named query batch in parallel, ensure the batch includes events, appointment, attendees, and audit queries, then synthesize the data into a chronological reconstruction. When sources disagree on attendance or duration, surface the discrepancy in the Issues section."
+          },
+          {
+            "type": "text",
+            "prop": "That’s the playbook. The model is the executor, not the planner. It still has to do the synthesis, the timezone logic, the discrepancy detection. But the order, the tool calls, the parallelism: those are pinned. The reason this matters is that “don’t forget to also fetch the audit trail” is the kind of thing a human engineer would forget on a Tuesday afternoon, and the kind of thing a model will skip if you let it choose. Pinning the sequence eliminates the failure mode."
+          },
+          {
+            "type": "text",
+            "prop": "Agents reason. Skills execute. Both have a place. Skills are how you take a workflow that’s been done a hundred times and lock it."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Composability",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The piece that took me the longest to appreciate is composability. A skill isn’t just a workflow. It’s a unit of distribution."
+          },
+          {
+            "type": "text",
+            "prop": "When I add a skill, four things happen automatically without writing any code. The skill appears in the catalog: the list_skills meta-skill enumerates everything the requester is allowed to see and emits a Markdown directory of names, slash commands, inputs, and outputs. The skill gets a slash command: the routing slug becomes /analyze-queries in Slack, and power users can skip the planner entirely and force the skill. The skill gets audience gating: the audience block resolves against the requester’s department and role, and people who can’t see it can’t trigger it, the planner won’t suggest it to them. The skill gets a cache: if a freshness window is declared, the orchestrator writes the output to the warehouse keyed by the entity in scope, and subsequent calls inside the window get the cached answer."
+          },
+          {
+            "type": "text",
+            "prop": "This is the Lego property. A skill is a self-contained brick that snaps into the orchestrator. The orchestrator does the routing, the gating, the catalog, the caching. The skill just declares what it is."
+          },
+          {
+            "type": "text",
+            "prop": "The audit story is the one that surprises me most. Every skill invocation gets logged: who ran it, against which entity, with which tool calls, at what latency. That’s not because the skill engineer wrote logging code. It’s because the orchestrator captures the matched skill name on every turn. Telemetry is a property of the architecture, not of the implementation."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why this beats features",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A feature is a code path. A skill is a contract."
+          },
+          {
+            "type": "text",
+            "prop": "When a feature changes, you ship a release. When a skill changes, you edit a file and the orchestrator picks it up on next boot. The Jinja2 layer means the prompt itself can render with runtime context (the user’s department, the requester’s email, the current entity), but the structure is text. Reviewing a skill diff is reading a paragraph. Reviewing a feature diff is reading a function call graph."
+          },
+          {
+            "type": "text",
+            "prop": "When you grow features, the codebase grows with them. When you grow skills, the codebase stays the same size. Every skill I’ve added in the last six months is a file. The orchestrator code hasn’t moved. The growth happened in a folder, not in a system."
+          },
+          {
+            "type": "text",
+            "prop": "Onboarding a new engineer used to mean a tour through the orchestrator. Now it’s a cat of the skills folder. An hour gets you the full picture: what runs, when, for whom, against what data. That kind of legibility is hard to build deliberately and impossible to retrofit."
+          },
+          {
+            "type": "text",
+            "prop": "Anthropic shipped Agent Skills as an open standard with SKILL.md files in late 2025. Microsoft’s declarative agents landed in the Copilot ecosystem around the same window. The convergence isn’t coincidence. It’s that the same constraints push every team to the same shape: a skill is a folder with a description, a tool list, instructions, and metadata. Voltaire’s XML container looks different from the SKILL.md convention, but the architecture is the same one."
+          },
+          {
+            "type": "text",
+            "prop": "Anthropic also launched Managed Agents in April 2026, a hosted runtime that handles compute, sandboxing, session state, and credentials so teams don’t have to build that infrastructure themselves. That solves a different problem than skills do. Managed Agents is about who runs the agent loop. Skills are about how you define the workflow that runs inside it. Voltaire is self-hosted on our own infrastructure with a custom orchestrator, because we wanted full control of the routing, the audit trail, and the data plane: every turn lands in our warehouse with the entity, the tools used, the matched skill, and the PII flag. The skill format would compose the same way on top of Managed Agents if we ever swap the runtime. The unit of construction is portable. The runtime is replaceable."
+          },
+          {
+            "type": "text",
+            "prop": "Workflows are documents. Documents are composable. Code is the runtime, not the product."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Closing",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The reason I started writing skills as files instead of features as code is that I wanted my future self to be able to read the agent. Six months in, I can. Every workflow is one file. Every file declares everything that matters. Adding a workflow takes longer to spec than to ship."
+          },
+          {
+            "type": "text",
+            "prop": "You give up the flexibility of writing arbitrary Python at runtime. You commit to expressing each new behavior in a fixed schema. In return, you get a system that scales linearly with the number of workflows instead of quadratically with their interactions."
+          },
+          {
+            "type": "text",
+            "prop": "If you’re building an internal agent and you’ve started to feel the codebase get heavier every time you ship a workflow, look at what you’re actually adding. Most of it is description, sequence, gating, and policy. None of that needs to be code. Move it into files. Let the orchestrator read the files. Watch the codebase stop growing."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Skills, Not Features'' by Meryll Dindin 👀",
+              "url": "/thoughts/skills-not-features/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+              "title": "Equipping agents for the real world with Agent Skills",
+              "description": "Anthropic engineering note on Agent Skills as composable, declarative units that extend Claude with domain-specific instructions and tools."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://github.com/anthropics/skills",
+              "title": "anthropics/skills",
+              "description": "Public repository for the Agent Skills open standard, including the SKILL.md format and reference implementations."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://platform.claude.com/docs/en/managed-agents/overview",
+              "title": "Claude Managed Agents",
+              "description": "Anthropic’s hosted runtime for Claude agents: orchestration, sandboxing, session state, and credential handling delegated to the platform."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-declarative-agent",
+              "title": "Declarative agents for Microsoft 365 Copilot",
+              "description": "Microsoft Learn overview of declarative agents in the Copilot ecosystem: instructions, actions, and knowledge as configuration."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://ai.pydantic.dev/",
+              "title": "PydanticAI",
+              "description": "Agent framework used to build the skill orchestrator with a declared toolset per skill invocation."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/company-brain/",
+              "title": "One Brain to Query",
+              "description": "What Voltaire is, what it connects, and what it changed at Parallel."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/reasoning-loop/",
+              "title": "The Reasoning Loop",
+              "description": "How the orchestrator routes questions through identity resolution, knowledge planning, and a reasoning loop."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/sql-agent/",
+              "title": "The SQL Agent",
+              "description": "How Voltaire turns natural language into schema-aware SQL, filters PII before the model sees it, and repairs broken queries automatically."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

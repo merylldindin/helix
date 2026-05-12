@@ -15,6 +15,135 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "skills-not-features-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Skills, Not Features",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "May 7, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "How Voltaire ships AI workflows as declarative XML playbooks: tool surface, instruction sequence, audience, budget, and PII addenda all in one file."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article Skills, Not Features",
+              "to": "/thoughts/skills-not-features/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Minimalist black and white poster of a single declarative folder icon opening into a small lattice of nested geometric shapes representing tools, instructions, audience, and policy as composable elements",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/skills-not-features-20260507T110038.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/skills-not-features-20260507T110038-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/skills-not-features-20260507T110038-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/skills-not-features-20260507T110038-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
+      "id": "training-for-decades-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Training for Decades",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "May 4, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I train every day, not for a season or a race. Here is what 12 months of cardio, strength, and rucking data say about training for longevity."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article Training for Decades",
+              "to": "/thoughts/training-for-decades/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Minimalist black and white poster of a horizontal training timeline spanning decades, evoking sustained physical practice across a lifetime",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/training-for-decades-20260505T071008.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/training-for-decades-20260505T071008-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/training-for-decades-20260505T071008-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/training-for-decades-20260505T071008-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
+      "id": "learns-from-itself-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Learns from Itself",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "April 29, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "How Voltaire builds its own knowledge base over time through semantic recall, reflection on past conversations, and slow promotion into a shared memory."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article Learns from Itself",
+              "to": "/thoughts/learns-from-itself/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Minimalist black and white poster of a small loop feeding back into a larger node graph, evoking an AI that learns from its own conversations",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/learns-from-itself-20260429T184634.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/learns-from-itself-20260429T184634-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/learns-from-itself-20260429T184634-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/learns-from-itself-20260429T184634-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "my-ai-pharmacist-section",
       "props": {
         "content": [

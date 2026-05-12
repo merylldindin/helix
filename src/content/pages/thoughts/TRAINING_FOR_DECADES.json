@@ -1,0 +1,398 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-05-04",
+      "datePublished": "2026-05-04",
+      "keywords": "exercise, longevity, VO2 max, strength training, rucking, Zone 2 cardio, training protocol, WHOOP, recovery, HRV, body composition, sarcopenia, bone density"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/training-for-decades/",
+    "title": "Training for Decades | Meryll Dindin",
+    "description": "I train every day, not for a season or a race. Here is what 12 months of cardio, strength, and rucking data say about training for longevity.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/training-for-decades-20260505T071003.webp",
+    "thumbnailAlt": "Minimalist black and white composition of a horizontal training timeline with abstract figures lifting, running, and rucking across decades"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Abstract horizontal procession of training silhouettes spanning decades in minimalist black and white, evoking sustained training across a lifetime",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/training-for-decades-20260505T071000.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/training-for-decades-20260505T071000-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/training-for-decades-20260505T071000-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/training-for-decades-20260505T071000-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Training for Decades",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published May 4, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I logged 1,305 workouts in the last twelve months. None of them were preparing me for anything."
+          },
+          {
+            "type": "text",
+            "prop": "That’s the whole frame. Most adults train for an event, peak, relax, regress. Six months later the resting heart rate has crept back up, the squat numbers have fallen off, and the next training cycle starts from a worse baseline than the last. I don’t train that way. I train every day, year after year, for the body I want at sixty and seventy and eighty. The goal isn’t to peak. It’s to never decline."
+          },
+          {
+            "type": "text",
+            "prop": "This is what twelve months of training look like when the timeline is decades, not seasons. Real numbers, real variance, no theatrical rest weeks."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Five Pillars",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "There are five things I refuse to skip. Four of them are training. The fifth is the ground the other four stand on."
+          },
+          {
+            "type": "text",
+            "prop": "1. Cardio, to defend the heart and the mitochondria."
+          },
+          {
+            "type": "text",
+            "prop": "2. Strength, to defend the skeleton and the muscle."
+          },
+          {
+            "type": "text",
+            "prop": "3. Rucking, to load bone while training the aerobic engine."
+          },
+          {
+            "type": "text",
+            "prop": "4. Walking, the all-day baseline that fills the hours between sessions."
+          },
+          {
+            "type": "text",
+            "prop": "5. Recovery, which is the program, not a recovery period."
+          },
+          {
+            "type": "text",
+            "prop": "Anything else is a bonus. Tennis with friends, a hike on the weekend, the occasional HIIT class at Barry’s when I’m travelling and want to train with friends. None of it counts toward the program. The program is the four movements, executed every week, regardless of how I feel, with recovery treated as non-negotiable."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What 12 Months Actually Looked Like",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The headline number is 1,305 logged workouts across 357 of 365 days. That’s 98 percent activity, with 74 percent of days carrying something more demanding than walking."
+          },
+          {
+            "type": "text",
+            "prop": "Inside that, the real training breaks down as 2.2 strength sessions a week (averaging 61 minutes at strain 13.5 on WHOOP’s muscular-load model), 1.4 runs (47 minutes at 149 bpm average), 0.7 rucks (63 minutes), and 1.6 hikes (73 minutes). The other twenty-something sessions a week are walking. That mix isn’t optimized for any single race. It’s designed so that no system gets neglected long enough to atrophy."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Running with Intent",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I run twice a week. Wednesday and one weekend day. Ten to twelve kilometers, forty to fifty minutes, steady tempo."
+          },
+          {
+            "type": "text",
+            "prop": "The Zone 2 evangelists will tell you the only honest cardio is the kind where you can hold a conversation. I respect the science behind it, but the WHOOP data on my actual runs tells a different story. Average heart rate sits at 149 bpm, with 55 percent of the time in Zone 3 and only 18 percent in true Zone 2. That’s closer to a tempo session than a base-building jog."
+          },
+          {
+            "type": "text",
+            "prop": "I do this on purpose. Pure Zone 2 work is wonderful in a five-hour-a-week endurance plan. With ninety minutes of running per week, I’d rather spend the time at a stimulus that stresses both the aerobic and the lactate systems. Tempo runs build VO2 max faster than easy runs. The cost is more recovery debt, which the strength schedule has to absorb."
+          },
+          {
+            "type": "text",
+            "prop": "The result, measured in March: VO2 max of 53.2, the top of the Excellent band for my age. That number is one of the few biomarkers with strong, repeated mortality data behind it. Untrained adults lose roughly 10 percent of their VO2 max per decade after thirty. The masters-athlete data shows the loss is mostly explained by training volume, not biology. Hold the volume, hold the number."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Compiled VO2peak data from a dozen large cohort studies showing mean values declining from roughly 50 ml/kg/min at age 20 to 25 at age 70 in men, with a parallel female panel. Population means converge across studies despite different protocols and decades.",
+              "source": "https://cdn.merylldindin.com/articles/sections/training-vo2-by-age-20260505T082400.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/training-vo2-by-age-20260505T082400-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/training-vo2-by-age-20260505T082400-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/training-vo2-by-age-20260505T082400-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I’d rather defend that number than chase pace records."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Strength Floor",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Strength is the part I’m least willing to negotiate. The target is three sessions a week. The actual rate, averaged across twelve months, is just over two. Travel and life eat the third one more often than I’d like."
+          },
+          {
+            "type": "text",
+            "prop": "The structure is unfussy. Compound lifts first, hypertrophy work second, accessories last. About an hour per session. I rotate through push, pull, and legs over the week, with a short core block at the end of every session."
+          },
+          {
+            "type": "text",
+            "prop": "Not for aesthetics. Everyone loses muscle and bone after fifty unless they actively defend them, and the trajectory is well documented: roughly half a percent to one percent of muscle mass per year past the threshold, accelerating with age. That decline is the proximate cause of most falls, fractures, and loss of independence in old age. It’s also the easiest thing to prevent. You just have to keep lifting."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Nine-panel scatter plot from Akagi et al. 2021 showing quadriceps cross-sectional area, appendicular skeletal muscle mass, and lower-extremity lean mass declining with age. Blue points are men, red points are women; the male decline is steeper and accelerates after fifty.",
+              "source": "https://cdn.merylldindin.com/articles/sections/training-sarcopenia-male-20260505T080200.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/training-sarcopenia-male-20260505T080200-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/training-sarcopenia-male-20260505T080200-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/training-sarcopenia-male-20260505T080200-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The DEXA confirms the work pays off. As of March: 140 pounds of lean mass at 18.6 percent body fat, BMD T-score of 0.7. The bone density score is the one I care about most. You cannot rebuild a hip after seventy. You can only refuse to lose it."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why I Ruck",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Rucking is the activity that surprised me. I started doing it after Michael Easter’s argument in The Comfort Crisis that it might be the most underrated longevity exercise in existence. I wanted to test the claim. Now I ruck once or twice a week."
+          },
+          {
+            "type": "text",
+            "prop": "A session for me is sixty minutes with a thirty-pound vest, walking trails or hills near home. The average heart rate sits at 106 bpm, exactly the Zone 2 range I rarely hit while running. Caloric burn averages 264 per session, similar to a moderate run. On harder days I’ll add an altitude-simulation mask to lift the respiratory load. Same route, same vest, more demand on the diaphragm and the cardiovascular system."
+          },
+          {
+            "type": "text",
+            "prop": "You’re training the aerobic system at conversational intensity, which is where mitochondrial adaptations happen. You’re loading the spine and the legs under axial compression, which is the stimulus that maintains bone density without the joint cost of running. You’re doing it outside, which compounds with sunlight, vitamin D, and the under-quantified benefit of being away from screens."
+          },
+          {
+            "type": "text",
+            "prop": "It’s the closest thing I’ve found to a single exercise that touches cardio, skeleton, and nervous system at once. Unlike running, it scales gracefully as the body ages. People can ruck at seventy. Most people can’t run at seventy."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Walking Isn’t Training. That’s the Point.",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The largest category in my data, by far, is walking. Sixteen walks a week, around four hundred minutes total. Over six and a half hours of low-intensity movement, mostly accumulated in chunks while I’m on calls or thinking through a problem."
+          },
+          {
+            "type": "text",
+            "prop": "I don’t log it expecting an adaptation. I log it because of what the literature now calls the active couch potato problem. Owen et al. coined the phrase to describe people who hit the gym for their 150 minutes a week and then sit for the other 100 hours. The cardiometabolic risk doesn’t go away. Sedentary time is independently associated with elevated triglycerides, insulin resistance, and all-cause mortality, even in people who train. Buffey et al. (2022, Sports Medicine) found that breaking up prolonged sitting with light walking cut postprandial glucose excursions by roughly 17 percent compared to staying put. Standing alone didn’t do it. You need the legs to move."
+          },
+          {
+            "type": "text",
+            "prop": "Paluch et al. (2022, Lancet Public Health) put numbers on the dose-response. Across fifteen cohorts, mortality risk falls steeply from a few thousand steps a day to about 8,000, then plateaus. Most knowledge workers sit somewhere around 4,000. The gap between 4,000 and 8,000 is the part of the curve where the steepest mortality benefit lives, and it does not require a single hard workout to capture. My own daily total averages 14,000 to 15,000, well past the plateau. The point isn’t to chase the number. The point is that the lifestyle that produces it, walking everywhere I can, is the actual mechanism."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Dose-response curve from Paluch et al. 2022 showing all-cause mortality hazard ratio falling sharply from 0 to about 8,000 daily steps before plateauing, with separate curves for adults over and under sixty.",
+              "source": "https://cdn.merylldindin.com/articles/sections/training-steps-mortality-20260505T074900.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/training-steps-mortality-20260505T074900-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/training-steps-mortality-20260505T074900-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/training-steps-mortality-20260505T074900-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "My day is built around that gap. Thirty-minute walk first thing in the morning, after a glass of water and ten minutes of red light therapy. That is the appointment I keep with myself before anything else gets to negotiate for my time. Thirty minutes on foot to the gym for a strength session, thirty minutes back. Twenty minutes on foot to the park before a run, twenty minutes back. Once or twice a week, a full hour at the Wetlands, the natural reserve next to my place, often with the ruck. The phone stays in the pocket. I get sunlight, fresh air, and a heart rate north of resting for most of the day."
+          },
+          {
+            "type": "text",
+            "prop": "Most ambitious people miss this. They schedule one brutal hour at the gym and feel covered, while the other fifteen waking hours are sedentary. The one hour matters. The fifteen matter more."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Recovery Is the Program",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A training plan you can’t recover from isn’t a training plan. It’s a slow injury."
+          },
+          {
+            "type": "text",
+            "prop": "The metric I watch most closely is HRV. Across the last twelve months my heart rate variability averaged 39 milliseconds, with a typical range of 35 to 44. Resting heart rate averaged 52 bpm. Recovery score averaged 68 percent. Sleep averaged 7.9 hours at 94 percent efficiency."
+          },
+          {
+            "type": "text",
+            "prop": "None of those numbers are heroic in isolation. The point is that they’ve been stable, year over year, while training volume has stayed high. That’s the signal I’m looking for. Volatile HRV with a creeping resting heart rate is the early sign of overreach. Stable HRV under sustained load means the system is adapting, not depleting."
+          },
+          {
+            "type": "text",
+            "prop": "The architecture that produces those numbers is mostly behavioral. Eight hours in bed every night, non-negotiable. A temperature-controlled mattress so I’m not waking at 3 a.m. from heat. No food past 5 p.m., no coffee past 4. One full rest day every week, no negotiation. When recovery scores drop below 40 for two consecutive days, I cut intensity in half until they come back."
+          },
+          {
+            "type": "text",
+            "prop": "There’s no shortcut here. The supplements, the cold plunges, the red light, all of it is at the margins. Sleep and rest days do the heavy lifting. The rest is decoration."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Closing",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The first ten years are the hardest, because nothing visible changes. By thirty-five, the people around you who skipped the work start to look different. By fifty, the gap is irreversible. The compound interest of a daily training habit is the most underpriced asset in modern life."
+          },
+          {
+            "type": "text",
+            "prop": "It costs an hour a day. It buys decades."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article “Training for Decades” by Meryll Dindin 👀",
+              "url": "/thoughts/training-for-decades/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://peterattiamd.com/outlive/",
+              "title": "Outlive: The Science and Art of Longevity",
+              "description": "Peter Attia’s 2023 book on training for the marginal decade and the four pillars of physical capacity."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://eastermichael.com/the-comfort-crisis/",
+              "title": "The Comfort Crisis",
+              "description": "Michael Easter’s 2021 book introducing rucking as a low-impact, high-leverage longevity exercise."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000461",
+              "title": "Importance of Assessing Cardiorespiratory Fitness in Clinical Practice",
+              "description": "Ross R, Blair SN, Arena R, et al. American Heart Association scientific statement on VO2 max as a clinical vital sign. Circulation 2016;134(24):e653-e699."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.jbc.org/article/S0021-9258(18)96046-1/fulltext",
+              "title": "Biochemical Adaptations in Muscle",
+              "description": "Holloszy JO. Foundational paper on exercise-induced mitochondrial adaptations in skeletal muscle. J Biol Chem 1967;242(9):2278-2282."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://journals.physiology.org/doi/full/10.1152/jappl.2000.88.4.1321",
+              "title": "Aging of Skeletal Muscle: A 12-yr Longitudinal Study",
+              "description": "Frontera WR, Hughes VA, Fielding RA, et al. Long-term data on muscle mass decline with aging. J Appl Physiol 2000;88(4):1321-1326."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9975246/",
+              "title": "Cardiorespiratory Fitness Across the Lifespan",
+              "description": "Hagensen MJ, et al. Compiled VO2peak data across age, sex, and exercise modality, including the BLSA and HUNT longitudinal cohorts. J Sport Health Sci 2023."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8350198/",
+              "title": "Differences in the Mass and Quality of the Quadriceps with Age and Sex",
+              "description": "Akagi R, Yamashita Y, et al. Quadriceps cross-sectional area and lean mass decline with age in 286 adults, with steeper decline in men. J Cachexia Sarcopenia Muscle 2021;12(4):900-912."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9289978/",
+              "title": "Daily Steps and All-Cause Mortality: A Meta-Analysis of 15 International Cohorts",
+              "description": "Paluch AE, Bajpai S, et al. Mortality risk plateaus around 8,000 steps a day for adults under sixty. Lancet Public Health 2022;7(3):e219-e228."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9325803/",
+              "title": "Light Walking Breaks During Prolonged Sitting Improve Cardiometabolic Markers",
+              "description": "Buffey AJ, Herring MP, et al. Walking breaks reduced postprandial glucose by 17 percent compared to uninterrupted sitting. Sports Medicine 2022;52:1765-1787."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3419586/",
+              "title": "Too Little Exercise and Too Much Sitting: The Active Couch Potato",
+              "description": "Owen N, Sparling PB, et al. Foundational paper on sedentary behavior as an independent risk factor. Curr Cardiovasc Risk Rep 2010."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/body-of-evidence/",
+              "title": "Body of Evidence",
+              "description": "On the biomarkers I track quarterly and how I learned which ones matter."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

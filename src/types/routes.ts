@@ -20,6 +20,7 @@ export enum RoutePath {
   KNOWLEDGE_GRAPH = "/thoughts/knowledge-graph/",
   LANDING_PAGE = "/",
   LEARNING_DIFFERENCES = "/thoughts/learning-differences/",
+  LEARNS_FROM_ITSELF = "/thoughts/learns-from-itself/",
   MEASURING_STUDENT_OUTCOMES = "/thoughts/measuring-student-outcomes/",
   MENTIONS = "/mentions/",
   MISSIONS = "/missions/",
@@ -31,6 +32,7 @@ export enum RoutePath {
   POLYGON = "/ventures/polygon/",
   PRIVACY_POLICY = "/legal/privacy-policy/",
   REASONING_LOOP = "/thoughts/reasoning-loop/",
+  SKILLS_NOT_FEATURES = "/thoughts/skills-not-features/",
   SLD_IDENTIFICATION = "/thoughts/sld-identification/",
   SLEEP_STAGE_CLASSIFICATION = "/thoughts/sleep-stage-classification/",
   SQL_AGENT = "/thoughts/sql-agent/",
@@ -42,5 +44,6 @@ export enum RoutePath {
   TOMATO_CLUSTERING = "/thoughts/tomato-clustering/",
   TOPOLOGICAL_DATA_ANALYSIS = "/thoughts/topological-data-analysis/",
   TOOLKIT_SUGGESTIONS = "/suggestions/toolkits/",
+  TRAINING_FOR_DECADES = "/thoughts/training-for-decades/",
   VENTURES = "/ventures/",
 }

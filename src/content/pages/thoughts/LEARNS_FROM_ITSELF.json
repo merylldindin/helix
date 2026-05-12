@@ -1,0 +1,336 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-04-29",
+      "datePublished": "2026-04-29",
+      "keywords": "AI memory, semantic recall, conversation reflection, self-curation, knowledge base, agentic AI, company brain, prompt evolution"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/learns-from-itself/",
+    "title": "Learns from Itself | Meryll Dindin",
+    "description": "How Voltaire builds its own knowledge base over time through semantic recall, reflection on past conversations, and slow promotion into a shared memory.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/learns-from-itself-20260429T184637.webp",
+    "thumbnailAlt": "Minimalist black and white illustration of a brain feeding back into itself through a small loop, suggesting an AI accumulating memory from its own conversations"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Wide horizontal composition of a stream of speech bubbles flowing into a curved feedback loop that returns into a node graph, evoking an AI building its own memory from conversation",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/learns-from-itself-20260429T184631.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/learns-from-itself-20260429T184631-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/learns-from-itself-20260429T184631-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/learns-from-itself-20260429T184631-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Learns from Itself",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published April 29, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The strangest thing about running an internal AI is that nobody asks the same question the same way."
+          },
+          {
+            "type": "text",
+            "prop": "I built Voltaire as Parallel’s company brain, an agent that sits across everything we know about our business. It has access to the data warehouse, the project tracker, the customer support inbox, the help center, the codebase, the document drive, the email and meeting archives, the roadmap, the operational logs. Pretty much everything except the bank accounts. The agent layer on top is the easy part. The interesting part, the part I’m still figuring out, is what happens when you let real people ask real questions in their own words."
+          },
+          {
+            "type": "text",
+            "prop": "Some people type three words and hit enter. Some write a paragraph with their preferred output format spelled out. Some use jargon that doesn’t appear anywhere in the data model and expect the agent to map it correctly. Some treat the bot like a search engine. Some treat it like a colleague. Some get frustrated when their first attempt doesn’t work and walk away. Some iterate fifteen times in the same thread until they get exactly what they wanted."
+          },
+          {
+            "type": "text",
+            "prop": "There is no input control. There is no schema for what they’re going to type. Every conversation is a tiny new training distribution."
+          },
+          {
+            "type": "text",
+            "prop": "The question I keep coming back to is whether the system can learn from this, not in the model-fine-tuning sense, but in the mundane operational sense: can the company brain accumulate institutional knowledge from its own conversations, and use that knowledge to handle the next question better than the last?"
+          },
+          {
+            "type": "text",
+            "prop": "I don’t have a clean answer yet. What I have is a layered approach that’s still evolving and a list of quirks I keep discovering. This article is about both."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What “Learning” Even Means Here",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Before getting into mechanism, it’s worth being precise about what a standalone company brain can actually learn."
+          },
+          {
+            "type": "text",
+            "prop": "It cannot fine-tune itself in the gradient sense. The base model is a frontier provider, updated on someone else’s schedule. By the time their next generation lands, half of whatever I’ve optimized around may be irrelevant."
+          },
+          {
+            "type": "text",
+            "prop": "What it can do is accumulate two kinds of memory."
+          },
+          {
+            "type": "text",
+            "prop": "The first is conversational memory. Through each interaction, the agent should remember what was just discussed and what surrounding context applies. Voltaire runs across more than just Slack threads now, with cron jobs, webhooks, and chat integrations all calling into the same brain, so the surface that has to remember keeps widening. Across interactions, it should at least know that this user has asked similar things before, and use that as context to disambiguate the new request."
+          },
+          {
+            "type": "text",
+            "prop": "The second is institutional memory. When someone asks a question that turns out to require a non-obvious convention, the answer should not be lost. If “downsell” in our company means “an opportunity with a negative amount” and the model figured that out through a back-and-forth with a sales lead, the next person who asks about downsells shouldn’t have to re-derive it."
+          },
+          {
+            "type": "text",
+            "prop": "These are different problems with different shapes. Conversational memory is about retrieval. Institutional memory is about curation. The mechanisms are related but the failure modes are very different."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of three memory layers: semantic recall during inference, async reflection after the thread ends, and weekly human-reviewed promotion into the YAML knowledge base that feeds back into the orchestrator prompt",
+              "source": "https://cdn.merylldindin.com/articles/sections/learns-from-itself-memory-layers-20260429T130000.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/learns-from-itself-memory-layers-20260429T130000-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/learns-from-itself-memory-layers-20260429T130000-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/learns-from-itself-memory-layers-20260429T130000-mobile-lazy.webp",
+              "zoomable": true
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Semantic Recall: The Cheap Layer",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The first layer is the obvious one. Every conversation gets logged with its query embedding. When a new question comes in, we run a vector search against the last ninety days of that user’s prior turns and surface the most similar ones as context."
+          },
+          {
+            "type": "text",
+            "prop": "The implementation is unremarkable. Embed the user’s question, run a vector search against a BigQuery table of past turns, filter to the same user, exclude the current thread, exclude any turn that touched sensitive information. Return the top three matches above a similarity threshold. Inject them into the orchestrator’s prompt as “you’ve answered something like this before.”"
+          },
+          {
+            "type": "text",
+            "prop": "What surprised me is how often this layer is wrong in ways that look right."
+          },
+          {
+            "type": "text",
+            "prop": "Two questions can look semantically similar and want completely different answers. “What’s the activation status for this account?” and “What’s the onboarding status for this account?” sit almost on top of each other in embedding space. They mean very different things to the people asking them, and they need very different downstream answers. The recall layer cheerfully surfaces the wrong precedent and the model anchors on it."
+          },
+          {
+            "type": "text",
+            "prop": "The mitigation is partial. I exclude turns where the user reacted negatively. I exclude turns that touched restricted columns. I cap the similarity threshold high enough that vague matches don’t make it through. None of this fully solves it. The recall layer helps more than it hurts on average, but it has a long tail of subtly wrong precedents that are difficult to detect ahead of time."
+          },
+          {
+            "type": "text",
+            "prop": "The cost of this layer is mostly latency. Every query pays a vector search round trip even when the recall is useless. I haven’t yet found a clean way to predict in advance which questions benefit from recall and which don’t. For now I run it on everything."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Reflection: The Slow Layer",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The second layer is where the architecture gets weirder."
+          },
+          {
+            "type": "text",
+            "prop": "After a thread finishes, an asynchronous job looks at what just happened and asks a different question: did this conversation contain any durable convention that future users would benefit from?"
+          },
+          {
+            "type": "text",
+            "prop": "This runs as two cascaded model calls. The first is a gatekeeper. It reads the thread and answers a binary question: is there anything here worth remembering? The default answer is no. Most conversations are routine lookups, troubleshooting sessions, or one-off analyses. The gate’s job is to filter aggressively. It only fires when there’s clear evidence of a non-obvious mapping, a corrected misconception, or a piece of business jargon that the model had to learn during the conversation."
+          },
+          {
+            "type": "text",
+            "prop": "If the gate fires, a second call takes over. It’s a curator. It receives the thread, the candidate claim from the gate, the existing knowledge base on that domain, and the list of curation candidates already in the pipeline. Its job is to verify that the claim is actually durable, not already covered, and worth writing down. It produces at most one entry per thread."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of the reflection pipeline from thread end through novelty gate, curator agent, embedding, semantic deduplication, BigQuery curations table, weekly human review, and YAML promotion into reindexed knowledge stems",
+              "source": "https://cdn.merylldindin.com/articles/sections/learns-from-itself-reflection-pipeline-20260429T130000.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/learns-from-itself-reflection-pipeline-20260429T130000-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/learns-from-itself-reflection-pipeline-20260429T130000-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/learns-from-itself-reflection-pipeline-20260429T130000-mobile-lazy.webp",
+              "zoomable": true
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The output is a row in a BigQuery table called curations, with a topic, a short content blurb, a target knowledge stem, and a vector embedding for deduplication. Nothing in production behavior changes yet. The model has no idea this entry exists. The prompt is unchanged. The curation just sits in a queue."
+          },
+          {
+            "type": "text",
+            "prop": "Once a week, I run a review skill that surfaces the active curations, lets me approve the good ones, and promotes the approved ones into the YAML knowledge base. The next time the indexing pipeline runs, the promoted entry becomes part of the agent’s permanent prompt context."
+          },
+          {
+            "type": "text",
+            "prop": "The whole loop, end to end, is conversation, then gate, then curator, then BigQuery, then human review, then YAML, then reindex, then prompt. It’s slow on purpose. The bias is heavily toward not adding things."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why the Bias Is Toward Silence",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The temptation when you build a self-curating memory system is to let it write to itself aggressively. It feels productive. The number of curations grows. The system looks like it’s learning."
+          },
+          {
+            "type": "text",
+            "prop": "The problem is that bad curations are worse than no curations. If the model writes “the school year refers to the calendar year” into its own knowledge base, that statement now appears in every future conversation as authoritative context. A wrong fact in the knowledge base contaminates every downstream answer. There’s no safe way to half-trust a curation: either it’s in the prompt and the model treats it as true, or it isn’t."
+          },
+          {
+            "type": "text",
+            "prop": "The gate-then-curator pattern exists to make false positives expensive. The gate catches the easy filtering: don’t reflect on lookups, don’t reflect on troubleshooting, don’t reflect on one-off questions. The curator does the harder work: verify the claim against existing knowledge, deduplicate against pending candidates, refuse to promote schema details or policy thresholds that belong in other systems."
+          },
+          {
+            "type": "text",
+            "prop": "Even with both gates, I don’t trust the output without a human pass. The weekly review takes me about ten minutes. Most candidates get rejected. The ones that survive tend to be small, specific, and domain-bound. The kind of detail any new hire would have to ask a tenured colleague to learn: that revenue and bookings live on different definitions and you cannot mix them, that a customer in pilot is not yet a customer in churn analysis, that a refund and a credit are billed against two different accounts. Things that are obvious once explained and invisible until then. Without curation, every conversation that touched one of these would have to re-derive it from scratch."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What I’m Still Figuring Out",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Several things remain unresolved."
+          },
+          {
+            "type": "text",
+            "prop": "The first is the variance problem I opened with. People ask wildly different questions in wildly different shapes. Recall helps when two users have asked overlapping things, but most of the variance is across users, not within them. The recall layer is mostly user-scoped, which means a senior person who has asked a hundred questions gets a much better experience than a new joiner who has asked five. I’m not sure yet whether to share recall across users (with the privacy implications that creates) or to lean harder on the institutional memory layer to cover the gap."
+          },
+          {
+            "type": "text",
+            "prop": "The second is the question of when to stop. The knowledge base has a finite useful size. Past a certain point, more entries actively hurt: the planner that selects relevant context per query starts making worse routing decisions because the catalog is too noisy. I haven’t hit that ceiling yet, but I can see it from here. At some point I’ll need to prune, and I don’t yet have a principled way to decide what gets cut."
+          },
+          {
+            "type": "text",
+            "prop": "The third is feedback. Explicit signals are sparse. Positive reactions are rare, negative reactions are rarer, and most successful conversations end with no reaction at all. The proxy I’ve been using instead is conversation continuation. When someone keeps refining the same thread with follow-up prompts, that is usually the system telling me the first answer missed. A clean one-shot interaction means it landed; a long thread of refinement prompts means something needs work. It’s not a perfect signal, but it’s passive, free, and already present in every interaction. I’ve been thinking about lighter-weight explicit feedback, like a one-tap “this answer was wrong” affordance, but every input control I add to the interface introduces friction."
+          },
+          {
+            "type": "text",
+            "prop": "The fourth is the strangest. I keep discovering that people approach AI itself very differently. Some users treat the bot as a colleague and write in full sentences. Some treat it as a command line and abbreviate aggressively. Some apologize when they can’t get it to work, as if the bot has feelings. Some test it adversarially. Some give up after one bad answer and never come back. There is no version of the system that handles all of these well by default. The product surface has to absorb the variance."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Where This Lands",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire is, in fact, learning quite a lot. The reflection pipeline produces a steady drip of durable entries every week. The knowledge base has noticeably more depth than it did a quarter ago. Recall surfaces the right precedent often enough that I see it shape answers I wasn’t expecting. The base model still carries most of the weight, but the institutional layer is no longer cosmetic."
+          },
+          {
+            "type": "text",
+            "prop": "What surprised me is how much I’ve been learning along the way. Sitting in front of the curation queue every week is like getting a tour of the company’s internal vocabulary, one durable convention at a time. I see the strange ways different teams describe the same thing, the assumptions that quietly hold up entire workflows, the conventions that everyone in a department takes for granted and nobody outside it knows. Building a single brain that has to absorb all of this forces a holistic view of the business that I’d never have gotten from any one team’s documentation. Honestly, that part has been the most thrilling thing about the project."
+          },
+          {
+            "type": "text",
+            "prop": "What’s also changed is the framing. I used to think of “AI memory” as a technical problem to solve once: pick the right embedding model, pick the right vector store, set the right thresholds, ship it. The longer I run this, the more it looks like an editorial problem. What gets remembered, what gets forgotten, what gets promoted from a one-off observation to a load-bearing fact. Every step requires judgment, and most of the judgment can’t yet be delegated to the model itself."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Learns from Itself'' by Meryll Dindin 👀",
+              "url": "/thoughts/learns-from-itself/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://ai.pydantic.dev/",
+              "title": "PydanticAI",
+              "description": "Agent framework used for the gate and curator agents in the reflection pipeline."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://cloud.google.com/bigquery/docs/vector-search",
+              "title": "BigQuery Vector Search",
+              "description": "BigQuery’s native vector similarity search, used for both recall and curation deduplication."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/company-brain/",
+              "title": "One Brain to Query",
+              "description": "What Voltaire is, what it connects, and what it changed at Parallel."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/reasoning-loop/",
+              "title": "The Reasoning Loop",
+              "description": "How the orchestrator routes questions through identity resolution, knowledge planning, and a reasoning loop."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/sql-agent/",
+              "title": "The SQL Agent",
+              "description": "Inside the BigQuery agent: schema-aware SQL generation, PII filtering, and self-healing queries."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/knowledge-graph/",
+              "title": "A Knowledge Graph",
+              "description": "How the company-brain knowledge layer evolved from a custom SQLite graph to managed search infrastructure."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
