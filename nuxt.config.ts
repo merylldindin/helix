@@ -10,8 +10,7 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
 
-  // @ts-ignore-next-line
-  compatibilityDate: "2025-08-03",
+  compatibilityDate: "2026-05-10",
 
   components: [
     {
@@ -27,8 +26,8 @@ export default defineNuxtConfig({
   },
 
   experimental: {
-    externalVue: true,
-    payloadExtraction: true,
+    payloadExtraction: "client",
+    sharedPrerenderData: true,
   },
 
   hooks: {
@@ -65,6 +64,12 @@ export default defineNuxtConfig({
 
   nitro: {
     minify: true,
+    rollupConfig: {
+      onLog(level: string, log: { code?: string; message?: string }, handler: (level: string, log: { code?: string; message?: string }) => void) {
+        if (log.code === "CIRCULAR_DEPENDENCY" && log.message?.includes("nitropack/dist/runtime")) return;
+        handler(level, log);
+      },
+    },
     prerender: {
       crawlLinks: true,
       routes: Object.values(RoutePath),
@@ -125,8 +130,8 @@ export default defineNuxtConfig({
   telemetry: false,
 
   typescript: {
-    shim: true,
-    typeCheck: "build",
+    shim: false,
+    typeCheck: false,
   },
 
   vite: {
@@ -138,6 +143,7 @@ export default defineNuxtConfig({
       cssCodeSplit: true,
       manifest: true,
       minify: true,
+      modulePreload: { polyfill: false },
       rollupOptions: {
         onwarn(warning, warn) {
           if (
@@ -157,7 +163,6 @@ export default defineNuxtConfig({
           },
         },
       },
-      sourcemap: "hidden",
     },
 
     css: {
