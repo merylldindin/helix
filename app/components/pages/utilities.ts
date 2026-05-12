@@ -1,19 +1,28 @@
+import type { Component } from "vue";
+import { defineAsyncComponent } from "vue";
+
 import { ComponentName } from "@/types";
 
-import ArticleSection from "./components/ArticleSection.vue";
-import FrameSection from "./components/FrameSection.vue";
-import ImageSection from "./components/ImageSection.vue";
-import LegalSection from "./components/LegalSection.vue";
-import LinksSection from "./components/LinksSection.vue";
-import RotatingCube from "./components/RotatingCube/main.vue";
-import TimelineSection from "./components/TimelineSection/main.vue";
-
-export const ASYNC_COMPONENTS: Record<string, any> = {
-  [ComponentName.ARTICLE_SECTION]: ArticleSection,
-  [ComponentName.FRAME_SECTION]: FrameSection,
-  [ComponentName.IMAGE_SECTION]: ImageSection,
-  [ComponentName.LEGAL_SECTION]: LegalSection,
-  [ComponentName.LINKS_SECTION]: LinksSection,
-  [ComponentName.ROTATING_CUBE]: RotatingCube,
-  [ComponentName.TIMELINE_SECTION]: TimelineSection,
+export const ASYNC_COMPONENTS: Record<string, Component> = {
+  [ComponentName.ARTICLE_SECTION]: defineAsyncComponent(
+    () => import("./components/ArticleSection.vue"),
+  ),
+  [ComponentName.FRAME_SECTION]: defineAsyncComponent(
+    () => import("./components/FrameSection.vue"),
+  ),
+  [ComponentName.IMAGE_SECTION]: defineAsyncComponent(
+    () => import("./components/ImageSection.vue"),
+  ),
+  [ComponentName.LEGAL_SECTION]: defineAsyncComponent(
+    () => import("./components/LegalSection.vue"),
+  ),
+  [ComponentName.LINKS_SECTION]: defineAsyncComponent(
+    () => import("./components/LinksSection.vue"),
+  ),
+  [ComponentName.ROTATING_CUBE]: defineAsyncComponent(
+    () => import("./components/RotatingCube/main.vue"),
+  ),
+  [ComponentName.TIMELINE_SECTION]: defineAsyncComponent(
+    () => import("./components/TimelineSection/main.vue"),
+  ),
 };

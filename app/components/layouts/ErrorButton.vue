@@ -1,6 +1,12 @@
 <script lang="ts" setup>
+import { defineAsyncComponent } from "vue";
+
 import ButtonWave from "@/assets/animations/button-wave.json";
 import { CustomLink } from "@/components/shared";
+
+const Vue3Lottie = defineAsyncComponent(() =>
+  import("vue3-lottie").then((m) => m.Vue3Lottie),
+);
 </script>
 
 <template>

@@ -1,12 +1,16 @@
 <script lang="ts" setup>
 import type { PropType } from "vue";
-import { computed } from "vue";
+import { computed, defineAsyncComponent } from "vue";
 import { useTheme } from "vuetify";
 
 import LearnMore from "@/assets/animations/learn-more.json";
 import { CustomLink } from "@/components/shared";
 import type { ButtonItem } from "@/types";
 import { cloneLottieWithColor } from "@/utils/lottie";
+
+const Vue3Lottie = defineAsyncComponent(() =>
+  import("vue3-lottie").then((m) => m.Vue3Lottie),
+);
 
 defineProps({
   link: {

@@ -151,12 +151,6 @@ export default defineNuxtConfig({
 
           warn(warning);
         },
-        output: {
-          manualChunks: (id) => {
-            if (id.includes("vue3-lottie")) return "lottie";
-            if (id.includes("vuetify")) return "vuetify";
-          },
-        },
       },
     },
 

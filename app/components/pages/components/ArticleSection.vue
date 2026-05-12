@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { PropType } from "vue";
-import { computed, onMounted, onUnmounted, ref } from "vue";
+import { computed, defineAsyncComponent, onMounted, onUnmounted, ref } from "vue";
 import { useDisplay, useTheme } from "vuetify";
 
 import ScrollDown from "@/assets/animations/scroll-down.json";
@@ -9,6 +9,10 @@ import type { DeliveredImage, GenericContent } from "@/types";
 import { cloneLottieWithColor } from "@/utils/lottie";
 
 import ContentGenerator from "./ContentGenerator/main.vue";
+
+const Vue3Lottie = defineAsyncComponent(() =>
+  import("vue3-lottie").then((m) => m.Vue3Lottie),
+);
 
 defineProps({
   background: {

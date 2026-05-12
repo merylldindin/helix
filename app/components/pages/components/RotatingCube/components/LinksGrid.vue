@@ -1,9 +1,14 @@
 <script lang="ts" setup>
+import { defineAsyncComponent } from "vue";
 import { useDisplay } from "vuetify";
 
 import SwipeHint from "@/assets/animations/swipe-hint.json";
 import { CustomLink } from "@/components/shared";
 import type { IconName } from "@/types";
+
+const Vue3Lottie = defineAsyncComponent(() =>
+  import("vue3-lottie").then((m) => m.Vue3Lottie),
+);
 
 defineProps({
   grid: {
