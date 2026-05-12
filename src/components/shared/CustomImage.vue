@@ -1,6 +1,12 @@
 <script setup lang="ts">
+import {
+  mdiClose,
+  mdiMagnify,
+  mdiMagnifyMinusOutline,
+  mdiMagnifyPlusOutline,
+} from "@mdi/js";
 import type { PropType } from "vue";
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { useDisplay } from "vuetify";
 
 import type { DeliveredImage } from "@/types";
@@ -37,7 +43,7 @@ const isInvertOnDark = computed(
   () => cProps.image.darkModeTreatment === ImageDarkModeTreatment.INVERT_ON_DARK
 );
 
-const { smAndDown } = useDisplay();
+const { mdAndUp, smAndDown } = useDisplay();
 
 const imageSource = computed(() => {
   if (cProps.useMobileSource && smAndDown.value && cProps.image.mobile) {
@@ -61,23 +67,211 @@ const imageClasses = computed(() => ({
   "custom-image-follow-theme": cProps.followTheme && !isInvertOnDark.value,
   "custom-image-invert-on-dark": isInvertOnDark.value,
 }));
+
+const isZoomEnabled = computed(() => cProps.image.zoomable === true && mdAndUp.value);
+const isZoomDialogOpen = ref(false);
+
+const ZOOM_MIN = 1;
+const ZOOM_MAX = 4;
+const ZOOM_STEP = 0.5;
+const zoomLevel = ref(1);
+
+const zoomImageStyle = computed(() => ({
+  transform: `scale(${zoomLevel.value})`,
+  transformOrigin: "center center",
+  transition: "transform 0.15s ease-out",
+}));
+
+const canZoomIn = computed(() => zoomLevel.value < ZOOM_MAX);
+const canZoomOut = computed(() => zoomLevel.value > ZOOM_MIN);
+
+const openZoomDialog = (): void => {
+  zoomLevel.value = 1;
+  isZoomDialogOpen.value = true;
+};
+
+const closeZoomDialog = (): void => {
+  isZoomDialogOpen.value = false;
+};
+
+const zoomIn = (): void => {
+  zoomLevel.value = Math.min(ZOOM_MAX, zoomLevel.value + ZOOM_STEP);
+};
+
+const zoomOut = (): void => {
+  zoomLevel.value = Math.max(ZOOM_MIN, zoomLevel.value - ZOOM_STEP);
+};
 </script>
 
 <template>
-  <v-img
-    :key="imageKey"
-    :alt="image.altText"
-    :aspect-ratio="aspectRatio"
-    :class="imageClasses"
-    :cover="cover"
-    :eager="image.eager"
-    :lazy-src="imageLazySource"
-    :src="imageSource"
-    :width="width"
-  />
+  <div
+    class="custom-image-wrapper"
+    :class="{ 'custom-image-wrapper--zoomable': isZoomEnabled }"
+  >
+    <v-img
+      :key="imageKey"
+      :alt="image.altText"
+      :aspect-ratio="aspectRatio"
+      :class="imageClasses"
+      :cover="cover"
+      :eager="image.eager"
+      :lazy-src="imageLazySource"
+      :src="imageSource"
+      :width="width"
+    />
+
+    <button
+      v-if="isZoomEnabled"
+      aria-label="Open image in zoom view"
+      class="custom-image-magnifier"
+      type="button"
+      @click="openZoomDialog"
+    >
+      <v-icon :icon="mdiMagnify" size="small" />
+    </button>
+
+    <v-dialog
+      v-if="isZoomEnabled"
+      v-model="isZoomDialogOpen"
+      :class="imageClasses"
+      max-width="1400"
+      width="95vw"
+    >
+      <div class="custom-image-zoom-dialog">
+        <div class="custom-image-zoom-toolbar">
+          <button
+            aria-label="Zoom out"
+            class="custom-image-zoom-button"
+            :disabled="!canZoomOut"
+            type="button"
+            @click="zoomOut"
+          >
+            <v-icon :icon="mdiMagnifyMinusOutline" />
+          </button>
+
+          <button
+            aria-label="Zoom in"
+            class="custom-image-zoom-button"
+            :disabled="!canZoomIn"
+            type="button"
+            @click="zoomIn"
+          >
+            <v-icon :icon="mdiMagnifyPlusOutline" />
+          </button>
+
+          <button
+            aria-label="Close zoom view"
+            class="custom-image-zoom-button"
+            type="button"
+            @click="closeZoomDialog"
+          >
+            <v-icon :icon="mdiClose" />
+          </button>
+        </div>
+
+        <div class="custom-image-zoom-canvas">
+          <img
+            :alt="image.altText"
+            class="custom-image-zoom-target"
+            :src="image.source"
+            :style="zoomImageStyle"
+          />
+        </div>
+      </div>
+    </v-dialog>
+  </div>
 </template>
 
 <style lang="scss">
+.custom-image-wrapper {
+  position: relative;
+
+  &--zoomable:hover .custom-image-magnifier {
+    opacity: 1;
+  }
+}
+
+.custom-image-magnifier {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(var(--v-theme-surface));
+  color: rgb(var(--v-theme-on-surface));
+  border: 1px solid rgb(var(--v-theme-on-surface));
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+
+  &:focus-visible {
+    opacity: 1;
+    outline: 2px solid rgb(var(--v-theme-primary));
+    outline-offset: 2px;
+  }
+}
+
+.custom-image-zoom-dialog {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(var(--v-theme-background));
+  border: 1px solid rgb(var(--v-theme-on-surface));
+}
+
+.custom-image-zoom-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 1px solid rgb(var(--v-theme-on-surface));
+}
+
+.custom-image-zoom-button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: rgb(var(--v-theme-on-surface));
+  border: 1px solid rgb(var(--v-theme-on-surface));
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--v-theme-primary));
+    outline-offset: 2px;
+  }
+}
+
+.custom-image-zoom-canvas {
+  overflow: auto;
+  max-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.custom-image-zoom-target {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root[data-app-theme="dark"] .custom-image-invert-on-dark .custom-image-zoom-target {
+  filter: invert(1);
+}
+
 :root[data-app-theme="dark"] .custom-image-follow-theme {
   background-color: rgb(var(--v-theme-background));
 }

@@ -10,6 +10,7 @@ export interface DeliveredImage {
   lazySource?: string;
   mobile?: string;
   lazyMobile?: string;
+  zoomable?: boolean;
 }
 
 export enum TextChunkType {
