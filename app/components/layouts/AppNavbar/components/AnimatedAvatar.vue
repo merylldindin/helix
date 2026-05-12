@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { CustomImage } from "@/components/shared";
 import { ANIMATED_AVATAR_CONTENT } from "@/content";
 </script>
 
@@ -7,7 +6,11 @@ import { ANIMATED_AVATAR_CONTENT } from "@/content";
   <NuxtLink to="/">
     <div class="animation-wrapper">
       <v-avatar class="animation-wrapper__avatar custom-shadow">
-        <CustomImage :follow-theme="false" :image="ANIMATED_AVATAR_CONTENT" />
+        <img
+          :alt="ANIMATED_AVATAR_CONTENT.altText"
+          class="animation-wrapper__image"
+          :src="ANIMATED_AVATAR_CONTENT.source"
+        />
       </v-avatar>
     </div>
   </NuxtLink>
@@ -23,6 +26,12 @@ import { ANIMATED_AVATAR_CONTENT } from "@/content";
   &__avatar {
     width: var(--navbar-avatar-size, 4rem);
     height: var(--navbar-avatar-size, 4rem);
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 </style>
