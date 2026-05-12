@@ -1,0 +1,44 @@
+app/types/routes.ts
+  s_e9f4567fe37a25::t_bce7ee170b85d8 4,8-9,14,46
+  s_e9f4567fe37a25::t_73d7bc75f0ba6f 1-3,5-7,10-13,15-45,47-51
+app/types/settings.ts
+  s_e9f4567fe37a25::t_6afb261926233b 1-6
+app/types/global.ts
+  s_e9f4567fe37a25::t_5f0d0cd91bbee4 19-27
+  s_e9f4567fe37a25::t_7f7e3d8d58ead7 1-6
+app/utils/schemas/itemlists.ts
+  s_e9f4567fe37a25::t_690e9ca00f32ae 11-16
+app/types/contents.ts
+  s_e9f4567fe37a25::t_e7060df3c9d553 3-16
+  s_e9f4567fe37a25::t_998d1d52dc791e 25,38,50,55,60,67,80,93,98,103
+app/types/vuetify.ts
+  s_e9f4567fe37a25::t_6fee992f875109 5,7-8,10-12
+  s_e9f4567fe37a25::t_e573d1a89cfc47 1-4,6,9,13,15-44
+app/components/pages/components/LegalSection.vue
+  s_e9f4567fe37a25::t_edad5f3fb464c9 7-8,10-12
+  s_e9f4567fe37a25::t_b6fe5b91e7338b 9
+app/types/components.ts
+  s_e9f4567fe37a25::t_7278bf346bd5ef 1-11
+tsconfig.json
+  s_e9f4567fe37a25::t_d7a4cec188fe55 3
+app/router.options.ts
+  s_e9f4567fe37a25::t_b54127c1296fcd 3,12
+app/components/pages/components/RotatingCube/main.vue
+  s_e9f4567fe37a25::t_b8a51ccff50994 2-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "4a77566f035a38608366c0bb086720ea18325500",
+  "prompts": {},
+  "sessions": {
+    "s_e9f4567fe37a25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac351d00-0e6d-4c18-8380-5e093630a467",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
