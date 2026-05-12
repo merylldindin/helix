@@ -1,0 +1,25 @@
+nuxt.config.ts
+  s_e9f4567fe37a25::t_8067f2d417b575 13
+  s_e9f4567fe37a25::t_ec95f7948924f5 67-72
+  s_e9f4567fe37a25::t_9a51ad8dcbd1d5 146
+  s_e9f4567fe37a25::t_a6be7b39b0a078 29-30
+  s_e9f4567fe37a25::t_39d6ecad3be5a3 133-134
+src/plugins/vuetify.client/components.ts
+  s_e9f4567fe37a25::t_a7ec258908c56f 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "ca3219c1ee7f5414ceb7b158d602a23050be6902",
+  "prompts": {},
+  "sessions": {
+    "s_e9f4567fe37a25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac351d00-0e6d-4c18-8380-5e093630a467",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
