@@ -125,8 +125,8 @@ const zoomOut = (): void => {
       v-if="isZoomEnabled"
       v-model="isZoomDialogOpen"
       :class="imageClasses"
-      max-width="1400"
-      width="95vw"
+      max-width="95dvw"
+      width="95dvw"
     >
       <div class="custom-image-zoom-dialog">
         <div class="custom-image-zoom-toolbar">
@@ -227,7 +227,7 @@ const zoomOut = (): void => {
 
 .custom-image-zoom-canvas {
   overflow: auto;
-  max-height: 80vh;
+  max-height: 95dvh;
   display: flex;
   align-items: center;
   justify-content: center;
