@@ -1,0 +1,21 @@
+app/components/pages/components/ContentGenerator/main.vue
+  s_e9f4567fe37a25::t_a55164706a6efe 71
+app/content/pages/thoughts/LEARNS_FROM_ITSELF.json
+  s_e9f4567fe37a25::t_1bd1bea83720f0 113,180
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "002e66b95fdf2f32324b991e57e65dc6e5b360f4",
+  "prompts": {},
+  "sessions": {
+    "s_e9f4567fe37a25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac351d00-0e6d-4c18-8380-5e093630a467",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
