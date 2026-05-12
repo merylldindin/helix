@@ -1,10 +1,5 @@
 <script setup lang="ts">
-import {
-  mdiClose,
-  mdiMagnify,
-  mdiMagnifyMinusOutline,
-  mdiMagnifyPlusOutline,
-} from "@mdi/js";
+import { mdiClose, mdiMagnifyMinusOutline, mdiMagnifyPlusOutline } from "@mdi/js";
 import type { PropType } from "vue";
 import { computed, ref } from "vue";
 import { useDisplay } from "vuetify";
@@ -105,8 +100,14 @@ const zoomOut = (): void => {
 
 <template>
   <div
+    :aria-label="isZoomEnabled ? 'Open image in zoom view' : undefined"
     class="custom-image-wrapper"
     :class="{ 'custom-image-wrapper--zoomable': isZoomEnabled }"
+    :role="isZoomEnabled ? 'button' : undefined"
+    :tabindex="isZoomEnabled ? 0 : undefined"
+    @click="isZoomEnabled && openZoomDialog()"
+    @keydown.enter.prevent="isZoomEnabled && openZoomDialog()"
+    @keydown.space.prevent="isZoomEnabled && openZoomDialog()"
   >
     <v-img
       :key="imageKey"
@@ -119,16 +120,6 @@ const zoomOut = (): void => {
       :src="imageSource"
       :width="width"
     />
-
-    <button
-      v-if="isZoomEnabled"
-      aria-label="Open image in zoom view"
-      class="custom-image-magnifier"
-      type="button"
-      @click="openZoomDialog"
-    >
-      <v-icon :icon="mdiMagnify" size="small" />
-    </button>
 
     <v-dialog
       v-if="isZoomEnabled"
@@ -186,32 +177,13 @@ const zoomOut = (): void => {
 .custom-image-wrapper {
   position: relative;
 
-  &--zoomable:hover .custom-image-magnifier {
-    opacity: 1;
-  }
-}
+  &--zoomable {
+    cursor: zoom-in;
 
-.custom-image-magnifier {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(var(--v-theme-surface));
-  color: rgb(var(--v-theme-on-surface));
-  border: 1px solid rgb(var(--v-theme-on-surface));
-  border-radius: 50%;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.15s ease-in-out;
-
-  &:focus-visible {
-    opacity: 1;
-    outline: 2px solid rgb(var(--v-theme-primary));
-    outline-offset: 2px;
+    &:focus-visible {
+      outline: 2px solid rgb(var(--v-theme-primary));
+      outline-offset: 2px;
+    }
   }
 }
 
