@@ -1,0 +1,27 @@
+src/plugins/gtag.client.ts
+  s_e9f4567fe37a25::t_f2f58d2afa0043 1,14,16-20,25
+  s_e9f4567fe37a25::t_364a2ef7e8e5cb 21-23
+  s_e9f4567fe37a25::t_c2bf7c3e951ca7 24
+nuxt.config.ts
+  s_e9f4567fe37a25::t_ce6c86973853d2 189
+yarn.lock
+  ai_agent 7327,12923-12925,12927-12932
+package.json
+  s_e9f4567fe37a25::t_d87f00e32ab28e 95
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "fdd1278ca95c17f2ba3e60ebcef88bedc3851eb1",
+  "prompts": {},
+  "sessions": {
+    "s_e9f4567fe37a25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac351d00-0e6d-4c18-8380-5e093630a467",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
