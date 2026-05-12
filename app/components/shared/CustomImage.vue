@@ -190,6 +190,7 @@ const zoomOut = (): void => {
 .custom-image-zoom-dialog {
   display: flex;
   flex-direction: column;
+  height: 95dvh;
   background-color: rgb(var(--v-theme-background));
   border: 1px solid rgb(var(--v-theme-on-surface));
 }
@@ -226,18 +227,20 @@ const zoomOut = (): void => {
 }
 
 .custom-image-zoom-canvas {
+  flex: 1;
   overflow: auto;
-  max-height: 95dvh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px;
+  min-height: 0;
 }
 
 .custom-image-zoom-target {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 :root[data-app-theme="dark"] .custom-image-invert-on-dark .custom-image-zoom-target {
