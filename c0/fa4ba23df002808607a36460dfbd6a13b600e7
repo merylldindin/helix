@@ -1,0 +1,73 @@
+src/content/pages/thoughts/TRAINING_FOR_DECADES.json
+  7c53751cdd9102cb 1-398
+src/content/pages/thoughts/LEARNS_FROM_ITSELF.json
+  041d74dc34ab1105 1-336
+src/utils/routes.ts
+  s_09ce8132a6b2d0::t_02b279101870f4 87
+  s_09ce8132a6b2d0::t_6990fed7eeaa3b 35
+  7c53751cdd9102cb 47,99
+  041d74dc34ab1105 23,75
+src/types/routes.ts
+  s_09ce8132a6b2d0::t_003d0b4ca6823d 35
+  7c53751cdd9102cb 47
+  041d74dc34ab1105 23
+src/content/pages/thoughts/SKILLS_NOT_FEATURES.json
+  s_09ce8132a6b2d0::t_916cff3339e45b 55
+  s_09ce8132a6b2d0::t_81798c14796ae0 59
+  s_09ce8132a6b2d0::t_93086c4f346d4f 1-54,56-58,60-131,156-276,286-340,349-366,368-390
+  s_09ce8132a6b2d0::t_d4b49a1d3b4fb2 277-285
+  s_09ce8132a6b2d0::t_a3c9df458b9b99 341-348
+  s_09ce8132a6b2d0::t_4f59ac8284385a 367
+  s_09ce8132a6b2d0::t_a10026b13390d7 132-155
+src/content/pages/suggestions/BOOK_SUGGESTIONS.json
+  7c53751cdd9102cb 181-186
+src/content/pages/thoughts/index.ts
+  041d74dc34ab1105 15
+  s_09ce8132a6b2d0::t_8fbc9b0cb9df57 20
+  7c53751cdd9102cb 27
+src/content/pages/THOUGHTS_PAGE.json
+  041d74dc34ab1105 104-144
+  7c53751cdd9102cb 61-103
+  s_09ce8132a6b2d0::t_68c7cf9549f3a0 18-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "c0fa4ba23df002808607a36460dfbd6a13b600e7",
+  "prompts": {
+    "041d74dc34ab1105": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6d57b354-85af-424d-b206-27d14fd73ce8",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 383,
+      "overriden_lines": 0
+    },
+    "7c53751cdd9102cb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "14a7d176-a2c8-430a-9c6f-ace408b15141",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 454,
+      "overriden_lines": 0
+    }
+  },
+  "sessions": {
+    "s_09ce8132a6b2d0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "720836df-6017-4c85-8e86-62c12ded31e1",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
