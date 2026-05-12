@@ -5,6 +5,7 @@
     "stylelint-prettier/recommended"
   ],
   "rules": {
-    "prettier/prettier": true
+    "prettier/prettier": true,
+    "scss/operator-no-newline-after": null
   }
 }

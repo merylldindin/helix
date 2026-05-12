@@ -34,8 +34,7 @@ const cProps = defineProps({
 });
 
 const isInvertOnDark = computed(
-  () =>
-    cProps.image.darkModeTreatment === ImageDarkModeTreatment.INVERT_ON_DARK,
+  () => cProps.image.darkModeTreatment === ImageDarkModeTreatment.INVERT_ON_DARK
 );
 
 const { smAndDown } = useDisplay();

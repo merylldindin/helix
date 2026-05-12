@@ -6,5 +6,5 @@ authors = [{ name = "Meryll Dindin", email = "merylldin@gmail.com" }]
 requires-python = "==3.13.*"
 dependencies = [
     "httpx==0.28.1",
-    "pydantic==2.12.5",
+    "pydantic==2.13.4",
 ]

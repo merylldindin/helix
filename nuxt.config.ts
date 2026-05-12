@@ -151,10 +151,9 @@ export default defineNuxtConfig({
           warn(warning);
         },
         output: {
-          compact: true,
-          manualChunks: {
-            lottie: ["vue3-lottie"],
-            vuetify: ["vuetify"],
+          manualChunks: (id) => {
+            if (id.includes("vue3-lottie")) return "lottie";
+            if (id.includes("vuetify")) return "vuetify";
           },
         },
       },
@@ -177,7 +176,6 @@ export default defineNuxtConfig({
       "process.env.DEBUG": false,
     },
 
-    // @ts-expect-error - @unhead/addons built with vite 7.2, type drift in Plugin.hotUpdate
     plugins: [UnheadVite()],
   },
 });

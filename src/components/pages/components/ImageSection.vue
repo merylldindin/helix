@@ -146,6 +146,7 @@ const { smAndDown } = useDisplay();
 
 <style lang="scss">
 @include sm-down {
+  /* stylelint-disable-next-line selector-class-pattern */
   .image-column .v-img__img {
     object-fit: contain !important;
   }
