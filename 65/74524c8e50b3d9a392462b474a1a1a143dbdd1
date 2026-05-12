@@ -1,0 +1,54 @@
+.claude/skills/create-article/references/registration-checklist.md
+  s_e9f4567fe37a25::t_6d3b1790044360 5,9,20,28,48
+.claude/skills/publish-article/SKILL.md
+  s_e9f4567fe37a25::t_78c6c6d445232e 21,26
+.claude/skills/review-seo/SKILL.md
+  s_e9f4567fe37a25::t_f664eaea93cea2 44-46,71
+.claude/skills/review-seo/scripts/validators/content_analyzer.py
+  s_e9f4567fe37a25::t_c4cd8d5959f122 14
+server/plugins/mdream.ts
+  s_e9f4567fe37a25::t_0dbab29d777db7 1-27
+nuxt.config.ts
+  s_e9f4567fe37a25::t_a2d1ff8635bfde 32
+  s_e9f4567fe37a25::t_de690b6c2726b3 5-6
+.claude/skills/review-seo/scripts/validators/meta_validator.py
+  s_e9f4567fe37a25::t_c4cd8d5959f122 19
+.claude/skills/create-article/references/article-conventions.md
+  s_e9f4567fe37a25::t_e55a8f1f992b5c 6
+.claude/rules/styling.md
+  s_e9f4567fe37a25::t_1230c4e825fdf3 6-7,11
+.claude/skills/create-article/SKILL.md
+  s_e9f4567fe37a25::t_c2d78811881693 71
+.claude/rules/typescript.md
+  s_e9f4567fe37a25::t_4aeb507629f0ca 6
+.claude/rules/vue-components.md
+  s_e9f4567fe37a25::t_7a857cdd7601ff 32
+AGENTS.md
+  s_e9f4567fe37a25::t_c023c562d9973d 39,51,62
+CLAUDE.md
+  s_e9f4567fe37a25::t_d835fb0c15d0f6 39,51,62
+.claude/skills/review-seo/scripts/validators/schema_validator.py
+  s_e9f4567fe37a25::t_20f20ad76c3f28 30-31
+  s_e9f4567fe37a25::t_ddea2a27a120a4 55,180
+.claude/skills/review-seo/scripts/validators/technical_seo.py
+  s_e9f4567fe37a25::t_f3cdeef3aeee2b 27
+  s_e9f4567fe37a25::t_0eb1340235c776 36
+.claude/rules/content-system.md
+  s_e9f4567fe37a25::t_911c17d269dd10 5,26,30-32,37-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "6574524c8e50b3d9a392462b474a1a1a143dbdd1",
+  "prompts": {},
+  "sessions": {
+    "s_e9f4567fe37a25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac351d00-0e6d-4c18-8380-5e093630a467",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
