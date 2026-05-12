@@ -8,13 +8,6 @@ import type {
 import { ComponentName, ContentType } from "@/types";
 import { isExternalUrl } from "@/utils/links";
 
-const ItemListConfig = {
-  IMAGE_SECTION: "IMAGE_SECTION",
-  LINKS_SECTION: "LINKS_SECTION",
-  ROTATING_CUBE: "ROTATING_CUBE",
-  TIMELINE_SECTION: "TIMELINE_SECTION",
-} as const;
-
 interface ListItemData {
   name?: string;
   url: string;
@@ -176,19 +169,19 @@ const getSectionReferenceItemList = (content: PageContent): unknown => {
 export const getItemListSchema = (content: PageContent): unknown => {
   const source = content.schema?.prop?.source;
 
-  if (source === ItemListConfig.ROTATING_CUBE) {
+  if (source === ComponentName.ROTATING_CUBE) {
     return getRotatingCubeItemList(content);
   }
 
-  if (source === ItemListConfig.IMAGE_SECTION) {
+  if (source === ComponentName.IMAGE_SECTION) {
     return getSectionImageItemList(content);
   }
 
-  if (source === ItemListConfig.LINKS_SECTION) {
+  if (source === ComponentName.LINKS_SECTION) {
     return getSectionReferenceItemList(content);
   }
 
-  if (source === ItemListConfig.TIMELINE_SECTION) {
+  if (source === ComponentName.TIMELINE_SECTION) {
     return getSectionTimelineItemList(content);
   }
 

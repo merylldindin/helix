@@ -137,13 +137,6 @@ export interface PageComponent {
   props?: Record<string, unknown>;
 }
 
-// Schema type definitions for JSON-LD structured data
-export type ItemListSource =
-  | "IMAGE_SECTION"
-  | "LINKS_SECTION"
-  | "ROTATING_CUBE"
-  | "TIMELINE_SECTION";
-
 export type SchemaType = "aboutPage" | "blogPosting" | "itemList" | "webPage";
 
 export interface PageSchema {
