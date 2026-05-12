@@ -176,6 +176,17 @@ export default defineNuxtConfig({
       "process.env.DEBUG": false,
     },
 
+    optimizeDeps: {
+      include: [
+        "@mdi/js",
+        "@vue/devtools-core",
+        "@vue/devtools-kit",
+        "lodash/findLast",
+        "vue-gtag-next",
+        "vue3-lottie",
+      ],
+    },
+
     plugins: [UnheadVite()],
   },
 });
