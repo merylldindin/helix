@@ -68,7 +68,7 @@ const getMarginFromTypography = (typography: string, index: number) => {
         v-else-if="item.type === ContentType.IMAGE"
         :class="smAndDown ? 'my-6' : 'my-12'"
         :follow-theme="followThemeForImages"
-        :image="item.prop"
+        :image="{ ...item.prop, zoomable: item.prop.zoomable ?? true }"
       />
 
       <CustomLink
