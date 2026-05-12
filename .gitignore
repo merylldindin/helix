@@ -38,10 +38,10 @@
 **/!.vscode/extensions.json
 **/!.vscode/settings.json
 
-# cypress
-cypress/downloads
-cypress/screenshots
-cypress/videos
+# playwright
+test-results/
+playwright-report/
+playwright/.cache/
 
 # claude plans
 .claude/plans/

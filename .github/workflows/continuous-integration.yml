@@ -30,7 +30,6 @@ jobs:
           path: |
             .yarn/cache
             node_modules
-            ~/.cache/Cypress
           key: ${{ runner.OS }}-helix-yarn-${{ hashFiles('yarn.lock') }}
           restore-keys: |
             ${{ runner.OS }}-helix-yarn-
@@ -53,12 +52,8 @@ jobs:
       - name: Bundle Application
         run: make build
 
-      - name: Run Cypress
-        uses: cypress-io/github-action@v6
-        with:
-          browser: chrome
-          command: yarn cypress
-          install: false
-          start: make serve
-          wait-on: 'http://localhost:3000/'
-          wait-on-timeout: 60
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Playwright Tests
+        run: yarn e2e
