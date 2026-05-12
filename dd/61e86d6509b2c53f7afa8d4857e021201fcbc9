@@ -1,0 +1,27 @@
+app/components/pages/components/ContentGenerator/components/RedirectContent.vue
+  s_f70f214572e7b0::t_cb91ad5d8053b3 12
+app/components/layouts/ErrorButton.vue
+  s_f70f214572e7b0::t_cb91ad5d8053b3 8
+app/components/pages/components/ArticleSection.vue
+  s_f70f214572e7b0::t_cb91ad5d8053b3 14
+app/components/pages/utilities.ts
+  s_f70f214572e7b0::t_cb91ad5d8053b3 8,11,14,17,20,23,26
+app/components/pages/components/RotatingCube/components/LinksGrid.vue
+  s_f70f214572e7b0::t_cb91ad5d8053b3 10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "dd61e86d6509b2c53f7afa8d4857e021201fcbc9",
+  "prompts": {},
+  "sessions": {
+    "s_f70f214572e7b0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "990af497-8a65-4a7d-bde7-b668d2967bf9",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
