@@ -11,7 +11,7 @@ import { cloneLottieWithColor } from "@/utils/lottie";
 import ContentGenerator from "./ContentGenerator/main.vue";
 
 const Vue3Lottie = defineAsyncComponent(() =>
-  import("vue3-lottie").then((m) => m.Vue3Lottie),
+  import("vue3-lottie").then((m) => m.Vue3Lottie)
 );
 
 defineProps({

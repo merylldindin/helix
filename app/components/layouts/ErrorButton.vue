@@ -5,7 +5,7 @@ import ButtonWave from "@/assets/animations/button-wave.json";
 import { CustomLink } from "@/components/shared";
 
 const Vue3Lottie = defineAsyncComponent(() =>
-  import("vue3-lottie").then((m) => m.Vue3Lottie),
+  import("vue3-lottie").then((m) => m.Vue3Lottie)
 );
 </script>
 

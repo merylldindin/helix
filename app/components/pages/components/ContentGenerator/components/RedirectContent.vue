@@ -9,7 +9,7 @@ import type { ButtonItem } from "@/types";
 import { cloneLottieWithColor } from "@/utils/lottie";
 
 const Vue3Lottie = defineAsyncComponent(() =>
-  import("vue3-lottie").then((m) => m.Vue3Lottie),
+  import("vue3-lottie").then((m) => m.Vue3Lottie)
 );
 
 defineProps({

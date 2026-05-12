@@ -7,7 +7,7 @@ import { CustomLink } from "@/components/shared";
 import type { IconName } from "@/types";
 
 const Vue3Lottie = defineAsyncComponent(() =>
-  import("vue3-lottie").then((m) => m.Vue3Lottie),
+  import("vue3-lottie").then((m) => m.Vue3Lottie)
 );
 
 defineProps({
