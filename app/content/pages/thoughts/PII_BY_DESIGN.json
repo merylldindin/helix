@@ -1,0 +1,632 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-05-14",
+      "datePublished": "2026-05-14",
+      "keywords": "PII, AI agent security, FERPA, COPPA, domain-wide delegation, prompt injection, RBAC, BigQuery, Voltaire, defense in depth"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/pii-by-design/",
+    "title": "PII by Design | Meryll Dindin",
+    "description": "How I think about identity, prompts, and audit when an internal AI touches employee, student, and clinical data. Five layers, mechanically independent.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/pii-by-design-20260514T095705.webp",
+    "thumbnailAlt": "Minimalist black and white illustration of five nested filtering gates with a particle flowing through them, representing layered defense for PII"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Wide horizontal abstract composition of five vertical filter membranes in sequence, each with smaller passages, representing layered defense for PII in an AI agent",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/pii-by-design-20260514T095636.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/pii-by-design-20260514T095636-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/pii-by-design-20260514T095636-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/pii-by-design-20260514T095636-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "PII by Design",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published May 14, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A few weeks into running Voltaire inside Parallel, a customer success manager asked it for the attendance evolution of a specific child. She had the student’s name on hand. Legitimate question. There’s no version of that answer that takes a student name as input and returns matching records to Slack."
+          },
+          {
+            "type": "text",
+            "prop": "The wrong response is “I can’t help with that.” The right response asks for the student ID instead of the name, and the moment she provides it, returns the attendance series she actually wanted. She gets her answer. The agent never sees a name."
+          },
+          {
+            "type": "text",
+            "prop": "The previous articles in this series covered why the agent exists and how it’s wired. This one covers what kept me up at night while I was building it. Voltaire reaches employee data from our HRIS, credit card transactions from Ramp, vendor invoices from QuickBooks, support tickets in Zendesk, and sensitive operational and clinical data in our warehouse. Some of those tables have student names. Some have parent emails. Some have salary records, payment data, or other sensitive entries that nobody in the company should see without a documented reason."
+          },
+          {
+            "type": "text",
+            "prop": "PII shapes the architecture from day one. Every choice about identity, prompts, tools, and audit either widens or narrows the blast radius of a single bad query."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Diagram of the five-layer PII request flow: Slack event, identity resolution, input gate, orchestrator with prompt steering and schema strip, SQL agent with AST validation and column registry, output redactor, audit log with is_pii_accessed flag, Slack reply",
+              "darkModeTreatment": "invert-on-dark",
+              "source": "https://cdn.merylldindin.com/articles/sections/pii-by-design-five-layer-flow-20260514T083403.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/pii-by-design-five-layer-flow-20260514T083403-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/pii-by-design-five-layer-flow-20260514T083403-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/pii-by-design-five-layer-flow-20260514T083403-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Identity Is the Precondition",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Before I talk about the layers, the thing that has to be true first: identity resolution."
+          },
+          {
+            "type": "text",
+            "prop": "Every Slack message goes through the same chain. Voltaire sees the user’s Slack ID, looks up their email, and checks it against a snapshot of our HRIS. The result is a request profile with a role, a department, a manager, and a list of direct reports."
+          },
+          {
+            "type": "text",
+            "prop": "That happens before anything else. Before the orchestrator runs. Before any tool is selected. Before any prompt is built."
+          },
+          {
+            "type": "text",
+            "prop": "None of the layers below this work if I don’t know who’s asking. NIST’s emerging guidance on agentic systems opens with the same observation. So does Google’s Secure AI Framework. So does Microsoft’s Entra Agent ID guidance. They all start by saying: you need to know, for every request, that the agent is acting on behalf of a specific identified human, and you need that identity propagated all the way to the downstream systems the agent will touch. If you can’t answer “who is this for” in code, you can’t enforce anything."
+          },
+          {
+            "type": "text",
+            "prop": "The org chart is built from our HRIS when Voltaire starts. Every request can instantly look up a manager’s direct reports. None of this is HR data to me. It’s authorization data."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Layer 1: The Input Gate",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Every query gets classified before it reaches the orchestrator."
+          },
+          {
+            "type": "text",
+            "prop": "The gate is a small classifier that runs in our Slack handler. It takes the user’s query and their role, and returns either nothing (proceed) or a refusal message. If it returns a refusal, the handler sends the refusal and returns. The orchestrator never runs. No tool is called. No SQL is generated. No tokens beyond the gate are spent."
+          },
+          {
+            "type": "text",
+            "prop": "There are two things I care about with the gate."
+          },
+          {
+            "type": "text",
+            "prop": "First, it’s enforced in code, not in a prompt. Microsoft’s guidance on agentic systems draws a sharp line between deterministic human review, decided in code, and the kind that asks the model to evaluate whether it should run. The first survives prompt injection. The second doesn’t. Our gate is plain code. The orchestrator can’t override it because the orchestrator never sees the query when the gate fires."
+          },
+          {
+            "type": "text",
+            "prop": "Second, the gate doesn’t just refuse. It proposes an alternative."
+          },
+          {
+            "type": "text",
+            "prop": "This is the part I think about more than the rest of the layer combined. The classifier is a small call to a fast model with a strict response format: a yes-or-no on whether the request is sensitive, plus a message if it is. The prompt frames the gate as a FERPA and COPPA compliance check. The format requires that any refusal include a constructive alternative. The model literally cannot return a bare “no.”"
+          },
+          {
+            "type": "text",
+            "prop": "So when someone asks for student names, the agent doesn’t say “I can’t help.” It says something closer to “I can’t look students up by name. Provide the student ID instead.” The phrasing is in the prompt verbatim. The pattern matters because a bare refusal trains people to route around the system. A refusal with a path forward trains them to formulate compliant queries the next time. GDPR Article 25, titled “data protection by design and by default,” embeds this principle in law. I just call it the only refusal pattern I’d ship."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Layer 2: Column Filtering",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "If the gate is a coarse filter on intent, the column filter is a fine filter on data."
+          },
+          {
+            "type": "text",
+            "prop": "Every table Voltaire can query has a sensitivity registry attached to it. It’s a flat file mapping each column to a tag: student names, student emails, social security numbers, birth dates, addresses, phone numbers, professional IDs, free-text fields. The registry is a deliberate, source-controlled artifact. It is not derived from a scan. I had to write it once, and now every new table picks up its tags by hand. That friction is the point. Someone has to make the decision."
+          },
+          {
+            "type": "text",
+            "prop": "The column filter operates in two places."
+          },
+          {
+            "type": "text",
+            "prop": "The first is before the SQL agent builds its prompt. When Voltaire decides it needs to query a table, it pulls that table’s schema and strips every column tagged PII for the requester’s role. The model never sees those columns exist. There’s no “you can use these but not those” instruction. The columns are just absent from the prompt. The cheapest place to stop a leak is before the model knows what to leak."
+          },
+          {
+            "type": "text",
+            "prop": "The second is after the SQL agent produces a query. I parse every generated SQL statement with sqlglot, walk through it, and check every selected column against the same registry. If a PII column slipped through, the query gets rejected before it touches BigQuery. The rejection message names the offending column and points the model to a non-PII identifier instead. That phrasing is deliberate. It gives the model’s repair loop something to do."
+          },
+          {
+            "type": "text",
+            "prop": "SELECT * is unconditionally rejected. Specifying columns is the discipline."
+          },
+          {
+            "type": "text",
+            "prop": "BoundaryML published a piece in late 2025 arguing that structured outputs create false confidence. The point is sharp. Format validation catches structurally invalid responses. It doesn’t catch a structurally valid response that contains a leaked SSN. So the parser check is necessary but not sufficient. That’s why I have a third sub-layer at the export boundary: even if a result row reaches the Google Sheets writer, the column headers get checked against an independent restricted-headers list. If a PII header is present, the export raises before a single byte goes to Sheets."
+          },
+          {
+            "type": "text",
+            "prop": "Three independent checks for the same property. Belt, suspenders, no pants needed."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Layer 3: Prompt Steering",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Even when the model can’t see PII columns, it still needs to know what it can and can’t do. So I shape the prompt with two structured blocks."
+          },
+          {
+            "type": "text",
+            "prop": "The first is a per-user access scope. It renders the requester’s department, role, permitted datasets, restricted datasets, and a list of deny rules. The rules are explicit. For a manager: “Row-level questions about any employee are allowed only if their email matches the requester or one of the requester’s direct reports.” For an IC: “Row-level personal questions are allowed only about yourself.” There’s also a refusal message the model can use verbatim if a request strays outside scope."
+          },
+          {
+            "type": "text",
+            "prop": "The second block is the student de-identification rule. It’s verbatim prompt copy, in all caps where it matters: “NEVER surface student names in any response. This is non-negotiable. If a user provides a student name, respond: ‘I can’t look up students by name. Provide the student ID instead.’ Aggregate queries about students do NOT trigger PII blocking. Only block queries that attempt to identify a specific student by name.”"
+          },
+          {
+            "type": "text",
+            "prop": "That last line is the carve-out that prevents false positives. Analytics about students as a group is the legitimate use case. Identification of an individual is not. The distinction has to live in the prompt because the model is the only thing that can make it on its own."
+          },
+          {
+            "type": "text",
+            "prop": "Prompt steering doesn’t replace the harder layers below it. It complements them. OWASP’s 2025 risk list ranks prompt injection at the top and system prompt leakage as a new category. The takeaway is that the prompt is not a security boundary. Treat it as a useful shaping mechanism for the common case, and put the hard enforcement somewhere the prompt can’t reach."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Layer 4: The Org Chart as Authorization Graph",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "This is the layer I’m proudest of. A creative model can write WHERE email LIKE ‘%@%’ and try to scan the entire org through one query. That predicate parses to a literal pattern that fails the team-scope check before BigQuery sees it. The model never gets to be clever; the AST won’t let it."
+          },
+          {
+            "type": "text",
+            "prop": "The conventional model for who-can-see-what is role-based access control. You have a role; the role has a set of permissions; the permissions get enforced. Works fine for departments. Falls over the moment you ask “can a manager see their own team but not their peers?” That’s not a role question. That’s a relationship question."
+          },
+          {
+            "type": "text",
+            "prop": "I encode it as a graph."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Diagram of the org chart as authorization graph: HRIS snapshot feeds the UserContext which fans out to the prompt allowlist, SQL AST validator, and skill audience visibility gate",
+              "darkModeTreatment": "invert-on-dark",
+              "source": "https://cdn.merylldindin.com/articles/sections/pii-by-design-org-chart-graph-20260514T104939.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/pii-by-design-org-chart-graph-20260514T104939-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/pii-by-design-org-chart-graph-20260514T104939-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/pii-by-design-org-chart-graph-20260514T104939-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Every manager’s direct-report list is built per request and added to the request profile. It then gets enforced in three independent places."
+          },
+          {
+            "type": "text",
+            "prop": "In the prompt. The access-scope block includes the actual email addresses of the manager’s team. ICs don’t get that list; they get a “self only” rule. The model sees the team boundary as data, not as an instruction."
+          },
+          {
+            "type": "text",
+            "prop": "In the SQL validator. sqlglot walks every comparison in the generated query. If a comparison filters an employee-email column against a specific value, and that value isn’t in the requester’s allowed team emails, the query gets rejected before it runs. The pattern-matching trick I opened this section with goes the same way: the parser sees the value, the scope check rejects it."
+          },
+          {
+            "type": "text",
+            "prop": "In the access policy. A simple config file declares what each role can do. Managers can query their direct reports but not cross-team peers. ICs can only see their own data. The policy drives what the prompt renders and what the validator enforces. One source of truth, three enforcement points."
+          },
+          {
+            "type": "text",
+            "prop": "The pattern generalizes. The org chart is the most readily available authorization data in any company. If you have an HRIS, you have it. Most companies don’t think to use it as a security primitive. It’s there waiting."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Layer 5: Output Redaction",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Assume every layer above failed. Read the output anyway, scrub anything that looks like a student or parent name."
+          },
+          {
+            "type": "text",
+            "prop": "I run a small, fast model over every data-bearing response before it goes back to Slack. The prompt is precise about what to redact and what to preserve: redact K-12 student first and last names, parent or guardian names, identifiers tied to personal identity. Preserve provider names, employee names, school names, district names, product names, dates, counts, metrics. Provider names matter to the response. Student names don’t."
+          },
+          {
+            "type": "text",
+            "prop": "The redactor accepts a list of names to preserve, so a response specifically about a named staff member doesn’t get scrubbed accidentally."
+          },
+          {
+            "type": "text",
+            "prop": "Two things to call out honestly."
+          },
+          {
+            "type": "text",
+            "prop": "The redactor fails open. If it crashes or times out, the original text gets returned and a warning gets logged. This is defensible in our specific architecture because the prior layers (column filtering, schema strip, parser check) already prevented PII from being in the results on the standard query path. The redactor is a residual containment layer here, not the primary defense. For an architecture that handled raw PHI or unredacted clinical notes, the right default would be fail-closed: return a placeholder, refuse the response, or degrade to a summary. The right fail behavior depends on what the prior layers can guarantee."
+          },
+          {
+            "type": "text",
+            "prop": "The export path has its own check. Even if a PII column made it through every other layer into a result set, it cannot be written to a Google Sheet. The export validates column headers against an independent allowlist before the first row gets serialized."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Layer 6: The Audit Trail Is Also a Memory Firewall",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Most discussions of audit logging in AI systems treat it as a one-way compliance artifact. You write rows, you keep them for as long as the regulator says, you produce them if someone asks. Important, dull, downstream."
+          },
+          {
+            "type": "text",
+            "prop": "I wired our audit table into the agent’s learning loop. The flag that marks PII-touching turns has a second job: it keeps those turns out of the agent’s memory."
+          },
+          {
+            "type": "text",
+            "prop": "Two tables back this. The first logs every turn: query, response, generated SQL, model used, latency, token counts, tools invoked, and a PII-accessed flag that gets set when a query returns columns tagged in the PII registry. The second logs every Google Drive access: file ID, action, user email, bytes returned, timestamp. Both are split by day. Both have their structure defined in Terraform so the schema is tracked alongside the rest of the code."
+          },
+          {
+            "type": "text",
+            "prop": "The PII-accessed flag is interesting because it’s not just for compliance. Voltaire has a memory loop. Conversation recall pulls similar past turns from memory. Reflection runs over recent turns to build up reusable insights. Both of those queries filter on the flag, excluding any turn that ever touched PII."
+          },
+          {
+            "type": "text",
+            "prop": "PII-bearing turns are written to the audit table but never surface as reusable memory. They get logged for compliance, and they get siloed from the model’s learning loop. The same boolean serves two purposes. One audit, one firewall."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Diagram of the audit table as memory firewall: a completed turn sets the is_pii_accessed flag, writes to voltaire.turns, which routes to compliance review on one branch and to a vector recall query that filters out PII turns on the other",
+              "darkModeTreatment": "invert-on-dark",
+              "source": "https://cdn.merylldindin.com/articles/sections/pii-by-design-memory-firewall-20260514T083403.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/pii-by-design-memory-firewall-20260514T083403-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/pii-by-design-memory-firewall-20260514T083403-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/pii-by-design-memory-firewall-20260514T083403-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The failure mode this prevents is subtle but real. A clinical team member asks a compliant question about a specific student. The query legitimately returns the data and the turn lands in the audit table. Six weeks later, our Product Ops manager asks a benign question about platform health that triggers a memory recall. Without the filter, the clinical turn turns up as similar in meaning, gets pulled back into context, and the student’s name surfaces in a thread it never should have reached. The compliance log becomes the leak."
+          },
+          {
+            "type": "text",
+            "prop": "I haven’t seen this pattern published anywhere. The closest analogues are deletion-aware indexes (Notion’s enterprise search keeps deleted content unsearchable) and permission-aware retrieval (Glean filters every result by source-system ACLs at query time). Both are related but neither addresses the specific risk of PII leaking from the audit log back into the agent’s memory through retrieval. I’d encourage anyone building memory-equipped agents to add this filter from day one. It costs almost nothing in code and closes a leak path that’s surprisingly easy to overlook."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Workspace, ACLs, and Domain-Wide Delegation",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The six layers above assume structured data. The larger risk surface inside the company is unstructured, and it needs a different model."
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire searches Google Drive. It reads Gmail when asked. It queries Calendar. The largest pool of unstructured data inside Parallel is in Workspace, and every document in there has its own access list."
+          },
+          {
+            "type": "text",
+            "prop": "The only way to honor those access lists is to authenticate as the user."
+          },
+          {
+            "type": "text",
+            "prop": "I use domain-wide delegation, but with a discipline that matters. Every Drive call mints a short-lived impersonated credential with subject set to the requester’s email. Lifetime is set to 300 seconds, well inside the 3600-second ceiling the IAM Credentials API permits. Scopes are all readonly: Drive, Gmail, Calendar, Chat. The credentials are minted per request and never cached across turns. Google’s own ACL engine then enforces the document boundary. If the user can’t open the file in Drive, the API call returns an error. There’s no application-level ACL filter for Drive in Voltaire’s code because there doesn’t need to be. The ACL engine I’m using is the one Google already built."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Diagram of the domain-wide delegation credential lifecycle: Cloud Run boot to metadata server to request arrival, then IAM Credentials API signJwt with subject equal to user email and 300-second lifetime, then Drive API call against the Google ACL engine, returning either the response or a 403 if no access",
+              "darkModeTreatment": "invert-on-dark",
+              "source": "https://cdn.merylldindin.com/articles/sections/pii-by-design-dwd-lifecycle-20260514T083403.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/pii-by-design-dwd-lifecycle-20260514T083403-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/pii-by-design-dwd-lifecycle-20260514T083403-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/pii-by-design-dwd-lifecycle-20260514T083403-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Vertex AI Search adds an index-level layer. We use the native Drive connector, which respects Drive’s sharing permissions automatically. Discovery Engine evaluates each candidate file against the user’s actual Drive permissions at query time. The search request also carries the user’s email as a personalization signal, but that field isn’t the gate. The gate is the connector, which is already permission-aware. The combination matters. Impersonating the user for the API call and using the permission-aware connector for the index together mean Voltaire only ever surfaces files the requester could open in Drive directly."
+          },
+          {
+            "type": "text",
+            "prop": "I want to be honest about the risk profile here. Domain-wide delegation is powerful, and it’s a documented attack target. Google’s own IAM documentation calls the delegated service account “an attractive target for privilege escalation attacks.” In late 2023, Hunters Security disclosed a named escalation called DeleFriend, and Palo Alto’s Unit 42 published independent research on the same risk. I take the class of attack seriously. The service account lives in its own GCP project, scopes are readonly only, keys are replaced by short-lived credentials from the IAM Credentials API, and every impersonation event is logged. Workload Identity Federation is the longer-term direction because it removes the key material entirely. I’m not there yet. Saying so in writing is more credible than pretending the pattern is risk-free."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Cloud Identity Layer",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The service account is the blast radius. Everything I described above sits on top of it. Here’s what I did to constrain it."
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire runs on Cloud Run with one service account. Its roles are narrow and read-only across most of BigQuery, Vertex AI, Cloud Logging, and Secret Manager. The only write grant on BigQuery is to one dataset, the audit tables. Nowhere else. The Docker image contains no credentials. Every secret comes from Secret Manager via environment variables managed by Terraform. Cloud Scheduler authenticates to Voltaire’s cron endpoints with signed OIDC tokens, validated server-side. User-level Slack tokens, when stored, are encrypted before being written to BigQuery."
+          },
+          {
+            "type": "text",
+            "prop": "Most of these are unremarkable choices on their own. Together they describe the principle: the only credential that exists inside the running agent is the one minted specifically for the current request, scoped specifically for the current user."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What I’m Not Doing Yet",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Some of the gaps below are deliberate. Some are on the roadmap."
+          },
+          {
+            "type": "text",
+            "prop": "No formal autonomy-tier classification. The Cloud Security Alliance’s Agentic NIST AI RMF Profile proposes four tiers of agent autonomy with proportionate governance obligations. Voltaire operates in the middle of that range. I haven’t written the document that says so."
+          },
+          {
+            "type": "text",
+            "prop": "Audit review is ad-hoc. I run a Claude skill periodically that walks through recent logs and flags unusual patterns: spikes in call volume, access patterns that don’t match the requester’s role, unusually deep tool-call chains. It works, but it’s a human-triggered cadence, not real-time detection. Automating it is on the list."
+          },
+          {
+            "type": "text",
+            "prop": "Workload Identity Federation is the longer-term direction for the underlying service-account credentials. It removes the key material entirely. The current setup is fine; the keyless one is better."
+          },
+          {
+            "type": "text",
+            "prop": "None of these are blocking. All of them are on the list."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Closing",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "None of this is one component. It’s a sequence of independent enforcement points where each layer assumes the one before it let something through. Anthropic noted in their prompt-injection research that “a 1% attack success rate, while a significant improvement, still represents meaningful risk.” That sentence is the whole reason for the layering. No single defense makes the system safe; the composition does. At bottom, this is a refusal to ship something that could leak a student’s name."
+          },
+          {
+            "type": "text",
+            "prop": "PII isn’t a feature you add. It’s the shape of the system you build."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''PII by Design'' by Meryll Dindin 👀",
+              "url": "/thoughts/pii-by-design/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+              "title": "OWASP Top 10 for LLM Applications 2025",
+              "description": "Open standards body’s ranked list of LLM application risks, with prompt injection and sensitive information disclosure at the top."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+              "title": "OWASP Top 10 for Agentic Applications 2026",
+              "description": "Successor list focused on agent-specific risks, including identity and privilege abuse and least agency."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+              "title": "NIST AI 600-1: Generative AI Profile",
+              "description": "NIST guidance separating deployer and developer responsibilities for generative AI systems."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://saif.google/focus-on-agents",
+              "title": "Google Secure AI Framework: Focus on Agents",
+              "description": "SAIF guidance on authorizing AI agent backend access with the user’s identity rather than the agent’s."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://learn.microsoft.com/en-us/security/zero-trust/sfi/secure-agentic-systems",
+              "title": "Microsoft Secure Agentic Systems",
+              "description": "Microsoft’s four-layer defense framework for autonomous AI agents, including the deterministic HITL distinction."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://learn.microsoft.com/en-us/entra/agent-id/agent-on-behalf-of-oauth-flow",
+              "title": "Microsoft Entra Agent ID: On-Behalf-Of OAuth Flow",
+              "description": "Microsoft’s canonical mechanism for propagating user identity through AI agents to downstream resources."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://developer.salesforce.com/blogs/2023/10/inside-the-einstein-trust-layer",
+              "title": "Inside the Einstein Trust Layer",
+              "description": "Salesforce’s architecture for mask-before-LLM and toxicity-detection-after-LLM as a sequential privacy pipeline."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.anthropic.com/research/prompt-injection-defenses",
+              "title": "Anthropic: Prompt Injection Defenses",
+              "description": "Anthropic’s research on prompt injection in browser agents, noting meaningful risk persists even at one percent attack success."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://knowledge.workspace.google.com/admin/apps/domain-wide-delegation-best-practices",
+              "title": "Google Workspace: Domain-Wide Delegation Best Practices",
+              "description": "Workspace admin guidance on scoping, isolating, and auditing service accounts that use DWD."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://unit42.paloaltonetworks.com/critical-risk-in-google-workspace-delegation-feature/",
+              "title": "Palo Alto Unit 42: Critical Risk in Google Workspace Delegation",
+              "description": "Independent research on the privilege-escalation class of attack against domain-wide delegation."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://boundaryml.com/blog/structured-outputs-create-false-confidence",
+              "title": "BoundaryML: Structured Outputs Create False Confidence",
+              "description": "Argument that schema validation catches structural errors but not semantically dangerous responses, motivating output redaction."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://microsoft.github.io/presidio/",
+              "title": "Microsoft Presidio",
+              "description": "Open-source PII detection and redaction toolkit, the de facto reference implementation."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://sqlglot.com/sqlglot.html",
+              "title": "sqlglot",
+              "description": "Python SQL parser used for dialect-aware AST traversal and validation of generated SQL."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.notion.com/help/enterprise-search-security-and-privacy-practices",
+              "title": "Notion Enterprise Search Security and Privacy",
+              "description": "Notion’s documented behavior on query-time permission checks and deletion-aware indexing for enterprise AI search."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://docs.glean.com/security/how-code-search-works",
+              "title": "Glean Code Search: How Permissions Work",
+              "description": "Glean’s approach to mirroring source-system ACLs into the search index and enforcing them at query time."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www2.ed.gov/policy/gen/guid/fpco/index.html",
+              "title": "U.S. Department of Education: FERPA",
+              "description": "Statutory framework governing access to student education records under the legitimate educational interest test."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa",
+              "title": "FTC COPPA Rule",
+              "description": "Federal Trade Commission framework on collecting personal information from children under 13, with 2025 AI-training amendments."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+              "title": "EU AI Act (Regulation 2024/1689)",
+              "description": "European framework classifying AI systems by risk tier, with high-risk requirements for healthcare and education applications."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/company-brain/",
+              "title": "One Brain to Query",
+              "description": "What Voltaire is and what it connects, the first article in this series."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/knowledge-graph/",
+              "title": "A Knowledge Graph for the Rest of Us",
+              "description": "How Voltaire’s document retrieval evolved from a SQLite knowledge graph to managed services."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/information-transit/",
+              "title": "The Bottleneck Is Information Transit",
+              "description": "Why coordination friction, not individual output, is the rate-limiting step for most companies."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -28,6 +28,7 @@ export const RoutePath = {
   MY_AI_PHARMACIST: "/thoughts/my-ai-pharmacist/",
   NEWSLETTER_SUGGESTIONS: "/suggestions/newsletters/",
   PARALLEL_LEARNING: "/ventures/parallel-learning/",
+  PII_BY_DESIGN: "/thoughts/pii-by-design/",
   PODCAST_SUGGESTIONS: "/suggestions/podcasts/",
   POLYGON: "/ventures/polygon/",
   PRESSURE_READING: "/thoughts/pressure-reading/",

@@ -15,6 +15,49 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "pii-by-design-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "PII by Design",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "May 14, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "How I think about identity, prompts, and audit when an internal AI touches employee, student, and clinical data. Five layers, mechanically independent."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article PII by Design",
+              "to": "/thoughts/pii-by-design/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Minimalist black and white poster of five layered rectangles in decreasing size with a single particle flowing through them",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/pii-by-design-20260514T095816.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/pii-by-design-20260514T095816-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/pii-by-design-20260514T095816-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/pii-by-design-20260514T095816-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "pressure-reading-section",
       "props": {
         "content": [
