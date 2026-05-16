@@ -43,7 +43,7 @@
     "tar": ">=7.5.3",
     "tough-cookie": ">=6.0.0",
     "unhead": ">=2.0.0 <3.0.0",
-    "vite": "^8.0.5"
+    "vite": "8.0.13"
   },
   "dependencies": {
     "nuxt-jsonld": "2.2.1",
@@ -63,11 +63,11 @@
     "@nuxtjs/sitemap": "8.0.15",
     "@playwright/test": "1.60.0",
     "@types/eslint": "9.6.1",
-    "@types/node": "25.7.0",
+    "@types/node": "25.8.0",
     "@unhead/addons": "2.1.15",
     "@vue/compiler-sfc": "3.5.34",
     "concurrently": "9.2.1",
-    "eslint": "10.3.0",
+    "eslint": "10.4.0",
     "eslint-plugin-unicorn": "64.0.0",
     "eslint-plugin-vue": "10.9.1",
     "globals": "17.6.0",
@@ -83,17 +83,17 @@
     "prettier-plugin-toml": "2.0.6",
     "sass": "1.99.0",
     "serve": "14.2.6",
-    "stylelint": "17.11.0",
+    "stylelint": "17.11.1",
     "stylelint-config-recommended-scss": "17.0.1",
     "stylelint-config-recommended-vue": "1.6.1",
     "stylelint-config-standard-scss": "17.0.0",
     "stylelint-prettier": "5.0.3",
     "typescript": "5.9.3",
     "typescript-eslint": "8.59.3",
-    "vite": "8.0.12",
+    "vite": "8.0.13",
     "vue-eslint-parser": "10.4.0",
     "vue-gtag": "3.7.1",
-    "vue-tsc": "3.2.8"
+    "vue-tsc": "3.2.9"
   },
   "packageManager": "yarn@4.14.1",
   "engines": {
