@@ -11353,12 +11353,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unhead@npm:>=2.0.0 <3.0.0":
-  version: 2.1.15
-  resolution: "unhead@npm:2.1.15"
+"unhead@npm:>=2.0.0 <4.0.0":
+  version: 3.1.0
+  resolution: "unhead@npm:3.1.0"
   dependencies:
-    hookable: "npm:^6.0.1"
-  checksum: 10c0/ab266e9cda44d0b528ae3b62ce9136cb4f81bd2aa1e2d66431cefe6b41151a811971951e05b4d81e6adea105b65901d9091dffa29d646f1be6246691606b2407
+    hookable: "npm:^6.1.1"
+    unplugin: "npm:^3.0.0"
+  peerDependencies:
+    vite: ">=6.4.2"
+  peerDependenciesMeta:
+    vite:
+      optional: true
+  checksum: 10c0/967ab3ee8729398a92d69c372d8815b7a76d55d92fe9b5f628cf88e29b75df061d9eae1f787d14fefb7efab0595492c2fa30f3d89154f17c26297513c9f7f46b
   languageName: node
   linkType: hard
 
