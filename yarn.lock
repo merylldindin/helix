@@ -1852,30 +1852,30 @@ __metadata:
   linkType: hard
 
 "@nuxt/kit@npm:>=4.2.2":
-  version: 4.4.2
-  resolution: "@nuxt/kit@npm:4.4.2"
+  version: 4.4.6
+  resolution: "@nuxt/kit@npm:4.4.6"
   dependencies:
-    c12: "npm:^3.3.3"
+    c12: "npm:^3.3.4"
     consola: "npm:^3.4.2"
-    defu: "npm:^6.1.4"
+    defu: "npm:^6.1.7"
     destr: "npm:^2.0.5"
     errx: "npm:^0.1.0"
     exsolve: "npm:^1.0.8"
     ignore: "npm:^7.0.5"
-    jiti: "npm:^2.6.1"
+    jiti: "npm:^2.7.0"
     klona: "npm:^2.0.6"
-    mlly: "npm:^1.8.1"
+    mlly: "npm:^1.8.2"
     ohash: "npm:^2.0.11"
     pathe: "npm:^2.0.3"
-    pkg-types: "npm:^2.3.0"
-    rc9: "npm:^3.0.0"
+    pkg-types: "npm:^2.3.1"
+    rc9: "npm:^3.0.1"
     scule: "npm:^1.3.0"
-    semver: "npm:^7.7.4"
-    tinyglobby: "npm:^0.2.15"
-    ufo: "npm:^1.6.3"
+    semver: "npm:^7.8.0"
+    tinyglobby: "npm:^0.2.16"
+    ufo: "npm:^1.6.4"
     unctx: "npm:^2.5.0"
     untyped: "npm:^2.0.0"
-  checksum: 10c0/bda53a221bde632b2b2f2330796644f116f104c13db24eb01a9cfce113edbdefb9b5d2e284052774a6cec75cb91840645d870236b6caba25ba3787946e959bb1
+  checksum: 10c0/21e86542a94449197dfcd37ebe19c937aefba9f2b7e5d3ca2fabd79b9dace9c50aa9ee9318cfa5efacc44e1360977579c04c5e14b7d6c40e8964e3d887b0f51a
   languageName: node
   linkType: hard
 
@@ -4398,7 +4398,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"c12@npm:^3.3.3, c12@npm:^3.3.4":
+"c12@npm:^3.3.4":
   version: 3.3.4
   resolution: "c12@npm:3.3.4"
   dependencies:
@@ -8125,7 +8125,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mlly@npm:^1.7.2, mlly@npm:^1.7.4, mlly@npm:^1.8.0, mlly@npm:^1.8.1, mlly@npm:^1.8.2":
+"mlly@npm:^1.7.2, mlly@npm:^1.7.4, mlly@npm:^1.8.0, mlly@npm:^1.8.2":
   version: 1.8.2
   resolution: "mlly@npm:1.8.2"
   dependencies:
