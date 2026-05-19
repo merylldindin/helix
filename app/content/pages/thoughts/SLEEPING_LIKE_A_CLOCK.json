@@ -1,0 +1,401 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-05-19",
+      "datePublished": "2026-05-19",
+      "keywords": "sleep, longevity, circadian rhythm, EightSleep, sleep consistency, sleep tracking, Whoop, morning sunlight, blue light, sleep hygiene"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/sleeping-like-a-clock/",
+    "title": "Sleeping Like a Clock | Meryll Dindin",
+    "description": "1,210 nights of Whoop data and a strong opinion. Sleep is the highest-leverage longevity protocol, and it starts the moment you wake up.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/sleeping-like-a-clock-20260519T082343.webp",
+    "thumbnailAlt": "Minimalist black and white abstract clock face dissolving into a crescent moon"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Abstract horizontal sine wave traversing a wide white field with subtle dot patterns marking circadian peaks and troughs",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/sleeping-like-a-clock-20260519T082348.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/sleeping-like-a-clock-20260519T082348-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/sleeping-like-a-clock-20260519T082348-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/sleeping-like-a-clock-20260519T082348-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Sleeping Like a Clock",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published May 19, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "If I had to pick one protocol that does more for healthspan than any other, I wouldn’t pick training. I wouldn’t pick diet. I’d pick sleep."
+          },
+          {
+            "type": "text",
+            "prop": "Over the 1,210 nights I’ve tracked with Whoop since late 2022, my average sleep duration sits at 7 hours and 43 minutes. Sleep efficiency averages 92.5 percent. Sleep consistency averages 77.6 percent. Those numbers didn’t start there. In 2022 my efficiency was 89.7 percent and my consistency was 70 percent. By 2025 efficiency had climbed to 94.1 percent and consistency to 79 percent. Deep sleep went from an average of 92 minutes per night to 114 minutes. None of that happened by accident."
+          },
+          {
+            "type": "text",
+            "prop": "Most people treat sleep as the last thing they fix. Diet first, training second, supplements third, sleep when they get around to it. The order is backwards. Sleep is the upstream variable. Glucose control gets worse when you’re sleep-deprived. Insulin resistance shows up within days of restricted sleep in healthy young adults. Testosterone drops. Cortisol stays elevated. Cognitive performance after 17 hours awake degrades at a rate comparable to alcohol intoxication, and the impairment widens as the hours stack up. You can’t optimize a metabolic panel that’s being sabotaged every night."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Sleep Actually Does",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The mechanisms that make sleep the foundation of everything else have only sharpened in the literature over the past decade. Slow-wave sleep is when the glymphatic system clears metabolic waste from the brain, including beta-amyloid. REM consolidates emotional memory, with procedural learning shared across REM and slow-wave sleep. Growth hormone pulses in deep sleep, the immune system runs maintenance, and the cardiovascular system gets a rest period it doesn’t get anywhere else in the 24-hour cycle."
+          },
+          {
+            "type": "text",
+            "prop": "The dose-response is brutal. Restricting sleep to 5 hours per night for a single week drops insulin sensitivity by 11 to 20 percent in healthy adults, with parallel rises in inflammatory markers and impaired glucose regulation. A 2010 meta-analysis in Sleep, pooling data on more than a million adults, tied short sleep duration to increased all-cause mortality. My Whoop data says my personal sleep need averages 8.5 hours when I’m training hard. I aim for that range and treat anything under 7 as a debt I have to repay quickly."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Sleep Starts When You Wake Up",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The single biggest misconception about sleep is treating it as something you do at night. Sleep is the back half of a 24-hour system, and almost everything that shapes how you sleep happens before sundown."
+          },
+          {
+            "type": "text",
+            "prop": "The mechanism is the circadian rhythm. The master clock lives in the suprachiasmatic nucleus, and it takes its cues primarily from light. Get the light signal wrong in the morning, and your evening melatonin release will be wrong. Get caffeine wrong in the afternoon, and your sleep onset will be wrong. Get exercise wrong in the evening, and your core body temperature will be wrong when you climb into bed."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Horizontal flow diagram of the daily sleep timeline from wake through morning light, training window, caffeine cutoff, eating, blue light glasses, wind-down routine, and bed",
+              "source": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-timeline-20260519T082244.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-timeline-20260519T082244-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-timeline-20260519T082244-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-timeline-20260519T082244-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The morning sunlight piece comes from decades of circadian work by Czeisler, Wright, and others, popularized recently by Andrew Huberman. Bright light exposure within the first hour or two of waking, ideally outdoors, sharpens the morning cortisol pulse and anchors the daily rhythm. I treat this as non-negotiable. Even ten minutes outside on a cloudy day beats anything indoor lighting can produce. Outdoor illuminance on an overcast morning still measures in the thousands of lux. A well-lit office tops out in the hundreds."
+          },
+          {
+            "type": "text",
+            "prop": "The exercise window matters because intense training raises core body temperature, and sleep onset depends on a measurable drop in core temperature in the evening. Training too late blunts that drop. I train between noon and 3 PM. That window gives me enough buffer for body temperature to normalize before bed."
+          },
+          {
+            "type": "text",
+            "prop": "Caffeine has a half-life of roughly 5 hours and a quarter-life of around 10 hours. A 4 PM coffee still has measurable caffeine on your adenosine receptors at midnight. I stop caffeine at 4 PM. Most people who claim they sleep fine on late caffeine are wrong about sleep architecture, not wrong about sleep onset. The caffeine you don’t notice keeping you awake is still suppressing deep sleep."
+          },
+          {
+            "type": "text",
+            "prop": "Food timing follows the same logic. Digestion is metabolically active and thermogenic. Eating close to bed raises core body temperature and pulls blood flow to the gut. I eat once a day, post-training, which puts my last food intake six to eight hours before sleep onset. That timing isn’t optional for me."
+          },
+          {
+            "type": "text",
+            "prop": "The cost shows up everywhere. A big late meal, the kind you eat at a celebration dinner, makes it harder to fall asleep, harder to drop core body temperature, harder to keep respiratory rate down, harder to settle heart rate, and the sleep that does happen is shallower. Whoop puts a number on it. A single late meal pushes my next-morning recovery 20 percent below baseline without much effort. The food itself is fine. The clock is the problem."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Wind-Down Routine",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Once the daytime variables are right, the evening routine carries the rest. Mine is deliberately simple. Shower, quick skincare, stretching with breathwork, bed. Same four steps. Same order. Every night. I’ll write more about the stretching practice another time, because the case for it goes well beyond sleep."
+          },
+          {
+            "type": "text",
+            "prop": "A routine isn’t ritual. It’s conditioning. A consistent sequence becomes a signal that primes the parasympathetic transition. Your nervous system learns the shape of the bedtime sequence and starts shifting state before you actually lie down. The specifics matter less than the consistency. What you don’t want is a different sequence every night, because then your body has no signal to read."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Temperature",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Core body temperature drop is one of the largest single drivers of sleep onset and sleep depth. The body wants to lose roughly 1 to 2 degrees Fahrenheit during sleep, and a cooler environment makes that easier. The published consensus from sleep clinicians puts the ideal bedroom in the 60 to 67 degree Fahrenheit range for most adults."
+          },
+          {
+            "type": "text",
+            "prop": "I use an EightSleep Pod for active temperature control of the mattress and a smart thermostat to drop the room temperature at night. The Pod isn’t negotiable in my household. My partner runs hot. I run cold. We share a bed. The Pod is the only setup I’ve found that lets each side of the mattress hit its own temperature setpoint, so I can run mine well below the room temperature without making the room uninhabitable for her. The trade-off pays back in deep sleep every night."
+          },
+          {
+            "type": "text",
+            "prop": "This isn’t about the gadget. It’s about the principle. If you can’t control temperature, you can’t reliably control sleep depth. The thermostat and the mattress are the two levers I have, and I pull both."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Side-by-side photographs of the EightSleep Pod hub next to a bed frame and a pair of orange-tinted Roka Wind-Down glasses resting on a wooden surface",
+              "source": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-pod-roka-20260519T123711.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-pod-roka-20260519T123711-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-pod-roka-20260519T123711-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-pod-roka-20260519T123711-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Light After Dark",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Evening light exposure suppresses melatonin and shifts the circadian phase later. The effect is dose-dependent and most pronounced in the blue wavelength range from roughly 460 to 480 nanometers. Bright overhead lights, screens, and most modern LED bulbs all sit in that range."
+          },
+          {
+            "type": "text",
+            "prop": "I work late. I’m not going to pretend I shut everything down at 9 PM. The compromise is Roka Wind-Down glasses past 8 PM, which filter the 400 to 520 nanometer range and cover the wavelengths responsible for melatonin suppression. The anecdotal effect is large. I can work on a laptop for two more hours and still fall asleep within minutes of getting into bed. Without the glasses, the same two hours of late screen time push my sleep onset back by 30 to 45 minutes and show up as worse deep sleep on Whoop."
+          },
+          {
+            "type": "text",
+            "prop": "No one has run trials on every brand of blue light glasses, but the underlying mechanism is well-established. The glasses cost less than dinner. The downside is zero. The upside, in my data, is real."
+          },
+          {
+            "type": "text",
+            "prop": "Once I’m in bed, the room has to be dark. I don’t like sleeping with a mask on my eyes or anything in my ears, so the room itself has to do the work. We use uBlockout panels on some windows and external rolling shutters on others, whichever fits the frame, and the result is a full blackout regardless of what the street looks like. Light leaks past the eyelid even when you’re asleep, and the published evidence on melatonin suppression in dim ambient light is enough for me to take it seriously."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Side-by-side photographs showing external rolling shutters drawn over a sliding glass door and an internal blackout panel covering an interior window",
+              "source": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-blackout-20260519T123711.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-blackout-20260519T123711-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-blackout-20260519T123711-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-blackout-20260519T123711-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Alcohol Decision",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I stopped drinking a couple of years ago. The reason was sleep and performance, in that order."
+          },
+          {
+            "type": "text",
+            "prop": "Alcohol is one of the most disruptive sleep-altering substances in common use. It shortens sleep onset latency, which is why people associate it with sleeping well, then fragments sleep architecture for the rest of the night. The literature is consistent across decades. Ebrahim et al. published a 2013 review in Alcoholism: Clinical and Experimental Research summarizing the dose-response. Even one drink measurably reduces sleep quality. Multiple drinks delay REM onset and reduce total-night REM, with the suppression more pronounced at higher doses."
+          },
+          {
+            "type": "text",
+            "prop": "For someone trying to optimize cognitive recovery, emotional regulation, and cardiovascular markers, alcohol is the highest-cost low-value behavior available. The supposed cardiovascular benefits at low doses haven’t held up well in recent Mendelian randomization analyses (Holmes et al. 2014, BMJ). The case for any amount is much weaker than it was a decade ago."
+          },
+          {
+            "type": "text",
+            "prop": "I don’t moralize about it. I’m just not willing to trade the sleep."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Consistency Above Everything",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "If I had to keep one thing from this list and discard the rest, it would be a consistent wake time. Not bedtime. Wake time."
+          },
+          {
+            "type": "text",
+            "prop": "The circadian system locks onto a wake signal more reliably than it locks onto a sleep signal. A consistent wake time stabilizes the entire downstream cascade. Cortisol rises at the same time, body temperature peaks at the same time, melatonin onset happens at the same time. Variable bedtimes with a consistent wake time are tolerable. Variable wake times wreck the system."
+          },
+          {
+            "type": "text",
+            "prop": "I live 80 percent of my life as a clock. Same wake time, same training window, same eating window, same wind-down. The other 20 percent is travel and exploration, where I accept that the system will be disrupted and try to re-anchor as fast as possible on the new schedule. My Whoop consistency score averaged 70 percent in 2022. In 2026 it’s at 81 percent. The metric tracks how close my sleep and wake times stay to my own rolling average, and the climb maps almost perfectly to the years I got serious about treating wake time as fixed."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Sleep tracking dashboard showing 8 hours 24 minutes of total sleep, REM and deep sleep breakdown, wake time anchored at 6:26 AM in range, and a 4 minute time to fall asleep",
+              "source": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-dashboard-20260519T123711.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-dashboard-20260519T123711-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-dashboard-20260519T123711-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/sleeping-like-a-clock-dashboard-20260519T123711-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Four Years of Data Show",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "In 2022 I was already a relatively normal sleeper. Sleep efficiency around 89.7 percent. Deep sleep averaging 92 minutes a night. Consistency score of 70 percent. Fine numbers. The kind of numbers a doctor would look at and tell you everything is in range. By 2025 sleep efficiency had climbed to 94.1 percent. Deep sleep had climbed to 114 minutes. Consistency had climbed to 79 percent. Nothing in the intervening years was dramatic. No single intervention moved the needle 5 points. The system moved it 5 points."
+          },
+          {
+            "type": "text",
+            "prop": "Across 1,210 nights, the averages settle at 7 hours 43 minutes asleep, 92.5 percent efficiency, 88.6 percent sleep performance against my own modeled need, 100 minutes of deep sleep, 132 minutes of REM, 15.2 breaths per minute at rest. Those are the aggregate. The story is the climb."
+          },
+          {
+            "type": "text",
+            "prop": "Sleep is the load-bearing wall every other longevity protocol rests on. Get it right and the rest of the stack works with you. Get it wrong and nothing else compounds."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Sleeping Like a Clock'' by Meryll Dindin 👀",
+              "url": "/thoughts/sleeping-like-a-clock/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144318",
+              "title": "Walker, M. (2017). Why We Sleep. Scribner.",
+              "description": "Comprehensive overview of sleep neuroscience, architecture, and the consequences of sleep loss."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://academic.oup.com/sleep/article/33/5/585/2454478",
+              "title": "Cappuccio, F.P. et al. (2010). Sleep duration and all-cause mortality.",
+              "description": "Meta-analysis of more than 1.3 million adults linking short sleep duration to increased all-cause mortality. Sleep."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(99)01376-8/fulltext",
+              "title": "Spiegel, K. et al. (1999). Impact of sleep debt on metabolic and endocrine function.",
+              "description": "Foundational study showing 4 hours of sleep for a week impairs glucose tolerance and insulin sensitivity. The Lancet."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://diabetesjournals.org/diabetes/article/59/9/2126/14525/Sleep-Restriction-for-1-Week-Reduces-Insulin",
+              "title": "Buxton, O.M. et al. (2010). Sleep restriction for 1 week reduces insulin sensitivity in healthy men.",
+              "description": "5 hours per night for one week drops insulin sensitivity by 11 to 20 percent. Diabetes."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://onlinelibrary.wiley.com/doi/10.1111/acer.12006",
+              "title": "Ebrahim, I.O. et al. (2013). Alcohol and sleep I: effects on normal sleep.",
+              "description": "Review of dose-response effects of alcohol on sleep architecture. Alcoholism: Clinical and Experimental Research."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.bmj.com/content/349/bmj.g4164",
+              "title": "Holmes, M.V. et al. (2014). Association between alcohol and cardiovascular disease: Mendelian randomisation analysis.",
+              "description": "Genetic-instrument analysis challenging the supposed cardiovascular benefits of low-dose alcohol consumption. BMJ."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://jcsm.aasm.org/doi/10.5664/jcsm.3170",
+              "title": "Drake, C. et al. (2013). Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed.",
+              "description": "Demonstrates measurable sleep disruption from caffeine taken up to 6 hours before bedtime. Journal of Clinical Sleep Medicine."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.science.org/doi/10.1126/science.1241224",
+              "title": "Xie, L. et al. (2013). Sleep drives metabolite clearance from the adult brain.",
+              "description": "Demonstrates that sleep increases interstitial space and accelerates glymphatic clearance of waste, including beta-amyloid. Science."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.cell.com/current-biology/fulltext/S0960-9822(13)00764-1",
+              "title": "Wright, K.P. Jr. et al. (2013). Entrainment of the human circadian clock to the natural light-dark cycle.",
+              "description": "Camping study showing rapid circadian entrainment when exposed to natural daylight. Current Biology."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.roka.com/collections/winddown-eyewear",
+              "title": "Roka Wind-Down Eyewear",
+              "description": "Blue and green light filtering glasses covering the 400 to 520 nanometer range responsible for melatonin suppression."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.ublockout.com",
+              "title": "uBlockout",
+              "description": "Removable adhesive blackout panels designed to eliminate light leakage at the window frame."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.eightsleep.com",
+              "title": "EightSleep Pod",
+              "description": "Active temperature control mattress system with dual-zone setpoints per side of the bed."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/body-of-evidence/",
+              "title": "Dindin, M. (2026). Body of Evidence.",
+              "description": "Article covering the biomarker hierarchy and testing cadence behind the longevity protocol."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

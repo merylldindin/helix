@@ -21,6 +21,7 @@ export { default as PRESSURE_READING } from "./PRESSURE_READING.json";
 export { default as REASONING_LOOP } from "./REASONING_LOOP.json";
 export { default as SKILLS_NOT_FEATURES } from "./SKILLS_NOT_FEATURES.json";
 export { default as SLD_IDENTIFICATION } from "./SLD_IDENTIFICATION.json";
+export { default as SLEEPING_LIKE_A_CLOCK } from "./SLEEPING_LIKE_A_CLOCK.json";
 export { default as SLEEP_STAGE_CLASSIFICATION } from "./SLEEP_STAGE_CLASSIFICATION.json";
 export { default as SQL_AGENT } from "./SQL_AGENT.json";
 export { default as TEN_MINUTES_OF_RED } from "./TEN_MINUTES_OF_RED.json";

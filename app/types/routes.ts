@@ -36,6 +36,7 @@ export const RoutePath = {
   REASONING_LOOP: "/thoughts/reasoning-loop/",
   SKILLS_NOT_FEATURES: "/thoughts/skills-not-features/",
   SLD_IDENTIFICATION: "/thoughts/sld-identification/",
+  SLEEPING_LIKE_A_CLOCK: "/thoughts/sleeping-like-a-clock/",
   SLEEP_STAGE_CLASSIFICATION: "/thoughts/sleep-stage-classification/",
   SQL_AGENT: "/thoughts/sql-agent/",
   SUGGESTIONS: "/suggestions/",

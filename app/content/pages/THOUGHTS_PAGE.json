@@ -15,6 +15,49 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "sleeping-like-a-clock-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Sleeping Like a Clock",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "May 19, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "1,210 nights of Whoop data and a strong opinion. Sleep is the highest-leverage longevity protocol, and it starts the moment you wake up."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article Sleeping Like a Clock",
+              "to": "/thoughts/sleeping-like-a-clock/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Minimalist black and white abstract clock face with twelve markers and a downward-pointing minute hand suggesting descent into sleep",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/sleeping-like-a-clock-20260519T082342.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/sleeping-like-a-clock-20260519T082342-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/sleeping-like-a-clock-20260519T082342-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/sleeping-like-a-clock-20260519T082342-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "pii-by-design-section",
       "props": {
         "content": [
