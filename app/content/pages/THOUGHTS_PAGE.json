@@ -15,6 +15,49 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "the-replay-loop-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Replay Loop",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "May 22, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Observability is the underrated layer in AI agent design. Voltaire’s debug tree, turn ledger, and replay skills turn every production query into a fixture."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article The Replay Loop",
+              "to": "/thoughts/the-replay-loop/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Minimalist black and white poster of concentric horizontal lines folding back into a loop with a single capture point at center",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/the-replay-loop-20260522T093246.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/the-replay-loop-20260522T093246-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/the-replay-loop-20260522T093246-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/the-replay-loop-20260522T093246-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "sleeping-like-a-clock-section",
       "props": {
         "content": [

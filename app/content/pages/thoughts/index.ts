@@ -25,6 +25,7 @@ export { default as SLEEPING_LIKE_A_CLOCK } from "./SLEEPING_LIKE_A_CLOCK.json";
 export { default as SLEEP_STAGE_CLASSIFICATION } from "./SLEEP_STAGE_CLASSIFICATION.json";
 export { default as SQL_AGENT } from "./SQL_AGENT.json";
 export { default as TEN_MINUTES_OF_RED } from "./TEN_MINUTES_OF_RED.json";
+export { default as THE_REPLAY_LOOP } from "./THE_REPLAY_LOOP.json";
 export { default as TOMATO_CLUSTERING_BLOG } from "./TOMATO_CLUSTERING.json";
 export { default as TOPOLOGICAL_DATA_ANALYSIS_BLOG } from "./TOPOLOGICAL_DATA_ANALYSIS.json";
 export { default as TRAINING_FOR_DECADES } from "./TRAINING_FOR_DECADES.json";

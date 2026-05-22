@@ -43,6 +43,7 @@ export const RoutePath = {
   SYSNAV: "/ventures/sysnav/",
   TEN_MINUTES_OF_RED: "/thoughts/ten-minutes-of-red/",
   TERMS_OF_USE: "/legal/terms-of-use/",
+  THE_REPLAY_LOOP: "/thoughts/the-replay-loop/",
   THOUGHTS: "/thoughts/",
   TOMATO_CLUSTERING: "/thoughts/tomato-clustering/",
   TOOLKIT_SUGGESTIONS: "/suggestions/toolkits/",

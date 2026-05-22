@@ -1,0 +1,349 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-05-22",
+      "datePublished": "2026-05-22",
+      "keywords": "AI agent observability, agent replay, agent evaluation, LLM observability, agent improvement loop, agent evals, adversarial review, knowledge curation, Voltaire"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/the-replay-loop/",
+    "title": "The Replay Loop | Meryll Dindin",
+    "description": "Observability is the underrated layer in AI agent design. Replay turns production queries into local fixtures, and lets the agent help fix itself.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/the-replay-loop-20260522T093237.webp",
+    "thumbnailAlt": "Minimalist black and white concentric rings representing a feedback loop with a single capture point at the center"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Concentric horizontal lines bending back on themselves to form a loop, representing replay and iteration",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/the-replay-loop-20260522T093243.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/the-replay-loop-20260522T093243-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/the-replay-loop-20260522T093243-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/the-replay-loop-20260522T093243-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "The Replay Loop",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published May 22, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Most writing about AI agents focuses on the parts that fit a demo. The model, the tool surface, the prompt. The orchestrator picks a route, calls an agent, returns a sourced answer. That part takes a screenshot well. It also stops being interesting around the third week in production."
+          },
+          {
+            "type": "text",
+            "prop": "The part that decides whether an agent gets better over time is the part nobody photographs: observability. The full machinery that lets a developer pull a query from yesterday, re-run it locally against the same context the model originally saw, compare the new result to the old, and ship a fix before the next batch of users hits the same failure."
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire is Parallel Learning’s internal AI agent. The observability layer behind it has been the most fun thing I have built so far, and easily the part where I have learned the most. Most teams underbuild it and pay quietly, one regression at a time."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Observability Actually Means For An Agent",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A traditional service is observable when three questions are answerable from logs: what request came in, what code path ran, what response went out. Latency histograms, error rates, a stack trace when something throws."
+          },
+          {
+            "type": "text",
+            "prop": "An agent inherits those three and adds a fourth: what did the model see, and why did it pick the path it picked. An agent is not debugged from a stack trace. It is debugged by reading the inputs the model received at the moment of inference. The system prompt as rendered. The injected knowledge. The tools that were in scope. The previous tool responses. With those in hand, the question becomes whether the input shape was reasonable. Without them, every incident becomes a guessing game against a non-deterministic system."
+          },
+          {
+            "type": "text",
+            "prop": "The first design rule we landed on: capture inputs at the granularity of the inference call, not the request. Every prompt that hits the model is a separate event worth persisting, if you want to be able to reason about it later."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Production Signal",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Production cannot afford to write a fat artifact for every turn. What it can afford is to write one row of structured metadata to the warehouse for each turn served. One row, lots of columns: the query, the response, the SQL the agent generated if any, the planner’s chosen skill and selected agents, the tools that were actually invoked, latency, token counts, whether sensitive data was touched, and an embedding of the query text."
+          },
+          {
+            "type": "text",
+            "prop": "The schema is wide on purpose. Two months from now, the question is not “show me the logs.” It is “did the rate of multi-tool synthesis turns drop after the routing change.” That answer is a one-line filter against the warehouse if the right columns exist, and a multi-week rebuild from raw logs if they do not. The cost of an extra column at write time is rounding error. The cost of a missing column at investigation time is the work itself."
+          },
+          {
+            "type": "text",
+            "prop": "Three habits earn their keep repeatedly. Counting tool calls per turn surfaces drift instantly: a question that used to resolve in two calls now burns nine, and something changed. Recording the planner’s routing distribution shows whether the agent is short-circuiting on knowledge or running a full agent loop, which is half the battle in tuning a planner. Embedding the query text turns semantic search across past turns into a one-line filter, which matters every time a fresh bug report lands that sounds familiar to one from last month."
+          },
+          {
+            "type": "text",
+            "prop": "The warehouse is the inventory of what happened. It is the substrate every other workflow draws from."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Dynamic Context As An Artifact",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A part of the puzzle that teams skip: the agent’s view of “now” is itself stateful and injected, and it needs to be tracked with the same discipline as the prompt."
+          },
+          {
+            "type": "text",
+            "prop": "Every Voltaire turn injects a block of dynamic context at the system level before the model sees the user’s question. It includes the user’s identity and role, today’s date in the user’s timezone, the current pay period, the current fiscal quarter, the current school year, the response budget for this execution mode, and the per-turn guidance for whichever agents the planner selected."
+          },
+          {
+            "type": "text",
+            "prop": "None of that lives in a static prompt. All of it is computed at request time. Three of the trickiest regressions we have shipped traced to dynamic context, not to the prompt or the tool. A timezone helper that started returning a stale date on Sunday rollovers. A role resolver that downgraded an executive to “staff” when their profile was missing a field. An agent-guidance block that grew large enough to push the actual user question out of the model’s attention window. All three were invisible in the logs and instantly obvious as soon as we could read the exact context the model had received."
+          },
+          {
+            "type": "text",
+            "prop": "Dynamic context deserves first-class artifact status. If it shapes the answer, it has to be reconstructible turn by turn."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Local Replay",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Writing the full per-turn artifact tree on every production request is overkill. The production signal already tells me which turns are worth a closer look. The deep capture only needs to run when I sit down to investigate one of them."
+          },
+          {
+            "type": "text",
+            "prop": "So we treat the artifact tree as a replay-time feature, not a production feature. Locally, we flip a flag and the next turn writes a full session folder to disk: the raw input, the rendered prompt, the orchestrator’s injected context, the system prompt at inference time, the request and response of every tool call, the orchestrator’s complete message trace, and the final assembled output, each file stamped with its millisecond timestamp."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Horizontal diagram showing one turn produces an inference call which writes a session of timestamped artifacts in order: raw input, rendered prompt, orchestrator context, tool requests and responses, orchestrator messages, and final response",
+              "darkModeTreatment": "invert-on-dark",
+              "source": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-debug-tree-20260522T112738.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-debug-tree-20260522T112738-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-debug-tree-20260522T112738-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-debug-tree-20260522T112738-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The cost only lands on me, on my machine, on the turns I actually chose to investigate. The mechanism is small: each call site that does real work writes its inputs and outputs to the session folder when capture is on. There is no separate instrumentation pipeline to maintain. The session folder is the artifact. The whole turn lives on disk for as long as the investigation needs it."
+          },
+          {
+            "type": "text",
+            "prop": "The value is that any production turn becomes inspectable after the fact. No reruns with extra logging, no “can you reproduce it” cycle with the user. The signal tells me what to look at. The replay tells me what happened."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Replay Loop",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The pieces above are infrastructure. The thing that turns infrastructure into improvement is a workflow built on top."
+          },
+          {
+            "type": "text",
+            "prop": "Once a week, we sample a few dozen real production turns from the warehouse, diverse across users, skills, and verticals, and replay them locally. The pipeline is direct. Pick the turn. Run the same query under the original user’s identity so role-family steering and audience-gated skills behave as they did in production. Let the new code path execute end to end. Inspect the new session. Compare it to the production response."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Workflow diagram showing the replay loop: sample turns from the warehouse, replay locally under the original identity, compare against production verdicts, group into a backlog, implement fixes, then re-replay to validate",
+              "darkModeTreatment": "invert-on-dark",
+              "source": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-replay-workflow-20260522T093052.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-replay-workflow-20260522T093052-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-replay-workflow-20260522T093052-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-replay-workflow-20260522T093052-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Replay is, in the simplest terms, retrying the same path locally. That framing decides what the fix looks like."
+          },
+          {
+            "type": "text",
+            "prop": "If I cannot reproduce the bad answer, the prompt is too loose. The model is wandering across runs because nothing is steering it consistently. The fix is a tighter prompt: more explicit constraints, fewer degrees of freedom, sharper instructions for the planner. If I can reproduce the bad answer, the prompt is doing what it says, and the prompt itself is wrong. The fix is content: change the guidance, change the knowledge that gets injected, change the tool description, change the route. Two failure modes, two different prompt edits."
+          },
+          {
+            "type": "text",
+            "prop": "Doing this locally is the point. As long as the observability layer lets me replay a turn faithfully, there is no need to ship instrumentation builds to production or run experiments live against users. The cost lives on my machine. The corollary is that local permissions have to be managed carefully. When I replay under another user’s identity, the same role-based access controls, audience gates, and data scopes have to apply. A replay that reads data the original user could not see is not a faithful replay; it is a security incident with extra steps."
+          },
+          {
+            "type": "text",
+            "prop": "Each replayed turn gets a verdict: matches, minor drift, regression, error, or (for deeper per-user investigations) gap, meaning the replay reproduced production exactly but the answer was still weak. Verdicts roll up into a backlog of fixes, classified by where the change needs to land: planner routing, skill or tool logic, knowledge content, upstream data documentation, or a net-new data surface the agent does not currently query. The fixes get made. The same turns get replayed again. Verdicts that were red flip to green. If they do not, the diagnosis was incomplete and we run another pass."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Replay As Knowledge Building",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Most replays do not end with a prompt edit. Most end with a knowledge edit. A turn gives a vague answer because the model was never given the fact it needed. The fix is to write that fact into the knowledge base in a form the planner will reliably surface for similar future questions."
+          },
+          {
+            "type": "text",
+            "prop": "Three layers of that work compound. Curations are the small, ad-hoc facts the system collects while answering questions (the corrections, the “actually it is filed under Operations not Finance,” the resolved aliases). They are written automatically at runtime and graduated weekly into the static knowledge tree, after dedup against the existing corpus. Knowledge stems are the named clusters of facts the planner injects when a topic is matched. Stem-level tuning (the short descriptions that decide whether the planner reaches for a cluster) is its own discipline; a perfect fact is useless if its cluster never gets injected."
+          },
+          {
+            "type": "text",
+            "prop": "Topic curation sits above all of it. When replay surfaces a class of questions the agent keeps fumbling, that is a signal to commission a fresh research pass against the underlying systems and write a new stem from scratch. Replay does not just diagnose individual answers. It produces a backlog of knowledge work the agent could not have written for itself."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Adversarial Review",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Some replays produce an answer that is not obviously wrong. The numbers look plausible. The reasoning sounds right. The user did not complain, but the team senses something is off. This is where adversarial review has been the most useful tool I did not expect."
+          },
+          {
+            "type": "text",
+            "prop": "Locally, we run a second pass: hand the original question, the agent’s answer, and the underlying sources to a fresh Claude instance with no investment in the original output, and ask it to play devil’s advocate. Find the inconsistency. Argue the opposite conclusion. Identify which sources contradict the framing. Spot the load-bearing assumption that was never stated."
+          },
+          {
+            "type": "text",
+            "prop": "The signal is not that the second model is smarter. It is that without skin in the answer, it asks questions the first run never asked. It catches the silent hedge that made the answer sound confident, the missing denominator that turned a fine number into a misleading one, the cited source that the first run did not actually open. The pattern fixes work that no automated regression test would have caught, because the failure mode is rhetorical, not behavioral."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Letting The Agent Tune Itself",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The next layer is where this gets useful. The replay workflow is implemented as a skill, a long-form playbook that Claude Code executes end to end. Sampling, replaying, comparing, classifying, drafting the backlog, implementing the smallest viable fix, re-replaying to validate. A human approves at two checkpoints (the proposed backlog and the merge). The loop itself runs without me writing each step."
+          },
+          {
+            "type": "text",
+            "prop": "Adjacent skills cover adjacent failure modes. One audits production warnings that did not crash a turn but cost it a tool budget: hallucinated columns, blocked queries, transient external API failures. Another samples investigation threads where the team had to step in after the agent’s initial triage missed something, derives ground truth from the human follow-up, and turns the delta into a fix. Another graduates runtime curations into the static knowledge tree, with vector-based dedup against the entire existing corpus."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Diagram showing the observability substrate feeding several Claude Code skills that propose fixes back into the agent: turn warehouse, dynamic context, local replay artifacts, production warnings, and curated runtime claims flowing into the replay, error review, investigation replay, and curation graduation skills",
+              "darkModeTreatment": "invert-on-dark",
+              "source": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-substrate-20260522T093052.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-substrate-20260522T093052-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-substrate-20260522T093052-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/the-replay-loop-substrate-20260522T093052-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The pattern is the same in each case. A signal stream the agent emits while serving traffic. A playbook that reads the stream, identifies a class of failures, proposes a fix, implements it, verifies it. A human at the approval gates. The agent is doing most of the work of improving itself. The human is deciding what counts as a regression and what counts as good enough."
+          },
+          {
+            "type": "text",
+            "prop": "This only works because the substrate is rich. A thumbs-down reaction is one signal. The skills would have nothing else to investigate if that were all we captured. The reason the agent can audit its own behavior is that the behavior is fully recoverable: the production signal narrows the search, the local replay reconstructs the turn, and the same skills that diagnose also propose the fix."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What This Buys",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A team building an AI agent today usually has the model integration right, the tool surface right, and the prompt template right. The question they often cannot answer is “how do we know it is getting better.” The answer is to replay yesterday, which requires reading, which requires capturing. Observability is the layer that makes every other layer improvable, and it is the layer that gets cut first when the demo is the priority."
+          },
+          {
+            "type": "text",
+            "prop": "The agent that ships in month three with a thin warehouse signal and an easy local replay is the one still useful in month twelve. The agent without it is the one the team eventually stops changing."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''The Replay Loop'' by Meryll Dindin 👀",
+              "url": "/thoughts/the-replay-loop/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/company-brain/",
+              "title": "One Brain to Query",
+              "description": "What Voltaire is and what it connects across our internal data surfaces."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/reasoning-loop/",
+              "title": "The Reasoning Loop",
+              "description": "Orchestrator anatomy, routing modes, and the request lifecycle that produces every turn captured here."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/sql-agent/",
+              "title": "The SQL Agent",
+              "description": "The BigQuery agent pipeline that benefits most from the replay and adversarial review patterns described here."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/pii-by-design/",
+              "title": "PII by Design",
+              "description": "The audit-by-design constraints that decide how identity, prompts, and data scopes get handled during both production turns and local replay."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
