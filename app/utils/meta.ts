@@ -1,4 +1,4 @@
-import type { MetaFlatInput } from "unhead/types";
+import type { MetaFlat } from "unhead/types";
 
 import { DEFAULT_URL } from "@/content";
 
@@ -52,7 +52,7 @@ export const extractHead = ({
   thumbnail,
   thumbnailAlt,
   noindex,
-}: HeadContent): MetaFlatInput => {
+}: HeadContent): MetaFlat => {
   const metaCanonical = canonical ? setMetaCanonical(canonical) : {};
   const metaTitle = title ? setMetaTitle(title) : {};
   const metaDescription = description ? setMetaDescription(description) : {};

@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import UnheadVite from "@unhead/addons/vite";
+import { Unhead as UnheadVite } from "@unhead/bundler/vite";
 import { defineNuxtConfig } from "nuxt/config";
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "./app/content";
 import { RoutePath } from "./app/types/routes";
@@ -180,6 +180,6 @@ export default defineNuxtConfig({
       ],
     },
 
-    plugins: [UnheadVite()],
+    plugins: [...UnheadVite()],
   },
 });
