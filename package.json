@@ -21,7 +21,7 @@
     "types": "NODE_OPTIONS='--max-old-space-size=4096' nuxi typecheck"
   },
   "resolutions": {
-    "@mdream/rust-wasm32-wasi": "npm:@mdream/rust-darwin-arm64@1.1.0",
+    "@mdream/rust-wasm32-wasi": "npm:@mdream/rust-darwin-arm64@1.2.2",
     "@nuxt/kit": ">=4.2.2",
     "defu": "^6.1.6",
     "devalue": ">=5.6.2",
