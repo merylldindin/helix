@@ -49,6 +49,9 @@ jobs:
       - name: Run Stylelint
         run: yarn stylelint
 
+      - name: Run Types
+        run: yarn types
+
       - name: Bundle Application
         run: make build
 
