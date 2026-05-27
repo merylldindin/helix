@@ -1,0 +1,290 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-05-26",
+      "datePublished": "2026-05-26",
+      "keywords": "grip strength, hand dynamometer, longevity, sarcopenia, all-cause mortality, dead hang, biological age, health tracking, biomarkers, PURE study"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/grip-strength/",
+    "title": "Marker, Not a Lever | Meryll Dindin",
+    "description": "A hand squeeze predicts death better than blood pressure. I track mine at 132 pounds. Here is why grip strength is a signal worth reading, not a number to chase.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/grip-strength-20260526T215922.webp",
+    "thumbnailAlt": "Abstract line drawing of a hand gripping a circular measurement dial with a steady horizontal line passing through it"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Abstract line drawing of a fist anchoring a long horizontal baseline that holds flat and carries a single pulse, surrounded by faint concentric rings",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/grip-strength-20260526T215947.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/grip-strength-20260526T215947-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/grip-strength-20260526T215947-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/grip-strength-20260526T215947-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Marker, Not a Lever",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published May 26, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "There is a study cardiologists quote and most people have never heard of. In 2015, researchers measured the grip strength of more than 140,000 adults across 17 countries and followed them for years. A simple squeeze on a hand dynamometer predicted death more reliably than systolic blood pressure. Every 5 kilograms of lost grip came with a measurable bump in the odds of dying, from any cause, from cardiovascular disease, from a heart attack."
+          },
+          {
+            "type": "text",
+            "prop": "I own one of these devices. It cost less than a nice dinner. My reading sits at 132 pounds, about 60 kilograms, and it has not moved in a month. So I should be thrilled. The more I read the literature, the more convinced I became that almost everyone misreads what the number is telling them. Grip strength is one of the best predictors of how long you will live, and almost certainly not a cause of it. What it is good for, I have come to think, is something quieter than the number itself."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "Electronic hand dynamometer with its display reading 132.0, resting on a wooden surface",
+              "source": "https://cdn.merylldindin.com/articles/sections/grip-strength-dynamometer-20260527T073540.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/grip-strength-dynamometer-20260527T073540-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/grip-strength-dynamometer-20260527T073540-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/grip-strength-dynamometer-20260527T073540-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What 132 Pounds Actually Means",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Numbers only mean something against a reference. The most defensible benchmark I found comes from a 2014 study that pooled twelve British cohorts and mapped grip across the entire human lifespan. For men, it peaks somewhere between ages 29 and 39, at a median around 51 kilograms. That is the “average healthy man my age” line, and at 60 kilograms I sit comfortably above it. American reference data lands me in the same place, well into the upper range for a man in his early thirties."
+          },
+          {
+            "type": "text",
+            "prop": "The clinical floor is much further down. The European consensus that defines sarcopenia, the age-related muscle loss that precedes frailty, flags men as weak below 27 kilograms. I am at more than double that. By every threshold that matters in a clinic, I am nowhere near the danger zone."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Line chart of median grip strength in kilograms by age for men and women from Dodds 2014, showing both curves rising to a peak around age 30 then declining, the 27 kilogram weak threshold for men, and the author's reading of 60 kilograms at age 31 sitting above the male peak",
+              "source": "https://cdn.merylldindin.com/articles/sections/grip-strength-age-sex-20260527T071800.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/grip-strength-age-sex-20260527T071800-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/grip-strength-age-sex-20260527T071800-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/grip-strength-age-sex-20260527T071800-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "One detail reframed the whole exercise for me. The protective relationship between grip and mortality is roughly linear from the bottom of the range up to about 42 kilograms in men, and then it flattens. Past that ceiling, more grip does not buy more years. I am well past it. So the honest reading of my 132 pounds is not “keep pushing,” it is “you cleared the bar a long time ago.” What matters for me is the trend, not the level."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Marker, Not a Lever",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The headlines set a trap. Strong grip means a longer life, they say, so the obvious move is to go train your grip. Buy the gripper, do the farmer’s carries, watch the number climb, collect the extra years."
+          },
+          {
+            "type": "text",
+            "prop": "The evidence does not support that chain of reasoning. No randomized trial has ever shown that training grip in isolation extends life or prevents a single disease. The genetic studies that try to tease out causation are mixed: they offer some support that strength causally protects against coronary disease, a weaker and contested signal for bone, and none for stroke, hypertension, or heart failure. What the data actually describes is a marker, not a lever."
+          },
+          {
+            "type": "text",
+            "prop": "Grip works as a predictor because it is a cheap readout of something much larger. A strong grip reflects muscle mass, neuromuscular function, nutrition, low inflammation, and an active life. Those things are what move mortality. Grip is the gauge on the dashboard, not the engine. Squeezing the dynamometer harder is like taping the speedometer needle to 60 and wondering why the car is still parked."
+          },
+          {
+            "type": "text",
+            "prop": "This is also where reverse causation lurks. In an older population, a declining grip is often the body quietly reporting a problem that already exists: occult illness, inflammation, the early machinery of decline. Strength does not fall and then cause death. Disease arrives, strength drops as a symptom, and the dynamometer catches the signal before anything else does. That is a powerful thing for a twenty-dollar tool to do. It is just not the same thing as causation."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram showing whole-body vitality as a common cause driving both grip strength and longevity, with grip strength tracking but not causing longevity outcomes",
+              "source": "https://cdn.merylldindin.com/articles/sections/grip-strength-marker-not-lever-20260526T215624.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/grip-strength-marker-not-lever-20260526T215624-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/grip-strength-marker-not-lever-20260526T215624-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/grip-strength-marker-not-lever-20260526T215624-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why It Still Earns a Place",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "None of that makes grip useless. It makes it honest. A marker that cannot be gamed and costs almost nothing is exactly what you want in a tracking stack."
+          },
+          {
+            "type": "text",
+            "prop": "I have written before about the rest of my measurement habit: the quarterly blood panels, the DEXA scans, the epigenetic clocks that estimate how fast I am aging relative to the calendar. That stack runs into the low thousands of dollars a year. The dynamometer sits on the same shelf and costs less than one of those tests, yet it is more repeatable than most blood markers. When the measurement noise is that small, a real change stands out. My grip holding flat at 132 pounds for a month is not boring. It is a clean baseline, and a clean baseline is what makes a future deviation legible."
+          },
+          {
+            "type": "text",
+            "prop": "The tie to the rest of my data is direct. Lower grip strength tracks with accelerated epigenetic age, the same biological aging signal I pay TruDiagnostics to measure four times a year. The expensive clock and the cheap squeeze are looking at overlapping truths from different angles, and I trust a reading more when two independent instruments agree."
+          },
+          {
+            "type": "text",
+            "prop": "So I keep it for the one job it does better than anything else its price: a sentinel. If that number starts drifting down over months without an obvious reason, something systemic has changed, and I will know to go looking before the blood work would have flagged it."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Bar in the Garage",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I recently bolted a pull-up bar into the garage. The first reason was my lower back. Hanging from a bar lets the spine decompress under its own weight, and the relief is immediate and real. I am careful about how I describe that, because the clinical evidence for traction as a treatment for back pain is weak. A Cochrane review found little to no lasting benefit. So I treat the hang as what it is: a comfort and mobility habit that feels good and unloads my spine for a minute, not a therapy I would prescribe to anyone."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "altText": "A black pull-up bar mounted across the top of a doorway frame",
+              "source": "https://cdn.merylldindin.com/articles/sections/grip-strength-pullup-bar-20260527T073540.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/grip-strength-pullup-bar-20260527T073540-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/grip-strength-pullup-bar-20260527T073540-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/grip-strength-pullup-bar-20260527T073540-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I am even more skeptical of the shoulder claims that circulate online, the ones promising that daily hanging reshapes the joint and saves you from surgery. That idea rests on a single self-published case series, never independently replicated, and the best controlled trials of surgical shoulder decompression found the operation worked no better than a placebo procedure. When the gold-standard evidence points the other way, I do not build a belief on a testimonial."
+          },
+          {
+            "type": "text",
+            "prop": "What the bar does give me, honestly, is a second metric. A dead hang measures something the dynamometer cannot: endurance and how long my grip and shoulders hold up under my full bodyweight. There are no good population norms for hang time, because the number bends to bar thickness, chalk, and how heavy you are. That makes it useless for comparing myself to anyone else and perfect for comparing myself to last month. Peak force on the dynamometer, staying power on the bar. Two cheap angles on the same system."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What the Number Is For",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I started measuring grip expecting a target to chase. What I found was a mirror. The number does not respond to being chased, and at my level it has nothing left to prove. Its real job is to sit there, flat and reliable, until the day it isn’t, and to tell me something has changed before I would have felt it. Mine reads 132 and hasn’t moved. I am hoping, more than anything, that it stays boring."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Marker, Not a Lever'' by Meryll Dindin 👀",
+              "url": "/thoughts/grip-strength/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(14)62000-6/fulltext",
+              "title": "Leong, D.P. et al. (2015). Prognostic value of grip strength: findings from the PURE study.",
+              "description": "Study of 142,861 adults across 17 countries showing grip strength predicts mortality more reliably than systolic blood pressure. The Lancet."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.bmj.com/content/361/bmj.k1651",
+              "title": "Celis-Morales, C. et al. (2018). Associations of grip strength with cardiovascular, respiratory, and cancer outcomes and all cause mortality.",
+              "description": "UK Biobank study of over 500,000 participants confirming grip strength as a predictor of mortality and disease. BMJ."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0113637",
+              "title": "Dodds, R.M. et al. (2014). Grip strength across the life course: normative data from twelve British studies.",
+              "description": "Life-course normative data showing male grip peaks at a median around 51 kg between ages 29 and 39. PLOS ONE."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://academic.oup.com/ageing/article/48/1/16/5126243",
+              "title": "Cruz-Jentoft, A.J. et al. (2019). Sarcopenia: revised European consensus on definition and diagnosis (EWGSOP2).",
+              "description": "European consensus making low grip strength the primary criterion for sarcopenia, with a weak cutoff below 27 kg for men. Age and Ageing."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://academic.oup.com/ageing/article/51/5/afac117/6593705",
+              "title": "Lopez-Bueno, R. et al. (2022). Associations of handgrip strength with all-cause and cancer mortality in older adults.",
+              "description": "Prospective cohort across 28 countries showing the mortality benefit of grip is linear up to about 42 kg in men, then plateaus. Age and Ageing."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://onlinelibrary.wiley.com/doi/10.1002/jcsm.13110",
+              "title": "Peterson, M.D. et al. (2023). Grip strength is inversely associated with DNA methylation age acceleration.",
+              "description": "Health and Retirement Study analysis linking lower grip strength to accelerated epigenetic aging. Journal of Cachexia, Sarcopenia and Muscle."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003010.pub5/full",
+              "title": "Wegner, I. et al. (2013). Traction for low-back pain with or without sciatica.",
+              "description": "Cochrane systematic review finding traction has little or no benefit for low-back pain. Cochrane Database of Systematic Reviews."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)32457-1/fulltext",
+              "title": "Beard, D.J. et al. (2018). Arthroscopic subacromial decompression for subacromial shoulder pain (CSAW).",
+              "description": "Placebo-controlled trial finding subacromial decompression surgery no better than a sham procedure. The Lancet."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/body-of-evidence/",
+              "title": "Dindin, M. (2026). Body of Evidence.",
+              "description": "The broader biomarker tracking stack: quarterly panels, DEXA, VO2 max, and epigenetic clocks."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

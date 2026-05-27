@@ -9,6 +9,7 @@ export { default as EATING_ONCE_A_DAY } from "./EATING_ONCE_A_DAY.json";
 export { default as ARRHYTHMIA_CLASSIFICATION } from "./ARRHYTHMIA_CLASSIFICATION.json";
 export { default as FULL_STACK_BUILDER } from "./FULL_STACK_BUILDER.json";
 export { default as FUTURE_OF_STORYTELLING } from "./FUTURE_OF_STORYTELLING.json";
+export { default as GRIP_STRENGTH } from "./GRIP_STRENGTH.json";
 export { default as INFORMATION_TRANSIT } from "./INFORMATION_TRANSIT.json";
 export { default as KNOWLEDGE_GRAPH } from "./KNOWLEDGE_GRAPH.json";
 export { default as LEARNING_DIFFERENCES } from "./LEARNING_DIFFERENCES.json";

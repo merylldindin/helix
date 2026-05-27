@@ -16,6 +16,7 @@ export const RoutePath = {
   FUJITSU: "/ventures/fujitsu/",
   FULL_STACK_BUILDER: "/thoughts/full-stack-builder/",
   FUTURE_OF_STORYTELLING: "/thoughts/future-of-storytelling/",
+  GRIP_STRENGTH: "/thoughts/grip-strength/",
   INFORMATION_TRANSIT: "/thoughts/information-transit/",
   KNOWLEDGE_GRAPH: "/thoughts/knowledge-graph/",
   LANDING_PAGE: "/",
