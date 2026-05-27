@@ -1,0 +1,31 @@
+app/content/pages/THOUGHTS_PAGE.json
+  s_28c3cdddd1b3de::t_2034f9ac4f5b87 18-58
+app/content/pages/thoughts/GRIP_STRENGTH.json
+  s_28c3cdddd1b3de::t_a93d3a2798a8f7 1-57,68-83,95-169,180-290
+  s_28c3cdddd1b3de::t_7da08a9a55fee5 58-67
+  s_28c3cdddd1b3de::t_9cd1512d99d36e 170-179
+  s_28c3cdddd1b3de::t_d04f515aca2719 84-94
+app/types/routes.ts
+  s_28c3cdddd1b3de::t_a91906c88581e9 19
+app/utils/routes.ts
+  s_28c3cdddd1b3de::t_b56b34a42d8eac 76
+  s_28c3cdddd1b3de::t_b96e46131aa721 19
+app/content/pages/thoughts/index.ts
+  s_28c3cdddd1b3de::t_f3a612c1fbdf88 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "d4f0b763d2e3de7aa3fb3f4e7be33bfe2c238cde",
+  "prompts": {},
+  "sessions": {
+    "s_28c3cdddd1b3de": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "25e959c3-44dd-477d-ba63-0cf113062be8",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
