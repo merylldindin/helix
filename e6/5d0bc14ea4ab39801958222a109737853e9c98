@@ -1,0 +1,19 @@
+.github/workflows/continuous-integration.yml
+  s_d23eb24f4a58d6::t_e9682a6ea5a503 52-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "e65d0bc14ea4ab39801958222a109737853e9c98",
+  "prompts": {},
+  "sessions": {
+    "s_d23eb24f4a58d6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac4b59bb-49b9-4510-b061-46263c80b85c",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
