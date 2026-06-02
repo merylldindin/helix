@@ -40,6 +40,7 @@ export const RoutePath = {
   SLEEPING_LIKE_A_CLOCK: "/thoughts/sleeping-like-a-clock/",
   SLEEP_STAGE_CLASSIFICATION: "/thoughts/sleep-stage-classification/",
   SQL_AGENT: "/thoughts/sql-agent/",
+  STRETCH_TO_SLEEP: "/thoughts/stretch-to-sleep/",
   SUGGESTIONS: "/suggestions/",
   SYSNAV: "/ventures/sysnav/",
   TEN_MINUTES_OF_RED: "/thoughts/ten-minutes-of-red/",
