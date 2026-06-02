@@ -28,10 +28,7 @@ const ariaLabel = computed(() => {
         <v-icon class="theme-toggle-icon" :icon="mdiWhiteBalanceSunny" />
       </span>
 
-      <span
-        class="theme-toggle-glyph theme-toggle-glyph-dark"
-        style="padding-left: 6px"
-      >
+      <span class="theme-toggle-glyph theme-toggle-glyph-dark">
         <v-icon class="theme-toggle-icon" :icon="mdiMoonWaningCrescent" />
       </span>
 
@@ -100,6 +97,7 @@ const ariaLabel = computed(() => {
 
 .theme-toggle-glyph-dark {
   right: var(--theme-toggle-thumb-offset);
+  padding-left: 6px;
 }
 
 .theme-toggle-thumb {
