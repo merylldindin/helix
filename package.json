@@ -21,10 +21,12 @@
     "types": "NODE_OPTIONS='--max-old-space-size=4096' nuxi typecheck"
   },
   "resolutions": {
+    "@eslint/config-inspector": "^1.5.0",
     "@mdream/rust-wasm32-wasi": "npm:@mdream/rust-darwin-arm64@1.2.2",
     "@nuxt/kit": ">=4.2.2",
     "defu": "^6.1.6",
     "devalue": ">=5.6.2",
+    "eslint-plugin-import-x": "^4.16.2",
     "fast-uri": "^3.1.2",
     "fast-xml-builder": "^1.2.0",
     "fast-xml-parser": "^5.7.1",
@@ -42,8 +44,10 @@
     "srvx": "^0.11.13",
     "tar": ">=7.5.3",
     "tough-cookie": ">=6.0.0",
-    "unhead": ">=2.0.0 <4.0.0",
-    "vite": "8.0.16"
+    "unhead": ">=3.1.1 <4.0.0",
+    "vite": "8.0.16",
+    "vite-plugin-inspect": "^11.4.1",
+    "vite-plugin-vue-tracer": "^1.4.0"
   },
   "dependencies": {
     "nuxt-jsonld": "2.2.1",
@@ -90,6 +94,7 @@
     "stylelint-prettier": "5.0.3",
     "typescript": "6.0.3",
     "typescript-eslint": "8.60.1",
+    "unhead": "3.1.1",
     "vite": "8.0.16",
     "vue-eslint-parser": "10.4.0",
     "vue-gtag": "3.7.1",
