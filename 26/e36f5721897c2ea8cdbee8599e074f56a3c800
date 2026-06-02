@@ -1,0 +1,31 @@
+app/types/routes.ts
+  s_1ed9f4cce39eab::t_2286df75234043 43
+app/content/pages/THOUGHTS_PAGE.json
+  s_1ed9f4cce39eab::t_68837f83b9662b 18-58
+app/utils/routes.ts
+  s_1ed9f4cce39eab::t_cf1becdb9ff72d 43
+  s_1ed9f4cce39eab::t_d42b2ea71e9f93 101
+app/content/pages/thoughts/index.ts
+  s_1ed9f4cce39eab::t_f8d139f36450ed 28
+app/content/pages/thoughts/STRETCH_TO_SLEEP.json
+  s_1ed9f4cce39eab::t_50d8c3d677b88c 16,27-30
+  s_1ed9f4cce39eab::t_b9487da7570855 175
+  s_1ed9f4cce39eab::t_831c95955b59de 1-15,17-26,31-155,166-174,176-376
+  s_1ed9f4cce39eab::t_69f9d70c8109aa 156-165
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "26e36f5721897c2ea8cdbee8599e074f56a3c800",
+  "prompts": {},
+  "sessions": {
+    "s_1ed9f4cce39eab": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4fdebdb6-882b-484f-b8a2-3e6683ac5bd1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
