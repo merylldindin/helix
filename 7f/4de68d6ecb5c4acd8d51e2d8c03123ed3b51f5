@@ -1,0 +1,21 @@
+yarn.lock
+  ai_agent 5
+.yarnrc.yml
+  s_0cf65a1c989058::t_222a4f8183616d 16-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "7f4de68d6ecb5c4acd8d51e2d8c03123ed3b51f5",
+  "prompts": {},
+  "sessions": {
+    "s_0cf65a1c989058": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ad3dbd7f-2546-44f0-80e1-a812e9f2a30b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
