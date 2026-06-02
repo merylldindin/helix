@@ -1,0 +1,21 @@
+package.json
+  ai_agent 100
+.nvmrc
+  s_0cf65a1c989058::t_f9e4ebf803e19d 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "b42156fc9195dcc106efe8673901f43ef86ab405",
+  "prompts": {},
+  "sessions": {
+    "s_0cf65a1c989058": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ad3dbd7f-2546-44f0-80e1-a812e9f2a30b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
