@@ -47,7 +47,8 @@ playwright/.cache/
 .claude/plans/
 
 # claude skills
-.claude/skills/**/.env
+.claude/skills/**/.env*
+!.claude/skills/**/.env*.example
 .claude/skills/**/output/*
 !.claude/skills/**/output/.gitkeep
 .claude/skills/**/input/*
