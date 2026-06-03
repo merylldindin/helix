@@ -1,18 +1,65 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":dependencyDashboard", ":semanticCommits"],
   "assignees": ["merylldindin"],
+  "gitIgnoredAuthors": ["renovate[bot]"],
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
-  "extends": ["config:recommended"],
+  "rebaseWhen": "conflicted",
+  "schedule": ["before 6am on Monday"],
+  "timezone": "Europe/Paris",
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security", "urgent"],
+    "assignees": ["merylldindin"],
+    "minimumReleaseAge": "0 days"
+  },
+  "osvVulnerabilityAlerts": true,
+  "rangeStrategy": "auto",
+  "ignoreDeps": ["python", "yarn"],
   "packageRules": [
     {
-      "matchDepNames": ["python"],
-      "enabled": false
+      "description": "Ignore Python version updates",
+      "enabled": false,
+      "matchCategories": ["python"],
+      "matchPackageNames": ["python"]
+    },
+    {
+      "description": "Ignore Yarn version updates",
+      "enabled": false,
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["yarn"]
     },
     {
       "automerge": true,
-      "groupName": "yarn-minor",
-      "matchDepTypes": ["dependencies", "devDependencies"],
+      "labels": ["python", "minor"],
+      "groupName": "minor python dependencies",
+      "matchDepTypes": ["dependencies", "dev", "types"],
+      "matchCategories": ["python"],
+      "matchUpdateTypes": [
+        "bump",
+        "digest",
+        "lockFileMaintenance",
+        "minor",
+        "patch",
+        "pin",
+        "rollback"
+      ],
+      "minimumReleaseAge": "7 days",
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps",
+      "matchPackageNames": ["!python"]
+    },
+    {
+      "automerge": true,
+      "labels": ["node", "minor"],
+      "groupName": "minor node dependencies",
+      "matchDepTypes": [
+        "dependencies",
+        "peerDependencies",
+        "devDependencies",
+        "optionalDependencies"
+      ],
       "matchManagers": ["npm"],
       "matchUpdateTypes": [
         "bump",
@@ -23,24 +70,32 @@
         "pin",
         "rollback"
       ],
-      "semanticCommitType": "chore"
+      "minimumReleaseAge": "7 days",
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps",
+      "matchPackageNames": ["!yarn"]
     },
     {
       "automerge": true,
-      "groupName": "yarn-major",
+      "labels": ["python", "major"],
+      "matchDepTypes": ["dev", "types"],
+      "matchCategories": ["python"],
+      "matchUpdateTypes": ["major"],
+      "minimumReleaseAge": "14 days",
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps",
+      "matchPackageNames": ["!python"]
+    },
+    {
+      "automerge": true,
+      "labels": ["node", "major"],
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["major"],
-      "semanticCommitType": "chore"
-    },
-    {
-      "automerge": true,
-      "groupName": "uv-minor",
-      "matchManagers": ["uv"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "semanticCommitType": "chore"
+      "minimumReleaseAge": "14 days",
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps",
+      "matchPackageNames": ["!yarn"]
     }
-  ],
-  "platformAutomerge": true,
-  "schedule": ["every weekend"]
+  ]
 }
