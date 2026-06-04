@@ -15,6 +15,49 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "stretch-to-sleep-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Stretch to Sleep",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "June 1, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Stretching won’t prevent injury or cure soreness. I still spend fifteen minutes on the floor every night. Here is what it actually buys me."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article Stretch to Sleep",
+              "to": "/thoughts/stretch-to-sleep/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "Minimalist black and white poster of concentric calm rings radiating from a central double-pulse breath easing into stillness",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/stretch-to-sleep-20260601T211256.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/stretch-to-sleep-20260601T211256-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/stretch-to-sleep-20260601T211256-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/stretch-to-sleep-20260601T211256-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "grip-strength-section",
       "props": {
         "content": [
