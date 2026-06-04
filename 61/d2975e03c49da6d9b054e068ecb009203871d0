@@ -1,0 +1,33 @@
+app/utils/routes.ts
+  s_01972f06b77f96::t_2f5af5c1be340a 11
+  s_01972f06b77f96::t_727f4ac6d28723 70
+app/types/routes.ts
+  s_01972f06b77f96::t_42ad9aa4a91f50 11
+app/content/pages/thoughts/index.ts
+  s_01972f06b77f96::t_3a3025d8ee99b2 7
+app/content/pages/thoughts/BRING_YOUR_OWN_BRAIN.json
+  s_01972f06b77f96::t_f2f309ca85f5fe 317,325,333,341
+  s_01972f06b77f96::t_4f09cfae348f33 1-15,18-24,26,31-81,86-136,141-248,250-316,318-324,326-332,334-340,342-350
+  s_01972f06b77f96::t_9236f787d519b0 82-85,137-140
+  s_01972f06b77f96::t_69126836392648 249
+  s_01972f06b77f96::t_37744ced64e717 16-17,25,27-30
+app/content/pages/THOUGHTS_PAGE.json
+  s_01972f06b77f96::t_37744ced64e717 50,52-55
+  s_01972f06b77f96::t_9160357ffc09dd 18-49,51,56-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "61d2975e03c49da6d9b054e068ecb009203871d0",
+  "prompts": {},
+  "sessions": {
+    "s_01972f06b77f96": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5ee1a2f0-a185-44ad-a74c-c74b356e7e5f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
