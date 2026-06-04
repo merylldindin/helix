@@ -1,0 +1,350 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-06-03",
+      "datePublished": "2026-06-03",
+      "keywords": "MCP server, Model Context Protocol, AI orchestrator, Claude Code, OAuth 2.1, PII redaction, internal AI agent, agent observability, Voltaire"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/bring-your-own-brain/",
+    "title": "Bring Your Own Brain | Meryll Dindin",
+    "description": "Voltaire's newest surface is an MCP server. What it takes to expose an internal AI orchestrator to Claude Code without giving up PII control.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/bring-your-own-brain-20260603T184547.webp",
+    "thumbnailAlt": "Minimalist black and white line drawing of a brain connecting through a cable into a grid of rectangles"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Two thin lines converging through a geometric gate into an ordered grid of squares",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/bring-your-own-brain-20260603T184725.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/bring-your-own-brain-20260603T184725-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/bring-your-own-brain-20260603T184725-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/bring-your-own-brain-20260603T184725-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Bring Your Own Brain",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published June 3, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Every question Voltaire has answered until now flowed through the same pipeline. An employee types into Slack, the planner selects context, our model reasons, tools fire, and the answer comes back sourced and redacted. The transport varied, but the brain at the center was always ours."
+          },
+          {
+            "type": "text",
+            "prop": "Two weeks ago I shipped a surface that breaks that assumption. Voltaire is now an MCP server, an endpoint speaking the Model Context Protocol, the standard agentic clients use to discover and call external tools. Any employee running Claude Code can connect to it over OAuth and hand their own model the keys to the company’s tools, agents, and skills. Their model does the reasoning. Voltaire serves the capabilities."
+          },
+          {
+            "type": "text",
+            "prop": "The whole series has been about building a company brain. This last article is about what happens when you let people bring their own."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "One System, Many Doors",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Voltaire already had several surfaces before this one. The Slack handler listens for mentions and DMs. Webhooks ingest events from Zendesk and other systems. Cron jobs run scheduled syncs. An experimental Google Chat integration exists because someone asked. Each surface is a transport plus an identity story, and underneath them all sits the same pipeline: identity, planner, orchestrator, redaction, audit."
+          },
+          {
+            "type": "text",
+            "prop": "The MCP surface is different in kind, not just in transport. Every other surface delivers a question to our orchestrator and waits for an answer. MCP exposes the orchestrator’s internals as primitives another agent can call directly. The triad I described in The Reasoning Loop maps onto it one to one: eighteen read-only tools, thirteen agents, twenty-three skills, each tier gated behind its own OAuth scope. A connected Claude session sees the same building blocks our own orchestrator reasons with, minus everything I decided it shouldn’t touch."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram contrasting the Slack surface, where Voltaire's model reasons, with the MCP surface, where the employee's local model reasons through the gateway",
+              "source": "https://cdn.merylldindin.com/articles/sections/bring-your-own-brain-inversion-20260603T184435.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/bring-your-own-brain-inversion-20260603T184435-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/bring-your-own-brain-inversion-20260603T184435-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/bring-your-own-brain-inversion-20260603T184435-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Easy Part Took an Afternoon",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I expected the protocol work to be the project. It wasn’t. The official Python SDK ships FastMCP, and with it a tool is a decorated function. The server mounts at /mcp on the same FastAPI app that serves everything else, speaks stateless JSON-RPC over HTTP, and deploys with the rest of the service on Cloud Run. No separate process, no new infrastructure."
+          },
+          {
+            "type": "text",
+            "prop": "The frameworks have absorbed the hard parts of speaking MCP. Session negotiation, schema generation, transport quirks: all handled. I had a working server, with real tools answering real questions from a local Claude session, in an afternoon."
+          },
+          {
+            "type": "text",
+            "prop": "That afternoon is both the promise and the trap. The protocol layer being trivial means the security layer is where all the work lives, and nothing in the framework forces you to build it. An MCP server that wraps your internal APIs with a decorator and an API key is a data exfiltration endpoint with good ergonomics."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Hard Part Took Weeks",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Authentication came first. I didn’t want shared API keys floating around laptops, so the surface implements the full OAuth 2.1 dance: dynamic client registration, PKCE so the code exchange can’t be intercepted, Google as the identity provider locked to our workspace domain. Access tokens are signed JSON web tokens that expire after fifteen minutes, paired with thirty-day refresh tokens. Reuse a refresh token that was already rotated and the whole chain revokes, the standard defense against token theft."
+          },
+          {
+            "type": "text",
+            "prop": "Identity propagates the same way it does on Slack. The verified email resolves to a role server-side, from the warehouse and a version-controlled RBAC file. Nothing the client sends can claim a role, and the dispatch layer strips any attempt."
+          },
+          {
+            "type": "text",
+            "prop": "Then the boring middle: rate limits at three layers that fail closed when the state store errors, per-tool caps that count a call before it runs so a failing call can’t refund itself, and an egress allowlist so URL-accepting tools can’t be steered at internal endpoints."
+          },
+          {
+            "type": "text",
+            "prop": "Before launch I turned the adversarial habit from The Replay Loop on the gateway itself: a fresh model instance with no investment in the design, instructed to break it. It came back with ten must-fix findings, including a race in the token exchange, reflected input in an OAuth error page, and a scope escalation path through refresh. None of them were in the protocol layer. All of them were in the parts the framework doesn’t write for you."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Diagram of the MCP dispatch pipeline showing token checks, rate caps that fail closed, execution, PII redaction on both success and error paths, and the dual audit write",
+              "source": "https://cdn.merylldindin.com/articles/sections/bring-your-own-brain-dispatch-20260603T184435.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/bring-your-own-brain-dispatch-20260603T184435-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/bring-your-own-brain-dispatch-20260603T184435-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/bring-your-own-brain-dispatch-20260603T184435-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Gets a Door and What Doesn’t",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The read side is exposed broadly. Workspace search, warehouse analytics through the SQL agent, Zendesk history, Linear roadmap, codebase search, document reads. If our orchestrator can read it on a user’s behalf, a connected Claude session can too, under the same role."
+          },
+          {
+            "type": "text",
+            "prop": "The write side is denied wholesale. No chart generation, no sheet exports, no Slack posting, no image generation. Raw SQL execution isn’t exposed either; the warehouse is only reachable through the agent that plans tables, validates queries, and strips PII columns before the model ever sees a schema. The denylist runs at dispatch, before any request-specific logic, so nothing about a particular request can argue its way around it."
+          },
+          {
+            "type": "text",
+            "prop": "The reasoning is where the blast radius lives. On the Slack surface, I control the model, the prompt, and the loop. On the MCP surface, the calling agent runs on hardware I will never see, with instructions I will never read. A misbehaving local session should at worst read something it was already allowed to read. It should never be able to act on the company’s behalf."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The PII Engine Doesn’t Move",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The strongest temptation, reading MCP tutorials, is to expose your data sources directly. Wrap the warehouse client, wrap the document store, let the connected model figure it out. Every tutorial does this because every tutorial assumes the data is harmless."
+          },
+          {
+            "type": "text",
+            "prop": "Ours isn’t. Everything I wrote in PII by Design would have been bypassed by a single naive tool. So the MCP dispatch terminates in the same redaction engine as every other surface: outputs are redacted before they’re returned and before they’re logged, and when a tool throws, the exception message gets the same treatment, because errors can carry data just as well as answers."
+          },
+          {
+            "type": "text",
+            "prop": "The one nuance is the external perimeter. Tools that only touch the public web, like webpage fetching or research, return their content untouched, since redacting a public article protects nobody. The rule is mechanical: any tool that reads internal data is inside the perimeter, no exceptions, and the rule is enforced in code review, not at runtime discretion."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Watching a Brain You Don’t Control",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The Replay Loop described how every Voltaire turn is fully recoverable: the context the model saw, the tools it called, the answer it gave. That property dies at the MCP boundary. The reasoning now happens in a session on someone’s laptop, and I’ll never see the prompt that triggered a tool call, only the call itself."
+          },
+          {
+            "type": "text",
+            "prop": "The response is to log the boundary exhaustively. Every dispatch writes two records. One lands in the same turns table as every other surface, tagged as MCP traffic, so the existing dashboards and replay tooling keep working. The other is a dedicated audit table: who called, which client, which scopes were granted versus used, the token’s unique identifier, latency, and an outcome taxonomy that separates errors from rate limits from authorization failures, which is how I can tell an attack from a clumsy query without reading anyone’s prompt."
+          },
+          {
+            "type": "text",
+            "prop": "Arguments are hashed, not stored. The prompts now belong to someone else’s session, and warehousing them would turn an audit trail into a surveillance log. A hash is enough to detect repetition and abuse."
+          },
+          {
+            "type": "text",
+            "prop": "What I gave up is replay. I can’t reconstruct a connected session’s turn the way I can for Slack, and I accepted that trade: the boundary audit tells me what the company’s systems did, which is the part I’m accountable for."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "A Better Prompter Than You",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "On multi-step questions, the answers coming back through MCP are often better than the ones our own pipeline produces. I didn’t expect that."
+          },
+          {
+            "type": "text",
+            "prop": "Part of it is the model. A connected session runs whatever frontier model the employee’s Claude seat carries, where Voltaire’s server-side pipeline is tuned for cost. But most of it is the prompter. Claude Code phrases warehouse questions more precisely than people do. It retries failed calls with reformulations instead of giving up. It chains a ticket search into a codebase lookup into a warehouse query without being told the order. The error handling I built into every agent gets exercised by a caller that actually reads the errors."
+          },
+          {
+            "type": "text",
+            "prop": "And the local session sees things Voltaire never will. An engineer debugging a production issue can hold their working tree, the relevant Zendesk tickets, and a warehouse query about affected users in one context window. That’s the connect-the-dots work that used to require three tabs and an analyst, and it now happens inside the tool where the fix gets written."
+          },
+          {
+            "type": "text",
+            "prop": "The economics follow. Every reasoning token on the Slack surface is a token I pay for server-side. On the MCP surface, reasoning runs on Claude seats the company already pays for, and Voltaire only spends compute when a tool actually executes. The marginal cost of the reasoning dropped to near zero on our side, and the brain doing it got smarter in the same move."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Brain Was Always Replaceable",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The first article in this series argued that the boring infrastructure is the entire moat. Voltaire took two and a half weeks to build; the data underneath took two years. Nine articles later, the architecture has caught up with the argument. The orchestrator turned out to be the first client of something more durable: a governed capability layer with identity, redaction, rate caps, and audit at every door."
+          },
+          {
+            "type": "text",
+            "prop": "Swap the brain and the system still works. Our model reasons over it on Slack. An employee’s model reasons over it from a terminal. Whatever ships next year will reason over it from somewhere I haven’t thought about, and the safety rails won’t care."
+          },
+          {
+            "type": "text",
+            "prop": "I named the system after a thinker. The durable part turned out to be everything but the thinking."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Bring Your Own Brain'' by Meryll Dindin 👀",
+              "url": "/thoughts/bring-your-own-brain/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://modelcontextprotocol.io/",
+              "title": "Model Context Protocol",
+              "description": "The open standard agentic clients use to discover and call external tools and resources."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://github.com/modelcontextprotocol/python-sdk",
+              "title": "MCP Python SDK",
+              "description": "The official Python SDK, including FastMCP, used to build Voltaire's MCP surface."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/",
+              "title": "OAuth 2.1 Authorization Framework",
+              "description": "The consolidated OAuth draft mandating PKCE and modern security defaults."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://datatracker.ietf.org/doc/rfc9728/",
+              "title": "RFC 9728: OAuth 2.0 Protected Resource Metadata",
+              "description": "The discovery mechanism MCP clients use to locate a server's authorization endpoints."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://datatracker.ietf.org/doc/rfc9700/",
+              "title": "RFC 9700: Best Current Practice for OAuth 2.0 Security",
+              "description": "Security guidance behind refresh token rotation and reuse detection."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://code.claude.com/docs/en/mcp",
+              "title": "Claude Code: Connect to MCP Servers",
+              "description": "How Claude Code registers and authenticates against remote MCP servers."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/company-brain/",
+              "title": "One Brain to Query",
+              "description": "The first article in this series: why the data foundation is the moat."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/reasoning-loop/",
+              "title": "The Reasoning Loop",
+              "description": "The pipeline behind Voltaire and the tools, agents, skills triad."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/pii-by-design/",
+              "title": "PII by Design",
+              "description": "The six enforcement layers that keep sensitive data out of model outputs."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/the-replay-loop/",
+              "title": "The Replay Loop",
+              "description": "The observability layer: production signals, local replay, adversarial review."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -8,6 +8,7 @@ export const RoutePath = {
   BIOLOGICAL_AGE: "/thoughts/biological-age/",
   BODY_OF_EVIDENCE: "/thoughts/body-of-evidence/",
   BOOK_SUGGESTIONS: "/suggestions/books/",
+  BRING_YOUR_OWN_BRAIN: "/thoughts/bring-your-own-brain/",
   CALASTER: "/ventures/calaster/",
   COMPANY_BRAIN: "/thoughts/company-brain/",
   DILLYGENCE: "/ventures/dillygence/",
