@@ -25,6 +25,7 @@ export const RoutePath = {
   LEARNS_FROM_ITSELF: "/thoughts/learns-from-itself/",
   MEASURING_STUDENT_OUTCOMES: "/thoughts/measuring-student-outcomes/",
   MENTIONS: "/mentions/",
+  MIND_THE_BASELINE: "/thoughts/mind-the-baseline/",
   MISSIONS: "/missions/",
   MODELS_HUMAN_COGNITION: "/thoughts/models-human-cognition/",
   MY_AI_PHARMACIST: "/thoughts/my-ai-pharmacist/",

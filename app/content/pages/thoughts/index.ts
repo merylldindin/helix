@@ -16,6 +16,7 @@ export { default as KNOWLEDGE_GRAPH } from "./KNOWLEDGE_GRAPH.json";
 export { default as LEARNING_DIFFERENCES } from "./LEARNING_DIFFERENCES.json";
 export { default as LEARNS_FROM_ITSELF } from "./LEARNS_FROM_ITSELF.json";
 export { default as MEASURING_STUDENT_OUTCOMES } from "./MEASURING_STUDENT_OUTCOMES.json";
+export { default as MIND_THE_BASELINE } from "./MIND_THE_BASELINE.json";
 export { default as MODELS_HUMAN_COGNITION } from "./MODELS_HUMAN_COGNITION.json";
 export { default as MY_AI_PHARMACIST } from "./MY_AI_PHARMACIST.json";
 export { default as PII_BY_DESIGN } from "./PII_BY_DESIGN.json";

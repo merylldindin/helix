@@ -1,0 +1,282 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-06-09",
+      "datePublished": "2026-06-09",
+      "keywords": "cognitive health, brain baseline, cognitive monitoring, longevity, intra-individual change, digital cognitive measurement, cognitive trajectory, brain health"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/mind-the-baseline/",
+    "title": "Mind the Baseline | Meryll Dindin",
+    "description": "I track sleep, HRV, VO2 max, and over a hundred biomarkers. For the one organ I most identify with, my brain, I have no baseline at all.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/mind-the-baseline-20260609T071305.webp",
+    "thumbnailAlt": "A minimalist black and white brain rendered as a single measurement gauge with a baseline trend line beneath it"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "A horizontal baseline trace running steady then dipping, set against abstract data points in minimalist black and white",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/mind-the-baseline-20260609T071310.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/mind-the-baseline-20260609T071310-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/mind-the-baseline-20260609T071310-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/mind-the-baseline-20260609T071310-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Mind the Baseline",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published June 9, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I know my resting heart rate to the beat. It sits around 48. I know my VO2 max (53.2), my HRV trend over the last year, my sleep architecture broken into stages, and over a hundred blood biomarkers tested quarterly. I have spreadsheets on my metabolism. I have a four-year trajectory on how fast I am biologically aging."
+          },
+          {
+            "type": "text",
+            "prop": "For the organ I most identify with, the one running every one of those measurements, I have nothing. No baseline. No trend. No idea what my normal looks like or whether I have drifted from it."
+          },
+          {
+            "type": "text",
+            "prop": "That is a strange place to have landed. I optimize the inputs to cognition obsessively. Sleep, exercise, glucose, inflammation, stress. All of it is, in the end, in service of thinking clearly and staying sharp for as long as possible. And the output, the thing all that machinery is supposed to protect, is the one variable I never actually measure."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Organ You Don’t Measure",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The body got quantified first because the body was easy. A wearable reads your heart rate off your wrist. A finger prick gives you glucose. A scan gives you body composition in seven minutes. The signals are physical, continuous, and cheap to capture, so a whole industry grew up around them."
+          },
+          {
+            "type": "text",
+            "prop": "Cognition resisted. You cannot read working memory off a sensor. No passive stream has earned that trust yet for attention or processing speed. Measuring them means doing something, a short task with a right and wrong answer, repeated under controlled conditions. That friction is why the quantified-self movement instrumented everything below the neck and stopped at the skull."
+          },
+          {
+            "type": "text",
+            "prop": "So we ended up with a blind spot exactly where it matters most. Most people, myself included until recently, can tell you their resting heart rate but have no language for whether their mind is sharper or duller than it was a year ago. We notice the bad days. We have no instrument for the trend."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Smarter Is the Wrong Goal",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The obvious objection is that people have tried to measure and improve the brain for years, and it became a punchline. Lumosity. Brain games. “Train your way to a higher IQ.” The Federal Trade Commission fined Lumosity in 2016 over exactly those claims, and the science underneath them never held up. You get reliably better at the game you practice. That improvement does not transfer to anything that matters in your actual life. Cognitive scientists have spent two decades documenting that gap between being better at the test and being better at cognition."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Bar chart of working-memory training effect sizes from Melby-Lervåg, Redick and Hulme (2016): large gains on the trained task fall to near zero for far transfer when measured against active controls",
+              "source": "https://cdn.merylldindin.com/articles/sections/mind-the-baseline-transfer-20260609T102642.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/mind-the-baseline-transfer-20260609T102642-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/mind-the-baseline-transfer-20260609T102642-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/mind-the-baseline-transfer-20260609T102642-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I am not interested in getting smarter, and I think “get smarter” is a dead end both scientifically and honestly. Intelligence as a single number is a contested construct built from population statistics, not a dial you turn on yourself. Chasing it is how you end up with a product that gets sued."
+          },
+          {
+            "type": "text",
+            "prop": "The honest target is different. It is your own function, tracked over time, so you can watch it move."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Compared to Your Own Normal",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "This is the reframe the whole idea rests on. A baseline is not a grade. It is your personal normal, measured well enough that you can tell signal from noise, and revisited often enough that change shows up as a trend instead of a single alarming reading."
+          },
+          {
+            "type": "text",
+            "prop": "It is the same logic that makes the rest of my tracking useful. My VO2 max at 53.2 is not interesting because it beats some population table. It is interesting because if it drops, I will see the drop against my own history and know to act. A blood marker out of range told me nothing until I had four quarters of my own readings to compare it against, at which point a scary number turned out to be dehydration, not disease. Trajectory carries the meaning. The absolute number rarely does."
+          },
+          {
+            "type": "text",
+            "prop": "Cognition is the same, only more so. A high performer sliding against their own baseline can still land squarely inside the “normal” band on a population test, and that normal score hides the only thing worth knowing. Compared to the average, you look fine. Compared to your own normal, you are down. The second comparison is the one that tells you something."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Line chart illustrating a personal cognitive trajectory declining against its own baseline while staying inside the population normal range",
+              "source": "https://cdn.merylldindin.com/articles/sections/mind-the-baseline-baseline-20260609T102642.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/mind-the-baseline-baseline-20260609T102642-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/mind-the-baseline-baseline-20260609T102642-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/mind-the-baseline-baseline-20260609T102642-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The catch is that doing this honestly is hard. You have to separate real change from a bad night’s sleep, from the practice effect of having seen the task before, from the simple statistical pull of an unusual day back toward your average. Get that wrong and you are selling noise as insight, which is most of what the wellness industry does. Get it right and you have something genuinely useful: an early, quiet signal that your own normal has shifted."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "It Runs on a Phone Now",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "For a long time the answer to “why don’t you measure this” was that you couldn’t, not at home, not without a clinic and a neuropsychologist. That stopped being true."
+          },
+          {
+            "type": "text",
+            "prop": "In 2025, Apple and Biogen published the results of a study that ran on ordinary iPhones and Apple Watches across more than 23,000 adults for up to two years. People stuck with it. Attrition over the first year ran around ten percent, the kind of number that usually makes me want to see the appendix. From that data they built a model that flagged early cognitive impairment with real accuracy."
+          },
+          {
+            "type": "text",
+            "prop": "The accuracy came from the active tasks people did on the phone, the short interactive exercises, combined with brief check-ins. Not from the passive sensor streams. The watch on your wrist, for all its data, was context. The signal came from sitting down and actually doing the task."
+          },
+          {
+            "type": "text",
+            "prop": "That is the whole architecture in one finding. The phone is enough hardware. The measurement still has to be active. And done at that scale, with that adherence, it works."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Honesty Over Hype",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Knowing what this is requires being just as clear about what it is not. It is not a dementia test. It is not a diagnosis, and anyone selling a consumer app as one is over their skis, legally and medically."
+          },
+          {
+            "type": "text",
+            "prop": "What it is, is a baseline and a trend for a capacity you currently fly blind on. It gives you what a resting heart rate gives you for your cardiovascular system: not a verdict, a gauge you can read."
+          },
+          {
+            "type": "text",
+            "prop": "I would rather undersell that and have it be true than oversell it and join the graveyard of brain products that promised cognitive gains they could not deliver. The honest version is smaller and far more durable."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Last Pillar",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I have written before about the pillars of staying healthy across a long life: cardiorespiratory fitness, strength, metabolic health, sleep. Each one I can put a number on and watch move over years."
+          },
+          {
+            "type": "text",
+            "prop": "Cognition belongs on that list, and it is the one I have been measuring least, which is backwards, because it is the capacity I would least want to lose. A long life with a sharp mind is the entire point. A long life without one is the outcome everyone is quietly afraid of."
+          },
+          {
+            "type": "text",
+            "prop": "So I am going to start treating my cognition the way I already treat my heart and my metabolism. Establish a baseline, watch the trajectory, pay attention to what moves it, act on the parts I control. I am doing it to know where I stand, not to climb some score."
+          },
+          {
+            "type": "text",
+            "prop": "You cannot defend what you refuse to measure. For everything below the neck, I already live by that. It is time I extended the same honesty to my mind."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Mind the Baseline'' by Meryll Dindin 👀",
+              "url": "/thoughts/mind-the-baseline/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s41591-024-03475-9",
+              "title": "Apple & Biogen (2025). Smartwatch- and smartphone-based remote assessment of brain health.",
+              "description": "Decentralized study of 23,004 adults showing active cognitive tasks, not passive sensors, drove MCI detection (AUROC 0.85). Nature Medicine."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://journals.sagepub.com/doi/abs/10.1177/1529100616661983",
+              "title": "Simons, D.J. et al. (2016). Do “Brain-Training” Programs Work?",
+              "description": "Comprehensive review finding improvement on trained tasks but little credible evidence of transfer to real-world cognition. Psychological Science in the Public Interest."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://journals.sagepub.com/doi/10.1177/1745691616635612",
+              "title": "Melby-Lervåg, M., Redick, T.S. & Hulme, C. (2016). Working Memory Training Does Not Improve Performance on Measures of Intelligence or Other Measures of Far Transfer.",
+              "description": "Meta-analysis showing trained-task gains collapse to near zero for far transfer once active controls are used. Perspectives on Psychological Science."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.ftc.gov/news-events/news/press-releases/2016/01/lumosity-pay-2-million-settle-ftc-deceptive-advertising-charges-its-brain-training-program",
+              "title": "FTC (2016). Lumosity to Pay $2 Million to Settle Deceptive Advertising Charges.",
+              "description": "Federal Trade Commission action against Lumos Labs over unfounded cognitive-enhancement and decline-prevention claims."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nia.nih.gov/health/brain-health/cognitive-health-and-older-adults",
+              "title": "National Institute on Aging. Cognitive Health and Older Adults.",
+              "description": "Frames cognitive health as the ability to clearly think, learn, and remember, a function to maintain rather than a fixed trait."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/body-of-evidence/",
+              "title": "Dindin, M. (2026). Body of Evidence.",
+              "description": "How I learned which biomarkers matter and which are noise across four years of quarterly testing."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
