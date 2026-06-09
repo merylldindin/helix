@@ -1,0 +1,34 @@
+app/content/pages/THOUGHTS_PAGE.json
+  s_b7b09b8e071052::t_bd321124e5c7a9 18-51,56-58
+  s_b7b09b8e071052::t_ebc20b524593f6 52-55
+app/content/pages/thoughts/MIND_THE_BASELINE.json
+  s_b7b09b8e071052::t_6bfc478134eeda 16
+  s_b7b09b8e071052::t_212f0698f2ad37 133-143
+  s_b7b09b8e071052::t_1ee2cb66cbc1c5 27-30
+  s_b7b09b8e071052::t_202e2363bae364 94-104
+  s_b7b09b8e071052::t_516c94180dedcd 1-15,17-26,31-93,105-132,144-248,257-282
+  s_b7b09b8e071052::t_c80b32b235151f 249-256
+app/content/pages/thoughts/index.ts
+  s_b7b09b8e071052::t_ad842a6f608e9b 19
+app/types/routes.ts
+  s_b7b09b8e071052::t_051f08a7bd5420 28
+app/utils/routes.ts
+  s_b7b09b8e071052::t_084fc8fb5df62f 28
+  s_b7b09b8e071052::t_76efdf740e22d1 88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "6fb6638025e22703039e5b8afa38c5fd6cd3c3c7",
+  "prompts": {},
+  "sessions": {
+    "s_b7b09b8e071052": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ef53fc2e-bb74-40da-92df-559302f95bcd",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
