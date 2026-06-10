@@ -124,16 +124,22 @@ class SchemaValidator:
 
         # Check for key social platforms
         same_as_lower = [s.lower() for s in same_as]
-        key_platforms = ["linkedin", "github", "twitter"]
-        for platform in key_platforms:
-            if not any(platform in url for url in same_as_lower):
+        key_platforms = {
+            "LinkedIn": ["linkedin"],
+            "GitHub": ["github"],
+            "Twitter": ["twitter", "x.com"],
+        }
+        for platform, aliases in key_platforms.items():
+            if not any(
+                alias in url for url in same_as_lower for alias in aliases
+            ):
                 issues.append(
                     SEOIssue(
                         severity=IssueSeverity.MEDIUM,
                         category=IssueCategory.SCHEMA,
                         page="default.json",
-                        message=f"Missing {platform.title()} in sameAs",
-                        recommendation=f"Add {platform.title()} profile URL to sameAs array",
+                        message=f"Missing {platform} in sameAs",
+                        recommendation=f"Add {platform} profile URL to sameAs array",
                     )
                 )
 
