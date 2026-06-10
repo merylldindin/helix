@@ -1,0 +1,33 @@
+app/content/pages/thoughts/BIOLOGICAL_AGE.json
+  s_703e6ed88a8cb9::t_6c36d758b000b6 14
+app/content/pages/thoughts/AI_LITERACY_MANDATE.json
+  s_703e6ed88a8cb9::t_3658b40aaa1e29 14
+.claude/skills/review-seo/scripts/validators/schema_validator.py
+  s_703e6ed88a8cb9::t_e2d6174e8aa528 127-135,141-142
+app/content/pages/ventures/DILLYGENCE_PAGE.json
+  s_703e6ed88a8cb9::t_16f10e05ac09e1 13
+app/content/pages/thoughts/GRIP_STRENGTH.json
+  s_703e6ed88a8cb9::t_862be5c21316d0 14
+app/content/pages/thoughts/PII_BY_DESIGN.json
+  s_703e6ed88a8cb9::t_0a7ec88b2fe303 13
+app/content/pages/thoughts/SQL_AGENT.json
+  s_703e6ed88a8cb9::t_436551f5f99588 13
+app/content/pages/ventures/PARALLEL_PAGE.json
+  s_703e6ed88a8cb9::t_f3ce39439f4ec5 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "1446261b731bc4a5ac66923271e5fcfdaab53b2c",
+  "prompts": {},
+  "sessions": {
+    "s_703e6ed88a8cb9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78294dd4-d9d3-499d-8925-024a80317131",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
