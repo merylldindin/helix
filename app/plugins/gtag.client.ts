@@ -1,4 +1,4 @@
-import { createGtag } from "vue-gtag";
+import { createGtag, pageview } from "vue-gtag";
 
 import { Environment } from "@/types";
 
@@ -11,16 +11,13 @@ export default defineNuxtPlugin((nuxtApp) => {
     return;
   }
 
+  nuxtApp.vueApp.use(createGtag({ tagId: "G-YJHQMGJVMX" }));
+
   const router = useRouter();
 
-  nuxtApp.vueApp.use(
-    createGtag({
-      pageTracker: {
-        router,
-        sendPageView: true,
-        useRouteFullPath: true,
-      },
-      tagId: "G-YJHQMGJVMX",
-    })
-  );
+  router.afterEach((to) => {
+    setTimeout(() => {
+      pageview({ page_path: to.fullPath, page_title: document.title });
+    }, 100);
+  });
 });
