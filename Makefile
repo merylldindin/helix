@@ -26,7 +26,7 @@ serve: ## Serve the project
 	@yarn serve
 
 deploy: ## Deploy the project
-	@uv run sirtuin cloudfront-deploy .cloudfront -p personal
+	@uv run --group devops sirtuin cloudfront-deploy .cloudfront -p personal
 
 invalidate-fonts: ## Invalidate fonts
 	@aws cloudfront create-invalidation --distribution-id E3SZTVEZV1G0WQ --paths '/fonts/*' --region eu-west-3 --profile personal
