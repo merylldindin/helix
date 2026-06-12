@@ -3,7 +3,7 @@ name: create-article
 description: Creates polished blog articles for the /thoughts/ section from raw sources (PDFs, LinkedIn posts, screenshots). Handles drafting, fact-checking, humanizing, editorial review, images, and full site integration.
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash, Agent, WebFetch, Skill
 user-invocable: true
-argument-hint: [topic or source description]
+argument-hint: "[topic or source description]"
 ---
 
 # Create Article
