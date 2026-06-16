@@ -125,8 +125,7 @@ const zoomOut = (): void => {
       v-if="isZoomEnabled"
       v-model="isZoomDialogOpen"
       :class="imageClasses"
-      max-width="95dvw"
-      width="95dvw"
+      content-class="custom-image-zoom-content"
     >
       <div class="custom-image-zoom-dialog">
         <div class="custom-image-zoom-toolbar">
@@ -185,6 +184,11 @@ const zoomOut = (): void => {
       outline-offset: 2px;
     }
   }
+}
+
+.custom-image-zoom-content {
+  width: 95dvw;
+  max-width: 95dvw;
 }
 
 .custom-image-zoom-dialog {
