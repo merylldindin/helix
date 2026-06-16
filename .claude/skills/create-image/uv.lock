@@ -25,30 +25,30 @@ wheels = [
 
 [[package]]
 name = "boto3"
-version = "1.43.19"
+version = "1.43.30"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "botocore" },
     { name = "jmespath" },
     { name = "s3transfer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/97/da/229987ebb70daf5928f959aa8f4dd77dfcf425e6b0e7ff03aaef61ccc333/boto3-1.43.19.tar.gz", hash = "sha256:8b84704719dd3960ac12a8f37d9ff5adb853715baa9742f84fdbe2de0305c4cb", size = 113225, upload-time = "2026-06-01T19:33:06.514Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f7/47/2db3e7c1317019d800a1b4181059656842b8aec69ad578ac01a73eba3b89/boto3-1.43.30.tar.gz", hash = "sha256:6b1ee360f363a457f67a8f5702f522043d8a32d67a97c362ad12075d8b5b531e", size = 113154, upload-time = "2026-06-15T20:32:58.123Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/be/cc/77097be39d83068f864767b710cee0d8f9cd61331de816dd2675a596c328/boto3-1.43.19-py3-none-any.whl", hash = "sha256:ec6825193b75fbb6bfbf12181e4960d00ad2f404343586765394ce620e63783c", size = 140535, upload-time = "2026-06-01T19:33:03.758Z" },
+    { url = "https://files.pythonhosted.org/packages/31/61/4031fd64c458ab7e01879e6ac8b42e256e37139df551315beafe04e74b57/boto3-1.43.30-py3-none-any.whl", hash = "sha256:89e982463d94773136ccf69be77cccd54ff1ce351a6aadd1d3437fcb693681b5", size = 140534, upload-time = "2026-06-15T20:32:55.646Z" },
 ]
 
 [[package]]
 name = "botocore"
-version = "1.43.19"
+version = "1.43.30"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jmespath" },
     { name = "python-dateutil" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e2/a7/298986789785b74a954e2347114993be7e6b070417159125a6865f2687b6/botocore-1.43.19.tar.gz", hash = "sha256:18ac2fdd76c89b940707eb10493ff58678adad337d03215caec2d408ccd43cc0", size = 15435441, upload-time = "2026-06-01T19:32:53.126Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/fb/dd/6df8586de6cc036eec2e491b1a65c489c43d9722929aef407c20b7323329/botocore-1.43.30.tar.gz", hash = "sha256:19ed560cb35ae43bf010d37da429a553c07063bf7efea0f2cb53be8a78d3e3d5", size = 15520608, upload-time = "2026-06-15T20:32:45.439Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/99/75/fe4d45bdd08afd66f3d5273db58f3d8a29365e52ce3a0851f7f5e5900943/botocore-1.43.19-py3-none-any.whl", hash = "sha256:99dbdccbf748974750601e805cecc9362a85d11fee89d6d58cd3f4ff302e6ff9", size = 15117709, upload-time = "2026-06-01T19:32:47.871Z" },
+    { url = "https://files.pythonhosted.org/packages/ce/b0/9343b5007ad24363c63455facfb0859e9765cf245eebffee8233056b9696/botocore-1.43.30-py3-none-any.whl", hash = "sha256:26b1dded84d89b396180916f56900bd2ab1c0d545a66d1d2c3eeb40f772935b2", size = 15205423, upload-time = "2026-06-15T20:32:40.827Z" },
 ]
 
 [[package]]
@@ -176,7 +176,7 @@ requests = [
 
 [[package]]
 name = "google-genai"
-version = "2.7.0"
+version = "2.8.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -190,9 +190,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a7/7b/6eb3b3d545b6bb4c374acba1ccf91b0f33b605e551536a6243cfcef2f07f/google_genai-2.7.0.tar.gz", hash = "sha256:3c6f32f5ced9877ededd1b384b5e5b7f09c20046ec3390b662b16d8cd1882ac5", size = 555853, upload-time = "2026-05-28T15:39:24.58Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5b/52/0244e310812f3063d09d60b30ae29ab7df9343bd005744cd5eeaa6ba39b4/google_genai-2.8.0.tar.gz", hash = "sha256:37a9b3cb127d763e7f4ca47452ae3562c87728773bd1b149f7b559c239da2bc1", size = 564955, upload-time = "2026-06-03T22:55:38.397Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3c/dd/7a8be39e9d698e80e9db796514efbc6083dbd787bdb9a101e8ba47248e5e/google_genai-2.7.0-py3-none-any.whl", hash = "sha256:21cac381e09a869151706aba797b6a4f96cfe92c484e13204d092caee7ff11cb", size = 822545, upload-time = "2026-05-28T15:39:22.907Z" },
+    { url = "https://files.pythonhosted.org/packages/e2/de/747ad1aa49e902da9a4699081c282a1ed8ceed3b4d295fd99a6d286e09e4/google_genai-2.8.0-py3-none-any.whl", hash = "sha256:4da0a223a100f4b37f609a68b835e3326ab0fa313314dc0fd9d34e76ee293844", size = 832497, upload-time = "2026-06-03T22:55:36.598Z" },
 ]
 
 [[package]]
@@ -425,8 +425,8 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "boto3", specifier = "==1.43.19" },
-    { name = "google-genai", specifier = "==2.7.0" },
+    { name = "boto3", specifier = "==1.43.30" },
+    { name = "google-genai", specifier = "==2.8.0" },
     { name = "pillow", specifier = "==12.2.0" },
     { name = "pydantic", specifier = "==2.13.4" },
     { name = "python-dotenv", specifier = "==1.2.2" },
