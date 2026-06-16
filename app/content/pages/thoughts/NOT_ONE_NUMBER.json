@@ -1,0 +1,274 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-06-15",
+      "datePublished": "2026-06-15",
+      "keywords": "cognition, intelligence, psychometrics, working memory, processing speed, cognitive function, performance health, NIH Toolbox, g factor, neuropsychology"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/not-one-number/",
+    "title": "Not One Number | Meryll Dindin",
+    "description": "Nobody has a single heart number. You track a panel of functions. Cognition works the same way, and “intelligence” is the wrong unit.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/not-one-number-20260615T221422.webp",
+    "thumbnailAlt": "A minimalist black and white brain split into separate labeled gauges, each reading a different cognitive function"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "A row of distinct measurement gauges in minimalist black and white, each tracking a different function rather than a single combined score",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/not-one-number-20260616T080502.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/not-one-number-20260616T080502-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/not-one-number-20260616T080502-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/not-one-number-20260616T080502-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Not One Number",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published June 15, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "You do not have a heart number. You have a resting heart rate, a VO2 max, a blood pressure, a heart rate variability trend. Each one is a different function, each moves on its own schedule, and a cardiologist would look at you strangely if you asked which single figure summed up your heart. We decomposed cardiovascular health into a panel of measurements decades ago, and nobody misses the single score, because the single score never existed."
+          },
+          {
+            "type": "text",
+            "prop": "We never did that for the mind. We still reach for one word, intelligence, and one number behind it, as if thinking were a single quantity you have more or less of. I argued in an earlier piece that you should measure your cognition the way you measure your heart, against your own baseline rather than a population table. This is the harder half of that argument. The thing you are measuring is not one thing. The moment you try to measure it honestly, it comes apart into functions, and the single number you were reaching for turns out to be a category error."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Two side-by-side panels. The body’s panel lists resting heart rate, VO2 max, HRV, and blood pressure. The mind’s panel lists working memory, processing speed, attention, episodic memory, and language. Each item is shown as its own separate gauge.",
+              "source": "https://cdn.merylldindin.com/articles/sections/not-one-number-panels-20260615T223922.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/not-one-number-panels-20260615T223922-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/not-one-number-panels-20260615T223922-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/not-one-number-panels-20260615T223922-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Intelligence Comes Apart Under Measurement",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "There is a real statistical object under the word. If you give a large group of people many different cognitive tasks, the scores all correlate positively. People who do well on one tend to do well on others. That pattern, the positive manifold, is about as replicated as anything in psychology, and the single factor you can extract from it is what researchers call g. So the number is not made up."
+          },
+          {
+            "type": "text",
+            "prop": "But g is a summary of variance across a population, not a quantity sitting in your skull. It is bookkeeping, not biology. And the tell is that you can reproduce the whole pattern without any single underlying ability at all. Models like mutualism (van der Maas et al.) and process overlap theory (Kovacs and Conway) build the positive manifold out of many distinct processes that share parts and reinforce each other over development, with no master dial anywhere in the system. The correlation is real. The single thing it seems to point to may not be there. Which means the functions were the real unit all along. The one word just hid them."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Clinicians Already Know This",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "This is how the field already works when it gets serious. A real cognitive assessment does not hand you a number. The WISC-V, the standard children’s battery, returns five separate index scores: verbal comprehension, visual-spatial ability, fluid reasoning, working memory, and processing speed. The NIH Toolbox, the federally funded instrument built to standardize this, splits cognition into six functional subdomains: executive function, episodic memory, language, working memory, processing speed, and attention."
+          },
+          {
+            "type": "text",
+            "prop": "A psychologist can roll those up into a composite when a single figure is administratively convenient. But the composite is the summary, not the substance. The substance is the profile, and a flat profile and a jagged one can hide behind the same overall score while meaning completely different things. The single IQ figure that lives in public imagination is a shorthand the field itself moved past a long time ago."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Two bar charts. Reader A has a flat profile across five cognitive functions; Reader B has a jagged profile with the same functions high and low. Both average to the same composite score, drawn as a dashed line.",
+              "source": "https://cdn.merylldindin.com/articles/sections/not-one-number-profiles-20260615T223922.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/not-one-number-profiles-20260615T223922-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/not-one-number-profiles-20260615T223922-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/not-one-number-profiles-20260615T223922-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "I Watch This Every Day",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I watch this play out constantly in special education, where the whole apparatus assumes the mind is plural, because it has to."
+          },
+          {
+            "type": "text",
+            "prop": "Federal eligibility for special education runs through the Individuals with Disabilities Education Act, and it does not turn on a score. It turns on three independent questions: whether a qualifying disability exists, whether it adversely affects educational performance, and whether the student needs specially designed instruction. A high IQ does not close the door, and a low one does not open it. The single number is not even the deciding input."
+          },
+          {
+            "type": "text",
+            "prop": "Dyslexia makes the point sharper. It reads like one condition, and it is not. It is a profile across separable skills, phonological processing, orthographic processing, rapid naming, reading fluency, and the International Dyslexia Association’s revised 2025 definition says as much, that the underlying difficulties are common but not universal. Bruce Pennington’s multiple-deficit model has been saying it in the research for years. Two students carry the same label and need close to opposite support, because the label names a category, not a mechanism. You cannot help either of them with a number. You help them by knowing which function is the one that broke."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "“Just Get Smarter” Was Always the Wrong Move",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I have written before about why the enhancement promise collapsed, and I will not relitigate it here. The deeper reason it failed is the one this piece is about. There is no single dial, so there was never anything to turn up. You can move specific functions, some of them, sometimes, by specific means. You cannot raise “intelligence,” because the word does not name a thing you can take hold of. “Get smarter” was selling a lever the wiring does not have."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Brain Has No Intelligence Spot",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "If you went looking inside the head for the seat of intelligence, you would not find it. Cognition runs on distributed networks that span the whole brain, and the same regions light up for tasks we would never file under the same heading. This is why “scientists locate the intelligence region” headlines are almost always wrong. The logic they rest on, reading the mental process backward from which area activated, is a known fallacy, because most regions do many jobs."
+          },
+          {
+            "type": "text",
+            "prop": "The studies behind those confident claims are shakier than they look, which is the same humility from the other side. In 2022, Marek et al. showed in Nature that the work linking brain measurements to behavior mostly used samples far too small to trust, and that a stable association takes thousands of subjects, not the couple dozen that were standard. Much of that certainty was noise. What survives the correction is modest: cognition is plural, distributed, and hard to measure, and anyone claiming otherwise is ahead of the evidence."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Measurement Is Going Plural Too",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Measurement is moving in the same direction as the science. The field is shifting away from one score taken once toward many functions tracked over time, on hardware people already own. The large remote studies now running on ordinary phones do not produce an IQ. They produce a panel, function by function, read against the person’s own history."
+          },
+          {
+            "type": "text",
+            "prop": "That is the performance-health move, applied to the mind at last. Cardiovascular health became a dashboard of distinct readings you watch over years. Cognition is becoming the same, an emerging pillar alongside fitness, metabolism, and sleep. The field is still building the panel, and it is honest to say so. But the shape is clear, and it is plural by construction."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What Comes Next",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "So here is where I have landed. If cognition is a set of functions rather than a single quantity, then the only honest way to talk about it is one function at a time. The single number was always a compression that threw away the part worth keeping."
+          },
+          {
+            "type": "text",
+            "prop": "That is what I am going to do from here. Take them one at a time, working memory, processing speed, attention, reading, and for each one ask the same four questions. What is it, really. How do you measure it without fooling yourself. How does it drift. And what, if anything, you can actually do about it. Not a score to chase. A panel to read, the way you already read the rest of your health."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Not One Number'' by Meryll Dindin 👀",
+              "url": "/thoughts/not-one-number/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1037/0033-295X.113.4.842",
+              "title": "van der Maas, H.L.J. et al. (2006). A Dynamical Model of General Intelligence: The Positive Manifold of Intelligence by Mutualism.",
+              "description": "Reproduces the positive manifold from mutually reinforcing processes, with no single common cause. Psychological Review."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.tandfonline.com/doi/full/10.1080/1047840X.2016.1153946",
+              "title": "Kovacs, K. & Conway, A.R.A. (2016). Process Overlap Theory: A Unified Account of the General Factor of Intelligence.",
+              "description": "Explains g as the product of overlapping domain-general executive processes rather than one underlying ability. Psychological Inquiry."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3954750/",
+              "title": "Weintraub, S. et al. (2013). Cognition Assessment Using the NIH Toolbox.",
+              "description": "Operationalizes cognition as six functional subdomains, including executive function, working memory, processing speed, and attention. Monographs of the SRCD."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s41586-022-04492-9",
+              "title": "Marek, S. et al. (2022). Reproducible Brain-Wide Association Studies Require Thousands of Individuals.",
+              "description": "Shows small-sample brain-behavior associations are inflated and that stable effects need thousands of subjects. Nature."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://dyslexiaida.org/idas-revised-2025-dyslexia-definition-now-open-for-public-comment/",
+              "title": "International Dyslexia Association (2025). Revised Definition of Dyslexia.",
+              "description": "Frames dyslexia as a profile along a continuum, with underlying difficulties common but not universal."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://sites.ed.gov/idea/regs/b/d/300.306",
+              "title": "IDEA, 34 CFR § 300.306. Determination of Eligibility.",
+              "description": "Federal special-education eligibility runs through multiple independent prongs, not a single test score."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://journals.sagepub.com/doi/abs/10.1177/1529100616661983",
+              "title": "Simons, D.J. et al. (2016). Do “Brain-Training” Programs Work?",
+              "description": "Improvement on trained tasks with little credible transfer to real-world cognition. Psychological Science in the Public Interest."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/mind-the-baseline/",
+              "title": "Dindin, M. (2026). Mind the Baseline.",
+              "description": "Why cognition deserves a personal baseline and a trajectory, measured against your own normal rather than a population table."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

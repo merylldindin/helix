@@ -30,6 +30,7 @@ export const RoutePath = {
   MODELS_HUMAN_COGNITION: "/thoughts/models-human-cognition/",
   MY_AI_PHARMACIST: "/thoughts/my-ai-pharmacist/",
   NEWSLETTER_SUGGESTIONS: "/suggestions/newsletters/",
+  NOT_ONE_NUMBER: "/thoughts/not-one-number/",
   PARALLEL_LEARNING: "/ventures/parallel-learning/",
   PII_BY_DESIGN: "/thoughts/pii-by-design/",
   PODCAST_SUGGESTIONS: "/suggestions/podcasts/",
