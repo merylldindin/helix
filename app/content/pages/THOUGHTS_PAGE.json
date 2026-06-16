@@ -15,6 +15,49 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "not-one-number-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Not One Number",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "June 15, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Nobody has a single heart number. You track a panel of functions. Cognition works the same way, and “intelligence” is the wrong unit."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article Not One Number",
+              "to": "/thoughts/not-one-number/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "A square poster in minimalist black and white showing a single mind splitting into several distinct labeled gauges",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/not-one-number-20260615T221502.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/not-one-number-20260615T221502-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/not-one-number-20260615T221502-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/not-one-number-20260615T221502-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "mind-the-baseline-section",
       "props": {
         "content": [
