@@ -7427,9 +7427,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:67.0.0":
-  version: 67.0.0
-  resolution: "eslint-plugin-unicorn@npm:67.0.0"
+"eslint-plugin-unicorn@npm:68.0.0":
+  version: 68.0.0
+  resolution: "eslint-plugin-unicorn@npm:68.0.0"
   dependencies:
     "@babel/helper-validator-identifier": "npm:^7.29.7"
     "@eslint-community/eslint-utils": "npm:^4.9.1"
@@ -7449,7 +7449,7 @@ __metadata:
     strip-indent: "npm:^4.1.1"
   peerDependencies:
     eslint: ">=10.4"
-  checksum: 10c0/2b8aabf9bf376757f6ee11bc33830c8c6ef8c8f35860dbdf9f63b4cbd409b2ae6d5fd904f3f47e48eb0cdcecec21817fbc6edbb17a4e96f4cf77a426d5e0ca43
+  checksum: 10c0/28c123b71d541d32ed1586e6962a6cdca72c70e776141aef63609fd560d16c2f805ff4ff8dccd8d3a66afc65dbfe3c45a1a9e65ebb9703b2082147fb44a2e35e
   languageName: node
   linkType: hard
 
@@ -8436,7 +8436,7 @@ __metadata:
     "@vue/compiler-sfc": "npm:3.5.38"
     concurrently: "npm:10.0.3"
     eslint: "npm:10.5.0"
-    eslint-plugin-unicorn: "npm:67.0.0"
+    eslint-plugin-unicorn: "npm:68.0.0"
     eslint-plugin-vue: "npm:10.9.2"
     globals: "npm:17.6.0"
     husky: "npm:9.1.7"

@@ -96,7 +96,7 @@ export default withNuxt([
       "unicorn/no-array-reduce": "off",
       "unicorn/no-null": "off",
       "unicorn/prefer-query-selector": "off",
-      "unicorn/prevent-abbreviations": [
+      "unicorn/name-replacements": [
         "error",
         {
           ignore: ["i18n", "e2e"],
