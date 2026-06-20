@@ -1,0 +1,30 @@
+.github/workflows/continuous-integration.yml
+  s_992d339124f11c::t_8fb23f6eaf82f3 14
+package.json
+  s_992d339124f11c::t_8182ac6bac287c 69
+  s_992d339124f11c::t_a3526119977e30 78
+  s_992d339124f11c::t_0f6b87924ee21a 80
+  s_992d339124f11c::t_3c165e9491308f 104
+.github/workflows/cloudfront-invalidation.yml
+  s_992d339124f11c::t_b3cbd5e927ce55 16
+.nvmrc
+  s_992d339124f11c::t_a3feecb3eb3dde 1
+.claude/skills/create-image/pyproject.toml
+  s_992d339124f11c::t_5083e4ecb948b7 8-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "8e049dd77e3eef66daff66b34d8f6495ab4b6ba3",
+  "prompts": {},
+  "sessions": {
+    "s_992d339124f11c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c1cbea52-c662-4293-b7bc-de336d18b5a9",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
