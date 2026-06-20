@@ -4572,12 +4572,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:25.9.3":
-  version: 25.9.3
-  resolution: "@types/node@npm:25.9.3"
+"@types/node@npm:25.9.4":
+  version: 25.9.4
+  resolution: "@types/node@npm:25.9.4"
   dependencies:
     undici-types: "npm:>=7.24.0 <7.24.7"
-  checksum: 10c0/72d3aece9d42c2c641bcd3f3cb2dc2828b4bd384dfcbd910c404b8859a68bd69d50c4769ce7defd4ff5e049768e23e615f09407ea2cbbb5f44b90d75a7c6b8ca
+  checksum: 10c0/4b19670ef5dbefa836a2d4a9ed0b5ac6befbc0844bfdd12833234ff8fa68da1f65e6362d2ef87acf7e7da9d6ff649bf81c454d12e802b7e7fa9246a15c0edcf6
   languageName: node
   linkType: hard
 
@@ -5611,10 +5611,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"anynum@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "anynum@npm:1.0.0"
-  checksum: 10c0/c929fed8f4127cd706312da58ae2aa83a06e62059eef04392fe2bacec003b6f6b7ca5f2719bd09c693b100f185bcf6405419744812f1096cdb53aed4034b9209
+"anynum@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "anynum@npm:1.0.1"
+  checksum: 10c0/cfda92c9215722fc4b15faa33d0eb3d5dfd28fba6cb67c1f50d214feaa7ba6497814a3e110777853585de6d91c8c962a1ae425b637d3598d9f9d8f6f6802e5bb
   languageName: node
   linkType: hard
 
@@ -7848,18 +7848,18 @@ __metadata:
   linkType: hard
 
 "fast-xml-parser@npm:^5.9.0":
-  version: 5.9.0
-  resolution: "fast-xml-parser@npm:5.9.0"
+  version: 5.9.3
+  resolution: "fast-xml-parser@npm:5.9.3"
   dependencies:
     "@nodable/entities": "npm:^2.2.0"
     fast-xml-builder: "npm:^1.2.0"
     is-unsafe: "npm:^1.0.1"
     path-expression-matcher: "npm:^1.5.0"
-    strnum: "npm:^2.4.0"
+    strnum: "npm:^2.4.1"
     xml-naming: "npm:^0.1.0"
   bin:
     fxparser: src/cli/cli.js
-  checksum: 10c0/95f6f0b9045404d5db1b2e0d6feaa59bd67babbaf14a4588a1b5d758e6e26304cdd2e79b2a819b2720844d51cd07255d5c05f8b6f8ce665ba7a24d494ee6bd86
+  checksum: 10c0/0f4f4b98aec027334be1d4462c6e09649bda8dd8bd1c75f6e985f4000ce4a40ea4540745fa7ac081cd65bf462b0c22fce87da9abc5ede51c9727398c91cacd5f
   languageName: node
   linkType: hard
 
@@ -8431,7 +8431,7 @@ __metadata:
     "@nuxtjs/sitemap": "npm:8.2.1"
     "@playwright/test": "npm:1.61.0"
     "@types/eslint": "npm:9.6.1"
-    "@types/node": "npm:25.9.3"
+    "@types/node": "npm:25.9.4"
     "@unhead/bundler": "npm:3.1.4"
     "@vue/compiler-sfc": "npm:3.5.38"
     concurrently: "npm:10.0.3"
@@ -8440,10 +8440,10 @@ __metadata:
     eslint-plugin-vue: "npm:10.9.2"
     globals: "npm:17.6.0"
     husky: "npm:9.1.7"
-    lint-staged: "npm:17.0.7"
+    lint-staged: "npm:17.0.8"
     nuxt: "npm:4.4.8"
     nuxt-jsonld: "npm:2.2.1"
-    nuxt-link-checker: "npm:5.1.0"
+    nuxt-link-checker: "npm:5.1.1"
     nuxt-swiper: "npm:2.0.2"
     postcss: "npm:8.5.15"
     postcss-html: "npm:1.8.1"
@@ -9031,13 +9031,13 @@ __metadata:
   linkType: hard
 
 "js-yaml@npm:>=4.1.1":
-  version: 4.2.0
-  resolution: "js-yaml@npm:4.2.0"
+  version: 5.0.0
+  resolution: "js-yaml@npm:5.0.0"
   dependencies:
     argparse: "npm:^2.0.1"
   bin:
-    js-yaml: bin/js-yaml.js
-  checksum: 10c0/1916456c118746603b067d74bbcbb0445d9a1d5e474ad4ae775e7b20525bed902e01d9d97dd0c81fcd8d4f596162309d0eb057f4aa38f3e9647f14075e9dea45
+    js-yaml: bin/js-yaml.mjs
+  checksum: 10c0/06899cf94a6715eff69eafea08b066fa6978750231039393fba2902dc631af10dc47705eadfd688cc22bf27ae22dbc2548d936d89cf487b3224c59ffe227c45f
   languageName: node
   linkType: hard
 
@@ -9341,9 +9341,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:17.0.7":
-  version: 17.0.7
-  resolution: "lint-staged@npm:17.0.7"
+"lint-staged@npm:17.0.8":
+  version: 17.0.8
+  resolution: "lint-staged@npm:17.0.8"
   dependencies:
     listr2: "npm:^10.2.1"
     picomatch: "npm:^4.0.4"
@@ -9355,7 +9355,7 @@ __metadata:
       optional: true
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 10c0/c4e7100becb327d817999a231b8d345e6be389c555d9cd8d668797d2670832ad15c4e5085b61895e3fbf937f0fbd6be5c78ca76a4599ed332227f37270ebe8eb
+  checksum: 10c0/8f5692a6777de3e71b4a32a944ac3c756bb3f15a886f54d46d71d0a1694b3e3caf1b2ea207bdb20c9b730661e0aedd68b6c1d1c6ab5d5012be64e9cd820b7c87
   languageName: node
   linkType: hard
 
@@ -10345,18 +10345,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-link-checker@npm:5.1.0":
-  version: 5.1.0
-  resolution: "nuxt-link-checker@npm:5.1.0"
+"nuxt-link-checker@npm:5.1.1":
+  version: 5.1.1
+  resolution: "nuxt-link-checker@npm:5.1.1"
   dependencies:
     "@nuxt/kit": "npm:^4.4.8"
     "@vueuse/core": "npm:^14.3.0"
     consola: "npm:^3.4.2"
     diff: "npm:^9.0.0"
     fuse.js: "npm:^7.4.2"
+    h3: "npm:^1.15.11"
     magic-string: "npm:^0.30.21"
     nuxt-site-config: "npm:^4.1.0"
-    nuxtseo-shared: "npm:^5.2.6"
+    nuxtseo-shared: "npm:^5.3.0"
     ofetch: "npm:^1.5.1"
     pathe: "npm:^2.0.3"
     pkg-types: "npm:^2.3.1"
@@ -10365,10 +10366,9 @@ __metadata:
     ufo: "npm:^1.6.4"
     ultrahtml: "npm:^1.6.0"
     unstorage: "npm:^1.17.5"
-    vite: "npm:^7.3.5"
   peerDependencies:
     nuxt: ^3.9.0 || ^4.0.0
-  checksum: 10c0/ade16e1ee80b043adde1d49487d6f612fdbca0c28eba672d47a95d8ba29e490649279aac3eebff6c81b8d8f42e4e5ac2690ec3f7033d6952883f70cb2d54a2a3
+  checksum: 10c0/c531221b82538b73487a089f801fee9abe5127853ce5f69a73a76247e9f5efc67e1f68ded46f4af4fcf6bf7da88045c8cdc6ae38d5ca6266b780d68636fe0e1c
   languageName: node
   linkType: hard
 
@@ -10508,7 +10508,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxtseo-shared@npm:5.3.0, nuxtseo-shared@npm:^5.2.3, nuxtseo-shared@npm:^5.2.6, nuxtseo-shared@npm:^5.3.0":
+"nuxtseo-shared@npm:5.3.0, nuxtseo-shared@npm:^5.2.3, nuxtseo-shared@npm:^5.3.0":
   version: 5.3.0
   resolution: "nuxtseo-shared@npm:5.3.0"
   dependencies:
@@ -12603,11 +12603,11 @@ __metadata:
   linkType: hard
 
 "semver@npm:>=7.7.3":
-  version: 7.8.4
-  resolution: "semver@npm:7.8.4"
+  version: 7.8.5
+  resolution: "semver@npm:7.8.5"
   bin:
     semver: bin/semver.js
-  checksum: 10c0/81b7c296fd7927b80f67fa516b75fa1017caac8167795320de28e76ccbc6f7f01763c30ecd10d6a0d8fd089708ab0548a5aebb94b0870e99c2a2b4600a46389b
+  checksum: 10c0/b1f3127a5be8125a94f37188b361c212466c292c6910adce3ec106cff5dc211ccaedc4739c11bb70fda59d6fc1f040a9bca289f4e093451521a2372e5231fe0c
   languageName: node
   linkType: hard
 
@@ -12963,11 +12963,11 @@ __metadata:
   linkType: hard
 
 "srvx@npm:^0.11.13":
-  version: 0.11.16
-  resolution: "srvx@npm:0.11.16"
+  version: 0.11.17
+  resolution: "srvx@npm:0.11.17"
   bin:
     srvx: bin/srvx.mjs
-  checksum: 10c0/cd3ed12c12481e2852409a7dfaa8c1ae0a7264769e9239e4a34da48033029c2ce4b2bccfd648a49f9bb10d13c4be91fcdbdb50feb08bf3de19bc8cfe71efa0a2
+  checksum: 10c0/5ba079c50432e6cdc7914a7dbe54a5a8a56387f51e112275c48420a99c4699ecd5bb9b70ed2bbdc74c082f1fb22fd445db1e278052fc491718014820a12bb43c
   languageName: node
   linkType: hard
 
@@ -13155,12 +13155,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strnum@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "strnum@npm:2.4.0"
+"strnum@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "strnum@npm:2.4.1"
   dependencies:
-    anynum: "npm:^1.0.0"
-  checksum: 10c0/36ac1ca6f511d8216d9b07934359f78afb158eedee73fb057c77b1cffa160a60cb848b35f219bd2c115b0037e8ec3962f492874ea4b10ef021ab6403dbb10e7e
+    anynum: "npm:^1.0.1"
+  checksum: 10c0/0d6a42bf8a1ad74b0a6c048ecf3bea50757383bcf304877ebe6e62acca5574bc088ce71bfb4de4b89b2ab44c618834c76be5894da04b67c673ff6677788b2638
   languageName: node
   linkType: hard
 
