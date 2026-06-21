@@ -1,0 +1,19 @@
+nuxt.config.ts
+  s_5bd5abc6ce0a8b::t_6f69c040a7edc0 43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "4bafa7a79b56952dfbd16bf694853e39660e9a37",
+  "prompts": {},
+  "sessions": {
+    "s_5bd5abc6ce0a8b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "012d43da-0cf7-4a1d-977c-32e39ea74bc6",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
