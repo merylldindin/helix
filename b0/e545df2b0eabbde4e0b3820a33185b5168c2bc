@@ -1,0 +1,44 @@
+vitest.config.mts
+  s_3c5c6b255da02d::t_2060719be250d7 1-39
+AGENTS.md
+  s_3c5c6b255da02d::t_70f45540031e4d 3,11-14
+.nuxtrc
+  s_3c5c6b255da02d::t_eabb2b6b1f1b9c 1
+.github/workflows/continuous-integration.yml
+  s_3c5c6b255da02d::t_28881d82a16b65 55-57
+CLAUDE.md
+  s_3c5c6b255da02d::t_265b8514a83acd 11-14
+  s_3c5c6b255da02d::t_8a96288bf92c96 3
+nuxt.config.ts
+  s_3c5c6b255da02d::t_6630d52c5d73bd 140
+tests/unit/links.spec.ts
+  s_3c5c6b255da02d::t_72654935280fa9 1-21
+eslint.config.mjs
+  s_3c5c6b255da02d::t_011f373b8e751d 102
+package.json
+  s_3c5c6b255da02d::t_9c267a13de2dec 9,20-23
+  s_3c5c6b255da02d::t_a9f5191bb205e0 86
+  s_3c5c6b255da02d::t_486a6f2cb0dacb 108
+  s_3c5c6b255da02d::t_2ea2020d340d75 71,75,77,80
+  s_3c5c6b255da02d::t_1e97c7e129d863 78
+tests/nuxt/app-mount.spec.ts
+  s_3c5c6b255da02d::t_113040370fb349 1-19
+Makefile
+  s_3c5c6b255da02d::t_1f44c1e910acc3 28-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "b0e545df2b0eabbde4e0b3820a33185b5168c2bc",
+  "prompts": {},
+  "sessions": {
+    "s_3c5c6b255da02d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "76e04cae-cfaf-4340-857f-adb1d461dad1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
