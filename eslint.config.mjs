@@ -33,7 +33,6 @@ export default withNuxt([
     files: ["**/*.ts", "**/*.tsx", "**/*.vue"],
     rules: {
       "@typescript-eslint/ban-ts-comment": "off",
-      "@typescript-eslint/ban-types": "off",
       "@typescript-eslint/consistent-type-imports": "off",
       "@typescript-eslint/explicit-member-accessibility": "error",
       "@typescript-eslint/no-explicit-any": "off",
@@ -44,7 +43,6 @@ export default withNuxt([
           varsIgnorePattern: "^_",
         },
       ],
-      "@typescript-eslint/prefer-ts-expect-error": "off",
     },
   },
 
@@ -101,6 +99,7 @@ export default withNuxt([
         {
           ignore: ["i18n", "e2e"],
           replacements: {
+            application: false,
             params: false,
             props: false,
             ref: false,

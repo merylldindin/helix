@@ -137,6 +137,7 @@ export default defineNuxtConfig({
       // without changing Vuetify's cascade semantics.
       cssMinify: false,
       cssCodeSplit: true,
+      chunkSizeWarningLimit: 1100,
       manifest: true,
       minify: true,
       modulePreload: { polyfill: false },

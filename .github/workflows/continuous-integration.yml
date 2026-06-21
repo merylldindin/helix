@@ -52,6 +52,9 @@ jobs:
       - name: Run Types
         run: yarn types
 
+      - name: Run Vitest
+        run: yarn test
+
       - name: Bundle Application
         run: make build
 

@@ -1,6 +1,6 @@
 # Helix
 
-Nuxt 4 SSG personal portfolio for Meryll Dindin. Vue 3, Vuetify 3, TypeScript, SCSS.
+Nuxt 4 SSG personal portfolio for Meryll Dindin. Vue 3, Vuetify 4, TypeScript, SCSS.
 
 ## Commands
 
@@ -8,7 +8,10 @@ Nuxt 4 SSG personal portfolio for Meryll Dindin. Vue 3, Vuetify 3, TypeScript, S
 make start      # Dev server
 make build      # Production build
 make deploy     # Build and deploy to CloudFront
-yarn checks     # All linters (prettier, stylelint, eslint, types)
+make check      # All linters (prettier, stylelint, eslint, types)
+yarn checks     # Same, invoked directly
+yarn test       # Unit tests (Vitest)
+yarn e2e        # E2E tests (Playwright)
 yarn eslint:fix # Fix ESLint issues
 yarn types      # TypeScript type checking
 ```

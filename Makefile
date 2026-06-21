@@ -25,6 +25,30 @@ build: ## Build the project
 serve: ## Serve the project
 	@yarn serve
 
+check: ## Run all linters and type checks
+	@yarn checks
+
+types: ## Type check the project
+	@yarn types
+
+lint: ## Lint the project
+	@yarn eslint
+
+lint-fix: ## Lint and fix the project
+	@yarn eslint:fix
+
+test: ## Run unit tests
+	@yarn test
+
+test-watch: ## Run unit tests in watch mode
+	@yarn test:watch
+
+coverage: ## Run unit tests with coverage
+	@yarn coverage
+
+e2e: ## Run end-to-end tests
+	@yarn e2e
+
 deploy: ## Deploy the project
 	@uv run --group devops sirtuin cloudfront-deploy .cloudfront -p personal
 
