@@ -1,0 +1,26 @@
+app/utils/omegaForceGraph.ts
+  s_5a47a911af8490::t_2eaeae6fd81064 134-135
+  s_5a47a911af8490::t_575c5f24bf9706 30-32,52-53,72-105,108-130,133
+  s_5a47a911af8490::t_ceaa33ee479d44 106-107
+app/components/pages/components/OmegaGraph/main.vue
+  s_5a47a911af8490::t_e003bfdf579720 58-61,69-74
+Makefile
+  s_5a47a911af8490::t_0919627aeed1f4 1-2
+  s_5a47a911af8490::t_53e5a22f146f95 21-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "34fb1ea4e27702a21668e1bdb3f92bc331258ddb",
+  "prompts": {},
+  "sessions": {
+    "s_5a47a911af8490": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cbfc08db-37f2-4979-bacc-51184b3eb4cf",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
