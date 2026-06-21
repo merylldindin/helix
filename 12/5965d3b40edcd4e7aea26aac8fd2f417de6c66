@@ -1,0 +1,51 @@
+app/content/pages/index.ts
+  s_5a47a911af8490::t_1b2c3758d0d623 4
+app/utils/omegaGraphFallback.json
+  s_5a47a911af8490::t_0a4cc6a44df3d7 1-195
+app/components/pages/components/OmegaGraph/main.vue
+  s_5a47a911af8490::t_0a4cc6a44df3d7 54,99-100,105
+  s_5a47a911af8490::t_d185c4b35d976f 1-6,8-53,55-98,101-104,106-115,142-143,150,165,169,177,183-184,190-191,201-202,207-208,230-236
+  s_5a47a911af8490::t_c65d77e817825e 7
+  s_5a47a911af8490::t_1bbd08c0d14845 116-141,144-149,151-164,166-168,170-176,178-182,185-189,192-200,203-206,209-229
+app/composables/useOmegaGraph.ts
+  s_5a47a911af8490::t_47b78568782782 1-37
+app/types/components.ts
+  s_5a47a911af8490::t_33c3502b47201e 7
+app/components/pages/utilities.ts
+  s_5a47a911af8490::t_ca3fc04ca3269b 22-24
+app/types/index.ts
+  s_5a47a911af8490::t_aa326924a2b81f 4
+app/types/routes.ts
+  s_5a47a911af8490::t_2f484c56da4e44 34
+nuxt.config.ts
+  s_5a47a911af8490::t_88ef15199637c4 88
+app/utils/routes.ts
+  s_5a47a911af8490::t_f35d8d2f9fd5bb 34
+  s_5a47a911af8490::t_5475cdd7c3a830 96
+package.json
+  s_5a47a911af8490::t_381f1f6f92f642 57,60,78
+app/types/omega.ts
+  s_5a47a911af8490::t_bd71780cf4bda3 1-24
+app/content/pages/OMEGA_PAGE.json
+  s_5a47a911af8490::t_2d00a60e3ee1aa 1-18
+app/utils/omegaForceGraph.ts
+  s_5a47a911af8490::t_edde5bd1f54dd8 5
+  s_5a47a911af8490::t_a499c5625f94fd 1,7,29-30,51,55-57,75
+  s_5a47a911af8490::t_184004c4b4294f 2-4,6,8-28,31-50,52-54,58-74,76-83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "125965d3b40edcd4e7aea26aac8fd2f417de6c66",
+  "prompts": {},
+  "sessions": {
+    "s_5a47a911af8490": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cbfc08db-37f2-4979-bacc-51184b3eb4cf",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
