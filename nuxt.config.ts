@@ -40,6 +40,7 @@ export default defineNuxtConfig({
 
   // @ts-ignore-next-line
   linkChecker: {
+    runOnBuild: !!process.env.CI,
     skipInspections: [
       "link-text",
       "no-baseless",
