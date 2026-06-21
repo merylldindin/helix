@@ -56,7 +56,7 @@ jobs:
         run: yarn test
 
       - name: Bundle Application
-        run: make build
+        run: CI=true make build
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
