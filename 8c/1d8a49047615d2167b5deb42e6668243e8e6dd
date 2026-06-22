@@ -1,0 +1,20 @@
+app/pages/[...slug].vue
+  s_5a47a911af8490::t_0205927ef09c59 39-40
+  s_5a47a911af8490::t_f6bd708d0df427 19-22,24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "8c1d8a49047615d2167b5deb42e6668243e8e6dd",
+  "prompts": {},
+  "sessions": {
+    "s_5a47a911af8490": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cbfc08db-37f2-4979-bacc-51184b3eb4cf",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
