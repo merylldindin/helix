@@ -1,0 +1,34 @@
+app/components/pages/components/OmegaGraph/main.vue
+  s_5a47a911af8490::t_7479495d0bc628 439,444
+  s_5a47a911af8490::t_6a51235f4f0f7c 217-220
+  s_5a47a911af8490::t_4d15629992e1e9 121-124,136-137
+  s_5a47a911af8490::t_0113f853f0c3ef 184-199,205-211
+  s_5a47a911af8490::t_5e7c856841d985 77,80-86
+  s_5a47a911af8490::t_591c104180c26e 30-36,41
+  s_5a47a911af8490::t_1faefe5a868cc0 2,7,17-29,37-40,42-52,57-64
+  s_5a47a911af8490::t_7d8b773ecff440 53-56,200-204
+  s_5a47a911af8490::t_5debdec4c73fa5 335-425,431-438,440-443,445-447
+app/utils/omegaForceGraph.ts
+  s_5a47a911af8490::t_2d2f93835191e9 117-121
+  s_5a47a911af8490::t_5eeca65a5d6646 158-161
+  s_5a47a911af8490::t_57547ec101d5dd 47
+  s_5a47a911af8490::t_9240caa0054a7d 35-44,46
+  s_5a47a911af8490::t_d6236413042a33 63-64
+  s_5a47a911af8490::t_f7a254b12b63d7 127-134,139-140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "520b641a47ab4715e803f2aeda51e18568c37434",
+  "prompts": {},
+  "sessions": {
+    "s_5a47a911af8490": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cbfc08db-37f2-4979-bacc-51184b3eb4cf",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
