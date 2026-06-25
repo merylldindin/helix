@@ -9517,14 +9517,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:>=4.1.1":
-  version: 5.0.0
-  resolution: "js-yaml@npm:5.0.0"
+"js-yaml@npm:>=5.1.0":
+  version: 5.1.0
+  resolution: "js-yaml@npm:5.1.0"
   dependencies:
     argparse: "npm:^2.0.1"
   bin:
     js-yaml: bin/js-yaml.mjs
-  checksum: 10c0/06899cf94a6715eff69eafea08b066fa6978750231039393fba2902dc631af10dc47705eadfd688cc22bf27ae22dbc2548d936d89cf487b3224c59ffe227c45f
+  checksum: 10c0/a21c3817fb736ab3215c9d1ffb0a94823d02ecb51b481e88ab4bf0f9522baccbe9168bdf265bc315124d5087e2261de93e56176c2a7cd589d8275a18d7b3316e
   languageName: node
   linkType: hard
 
