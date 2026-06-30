@@ -1,0 +1,21 @@
+package.json
+  s_09155f8f531a9c::t_c5186f6493d832 83
+yarn.lock
+  s_09155f8f531a9c::t_ba0f7b59a04eee 7766-7768,7788,8850
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "6bebd73a4ad8e9ce9f0a47f4c4a504052cfcad90",
+  "prompts": {},
+  "sessions": {
+    "s_09155f8f531a9c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5ab2fffb-31ca-4b78-bf4c-6616adf6c077",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
