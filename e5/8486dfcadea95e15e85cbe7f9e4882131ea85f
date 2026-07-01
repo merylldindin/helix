@@ -1,0 +1,31 @@
+app/content/pages/THOUGHTS_PAGE.json
+  s_3f19cf327cddbb::t_ef647ce41a8869 18-51,56-58
+  s_3f19cf327cddbb::t_2e7efce6daebc7 52-55
+  s_3f19cf327cddbb::t_93fd0dbe9038c5 16-17
+app/content/pages/thoughts/LEARNING_ON_CREDIT.json
+  s_3f19cf327cddbb::t_2e7efce6daebc7 16,27-30
+  s_3f19cf327cddbb::t_1df4523a6ad573 1-15,17-26,31-326
+app/content/pages/thoughts/index.ts
+  s_3f19cf327cddbb::t_52f88afffe2a48 19
+app/types/routes.ts
+  s_3f19cf327cddbb::t_9f61130f6ab504 27
+app/utils/routes.ts
+  s_3f19cf327cddbb::t_6a317669b9e176 91
+  s_3f19cf327cddbb::t_9563c8555ea430 27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.8",
+  "base_commit_sha": "e58486dfcadea95e15e85cbe7f9e4882131ea85f",
+  "prompts": {},
+  "sessions": {
+    "s_3f19cf327cddbb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9200fc6b-800e-4b03-b050-26e98a3642b7",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
