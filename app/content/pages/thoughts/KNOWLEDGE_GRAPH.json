@@ -48,7 +48,7 @@
           },
           {
             "type": "text",
-            "prop": "Every RAG architecture diagram I’ve seen in the last eighteen months assumes the same thing: that you should own your knowledge graph. Crawl the documents yourself. Index them yourself. Store the embeddings yourself. Enforce the access controls yourself. Refresh the snapshot on a schedule you control."
+            "prop": "Every [[RAG::RAG: Retrieval-Augmented Generation, an architecture where a language model is given retrieved documents at inference time rather than relying on training knowledge alone. Responses are grounded in retrieved content rather than learned parameters.]] architecture diagram I’ve seen in the last eighteen months assumes the same thing: that you should own your knowledge graph. Crawl the documents yourself. Index them yourself. Store the embeddings yourself. Enforce the access controls yourself. Refresh the snapshot on a schedule you control."
           },
           {
             "type": "text",
@@ -96,7 +96,7 @@
           },
           {
             "type": "text",
-            "prop": "So I wrote a full crawler. It walked every shared drive, then every person’s private drive through domain-wide delegation, impersonating each user long enough to list what they could see. For every file, it pulled the access control list and stored it alongside the file’s metadata. Google Groups were flattened to individual emails so that group-based access could be filtered at query time without hitting Google again. Folder hierarchies and shortcuts became graph edges. Deletions and trashing reconciled against saved cursors."
+            "prop": "So I wrote a full crawler. It walked every shared drive, then every person’s private drive through [[domain-wide delegation::Domain-wide delegation: a Google Workspace setting that allows a service account to impersonate any user in the organization. Used here to list each user’s private Drive files without requiring individual OAuth consent from each person.]], impersonating each user long enough to list what they could see. For every file, it pulled the access control list and stored it alongside the file’s metadata. Google Groups were flattened to individual emails so that group-based access could be filtered at query time without hitting Google again. Folder hierarchies and shortcuts became graph edges. Deletions and trashing reconciled against saved cursors."
           },
           {
             "type": "text",

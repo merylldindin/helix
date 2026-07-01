@@ -48,15 +48,15 @@
           },
           {
             "type": "text",
-            "prop": "Our CEO walks into an AE meeting on a Monday morning. She opens Slack, types a question to our internal agent: \u201cWhat are the top objections from New York districts this quarter?\u201d Thirty seconds later she has a sourced answer pulling from Salesforce notes, support tickets, and call transcripts. No dashboard. No data request. No analyst."
+            "prop": "Our CEO walks into an AE meeting on a Monday morning. She opens Slack, types a question to our internal agent: “What are the top objections from New York districts this quarter?” Thirty seconds later she has a sourced answer pulling from Salesforce notes, support tickets, and call transcripts. No dashboard. No data request. No analyst."
           },
           {
             "type": "text",
-            "prop": "That\u2019s a regular morning at Parallel Learning."
+            "prop": "That’s a regular morning at Parallel Learning."
           },
           {
             "type": "text",
-            "prop": "I\u2019ve written about why AI adoption needs an executive sponsor, why the real bottleneck is information transit rather than individual speed, and why lean teams need full-stack builders. This article is about what we actually built. An internal AI agent called Voltaire connects our entire knowledge surface and makes it conversational. The arguments I made in those pieces? This is the implementation behind them."
+            "prop": "I’ve written about why AI adoption needs an executive sponsor, why the real bottleneck is information transit rather than individual speed, and why lean teams need full-stack builders. This article is about what we actually built. An internal AI agent called Voltaire connects our entire knowledge surface and makes it conversational. The arguments I made in those pieces? This is the implementation behind them."
           },
           {
             "type": "headline",
@@ -68,11 +68,11 @@
           },
           {
             "type": "text",
-            "prop": "Parallel Learning is a venture-backed healthcare and ed-tech company delivering licensed special-education services to school districts across the US. We\u2019re small, a few dozen people, running a proprietary telehealth platform called Pathway. Our data lives in BigQuery. Documents are scattered across Google Drive. Support tickets sit in Zendesk. Engineering work is tracked in Linear. Meeting transcripts pile up in Drive. The codebase is navigable by three developers."
+            "prop": "Parallel Learning is a venture-backed healthcare and ed-tech company delivering licensed special-education services to school districts across the US. We’re small, a few dozen people, running a proprietary telehealth platform called Pathway. Our data lives in BigQuery. Documents are scattered across Google Drive. Support tickets sit in Zendesk. Engineering work is tracked in Linear. Meeting transcripts pile up in Drive. The codebase is navigable by three developers."
           },
           {
             "type": "text",
-            "prop": "Every department had the same complaint, phrased differently. Revenue couldn\u2019t get territory data without a data pull. Operations couldn\u2019t answer edge-case questions without pinging a senior team member. Leadership couldn\u2019t review customer health without sitting through account meetings. The information existed. Getting to it always required a human intermediary."
+            "prop": "Every department had the same complaint, phrased differently. Revenue couldn’t get territory data without a data pull. Operations couldn’t answer edge-case questions without pinging a senior team member. Leadership couldn’t review customer health without sitting through account meetings. The information existed. Getting to it always required a human intermediary."
           },
           {
             "type": "image",
@@ -87,7 +87,7 @@
           },
           {
             "type": "text",
-            "prop": "The transit cost was brutal. Not because anyone was slow, but because every question required routing through someone else\u2019s calendar."
+            "prop": "The transit cost was brutal. Not because anyone was slow, but because every question required routing through someone else’s calendar."
           },
           {
             "type": "headline",
@@ -99,11 +99,11 @@
           },
           {
             "type": "text",
-            "prop": "Voltaire is a Slack bot. Any employee mentions it in a channel or sends it a direct message, and it responds in-thread with a sourced answer. That\u2019s the interface. Nothing to install, nothing new to learn, no dashboard to bookmark."
+            "prop": "Voltaire is a Slack bot. Any employee mentions it in a channel or sends it a direct message, and it responds in-thread with a sourced answer. That’s the interface. Nothing to install, nothing new to learn, no dashboard to bookmark."
           },
           {
             "type": "text",
-            "prop": "Calling it a bot undersells the architecture, though. Voltaire is an agentic system. When it receives a question, it doesn\u2019t pattern-match against a FAQ or retrieve the nearest document chunk. It plans which data sources are relevant, dispatches specialized agents to query them, pulls the results together, and formats a response with citations. A single question might trigger a SQL query against our data warehouse, a search through our knowledge graph, and a ticket retrieval from Zendesk, all in one turn."
+            "prop": "Calling it a bot undersells the architecture, though. Voltaire is an agentic system. When it receives a question, it doesn’t pattern-match against a FAQ or retrieve the nearest document chunk. It plans which data sources are relevant, dispatches specialized agents to query them, pulls the results together, and formats a response with citations. A single question might trigger a SQL query against our data warehouse, a search through our knowledge graph, and a ticket retrieval from Zendesk, all in one turn."
           },
           {
             "type": "image",
@@ -118,7 +118,7 @@
           },
           {
             "type": "text",
-            "prop": "The architectural choice that matters most: the orchestrator doesn\u2019t see the internals of each agent. It calls query_bigquery and gets back a finished result. The BigQuery agent handles table discovery, SQL generation, error recovery, and PII filtering on its own. The orchestrator stays clean. That isolation is how we add new data sources without rewriting the reasoning layer."
+            "prop": "The architectural choice that matters most: the orchestrator doesn’t see the internals of each agent. It calls query_bigquery and gets back a finished result. The BigQuery agent handles table discovery, SQL generation, error recovery, and PII filtering on its own. The orchestrator stays clean. That isolation is how we add new data sources without rewriting the reasoning layer."
           },
           {
             "type": "text",
@@ -134,19 +134,19 @@
           },
           {
             "type": "text",
-            "prop": "The value of a company brain isn\u2019t any single data source. It\u2019s reasoning across all of them in one turn."
+            "prop": "The value of a company brain isn’t any single data source. It’s reasoning across all of them in one turn."
           },
           {
             "type": "text",
-            "prop": "The data warehouse is the most valuable source. Revenue metrics, student outcomes, operational KPIs, financial data, CRM records mirrored from Salesforce, and data piped in from every other internal tool we run. The BigQuery agent translates natural language into SQL, finds the right tables from a documented catalog, writes the query, and self-corrects if the SQL fails. \u201cWhat\u2019s our net revenue retention for districts that renewed in Q1?\u201d gets a grounded number, not a hallucinated estimate."
+            "prop": "The data warehouse is the most valuable source. Revenue metrics, student outcomes, operational KPIs, financial data, CRM records mirrored from Salesforce, and data piped in from every other internal tool we run. The BigQuery agent translates natural language into SQL, finds the right tables from a documented catalog, writes the query, and self-corrects if the SQL fails. “What’s our net revenue retention for districts that renewed in Q1?” gets a grounded number, not a hallucinated estimate."
           },
           {
             "type": "text",
-            "prop": "The document layer is where scale gets interesting. We have over 250,000 files across Google Drive and Zendesk, and that\u2019s just external-facing knowledge, not even counting internal documents. PDFs, slide decks, SOPs, policy documents, knowledge base articles. These aren\u2019t dumped into a vector database and left to rot. They\u2019re crawled into an offline knowledge graph: an SQLite snapshot with full-text search, classification tags, AI-generated summaries, similarity edges, and per-user access controls. When the agent searches for \u201cour onboarding SOP for new providers,\u201d it\u2019s querying a curated, classified, permission-aware index. Not running a naive similarity search over raw embeddings."
+            "prop": "The document layer is where scale gets interesting. We have over 250,000 files across Google Drive and Zendesk, and that’s just external-facing knowledge, not even counting internal documents. PDFs, slide decks, SOPs, policy documents, knowledge base articles. These aren’t dumped into a vector database and left to rot. They’re crawled into an offline knowledge graph: an SQLite snapshot with full-text search, classification tags, AI-generated summaries, similarity edges, and per-user access controls. When the agent searches for “our onboarding SOP for new providers,” it’s querying a curated, classified, permission-aware index. Not running a naive similarity search over raw embeddings."
           },
           {
             "type": "text",
-            "prop": "Support tickets give operational intelligence. \u201cWhat are the top issues from California districts this month?\u201d pulls from Zendesk ticket history and finds patterns across hundreds of conversations. Linear and the codebase answer product and engineering questions from source, not from someone\u2019s recollection of last sprint\u2019s decisions."
+            "prop": "Support tickets give operational intelligence. “What are the top issues from California districts this month?” pulls from Zendesk ticket history and finds patterns across hundreds of conversations. Linear and the codebase answer product and engineering questions from source, not from someone’s recollection of last sprint’s decisions."
           },
           {
             "type": "text",
@@ -166,15 +166,15 @@
           },
           {
             "type": "text",
-            "prop": "Trust compounds slowly and collapses fast. You don\u2019t get to iterate your way to adoption when the first impression is a hallucinated revenue number that someone drops into a board deck. We learned this early and designed for it at every layer."
+            "prop": "Trust compounds slowly and collapses fast. You don’t get to iterate your way to adoption when the first impression is a hallucinated revenue number that someone drops into a board deck. We learned this early and designed for it at every layer."
           },
           {
             "type": "text",
-            "prop": "Every response includes sources. SQL queries are visible so you can verify the logic. Document references link directly to Google Drive. If the agent cites a Zendesk article, you can click through and read it yourself. Transparency isn\u2019t something we bolted on after launch. It\u2019s the reason people kept using it past the first week."
+            "prop": "Every response includes sources. SQL queries are visible so you can verify the logic. Document references link directly to Google Drive. If the agent cites a Zendesk article, you can click through and read it yourself. Transparency isn’t something we bolted on after launch. It’s the reason people kept using it past the first week."
           },
           {
             "type": "text",
-            "prop": "When a question touches restricted data \u2014 student PII, sensitive HR information \u2014 the agent doesn\u2019t just refuse. It explains what it can\u2019t access and proposes a safe reformulation. \u201cI can\u2019t show individual student names, but here\u2019s the same analysis using anonymized IDs.\u201d A hard refusal with no path forward trains people to stop asking. A refusal with a reformulation trains people to ask smarter questions."
+            "prop": "When a question touches restricted data — student PII, sensitive HR information — the agent doesn’t just refuse. It explains what it can’t access and proposes a safe reformulation. “I can’t show individual student names, but here’s the same analysis using anonymized IDs.” A hard refusal with no path forward trains people to stop asking. A refusal with a reformulation trains people to ask smarter questions."
           },
           {
             "type": "text",
@@ -190,11 +190,11 @@
           },
           {
             "type": "text",
-            "prop": "The CEO no longer opens Salesforce dashboards. She asks Voltaire for objection patterns across territories before an AE meeting and gets a sourced answer in thirty seconds. That\u2019s not a faster version of the old workflow. It\u2019s a different workflow, one where leadership can self-serve operational intelligence without a meeting or a data request."
+            "prop": "The CEO no longer opens Salesforce dashboards. She asks Voltaire for objection patterns across territories before an AE meeting and gets a sourced answer in thirty seconds. That’s not a faster version of the old workflow. It’s a different workflow, one where leadership can self-serve operational intelligence without a meeting or a data request."
           },
           {
             "type": "text",
-            "prop": "Our support ops manager was the biggest AI skeptic in the company. After a shadow session where we sat with her and showed how voice-to-text could replace her manual SOP writing, she started building her own workflows. Within weeks she was giving a company-wide presentation on what she\u2019d automated. Voltaire now answers her team\u2019s edge-case questions from the knowledge base. Those questions used to land in a senior staff member\u2019s DMs."
+            "prop": "Our support ops manager was the biggest AI skeptic in the company. After a shadow session where we sat with her and showed how voice-to-text could replace her manual SOP writing, she started building her own workflows. Within weeks she was giving a company-wide presentation on what she’d automated. Voltaire now answers her team’s edge-case questions from the knowledge base. Those questions used to land in a senior staff member’s DMs."
           },
           {
             "type": "text",
@@ -218,7 +218,7 @@
           },
           {
             "type": "text",
-            "prop": "This is the part that doesn\u2019t demo well. ETL pipelines feeding into BigQuery from every operational system: Salesforce, Zendesk, and a dozen other internal tools. dbt transformations that normalize and document the data. Column-level descriptions for every table in the warehouse, because an AI agent that doesn\u2019t know what a column means will write SQL that looks right and returns wrong numbers."
+            "prop": "This is the part that doesn’t demo well. ETL pipelines feeding into BigQuery from every operational system: Salesforce, Zendesk, and a dozen other internal tools. [[dbt::dbt: data build tool, an open-source transformation framework that lets analysts write SQL and manage data models like software, with version control and testing built in. The standard for structured data transformation in modern analytics stacks.]] transformations that normalize and document the data. Column-level descriptions for every table in the warehouse, because an AI agent that doesn’t know what a column means will write SQL that looks right and returns wrong numbers."
           },
           {
             "type": "image",
@@ -233,7 +233,7 @@
           },
           {
             "type": "text",
-            "prop": "The knowledge graph deserves its own article, and it\u2019ll get one. Short version: we crawl every Google Drive shared drive and personal drive using domain-wide delegation, resolve Google Group memberships into per-email access controls, classify over 250,000 files with AI-generated tags, build search summaries and similarity edges, and package everything into a versioned SQLite snapshot that Voltaire loads at startup. The agent can only see files that the requesting user has permission to access. That check runs in real time, resolved from the same HR data that feeds our RBAC system."
+            "prop": "The knowledge graph deserves its own article, and it’ll get one. Short version: we crawl every Google Drive shared drive and personal drive using domain-wide delegation, resolve Google Group memberships into per-email access controls, classify over 250,000 files with AI-generated tags, build search summaries and similarity edges, and package everything into a versioned SQLite snapshot that Voltaire loads at startup. The agent can only see files that the requesting user has permission to access. That check runs in real time, resolved from the same HR data that feeds our [[RBAC::RBAC: Role-Based Access Control, an authorization model where permissions are attached to roles rather than to individual users. A user inherits the permissions of whatever role they are assigned.]] system."
           },
           {
             "type": "text",
@@ -243,7 +243,7 @@
             "type": "headline",
             "prop": {
               "level": 2,
-              "text": "What I\u2019d Tell You to Build First",
+              "text": "What I’d Tell You to Build First",
               "typography": "text-lexend-deca headline-4 my-6"
             }
           },
@@ -253,7 +253,7 @@
           },
           {
             "type": "text",
-            "prop": "Build the data layer. Get your operational systems feeding into a central warehouse. Document your schemas \u2014 column-level descriptions, not just table names. Start transcribing meetings and storing them somewhere searchable. Every month of centralized data you collect now is context you can\u2019t backfill later."
+            "prop": "Build the data layer. Get your operational systems feeding into a central warehouse. Document your schemas — column-level descriptions, not just table names. Start transcribing meetings and storing them somewhere searchable. Every month of centralized data you collect now is context you can’t backfill later."
           },
           {
             "type": "image",
@@ -276,12 +276,12 @@
           },
           {
             "type": "text",
-            "prop": "The mistake I see most often is building a chatbot wrapper around an LLM with no grounded data. You get confident answers with no relationship to reality, and you burn the trust you need for the version that actually works. The other mistake is waiting until the data is \u201cready.\u201d It won\u2019t be. Start collecting now, start documenting now, and build the AI layer on whatever foundation you have. You can improve data quality while building the agent. You can\u2019t build the agent on data that was never collected."
+            "prop": "The mistake I see most often is building a chatbot wrapper around an LLM with no grounded data. You get confident answers with no relationship to reality, and you burn the trust you need for the version that actually works. The other mistake is waiting until the data is “ready.” It won’t be. Start collecting now, start documenting now, and build the AI layer on whatever foundation you have. You can improve data quality while building the agent. You can’t build the agent on data that was never collected."
           },
           {
             "type": "networks",
             "prop": {
-              "quote": "Checkout the article ''One Brain to Query'' by Meryll Dindin \ud83d\udc27",
+              "quote": "Checkout the article ''One Brain to Query'' by Meryll Dindin 🐧",
               "url": "/thoughts/company-brain/"
             }
           },
@@ -298,7 +298,7 @@
             "prop": {
               "href": "https://ai.pydantic.dev/",
               "title": "PydanticAI",
-              "description": "Python agent framework used for Voltaire\u2019s orchestrator and structured output."
+              "description": "Python agent framework used for Voltaire’s orchestrator and structured output."
             }
           },
           {
@@ -306,7 +306,7 @@
             "prop": {
               "href": "https://cloud.google.com/vertex-ai",
               "title": "Vertex AI / Gemini",
-              "description": "LLM and embedding provider powering Voltaire\u2019s model chains and semantic recall."
+              "description": "LLM and embedding provider powering Voltaire’s model chains and semantic recall."
             }
           },
           {
@@ -314,7 +314,7 @@
             "prop": {
               "href": "https://cloud.google.com/bigquery",
               "title": "Google BigQuery",
-              "description": "Data warehouse for structured company data, queried via natural language through Voltaire\u2019s BigQuery agent."
+              "description": "Data warehouse for structured company data, queried via natural language through Voltaire’s BigQuery agent."
             }
           },
           {
@@ -330,7 +330,7 @@
             "prop": {
               "href": "https://api.slack.com/bolt",
               "title": "Slack Bolt",
-              "description": "Event-driven framework for building Slack integrations, used for Voltaire\u2019s message handling."
+              "description": "Event-driven framework for building Slack integrations, used for Voltaire’s message handling."
             }
           },
           {
@@ -338,7 +338,7 @@
             "prop": {
               "href": "https://www.sqlite.org/fts5.html",
               "title": "SQLite FTS5",
-              "description": "Full-text search engine in SQLite, used for Voltaire\u2019s offline knowledge graph retrieval."
+              "description": "Full-text search engine in SQLite, used for Voltaire’s offline knowledge graph retrieval."
             }
           },
           {

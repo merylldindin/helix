@@ -52,7 +52,7 @@
           },
           {
             "type": "text",
-            "prop": "That visit stuck. Not because anything was urgent, but because it was the first time a clinician treated my blood pressure as a problem in waiting rather than a number to ignore. Years later, 23andMe came back with what I already half suspected: genetic predisposition to higher blood pressure. Then Function Health flagged elevated Lp(a), the lipoprotein particle that 20% of the population inherits at concentrations the rest of their stack can’t correct for. My LDL has always been on the high side. My family history reads like a cardiology textbook."
+            "prop": "That visit stuck. Not because anything was urgent, but because it was the first time a clinician treated my blood pressure as a problem in waiting rather than a number to ignore. Years later, 23andMe came back with what I already half suspected: genetic predisposition to higher blood pressure. Then Function Health flagged elevated [[Lp(a)::Lp(a): Lipoprotein(a), a genetically determined LDL-like particle with an additional protein called apolipoprotein(a). Elevated levels (above ~50 mg/dL) increase cardiovascular and aortic stenosis risk independently of standard cholesterol metrics.]], the lipoprotein particle that 20% of the population inherits at concentrations the rest of their stack can’t correct for. My LDL has always been on the high side. My family history reads like a cardiology textbook."
           },
           {
             "type": "text",
@@ -132,7 +132,7 @@
           },
           {
             "type": "text",
-            "prop": "In May 2025, WHOOP launched the MG and shipped a feature called Blood Pressure Insights. It uses the optical PPG signal on your wrist, combined with sleep and heart-rate data, to estimate a daily blood pressure range after you calibrate it against three cuff readings. I’ve been running it for months."
+            "prop": "In May 2025, WHOOP launched the MG and shipped a feature called Blood Pressure Insights. It uses the optical [[PPG::PPG: Photoplethysmography, an optical technique that detects blood volume changes in tissue by measuring light absorption. Wearables use it to infer heart rate, SpO2, and, with calibration, approximate blood pressure via pulse transit time.]] signal on your wrist, combined with sleep and heart-rate data, to estimate a daily blood pressure range after you calibrate it against three cuff readings. I’ve been running it for months."
           },
           {
             "type": "image",

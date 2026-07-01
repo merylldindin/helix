@@ -51,9 +51,8 @@ const segments = computed<TextSegment[]>(() => {
       ><CustomDefinition
         v-if="segment.type === 'term'"
         :definition="segment.definition ?? ''"
-        :term="segment.term ?? ''" /><template v-else>{{
-        segment.content
-      }}</template></template
+        :term="segment.term ?? ''"
+      /><template v-else>{{ segment.content }}</template></template
     ></p
   >
 </template>
