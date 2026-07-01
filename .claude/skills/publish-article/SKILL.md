@@ -1,6 +1,6 @@
 ---
 name: publish-article
-description: Generates LinkedIn post and Hacker News submission for a /thoughts/ article. Use after an article is finalized and ready to promote.
+description: Generates a square B&W LinkedIn infographic, a LinkedIn post, and a Hacker News submission for a /thoughts/ article. Use after an article is finalized and ready to promote.
 argument-hint: '<article-slug>'
 user-invocable: true
 ---
@@ -62,12 +62,18 @@ Examples of bad HN titles:
 
 Run `/humanize-text` on the LinkedIn post section only (not the HN section, which should already be casual).
 
-### 6. Output
+### 6. Build the LinkedIn Infographic
+
+Generate the primary social asset: a square black-and-white infographic that teaches the article at a glance. Follow `references/infographic-recipe.md` exactly (the `~/tools/imagine` prompt template, one central metaphor, three fact-checked labeled facts, two candidates then cull). Save to `~/Desktop/{slug}-infographic.png` plus a 1080px copy.
+
+### 7. Output
 
 Write the final file to `~/Desktop/{slug}-promotion.md` with this structure:
 
 ```markdown
 # Promote: {Article Title}
+
+**Infographic:** `~/Desktop/{slug}-infographic.png` (square, post as the LinkedIn image)
 
 ## LinkedIn Post
 
@@ -91,3 +97,4 @@ Write the final file to `~/Desktop/{slug}-promotion.md` with this structure:
 ## Dependent Skills
 
 - `/humanize-text` for LinkedIn post editorial pass (Step 5)
+- `~/tools/imagine` for the LinkedIn infographic (Step 6); recipe in `references/infographic-recipe.md`
