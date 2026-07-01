@@ -48,7 +48,7 @@
           },
           {
             "type": "text",
-            "prop": "Ask a large language model to write SQL and it will happily oblige. It will also invent table names, hallucinate column names, ignore your access controls, and return results that look plausible but wrong. The gap between \u201cgenerates SQL\u201d and \u201cgenerates correct, safe, auditable SQL against your actual data warehouse\u201d is where most natural-language-to-SQL projects die."
+            "prop": "Ask a large language model to write SQL and it will happily oblige. It will also invent table names, hallucinate column names, ignore your access controls, and return results that look plausible but wrong. The gap between “generates SQL” and “generates correct, safe, auditable SQL against your actual data warehouse” is where most natural-language-to-SQL projects die."
           },
           {
             "type": "text",
@@ -68,7 +68,7 @@
           },
           {
             "type": "text",
-            "prop": "When the orchestrator calls the data warehouse agent, the question passes through six stages before any SQL touches the database. A table planner selects relevant tables from a compact catalog of nearly 700. The selected tables\u2019 column schemas get serialized and injected into the SQL generation prompt, with PII columns stripped out. A separate model generates SQL under strict constraints. The generated SQL passes through multi-layer validation: AST parsing, column existence checks against the loaded schema, deprecated table blocking, PII column guards. The validated SQL executes against the data warehouse with a 45-second timeout. If it fails with a repairable error, a repair loop generates corrected SQL using the error message and valid column hints. Results get serialized into a token-efficient format and returned to the orchestrator."
+            "prop": "When the orchestrator calls the data warehouse agent, the question passes through six stages before any SQL touches the database. A table planner selects relevant tables from a compact catalog of nearly 700. The selected tables’ column schemas get serialized and injected into the SQL generation prompt, with PII columns stripped out. A separate model generates SQL under strict constraints. The generated SQL passes through multi-layer validation: AST parsing, column existence checks against the loaded schema, deprecated table blocking, PII column guards. The validated SQL executes against the data warehouse with a 45-second timeout. If it fails with a repairable error, a repair loop generates corrected SQL using the error message and valid column hints. Results get serialized into a token-efficient format and returned to the orchestrator."
           },
           {
             "type": "image",
@@ -83,7 +83,7 @@
           },
           {
             "type": "text",
-            "prop": "Two model calls (planner and generator). One optional repair call. Multiple deterministic gates between each. The whole pipeline runs inside a single tool call from the orchestrator\u2019s perspective. It asked a question and got an answer."
+            "prop": "Two model calls (planner and generator). One optional repair call. Multiple deterministic gates between each. The whole pipeline runs inside a single tool call from the orchestrator’s perspective. It asked a question and got an answer."
           },
           {
             "type": "headline",
@@ -95,19 +95,19 @@
           },
           {
             "type": "text",
-            "prop": "The most common failure mode in natural-language-to-SQL is hallucinated schema. The model confidently references tables and columns that don\u2019t exist. Better prompting doesn\u2019t fix this. Restricting what the model can see does."
+            "prop": "The most common failure mode in natural-language-to-SQL is hallucinated schema. The model confidently references tables and columns that don’t exist. Better prompting doesn’t fix this. Restricting what the model can see does."
           },
           {
             "type": "text",
-            "prop": "Voltaire maintains a structured catalog of every table in the data warehouse: name, dataset, type (dbt model vs raw source), and a human-written description. This catalog uses TOON, a compact serialization format designed for tabular data. Where JSON repeats key names for every row, TOON declares the schema once and uses positional values. For 700 tables with four fields each, that roughly halves the token count compared to JSON."
+            "prop": "Voltaire maintains a structured catalog of every table in the data warehouse: name, dataset, type ([[dbt::dbt: data build tool, an open-source SQL transformation framework that lets analysts write, test, and version-control data models. Here it defines the curated tables the agent prefers over raw source tables.]] model vs raw source), and a human-written description. This catalog uses TOON, a compact serialization format designed for tabular data. Where JSON repeats key names for every row, TOON declares the schema once and uses positional values. For 700 tables with four fields each, that roughly halves the token count compared to JSON."
           },
           {
             "type": "text",
-            "prop": "The table planner sees only this catalog. No columns, no full schemas. Just table names and descriptions. Given the user\u2019s question, it selects one to fifteen relevant tables and produces a query plan. Every selected table name must be copied verbatim from the catalog. No invention, no abbreviation."
+            "prop": "The table planner sees only this catalog. No columns, no full schemas. Just table names and descriptions. Given the user’s question, it selects one to fifteen relevant tables and produces a query plan. Every selected table name must be copied verbatim from the catalog. No invention, no abbreviation."
           },
           {
             "type": "text",
-            "prop": "Models still hallucinate table names despite this constraint. So after the planner returns, a deterministic check validates every selection against the known set. Hallucinated tables trigger a rerun with an explicit correction: \u201cYour previous attempt selected tables that do NOT exist in the catalog. Revise your plan using only real tables.\u201d If it hallucinates again, those tables get dropped."
+            "prop": "Models still hallucinate table names despite this constraint. So after the planner returns, a deterministic check validates every selection against the known set. Hallucinated tables trigger a rerun with an explicit correction: “Your previous attempt selected tables that do NOT exist in the catalog. Revise your plan using only real tables.” If it hallucinates again, those tables get dropped."
           },
           {
             "type": "text",
@@ -123,7 +123,7 @@
           },
           {
             "type": "text",
-            "prop": "The SQL generator doesn\u2019t need to be creative. It needs to be constrained. Narrow, accurate context plus explicit rules equals reliable SQL."
+            "prop": "The SQL generator doesn’t need to be creative. It needs to be constrained. Narrow, accurate context plus explicit rules equals reliable SQL."
           },
           {
             "type": "headline",
@@ -135,15 +135,15 @@
           },
           {
             "type": "text",
-            "prop": "Most PII protection in AI systems works as a post-processing filter: generate the output, scan for sensitive data, redact. By the time you\u2019re redacting, the model has already seen the PII. It might reference it in its explanation. It might use it as a join condition that leaks information through cardinality."
+            "prop": "Most PII protection in AI systems works as a post-processing filter: generate the output, scan for sensitive data, redact. By the time you’re redacting, the model has already seen the PII. It might reference it in its explanation. It might use it as a join condition that leaks information through cardinality."
           },
           {
             "type": "text",
-            "prop": "Voltaire\u2019s approach: remove PII columns from the schema before the model ever sees them. The model cannot reference columns it doesn\u2019t know exist."
+            "prop": "Voltaire’s approach: remove PII columns from the schema before the model ever sees them. The model cannot reference columns it doesn’t know exist."
           },
           {
             "type": "text",
-            "prop": "A PII registry maps every sensitive column across every table to a tag: employee_name, employee_email, student_email, ssn, phone, address, birth_date. When the SQL generator\u2019s schema context is built, columns with sensitive tags get filtered out. The model receives a complete, functional schema minus the dangerous fields."
+            "prop": "A PII registry maps every sensitive column across every table to a tag: employee_name, employee_email, student_email, ssn, phone, address, birth_date. When the SQL generator’s schema context is built, columns with sensitive tags get filtered out. The model receives a complete, functional schema minus the dangerous fields."
           },
           {
             "type": "text",
@@ -166,11 +166,11 @@
           },
           {
             "type": "text",
-            "prop": "Then a third check on the actual results. After execution, returned column names are verified against the PII registry again. Defense in depth: if a PII column somehow slipped through schema filtering and AST validation, it gets caught here."
+            "prop": "Then a third check on the actual results. After execution, returned column names are verified against the PII registry again. Defense in depth: if a PII column somehow slipped through schema filtering and [[AST::AST: Abstract Syntax Tree, a structured representation of parsed source code or query text. SQL AST validation parses a generated query and inspects its structure for disallowed operations without executing it.]] validation, it gets caught here."
           },
           {
             "type": "text",
-            "prop": "When a query gets blocked, the system proposes alternatives. \u201cI can\u2019t look up students by name. Please provide the Pathway ID instead.\u201d Never just block. Refuse the PII while offering a safe path to the same insight using anonymized identifiers."
+            "prop": "When a query gets blocked, the system proposes alternatives. “I can’t look up students by name. Please provide the Pathway ID instead.” Never just block. Refuse the PII while offering a safe path to the same insight using anonymized identifiers."
           },
           {
             "type": "text",
@@ -186,7 +186,7 @@
           },
           {
             "type": "text",
-            "prop": "Even with a perfect schema and explicit constraints, generated SQL fails. The model picks a function that doesn\u2019t exist in BigQuery. It writes a correlated subquery the engine can\u2019t handle. It divides by zero."
+            "prop": "Even with a perfect schema and explicit constraints, generated SQL fails. The model picks a function that doesn’t exist in BigQuery. It writes a correlated subquery the engine can’t handle. It divides by zero."
           },
           {
             "type": "text",
@@ -198,15 +198,15 @@
           },
           {
             "type": "text",
-            "prop": "The repair request includes the original question, the failed SQL, the exact error message, and valid column hints for relevant tables. When the error says \u201ccolumn X not found in table Y,\u201d the repair prompt includes every valid column for table Y. The model sees the options instead of guessing."
+            "prop": "The repair request includes the original question, the failed SQL, the exact error message, and valid column hints for relevant tables. When the error says “column X not found in table Y,” the repair prompt includes every valid column for table Y. The model sees the options instead of guessing."
           },
           {
             "type": "text",
-            "prop": "Prior errors accumulate across tool calls. Up to three recent failures get injected into subsequent instructions as \u201cPRIOR SQL ERRORS (do NOT repeat these mistakes).\u201d The model doesn\u2019t make the same mistake twice in the same conversation."
+            "prop": "Prior errors accumulate across tool calls. Up to three recent failures get injected into subsequent instructions as “PRIOR SQL ERRORS (do NOT repeat these mistakes).” The model doesn’t make the same mistake twice in the same conversation."
           },
           {
             "type": "text",
-            "prop": "One repair attempt. That\u2019s the budget. If the repaired SQL also fails, the system returns the error to the orchestrator. One attempt catches most fixable errors. More attempts add latency without improving success rates, and the orchestrator can always reformulate and try a different approach."
+            "prop": "One repair attempt. That’s the budget. If the repaired SQL also fails, the system returns the error to the orchestrator. One attempt catches most fixable errors. More attempts add latency without improving success rates, and the orchestrator can always reformulate and try a different approach."
           },
           {
             "type": "headline",
@@ -218,7 +218,7 @@
           },
           {
             "type": "text",
-            "prop": "All the schema injection and repair context described above competes for space in the model\u2019s context window. A query returning 500 rows with 12 columns produces a lot of data, and every tool result feeds back into that same window. Token efficiency isn\u2019t a cost optimization. It\u2019s a reliability constraint. Bloated context means less room for the model to reason about what the data actually says."
+            "prop": "All the schema injection and repair context described above competes for space in the model’s context window. A query returning 500 rows with 12 columns produces a lot of data, and every tool result feeds back into that same window. Token efficiency isn’t a cost optimization. It’s a reliability constraint. Bloated context means less room for the model to reason about what the data actually says."
           },
           {
             "type": "text",
@@ -226,11 +226,11 @@
           },
           {
             "type": "text",
-            "prop": "TOON isn\u2019t just for results. The table catalog is TOON. Column schemas are TOON. The format runs through the entire data pipeline within the agent. The planner reads the catalog in TOON. The SQL generator reads column schemas in TOON. The orchestrator reads query results in TOON. At every stage, the context window stays as dense with useful information and as free of structural noise as possible."
+            "prop": "TOON isn’t just for results. The table catalog is TOON. Column schemas are TOON. The format runs through the entire data pipeline within the agent. The planner reads the catalog in TOON. The SQL generator reads column schemas in TOON. The orchestrator reads query results in TOON. At every stage, the context window stays as dense with useful information and as free of structural noise as possible."
           },
           {
             "type": "text",
-            "prop": "CSV would be denser, but it loses type information, can\u2019t represent nested structures, and has no metadata support. TOON keeps the structure while cutting the overhead."
+            "prop": "CSV would be denser, but it loses type information, can’t represent nested structures, and has no metadata support. TOON keeps the structure while cutting the overhead."
           },
           {
             "type": "headline",
@@ -242,7 +242,7 @@
           },
           {
             "type": "text",
-            "prop": "None of this works without a foundation. The 700 tables didn\u2019t describe themselves. Each has a human-written description, documented columns with types and descriptions, PII classifications, deprecation flags, business logic annotations. That metadata comes from the dbt layer: 19 schema domains, 30-plus source systems, maintained and tested as part of the regular data engineering workflow."
+            "prop": "None of this works without a foundation. The 700 tables didn’t describe themselves. Each has a human-written description, documented columns with types and descriptions, PII classifications, deprecation flags, business logic annotations. That metadata comes from the dbt layer: 19 schema domains, 30-plus source systems, maintained and tested as part of the regular data engineering workflow."
           },
           {
             "type": "text",
@@ -250,15 +250,15 @@
           },
           {
             "type": "text",
-            "prop": "A 2026 benchmark from dbt Labs put numbers on this. They compared deterministic semantic layers (pre-modeled metrics and dimensions) against raw text-to-SQL across multiple LLMs. The semantic layer hit 98\u2013100% accuracy on modeled questions. Text-to-SQL topped out around 90%, and its failure mode was worse: plausible but wrong answers instead of clean refusals. The benchmark\u2019s sharpest insight: \u201cWith text-to-SQL, failure looks like a plausible but incorrect answer. With the Semantic Layer, failure looks like an error message.\u201d"
+            "prop": "A 2026 benchmark from dbt Labs put numbers on this. They compared deterministic semantic layers (pre-modeled metrics and dimensions) against raw text-to-SQL across multiple LLMs. The semantic layer hit 98–100% accuracy on modeled questions. Text-to-SQL topped out around 90%, and its failure mode was worse: plausible but wrong answers instead of clean refusals. The benchmark’s sharpest insight: “With text-to-SQL, failure looks like a plausible but incorrect answer. With the Semantic Layer, failure looks like an error message.”"
           },
           {
             "type": "text",
-            "prop": "Voltaire\u2019s data layer was built from the start as a semantic layer for the agent. The table catalog with human-written descriptions, the business logic YAML, the PII registry, the preference for dbt models over raw sources: the model never sees raw DDL. It sees curated metadata with domain context. When our head of data shared the dbt benchmark internally, the architecture already matched what they were advocating. We chose to generate SQL from that semantic metadata rather than compile deterministic queries from a constrained metric spec. The tradeoff is intentional: deterministic compilation is safer for recurring KPIs, but it locks you into a rigid coverage surface. Every new question type requires a new metric definition. Text-to-SQL with strong validation handles anything the schema covers, and it gets better every time the underlying model improves. We don\u2019t have to update our scaffolding when the next model generation ships."
+            "prop": "Voltaire’s data layer was built from the start as a semantic layer for the agent. The table catalog with human-written descriptions, the business logic YAML, the PII registry, the preference for dbt models over raw sources: the model never sees raw DDL. It sees curated metadata with domain context. When our head of data shared the dbt benchmark internally, the architecture already matched what they were advocating. We chose to generate SQL from that semantic metadata rather than compile deterministic queries from a constrained metric spec. The tradeoff is intentional: deterministic compilation is safer for recurring KPIs, but it locks you into a rigid coverage surface. Every new question type requires a new metric definition. Text-to-SQL with strong validation handles anything the schema covers, and it gets better every time the underlying model improves. We don’t have to update our scaffolding when the next model generation ships."
           },
           {
             "type": "text",
-            "prop": "There\u2019s a fine line here about how much scaffolding to build around a model that keeps getting smarter. Every deterministic guardrail you add is maintenance you carry forward, and some of it becomes dead weight when the next model generation lands. The dbt benchmark measured models from early 2026. By the time you read this, text-to-SQL accuracy has probably moved again. Our bet is that the right investment is in the semantic metadata itself (descriptions, PII tags, business logic) rather than in deterministic query compilation on top of it. The metadata makes every model better. A rigid compilation layer only helps the current one."
+            "prop": "There’s a fine line here about how much scaffolding to build around a model that keeps getting smarter. Every deterministic guardrail you add is maintenance you carry forward, and some of it becomes dead weight when the next model generation lands. The dbt benchmark measured models from early 2026. By the time you read this, text-to-SQL accuracy has probably moved again. Our bet is that the right investment is in the semantic metadata itself (descriptions, PII tags, business logic) rather than in deterministic query compilation on top of it. The metadata makes every model better. A rigid compilation layer only helps the current one."
           },
           {
             "type": "text",
@@ -267,7 +267,7 @@
           {
             "type": "networks",
             "prop": {
-              "quote": "Checkout the article ''The SQL Agent'' by Meryll Dindin \ud83d\udc40",
+              "quote": "Checkout the article ''The SQL Agent'' by Meryll Dindin 👀",
               "url": "/thoughts/sql-agent/"
             }
           },

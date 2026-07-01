@@ -123,7 +123,7 @@
           },
           {
             "type": "text",
-            "prop": "First, it’s enforced in code, not in a prompt. Microsoft’s guidance on agentic systems draws a sharp line between deterministic human review, decided in code, and the kind that asks the model to evaluate whether it should run. The first survives prompt injection. The second doesn’t. Our gate is plain code. The orchestrator can’t override it because the orchestrator never sees the query when the gate fires."
+            "prop": "First, it’s enforced in code, not in a prompt. Microsoft’s guidance on agentic systems draws a sharp line between deterministic human review, decided in code, and the kind that asks the model to evaluate whether it should run. The first survives [[prompt injection::Prompt injection: an attack where malicious text in user input or retrieved content overrides a model's instructions. Unlike code injection, it exploits the model's instruction-following behavior rather than a parsing vulnerability.]]. The second doesn’t. Our gate is plain code. The orchestrator can’t override it because the orchestrator never sees the query when the gate fires."
           },
           {
             "type": "text",
@@ -131,7 +131,7 @@
           },
           {
             "type": "text",
-            "prop": "This is the part I think about more than the rest of the layer combined. The classifier is a small call to a fast model with a strict response format: a yes-or-no on whether the request is sensitive, plus a message if it is. The prompt frames the gate as a FERPA and COPPA compliance check. The format requires that any refusal include a constructive alternative. The model literally cannot return a bare “no.”"
+            "prop": "This is the part I think about more than the rest of the layer combined. The classifier is a small call to a fast model with a strict response format: a yes-or-no on whether the request is sensitive, plus a message if it is. The prompt frames the gate as a [[FERPA::FERPA: Family Educational Rights and Privacy Act, a U.S. federal law that protects the privacy of student education records. Systems handling student data must restrict access to authorized parties and prohibit disclosure without consent.]] and COPPA compliance check. The format requires that any refusal include a constructive alternative. The model literally cannot return a bare “no.”"
           },
           {
             "type": "text",
@@ -357,7 +357,7 @@
           },
           {
             "type": "text",
-            "prop": "I use domain-wide delegation, but with a discipline that matters. Every Drive call mints a short-lived impersonated credential with subject set to the requester’s email. Lifetime is set to 300 seconds, well inside the 3600-second ceiling the IAM Credentials API permits. Scopes are all readonly: Drive, Gmail, Calendar, Chat. The credentials are minted per request and never cached across turns. Google’s own ACL engine then enforces the document boundary. If the user can’t open the file in Drive, the API call returns an error. There’s no application-level ACL filter for Drive in Voltaire’s code because there doesn’t need to be. The ACL engine I’m using is the one Google already built."
+            "prop": "I use [[domain-wide delegation::Domain-wide delegation: a Google Workspace setting that allows a service account to act as any user in the organization. Scoped to read-only and minted per-request here to limit the blast radius of credential misuse.]], but with a discipline that matters. Every Drive call mints a short-lived impersonated credential with subject set to the requester’s email. Lifetime is set to 300 seconds, well inside the 3600-second ceiling the IAM Credentials API permits. Scopes are all readonly: Drive, Gmail, Calendar, Chat. The credentials are minted per request and never cached across turns. Google’s own ACL engine then enforces the document boundary. If the user can’t open the file in Drive, the API call returns an error. There’s no application-level ACL filter for Drive in Voltaire’s code because there doesn’t need to be. The ACL engine I’m using is the one Google already built."
           },
           {
             "type": "image",

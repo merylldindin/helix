@@ -12,6 +12,8 @@ import {
   RedirectContent,
   ReferenceContent,
   SocialsContent,
+  TextContent,
+  VideoContent,
   YoutubeContent,
 } from "./components";
 
@@ -56,13 +58,12 @@ const getMarginFromTypography = (typography: string, index: number) => {
         :class="getMarginFromTypography(item.prop.typography, index)"
       />
 
-      <p
+      <TextContent
         v-else-if="item.type === ContentType.TEXT"
         class="text-0"
         :class="{ 'mt-3': index > 0 }"
-      >
-        {{ item.prop }}
-      </p>
+        :text="item.prop"
+      />
 
       <CustomImage
         v-else-if="item.type === ContentType.IMAGE"
@@ -99,6 +100,12 @@ const getMarginFromTypography = (typography: string, index: number) => {
       <SocialsContent
         v-else-if="item.type === ContentType.SOCIALS"
         :platforms="item.prop"
+      />
+
+      <VideoContent
+        v-else-if="item.type === ContentType.VIDEO"
+        :class="smAndDown ? 'my-6' : 'my-12'"
+        :source="item.prop"
       />
 
       <YoutubeContent

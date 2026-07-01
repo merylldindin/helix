@@ -1,4 +1,4 @@
-import type { DeliveredImage } from "./global";
+import type { DeliveredImage, DeliveredVideo } from "./global";
 
 export const ContentType = {
   ARTICLE: "article",
@@ -10,6 +10,7 @@ export const ContentType = {
   REFERENCE: "reference",
   SOCIALS: "socials",
   TEXT: "text",
+  VIDEO: "video",
   YOUTUBE: "youtube",
 } as const;
 
@@ -99,6 +100,11 @@ export interface TextContent {
   prop: string;
 }
 
+export interface VideoContent {
+  type: typeof ContentType.VIDEO;
+  prop: DeliveredVideo;
+}
+
 export interface YoutubeContent {
   type: typeof ContentType.YOUTUBE;
   prop: string;
@@ -114,6 +120,7 @@ export type GenericContent =
   | ReferenceContent
   | SocialsContent
   | TextContent
+  | VideoContent
   | YoutubeContent;
 
 export interface TimelineContent {

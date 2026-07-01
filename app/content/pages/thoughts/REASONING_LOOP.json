@@ -48,11 +48,11 @@
           },
           {
             "type": "text",
-            "prop": "Most people imagine an AI assistant as a single prompt: question in, answer out. That works for a chatbot riffing on general knowledge. It falls apart the moment you need the AI to pull real data from real systems, respect who\u2019s asking, and get the answer right."
+            "prop": "Most people imagine an AI assistant as a single prompt: question in, answer out. That works for a chatbot riffing on general knowledge. It falls apart the moment you need the AI to pull real data from real systems, respect who’s asking, and get the answer right."
           },
           {
             "type": "text",
-            "prop": "I built Voltaire, the internal AI assistant at Parallel Learning. The hardest problem wasn\u2019t getting an LLM to generate text. It was everything around it: identity, context selection, tool orchestration, safety checks. I wrote previously about what Voltaire is and what it connects. This one goes under the hood: the path a question takes from a Slack message to a grounded answer."
+            "prop": "I built Voltaire, the internal AI assistant at Parallel Learning. The hardest problem wasn’t getting an LLM to generate text. It was everything around it: identity, context selection, tool orchestration, safety checks. I wrote previously about what Voltaire is and what it connects. This one goes under the hood: the path a question takes from a Slack message to a grounded answer."
           },
           {
             "type": "headline",
@@ -64,11 +64,11 @@
           },
           {
             "type": "text",
-            "prop": "Here\u2019s what actually happens when someone mentions Voltaire in Slack. The request passes through six distinct stages before a single word of the response gets written."
+            "prop": "Here’s what actually happens when someone mentions Voltaire in Slack. The request passes through six distinct stages before a single word of the response gets written."
           },
           {
             "type": "text",
-            "prop": "First, the Slack handler receives the event and runs a sensitive-request gate: a lightweight model call that screens for queries that should be refused outright (requests for personal contact info, clinical advice, or data the requester shouldn\u2019t access). Second, the system resolves the user\u2019s identity. Who is this person? What department? What role? What timezone? Third, a pre-orchestrator planner decides what context the AI needs and which tools to make available. Fourth, the orchestrator itself runs a reasoning loop: thinking, planning tool calls, observing results, and iterating until it has enough evidence to answer. Fifth, PII redaction runs inside each tool at the point of data retrieval, not as a post-processing pass. Sixth, the formatted answer lands back in the Slack thread."
+            "prop": "First, the Slack handler receives the event and runs a sensitive-request gate: a lightweight model call that screens for queries that should be refused outright (requests for personal contact info, clinical advice, or data the requester shouldn’t access). Second, the system resolves the user’s identity. Who is this person? What department? What role? What timezone? Third, a pre-orchestrator planner decides what context the AI needs and which tools to make available. Fourth, the orchestrator itself runs a reasoning loop: thinking, planning tool calls, observing results, and iterating until it has enough evidence to answer. Fifth, PII redaction runs inside each tool at the point of data retrieval, not as a post-processing pass. Sixth, the formatted answer lands back in the Slack thread."
           },
           {
             "type": "text",
@@ -93,17 +93,17 @@
             "type": "headline",
             "prop": {
               "level": 2,
-              "text": "Know Who\u2019s Asking",
+              "text": "Know Who’s Asking",
               "typography": "text-lexend-deca headline-4 my-6"
             }
           },
           {
             "type": "text",
-            "prop": "Voltaire\u2019s first move isn\u2019t answering. It\u2019s figuring out who asked."
+            "prop": "Voltaire’s first move isn’t answering. It’s figuring out who asked."
           },
           {
             "type": "text",
-            "prop": "From the user\u2019s email, the system queries the employee directory and builds a UserContext: display name, job title, department, timezone, and a computed role. That role comes from an RBAC policy file mapping departments to access tiers (executive, clinical, operations, default)."
+            "prop": "From the user’s email, the system queries the employee directory and builds a UserContext: display name, job title, department, timezone, and a computed role. That role comes from an [[RBAC::RBAC: Role-Based Access Control, an authorization model where permissions are attached to roles rather than individual users. A user inherits the permissions of whatever role they are assigned.]] policy file mapping departments to access tiers (executive, clinical, operations, default)."
           },
           {
             "type": "text",
@@ -115,7 +115,7 @@
           },
           {
             "type": "text",
-            "prop": "Most AI systems treat identity as a binary gate: authenticated or not. That\u2019s a missed opportunity. Identity is a spectrum, and it should shape every downstream decision."
+            "prop": "Most AI systems treat identity as a binary gate: authenticated or not. That’s a missed opportunity. Identity is a spectrum, and it should shape every downstream decision."
           },
           {
             "type": "headline",
@@ -127,11 +127,11 @@
           },
           {
             "type": "text",
-            "prop": "Voltaire maintains a YAML knowledge base organized into topic-specific sections: competitive positioning, compliance policies, organizational contacts, product glossary, state-level market intelligence. At any given time, fewer than a dozen of these are relevant to a question. Loading them all would waste tokens, dilute the model\u2019s attention, and slow things down."
+            "prop": "Voltaire maintains a YAML knowledge base organized into topic-specific sections: competitive positioning, compliance policies, organizational contacts, product glossary, state-level market intelligence. At any given time, fewer than a dozen of these are relevant to a question. Loading them all would waste tokens, dilute the model’s attention, and slow things down."
           },
           {
             "type": "text",
-            "prop": "So a pre-orchestrator planner runs first. It\u2019s a separate, cheaper model call using the smallest model in the Gemini family. Given the user\u2019s question, catalogs of available knowledge sections, agents, and skills, it returns three decisions: which knowledge sections to inject, whether a skill or a set of agents should handle the request, and whether the orchestrator needs tools at all."
+            "prop": "So a pre-orchestrator planner runs first. It’s a separate, cheaper model call using the smallest model in the Gemini family. Given the user’s question, catalogs of available knowledge sections, agents, and skills, it returns three decisions: which knowledge sections to inject, whether a skill or a set of agents should handle the request, and whether the orchestrator needs tools at all."
           },
           {
             "type": "image",
@@ -146,7 +146,7 @@
           },
           {
             "type": "text",
-            "prop": "That third decision is the short-circuit. If someone asks \u201chow do you define a high-priority district?\u201d and the knowledge base already has a section on district prioritization criteria, the planner returns routing_mode: short_circuit. The orchestrator gets the knowledge context but no tools. Single pass, no tool-calling machinery, answer from context alone."
+            "prop": "That third decision is the short-circuit. If someone asks “how do you define a high-priority district?” and the knowledge base already has a section on district prioritization criteria, the planner returns routing_mode: short_circuit. The orchestrator gets the knowledge context but no tools. Single pass, no tool-calling machinery, answer from context alone."
           },
           {
             "type": "text",
@@ -170,7 +170,7 @@
           },
           {
             "type": "text",
-            "prop": "It receives a system prompt assembled from Jinja2 templates (more on that shortly), dynamic instructions injected at runtime (the user\u2019s identity, temporal context, loaded knowledge, guidance about which agents were pre-selected), and the user\u2019s question."
+            "prop": "It receives a system prompt assembled from [[Jinja2::Jinja2: a Python templating engine that renders text from a template and a data context. In Voltaire, it is used to compose system prompts and inject user-specific variables at runtime.]] templates (more on that shortly), dynamic instructions injected at runtime (the user’s identity, temporal context, loaded knowledge, guidance about which agents were pre-selected), and the user’s question."
           },
           {
             "type": "text",
@@ -182,11 +182,11 @@
           },
           {
             "type": "text",
-            "prop": "Without hard limits, an LLM will call tools in a loop until you stop it. I\u2019ve watched orchestrators burn through 40 tool calls on a question that needed two. Each unnecessary call adds latency and cost, and the user is sitting in Slack waiting. The budget forces the model to plan: which tools give the highest-signal evidence in the fewest calls?"
+            "prop": "Without hard limits, an LLM will call tools in a loop until you stop it. I’ve watched orchestrators burn through 40 tool calls on a question that needed two. Each unnecessary call adds latency and cost, and the user is sitting in Slack waiting. The budget forces the model to plan: which tools give the highest-signal evidence in the fewest calls?"
           },
           {
             "type": "text",
-            "prop": "Then there\u2019s the timeout. The entire run has a wall-clock budget that varies by execution mode. Each tool call has its own deadline inside that. If the data warehouse takes too long, the orchestrator gets a partial result and works with what it has. If the whole run times out, a recovery path synthesizes whatever tool outputs completed into a best-effort response rather than returning nothing."
+            "prop": "Then there’s the timeout. The entire run has a wall-clock budget that varies by execution mode. Each tool call has its own deadline inside that. If the data warehouse takes too long, the orchestrator gets a partial result and works with what it has. If the whole run times out, a recovery path synthesizes whatever tool outputs completed into a best-effort response rather than returning nothing."
           },
           {
             "type": "headline",
@@ -198,11 +198,11 @@
           },
           {
             "type": "text",
-            "prop": "Lumping every external call into a single \u201ctool\u201d abstraction is a common first pass. It breaks down fast. A SQL executor, a multi-step data warehouse researcher, and a prescribed session-tracing workflow have different failure modes, different levels of autonomy, and different needs for oversight. Voltaire separates them into three runtime primitives."
+            "prop": "Lumping every external call into a single “tool” abstraction is a common first pass. It breaks down fast. A SQL executor, a multi-step data warehouse researcher, and a prescribed session-tracing workflow have different failure modes, different levels of autonomy, and different needs for oversight. Voltaire separates them into three runtime primitives."
           },
           {
             "type": "text",
-            "prop": "Tools are deterministic functions. A tool runs a SQL query against the data warehouse. A tool exports data to a spreadsheet. A tool renders a chart. Pure inputs, pure outputs, no LLM reasoning involved. They\u2019re the atoms of the system, and the design intent is to keep them as isolated as possible so each one can be tested and trusted independently."
+            "prop": "Tools are deterministic functions. A tool runs a SQL query against the data warehouse. A tool exports data to a spreadsheet. A tool renders a chart. Pure inputs, pure outputs, no LLM reasoning involved. They’re the atoms of the system, and the design intent is to keep them as isolated as possible so each one can be tested and trusted independently."
           },
           {
             "type": "text",
@@ -214,11 +214,11 @@
           },
           {
             "type": "text",
-            "prop": "What actually separates these isn\u2019t complexity. It\u2019s visibility. In agent mode, the orchestrator asks \u201cwhat do I need to know?\u201d and delegates the \u201chow\u201d entirely. In skill mode, the orchestrator operates at the level of individual tool calls, following a prescribed sequence. Agents hide complexity; skills make it explicit."
+            "prop": "What actually separates these isn’t complexity. It’s visibility. In agent mode, the orchestrator asks “what do I need to know?” and delegates the “how” entirely. In skill mode, the orchestrator operates at the level of individual tool calls, following a prescribed sequence. Agents hide complexity; skills make it explicit."
           },
           {
             "type": "text",
-            "prop": "The planner routes between these two modes. When someone asks \u201cwhat\u2019s happening with enrollment in California?\u201d the planner selects one to four agents, the orchestrator calls them in whatever order its reasoning dictates, and the final answer emerges from synthesis. Each agent internally decides how to use its tools. When someone asks \u201ctrace session ABC-123,\u201d the planner matches a skill instead. The skill declares two tools (a log query function and a SQL executor), prescribes a sequence (fetch session events, cross-reference with audit logs, synthesize a timeline), and includes its own PII policy. Same playbook every time."
+            "prop": "The planner routes between these two modes. When someone asks “what’s happening with enrollment in California?” the planner selects one to four agents, the orchestrator calls them in whatever order its reasoning dictates, and the final answer emerges from synthesis. Each agent internally decides how to use its tools. When someone asks “trace session ABC-123,” the planner matches a skill instead. The skill declares two tools (a log query function and a SQL executor), prescribes a sequence (fetch session events, cross-reference with audit logs, synthesize a timeline), and includes its own PII policy. Same playbook every time."
           },
           {
             "type": "image",
@@ -233,11 +233,11 @@
           },
           {
             "type": "text",
-            "prop": "The routing contract is strict: the planner returns either matched skills or matched agents, never both. If a skill matches, agents get cleared. The orchestrator can\u2019t access tools outside the skill\u2019s declared surface."
+            "prop": "The routing contract is strict: the planner returns either matched skills or matched agents, never both. If a skill matches, agents get cleared. The orchestrator can’t access tools outside the skill’s declared surface."
           },
           {
             "type": "text",
-            "prop": "We tried a single mode first. It doesn\u2019t work. Exploratory questions need the flexibility of agent reasoning; operational workflows need the predictability of a deterministic playbook. One mode can\u2019t do both well."
+            "prop": "We tried a single mode first. It doesn’t work. Exploratory questions need the flexibility of agent reasoning; operational workflows need the predictability of a deterministic playbook. One mode can’t do both well."
           },
           {
             "type": "headline",
@@ -265,7 +265,7 @@
           },
           {
             "type": "text",
-            "prop": "On top of this static structure sits a dynamic instruction layer. At runtime, functions inject the user\u2019s identity, the current date and timezone, the planner\u2019s selected knowledge sections, response budget constraints, and guidance about pre-selected agents. Static template defines the shape. Dynamic layer fills in the specifics."
+            "prop": "On top of this static structure sits a dynamic instruction layer. At runtime, functions inject the user’s identity, the current date and timezone, the planner’s selected knowledge sections, response budget constraints, and guidance about pre-selected agents. Static template defines the shape. Dynamic layer fills in the specifics."
           },
           {
             "type": "text",
@@ -273,12 +273,12 @@
           },
           {
             "type": "text",
-            "prop": "The orchestration brain itself accounts for roughly 12% of Voltaire\u2019s codebase. Everything around it, the identity layer, the planner, the skill system, the PII enforcement, the audit logging, exists to make that 12% reliable. That\u2019s the real work of building an AI assistant: not the model, but the pipeline that lets you trust it. The model gets better every quarter. The orchestration layer is what lets you actually ship it."
+            "prop": "The orchestration brain itself accounts for roughly 12% of Voltaire’s codebase. Everything around it, the identity layer, the planner, the skill system, the PII enforcement, the audit logging, exists to make that 12% reliable. That’s the real work of building an AI assistant: not the model, but the pipeline that lets you trust it. The model gets better every quarter. The orchestration layer is what lets you actually ship it."
           },
           {
             "type": "networks",
             "prop": {
-              "quote": "Checkout the article ''The Reasoning Loop'' by Meryll Dindin \ud83d\udc40",
+              "quote": "Checkout the article ''The Reasoning Loop'' by Meryll Dindin 👀",
               "url": "/thoughts/reasoning-loop/"
             }
           },

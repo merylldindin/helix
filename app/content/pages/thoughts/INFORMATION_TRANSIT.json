@@ -11,7 +11,7 @@
   "head": {
     "canonical": "/thoughts/information-transit/",
     "title": "Information Transit | Meryll Dindin",
-    "description": "The AI productivity story focuses on individuals. The real bottleneck is how information moves between teams. Production got cheaper. Coordination didn\u2019t.",
+    "description": "The AI productivity story focuses on individuals. The real bottleneck is how information moves between teams. Production got cheaper. Coordination didn’t.",
     "ogType": "article",
     "thumbnail": "https://cdn.merylldindin.com/thumbnails/information-transit-20260323T175241.webp",
     "thumbnailAlt": "Data packets flowing through parallel channels interrupted by vertical barriers representing organizational friction"
@@ -48,11 +48,11 @@
           },
           {
             "type": "text",
-            "prop": "Every AI conversation I hear right now is about individual productivity. The 10x engineer. The marketer who writes twice as many campaigns. The salesperson who personalizes outreach at scale. These stories are real, but they\u2019re missing the point."
+            "prop": "Every AI conversation I hear right now is about individual productivity. The 10x engineer. The marketer who writes twice as many campaigns. The salesperson who personalizes outreach at scale. These stories are real, but they’re missing the point."
           },
           {
             "type": "text",
-            "prop": "The bottleneck at most companies isn\u2019t how fast any one person works. It\u2019s how information moves between people. Too many handoffs between narrowly scoped roles. Information siloed in department-specific tools. Meetings that exist to share context that should be searchable. Approval chains that serialize naturally parallel work. AI can accelerate individual output all day long, and you\u2019ll still be slow if the transit layer is broken."
+            "prop": "The bottleneck at most companies isn’t how fast any one person works. It’s how information moves between people. Too many handoffs between narrowly scoped roles. Information siloed in department-specific tools. Meetings that exist to share context that should be searchable. Approval chains that serialize naturally parallel work. AI can accelerate individual output all day long, and you’ll still be slow if the transit layer is broken."
           },
           {
             "type": "text",
@@ -68,19 +68,19 @@
           },
           {
             "type": "text",
-            "prop": "There\u2019s a version of the AI productivity story that CTOs tell at conferences. \u201cMy engineers are seeing 10x productivity gains from AI coding tools.\u201d And then, a few minutes later: \u201cBut we haven\u2019t actually shipped more, because the deploy process, the review cycle, the rollout, the marketing, the compliance checks, all of that still takes the same amount of time.\u201d"
+            "prop": "There’s a version of the AI productivity story that CTOs tell at conferences. “My engineers are seeing 10x productivity gains from AI coding tools.” And then, a few minutes later: “But we haven’t actually shipped more, because the deploy process, the review cycle, the rollout, the marketing, the compliance checks, all of that still takes the same amount of time.”"
           },
           {
             "type": "text",
-            "prop": "The individual got faster. The system didn\u2019t."
+            "prop": "The individual got faster. The system didn’t."
           },
           {
             "type": "text",
-            "prop": "The same pattern shows up everywhere. A salesperson can research a prospect in minutes instead of hours, but the CRM doesn\u2019t connect to the territory data, so they still spend time manually cross-referencing. An operations manager can draft an SOP in ten minutes with voice-to-text, but getting three departments to review and approve it takes two weeks. A data analyst can run a complex query in seconds, but explaining the results to a non-technical stakeholder requires a meeting, a slide deck, and a follow-up meeting."
+            "prop": "The same pattern shows up everywhere. A salesperson can research a prospect in minutes instead of hours, but the CRM doesn’t connect to the territory data, so they still spend time manually cross-referencing. An operations manager can draft an SOP in ten minutes with voice-to-text, but getting three departments to review and approve it takes two weeks. A data analyst can run a complex query in seconds, but explaining the results to a non-technical stakeholder requires a meeting, a slide deck, and a follow-up meeting."
           },
           {
             "type": "text",
-            "prop": "Production got cheaper. Coordination didn\u2019t."
+            "prop": "Production got cheaper. Coordination didn’t."
           },
           {
             "type": "headline",
@@ -96,11 +96,11 @@
           },
           {
             "type": "text",
-            "prop": "Tool silos are the most expensive. Every department has its own system. Revenue lives in the CRM. Support lives in the ticketing system. Clinical ops lives in a proprietary platform. Finance lives in spreadsheets and an ERP. The information in each system is valuable. The fact that these systems don\u2019t talk to each other is the problem. \u201cWhich customers had support issues that correlate with churn risk?\u201d requires manually pulling data from three systems and cross-referencing in a spreadsheet. That\u2019s a plumbing problem, not an analysis problem."
+            "prop": "Tool silos are the most expensive. Every department has its own system. Revenue lives in the CRM. Support lives in the ticketing system. Clinical ops lives in a proprietary platform. Finance lives in spreadsheets and an ERP. The information in each system is valuable. The fact that these systems don’t talk to each other is the problem. “Which customers had support issues that correlate with churn risk?” requires manually pulling data from three systems and cross-referencing in a spreadsheet. That’s a plumbing problem, not an analysis problem."
           },
           {
             "type": "text",
-            "prop": "Handoff chains compound it. Context lost at every transition, reformatted and re-explained until the original need is unrecognizable. Meetings that exist solely to transfer information from one person to another. Approval workflows that serialize work because oversight was designed for a world where every step needed human attention. The friction is structural, and it\u2019s consistent across every company I\u2019ve advised."
+            "prop": "Handoff chains compound it. Context lost at every transition, reformatted and re-explained until the original need is unrecognizable. Meetings that exist solely to transfer information from one person to another. Approval workflows that serialize work because oversight was designed for a world where every step needed human attention. The friction is structural, and it’s consistent across every company I’ve advised."
           },
           {
             "type": "headline",
@@ -112,7 +112,7 @@
           },
           {
             "type": "text",
-            "prop": "The highest-leverage AI applications I\u2019ve built are the ones that remove transit friction between teams, not the ones that make individuals faster."
+            "prop": "The highest-leverage AI applications I’ve built are the ones that remove transit friction between teams, not the ones that make individuals faster."
           },
           {
             "type": "text",
@@ -120,15 +120,15 @@
           },
           {
             "type": "text",
-            "prop": "We enforce transcription by default on every meeting. Six months of transcribed meetings creates a searchable institutional memory that no wiki can replicate, because it captures the reasoning behind decisions, not just the decisions themselves. New hires search prior decisions instead of asking five people what happened. Managers review meetings they couldn\u2019t attend without a debrief. The compound effect is significant."
+            "prop": "We enforce transcription by default on every meeting. Six months of transcribed meetings creates a searchable institutional memory that no wiki can replicate, because it captures the reasoning behind decisions, not just the decisions themselves. New hires search prior decisions instead of asking five people what happened. Managers review meetings they couldn’t attend without a debrief. The compound effect is significant."
           },
           {
             "type": "text",
-            "prop": "We built knowledge agents that handle the questions people ask repeatedly. \u201cHow does the billing system handle this edge case?\u201d \u201cWhat\u2019s the SOP for provider onboarding?\u201d A well-grounded agent handles the majority of these, and the human expert only gets involved for genuinely novel cases."
+            "prop": "We built knowledge agents that handle the questions people ask repeatedly. “How does the billing system handle this edge case?” “What’s the SOP for provider onboarding?” A well-grounded agent handles the majority of these, and the human expert only gets involved for genuinely novel cases."
           },
           {
             "type": "text",
-            "prop": "The key word in all of this is \u201ccurated.\u201d A knowledge base that\u2019s reviewed, categorized, and version-controlled produces grounded answers citing internal sources. A raw document dump produces hallucinated answers that sound right and aren\u2019t. Garbage in, garbage out isn\u2019t just a data engineering truism. It\u2019s the single most important principle in applied AI."
+            "prop": "The key word in all of this is “curated.” A knowledge base that’s reviewed, categorized, and version-controlled produces grounded answers citing internal sources. A raw document dump produces hallucinated answers that sound right and aren’t. Garbage in, garbage out isn’t just a data engineering truism. It’s the single most important principle in applied AI."
           },
           {
             "type": "headline",
@@ -140,19 +140,19 @@
           },
           {
             "type": "text",
-            "prop": "None of this works without a data strategy. I keep coming back to this point because it\u2019s the prerequisite most companies skip."
+            "prop": "None of this works without a data strategy. I keep coming back to this point because it’s the prerequisite most companies skip."
           },
           {
             "type": "text",
-            "prop": "If your tools don\u2019t feed into a centralized data layer, your AI applications will be limited to individual-level productivity. Useful, but not what changes a company. The real leverage comes when AI can reason across systems: when the agent answering a revenue question can also see the support ticket history, the meeting transcript from last week, and the financial data that contextualizes the whole picture."
+            "prop": "If your tools don’t feed into a centralized data layer, your AI applications will be limited to individual-level productivity. Useful, but not what changes a company. The real leverage comes when AI can reason across systems: when the agent answering a revenue question can also see the support ticket history, the meeting transcript from last week, and the financial data that contextualizes the whole picture."
           },
           {
             "type": "text",
-            "prop": "Building that data layer isn\u2019t glamorous. ETL pipelines, schema documentation, data quality checks, the unglamorous process of making sure every system feeds into a central warehouse with consistent naming conventions. We invested in this early, before AI was the obvious use case, because we needed reliable reporting. That investment turned out to be the foundation everything else sits on."
+            "prop": "Building that data layer isn’t glamorous. [[ETL::ETL: Extract, Transform, Load, the process of pulling data from source systems, transforming it into a consistent schema, and loading it into a destination such as a data warehouse. The foundational data engineering pattern for building reliable analytics infrastructure.]] pipelines, schema documentation, data quality checks, the unglamorous process of making sure every system feeds into a central warehouse with consistent naming conventions. We invested in this early, before AI was the obvious use case, because we needed reliable reporting. That investment turned out to be the foundation everything else sits on."
           },
           {
             "type": "text",
-            "prop": "Every month of centralized data you collect becomes context you can use later. And it\u2019s nearly impossible to backfill. Start collecting now, even if you don\u2019t know what you\u2019ll do with it yet."
+            "prop": "Every month of centralized data you collect becomes context you can use later. And it’s nearly impossible to backfill. Start collecting now, even if you don’t know what you’ll do with it yet."
           },
           {
             "type": "headline",
@@ -164,7 +164,7 @@
           },
           {
             "type": "text",
-            "prop": "If the bottleneck is information transit, the organizational response isn\u2019t to hire more specialists. Hire fewer people with broader scope and give them AI tools that cover the breadth."
+            "prop": "If the bottleneck is information transit, the organizational response isn’t to hire more specialists. Hire fewer people with broader scope and give them AI tools that cover the breadth."
           },
           {
             "type": "text",
@@ -172,7 +172,7 @@
           },
           {
             "type": "text",
-            "prop": "The lean team advantage is real, but it\u2019s about information flow, not work ethic. A small team where everyone has visibility into the whole business, supported by AI tools that make cross-domain queries trivial, will outpace a large team where each person only sees their slice. You want people who are curious across functions, comfortable with ambiguity, and willing to learn new tools quarterly. People who ask \u201cwhy does it work this way?\u201d rather than \u201cthat\u2019s not my department.\u201d"
+            "prop": "The lean team advantage is real, but it’s about information flow, not work ethic. A small team where everyone has visibility into the whole business, supported by AI tools that make cross-domain queries trivial, will outpace a large team where each person only sees their slice. You want people who are curious across functions, comfortable with ambiguity, and willing to learn new tools quarterly. People who ask “why does it work this way?” rather than “that’s not my department.”"
           },
           {
             "type": "headline",
@@ -184,16 +184,16 @@
           },
           {
             "type": "text",
-            "prop": "The token math is compelling on its own. AI output is fifty to two hundred times cheaper than human output at raw throughput. But the ROI that actually changes a company lives in the coordination costs you eliminate. Every meeting you don\u2019t need to schedule. Every handoff you don\u2019t need to manage. Every question that gets answered in thirty seconds instead of three days."
+            "prop": "The token math is compelling on its own. AI output is fifty to two hundred times cheaper than human output at raw throughput. But the ROI that actually changes a company lives in the coordination costs you eliminate. Every meeting you don’t need to schedule. Every handoff you don’t need to manage. Every question that gets answered in thirty seconds instead of three days."
           },
           {
             "type": "text",
-            "prop": "Start with the data layer. Every month of centralized, searchable context you build now is context you can\u2019t backfill later. The meeting that wasn\u2019t transcribed, the sales call that wasn\u2019t logged, the support ticket that wasn\u2019t categorized: that information is gone. And in six months, when you want an agent that can reason across your entire business, you\u2019ll wish you\u2019d started collecting today."
+            "prop": "Start with the data layer. Every month of centralized, searchable context you build now is context you can’t backfill later. The meeting that wasn’t transcribed, the sales call that wasn’t logged, the support ticket that wasn’t categorized: that information is gone. And in six months, when you want an agent that can reason across your entire business, you’ll wish you’d started collecting today."
           },
           {
             "type": "networks",
             "prop": {
-              "quote": "Checkout the article ''Information Transit'' by Meryll Dindin \ud83d\udc40",
+              "quote": "Checkout the article ''Information Transit'' by Meryll Dindin 👀",
               "url": "/thoughts/information-transit/"
             }
           },

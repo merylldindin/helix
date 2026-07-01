@@ -111,7 +111,7 @@
           },
           {
             "type": "text",
-            "prop": "A Voltaire skill is a single .j2 file. The container is XML, the body is Jinja2. The orchestrator parses it at boot, validates the tool modules exist, and registers the skill. There is no code path that knows the skill is there. Adding one means dropping a file in a folder."
+            "prop": "A Voltaire skill is a single .j2 file. The container is XML, the body is [[Jinja2::Jinja2: a Python templating language that renders structured text from variables and logic at runtime. It lets skill files stay readable while injecting context like user role or current entity on each invocation.]]. The orchestrator parses it at boot, validates the tool modules exist, and registers the skill. There is no code path that knows the skill is there. Adding one means dropping a file in a folder."
           },
           {
             "type": "text",
