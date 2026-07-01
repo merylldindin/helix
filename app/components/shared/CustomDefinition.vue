@@ -59,7 +59,8 @@ onBeforeUnmount(() => document.removeEventListener("click", closeOnOutsideClick)
   display: inline;
 
   &__term {
-    border-bottom: 1px dotted rgba(var(--v-theme-primary), 0.55);
+    border-bottom: 1px dotted
+      color-mix(in srgb, rgb(var(--v-theme-primary)) 55%, transparent);
     cursor: help;
   }
 
@@ -73,10 +74,10 @@ onBeforeUnmount(() => document.removeEventListener("click", closeOnOutsideClick)
     max-width: min(320px, 80vw);
     padding: 0.6rem 0.75rem;
     border-radius: 6px;
-    border: 1px solid rgba(var(--v-theme-primary), 0.18);
+    border: 1px solid color-mix(in srgb, rgb(var(--v-theme-primary)) 18%, transparent);
     background: rgb(var(--v-theme-surface));
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
-    color: rgba(var(--v-theme-primary), 0.82);
+    box-shadow: 0 6px 20px rgb(0 0 0 / 14%);
+    color: color-mix(in srgb, rgb(var(--v-theme-primary)) 82%, transparent);
     line-height: 1.45;
     text-align: left;
     white-space: normal;
@@ -91,7 +92,8 @@ onBeforeUnmount(() => document.removeEventListener("click", closeOnOutsideClick)
     display: block;
     margin-bottom: 0.4rem;
     padding-bottom: 0.35rem;
-    border-bottom: 1px solid rgba(var(--v-theme-primary), 0.15);
+    border-bottom: 1px solid
+      color-mix(in srgb, rgb(var(--v-theme-primary)) 15%, transparent);
     color: rgb(var(--v-theme-primary));
     font-weight: 700;
   }
