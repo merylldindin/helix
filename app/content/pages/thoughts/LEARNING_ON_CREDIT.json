@@ -1,0 +1,326 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-07-01",
+      "datePublished": "2026-07-01",
+      "keywords": "AI in education, large language models, cognitive offloading, learning transfer, performance versus learning, generative AI, teacher shortage, school psychologists, IEP, future of work, automation, skill acquisition"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/learning-on-credit/",
+    "title": "Learning on Credit | Meryll Dindin",
+    "description": "AI makes student work better and learning worse. The science is early, but the job market will eventually collect on the gap between output and real skill.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/learning-on-credit-20260701T101249.webp",
+    "thumbnailAlt": "A minimalist black and white graduation cap resting on a credit card, evoking education bought on credit"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "A wide minimalist black and white composition of a single sheet of paper, fully inked on the left and dissolving into a faint hollow outline on the right, evoking polished output with nothing underneath it",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/learning-on-credit-20260701T101222.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/learning-on-credit-20260701T101222-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/learning-on-credit-20260701T101222-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/learning-on-credit-20260701T101222-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Learning on Credit",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published July 1, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The strange thing about AI in the classroom is that the work has gotten better while the students have not. Essays are cleaner, problem sets more complete, submissions more polished than the same cohorts produced two years ago. And the people turning them in can do less on their own than they used to. Both things are happening at once, and the gap between them is the whole story."
+          },
+          {
+            "type": "text",
+            "prop": "That gap has a name in the research literature now, and it is worth taking seriously before we decide what AI is doing to a generation of learners. A machine that produces good work on your behalf is not the same as a machine that makes you better. We have spent two years measuring the first thing and mostly telling ourselves it was the second."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What the Machine Actually Does",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Start with what the tool is, because the marketing has made it fuzzy on purpose. A [[large language model::A large language model is a system trained to predict the next piece of text given everything before it. It has no beliefs or understanding in the human sense. It is a very good statistical guess about what word comes next, run at enormous scale.]] is a prediction engine over text. It does not know things the way a person does. It estimates, token by token, what a plausible continuation of your prompt looks like, and it is extraordinarily good at it. That is not a knock. Predicting fluent, correct-looking language turns out to cover a startling amount of what we ask students to do."
+          },
+          {
+            "type": "text",
+            "prop": "The relevant point for learning is mechanical, not philosophical. When a student writes an essay, the effort is the product: retrieving what they know, sequencing an argument, catching their own errors, holding the whole shape in mind. That effort is the thing that builds the skill. When the model writes the essay, the model does that work. The student gets the output and skips the workout. The paper is better. The muscle never contracted."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Performance Is Not Learning",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "This is the distinction the field has converged on, and it deserves to be the center of the conversation rather than a footnote. Yan et al., writing in Nature Reviews Psychology in 2025, put it plainly: AI reliably improves task performance, and it does not follow that it improves learning. The two are different quantities, and measuring the first while claiming the second systematically overstates how much good the tool is doing."
+          },
+          {
+            "type": "text",
+            "prop": "The mechanism is [[cognitive offloading::Cognitive offloading is using an external tool to do mental work you would otherwise do in your head, like a calculator for arithmetic. It saves effort now. The open question is what it costs the skill you were building by doing the work yourself.]], and offloading is not automatically bad. We offload to calculators, to notebooks, to search engines, and civilization is fine. The trouble is specific: offloading the exact cognitive work that a task was assigned to build. A calculator in a spreadsheet saves effort you did not need to spend. A calculator during the lesson that was supposed to teach you arithmetic saves the lesson too. Most student AI use is the second kind, and it is invisible in the output."
+          },
+          {
+            "type": "text",
+            "prop": "The word the researchers care about is [[transfer::Transfer is whether a skill you practiced shows up somewhere new: on a later test, in a different subject, in a job. Near transfer to near-identical tasks is easy to produce. Far transfer to genuinely different work is the hard, valuable kind, and the one that tends not to appear.]]. Can the student do the thing later, unaided, somewhere else? That is the only question that matters for whether learning happened, and it is precisely the question a graded essay written with AI cannot answer."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What the Research Shows, and How Early It Is",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The cleanest evidence we have is a field experiment by Bastani et al., published in the Proceedings of the National Academy of Sciences in 2025, run with roughly a thousand high school math students. Given unrestricted access to a standard chatbot, students solved far more practice problems correctly. Then the tool was taken away for the exam, and the same students scored meaningfully worse than classmates who had never had it. Practice performance up, retained skill down. The revealing detail is the third group: students given a guardrailed tutor built to withhold answers and prompt reasoning showed no such penalty. Same underlying model, opposite result. The harm was in the usage pattern, not the technology."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Bar chart of the Bastani et al. field experiment. With an unguardrailed chatbot, practice performance rose 48 percent but unaided exam performance fell 17 percent against a no-AI control. With a guardrailed AI tutor, practice rose 127 percent and exam performance matched the control, with no penalty.",
+              "source": "https://cdn.merylldindin.com/articles/sections/learning-on-credit-practice-vs-learning-20260701T100735.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/learning-on-credit-practice-vs-learning-20260701T100735-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/learning-on-credit-practice-vs-learning-20260701T100735-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/learning-on-credit-practice-vs-learning-20260701T100735-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The honest posture is that this science is young. The samples are small and the windows are short, often a single task or a two-week unit rather than a year of a real education. Much of the alarming material lives in preprints that have not cleared peer review. The study that went most viral, the MIT group’s “brain on ChatGPT” work, measured [[EEG::Electroencephalography measures electrical activity at the scalp. It is a coarse, real-time signal of brain activity during a task, not a measure of intelligence, learning, or lasting change to the brain.]] activity in fifty-four people writing essays, dropping to eighteen for its longitudinal piece, and a formal methodological critique has already catalogued its problems. It is a preprint measuring in-the-moment brain activity during one task type. It is not evidence that AI damages your brain, whatever the headlines claimed, and treating it as such discredits the more careful work around it."
+          },
+          {
+            "type": "text",
+            "prop": "The counterweight matters too. A 2026 meta-analysis pooling thirty-five studies found an overall positive effect of ChatGPT on learning outcomes, with only a handful of negative results. So the picture is not settled doom. It is a genuine split that resolves, as far as anyone can tell, on the mechanism: AI used as a tutor that makes you work tends to help, AI used as an answer machine that does the work tends to hollow it out. Even our tools for policing the difference are unreliable, since AI-text detectors falsely flag a large share of writing by non-native English speakers and miss lightly edited machine text. We are measuring a moving target with instruments we do not fully trust, which is exactly why loud certainty in either direction is the wrong read."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why This Is a Labor Story",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The stakes reach past the classroom, into the market these students are about to enter. The job market is quietly repricing skills, and it is repricing them against the same axis the learning research runs on. The routine cognitive work that AI does well is becoming cheap. What stays scarce, and what employers increasingly pay for, is the judgment underneath: knowing which output is wrong, synthesizing across messy inputs, reasoning through a problem the model has never seen. That is far transfer by another name."
+          },
+          {
+            "type": "text",
+            "prop": "So consider what a school optimized for AI-assisted output actually produces. A cohort that looks capable as long as the tool is present and is thin underneath it. Fluent on credit. We would be training a generation for peak performance at precisely the task that is being automated, and starving them of the one capacity the market will still reward. The bill does not arrive at graduation. It arrives the first time the work has to hold up without the machine, in a job that hired them for the judgment the machine cannot supply."
+          },
+          {
+            "type": "text",
+            "prop": "Students are responding rationally to what gets graded. The failure sits upstream of them, in a system that measures the output and calls it the person."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Bet That Actually Pays",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The strongest case for AI in schools right now is not in the classroom at all. When AI drafts the first pass of an individualized education program for an overloaded school psychologist, no one worries the psychologist failed to learn how to write one. They already know. They are simply outnumbered."
+          },
+          {
+            "type": "text",
+            "prop": "And they are badly outnumbered. In the latest federal count, roughly three quarters of American public schools reported difficulty filling a teaching vacancy, with special education the single most widespread shortage. School psychologists work at national ratios near one for every thousand students against a professional recommendation of one for five hundred, a shortfall measured in the tens of thousands of people who do not exist. Counselors run similarly thin. These are not jobs a chatbot should do. They are jobs no one is there to do, where the realistic choice is between an overwhelmed professional and the same professional with an hour of paperwork handed back."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Bar chart of school support staffing loads against professional recommendations. School psychologists carry 2.14 times the recommended load (1,071 students versus 500), school counselors 1.49 times (372 versus 250), and speech-language pathologists 1.25 times their manageable caseload (50 versus 40).",
+              "source": "https://cdn.merylldindin.com/articles/sections/learning-on-credit-staffing-gap-20260701T100735.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/learning-on-credit-staffing-gap-20260701T100735-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/learning-on-credit-staffing-gap-20260701T100735-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/learning-on-credit-staffing-gap-20260701T100735-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "A peer-reviewed study of special educators using AI to draft individualized-education goals found the AI-assisted drafts were rated comparable in quality and took less time to write. That is the whole promise in one sentence. The drafts do not replace the professional’s judgment, they get to it faster."
+          },
+          {
+            "type": "text",
+            "prop": "That is the line worth holding. AI earns its place in education where it augments a scarcity of people, and it should be met with real suspicion where it substitutes for the effort that turns a student into someone worth hiring."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Bill Comes Due",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The framing I keep coming back to is credit. A loan is not a gift, even when it spends like one, and the difference only shows up at repayment. AI in the classroom spends like a gift right now: better work, less struggle, happier submissions. Whether it was a gift or a loan depends entirely on whether the student built anything underneath the output, and the current answer, for most of how it is being used, is that they did not."
+          },
+          {
+            "type": "text",
+            "prop": "The science will get less early, the samples will get bigger, and some of today’s alarm will not survive contact with better studies. The underlying logic does not need another preprint. Do the work and you get the skill. Skip the work and you get the artifact. The market has always paid for the first and only briefly mistaken the second for it. Borrow where the alternative is nothing. Not where the loan quietly does the work that would have made the borrower worth hiring."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Learning on Credit'' by Meryll Dindin 👀",
+              "url": "/thoughts/learning-on-credit/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s44159-025-00467-5",
+              "title": "Yan, L. et al. (2025). Distinguishing Performance Gains from Learning.",
+              "description": "Nature Reviews Psychology: AI improves task performance without necessarily improving learning, and conflating the two overstates its benefit."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.pnas.org/doi/10.1073/pnas.2422633122",
+              "title": "Bastani, H. et al. (2025). Generative AI Can Harm Learning.",
+              "description": "PNAS field experiment: unguardrailed ChatGPT raised practice scores but lowered unaided exam performance; a guardrailed tutor removed the harm."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s41598-025-97652-6",
+              "title": "Kestin, G. et al. (2025). AI Tutoring Outperforms Active Learning.",
+              "description": "Scientific Reports: a custom-built physics AI tutor produced more than twice the learning per unit time versus an active-learning class."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://arxiv.org/abs/2506.08872",
+              "title": "Kosmyna, N. et al. (2025). Your Brain on ChatGPT.",
+              "description": "MIT Media Lab preprint measuring in-task EEG activity during essay writing. Widely misreported as evidence of lasting cognitive harm."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://arxiv.org/abs/2601.00856",
+              "title": "Stanković, M. et al. (2026). A Methodological Critique of Your Brain on ChatGPT.",
+              "description": "Catalogues sample-size, EEG-analysis, reproducibility, and reporting problems in the viral MIT preprint."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s41599-026-07019-z",
+              "title": "Meta-analysis (2026). ChatGPT and Student Learning Outcomes.",
+              "description": "Humanities and Social Sciences Communications: thirty-five studies pooled to an overall positive effect, with only a handful negative."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.cell.com/patterns/fulltext/S2666-3899(23)00130-7",
+              "title": "Liang, W. et al. (2023). GPT Detectors Are Biased Against Non-Native Writers.",
+              "description": "Patterns: AI-text detectors misclassified a large share of TOEFL essays by non-native English speakers as machine-generated."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://bera-journals.onlinelibrary.wiley.com/doi/10.1111/bjet.13544",
+              "title": "Fan, Y. et al. (2024). Beware of Metacognitive Laziness.",
+              "description": "British Journal of Educational Technology: ChatGPT lifted essay scores while leaving knowledge gain and transfer unchanged."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://news.gallup.com/poll/691967/three-teachers-weekly-saving-six-weeks-year.aspx",
+              "title": "Gallup & Walton Family Foundation (2025). The AI Dividend.",
+              "description": "Self-reported survey of teachers: weekly AI users estimate saving nearly six weeks a year, mostly on planning and administration."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://journals.sagepub.com/doi/10.1177/01626434251324592",
+              "title": "Waterfield, D. et al. (2025). IEP Goals Written With and Without ChatGPT.",
+              "description": "Journal of Special Education Technology: AI-assisted IEP goals were rated comparable in quality and took less time to produce."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nasponline.org/research-and-policy/policy-priorities/critical-policy-issues/shortage-of-school-psychologists",
+              "title": "NASP. Shortage of School Psychologists.",
+              "description": "National ratios near one psychologist per thousand students against a recommended one per five hundred, a shortfall in the tens of thousands."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://learningpolicyinstitute.org/blog/2025-update-latest-national-scan-shows-teacher-shortages-persist",
+              "title": "Learning Policy Institute (2025). Teacher Shortages Persist.",
+              "description": "Roughly 411,000 positions nationwide are unfilled or held by under-certified teachers, about one in eight, with special education hit hardest."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.schoolcounselor.org/about-school-counseling/school-counselor-roles-ratios",
+              "title": "ASCA. School Counselor Roles and Ratios.",
+              "description": "The recommended student-to-counselor ratio is 250 to 1; the 2024-25 national average was 372 to 1."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/hold-that-thought/",
+              "title": "Dindin, M. (2026). Hold That Thought.",
+              "description": "On working memory and why externalizing load is the honest move. The cognition series this piece sits alongside."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

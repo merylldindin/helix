@@ -24,6 +24,7 @@ export const RoutePath = {
   KNOWLEDGE_GRAPH: "/thoughts/knowledge-graph/",
   LANDING_PAGE: "/",
   LEARNING_DIFFERENCES: "/thoughts/learning-differences/",
+  LEARNING_ON_CREDIT: "/thoughts/learning-on-credit/",
   LEARNS_FROM_ITSELF: "/thoughts/learns-from-itself/",
   MEASURING_STUDENT_OUTCOMES: "/thoughts/measuring-student-outcomes/",
   MENTIONS: "/mentions/",

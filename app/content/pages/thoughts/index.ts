@@ -16,6 +16,7 @@ export { default as HOLD_THAT_THOUGHT } from "./HOLD_THAT_THOUGHT.json";
 export { default as INFORMATION_TRANSIT } from "./INFORMATION_TRANSIT.json";
 export { default as KNOWLEDGE_GRAPH } from "./KNOWLEDGE_GRAPH.json";
 export { default as LEARNING_DIFFERENCES } from "./LEARNING_DIFFERENCES.json";
+export { default as LEARNING_ON_CREDIT } from "./LEARNING_ON_CREDIT.json";
 export { default as LEARNS_FROM_ITSELF } from "./LEARNS_FROM_ITSELF.json";
 export { default as MEASURING_STUDENT_OUTCOMES } from "./MEASURING_STUDENT_OUTCOMES.json";
 export { default as MIND_THE_BASELINE } from "./MIND_THE_BASELINE.json";

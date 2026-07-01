@@ -15,6 +15,49 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "learning-on-credit-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Learning on Credit",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "July 1, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "AI makes student work better and learning worse. The science is early, but the job market will eventually collect on the gap between output and real skill."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article Learning on Credit",
+              "to": "/thoughts/learning-on-credit/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "A minimalist black and white balance scale with a solid inked page on one pan and a faint hollow outline of the same page on the other, the solid side sitting lower",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/learning-on-credit-20260701T101302.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/learning-on-credit-20260701T101302-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/learning-on-credit-20260701T101302-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/learning-on-credit-20260701T101302-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "hold-that-thought-section",
       "props": {
         "content": [
