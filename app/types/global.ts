@@ -16,6 +16,13 @@ export interface DeliveredImage {
   zoomable?: boolean;
 }
 
+export interface DeliveredVideo {
+  altText: string;
+  source: string;
+  poster?: string;
+  mobile?: string;
+}
+
 export const TextChunkType = {
   BOLD: "b",
   ITALIC: "i",

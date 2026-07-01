@@ -1,0 +1,292 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-06-30",
+      "datePublished": "2026-06-30",
+      "keywords": "whole-body MRI, consumer health, longevity, Ezra, Prenuvo, medical imaging, cancer screening, body composition, AI radiology"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/consumer-mri/",
+    "title": "The Scan You Donate: Whole-Body MRI | Meryll Dindin",
+    "description": "A 30-year-old's full-body MRI, the new players selling it, and an honest look at what a baseline scan can and cannot tell you about longevity.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/consumer-mri-20260630T100310.webp",
+    "thumbnailAlt": "Minimalist black-and-white MRI brain slice on a dark grid"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "Abstract grayscale sweep of cross-sectional body scans on a dark scanner interface",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/consumer-mri-20260630T100443.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/consumer-mri-20260630T100443-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/consumer-mri-20260630T100443-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/consumer-mri-20260630T100443-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "The Scan You Donate",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published June 30, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Randomly scrolling through my own brain, one slice at a time, on a random Thursday. A slider on the left, a grayscale cross-section in the middle, 120 images from the crown of my skull down through the cerebellum. Then I switched regions and did it again for my neck, my abdomen, my pelvis. The whole archive of my insides, rendered on demand in a browser tab."
+          },
+          {
+            "type": "video",
+            "prop": {
+              "altText": "Sagittal MRI of my head sweeping front to back, brain and skull in grayscale",
+              "source": "https://cdn.merylldindin.com/articles/videos/head-20260630T094301.mp4",
+              "poster": "https://cdn.merylldindin.com/articles/videos/head-poster-20260630T094301.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Years ago this kind of data was something I chased for sport. Kaggle was a competitive ML hobby for me, and the medical-imaging competitions were the ones I loved most: training models to segment and classify scans, teaching a network where one organ ends and the next begins, telling signal from noise. The images were the expensive, jealously-guarded part. You scraped what you could from public challenges and treated every annotated volume like gold. Seeing a full-resolution scan of my own body show up in my account, for a few hundred dollars, was a strange kind of homecoming. The thing I used to grind for in competitions is now a consumer product."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What I actually bought",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The scan was a screening MRI from Ezra, which Function Health acquired in May 2025. About an hour in the machine, no contrast, no ionizing radiation. It covered my head, neck, abdomen, and pelvis. A few weeks later I had a report and a viewer, and every finding came back the same: normal. Normal brain volume for my age. No fatty liver, no iron overload. An abdominal aorta of normal caliber with no aneurysm. A prostate measuring about 20 cubic centimeters, which is to say unremarkable."
+          },
+          {
+            "type": "video",
+            "prop": {
+              "altText": "Axial MRI sweeping through my abdomen, organs in cross-section",
+              "source": "https://cdn.merylldindin.com/articles/videos/abdomen-20260630T094301.mp4",
+              "poster": "https://cdn.merylldindin.com/articles/videos/abdomen-poster-20260630T094301.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Even though a board-certified neuroradiologist reviews it, this is mostly for wellness purposes, not diagnosis. I am not validating a condition. I want my baseline, captured and recaptured over time."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Why this was locked away, and why it opened",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "MRI was inaccessible for boring, structural reasons. A new 1.5T scanner runs north of a million dollars, and an installed system with shielding and cooling lands closer to $2 to $3 million. Scans were long, often an hour. A radiologist had to read every one, and there are not enough radiologists: imaging volume has grown far faster than the workforce. Insurance only pays when you are already sick, so the machine was reserved for diagnosis, never curiosity."
+          },
+          {
+            "type": "text",
+            "prop": "What changed is the part closest to the work I used to do. Deep-learning reconstruction now rebuilds a clean image from far less raw data. Siemens Deep Resolve, GE AIR Recon DL, Philips SmartSpeed: FDA-cleared systems that cut acquisition time by roughly half, sometimes more. A single-center study measured a 52% drop; a larger multicenter analysis saw scan times fall by up to 53%. That is the trick behind the 22-minute full-body scans now on the market, at least on paper. Mine ran more than twice that, so the acceleration is still ahead of the waiting room. Ezra’s accelerator, Flash, is an FDA-cleared algorithm doing exactly this. Those models are the reason a scan that used to cost thousands now costs a few hundred."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The new players, and the strange one",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "video",
+            "prop": {
+              "altText": "Axial MRI sweeping through my pelvis in grayscale cross-section",
+              "source": "https://cdn.merylldindin.com/articles/videos/pelvis-20260630T094301.mp4",
+              "poster": "https://cdn.merylldindin.com/articles/videos/pelvis-poster-20260630T094301.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The market filled in fast. Prenuvo runs its own clinics and sells a roughly $2,500 whole-body scan, with the celebrity testimonials to match. Function and Ezra undercut it with an AI-plus-labs platform starting near $499 at launch. SimonMed, an established radiology practice, added a “Longevity” line. Neko Health, co-founded by Spotify’s Daniel Ek, does adjacent body scanning without MRI at all."
+          },
+          {
+            "type": "text",
+            "prop": "Then there is the one that reframes the whole category. In June 2026, Midjourney announced Midjourney Medical and a full-body “ultrasonic CT” scanner: you step into a shallow pool ringed with ultrasound sensors. It is not MRI, and it is barely a medical device yet. The founder admitted they are “not even using any AI in this yet, just really cool hardware and software.” The prototype takes about 20 minutes, not the advertised 60 seconds, and it has no FDA clearance. Radiologists pointed out that ultrasound physically cannot see through bone or air, which rules out the skull and the lungs."
+          },
+          {
+            "type": "text",
+            "prop": "So why does an image-generation company build a body scanner? Because the scan is not the product. The data is. The stated ambition is fifty thousand machines producing a billion scans a month by 2031, a corpus to train the next generation of models. The shape underneath is the same: imaging is becoming a data-acquisition layer, and bodies are the training set. Prenuvo has launched a planned 100,000-person observational cohort, and Function, which now owns Ezra, is built as a longitudinal health-data company first and a scan vendor second. The scan you buy is also the scan you donate."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The honest part",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I want to be clear-eyed, because the marketing is not. There is no randomized trial showing that whole-body MRI screening makes asymptomatic people live longer. None. The American College of Radiology does not endorse it for people without symptoms or risk factors, and has said there is no documented evidence that total-body screening is cost-effective or life-prolonging."
+          },
+          {
+            "type": "text",
+            "prop": "The numbers explain the caution, even allowing that they come from different cohorts. Across pooled studies, whole-body MRI turns up a confirmed cancer in roughly 1.5% of asymptomatic people. Around a third of scans surface something a radiologist flags, and the false-positive rate sits near 16%. Most of those trails lead nowhere, after the biopsies and the follow-up MRIs and the weeks of waiting. The risks here are not radiation. They are overdiagnosis, lead-time bias, and anxiety, plus the real chance that chasing a benign spot causes more harm than the spot ever would. The clear exception is genuinely high-risk people, such as carriers of Li-Fraumeni syndrome, where surveillance MRI does have evidence behind it. For the average healthy 30-year-old, the honest answer is that this is not proven medicine."
+          },
+          {
+            "type": "video",
+            "prop": {
+              "altText": "Axial MRI of my pelvis at the level of the prostate, in grayscale",
+              "source": "https://cdn.merylldindin.com/articles/videos/prostate-20260630T094301.mp4",
+              "poster": "https://cdn.merylldindin.com/articles/videos/prostate-poster-20260630T094301.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "So why did I do it",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Two reasons, and neither is “to catch cancer,” exactly."
+          },
+          {
+            "type": "text",
+            "prop": "The first is the baseline, and I want to be careful with it, because it is the easy thing to oversell. MRI quantifies things that track with how long and how well you live: visceral fat, liver fat fraction, muscle volume and the fat infiltrating it. The UK Biobank has imaged tens of thousands of people to build reference ranges for exactly these measures, and the associations are real. Higher visceral fat and muscle fat infiltration predict heart disease and diabetes independent of BMI, and across pooled studies low muscle mass comes with roughly 50% higher all-cause mortality. What I cannot show you is evidence that getting this scan at 30 changes any of that. The published ranges start at 45, so my numbers have nothing to compare against yet, and no trial says serial consumer MRI improves outcomes. A baseline is a bet that the comparison will be worth more later than the scan is worth now. I made that bet with my eyes open, which is not the same as believing it is proven."
+          },
+          {
+            "type": "text",
+            "prop": "The second reason is plainer: curiosity. I wanted to see the body I am trying to keep. I had this scan at 30, I would like to spend as many years as science allows living in something close to that version of myself, and now I can look at it directly instead of inferring it from a blood panel. Neither of my reasons is a medical justification. I would rather say that plainly than dress either one up as prevention."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What it means that this is a click away",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The slider is the thing I keep coming back to. Not the result, the interface. For the first time, my own anatomy behaves like any other dataset I have worked with: queryable, scrollable, mine to keep and to compare. The same models that made me fight for annotated scans on Kaggle are what put an unannotated scan of me on my couch."
+          },
+          {
+            "type": "text",
+            "prop": "I would not tell a healthy person this scan will save their life, because the evidence does not say that. I would tell them the access itself is the shift worth noticing. The body used to be legible only when something went wrong. Now it is legible on a Thursday, out of curiosity, for the price of a flight. What we do with it, one anxious incidental finding at a time, is the part no one has solved."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''The Scan You Donate'' by Meryll Dindin 👀",
+              "url": "/thoughts/consumer-mri/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.acr.org/News-and-Publications/Media-Center/2023/ACR-Statement-on-Screening-Total-Body-MRI",
+              "title": "ACR Statement on Screening Total Body MRI (2023)",
+              "description": "The American College of Radiology position against total-body screening MRI for asymptomatic patients."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6850647/",
+              "title": "Whole-Body MRI Screening: Systematic Review (JMRI, 2019)",
+              "description": "Pooled incidental-finding and false-positive rates across asymptomatic screening cohorts."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pubmed.ncbi.nlm.nih.gov/40884613/",
+              "title": "Whole-Body MRI Cancer Detection Meta-Analysis (European Radiology, 2025)",
+              "description": "Pooled cancer detection rate of about 1.5% across 9,000+ asymptomatic participants."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.nature.com/articles/s41467-020-15948-9",
+              "title": "UK Biobank Imaging Enhancement (Nature Communications, 2020)",
+              "description": "The large-scale imaging substudy behind population reference ranges for body composition."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6220857/",
+              "title": "Body-Composition Profiling in UK Biobank (Obesity, 2018)",
+              "description": "Visceral fat and muscle fat infiltration linked to heart disease and diabetes, independent of BMI."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11140511/",
+              "title": "Deep-Learning MRI Reconstruction and Throughput (Radiology: AI, 2024)",
+              "description": "Multicenter study showing AI reconstruction cutting MRI scan times by up to 53%."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.prnewswire.com/news-releases/function-health-acquires-ezra-introduces-499-full-body-mri-scan-302446016.html",
+              "title": "Function Health Acquires Ezra (PR Newswire, 2025)",
+              "description": "The acquisition that introduced the $499, 22-minute full-body MRI scan."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.forbes.com/sites/gabrielalinzainescu/2026/06/19/midjourneys-move-into-medicine-is-a-bet-on-data-not-doctors/",
+              "title": "Midjourney's Move Into Medicine Is a Bet on Data (Forbes, 2026)",
+              "description": "Why an AI image lab is building a body scanner: training data, not diagnosis."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.mobihealthnews.com/news/midjourney-enters-healthcare-60-second-full-body-imaging-system",
+              "title": "Midjourney Enters Medical Imaging (MobiHealthNews, 2026)",
+              "description": "Details of the ultrasonic full-body scanner and its wellness-first, uncleared status."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K230264.pdf",
+              "title": "Ezra Flash FDA 510(k) Clearance K230264 (FDA, 2023)",
+              "description": "The FDA clearance for the AI reconstruction that shortens Ezra's MRI scans."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

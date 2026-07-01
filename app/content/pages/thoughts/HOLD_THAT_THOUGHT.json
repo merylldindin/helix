@@ -1,0 +1,353 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-07-01",
+      "datePublished": "2026-07-01",
+      "keywords": "working memory, cognition, psychometrics, Baddeley, Cowan, complex span, n-back, fluid intelligence, brain training, dual n-back, processing speed, cognitive aging"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/hold-that-thought/",
+    "title": "Hold That Thought | Meryll Dindin",
+    "description": "Working memory is not a number to raise. It is a few slots that hold what you are thinking with, and the honest move is to stop overspending them.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/hold-that-thought-20260630T114049.webp",
+    "thumbnailAlt": "A minimalist black and white set of four small slots holding shapes, with a fifth shape slipping out, representing the limited room of working memory"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "A narrow shelf with only a few slots in minimalist black and white, most slots filled and one item falling away, evoking a small holding space under load",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/hold-that-thought-20260630T113941.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/hold-that-thought-20260630T113941-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/hold-that-thought-20260630T113941-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/hold-that-thought-20260630T113941-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Hold That Thought",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published July 1, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "I said I would take cognition one function at a time, and this is the first one, because it is the one you feel. You hold a phone number in your head while you cross the room to dial it. You lose it if someone says a second number on the way. That small, leaky holding space is working memory, and almost everything else you do with your mind passes through it."
+          },
+          {
+            "type": "text",
+            "prop": "It is also the function most aggressively sold back to you. The brain-training industry was built on the promise that you can make it bigger. So this is a good place to start the panel, because working memory is where the honest science and the marketing diverge hardest, and where reading your own number matters more than chasing it."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What It Actually Is",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Working memory is the mind’s RAM. It holds a small amount of information in a fast, volatile state while you work on it, the way a computer keeps the file you are editing in memory instead of reading it off the disk for every keystroke. Long-term memory is the disk, vast and durable and slow to reach. Working memory is the small fast workspace on top, and the key word is work. Pure storage, repeating a number back, is short-term memory. Working memory is that storage plus manipulation: holding the number while you also dial, holding the start of a sentence while you parse the end of it."
+          },
+          {
+            "type": "text",
+            "prop": "The field has argued about its architecture for fifty years and still has not fully settled. Baddeley and Hitch’s 1974 model splits it into a central executive that directs attention, plus separate stores for verbal and for visual-spatial material. Cowan’s later model drops the boxes and treats working memory as whatever part of long-term memory is currently activated, with a narrow focus of attention sitting on top. Engle goes further and argues the thing we are really measuring is controlled attention, the ability to keep what matters in mind while everything else competes for the spot."
+          },
+          {
+            "type": "text",
+            "prop": "The capacity number shrank as the science got more careful. Miller’s famous 1956 figure was seven, plus or minus two. Cowan revisited it in 2001 and argued the real limit was closer to four, once you stop people from rehearsing and recoding their way to a higher count. The exact number is still argued, anywhere from three to seven depending on how you test, but the direction is settled and the space is small either way. Most of what feels like a good memory is really a trick for packing that small space, [[chunking::Chunking: grouping items into a single unit, so 4 1 5 becomes one area code instead of three separate digits. It stretches how much fits in the same few slots.]] a phone number into three pieces instead of ten."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "How To Measure It Without Fooling Yourself",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The easy test is the one that tells you the least. [[Digit span::Digit span: repeating a sequence of digits straight back in order. The simplest span task, and one that measures raw storage more than active work.]], repeating back a string of numbers, measures storage and predicts relatively little about how you think. The tests that matter make you hold and work at the same time. Reading span, from Daneman and Carpenter in 1980, has you read a run of sentences aloud while holding the last word of each for recall at the end. Operation span interleaves arithmetic with recall. These [[complex-span::Complex span: a span task that interleaves a second activity, arithmetic or reading, between the items you must remember, forcing you to hold and work at once. The version most tied to reasoning.]] tasks track [[fluid reasoning::Fluid reasoning: solving new problems on the spot without leaning on stored knowledge. The live, in-the-moment side of intelligence, also called fluid intelligence or Gf.]] more closely than a bare digit span does, because holding while you work is closer to thinking than holding alone."
+          },
+          {
+            "type": "text",
+            "prop": "Then there is the n-back, the task the training apps adopted, where you flag when the current item matches one from a few steps earlier. It scales nicely and lights up the right brain regions, which is why neuroscience leans on it. The problem is that n-back and complex span, both sold under the single label working memory, correlate only weakly with each other. Kane and colleagues made this the center of a construct-validity argument in 2007. Two tasks with the same name measuring largely different things is exactly the trap this whole series is about."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "How It Drifts",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Working memory is one of the first functions to slide with age, and the slide starts earlier than most people expect. It begins in adulthood rather than waiting for a cliff in old age. Salthouse’s work makes the uncomfortable point that a large part of that decline is not really about memory at all. It rides on a slower internal clock, the general slowing of processing speed that drags much of the system with it. Hold that thought, because it is the next function in the panel."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Line chart of composite cognitive performance by age. Processing speed, working memory, and reasoning all decline steadily from the 20s, while vocabulary holds flat and rises slightly into the 60s before dipping.",
+              "source": "https://cdn.merylldindin.com/articles/sections/working-memory-lifespan-20260630T113321.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/working-memory-lifespan-20260630T113321-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/working-memory-lifespan-20260630T113321-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/working-memory-lifespan-20260630T113321-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "It also drifts on a much shorter clock than aging. A bad night of sleep narrows the space. So does stress, and so does load itself: every background worry you are holding is a slot you are not getting back. This is the part people underrate. Your working memory is not a fixed allotment you are stuck with on a given day. A lot of what feels like a small mind is a mind that is already full."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Run It On Yourself",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "You can get a rough read on your own in about two minutes, no app required. Have someone read you a random string of digits at roughly one a second, then say it back in reverse. Start at three digits and add one each time you succeed. The longest reversed string you can reproduce is your backward digit span. Reversing is the whole point: repeating forward is mostly storage, but flipping the order forces you to hold and manipulate at once, which is the working half of working memory."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Line chart of typical digit span by age. Forward span stays near six and a half across adulthood, while backward span slips from about five and a half in the twenties to under four and a half by the seventies.",
+              "source": "https://cdn.merylldindin.com/articles/sections/working-memory-digitspan-20260630T214359.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/working-memory-digitspan-20260630T214359-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/working-memory-digitspan-20260630T214359-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/working-memory-digitspan-20260630T214359-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Most adults land somewhere between four and six, and the number drifts down with age, faster for the backward version than the forward one. That gap is the storage-versus-work distinction showing up in your own head. Treat the curve as a rough guide, not a diagnosis. It is stitched together from group averages across different studies, and a single kitchen-table trial carries plenty of noise. What it is good for is your own baseline: run it again in a year, under the same conditions, and watch your own number rather than the crowd’s."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What You Can Actually Do About It",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Start with why anyone believed you could. Working memory is tightly bound to fluid reasoning, the live problem-solving we most associate with raw intelligence. Kyllonen and Christal found the link so tight in 1990 that they asked, in their title, whether reasoning was little more than working-memory capacity. Later work pulled that back from near-identity to a strong-but-partial overlap, but the headline had already done its work. If the two are nearly one thing, then training the first should lift the second. An industry placed that bet."
+          },
+          {
+            "type": "text",
+            "prop": "In 2008 Jaeggi and colleagues published the result that cashed it: training on a demanding [[dual n-back::Dual n-back: an n-back task run on two streams at once, say a position and a sound, each judged against what appeared n steps earlier. The demanding variant popularized by brain-training studies.]] task, they reported, improved fluid intelligence, and more practice produced more gain. If true, you could drill your way to a sharper mind. Dual n-back became a small religion."
+          },
+          {
+            "type": "text",
+            "prop": "It did not hold. The meta-analyses that followed, Melby-Lervåg and Hulme in 2013 and again with Redick in 2016, found the same disappointing shape every time. Working-memory training reliably makes you better at the trained task and tasks that look like it. It does not transfer to fluid intelligence, to reading, to the things you actually wanted. The 2016 analysis drove the point home in the cruelest way: even where both working memory and reasoning scores rose, the two gains were not correlated with each other. The mechanism the whole premise depended on, that growing the memory grows the mind, was not there. A broad review of the brain-training field that same year reached the same verdict. Cogmed and the apps built on this premise deliver [[near transfer::Near transfer improves tasks that resemble the trained one. Far transfer improves different, real-world abilities like reasoning or reading. Training reliably delivers the first, not the second.]] and sell it as far transfer. You get better at the game."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Forest plot of working-memory training effect sizes against active controls. Near-transfer gains on the trained working-memory tasks sit well above zero, while far-transfer to fluid intelligence, verbal ability, reading, and arithmetic clusters around zero with confidence intervals crossing it.",
+              "source": "https://cdn.merylldindin.com/articles/sections/working-memory-transfer-20260630T113321.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/working-memory-transfer-20260630T113321-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/working-memory-transfer-20260630T113321-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/working-memory-transfer-20260630T113321-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "So what moves the function? Mostly the unglamorous things, and none of them by adding memory. Sleep gives the space back, reliably, in controlled studies. Exercise helps, most clearly as you age and less for the young and already fit. Treating an underlying condition, ADHD most often, frees capacity that was being spent on the wrong thing. And the move that helps the most is the one that admits the limit instead of fighting it: stop holding what you can write down. Externalize the load, and the little memory you have goes to the work that needs it. You cannot install more RAM in your head. You can stop running so much in the background."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Read It, Do Not Chase It",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Working memory is the cleanest case in the whole panel. Read it like any other vital, against your own baseline. Notice when it narrows and ask why, because the answer is usually sleep or stress or a load you are carrying for no reason, not a ceiling you were born with."
+          },
+          {
+            "type": "text",
+            "prop": "The next function decides how much you get out of those slots in the first place. You can hold four things and still think slowly through them, or hold the same four and move. That is processing speed, and it is where I am going next."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Hold That Thought'' by Meryll Dindin 👀",
+              "url": "/thoughts/hold-that-thought/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1016/S0079-7421(08)60452-1",
+              "title": "Baddeley, A. & Hitch, G. (1974). Working Memory.",
+              "description": "The multicomponent model: a central executive directing separate verbal and visuospatial stores."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1037/h0043158",
+              "title": "Miller, G.A. (1956). The Magical Number Seven, Plus or Minus Two.",
+              "description": "The original span estimate, expressed in chunks rather than raw items."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1017/S0140525X01003922",
+              "title": "Cowan, N. (2001). The Magical Number 4 in Short-Term Memory.",
+              "description": "Raw capacity is closer to four chunks once rehearsal and recoding are controlled."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1111/1467-8721.00160",
+              "title": "Engle, R.W. (2002). Working Memory Capacity as Executive Attention.",
+              "description": "Reframes capacity as controlled attention held against interference."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1016/S0022-5371(80)90312-6",
+              "title": "Daneman, M. & Carpenter, P.A. (1980). Individual Differences in Working Memory and Reading.",
+              "description": "Introduces the reading span task, the prototype complex-span measure."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1037/0278-7393.33.3.615",
+              "title": "Kane, M.J. et al. (2007). Working Memory, Attention Control, and the N-Back Task.",
+              "description": "n-back and complex span share a name but correlate only weakly, a construct-validity problem."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1016/S0160-2896(05)80012-1",
+              "title": "Kyllonen, P.C. & Christal, R.E. (1990). Reasoning Ability Is (Little More Than) Working-Memory Capacity?!",
+              "description": "The high-correlation result that made reasoning look like working memory."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1037/0033-2909.131.1.30",
+              "title": "Ackerman, P.L., Beier, M.E. & Boyle, M.O. (2005). Working Memory and Intelligence.",
+              "description": "Meta-analysis pulling the working-memory and intelligence overlap back from near-identity."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1037/0033-295X.103.3.403",
+              "title": "Salthouse, T.A. (1996). The Processing-Speed Theory of Adult Age Differences in Cognition.",
+              "description": "Age-related decline across functions is substantially mediated by slowed processing speed."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6367038/",
+              "title": "Salthouse, T.A. (2019). Trajectories of Normal Cognitive Aging.",
+              "description": "Reported cross-sectional decline rates underlying the lifespan chart."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1037/0882-7974.17.2.299",
+              "title": "Park, D.C. et al. (2002). Models of Visuospatial and Verbal Memory Across the Adult Life Span.",
+              "description": "Fluid functions decline from the 20s while verbal knowledge keeps rising."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1073/pnas.0801268105",
+              "title": "Jaeggi, S.M. et al. (2008). Improving Fluid Intelligence with Training on Working Memory.",
+              "description": "The dual n-back result that launched the brain-training boom."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1037/a0028228",
+              "title": "Melby-Lervåg, M. & Hulme, C. (2013). Is Working Memory Training Effective?",
+              "description": "Reliable near transfer, no convincing far transfer to intelligence or academics."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1177/1745691616635612",
+              "title": "Melby-Lervåg, M., Redick, T.S. & Hulme, C. (2016). Working Memory Training Does Not Improve Far Transfer.",
+              "description": "Effect sizes behind the transfer chart; gains in memory and intelligence were uncorrelated."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1016/j.jarmac.2012.06.003",
+              "title": "Shipstead, Z., Hicks, K.L. & Engle, R.W. (2012). Cogmed Working Memory Training.",
+              "description": "The evidence does not support Cogmed’s broad transfer claims."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1177/1529100616661983",
+              "title": "Simons, D.J. et al. (2016). Do “Brain-Training” Programs Work?",
+              "description": "Improvement on trained tasks with little credible transfer to real-world cognition."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/not-one-number/",
+              "title": "Dindin, M. (2026). Not One Number.",
+              "description": "Why cognition is a panel of functions, not a single intelligence number. The piece this series follows from."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

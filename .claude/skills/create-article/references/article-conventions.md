@@ -126,6 +126,26 @@ app/content/pages/thoughts/SCREAMING_SNAKE_NAME.json
 
 Use for user-provided screenshots, diagrams, or data visualizations embedded within the article body. These are distinct from the background header image. Place immediately after the paragraph that contextualizes the image.
 
+### Inline Videos (within body, between text blocks)
+
+For short looping clips (screen captures, animations, scan sweeps). Rendered by `CustomVideo` as a muted, autoplaying, looping `<video playsinline>` that plays only while on-screen (IntersectionObserver). Use H.264 MP4 — keep clips short (a few seconds) and small (a few hundred KB).
+
+```json
+{
+  "type": "video",
+  "prop": {
+    "altText": "Descriptive alt text for the clip",
+    "source": "https://cdn.merylldindin.com/articles/videos/{slug}-{timestamp}.mp4",
+    "poster": "https://cdn.merylldindin.com/articles/videos/{slug}-poster-{timestamp}.webp",
+    "mobile": "https://cdn.merylldindin.com/articles/videos/{slug}-mobile-{timestamp}.mp4"
+  }
+}
+```
+
+- `source` (required): MP4 (H.264, `yuv420p`). `poster` (optional): a WebP still shown before playback. `mobile` (optional): smaller MP4 served at `smAndDown`.
+- Production: assemble frames with `ffmpeg`, compress with `vidcomp` (`video compress`), extract a mid-frame poster with `cwebp`. Upload MP4(s) with `--content-type video/mp4` and the poster as `image/webp` to `s3://network-eu-west-3/articles/videos/`.
+- Video is real imagery, not a diagram: do NOT set `darkModeTreatment`.
+
 ### Mermaid Diagrams (inline, between text blocks)
 
 For technical or architectural articles, mermaid diagrams are pre-rendered to PNG, converted to WebP, and embedded as image blocks with dark mode inversion support.
