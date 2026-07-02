@@ -3,6 +3,7 @@ import { computed } from "vue";
 
 import { DynamicPage } from "@/components/pages";
 import type { PageContent, RoutePath } from "@/types";
+import { filterReleasedComponents, getCurrentDateInPst } from "@/utils/publishing";
 import { ROUTES_CONTENT } from "@/utils/routes";
 import {
   getBlogPostSchema,
@@ -12,12 +13,23 @@ import {
   getWebPageSchema,
 } from "@/utils/schemas";
 
-import { useHead, useRoute } from "#imports";
+import { useHead, useRoute, useState } from "#imports";
 
 const route = useRoute();
 
+const currentDateInPst = useState("currentDateInPst", () => getCurrentDateInPst());
+
 const pageContent = computed((): PageContent | undefined => {
-  return ROUTES_CONTENT[route.path as RoutePath];
+  const content = ROUTES_CONTENT[route.path as RoutePath];
+
+  if (!content) {
+    return content;
+  }
+
+  return {
+    ...content,
+    components: filterReleasedComponents(content.components, currentDateInPst.value),
+  };
 });
 
 const pageSchemaType = computed(() => {

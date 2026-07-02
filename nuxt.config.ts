@@ -1,9 +1,42 @@
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { Unhead as UnheadVite } from "@unhead/bundler/vite";
 import { defineNuxtConfig } from "nuxt/config";
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "./app/content";
 import { RoutePath } from "./app/types/routes";
+
+const currentDateInPst = new Date().toLocaleDateString("en-CA", {
+  timeZone: "America/Los_Angeles",
+});
+
+const getUnreleasedRoutes = (): Set<string> => {
+  const thoughtsDir = resolve(__dirname, "app/content/pages/thoughts");
+  const unreleased = new Set<string>();
+
+  for (const file of readdirSync(thoughtsDir)) {
+    if (!file.endsWith(".json")) continue;
+
+    const article: {
+      head?: { canonical?: string };
+      schema?: { prop?: { datePublished?: string } };
+    } = JSON.parse(readFileSync(resolve(thoughtsDir, file), "utf-8"));
+
+    const canonical = article.head?.canonical;
+    const datePublished = article.schema?.prop?.datePublished;
+
+    if (canonical && datePublished && datePublished > currentDateInPst) {
+      unreleased.add(canonical);
+    }
+  }
+
+  return unreleased;
+};
+
+const unreleasedRoutes = getUnreleasedRoutes();
+
+const releasedRoutes = Object.values(RoutePath).filter(
+  (route) => !unreleasedRoutes.has(route),
+);
 
 export default defineNuxtConfig({
   build: {
@@ -69,7 +102,7 @@ export default defineNuxtConfig({
     },
     prerender: {
       crawlLinks: true,
-      routes: Object.values(RoutePath),
+      routes: releasedRoutes,
     },
   },
 
