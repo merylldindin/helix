@@ -1,0 +1,30 @@
+app/content/pages/thoughts/THE_POLICY_PENDULUM.json
+  s_3f19cf327cddbb::t_69d1930f289f01 45
+  s_3f19cf327cddbb::t_28b9c65935f6c2 6-7
+  s_3f19cf327cddbb::t_06c0cd5b1c8a8c 1-5,8-44,46-298
+app/utils/publishing.ts
+  s_3f19cf327cddbb::t_a1cc6f2f464670 1-53
+nuxt.config.ts
+  s_3f19cf327cddbb::t_1ce0d212c9c43b 8-11
+  s_3f19cf327cddbb::t_e87e08cc626317 1,12-39
+  s_3f19cf327cddbb::t_69b6242886d7f2 105
+  s_3f19cf327cddbb::t_dbce13c39d041c 40
+app/pages/[...slug].vue
+  s_3f19cf327cddbb::t_89f696ad73ca9e 6,16,20-21,23-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.9",
+  "base_commit_sha": "b51dcba9e242ee6a929cfcf71a9d039e0cc55ff7",
+  "prompts": {},
+  "sessions": {
+    "s_3f19cf327cddbb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9200fc6b-800e-4b03-b050-26e98a3642b7",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Meryll Dindin <merylldin@gmail.com>"
+    }
+  }
+}
