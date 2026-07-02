@@ -18,11 +18,9 @@ const getLinkedRoute = (component: PageComponent): string | undefined => {
     return undefined;
   }
 
-  const moreItem = content.find(
-    (item): item is Record<string, unknown> => {
-      return isRecord(item) && item.type === "more";
-    },
-  );
+  const moreItem = content.find((item): item is Record<string, unknown> => {
+    return isRecord(item) && item.type === "more";
+  });
 
   if (!moreItem || !isRecord(moreItem.prop)) {
     return undefined;
@@ -37,7 +35,7 @@ const getDatePublished = (route: string): string | undefined => {
 
 export const filterReleasedComponents = (
   components: PageComponent[],
-  currentDate: string,
+  currentDate: string
 ): PageComponent[] => {
   return components.filter((component) => {
     const linkedRoute = getLinkedRoute(component);
