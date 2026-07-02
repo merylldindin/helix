@@ -1,0 +1,469 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-07-08",
+      "datePublished": "2026-07-08",
+      "keywords": "processing speed, cognition, psychometrics, Salthouse, reaction time, mental chronometry, digit symbol, SDMT, processing speed training, cognitive aging, white matter, myelin, working memory, attention"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/clock-speed/",
+    "title": "Clock Speed | Meryll Dindin",
+    "description": "Processing speed is the clock every other function runs on. You cannot overclock it, but you can read it, and stop letting sleep and stress slow it down.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/clock-speed-20260701T171503.webp",
+    "thumbnailAlt": "A minimalist black and white signal pulse spiking once on a horizontal line marked with evenly spaced ticks, representing the pace of mental processing speed"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "A single signal pulse traveling along a long insulated nerve fiber marked with rhythmic nodes, in minimalist black and white, evoking a steady clock pace",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/clock-speed-20260701T171507.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/clock-speed-20260701T171507-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/clock-speed-20260701T171507-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/clock-speed-20260701T171507-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "Clock Speed",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published July 8, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "You can hold four things in mind and still move through them slowly, or hold the same four and move fast, and the difference is not memory. It is speed."
+          },
+          {
+            "type": "text",
+            "prop": "Processing speed is the least glamorous of the cognitive measures and the most quietly decisive. It does not decide what you can think. It decides how fast you get there, and because nearly every other function runs on top of it, a slow clock drags the whole system down without ever showing up under its own name. It is also the earliest thing to go, the thing that masquerades as failing memory, and a thing an entire industry keeps promising to sell back to you faster than you were born with."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What It Actually Is",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "If working memory is the mind’s RAM, the small workspace that holds what you are thinking with, processing speed is the clock rate. Not what the system holds, but how many operations it pushes through per second. The question is no longer how big the workspace is. It is how fast the work moves through it."
+          },
+          {
+            "type": "text",
+            "prop": "The formal version sits in the standard map of cognitive abilities. In the [[Cattell-Horn-Carroll model::Cattell-Horn-Carroll model: the mainstream modern taxonomy of cognitive abilities, which sorts them into broad factors like processing speed, memory, and reasoning sitting beneath a single general factor.]], broad processing speed is its own factor, [[Gs::Gs: the technical label for broad processing speed, the ability to run easy, overlearned tasks quickly and fluently under time pressure.]], the kind of clerical work you measure over minutes rather than milliseconds. It sits next to a separate factor for bare reaction time, and both are kept apart from raw motor speed, because the thing that matters is how fast the cognitive operation runs, not how fast your hand can move to report it."
+          },
+          {
+            "type": "text",
+            "prop": "The substrate is the wiring, not the chips. Speed lives in white matter, the insulated cabling that carries signals between regions, and the insulation is myelin. A myelinated axon carries a signal up to around a hundred and twenty meters a second; strip the myelin and the same axon crawls at one or two. That is the whole game: the sheath lets the signal jump node to node instead of creeping the length of the wire. When researchers measure white-matter integrity directly and control for it, the link between age and processing speed nearly vanishes, which tells you the slowing is largely a wiring story."
+          },
+          {
+            "type": "text",
+            "prop": "Here the hardware analogy earns a caveat, because it is load-bearing and it is not literally true. A processor has a clock, a single oscillator that paces every operation in lockstep. Your brain does not. Its eighty-odd billion neurons fire asynchronously, each on the timing of its own inputs, in parallel, with no central beat. So “clock speed” is a metaphor for a distributed property, how fast signals propagate and integrate across a network, not a number you could read off in gigahertz. Keep the metaphor, because it captures the thing that matters, that the whole system has a characteristic pace. Just do not mistake the map for the territory. The brain is not a faster or slower version of the machine on your desk."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "How To Measure It Without Fooling Yourself",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The clinical tools are older than the theory. You have almost certainly taken a version: match symbols to digits against a printed key, as fast as you can, for ninety seconds. That is [[digit symbol substitution::Digit symbol substitution: a timed test that has you match symbols to digits against a printed key as fast as possible; one of the oldest and most widely used measures of processing speed.]], or coding, and its cousin the Symbol Digit Modalities Test is among the most sensitive markers we have for a change in processing speed, sensitive enough to be a standard endpoint in multiple sclerosis trials, where speed is often the first thing to slip. Even it is not pure: by its authors’ own admission it is not a clean measure of speed, because reading the symbols leans on lexical access and holding the key leans on memory, so the score is speed plus a little of everything speed touches."
+          },
+          {
+            "type": "text",
+            "prop": "Which is the first way the number fools you. A speed test is a motor test wearing a cognitive costume. In stroke patients with reduced hand dexterity, hand speed alone explained an extra third of the variance in their coding scores. The pen is part of the number, and any measure that times a physical response is timing your body as much as your mind."
+          },
+          {
+            "type": "text",
+            "prop": "The second way is subtler and worth sitting with. When you turn a reaction time into a single “speed,” you are blending two different things. The diffusion model, the workhorse account of how we make quick decisions, splits any response into the rate at which you actually accumulate evidence, which is the processing speed you care about, and the amount of caution you set before you commit, which is a dial you can turn at will. Tell someone to go faster and they mostly move the caution dial, not the underlying rate. So a faster score can mean a faster mind or just a more reckless one, and a raw speed number folds that choice into the trait and calls the sum a talent."
+          },
+          {
+            "type": "text",
+            "prop": "The third way is the oldest trick in testing: practice. Take the same coding form twice and your score jumps enormously the second time, an effect that all but disappears if you swap in a fresh form. If you think you got faster, check that you did not just memorize the test."
+          },
+          {
+            "type": "text",
+            "prop": "None of this means speed cannot be measured, only that the honest measures are humble. The purest come from the mental-chronometry tradition, timing simple decisions in the millisecond range. Reaction time tracks general ability weakly on its own and more as the choices multiply; in one large population study, four-choice reaction time correlated about minus a half with mental ability, the minus sign meaning faster goes with higher. The relationship is real. It is just not something a stopwatch reads cleanly."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "How It Drifts",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Here is the fact that should reframe how you read every other cognitive number: processing speed peaks early and falls first. In the cross-sectional data, it is the earliest of the major functions to decline and among the steepest. One large study found the twenties to be the only decade of adult life with speed still rising; from the thirties on, every decade ran negative, and the losses accelerated into old age. Vocabulary, on the same chart, does the opposite, climbing into the sixties. The two lines crossing is the whole story of cognitive aging in one picture."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Line chart of cognitive performance by age in standard-deviation units. Processing speed is the bold line, rising slightly through the twenties then falling steadily and accelerating from the thirties into the eighties, dropping faster and further than memory and reasoning, while vocabulary rises into the sixties.",
+              "source": "https://cdn.merylldindin.com/articles/sections/clock-speed-lifespan-20260702T101431.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/clock-speed-lifespan-20260702T101431-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/clock-speed-lifespan-20260702T101431-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/clock-speed-lifespan-20260702T101431-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Read that honestly, though. Cross-sectional slopes compare different people of different ages, so some of that early “decline” is really a difference between generations, not a change within a person. Follow the same people over time and the drop tends to start later and run gentler. The direction is not in doubt. The exact age it begins is, and anyone who tells you your mind peaks at twenty-four is reading a snapshot as if it were a movie."
+          },
+          {
+            "type": "text",
+            "prop": "The reason speed matters beyond itself is a claim Timothy Salthouse has spent a career making: a large part of what looks like age-related decline in memory and reasoning is really the clock slowing down and dragging them with it. His mechanisms are almost mechanical. If the early steps of a problem eat all your time, the later steps never run. If the products of early processing decay before the later processing arrives, nothing gets integrated. Statistically control for speed and much of the age effect on other functions comes out with it. The much-quoted figure that speed accounts for most of that shared variance comes from a later meta-analysis, not the original theory paper, but the shape holds: speed is the common thread."
+          },
+          {
+            "type": "text",
+            "prop": "Underneath, the drift is myelin again. The last tracts to gain their insulation in youth, the long-range connections through the front of the brain, are the first to lose it with age, a last-in-first-out pattern. As that insulation frays, the clock slows."
+          },
+          {
+            "type": "text",
+            "prop": "The part you actually control runs on a much shorter timescale than aging, and it is where the number is most alive. Sleep is the clearest lever. In a two-week study, people held to six hours a night ended up as impaired on reaction time as if they had gone a full night without sleep, and those on four hours matched two nights of no sleep at all. The cruel part was that they did not feel it; the deficit accumulated silently while their sense of being fine did not. Stay awake long enough and the slowing rivals being legally drunk. Your processing speed is not a fixed trait you consult once. It is a daily vital, and most days you are the one setting it."
+          },
+          {
+            "type": "text",
+            "prop": "It is also why speed is often the first thing to move when something goes wrong, after a concussion or in the psychomotor slowing of depression, before louder functions show any strain at all. The clock is delicate, which is exactly what makes it worth watching."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Run It On Yourself",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "You can get a rough read at home in about a minute, with one caveat that decides whether the number means anything. Find a simple reaction-time test, the kind that flashes green and times how fast you click, and pick one that reports your median over many trials rather than crowning a single best score. Take a dozen tries. The global pools sit somewhere near two hundred and eighty milliseconds."
+          },
+          {
+            "type": "text",
+            "prop": "Now the caveat. Your home number carries latency the flash cannot see. A normal sixty-hertz screen only redraws every sixteen milliseconds, so it quantizes the moment you perceive the flash; your keyboard or mouse adds more lag on top, and none of it is calibrated. Careful browser-based tools can now time nearly as tightly as a lab rig, but the ordinary consumer stack you are testing on cannot, and the global pools mix laptops, desktops, and phones into one meaningless average. So the number you get on your machine and the number a lab would record are not on the same scale, and comparing yourself to a stranger’s device tells you nothing."
+          },
+          {
+            "type": "text",
+            "prop": "Which is exactly why the only honest comparison is to yourself. Same device, same browser, same time of day, median of many trials. Run it well rested, then run it after a short night, and watch it move. That gap, in your own hand, is the daily drift the aging charts can only show as a population. Treat the result as a baseline and a trend, never a diagnosis. It is noisy, not meaningless: even unsupervised online reaction time tracks real cognitive differences across large samples. It just needs you to hold the conditions still and read your own line, not the crowd’s."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Line chart of median reaction time by age. Simple reaction time rises gently from the twenties into the eighties, while choice reaction time, the more cognitive task, sits well above it and rises more steeply, both slowing with age.",
+              "source": "https://cdn.merylldindin.com/articles/sections/clock-speed-reaction-20260702T101431.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/clock-speed-reaction-20260702T101431-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/clock-speed-reaction-20260702T101431-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/clock-speed-reaction-20260702T101431-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "What You Can Actually Do About It",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The pitch is familiar. Train the function with the right drills and you will be quicker at everything. Processing speed carries more serious evidence behind that pitch than most functions do, which is why it is worth being precise about what the evidence actually shows."
+          },
+          {
+            "type": "text",
+            "prop": "The landmark is a trial called ACTIVE, which put nearly three thousand older adults through cognitive training and followed them for years. The speed-of-processing arm worked, in a narrow and real sense: people got substantially and durably better at the trained task. What did not happen is the thing the pitch promises. It did not transfer to memory, or to reasoning, or to the untrained parts of thinking. The gains stayed inside the game."
+          },
+          {
+            "type": "text",
+            "prop": "There is one genuine exception, and it is a good one. The same speed training cut older drivers’ at-fault crash rate by nearly half over the following years, because driving is itself a fast visual-attention task and the training looked enough like it. That is the real ceiling of what speed drills buy you: better at the trained skill, and better at the narrow real tasks that closely resemble it. The more dramatic claim from the same dataset, that the training also lowered dementia risk, comes from later exploratory analyses that the authors themselves hedge and that no independent group has yet replicated. Treat it as a live hypothesis, not a reason to drill."
+          },
+          {
+            "type": "text",
+            "prop": "Outside the trial, the field is less flattering. The broadest expert review of brain training reached a blunt verdict: reliable improvement on the trained task, weak evidence of transfer to anything nearby, very little for far transfer to real cognition. The most-marketed speed game descends directly from the ACTIVE task, and its best-known vendor paid two million dollars to the Federal Trade Commission in 2016 to settle charges of deceptive advertising, including claims that it could stave off dementia. The science supports getting better at the game. The advertising sold a faster mind."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Forest plot of what speed-of-processing training transfers to. The trained speed task sits far above zero; everyday timed tasks and safer driving sit modestly above zero as real-world exceptions; reasoning and memory cluster on zero as failed far transfer; and a contested dementia-risk effect has a wide interval near zero.",
+              "source": "https://cdn.merylldindin.com/articles/sections/clock-speed-transfer-20260702T101431.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/clock-speed-transfer-20260702T101431-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/clock-speed-transfer-20260702T101431-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/clock-speed-transfer-20260702T101431-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "So what actually moves the clock. Mostly the same unglamorous things, and none of them by drilling. Sleep restores it, reliably. Aerobic fitness helps, modestly and most clearly with age, and shows up in the white matter where speed lives. And the highest-yield move is subtraction: find what is dragging the clock and remove it. An underactive thyroid drags it until it is treated, sedating medications tax it dose by dose, and depression slows the whole system down, all of them things that look like a permanently slower mind and are not. Caffeine and the stimulants can sharpen reaction time, and the fair reading is that they help most when there is a deficit to erase, in someone tired or under-treated, and only a little on a rested baseline that is already near its ceiling."
+          },
+          {
+            "type": "text",
+            "prop": "That ceiling is the point. The clock rate is hardware, myelin and wiring, and you cannot overclock it by wanting to. You can get faster at a specific practiced task, and that is real. You can stop running the clock slow by fixing sleep, moving your body, and treating what needs treating. What you cannot do is buy a generally faster mind from an app."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Read It, Do Not Chase It",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Processing speed is the pace under everything else, which makes it the easiest function to misread and the most useful to track. Read it the way you would any vital, against your own baseline, and when it slips, ask what changed before you assume the worst. The answer is usually last night, not last decade."
+          },
+          {
+            "type": "text",
+            "prop": "Speed sets how fast you can move through what you are holding. It says nothing about whether you are pointed at the right thing. You can be quick and well-stocked and still spend all of it on the wrong input. That is a different function, attention, and it is where I am going next."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''Clock Speed'' by Meryll Dindin 👀",
+              "url": "/thoughts/clock-speed/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1016/j.intell.2008.08.004",
+              "title": "McGrew, K.S. (2009). CHC Theory and the Human Cognitive Abilities Project.",
+              "description": "Places broad processing speed (Gs) as a distinct factor, separate from decision speed (Gt) and psychomotor speed."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1371/journal.pone.0050425",
+              "title": "Kerchner, G.A. et al. (2012). Cognitive Processing Speed in Older Adults: Relationship with White Matter Integrity.",
+              "description": "After controlling for white-matter integrity, the age-to-speed relationship is no longer significant (p = 0.58)."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1098/rstb.2014.0174",
+              "title": "Zeki, S. (2015). A Massively Asynchronous, Parallel Brain.",
+              "description": "There is no central neural clock; the brain runs asynchronously and in parallel, which is why the GHz metaphor only goes so far."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1177/1352458517690821",
+              "title": "Benedict, R.H.B. et al. (2017). Validity of the Symbol Digit Modalities Test as a Cognition Outcome in MS.",
+              "description": "A sensitive processing-speed endpoint that the authors note is not a pure measure of speed."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.3389/fneur.2017.00484",
+              "title": "Low, E. et al. (2017). Compromised Motor Dexterity Confounds Processing Speed Task Outcomes in Stroke Patients.",
+              "description": "Hand dexterity explained about a third of the variance in coding scores in stroke, but not in healthy controls."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1177/0963721415596228",
+              "title": "Ratcliff, R., Smith, P.L. & McKoon, G. (2015). Modeling Response Time and Accuracy with the Diffusion Model.",
+              "description": "Splits a reaction time into drift rate (true processing) and boundary separation (response caution), which a raw score conflates."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pubmed.ncbi.nlm.nih.gov/25994156/",
+              "title": "Pereira, D.R., Costa, P. & Cerqueira, J.J. (2015). Repeated Assessment and Practice Effects of the Written SDMT.",
+              "description": "Same-form retest inflates the score enormously (dz ≈ 1.61); alternate forms nearly remove the effect."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1016/S0160-2896(01)00062-9",
+              "title": "Deary, I.J., Der, G. & Ford, G. (2001). Reaction Times and Intelligence Differences.",
+              "description": "In a population cohort, four-choice reaction time correlated about −0.49 with general mental ability."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1037/0882-7974.21.1.62",
+              "title": "Der, G. & Deary, I.J. (2006). Age and Sex Differences in Reaction Time in Adulthood.",
+              "description": "Population reaction-time norms across the adult age range, underlying the at-home reaction-time chart."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1037/0033-295X.103.3.403",
+              "title": "Salthouse, T.A. (1996). The Processing-Speed Theory of Adult Age Differences in Cognition.",
+              "description": "Proposes the limited-time and simultaneity mechanisms by which slowing speed drags other functions down."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1037/0033-2909.122.3.231",
+              "title": "Verhaeghen, P. & Salthouse, T.A. (1997). Meta-Analyses of Age-Cognition Relations in Adulthood.",
+              "description": "The source of the 71 to 79 percent shared-variance figure, distinct from the 1996 theory paper."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6367038/",
+              "title": "Salthouse, T.A. (2019). Trajectories of Normal Cognitive Aging.",
+              "description": "Per-decade decline rates behind the lifespan chart: speed falls from the thirties while vocabulary rises into the sixties."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2680669/",
+              "title": "Schaie, K.W. (2009). Reifying the “Cross-Sectional Fallacy.”",
+              "description": "Argues cross-sectional slopes overstate within-person decline, so true onset is later and gentler."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1016/j.neurobiolaging.2003.03.001",
+              "title": "Bartzokis, G. (2004). Age-Related Myelin Breakdown.",
+              "description": "The last-in-first-out hypothesis: late-myelinating frontal tracts are the first to degrade with age."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1093/sleep/26.2.117",
+              "title": "Van Dongen, H.P.A. et al. (2003). The Cumulative Cost of Additional Wakefulness.",
+              "description": "Two weeks at six hours a night matched one night of total sleep loss; four hours matched two, with little subjective warning."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1136/oem.57.10.649",
+              "title": "Williamson, A.M. & Feyer, A.M. (2000). Moderate Sleep Deprivation and Alcohol-Equivalent Impairment.",
+              "description": "Seventeen to nineteen hours awake impaired performance to about the level of 0.05 percent blood alcohol."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1001/jama.288.18.2271",
+              "title": "Ball, K. et al. (2002). Effects of Cognitive Training in Older Adults (ACTIVE).",
+              "description": "Speed-of-processing training produced durable gains on the trained task, with no transfer to memory or reasoning."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1001/jama.296.23.2805",
+              "title": "Willis, S.L. et al. (2006). Long-Term Effects of Cognitive Training on Everyday Function.",
+              "description": "Five-year ACTIVE follow-up: ability-specific gains persisted without broad cross-domain transfer."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1111/j.1532-5415.2010.03138.x",
+              "title": "Ball, K. et al. (2010). Cognitive Training and At-Fault Crashes in Older Drivers.",
+              "description": "Speed training cut at-fault crash rate by roughly half over about six years, the strongest real-world transfer."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1016/j.trci.2017.09.002",
+              "title": "Edwards, J.D. et al. (2017). Speed-of-Processing Training and Dementia Risk.",
+              "description": "A secondary, self-hedged ACTIVE analysis (HR ≈ 0.71) that no independent group has replicated."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1177/1529100616661983",
+              "title": "Simons, D.J. et al. (2016). Do “Brain-Training” Programs Work?",
+              "description": "Reliable improvement on trained tasks, very little evidence of far transfer to everyday cognition."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.ftc.gov/news-events/news/press-releases/2016/01/lumosity-pay-2-million-settle-ftc-deceptive-advertising-charges-its-brain-training-program",
+              "title": "U.S. Federal Trade Commission (2016). Lumosity to Pay $2 Million to Settle Deceptive Advertising Charges.",
+              "description": "The maker of a UFOV-derived speed game settled over claims it could stave off dementia and boost real-world performance."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.1136/bjsports-2016-096587",
+              "title": "Northey, J.M. et al. (2018). Exercise Interventions for Cognitive Function in Adults Over 50.",
+              "description": "Aerobic and resistance exercise produced modest but real gains in cognition, including processing speed."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://doi.org/10.7717/peerj.9414",
+              "title": "Bridges, D. et al. (2020). The Timing Mega-Study.",
+              "description": "Quantifies how display refresh and software stack shape reaction-time precision, and why a home number is not a lab number."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/hold-that-thought/",
+              "title": "Dindin, M. (2026). Hold That Thought.",
+              "description": "The companion piece on working memory, the mind’s RAM, and why you read your own number rather than chase it."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/not-one-number/",
+              "title": "Dindin, M. (2026). Not One Number.",
+              "description": "Why cognition is better read as a panel of separate functions than as a single intelligence number."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

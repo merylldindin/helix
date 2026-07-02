@@ -15,6 +15,92 @@
   "components": [
     {
       "name": "IMAGE_SECTION",
+      "id": "clock-speed-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Clock Speed",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "July 8, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Processing speed is the clock every other function runs on. You cannot overclock it, but you can read it, and stop letting sleep and stress slow it down."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article Clock Speed",
+              "to": "/thoughts/clock-speed/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "A minimalist black and white pulse waveform spiking once against a calm baseline, representing the speed and rhythm of mental processing",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/clock-speed-20260701T171506.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/clock-speed-20260701T171506-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/clock-speed-20260701T171506-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/clock-speed-20260701T171506-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
+      "id": "the-policy-pendulum-section",
+      "props": {
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Policy Pendulum",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 3,
+              "text": "July 7, 2026",
+              "typography": "text-lexend-deca headline-6 mb-3"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "In three years schools went from banning ChatGPT to legally requiring AI policies. The rules govern who can use it, not whether it teaches anything."
+          },
+          {
+            "type": "more",
+            "prop": {
+              "ariaLabel": "Read the blog article The Policy Pendulum",
+              "to": "/thoughts/the-policy-pendulum/"
+            }
+          }
+        ],
+        "image": {
+          "altText": "A minimalist black and white pendulum caught mid-swing with faint ghosted outlines of the weight at both extremes of its arc",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/posters/the-policy-pendulum-20260701T145402.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/posters/the-policy-pendulum-20260701T145402-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/posters/the-policy-pendulum-20260701T145402-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/posters/the-policy-pendulum-20260701T145402-mobile-lazy.webp"
+        }
+      }
+    },
+    {
+      "name": "IMAGE_SECTION",
       "id": "learning-on-credit-section",
       "props": {
         "content": [

@@ -1,0 +1,298 @@
+{
+  "layout": "scrolled",
+  "schema": {
+    "type": "blogPosting",
+    "prop": {
+      "dateModified": "2026-07-07",
+      "datePublished": "2026-07-07",
+      "keywords": "AI education policy, EU AI Act, Ohio AI policy mandate, Department of Education, Ofqual, AI literacy, FERPA, COPPA, generative AI regulation, assessment reform, academic integrity"
+    }
+  },
+  "head": {
+    "canonical": "/thoughts/the-policy-pendulum/",
+    "title": "The Policy Pendulum | Meryll Dindin",
+    "description": "In three years schools went from banning ChatGPT to legally requiring AI policies. The rules govern who can use it, not whether it teaches anything.",
+    "ogType": "article",
+    "thumbnail": "https://cdn.merylldindin.com/thumbnails/the-policy-pendulum-20260701T145350.webp",
+    "thumbnailAlt": "A minimalist black and white pendulum swung to one side, with a faint ghosted outline of the weight at the opposite extreme, evoking policy swinging between two poles"
+  },
+  "components": [
+    {
+      "name": "ARTICLE_SECTION",
+      "id": "home-section",
+      "props": {
+        "background": {
+          "altText": "A wide minimalist black and white pendulum caught mid-swing, with faint ghosted outlines of the weight at both extreme ends of its arc, evoking a swing between two opposite policy poles",
+          "darkModeTreatment": "invert-on-dark",
+          "source": "https://cdn.merylldindin.com/articles/headers/the-policy-pendulum-20260701T145323.webp",
+          "lazySource": "https://cdn.merylldindin.com/articles/headers/the-policy-pendulum-20260701T145323-lazy.webp",
+          "mobile": "https://cdn.merylldindin.com/articles/headers/the-policy-pendulum-20260701T145323-mobile.webp",
+          "lazyMobile": "https://cdn.merylldindin.com/articles/headers/the-policy-pendulum-20260701T145323-mobile-lazy.webp"
+        },
+        "content": [
+          {
+            "type": "headline",
+            "prop": {
+              "level": 1,
+              "text": "The Policy Pendulum",
+              "typography": "text-cartesian headline-2"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Initially published July 7, 2026",
+              "typography": "text-lexend-deca headline-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "As of this week, every public school district in Ohio is legally required to have an artificial intelligence policy. Three years ago, the largest school district in the country was busy blocking the same technology on its own networks. New York City banned ChatGPT in January 2023 and reversed itself by May. Ohio wrote a mandate into law. That is the whole arc of AI education policy in one country, compressed into three years: from banned to required."
+          },
+          {
+            "type": "text",
+            "prop": "I wrote recently about what the research actually shows, that AI tends to improve the work while hollowing out the learning underneath it. This is the part I left out. While the evidence was still arguing with itself, the rulemaking raced ahead, and it is worth asking what all that policy actually governs. The short answer is that it governs access, and almost never learning."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "Timeline of AI education policy from 2023 to 2027. New York City bans ChatGPT in 2023 and reverses within months; the US pivots to promoting AI in schools in 2025; in 2026 the UK bars AI as the sole exam marker, Princeton restores proctored exams, and Ohio mandates district AI policies; EU high-risk rules apply in 2027 after a deferral.",
+              "source": "https://cdn.merylldindin.com/articles/sections/policy-pendulum-timeline-20260701T145237.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/policy-pendulum-timeline-20260701T145237-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/policy-pendulum-timeline-20260701T145237-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/policy-pendulum-timeline-20260701T145237-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Bans Never Stood a Chance",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The first instinct was prohibition, and it collapsed almost immediately. New York City’s ban lasted four months before the chancellor called it a knee-jerk reaction and stood up an AI policy lab instead. The reasons it failed are the reasons every ban failed. The tool ran on any phone, the detectors could not reliably tell who had used it, and the thing was too useful to wish away. By the 2024 school year most districts had quietly swapped prohibition for guidance, and the question shifted from whether students could use AI to how everyone should."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The American Turn: From Caution to Promotion",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Then the federal posture flipped. The Department of Education’s 2023 report on AI was cautious and advisory, all humans-in-the-loop and shared responsibility. By March 2025 the office that wrote it, the Office of Educational Technology, had been eliminated. A month later the administration signed an executive order titled Advancing Artificial Intelligence Education for American Youth, which set up a White House task force, a Presidential AI Challenge for students, and grant guidance steering federal money toward AI in classrooms. In two years the government went from telling schools to be careful to telling them to move faster."
+          },
+          {
+            "type": "text",
+            "prop": "The states moved the same direction, only with more force. Ohio is the first to make an AI policy a statutory duty rather than a suggestion, with a model policy the state released at the end of 2025 and a deadline that lands this week. Others reached into the curriculum itself. California passed a law directing its curriculum board to consider building AI literacy into the frameworks for math, science, and history. A cluster of states passed AI-related education bills in their 2026 sessions, and a few have started writing AI into the computer-science courses they require to graduate, phased in over the coming years. The pendulum did not stop at neutral. It swung from prohibition to something close to compulsion."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The European Counterweight",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Europe took the opposite stance and wrote it down. Under the EU AI Act, systems that decide school admissions, score exams, or monitor students during tests are classified as [[high-risk AI system::Under the EU AI Act, a high-risk system is one used in a domain where mistakes carry serious consequences, like education, hiring, or medical devices. It is not banned, but it carries binding obligations: risk assessments, bias controls, human oversight, and documentation.]], which means binding obligations rather than friendly advice. On paper it is the strictest regime in the world for education technology. In practice even Europe is slipping its own schedule. The compliance deadline for these high-risk systems, originally set for August 2026, was pushed to December 2027 in a broader simplification package. Two philosophies, then: America promoting adoption, Europe constraining it, and both moving slower than the classroom they are trying to govern."
+          },
+          {
+            "type": "image",
+            "prop": {
+              "darkModeTreatment": "invert-on-dark",
+              "altText": "A spectrum from promote adoption to restrict use, placing five jurisdictions: the United States and China near the promote end (executive order and grant priorities; mandated K-12 nationwide), UNESCO in the middle (voluntary global guidance), the United Kingdom leaning toward restriction (AI barred as sole exam marker), and the European Union at the restrict end (classed high-risk with binding duties).",
+              "source": "https://cdn.merylldindin.com/articles/sections/policy-pendulum-spectrum-20260701T145237.webp",
+              "lazySource": "https://cdn.merylldindin.com/articles/sections/policy-pendulum-spectrum-20260701T145237-lazy.webp",
+              "mobile": "https://cdn.merylldindin.com/articles/sections/policy-pendulum-spectrum-20260701T145237-mobile.webp",
+              "lazyMobile": "https://cdn.merylldindin.com/articles/sections/policy-pendulum-spectrum-20260701T145237-mobile-lazy.webp"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "Everyone Is Regulating the Same Two Things",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "Strip away the geography and the rules converge on a narrow pair of concerns. The first is access: who is allowed to use these tools, at what age, with whose permission. The second is data: what student information can be fed to a model and where it goes, governed in the US by [[FERPA::The Family Educational Rights and Privacy Act, a 1974 US law protecting the privacy of student education records. It predates AI by half a century and was not written with model training in mind.]] and children’s-privacy rules the Federal Trade Commission tightened in 2025 to require separate parental consent before a child’s data is handed to outside companies to train AI."
+          },
+          {
+            "type": "text",
+            "prop": "Both are real. Neither touches the thing that actually determines whether AI helps or harms a student, which is whether the tool does the work or makes the student do it. Almost no framework distinguishes an AI that tutors from an AI that answers, even though that distinction is the entire ballgame in the research. Policy is arguing about the on-switch. The detectors that were supposed to police misuse turned out to be unreliable and biased against non-native English writers, so even the one enforcement lever aimed at behavior mostly broke. We have built elaborate rules about who may flip the switch and almost none about what happens after it is on."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The One Lever That Points at Learning",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "There is one exception, and it is the quietest corner of the landscape. A handful of policies aim at assessment instead of access, and those are the only ones that touch learning directly. England’s exam regulator ruled in January that AI cannot be the sole basis for a student’s mark. Princeton reinstated proctored, in-person exams after 133 years on the honor system. Neither is a ban on the technology. Both are decisions about what the test is supposed to measure, and the logic is the same underneath: if you want to know what a student can do unaided, you have to watch them do it unaided."
+          },
+          {
+            "type": "text",
+            "prop": "That is the move that actually engages the problem, because it acts on what gets measured instead of who gets in. South Korea shows the cost of getting this backward. It mandated AI textbooks across the country, spent more than a trillion won, on the order of a billion dollars, and walked the policy back within a year after accuracy problems and teacher revolt, downgrading the books from official status to optional supplements as adoption collapsed. Mandating the tool ahead of the evidence is its own kind of error, the mirror image of banning it."
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "The Pendulum Misses the Point",
+              "typography": "text-lexend-deca headline-4 my-6"
+            }
+          },
+          {
+            "type": "text",
+            "prop": "The ban was a category error, and the mandate is the same error wearing the opposite coat. Both treat AI as a thing to be permitted or required, when the only question that matters is whether a given use builds a skill or replaces it. Policy has been remarkably busy and remarkably beside the point, governing the speed of adoption while the substance goes unmeasured."
+          },
+          {
+            "type": "text",
+            "prop": "The rules worth watching are the ones being written about assessment, because that is the only place the system checks for learning instead of counting logins. You can ban the tool or you can require it. Neither decides what a student walks away able to do. That still gets settled the old way, at the moment the work has to stand on its own."
+          },
+          {
+            "type": "networks",
+            "prop": {
+              "quote": "Checkout the article ''The Policy Pendulum'' by Meryll Dindin 👀",
+              "url": "/thoughts/the-policy-pendulum/"
+            }
+          },
+          {
+            "type": "headline",
+            "prop": {
+              "level": 2,
+              "text": "References",
+              "typography": "headline-3 my-6"
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://artificialintelligenceact.eu/annex/3/",
+              "title": "EU AI Act, Annex III (High-Risk AI Systems).",
+              "description": "Education and vocational-training systems that decide admissions, score exams, or monitor test-takers are classified as high-risk."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/",
+              "title": "Digital AI Omnibus (2026). High-Risk Deadline Deferral.",
+              "description": "The compliance deadline for Annex III high-risk systems was pushed from August 2026 to December 2027."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/",
+              "title": "Executive Order 14277 (2025). Advancing AI Education for American Youth.",
+              "description": "Creates a White House task force, a Presidential AI Challenge, and grant guidance steering federal money toward AI in schools."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.edweek.org/policy-politics/the-ed-dept-axed-its-office-of-ed-tech-what-that-means-for-schools/2025/03",
+              "title": "Education Week (2025). The Ed Dept Axed Its Office of Ed Tech.",
+              "description": "The Office of Educational Technology, author of the 2023 AI report, was eliminated in March 2025."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.federalregister.gov/documents/2026/04/13/2026-07087/final-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing",
+              "title": "US Dept of Education (2026). Supplemental Priority on Advancing AI in Education.",
+              "description": "Final Federal Register priority steering discretionary grant money toward AI in education, effective May 2026."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://codes.ohio.gov/ohio-revised-code/section-3301.24",
+              "title": "Ohio Revised Code §3301.24.",
+              "description": "The first US statute requiring every public school district to adopt an AI policy, with a July 1, 2026 deadline."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2876",
+              "title": "California AB 2876 (2024).",
+              "description": "Directs the state curriculum body to consider incorporating AI literacy into math, science, and history-social science frameworks."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.chalkbeat.org/newyork/2023/5/18/23727942/chatgpt-nyc-schools-david-banks/",
+              "title": "Chalkbeat (2023). NYC Schools Reverses Its ChatGPT Ban.",
+              "description": "The largest US district banned ChatGPT in January 2023 and lifted the ban by May, calling it a knee-jerk reaction."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.gov.uk/government/publications/principles-of-ai-use-in-marking/principles-of-ai-use-in-marking",
+              "title": "Ofqual (2026). Principles of AI Use in Marking.",
+              "description": "England’s exam regulator ruled that AI cannot be the sole mechanism for determining a student’s mark."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.insidehighered.com/news/faculty/learning-assessment/2026/05/15/princeton-introduces-proctoring-changing-honor-code",
+              "title": "Inside Higher Ed (2026). Princeton Introduces Proctoring.",
+              "description": "Princeton reinstated proctored, in-person exams after 133 years on the honor system."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://restofworld.org/2025/south-korea-ai-textbook/",
+              "title": "Rest of World (2025). South Korea’s AI Textbooks.",
+              "description": "A nationwide AI-textbook mandate was downgraded to optional supplementary material within a year as adoption collapsed."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+              "title": "UNESCO (2023). Guidance for Generative AI in Education and Research.",
+              "description": "The first global guidance on generative AI in education; voluntary, and proposes a minimum age of 13 for independent use."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-finalizes-changes-childrens-privacy-rule-limiting-companies-ability-monetize-kids-data",
+              "title": "FTC (2025). Changes to the Children’s Privacy Rule.",
+              "description": "Requires separate verifiable parental consent before a child’s data is disclosed to third parties to train AI."
+            }
+          },
+          {
+            "type": "article",
+            "prop": {
+              "href": "/thoughts/learning-on-credit/",
+              "title": "Dindin, M. (2026). Learning on Credit.",
+              "description": "The companion piece: why AI improves student output while eroding the learning underneath it."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

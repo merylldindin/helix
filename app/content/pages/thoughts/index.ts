@@ -5,6 +5,7 @@ export { default as AI_SPECIAL_EDUCATION } from "./AI_SPECIAL_EDUCATION.json";
 export { default as BIOLOGICAL_AGE } from "./BIOLOGICAL_AGE.json";
 export { default as BODY_OF_EVIDENCE } from "./BODY_OF_EVIDENCE.json";
 export { default as BRING_YOUR_OWN_BRAIN } from "./BRING_YOUR_OWN_BRAIN.json";
+export { default as CLOCK_SPEED } from "./CLOCK_SPEED.json";
 export { default as COMPANY_BRAIN } from "./COMPANY_BRAIN.json";
 export { default as CONSUMER_MRI } from "./CONSUMER_MRI.json";
 export { default as EATING_ONCE_A_DAY } from "./EATING_ONCE_A_DAY.json";
@@ -33,6 +34,7 @@ export { default as SLEEP_STAGE_CLASSIFICATION } from "./SLEEP_STAGE_CLASSIFICAT
 export { default as SQL_AGENT } from "./SQL_AGENT.json";
 export { default as STRETCH_TO_SLEEP } from "./STRETCH_TO_SLEEP.json";
 export { default as TEN_MINUTES_OF_RED } from "./TEN_MINUTES_OF_RED.json";
+export { default as THE_POLICY_PENDULUM } from "./THE_POLICY_PENDULUM.json";
 export { default as THE_REPLAY_LOOP } from "./THE_REPLAY_LOOP.json";
 export { default as TOMATO_CLUSTERING_BLOG } from "./TOMATO_CLUSTERING.json";
 export { default as TOPOLOGICAL_DATA_ANALYSIS_BLOG } from "./TOPOLOGICAL_DATA_ANALYSIS.json";
